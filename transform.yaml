@@ -1,0 +1,166 @@
+transforms:
+# ======= Remove unused peripherals
+  - !Delete
+      from: can.*
+  - !Delete
+      from: usb.*
+  - !Delete
+      from: sai.*
+  - !Delete
+      from: pdm.*
+  - !Delete
+      from: i3c.*
+  - !Delete
+      from: dac.*
+  - !Delete
+      from: lpi2c.*
+  - !Delete
+      from: spdif.*
+  - !Delete
+      from: usdhc.*
+
+# ======= Misc renames
+  - !DeleteFieldsets
+      from: .*
+      useless: true
+  - !DeleteUselessEnums
+  - !RenamePeripherals
+      from: (.*)__(.*)
+      to: ${1}_${2}
+  - !Rename
+      from: (.*)__(.*)
+      to: ${1}_${2}
+      type: All
+
+# ======= TRCD fixes
+  - !DeleteEnums
+      from: trdc\d+::vals::.*Nse.*
+      bit_size: 1
+  - !DeleteEnums
+      from: trdc\d+::vals::.*Lk.*
+      bit_size: 1
+  - !MergeEnums
+      from: trdc\d+::vals::.*(M[br]acsel)\d*
+      to: trdc::vals::$1
+  - !MergeEnums
+      from: trdc\d+::vals::.*Lk\d*
+      to: trdc::vals::Lk
+  - !MergeEnums
+      from: trdc\d+::vals::.*(Eport|Erw|Rst|Dfmt|Dids|Didb|Pe|Pa|Pcurrns|Ncm|Eatr)
+      to: trdc::vals::$1
+  - !MergeEnums
+      from: trdc\d+::vals::.*(Sa|Est)
+      to: trdc::vals::$1
+      check: NoCheck
+  - !MergeFieldsets
+      from: trdc\d+::regs::.*BlkCfgW\d+
+      to: trdc::regs::BlkCfg
+  - !MergeFieldsets
+      from: trdc\d+::regs::.*Rgd\d+(W\d+)
+      to: trdc::regs::Rgd$1
+  - !MergeFieldsets
+      from: trdc\d+::regs::.*NseW\d+
+      to: trdc::regs::Nse
+  - !MergeFieldsets
+      from: trdc\d+::regs::Mrc[01].*RgdNse
+      to: trdc::regs::RgdNse8
+  - !MergeFieldsets
+      from: trdc\d+::regs::Mrc[2-6].*RgdNse
+      to: trdc::regs::RgdNse16
+  - !MergeFieldsets
+      from: trdc\d+::regs::.*(NseBlk.*)
+      to: trdc::regs::$1
+  - !MergeFieldsets
+      from: trdc\d+::regs::.*Glbac0
+      to: trdc::regs::Glbac0
+  - !MergeFieldsets
+      from: trdc\d+::regs::.*Glbac\d+
+      to: trdc::regs::Glbac
+  - !MergeFieldsets
+      from: trdc\d+::regs::(Mbc|Mrc).*Glbcfg
+      to: trdc::regs::${1}Glbcfg
+  - !MergeFieldsets
+      from: trdc\d+::regs::Dacfg\d+
+      to: trdc::regs::Dacfg
+  - !MergeFieldsets
+      from: trdc\d+::regs::.*Dfmt([01])
+      to: trdc::regs::Dfmt$1
+  - !MergeFieldsets
+      from: trdc\d+::regs::.*(NseRgn\w+)
+      to: trdc::regs::$1
+  - !MergeFieldsets
+      from: trdc\d+::regs::(Mrc|Mbc).*(DerrW\d)
+      to: trdc::regs::$1$2
+  - !MergeFieldsets
+      from: trdc\d+::regs::Trdc(.*)
+      to: trdc::regs::Trdc$1
+  - !MergeFieldsets
+      from: trdc\d+::regs::Pid\d
+      to: trdc::regs::Pid
+  # - !MakeRegisterArray
+  #     blocks: trdc1::Trdc1
+  #     from: trdc_hwcfg\d+
+  #     to: trdc_hwcfg
+  # - !MakeRegisterArray
+  #     blocks: trdc1::Trdc1
+  #     from: mbc\d+_derr_w\d+
+  #     to: mbc_derr
+  #     mode: Cursed
+
+# ======= DMA fixes
+  # Some 1-bit-wide enums do not follow the chiptool's naming heuristic
+  # Thus, they are not picked up by DeleteUselessEnums
+  - !DeleteEnums
+      # Do not boolify `Vld` as it's docs says "valid" while value `1` means at least one err
+      from: dma\d+::vals::(Active|Cx|Dae|Dbe|Doe|Hae|Halt|MpCsrEcx|MpEsEcx|Nce|Sae|Sbe|Sge|Soe)
+      bit_size: 1
+  - !DeleteEnums
+      # Do not boolify `Pal` and `Instr`
+      from: dma\d+_tcd::vals::(Dpa|Dreq|Ecp|Esg|Int|Sec|Start|TcdNbytesMloffnoDmloe|TcdNbytesMloffnoSmloe|TcdNbytesMloffyesDmloe|TcdNbytesMloffyesSmloe)
+      bit_size: 1
+  - !MergeEnums
+      from: dma\d+_tcd::vals::Smod
+      to: dma_tcd::vals::Smod
+  - !MergeEnums
+      from: dma\d+_tcd::vals::Pal
+      main: dma3_tcd::vals::Pal
+      to: dma_tcd::vals::Pal
+      check: Layout
+  - !MergeEnums
+      # dma3_tcd::vals::Ssize is the smallest common subset (0x07 is reserved, not 128-bit)
+      # Choosing it as a main merged enum
+      from: dma\d+_tcd::vals::[DS]size
+      main: dma3_tcd::vals::Ssize
+      to: dma_tcd::vals::Size
+      check: NoCheck
+  - !MergeFieldsets
+      from: dma\d+_tcd::regs::TcdAttr
+      main: dma4_tcd::regs::TcdAttr
+      to: dma_tcd::regs::TcdAttr
+      check: NoCheck
+  - !MergeFieldsets
+      # ChCsr - different field count (dma4 has signext and swap, dma3 has ebw)
+      # ChEs - ok
+      # ChInt - ok
+      # ChSbr - different field count (dma4 has instr), could be merged if not needed
+      # ChPri - ok
+      # ChMux - different field width (src: 8 vs 6), could be merged if subset is ok
+      # TcdAttr - special case, handled earlier
+      # TcdBiterElinkno - ok
+      # TcdBiterElinkyes - different field width (linkch: 6 vs 5), could be merged if subset is ok
+      # TcdCsr - different field width (majorlinkch: 6 v 5), different fields (tmc vs bwc)
+      # TcdNbytesMloffno - ok
+      # TcdNbytesMloffyes - ok
+      from: dma\d+_tcd::regs::(ChEs|ChInt|ChPri|TcdBiterElinkno|TcdNbytesMloffno|TcdNbytesMloffyes)
+      to: dma_tcd::regs::$1
+
+# ======= GPIO fixes
+  - !DeleteEnums
+      from: gpio::vals::.*
+      bit_size: 1
+  - !MakeFieldArray
+      # Merge single bit fields into arrays
+      fieldsets: gpio::regs::.*
+      from: ([a-zA-Z]+)\d+
+      to: $1
+

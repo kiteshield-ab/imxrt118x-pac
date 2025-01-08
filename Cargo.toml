@@ -1,0 +1,12 @@
+[package]
+name = "imxrt118x-pac"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cortex-m = "0.7.7"
+defmt = { version = "0.3", optional = true }
+
+[features]
+rt = []
+defmt = ["dep:defmt"]
