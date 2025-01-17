@@ -164,3 +164,18 @@ transforms:
       from: ([a-zA-Z]+)\d+
       to: $1
 
+# ======= GPIO fixes
+  - !MergeEnums
+      from: iomuxc.*::vals::.*(Pdrv|Pull|Ode|Sre|Dse|Pue|Pus|IbeOff)
+      to: iomuxc::vals::$1
+  - !MergeFieldsets
+      from: iomuxc.*::regs::SwPadCtlPadGpio(Ad|Aon)\d+
+      to: iomuxc::regs::SwPadCtlPadGpio$1
+  - !MergeFieldsets
+      from: iomuxc::regs::SwPadCtlPadGpio(B1|B2|EmcB1|EmcB2|SdB1|SdB2)\d+
+      to: iomuxc::regs::SwPadCtlPadGpio
+  # - !MakeFieldArray
+  #     # Merge single bit fields into arrays
+  #     fieldsets: iomuxc::regs::.*
+  #     from: ([a-zA-Z]+)\d+
+  #     to: $1

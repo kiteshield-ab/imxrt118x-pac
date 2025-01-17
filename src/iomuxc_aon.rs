@@ -221,203 +221,203 @@ impl IomuxcAon {
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_00(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon00, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0x74usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_01 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_01(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon01, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0x78usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_02 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_02(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon02, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0x7cusize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_03 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_03(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon03, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0x80usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_04 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_04(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon04, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0x84usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_05 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_05(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon05, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0x88usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_06 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_06(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon06, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0x8cusize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_07 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_07(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon07, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0x90usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_08 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_08(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon08, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0x94usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_09 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_09(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon09, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0x98usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_10 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_10(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon10, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0x9cusize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_11 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_11(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon11, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xa0usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_12 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_12(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon12, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xa4usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_13 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_13(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon13, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xa8usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_14 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_14(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon14, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xacusize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_15 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_15(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon15, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xb0usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_16 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_16(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon16, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xb4usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_17 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_17(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon17, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xb8usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_18 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_18(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon18, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xbcusize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_19 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_19(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon19, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xc0usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_20 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_20(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon20, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xc4usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_21 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_21(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon21, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xc8usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_22 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_22(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon22, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xccusize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_23 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_23(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon23, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xd0usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_24 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_24(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon24, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xd4usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_25 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_25(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon25, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xd8usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_26 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_26(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon26, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xdcusize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_27 SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_27(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon27, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xe0usize) as _) }
     }
     #[doc = "SW_PAD_CTL_PAD_GPIO_AON_28_DUMMY SW PAD Control Register"]
     #[inline(always)]
     pub const fn sw_pad_ctl_pad_gpio_aon_28(
         self,
-    ) -> crate::common::Reg<regs::SwPadCtlPadGpioAon28, crate::common::RW> {
+    ) -> crate::common::Reg<super::iomuxc::regs::SwPadCtlPadGpioAon, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xe4usize) as _) }
     }
     #[doc = "I3C1_PIN_SCL_IN_SELECT_INPUT DAISY Register"]
