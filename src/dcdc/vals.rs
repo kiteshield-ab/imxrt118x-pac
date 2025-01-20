@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DisableAutoClkSwitch {
     #[doc = "If DISABLE_AUTO_CLK_SWITCH is set to 0 and 24M xtal is OK, the clock source will switch from internal ring OSC to 24M xtal automatically"]
-    XTAL_CLK = 0x0,
+    XtalClk = 0x0,
     #[doc = "If DISABLE_AUTO_CLK_SWITCH is set to 1, SEL_CLK will determine which clock source the DCDC uses"]
-    SEL_CLK = 0x01,
+    SelClk = 0x01,
 }
 impl DisableAutoClkSwitch {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<DisableAutoClkSwitch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DisableIdleSkip {
     #[doc = "Enable the idle skip function."]
-    ENABLE_0 = 0x0,
+    Enable0 = 0x0,
     #[doc = "Disable the idle skip function."]
-    DISABLE_1 = 0x01,
+    Disable1 = 0x01,
 }
 impl DisableIdleSkip {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<DisableIdleSkip> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EnableFf {
     #[doc = "Enable the FF function."]
-    ENABLE_0 = 0x0,
+    Enable0 = 0x0,
     #[doc = "Disable the FF function."]
-    DISABLE_1 = 0x01,
+    Disable1 = 0x01,
 }
 impl EnableFf {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<EnableFf> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EnableOkCnt {
     #[doc = "Wait DCDC_OK for ACK"]
-    WAIT = 0x0,
+    Wait = 0x0,
     #[doc = "Enable internal count for DCDC_OK timeout"]
-    ENABLE_COUNT = 0x01,
+    EnableCount = 0x01,
 }
 impl EnableOkCnt {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<EnableOkCnt> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpEn1p0 {
     #[doc = "DCDC 1P0 works in run mode. Its output voltage is controlled by VDD1P0CTRL_TRG."]
-    VDD1P0_NORMAL_MODE = 0x0,
+    Vdd1p0NormalMode = 0x0,
     #[doc = "DCDC 1P0 works in low power mode. Its output voltage is controlled by VDD1P0CTRL_LP_TRG and its output current is less than 50mA."]
-    VDD1P0_LP_MODE = 0x01,
+    Vdd1p0LpMode = 0x01,
 }
 impl LpEn1p0 {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<LpEn1p0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MinpwrHalfFets {
     #[doc = "Donot use half switch FET."]
-    NO_HALF_S_FET = 0x0,
+    NoHalfSFet = 0x0,
     #[doc = "Use half switch FET."]
-    USE_HALF_S_FET = 0x01,
+    UseHalfSFet = 0x01,
 }
 impl MinpwrHalfFets {
     #[inline(always)]
@@ -189,13 +189,13 @@ impl From<MinpwrHalfFets> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OvercurTrigAdj {
     #[doc = "In Run Mode, 1.5 A. In LP Mode, 150 mA"]
-    SELECT_ZERO = 0x0,
+    SelectZero = 0x0,
     #[doc = "In Run Mode, 1.5 A. In LP Mode, 130 mA"]
-    SELECT_ONE = 0x01,
+    SelectOne = 0x01,
     #[doc = "In Run Mode, 2 A. In LP Mode, 150 mA"]
-    SELECT_TWO = 0x02,
+    SelectTwo = 0x02,
     #[doc = "In Run Mode, 2 A. In LP Mode, 130 mA"]
-    SELECT_THREE = 0x03,
+    SelectThree = 0x03,
 }
 impl OvercurTrigAdj {
     #[inline(always)]
@@ -224,9 +224,9 @@ impl From<OvercurTrigAdj> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdCmpDcdcInDet {
     #[doc = "Low voltage detection comparator is enabled"]
-    ENABLED = 0x0,
+    Enabled = 0x0,
     #[doc = "Low voltage detection comparator is disabled"]
-    DISABLED = 0x01,
+    Disabled = 0x01,
 }
 impl PwdCmpDcdcInDet {
     #[inline(always)]
@@ -255,9 +255,9 @@ impl From<PwdCmpDcdcInDet> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdCmpOffset {
     #[doc = "Out-of-range comparator powered up"]
-    POWERED_UP = 0x0,
+    PoweredUp = 0x0,
     #[doc = "Out-of-range comparator powered down"]
-    POWERED_DOWN = 0x01,
+    PoweredDown = 0x01,
 }
 impl PwdCmpOffset {
     #[inline(always)]
@@ -286,9 +286,9 @@ impl From<PwdCmpOffset> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdHighVdd1p0Det {
     #[doc = "Overvoltage detection comparator for the VDD1P0 output is enabled"]
-    ENABLED = 0x0,
+    Enabled = 0x0,
     #[doc = "Overvoltage detection comparator for the VDD1P0 output is disabled"]
-    DISABLED = 0x01,
+    Disabled = 0x01,
 }
 impl PwdHighVdd1p0Det {
     #[inline(always)]
@@ -317,9 +317,9 @@ impl From<PwdHighVdd1p0Det> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdHighVdd1p8Det {
     #[doc = "Overvoltage detection comparator for the VDD1P8 output is enabled"]
-    ENABLED = 0x0,
+    Enabled = 0x0,
     #[doc = "Overvoltage detection comparator for the VDD1P8 output is disabled"]
-    DISABLED = 0x01,
+    Disabled = 0x01,
 }
 impl PwdHighVdd1p8Det {
     #[inline(always)]
@@ -348,9 +348,9 @@ impl From<PwdHighVdd1p8Det> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdOscInt {
     #[doc = "Internal oscillator powered up"]
-    POWERED_UP = 0x0,
+    PoweredUp = 0x0,
     #[doc = "Internal oscillator powered down"]
-    POWERED_DOWN = 0x01,
+    PoweredDown = 0x01,
 }
 impl PwdOscInt {
     #[inline(always)]
@@ -379,9 +379,9 @@ impl From<PwdOscInt> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdOvercurDet {
     #[doc = "Overcurrent detection comparator is enabled"]
-    ENABLED = 0x0,
+    Enabled = 0x0,
     #[doc = "Overcurrent detection comparator is disabled"]
-    DISABLED = 0x01,
+    Disabled = 0x01,
 }
 impl PwdOvercurDet {
     #[inline(always)]
@@ -410,9 +410,9 @@ impl From<PwdOvercurDet> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdZcd {
     #[doc = "Zero cross detection function powered up"]
-    POWERED_UP = 0x0,
+    PoweredUp = 0x0,
     #[doc = "Zero cross detection function powered down"]
-    POWERED_DOWN = 0x01,
+    PoweredDown = 0x01,
 }
 impl PwdZcd {
     #[inline(always)]
@@ -441,9 +441,9 @@ impl From<PwdZcd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RloadRegEn {
     #[doc = "Resistor load disconnected"]
-    RLOAD_DISCONNECT = 0x0,
+    RloadDisconnect = 0x0,
     #[doc = "Resistor load connected"]
-    RLOAD_CONNECT = 0x01,
+    RloadConnect = 0x01,
 }
 impl RloadRegEn {
     #[inline(always)]
@@ -472,9 +472,9 @@ impl From<RloadRegEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SelClk {
     #[doc = "DCDC uses internal ring oscillator"]
-    INT_RNG_OSC = 0x0,
+    IntRngOsc = 0x0,
     #[doc = "DCDC uses 24M xtal"]
-    XTAL_24M = 0x01,
+    Xtal24m = 0x01,
 }
 impl SelClk {
     #[inline(always)]
@@ -503,9 +503,9 @@ impl From<SelClk> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trg0AuthenLockList {
     #[doc = "WHITE_LIST value can be changed."]
-    CHANGE = 0x0,
+    Change = 0x0,
     #[doc = "LOCK_LIST and WHITE_LIST value cannot be changed."]
-    NO_CHANGE = 0x01,
+    NoChange = 0x01,
 }
 impl Trg0AuthenLockList {
     #[inline(always)]
@@ -534,9 +534,9 @@ impl From<Trg0AuthenLockList> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trg0AuthenLockTz {
     #[doc = "TZ_NS and TZ_USER value can be changed."]
-    CHANGE = 0x0,
+    Change = 0x0,
     #[doc = "LOCK_TZ, TZ_NS and TZ_USER value cannot be changed."]
-    NO_CHANGE = 0x01,
+    NoChange = 0x01,
 }
 impl Trg0AuthenLockTz {
     #[inline(always)]
@@ -565,9 +565,9 @@ impl From<Trg0AuthenLockTz> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trg0AuthenTzNs {
     #[doc = "TRG_0 registers can only be written in secure mode."]
-    SECURE_ONLY = 0x0,
+    SecureOnly = 0x0,
     #[doc = "TRG_0 registers can be written either in secure mode or non-secure mode."]
-    SEC_OR_NON_SEC = 0x01,
+    SecOrNonSec = 0x01,
 }
 impl Trg0AuthenTzNs {
     #[inline(always)]
@@ -596,9 +596,9 @@ impl From<Trg0AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trg0AuthenTzUser {
     #[doc = "TRG_0 registers can only be written in privilege mode."]
-    PRIV_ONLY = 0x0,
+    PrivOnly = 0x0,
     #[doc = "TRG_0 registers can be written either in privilege mode or user mode."]
-    PRIV_OR_USER = 0x01,
+    PrivOrUser = 0x01,
 }
 impl Trg0AuthenTzUser {
     #[inline(always)]
@@ -731,9 +731,9 @@ impl From<Trg0AuthenWhiteList> for u16 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trg1AuthenLockList {
     #[doc = "WHITE_LIST value can be changed."]
-    CHANGE = 0x0,
+    Change = 0x0,
     #[doc = "LOCK_LIST and WHITE_LIST value cannot be changed."]
-    NO_CHANGE = 0x01,
+    NoChange = 0x01,
 }
 impl Trg1AuthenLockList {
     #[inline(always)]
@@ -762,9 +762,9 @@ impl From<Trg1AuthenLockList> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trg1AuthenLockTz {
     #[doc = "TZ_NS and TZ_USER value can be changed."]
-    CHANGE = 0x0,
+    Change = 0x0,
     #[doc = "LOCK_TZ, TZ_NS and TZ_USER value cannot be changed."]
-    NO_CHANGE = 0x01,
+    NoChange = 0x01,
 }
 impl Trg1AuthenLockTz {
     #[inline(always)]
@@ -793,9 +793,9 @@ impl From<Trg1AuthenLockTz> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trg1AuthenTzNs {
     #[doc = "TRG_1 registers can only be written in secure mode."]
-    SECURE_ONLY = 0x0,
+    SecureOnly = 0x0,
     #[doc = "TRG_1 registers can be written either in secure mode or non-secure mode."]
-    SEC_OR_NON_SEC = 0x01,
+    SecOrNonSec = 0x01,
 }
 impl Trg1AuthenTzNs {
     #[inline(always)]
@@ -824,9 +824,9 @@ impl From<Trg1AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trg1AuthenTzUser {
     #[doc = "TRG_1 registers can only be written in privilege mode."]
-    PRIV_ONLY = 0x0,
+    PrivOnly = 0x0,
     #[doc = "TRG_1 registers can be written either in privilege mode or user mode."]
-    PRIV_OR_USER = 0x01,
+    PrivOrUser = 0x01,
 }
 impl Trg1AuthenTzUser {
     #[inline(always)]
@@ -959,9 +959,9 @@ impl From<Trg1AuthenWhiteList> for u16 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TrimHold {
     #[doc = "Sample trim value from FUSE or value from REG1\\[VBG_TRIM\\] depending on FUSE select bit."]
-    SAMPLE = 0x0,
+    Sample = 0x0,
     #[doc = "Use value from REG1\\[VBG_TRIM\\] as trim value."]
-    HOLD = 0x01,
+    Hold = 0x01,
 }
 impl TrimHold {
     #[inline(always)]
@@ -990,9 +990,9 @@ impl From<TrimHold> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Vdd1p0ctrlDisableStep {
     #[doc = "Enable stepping for VDD1P0"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disable stepping for VDD1P0"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl Vdd1p0ctrlDisableStep {
     #[inline(always)]
@@ -1021,9 +1021,9 @@ impl From<Vdd1p0ctrlDisableStep> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xtal24mOk {
     #[doc = "DCDC uses internal ring OSC"]
-    INT_RNG_OSC = 0x0,
+    IntRngOsc = 0x0,
     #[doc = "DCDC uses xtal 24M"]
-    XTAL_24M = 0x01,
+    Xtal24m = 0x01,
 }
 impl Xtal24mOk {
     #[inline(always)]
@@ -1052,9 +1052,9 @@ impl From<Xtal24mOk> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum XtalokDisable {
     #[doc = "Enable xtalok detection circuit"]
-    ENABLED = 0x0,
+    Enabled = 0x0,
     #[doc = "Disable xtalok detection circuit and always outputs OK signal \"1\""]
-    DISABLED = 0x01,
+    Disabled = 0x01,
 }
 impl XtalokDisable {
     #[inline(always)]

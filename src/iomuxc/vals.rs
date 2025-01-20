@@ -3,13 +3,13 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Can1IppIndCanrxSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_16 for Mode: ALT9"]
-    SELECT_GPIO_AD_16_ALT9 = 0x0,
+    SelectGpioAd16Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_AON_01 for Mode: ALT1"]
-    SELECT_GPIO_AON_01_ALT1 = 0x01,
+    SelectGpioAon01Alt1 = 0x01,
     #[doc = "Selecting Pad: GPIO_AON_07 for Mode: ALT6"]
-    SELECT_GPIO_AON_07_ALT6 = 0x02,
+    SelectGpioAon07Alt6 = 0x02,
     #[doc = "Selecting Pad: GPIO_AON_17 for Mode: ALT6"]
-    SELECT_GPIO_AON_17_ALT6 = 0x03,
+    SelectGpioAon17Alt6 = 0x03,
 }
 impl Can1IppIndCanrxSelectInputDaisy {
     #[inline(always)]
@@ -38,9 +38,9 @@ impl From<Can1IppIndCanrxSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Can2IppIndCanrxSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_01 for Mode: ALT1"]
-    SELECT_GPIO_AD_01_ALT1 = 0x0,
+    SelectGpioAd01Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_31 for Mode: ALT2"]
-    SELECT_GPIO_AD_31_ALT2 = 0x01,
+    SelectGpioAd31Alt2 = 0x01,
 }
 impl Can2IppIndCanrxSelectInputDaisy {
     #[inline(always)]
@@ -69,15 +69,15 @@ impl From<Can2IppIndCanrxSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Can3IppIndCanrxSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_07 for Mode: ALT1"]
-    SELECT_GPIO_AD_07_ALT1 = 0x0,
+    SelectGpioAd07Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_11 for Mode: ALT2"]
-    SELECT_GPIO_B2_11_ALT2 = 0x01,
+    SelectGpioB211Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_13 for Mode: ALT6"]
-    SELECT_GPIO_B2_13_ALT6 = 0x02,
+    SelectGpioB213Alt6 = 0x02,
     #[doc = "Selecting Pad: GPIO_AON_03 for Mode: ALT1"]
-    SELECT_GPIO_AON_03_ALT1 = 0x03,
+    SelectGpioAon03Alt1 = 0x03,
     #[doc = "Selecting Pad: GPIO_AON_19 for Mode: ALT6"]
-    SELECT_GPIO_AON_19_ALT6 = 0x04,
+    SelectGpioAon19Alt6 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
@@ -109,9 +109,9 @@ impl From<Can3IppIndCanrxSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dse {
     #[doc = "normal driver"]
-    DSE_0_NORMAL_DRIVER = 0x0,
+    Dse0NormalDriver = 0x0,
     #[doc = "high driver"]
-    DSE_1_HIGH_DRIVER = 0x01,
+    Dse1HighDriver = 0x01,
 }
 impl Dse {
     #[inline(always)]
@@ -140,9 +140,9 @@ impl From<Dse> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxClk0SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_02 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_02_ALT10 = 0x0,
+    SelectGpioEmcB102Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_00 for Mode: ALT12"]
-    SELECT_GPIO_EMC_B2_00_ALT12 = 0x01,
+    SelectGpioEmcB200Alt12 = 0x01,
 }
 impl EcatEcatRxClk0SelectInputDaisy {
     #[inline(always)]
@@ -171,9 +171,9 @@ impl From<EcatEcatRxClk0SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxClk1SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_38 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_38_ALT6 = 0x0,
+    SelectGpioEmcB138Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_13 for Mode: ALT12"]
-    SELECT_GPIO_B2_13_ALT12 = 0x01,
+    SelectGpioB213Alt12 = 0x01,
 }
 impl EcatEcatRxClk1SelectInputDaisy {
     #[inline(always)]
@@ -202,9 +202,9 @@ impl From<EcatEcatRxClk1SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxData00SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_09 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_09_ALT10 = 0x0,
+    SelectGpioEmcB109Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_09 for Mode: ALT12"]
-    SELECT_GPIO_EMC_B2_09_ALT12 = 0x01,
+    SelectGpioEmcB209Alt12 = 0x01,
 }
 impl EcatEcatRxData00SelectInputDaisy {
     #[inline(always)]
@@ -233,11 +233,11 @@ impl From<EcatEcatRxData00SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxData01SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_30 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_30_ALT6 = 0x0,
+    SelectGpioEmcB130Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_17 for Mode: ALT12"]
-    SELECT_GPIO_EMC_B2_17_ALT12 = 0x01,
+    SelectGpioEmcB217Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_10 for Mode: ALT12"]
-    SELECT_GPIO_B2_10_ALT12 = 0x02,
+    SelectGpioB210Alt12 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl EcatEcatRxData01SelectInputDaisy {
@@ -267,9 +267,9 @@ impl From<EcatEcatRxData01SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxData10SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_10 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_10_ALT10 = 0x0,
+    SelectGpioEmcB110Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_10 for Mode: ALT12"]
-    SELECT_GPIO_EMC_B2_10_ALT12 = 0x01,
+    SelectGpioEmcB210Alt12 = 0x01,
 }
 impl EcatEcatRxData10SelectInputDaisy {
     #[inline(always)]
@@ -298,11 +298,11 @@ impl From<EcatEcatRxData10SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxData11SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_31 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_31_ALT6 = 0x0,
+    SelectGpioEmcB131Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_18 for Mode: ALT12"]
-    SELECT_GPIO_EMC_B2_18_ALT12 = 0x01,
+    SelectGpioEmcB218Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_11 for Mode: ALT12"]
-    SELECT_GPIO_B2_11_ALT12 = 0x02,
+    SelectGpioB211Alt12 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl EcatEcatRxData11SelectInputDaisy {
@@ -332,9 +332,9 @@ impl From<EcatEcatRxData11SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxData20SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_04 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_04_ALT10 = 0x0,
+    SelectGpioEmcB104Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_01 for Mode: ALT12"]
-    SELECT_GPIO_EMC_B2_01_ALT12 = 0x01,
+    SelectGpioEmcB201Alt12 = 0x01,
 }
 impl EcatEcatRxData20SelectInputDaisy {
     #[inline(always)]
@@ -363,9 +363,9 @@ impl From<EcatEcatRxData20SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxData21SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_34 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_34_ALT6 = 0x0,
+    SelectGpioEmcB134Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_02 for Mode: ALT12"]
-    SELECT_GPIO_B2_02_ALT12 = 0x01,
+    SelectGpioB202Alt12 = 0x01,
 }
 impl EcatEcatRxData21SelectInputDaisy {
     #[inline(always)]
@@ -394,9 +394,9 @@ impl From<EcatEcatRxData21SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxData30SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_03 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_03_ALT10 = 0x0,
+    SelectGpioEmcB103Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_02 for Mode: ALT12"]
-    SELECT_GPIO_EMC_B2_02_ALT12 = 0x01,
+    SelectGpioEmcB202Alt12 = 0x01,
 }
 impl EcatEcatRxData30SelectInputDaisy {
     #[inline(always)]
@@ -425,9 +425,9 @@ impl From<EcatEcatRxData30SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxData31SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_35 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_35_ALT6 = 0x0,
+    SelectGpioEmcB135Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_03 for Mode: ALT12"]
-    SELECT_GPIO_B2_03_ALT12 = 0x01,
+    SelectGpioB203Alt12 = 0x01,
 }
 impl EcatEcatRxData31SelectInputDaisy {
     #[inline(always)]
@@ -456,9 +456,9 @@ impl From<EcatEcatRxData31SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxDv0SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_11 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_11_ALT10 = 0x0,
+    SelectGpioEmcB111Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_11 for Mode: ALT12"]
-    SELECT_GPIO_EMC_B2_11_ALT12 = 0x01,
+    SelectGpioEmcB211Alt12 = 0x01,
 }
 impl EcatEcatRxDv0SelectInputDaisy {
     #[inline(always)]
@@ -487,11 +487,11 @@ impl From<EcatEcatRxDv0SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxDv1SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_32 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_32_ALT6 = 0x0,
+    SelectGpioEmcB132Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_19 for Mode: ALT12"]
-    SELECT_GPIO_EMC_B2_19_ALT12 = 0x01,
+    SelectGpioEmcB219Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_12 for Mode: ALT12"]
-    SELECT_GPIO_B2_12_ALT12 = 0x02,
+    SelectGpioB212Alt12 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl EcatEcatRxDv1SelectInputDaisy {
@@ -521,9 +521,9 @@ impl From<EcatEcatRxDv1SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxEr0SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_12 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_12_ALT10 = 0x0,
+    SelectGpioEmcB112Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_12 for Mode: ALT12"]
-    SELECT_GPIO_EMC_B2_12_ALT12 = 0x01,
+    SelectGpioEmcB212Alt12 = 0x01,
 }
 impl EcatEcatRxEr0SelectInputDaisy {
     #[inline(always)]
@@ -552,11 +552,11 @@ impl From<EcatEcatRxEr0SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatRxEr1SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_33 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_33_ALT6 = 0x0,
+    SelectGpioEmcB133Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_20 for Mode: ALT12"]
-    SELECT_GPIO_EMC_B2_20_ALT12 = 0x01,
+    SelectGpioEmcB220Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_01 for Mode: ALT12"]
-    SELECT_GPIO_B2_01_ALT12 = 0x02,
+    SelectGpioB201Alt12 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl EcatEcatRxEr1SelectInputDaisy {
@@ -586,9 +586,9 @@ impl From<EcatEcatRxEr1SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatTxClk0SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_08 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_08_ALT10 = 0x0,
+    SelectGpioEmcB108Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_08 for Mode: ALT12"]
-    SELECT_GPIO_EMC_B2_08_ALT12 = 0x01,
+    SelectGpioEmcB208Alt12 = 0x01,
 }
 impl EcatEcatTxClk0SelectInputDaisy {
     #[inline(always)]
@@ -617,11 +617,11 @@ impl From<EcatEcatTxClk0SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEcatTxClk1SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_29 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_29_ALT6 = 0x0,
+    SelectGpioEmcB129Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_16 for Mode: ALT12"]
-    SELECT_GPIO_EMC_B2_16_ALT12 = 0x01,
+    SelectGpioEmcB216Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_09 for Mode: ALT12"]
-    SELECT_GPIO_B2_09_ALT12 = 0x02,
+    SelectGpioB209Alt12 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl EcatEcatTxClk1SelectInputDaisy {
@@ -651,9 +651,9 @@ impl From<EcatEcatTxClk1SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatMdioDataInSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_31 for Mode: ALT12"]
-    SELECT_GPIO_AD_31_ALT12 = 0x0,
+    SelectGpioAd31Alt12 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_10 for Mode: ALT12"]
-    SELECT_GPIO_SD_B2_10_ALT12 = 0x01,
+    SelectGpioSdB210Alt12 = 0x01,
 }
 impl EcatMdioDataInSelectInputDaisy {
     #[inline(always)]
@@ -682,9 +682,9 @@ impl From<EcatMdioDataInSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatPromDataInSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_19 for Mode: ALT12"]
-    SELECT_GPIO_AD_19_ALT12 = 0x0,
+    SelectGpioAd19Alt12 = 0x0,
     #[doc = "Selecting Pad: GPIO_AON_06 for Mode: ALT12"]
-    SELECT_GPIO_AON_06_ALT12 = 0x01,
+    SelectGpioAon06Alt12 = 0x01,
 }
 impl EcatPromDataInSelectInputDaisy {
     #[inline(always)]
@@ -713,11 +713,11 @@ impl From<EcatPromDataInSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm1IppIndPwmaSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_24 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_24_ALT1 = 0x0,
+    SelectGpioEmcB124Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_36 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_36_ALT1 = 0x01,
+    SelectGpioEmcB136Alt1 = 0x01,
     #[doc = "Selecting Pad: GPIO_AD_00 for Mode: ALT4"]
-    SELECT_GPIO_AD_00_ALT4 = 0x02,
+    SelectGpioAd00Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Flexpwm1IppIndPwmaSelectInput0Daisy {
@@ -747,9 +747,9 @@ impl From<Flexpwm1IppIndPwmaSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm1IppIndPwmaSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_26 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_26_ALT1 = 0x0,
+    SelectGpioEmcB126Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_02 for Mode: ALT4"]
-    SELECT_GPIO_AD_02_ALT4 = 0x01,
+    SelectGpioAd02Alt4 = 0x01,
 }
 impl Flexpwm1IppIndPwmaSelectInput1Daisy {
     #[inline(always)]
@@ -778,9 +778,9 @@ impl From<Flexpwm1IppIndPwmaSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm1IppIndPwmaSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_29 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_29_ALT1 = 0x0,
+    SelectGpioEmcB129Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_05 for Mode: ALT4"]
-    SELECT_GPIO_AD_05_ALT4 = 0x01,
+    SelectGpioAd05Alt4 = 0x01,
 }
 impl Flexpwm1IppIndPwmaSelectInput2Daisy {
     #[inline(always)]
@@ -809,11 +809,11 @@ impl From<Flexpwm1IppIndPwmaSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm1IppIndPwmbSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_25 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_25_ALT1 = 0x0,
+    SelectGpioEmcB125Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_37 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_37_ALT1 = 0x01,
+    SelectGpioEmcB137Alt1 = 0x01,
     #[doc = "Selecting Pad: GPIO_AD_01 for Mode: ALT4"]
-    SELECT_GPIO_AD_01_ALT4 = 0x02,
+    SelectGpioAd01Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Flexpwm1IppIndPwmbSelectInput0Daisy {
@@ -843,9 +843,9 @@ impl From<Flexpwm1IppIndPwmbSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm1IppIndPwmbSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_27 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_27_ALT1 = 0x0,
+    SelectGpioEmcB127Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_03 for Mode: ALT4"]
-    SELECT_GPIO_AD_03_ALT4 = 0x01,
+    SelectGpioAd03Alt4 = 0x01,
 }
 impl Flexpwm1IppIndPwmbSelectInput1Daisy {
     #[inline(always)]
@@ -874,9 +874,9 @@ impl From<Flexpwm1IppIndPwmbSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm1IppIndPwmbSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_28 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_28_ALT1 = 0x0,
+    SelectGpioEmcB128Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_04 for Mode: ALT4"]
-    SELECT_GPIO_AD_04_ALT4 = 0x01,
+    SelectGpioAd04Alt4 = 0x01,
 }
 impl Flexpwm1IppIndPwmbSelectInput2Daisy {
     #[inline(always)]
@@ -905,9 +905,9 @@ impl From<Flexpwm1IppIndPwmbSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm2IppIndPwmaSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_18 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_18_ALT1 = 0x0,
+    SelectGpioEmcB118Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_24 for Mode: ALT4"]
-    SELECT_GPIO_AD_24_ALT4 = 0x01,
+    SelectGpioAd24Alt4 = 0x01,
 }
 impl Flexpwm2IppIndPwmaSelectInput0Daisy {
     #[inline(always)]
@@ -936,9 +936,9 @@ impl From<Flexpwm2IppIndPwmaSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm2IppIndPwmaSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_20 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_20_ALT1 = 0x0,
+    SelectGpioEmcB120Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_26 for Mode: ALT4"]
-    SELECT_GPIO_AD_26_ALT4 = 0x01,
+    SelectGpioAd26Alt4 = 0x01,
 }
 impl Flexpwm2IppIndPwmaSelectInput1Daisy {
     #[inline(always)]
@@ -967,9 +967,9 @@ impl From<Flexpwm2IppIndPwmaSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm2IppIndPwmaSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_23 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_23_ALT1 = 0x0,
+    SelectGpioEmcB123Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_29 for Mode: ALT4"]
-    SELECT_GPIO_AD_29_ALT4 = 0x01,
+    SelectGpioAd29Alt4 = 0x01,
 }
 impl Flexpwm2IppIndPwmaSelectInput2Daisy {
     #[inline(always)]
@@ -998,9 +998,9 @@ impl From<Flexpwm2IppIndPwmaSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm2IppIndPwmbSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_19 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_19_ALT1 = 0x0,
+    SelectGpioEmcB119Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_25 for Mode: ALT4"]
-    SELECT_GPIO_AD_25_ALT4 = 0x01,
+    SelectGpioAd25Alt4 = 0x01,
 }
 impl Flexpwm2IppIndPwmbSelectInput0Daisy {
     #[inline(always)]
@@ -1029,9 +1029,9 @@ impl From<Flexpwm2IppIndPwmbSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm2IppIndPwmbSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_21 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_21_ALT1 = 0x0,
+    SelectGpioEmcB121Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_27 for Mode: ALT4"]
-    SELECT_GPIO_AD_27_ALT4 = 0x01,
+    SelectGpioAd27Alt4 = 0x01,
 }
 impl Flexpwm2IppIndPwmbSelectInput1Daisy {
     #[inline(always)]
@@ -1060,9 +1060,9 @@ impl From<Flexpwm2IppIndPwmbSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm2IppIndPwmbSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_22 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_22_ALT1 = 0x0,
+    SelectGpioEmcB122Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_28 for Mode: ALT4"]
-    SELECT_GPIO_AD_28_ALT4 = 0x01,
+    SelectGpioAd28Alt4 = 0x01,
 }
 impl Flexpwm2IppIndPwmbSelectInput2Daisy {
     #[inline(always)]
@@ -1091,9 +1091,9 @@ impl From<Flexpwm2IppIndPwmbSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm3IppIndPwmaSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_30 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_30_ALT1 = 0x0,
+    SelectGpioEmcB130Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_00 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_00_ALT10 = 0x01,
+    SelectGpioEmcB200Alt10 = 0x01,
 }
 impl Flexpwm3IppIndPwmaSelectInput0Daisy {
     #[inline(always)]
@@ -1122,9 +1122,9 @@ impl From<Flexpwm3IppIndPwmaSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm3IppIndPwmaSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_32 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_32_ALT1 = 0x0,
+    SelectGpioEmcB132Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_02 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_02_ALT10 = 0x01,
+    SelectGpioEmcB202Alt10 = 0x01,
 }
 impl Flexpwm3IppIndPwmaSelectInput1Daisy {
     #[inline(always)]
@@ -1153,9 +1153,9 @@ impl From<Flexpwm3IppIndPwmaSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm3IppIndPwmaSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_35 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_35_ALT1 = 0x0,
+    SelectGpioEmcB135Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_05 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_05_ALT10 = 0x01,
+    SelectGpioEmcB205Alt10 = 0x01,
 }
 impl Flexpwm3IppIndPwmaSelectInput2Daisy {
     #[inline(always)]
@@ -1184,9 +1184,9 @@ impl From<Flexpwm3IppIndPwmaSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm3IppIndPwmaSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_11 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_11_ALT1 = 0x0,
+    SelectGpioEmcB111Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_07 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_07_ALT10 = 0x01,
+    SelectGpioEmcB207Alt10 = 0x01,
 }
 impl Flexpwm3IppIndPwmaSelectInput3Daisy {
     #[inline(always)]
@@ -1215,9 +1215,9 @@ impl From<Flexpwm3IppIndPwmaSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm3IppIndPwmbSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_31 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_31_ALT1 = 0x0,
+    SelectGpioEmcB131Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_01 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_01_ALT10 = 0x01,
+    SelectGpioEmcB201Alt10 = 0x01,
 }
 impl Flexpwm3IppIndPwmbSelectInput0Daisy {
     #[inline(always)]
@@ -1246,9 +1246,9 @@ impl From<Flexpwm3IppIndPwmbSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm3IppIndPwmbSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_33 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_33_ALT1 = 0x0,
+    SelectGpioEmcB133Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_03 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_03_ALT10 = 0x01,
+    SelectGpioEmcB203Alt10 = 0x01,
 }
 impl Flexpwm3IppIndPwmbSelectInput1Daisy {
     #[inline(always)]
@@ -1277,9 +1277,9 @@ impl From<Flexpwm3IppIndPwmbSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm3IppIndPwmbSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_34 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_34_ALT1 = 0x0,
+    SelectGpioEmcB134Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_04 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_04_ALT10 = 0x01,
+    SelectGpioEmcB204Alt10 = 0x01,
 }
 impl Flexpwm3IppIndPwmbSelectInput2Daisy {
     #[inline(always)]
@@ -1308,9 +1308,9 @@ impl From<Flexpwm3IppIndPwmbSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexpwm3IppIndPwmbSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_10 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_10_ALT1 = 0x0,
+    SelectGpioEmcB110Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_06 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_06_ALT10 = 0x01,
+    SelectGpioEmcB206Alt10 = 0x01,
 }
 impl Flexpwm3IppIndPwmbSelectInput3Daisy {
     #[inline(always)]
@@ -1339,9 +1339,9 @@ impl From<Flexpwm3IppIndPwmbSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi1Bus2bitIppIndDqsFaSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_12_DUMMY for Mode: ALT0"]
-    SELECT_GPIO_SD_B2_12_DUMMY_ALT0 = 0x0,
+    SelectGpioSdB212DummyAlt0 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_07 for Mode: ALT7"]
-    SELECT_GPIO_B2_07_ALT7 = 0x01,
+    SelectGpioB207Alt7 = 0x01,
 }
 impl Flexspi1Bus2bitIppIndDqsFaSelectInputDaisy {
     #[inline(always)]
@@ -1370,11 +1370,11 @@ impl From<Flexspi1Bus2bitIppIndDqsFaSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi1Bus2bitIppIndDqsFbSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_05 for Mode: ALT1"]
-    SELECT_GPIO_SD_B2_05_ALT1 = 0x0,
+    SelectGpioSdB205Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_12_DUMMY for Mode: ALT1"]
-    SELECT_GPIO_SD_B2_12_DUMMY_ALT1 = 0x01,
+    SelectGpioSdB212DummyAlt1 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_03 for Mode: ALT7"]
-    SELECT_GPIO_B1_03_ALT7 = 0x02,
+    SelectGpioB103Alt7 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Flexspi1Bus2bitIppIndDqsFbSelectInputDaisy {
@@ -1404,9 +1404,9 @@ impl From<Flexspi1Bus2bitIppIndDqsFbSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi1Bus2bitIppIndIoFbBit0SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_08 for Mode: ALT1"]
-    SELECT_GPIO_SD_B2_08_ALT1 = 0x0,
+    SelectGpioSdB208Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_13 for Mode: ALT7"]
-    SELECT_GPIO_B1_13_ALT7 = 0x01,
+    SelectGpioB113Alt7 = 0x01,
 }
 impl Flexspi1Bus2bitIppIndIoFbBit0SelectInputDaisy {
     #[inline(always)]
@@ -1435,9 +1435,9 @@ impl From<Flexspi1Bus2bitIppIndIoFbBit0SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi1Bus2bitIppIndIoFbBit1SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_09 for Mode: ALT1"]
-    SELECT_GPIO_SD_B2_09_ALT1 = 0x0,
+    SelectGpioSdB209Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_12 for Mode: ALT7"]
-    SELECT_GPIO_B1_12_ALT7 = 0x01,
+    SelectGpioB112Alt7 = 0x01,
 }
 impl Flexspi1Bus2bitIppIndIoFbBit1SelectInputDaisy {
     #[inline(always)]
@@ -1466,9 +1466,9 @@ impl From<Flexspi1Bus2bitIppIndIoFbBit1SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi1Bus2bitIppIndIoFbBit2SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_10 for Mode: ALT1"]
-    SELECT_GPIO_SD_B2_10_ALT1 = 0x0,
+    SelectGpioSdB210Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_11 for Mode: ALT7"]
-    SELECT_GPIO_B1_11_ALT7 = 0x01,
+    SelectGpioB111Alt7 = 0x01,
 }
 impl Flexspi1Bus2bitIppIndIoFbBit2SelectInputDaisy {
     #[inline(always)]
@@ -1497,9 +1497,9 @@ impl From<Flexspi1Bus2bitIppIndIoFbBit2SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi1Bus2bitIppIndIoFbBit3SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_11 for Mode: ALT1"]
-    SELECT_GPIO_SD_B2_11_ALT1 = 0x0,
+    SelectGpioSdB211Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_10 for Mode: ALT7"]
-    SELECT_GPIO_B1_10_ALT7 = 0x01,
+    SelectGpioB110Alt7 = 0x01,
 }
 impl Flexspi1Bus2bitIppIndIoFbBit3SelectInputDaisy {
     #[inline(always)]
@@ -1528,9 +1528,9 @@ impl From<Flexspi1Bus2bitIppIndIoFbBit3SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi1Bus2bitIppIndIoFbBit4SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_00 for Mode: ALT1"]
-    SELECT_GPIO_SD_B2_00_ALT1 = 0x0,
+    SelectGpioSdB200Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_09 for Mode: ALT7"]
-    SELECT_GPIO_B1_09_ALT7 = 0x01,
+    SelectGpioB109Alt7 = 0x01,
 }
 impl Flexspi1Bus2bitIppIndIoFbBit4SelectInputDaisy {
     #[inline(always)]
@@ -1559,9 +1559,9 @@ impl From<Flexspi1Bus2bitIppIndIoFbBit4SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi1Bus2bitIppIndIoFbBit5SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_01 for Mode: ALT1"]
-    SELECT_GPIO_SD_B2_01_ALT1 = 0x0,
+    SelectGpioSdB201Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_08 for Mode: ALT7"]
-    SELECT_GPIO_B1_08_ALT7 = 0x01,
+    SelectGpioB108Alt7 = 0x01,
 }
 impl Flexspi1Bus2bitIppIndIoFbBit5SelectInputDaisy {
     #[inline(always)]
@@ -1590,9 +1590,9 @@ impl From<Flexspi1Bus2bitIppIndIoFbBit5SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi1Bus2bitIppIndIoFbBit6SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_02 for Mode: ALT1"]
-    SELECT_GPIO_SD_B2_02_ALT1 = 0x0,
+    SelectGpioSdB202Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_07 for Mode: ALT7"]
-    SELECT_GPIO_B1_07_ALT7 = 0x01,
+    SelectGpioB107Alt7 = 0x01,
 }
 impl Flexspi1Bus2bitIppIndIoFbBit6SelectInputDaisy {
     #[inline(always)]
@@ -1621,9 +1621,9 @@ impl From<Flexspi1Bus2bitIppIndIoFbBit6SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi1Bus2bitIppIndIoFbBit7SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_03 for Mode: ALT1"]
-    SELECT_GPIO_SD_B2_03_ALT1 = 0x0,
+    SelectGpioSdB203Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_06 for Mode: ALT7"]
-    SELECT_GPIO_B1_06_ALT7 = 0x01,
+    SelectGpioB106Alt7 = 0x01,
 }
 impl Flexspi1Bus2bitIppIndIoFbBit7SelectInputDaisy {
     #[inline(always)]
@@ -1652,11 +1652,11 @@ impl From<Flexspi1Bus2bitIppIndIoFbBit7SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi1Bus2bitIppIndSckFbSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_07 for Mode: ALT1"]
-    SELECT_GPIO_SD_B2_07_ALT1 = 0x0,
+    SelectGpioSdB207Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_05 for Mode: ALT7"]
-    SELECT_GPIO_B1_05_ALT7 = 0x01,
+    SelectGpioB105Alt7 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_02 for Mode: ALT6"]
-    SELECT_GPIO_B2_02_ALT6 = 0x02,
+    SelectGpioB202Alt6 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Flexspi1Bus2bitIppIndSckFbSelectInputDaisy {
@@ -1686,11 +1686,11 @@ impl From<Flexspi1Bus2bitIppIndSckFbSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi2Bus2bitIppIndDqsFaSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_40 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_40_ALT3 = 0x0,
+    SelectGpioEmcB140Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_AON_21 for Mode: ALT8"]
-    SELECT_GPIO_AON_21_ALT8 = 0x01,
+    SelectGpioAon21Alt8 = 0x01,
     #[doc = "Selecting Pad: GPIO_AON_28_DUMMY for Mode: ALT0"]
-    SELECT_GPIO_AON_28_DUMMY_ALT0 = 0x02,
+    SelectGpioAon28DummyAlt0 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Flexspi2Bus2bitIppIndDqsFaSelectInputDaisy {
@@ -1720,13 +1720,13 @@ impl From<Flexspi2Bus2bitIppIndDqsFaSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi2Bus2bitIppIndDqsFbSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_21 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_21_ALT10 = 0x0,
+    SelectGpioEmcB121Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_29 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_29_ALT3 = 0x01,
+    SelectGpioEmcB129Alt3 = 0x01,
     #[doc = "Selecting Pad: GPIO_AON_20 for Mode: ALT0"]
-    SELECT_GPIO_AON_20_ALT0 = 0x02,
+    SelectGpioAon20Alt0 = 0x02,
     #[doc = "Selecting Pad: GPIO_AON_28_DUMMY for Mode: ALT1"]
-    SELECT_GPIO_AON_28_DUMMY_ALT1 = 0x03,
+    SelectGpioAon28DummyAlt1 = 0x03,
 }
 impl Flexspi2Bus2bitIppIndDqsFbSelectInputDaisy {
     #[inline(always)]
@@ -1755,9 +1755,9 @@ impl From<Flexspi2Bus2bitIppIndDqsFbSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi2Bus2bitIppIndIoFaBit0SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_35 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_35_ALT3 = 0x0,
+    SelectGpioEmcB135Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_AON_24 for Mode: ALT0"]
-    SELECT_GPIO_AON_24_ALT0 = 0x01,
+    SelectGpioAon24Alt0 = 0x01,
 }
 impl Flexspi2Bus2bitIppIndIoFaBit0SelectInputDaisy {
     #[inline(always)]
@@ -1786,9 +1786,9 @@ impl From<Flexspi2Bus2bitIppIndIoFaBit0SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi2Bus2bitIppIndIoFaBit1SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_36 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_36_ALT3 = 0x0,
+    SelectGpioEmcB136Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_AON_25 for Mode: ALT0"]
-    SELECT_GPIO_AON_25_ALT0 = 0x01,
+    SelectGpioAon25Alt0 = 0x01,
 }
 impl Flexspi2Bus2bitIppIndIoFaBit1SelectInputDaisy {
     #[inline(always)]
@@ -1817,9 +1817,9 @@ impl From<Flexspi2Bus2bitIppIndIoFaBit1SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi2Bus2bitIppIndIoFaBit2SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_37 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_37_ALT3 = 0x0,
+    SelectGpioEmcB137Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_AON_26 for Mode: ALT0"]
-    SELECT_GPIO_AON_26_ALT0 = 0x01,
+    SelectGpioAon26Alt0 = 0x01,
 }
 impl Flexspi2Bus2bitIppIndIoFaBit2SelectInputDaisy {
     #[inline(always)]
@@ -1848,9 +1848,9 @@ impl From<Flexspi2Bus2bitIppIndIoFaBit2SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi2Bus2bitIppIndIoFaBit3SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_38 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_38_ALT3 = 0x0,
+    SelectGpioEmcB138Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_AON_27 for Mode: ALT0"]
-    SELECT_GPIO_AON_27_ALT0 = 0x01,
+    SelectGpioAon27Alt0 = 0x01,
 }
 impl Flexspi2Bus2bitIppIndIoFaBit3SelectInputDaisy {
     #[inline(always)]
@@ -1879,11 +1879,11 @@ impl From<Flexspi2Bus2bitIppIndIoFaBit3SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi2Bus2bitIppIndIoFbBit0SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_25 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_25_ALT10 = 0x0,
+    SelectGpioEmcB125Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_33 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_33_ALT3 = 0x01,
+    SelectGpioEmcB133Alt3 = 0x01,
     #[doc = "Selecting Pad: GPIO_AON_18 for Mode: ALT0"]
-    SELECT_GPIO_AON_18_ALT0 = 0x02,
+    SelectGpioAon18Alt0 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Flexspi2Bus2bitIppIndIoFbBit0SelectInputDaisy {
@@ -1913,11 +1913,11 @@ impl From<Flexspi2Bus2bitIppIndIoFbBit0SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi2Bus2bitIppIndIoFbBit1SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_24 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_24_ALT10 = 0x0,
+    SelectGpioEmcB124Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_32 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_32_ALT3 = 0x01,
+    SelectGpioEmcB132Alt3 = 0x01,
     #[doc = "Selecting Pad: GPIO_AON_17 for Mode: ALT0"]
-    SELECT_GPIO_AON_17_ALT0 = 0x02,
+    SelectGpioAon17Alt0 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Flexspi2Bus2bitIppIndIoFbBit1SelectInputDaisy {
@@ -1947,11 +1947,11 @@ impl From<Flexspi2Bus2bitIppIndIoFbBit1SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi2Bus2bitIppIndIoFbBit2SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_23 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_23_ALT10 = 0x0,
+    SelectGpioEmcB123Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_31 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_31_ALT3 = 0x01,
+    SelectGpioEmcB131Alt3 = 0x01,
     #[doc = "Selecting Pad: GPIO_AON_16 for Mode: ALT0"]
-    SELECT_GPIO_AON_16_ALT0 = 0x02,
+    SelectGpioAon16Alt0 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Flexspi2Bus2bitIppIndIoFbBit2SelectInputDaisy {
@@ -1981,11 +1981,11 @@ impl From<Flexspi2Bus2bitIppIndIoFbBit2SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi2Bus2bitIppIndIoFbBit3SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_22 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_22_ALT10 = 0x0,
+    SelectGpioEmcB122Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_30 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_30_ALT3 = 0x01,
+    SelectGpioEmcB130Alt3 = 0x01,
     #[doc = "Selecting Pad: GPIO_AON_15 for Mode: ALT0"]
-    SELECT_GPIO_AON_15_ALT0 = 0x02,
+    SelectGpioAon15Alt0 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Flexspi2Bus2bitIppIndIoFbBit3SelectInputDaisy {
@@ -2015,9 +2015,9 @@ impl From<Flexspi2Bus2bitIppIndIoFbBit3SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi2Bus2bitIppIndSckFaSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_41 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_41_ALT3 = 0x0,
+    SelectGpioEmcB141Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_AON_23 for Mode: ALT0"]
-    SELECT_GPIO_AON_23_ALT0 = 0x01,
+    SelectGpioAon23Alt0 = 0x01,
 }
 impl Flexspi2Bus2bitIppIndSckFaSelectInputDaisy {
     #[inline(always)]
@@ -2046,9 +2046,9 @@ impl From<Flexspi2Bus2bitIppIndSckFaSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexspi2Bus2bitIppIndSckFbSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_34 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_34_ALT3 = 0x0,
+    SelectGpioEmcB134Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_AON_19 for Mode: ALT0"]
-    SELECT_GPIO_AON_19_ALT0 = 0x01,
+    SelectGpioAon19Alt0 = 0x01,
 }
 impl Flexspi2Bus2bitIppIndSckFbSelectInputDaisy {
     #[inline(always)]
@@ -2077,9 +2077,9 @@ impl From<Flexspi2Bus2bitIppIndSckFbSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum I3c2PinSclInSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_18 for Mode: ALT6"]
-    SELECT_GPIO_AD_18_ALT6 = 0x0,
+    SelectGpioAd18Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_34 for Mode: ALT0"]
-    SELECT_GPIO_AD_34_ALT0 = 0x01,
+    SelectGpioAd34Alt0 = 0x01,
 }
 impl I3c2PinSclInSelectInputDaisy {
     #[inline(always)]
@@ -2108,9 +2108,9 @@ impl From<I3c2PinSclInSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum I3c2PinSdaInSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_19 for Mode: ALT6"]
-    SELECT_GPIO_AD_19_ALT6 = 0x0,
+    SelectGpioAd19Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_35 for Mode: ALT0"]
-    SELECT_GPIO_AD_35_ALT0 = 0x01,
+    SelectGpioAd35Alt0 = 0x01,
 }
 impl I3c2PinSdaInSelectInputDaisy {
     #[inline(always)]
@@ -2139,9 +2139,9 @@ impl From<I3c2PinSdaInSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IbeOff {
     #[doc = "Disabled"]
-    IBE_OFF_0_DISABLED = 0x0,
+    IbeOff0Disabled = 0x0,
     #[doc = "Enabled"]
-    IBE_OFF_1_ENABLED = 0x01,
+    IbeOff1Enabled = 0x01,
 }
 impl IbeOff {
     #[inline(always)]
@@ -2170,11 +2170,11 @@ impl From<IbeOff> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndColSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_15 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_15_ALT6 = 0x0,
+    SelectGpioEmcB115Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_27 for Mode: ALT6"]
-    SELECT_GPIO_AD_27_ALT6 = 0x01,
+    SelectGpioAd27Alt6 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B2_03 for Mode: ALT4"]
-    SELECT_GPIO_SD_B2_03_ALT4 = 0x02,
+    SelectGpioSdB203Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl KppIppIndColSelectInput0Daisy {
@@ -2204,11 +2204,11 @@ impl From<KppIppIndColSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndColSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_13 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_13_ALT6 = 0x0,
+    SelectGpioEmcB113Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_33 for Mode: ALT6"]
-    SELECT_GPIO_AD_33_ALT6 = 0x01,
+    SelectGpioAd33Alt6 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B2_01 for Mode: ALT4"]
-    SELECT_GPIO_SD_B2_01_ALT4 = 0x02,
+    SelectGpioSdB201Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl KppIppIndColSelectInput1Daisy {
@@ -2238,9 +2238,9 @@ impl From<KppIppIndColSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndColSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_03 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_03_ALT6 = 0x0,
+    SelectGpioEmcB103Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_31 for Mode: ALT6"]
-    SELECT_GPIO_AD_31_ALT6 = 0x01,
+    SelectGpioAd31Alt6 = 0x01,
 }
 impl KppIppIndColSelectInput2Daisy {
     #[inline(always)]
@@ -2269,9 +2269,9 @@ impl From<KppIppIndColSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndColSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_01 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_01_ALT6 = 0x0,
+    SelectGpioEmcB101Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_29 for Mode: ALT6"]
-    SELECT_GPIO_AD_29_ALT6 = 0x01,
+    SelectGpioAd29Alt6 = 0x01,
 }
 impl KppIppIndColSelectInput3Daisy {
     #[inline(always)]
@@ -2300,9 +2300,9 @@ impl From<KppIppIndColSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndColSelectInput4Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_12 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_12_ALT6 = 0x0,
+    SelectGpioEmcB112Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_19 for Mode: ALT3"]
-    SELECT_GPIO_AD_19_ALT3 = 0x01,
+    SelectGpioAd19Alt3 = 0x01,
 }
 impl KppIppIndColSelectInput4Daisy {
     #[inline(always)]
@@ -2331,9 +2331,9 @@ impl From<KppIppIndColSelectInput4Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndColSelectInput5Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_10 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_10_ALT6 = 0x0,
+    SelectGpioEmcB110Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_17 for Mode: ALT3"]
-    SELECT_GPIO_AD_17_ALT3 = 0x01,
+    SelectGpioAd17Alt3 = 0x01,
 }
 impl KppIppIndColSelectInput5Daisy {
     #[inline(always)]
@@ -2362,11 +2362,11 @@ impl From<KppIppIndColSelectInput5Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndColSelectInput6Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_08 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_08_ALT6 = 0x0,
+    SelectGpioEmcB108Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_15 for Mode: ALT3"]
-    SELECT_GPIO_AD_15_ALT3 = 0x01,
+    SelectGpioAd15Alt3 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B1_03 for Mode: ALT8"]
-    SELECT_GPIO_SD_B1_03_ALT8 = 0x02,
+    SelectGpioSdB103Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl KppIppIndColSelectInput6Daisy {
@@ -2396,11 +2396,11 @@ impl From<KppIppIndColSelectInput6Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndColSelectInput7Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_06 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_06_ALT6 = 0x0,
+    SelectGpioEmcB106Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_13 for Mode: ALT3"]
-    SELECT_GPIO_AD_13_ALT3 = 0x01,
+    SelectGpioAd13Alt3 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B1_01 for Mode: ALT8"]
-    SELECT_GPIO_SD_B1_01_ALT8 = 0x02,
+    SelectGpioSdB101Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl KppIppIndColSelectInput7Daisy {
@@ -2430,11 +2430,11 @@ impl From<KppIppIndColSelectInput7Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndRowSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_14 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_14_ALT6 = 0x0,
+    SelectGpioEmcB114Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_26 for Mode: ALT6"]
-    SELECT_GPIO_AD_26_ALT6 = 0x01,
+    SelectGpioAd26Alt6 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B2_02 for Mode: ALT4"]
-    SELECT_GPIO_SD_B2_02_ALT4 = 0x02,
+    SelectGpioSdB202Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl KppIppIndRowSelectInput0Daisy {
@@ -2464,11 +2464,11 @@ impl From<KppIppIndRowSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndRowSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_04 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_04_ALT6 = 0x0,
+    SelectGpioEmcB104Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_32 for Mode: ALT6"]
-    SELECT_GPIO_AD_32_ALT6 = 0x01,
+    SelectGpioAd32Alt6 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B2_00 for Mode: ALT4"]
-    SELECT_GPIO_SD_B2_00_ALT4 = 0x02,
+    SelectGpioSdB200Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl KppIppIndRowSelectInput1Daisy {
@@ -2498,9 +2498,9 @@ impl From<KppIppIndRowSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndRowSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_02 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_02_ALT6 = 0x0,
+    SelectGpioEmcB102Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_30 for Mode: ALT6"]
-    SELECT_GPIO_AD_30_ALT6 = 0x01,
+    SelectGpioAd30Alt6 = 0x01,
 }
 impl KppIppIndRowSelectInput2Daisy {
     #[inline(always)]
@@ -2529,11 +2529,11 @@ impl From<KppIppIndRowSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndRowSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_00 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_00_ALT6 = 0x0,
+    SelectGpioEmcB100Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_28 for Mode: ALT6"]
-    SELECT_GPIO_AD_28_ALT6 = 0x01,
+    SelectGpioAd28Alt6 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B2_04 for Mode: ALT4"]
-    SELECT_GPIO_SD_B2_04_ALT4 = 0x02,
+    SelectGpioSdB204Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl KppIppIndRowSelectInput3Daisy {
@@ -2563,9 +2563,9 @@ impl From<KppIppIndRowSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndRowSelectInput4Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_11 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_11_ALT6 = 0x0,
+    SelectGpioEmcB111Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_18 for Mode: ALT3"]
-    SELECT_GPIO_AD_18_ALT3 = 0x01,
+    SelectGpioAd18Alt3 = 0x01,
 }
 impl KppIppIndRowSelectInput4Daisy {
     #[inline(always)]
@@ -2594,9 +2594,9 @@ impl From<KppIppIndRowSelectInput4Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndRowSelectInput5Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_09 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_09_ALT6 = 0x0,
+    SelectGpioEmcB109Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_16 for Mode: ALT3"]
-    SELECT_GPIO_AD_16_ALT3 = 0x01,
+    SelectGpioAd16Alt3 = 0x01,
 }
 impl KppIppIndRowSelectInput5Daisy {
     #[inline(always)]
@@ -2625,11 +2625,11 @@ impl From<KppIppIndRowSelectInput5Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndRowSelectInput6Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_07 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_07_ALT6 = 0x0,
+    SelectGpioEmcB107Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_14 for Mode: ALT3"]
-    SELECT_GPIO_AD_14_ALT3 = 0x01,
+    SelectGpioAd14Alt3 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B1_02 for Mode: ALT8"]
-    SELECT_GPIO_SD_B1_02_ALT8 = 0x02,
+    SelectGpioSdB102Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl KppIppIndRowSelectInput6Daisy {
@@ -2659,11 +2659,11 @@ impl From<KppIppIndRowSelectInput6Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KppIppIndRowSelectInput7Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_05 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_05_ALT6 = 0x0,
+    SelectGpioEmcB105Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_12 for Mode: ALT3"]
-    SELECT_GPIO_AD_12_ALT3 = 0x01,
+    SelectGpioAd12Alt3 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B1_00 for Mode: ALT8"]
-    SELECT_GPIO_SD_B1_00_ALT8 = 0x02,
+    SelectGpioSdB100Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl KppIppIndRowSelectInput7Daisy {
@@ -2693,11 +2693,11 @@ impl From<KppIppIndRowSelectInput7Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpi2c3IppIndLpi2cSclSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_00 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_00_ALT9 = 0x0,
+    SelectGpioEmcB200Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_19 for Mode: ALT8"]
-    SELECT_GPIO_EMC_B2_19_ALT8 = 0x01,
+    SelectGpioEmcB219Alt8 = 0x01,
     #[doc = "Selecting Pad: GPIO_AD_18 for Mode: ALT9"]
-    SELECT_GPIO_AD_18_ALT9 = 0x02,
+    SelectGpioAd18Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpi2c3IppIndLpi2cSclSelectInputDaisy {
@@ -2727,11 +2727,11 @@ impl From<Lpi2c3IppIndLpi2cSclSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpi2c3IppIndLpi2cSdaSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_01 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_01_ALT9 = 0x0,
+    SelectGpioEmcB201Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_20 for Mode: ALT8"]
-    SELECT_GPIO_EMC_B2_20_ALT8 = 0x01,
+    SelectGpioEmcB220Alt8 = 0x01,
     #[doc = "Selecting Pad: GPIO_AD_19 for Mode: ALT9"]
-    SELECT_GPIO_AD_19_ALT9 = 0x02,
+    SelectGpioAd19Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpi2c3IppIndLpi2cSdaSelectInputDaisy {
@@ -2761,9 +2761,9 @@ impl From<Lpi2c3IppIndLpi2cSdaSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpi2c4IppIndLpi2cSclSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_24 for Mode: ALT1"]
-    SELECT_GPIO_AD_24_ALT1 = 0x0,
+    SelectGpioAd24Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_10 for Mode: ALT6"]
-    SELECT_GPIO_B2_10_ALT6 = 0x01,
+    SelectGpioB210Alt6 = 0x01,
 }
 impl Lpi2c4IppIndLpi2cSclSelectInputDaisy {
     #[inline(always)]
@@ -2792,9 +2792,9 @@ impl From<Lpi2c4IppIndLpi2cSclSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpi2c4IppIndLpi2cSdaSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_25 for Mode: ALT1"]
-    SELECT_GPIO_AD_25_ALT1 = 0x0,
+    SelectGpioAd25Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_11 for Mode: ALT6"]
-    SELECT_GPIO_B2_11_ALT6 = 0x01,
+    SelectGpioB211Alt6 = 0x01,
 }
 impl Lpi2c4IppIndLpi2cSdaSelectInputDaisy {
     #[inline(always)]
@@ -2823,9 +2823,9 @@ impl From<Lpi2c4IppIndLpi2cSdaSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpi2c5IppIndLpi2cSclSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_08 for Mode: ALT1"]
-    SELECT_GPIO_AD_08_ALT1 = 0x0,
+    SelectGpioAd08Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_32 for Mode: ALT0"]
-    SELECT_GPIO_AD_32_ALT0 = 0x01,
+    SelectGpioAd32Alt0 = 0x01,
 }
 impl Lpi2c5IppIndLpi2cSclSelectInputDaisy {
     #[inline(always)]
@@ -2854,9 +2854,9 @@ impl From<Lpi2c5IppIndLpi2cSclSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpi2c5IppIndLpi2cSdaSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_09 for Mode: ALT1"]
-    SELECT_GPIO_AD_09_ALT1 = 0x0,
+    SelectGpioAd09Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_33 for Mode: ALT0"]
-    SELECT_GPIO_AD_33_ALT0 = 0x01,
+    SelectGpioAd33Alt0 = 0x01,
 }
 impl Lpi2c5IppIndLpi2cSdaSelectInputDaisy {
     #[inline(always)]
@@ -2885,9 +2885,9 @@ impl From<Lpi2c5IppIndLpi2cSdaSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpi2c6IppIndLpi2cSclSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_B1_02 for Mode: ALT2"]
-    SELECT_GPIO_B1_02_ALT2 = 0x0,
+    SelectGpioB102Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_08 for Mode: ALT6"]
-    SELECT_GPIO_B2_08_ALT6 = 0x01,
+    SelectGpioB208Alt6 = 0x01,
 }
 impl Lpi2c6IppIndLpi2cSclSelectInputDaisy {
     #[inline(always)]
@@ -2916,9 +2916,9 @@ impl From<Lpi2c6IppIndLpi2cSclSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpi2c6IppIndLpi2cSdaSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_B1_03 for Mode: ALT2"]
-    SELECT_GPIO_B1_03_ALT2 = 0x0,
+    SelectGpioB103Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_09 for Mode: ALT6"]
-    SELECT_GPIO_B2_09_ALT6 = 0x01,
+    SelectGpioB209Alt6 = 0x01,
 }
 impl Lpi2c6IppIndLpi2cSdaSelectInputDaisy {
     #[inline(always)]
@@ -2947,11 +2947,11 @@ impl From<Lpi2c6IppIndLpi2cSdaSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi3IppIndLpspiPcsSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_05 for Mode: ALT8"]
-    SELECT_GPIO_EMC_B2_05_ALT8 = 0x0,
+    SelectGpioEmcB205Alt8 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_17 for Mode: ALT7"]
-    SELECT_GPIO_AD_17_ALT7 = 0x01,
+    SelectGpioAd17Alt7 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B1_00 for Mode: ALT6"]
-    SELECT_GPIO_SD_B1_00_ALT6 = 0x02,
+    SelectGpioSdB100Alt6 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi3IppIndLpspiPcsSelectInput0Daisy {
@@ -2981,11 +2981,11 @@ impl From<Lpspi3IppIndLpspiPcsSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi3IppIndLpspiPcsSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_10 for Mode: ALT8"]
-    SELECT_GPIO_EMC_B2_10_ALT8 = 0x0,
+    SelectGpioEmcB210Alt8 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_15 for Mode: ALT7"]
-    SELECT_GPIO_AD_15_ALT7 = 0x01,
+    SelectGpioAd15Alt7 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B1_04 for Mode: ALT6"]
-    SELECT_GPIO_SD_B1_04_ALT6 = 0x02,
+    SelectGpioSdB104Alt6 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi3IppIndLpspiPcsSelectInput1Daisy {
@@ -3015,9 +3015,9 @@ impl From<Lpspi3IppIndLpspiPcsSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi3IppIndLpspiPcsSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_09 for Mode: ALT8"]
-    SELECT_GPIO_EMC_B2_09_ALT8 = 0x0,
+    SelectGpioEmcB209Alt8 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B1_05 for Mode: ALT6"]
-    SELECT_GPIO_SD_B1_05_ALT6 = 0x01,
+    SelectGpioSdB105Alt6 = 0x01,
 }
 impl Lpspi3IppIndLpspiPcsSelectInput2Daisy {
     #[inline(always)]
@@ -3046,9 +3046,9 @@ impl From<Lpspi3IppIndLpspiPcsSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi3IppIndLpspiPcsSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_08 for Mode: ALT8"]
-    SELECT_GPIO_EMC_B2_08_ALT8 = 0x0,
+    SelectGpioEmcB208Alt8 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_00 for Mode: ALT6"]
-    SELECT_GPIO_SD_B2_00_ALT6 = 0x01,
+    SelectGpioSdB200Alt6 = 0x01,
 }
 impl Lpspi3IppIndLpspiPcsSelectInput3Daisy {
     #[inline(always)]
@@ -3077,11 +3077,11 @@ impl From<Lpspi3IppIndLpspiPcsSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi3IppIndLpspiSckSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_04 for Mode: ALT8"]
-    SELECT_GPIO_EMC_B2_04_ALT8 = 0x0,
+    SelectGpioEmcB204Alt8 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_16 for Mode: ALT7"]
-    SELECT_GPIO_AD_16_ALT7 = 0x01,
+    SelectGpioAd16Alt7 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B1_01 for Mode: ALT6"]
-    SELECT_GPIO_SD_B1_01_ALT6 = 0x02,
+    SelectGpioSdB101Alt6 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi3IppIndLpspiSckSelectInputDaisy {
@@ -3111,11 +3111,11 @@ impl From<Lpspi3IppIndLpspiSckSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi3IppIndLpspiSdiSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_07 for Mode: ALT8"]
-    SELECT_GPIO_EMC_B2_07_ALT8 = 0x0,
+    SelectGpioEmcB207Alt8 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_19 for Mode: ALT7"]
-    SELECT_GPIO_AD_19_ALT7 = 0x01,
+    SelectGpioAd19Alt7 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B1_03 for Mode: ALT6"]
-    SELECT_GPIO_SD_B1_03_ALT6 = 0x02,
+    SelectGpioSdB103Alt6 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi3IppIndLpspiSdiSelectInputDaisy {
@@ -3145,11 +3145,11 @@ impl From<Lpspi3IppIndLpspiSdiSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi3IppIndLpspiSdoSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_06 for Mode: ALT8"]
-    SELECT_GPIO_EMC_B2_06_ALT8 = 0x0,
+    SelectGpioEmcB206Alt8 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_18 for Mode: ALT7"]
-    SELECT_GPIO_AD_18_ALT7 = 0x01,
+    SelectGpioAd18Alt7 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B1_02 for Mode: ALT6"]
-    SELECT_GPIO_SD_B1_02_ALT6 = 0x02,
+    SelectGpioSdB102Alt6 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi3IppIndLpspiSdoSelectInputDaisy {
@@ -3179,11 +3179,11 @@ impl From<Lpspi3IppIndLpspiSdoSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi4IppIndLpspiPcsSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_25 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_25_ALT3 = 0x0,
+    SelectGpioEmcB125Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_09 for Mode: ALT4"]
-    SELECT_GPIO_SD_B2_09_ALT4 = 0x01,
+    SelectGpioSdB209Alt4 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_13 for Mode: ALT9"]
-    SELECT_GPIO_B2_13_ALT9 = 0x02,
+    SelectGpioB213Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi4IppIndLpspiPcsSelectInput0Daisy {
@@ -3213,11 +3213,11 @@ impl From<Lpspi4IppIndLpspiPcsSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi4IppIndLpspiSckSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_22 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_22_ALT3 = 0x0,
+    SelectGpioEmcB122Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_08 for Mode: ALT4"]
-    SELECT_GPIO_SD_B2_08_ALT4 = 0x01,
+    SelectGpioSdB208Alt4 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_10 for Mode: ALT9"]
-    SELECT_GPIO_B2_10_ALT9 = 0x02,
+    SelectGpioB210Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi4IppIndLpspiSckSelectInputDaisy {
@@ -3247,11 +3247,11 @@ impl From<Lpspi4IppIndLpspiSckSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi4IppIndLpspiSdiSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_23 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_23_ALT3 = 0x0,
+    SelectGpioEmcB123Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_11 for Mode: ALT4"]
-    SELECT_GPIO_SD_B2_11_ALT4 = 0x01,
+    SelectGpioSdB211Alt4 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_11 for Mode: ALT9"]
-    SELECT_GPIO_B2_11_ALT9 = 0x02,
+    SelectGpioB211Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi4IppIndLpspiSdiSelectInputDaisy {
@@ -3281,11 +3281,11 @@ impl From<Lpspi4IppIndLpspiSdiSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi4IppIndLpspiSdoSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_24 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_24_ALT3 = 0x0,
+    SelectGpioEmcB124Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_10 for Mode: ALT4"]
-    SELECT_GPIO_SD_B2_10_ALT4 = 0x01,
+    SelectGpioSdB210Alt4 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_12 for Mode: ALT9"]
-    SELECT_GPIO_B2_12_ALT9 = 0x02,
+    SelectGpioB212Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi4IppIndLpspiSdoSelectInputDaisy {
@@ -3315,11 +3315,11 @@ impl From<Lpspi4IppIndLpspiSdoSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi5IppIndLpspiPcsSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_34 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_34_ALT10 = 0x0,
+    SelectGpioEmcB134Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_01 for Mode: ALT8"]
-    SELECT_GPIO_EMC_B2_01_ALT8 = 0x01,
+    SelectGpioEmcB201Alt8 = 0x01,
     #[doc = "Selecting Pad: GPIO_AD_29 for Mode: ALT0"]
-    SELECT_GPIO_AD_29_ALT0 = 0x02,
+    SelectGpioAd29Alt0 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi5IppIndLpspiPcsSelectInput0Daisy {
@@ -3349,11 +3349,11 @@ impl From<Lpspi5IppIndLpspiPcsSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi5IppIndLpspiPcsSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_35 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_35_ALT10 = 0x0,
+    SelectGpioEmcB135Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_13 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B2_13_ALT4 = 0x01,
+    SelectGpioEmcB213Alt4 = 0x01,
     #[doc = "Selecting Pad: GPIO_AD_27 for Mode: ALT2"]
-    SELECT_GPIO_AD_27_ALT2 = 0x02,
+    SelectGpioAd27Alt2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi5IppIndLpspiPcsSelectInput1Daisy {
@@ -3383,9 +3383,9 @@ impl From<Lpspi5IppIndLpspiPcsSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi5IppIndLpspiPcsSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_12 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B2_12_ALT4 = 0x0,
+    SelectGpioEmcB212Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_26 for Mode: ALT2"]
-    SELECT_GPIO_AD_26_ALT2 = 0x01,
+    SelectGpioAd26Alt2 = 0x01,
 }
 impl Lpspi5IppIndLpspiPcsSelectInput2Daisy {
     #[inline(always)]
@@ -3414,9 +3414,9 @@ impl From<Lpspi5IppIndLpspiPcsSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi5IppIndLpspiPcsSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_11 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B2_11_ALT4 = 0x0,
+    SelectGpioEmcB211Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_25 for Mode: ALT2"]
-    SELECT_GPIO_AD_25_ALT2 = 0x01,
+    SelectGpioAd25Alt2 = 0x01,
 }
 impl Lpspi5IppIndLpspiPcsSelectInput3Daisy {
     #[inline(always)]
@@ -3445,11 +3445,11 @@ impl From<Lpspi5IppIndLpspiPcsSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi5IppIndLpspiSckSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_31 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_31_ALT9 = 0x0,
+    SelectGpioEmcB131Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_00 for Mode: ALT8"]
-    SELECT_GPIO_EMC_B2_00_ALT8 = 0x01,
+    SelectGpioEmcB200Alt8 = 0x01,
     #[doc = "Selecting Pad: GPIO_AD_28 for Mode: ALT0"]
-    SELECT_GPIO_AD_28_ALT0 = 0x02,
+    SelectGpioAd28Alt0 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi5IppIndLpspiSckSelectInputDaisy {
@@ -3479,11 +3479,11 @@ impl From<Lpspi5IppIndLpspiSckSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi5IppIndLpspiSdiSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_33 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_33_ALT9 = 0x0,
+    SelectGpioEmcB133Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_03 for Mode: ALT8"]
-    SELECT_GPIO_EMC_B2_03_ALT8 = 0x01,
+    SelectGpioEmcB203Alt8 = 0x01,
     #[doc = "Selecting Pad: GPIO_AD_31 for Mode: ALT0"]
-    SELECT_GPIO_AD_31_ALT0 = 0x02,
+    SelectGpioAd31Alt0 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi5IppIndLpspiSdiSelectInputDaisy {
@@ -3513,11 +3513,11 @@ impl From<Lpspi5IppIndLpspiSdiSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi5IppIndLpspiSdoSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_32 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_32_ALT9 = 0x0,
+    SelectGpioEmcB132Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_02 for Mode: ALT8"]
-    SELECT_GPIO_EMC_B2_02_ALT8 = 0x01,
+    SelectGpioEmcB202Alt8 = 0x01,
     #[doc = "Selecting Pad: GPIO_AD_30 for Mode: ALT0"]
-    SELECT_GPIO_AD_30_ALT0 = 0x02,
+    SelectGpioAd30Alt0 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi5IppIndLpspiSdoSelectInputDaisy {
@@ -3547,11 +3547,11 @@ impl From<Lpspi5IppIndLpspiSdoSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi6IppIndLpspiPcsSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_21 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_21_ALT3 = 0x0,
+    SelectGpioEmcB121Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_29 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_29_ALT10 = 0x01,
+    SelectGpioEmcB129Alt10 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_12 for Mode: ALT9"]
-    SELECT_GPIO_B1_12_ALT9 = 0x02,
+    SelectGpioB112Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi6IppIndLpspiPcsSelectInput0Daisy {
@@ -3581,11 +3581,11 @@ impl From<Lpspi6IppIndLpspiPcsSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi6IppIndLpspiPcsSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_17 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_17_ALT10 = 0x0,
+    SelectGpioEmcB117Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_30 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_30_ALT10 = 0x01,
+    SelectGpioEmcB130Alt10 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_09 for Mode: ALT9"]
-    SELECT_GPIO_B1_09_ALT9 = 0x02,
+    SelectGpioB109Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi6IppIndLpspiPcsSelectInput1Daisy {
@@ -3615,11 +3615,11 @@ impl From<Lpspi6IppIndLpspiPcsSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi6IppIndLpspiPcsSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_16 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_16_ALT10 = 0x0,
+    SelectGpioEmcB116Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_31 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_31_ALT10 = 0x01,
+    SelectGpioEmcB131Alt10 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_10 for Mode: ALT9"]
-    SELECT_GPIO_B1_10_ALT9 = 0x02,
+    SelectGpioB110Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi6IppIndLpspiPcsSelectInput2Daisy {
@@ -3649,9 +3649,9 @@ impl From<Lpspi6IppIndLpspiPcsSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi6IppIndLpspiPcsSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_32 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_32_ALT10 = 0x0,
+    SelectGpioEmcB132Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_11 for Mode: ALT9"]
-    SELECT_GPIO_B1_11_ALT9 = 0x01,
+    SelectGpioB111Alt9 = 0x01,
 }
 impl Lpspi6IppIndLpspiPcsSelectInput3Daisy {
     #[inline(always)]
@@ -3680,11 +3680,11 @@ impl From<Lpspi6IppIndLpspiPcsSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi6IppIndLpspiSckSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_18 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_18_ALT3 = 0x0,
+    SelectGpioEmcB118Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_26 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_26_ALT10 = 0x01,
+    SelectGpioEmcB126Alt10 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_13 for Mode: ALT9"]
-    SELECT_GPIO_B1_13_ALT9 = 0x02,
+    SelectGpioB113Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpspi6IppIndLpspiSckSelectInputDaisy {
@@ -3714,13 +3714,13 @@ impl From<Lpspi6IppIndLpspiSckSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi6IppIndLpspiSdiSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_19 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_19_ALT3 = 0x0,
+    SelectGpioEmcB119Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_27 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_27_ALT10 = 0x01,
+    SelectGpioEmcB127Alt10 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_07 for Mode: ALT9"]
-    SELECT_GPIO_B1_07_ALT9 = 0x02,
+    SelectGpioB107Alt9 = 0x02,
     #[doc = "Selecting Pad: GPIO_B2_00 for Mode: ALT9"]
-    SELECT_GPIO_B2_00_ALT9 = 0x03,
+    SelectGpioB200Alt9 = 0x03,
 }
 impl Lpspi6IppIndLpspiSdiSelectInputDaisy {
     #[inline(always)]
@@ -3749,13 +3749,13 @@ impl From<Lpspi6IppIndLpspiSdiSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpspi6IppIndLpspiSdoSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_20 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_20_ALT3 = 0x0,
+    SelectGpioEmcB120Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_28 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_28_ALT10 = 0x01,
+    SelectGpioEmcB128Alt10 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_08 for Mode: ALT9"]
-    SELECT_GPIO_B1_08_ALT9 = 0x02,
+    SelectGpioB108Alt9 = 0x02,
     #[doc = "Selecting Pad: GPIO_B2_01 for Mode: ALT9"]
-    SELECT_GPIO_B2_01_ALT9 = 0x03,
+    SelectGpioB201Alt9 = 0x03,
 }
 impl Lpspi6IppIndLpspiSdoSelectInputDaisy {
     #[inline(always)]
@@ -3784,9 +3784,9 @@ impl From<Lpspi6IppIndLpspiSdoSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart10IppIndLpuartRxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_16 for Mode: ALT1"]
-    SELECT_GPIO_AD_16_ALT1 = 0x0,
+    SelectGpioAd16Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_33 for Mode: ALT8"]
-    SELECT_GPIO_AD_33_ALT8 = 0x01,
+    SelectGpioAd33Alt8 = 0x01,
 }
 impl Lpuart10IppIndLpuartRxdSelectInputDaisy {
     #[inline(always)]
@@ -3815,9 +3815,9 @@ impl From<Lpuart10IppIndLpuartRxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart10IppIndLpuartTxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_15 for Mode: ALT1"]
-    SELECT_GPIO_AD_15_ALT1 = 0x0,
+    SelectGpioAd15Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_32 for Mode: ALT8"]
-    SELECT_GPIO_AD_32_ALT8 = 0x01,
+    SelectGpioAd32Alt8 = 0x01,
 }
 impl Lpuart10IppIndLpuartTxdSelectInputDaisy {
     #[inline(always)]
@@ -3846,11 +3846,11 @@ impl From<Lpuart10IppIndLpuartTxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart11IppIndLpuartRxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_14 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B2_14_ALT2 = 0x0,
+    SelectGpioEmcB214Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_03 for Mode: ALT9"]
-    SELECT_GPIO_B1_03_ALT9 = 0x01,
+    SelectGpioB103Alt9 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_07 for Mode: ALT9"]
-    SELECT_GPIO_B2_07_ALT9 = 0x02,
+    SelectGpioB207Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpuart11IppIndLpuartRxdSelectInputDaisy {
@@ -3880,11 +3880,11 @@ impl From<Lpuart11IppIndLpuartRxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart11IppIndLpuartTxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_13 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B2_13_ALT2 = 0x0,
+    SelectGpioEmcB213Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_02 for Mode: ALT9"]
-    SELECT_GPIO_B1_02_ALT9 = 0x01,
+    SelectGpioB102Alt9 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_06 for Mode: ALT9"]
-    SELECT_GPIO_B2_06_ALT9 = 0x02,
+    SelectGpioB206Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpuart11IppIndLpuartTxdSelectInputDaisy {
@@ -3914,9 +3914,9 @@ impl From<Lpuart11IppIndLpuartTxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart3IppIndLpuartCtsNSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_00 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_00_ALT3 = 0x0,
+    SelectGpioEmcB100Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_15 for Mode: ALT6"]
-    SELECT_GPIO_AD_15_ALT6 = 0x01,
+    SelectGpioAd15Alt6 = 0x01,
 }
 impl Lpuart3IppIndLpuartCtsNSelectInputDaisy {
     #[inline(always)]
@@ -3945,9 +3945,9 @@ impl From<Lpuart3IppIndLpuartCtsNSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart3IppIndLpuartRxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_02 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_02_ALT3 = 0x0,
+    SelectGpioEmcB102Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_14 for Mode: ALT6"]
-    SELECT_GPIO_AD_14_ALT6 = 0x01,
+    SelectGpioAd14Alt6 = 0x01,
 }
 impl Lpuart3IppIndLpuartRxdSelectInputDaisy {
     #[inline(always)]
@@ -3976,9 +3976,9 @@ impl From<Lpuart3IppIndLpuartRxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart3IppIndLpuartTxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_03 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_03_ALT3 = 0x0,
+    SelectGpioEmcB103Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_13 for Mode: ALT6"]
-    SELECT_GPIO_AD_13_ALT6 = 0x01,
+    SelectGpioAd13Alt6 = 0x01,
 }
 impl Lpuart3IppIndLpuartTxdSelectInputDaisy {
     #[inline(always)]
@@ -4007,9 +4007,9 @@ impl From<Lpuart3IppIndLpuartTxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart4IppIndLpuartCtsNSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_14 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_14_ALT10 = 0x0,
+    SelectGpioEmcB114Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_21 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_21_ALT9 = 0x01,
+    SelectGpioEmcB121Alt9 = 0x01,
 }
 impl Lpuart4IppIndLpuartCtsNSelectInputDaisy {
     #[inline(always)]
@@ -4038,11 +4038,11 @@ impl From<Lpuart4IppIndLpuartCtsNSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart5IppIndLpuartCtsNSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_37 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_37_ALT2 = 0x0,
+    SelectGpioEmcB137Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_19 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B2_19_ALT2 = 0x01,
+    SelectGpioEmcB219Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B2_06 for Mode: ALT6"]
-    SELECT_GPIO_SD_B2_06_ALT6 = 0x02,
+    SelectGpioSdB206Alt6 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpuart5IppIndLpuartCtsNSelectInputDaisy {
@@ -4072,9 +4072,9 @@ impl From<Lpuart5IppIndLpuartCtsNSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart5IppIndLpuartDcdNSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_15 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B2_15_ALT4 = 0x0,
+    SelectGpioEmcB215Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_10 for Mode: ALT6"]
-    SELECT_GPIO_SD_B2_10_ALT6 = 0x01,
+    SelectGpioSdB210Alt6 = 0x01,
 }
 impl Lpuart5IppIndLpuartDcdNSelectInputDaisy {
     #[inline(always)]
@@ -4103,9 +4103,9 @@ impl From<Lpuart5IppIndLpuartDcdNSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart5IppIndLpuartDsrNSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_14 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B2_14_ALT4 = 0x0,
+    SelectGpioEmcB214Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_11 for Mode: ALT6"]
-    SELECT_GPIO_SD_B2_11_ALT6 = 0x01,
+    SelectGpioSdB211Alt6 = 0x01,
 }
 impl Lpuart5IppIndLpuartDsrNSelectInputDaisy {
     #[inline(always)]
@@ -4134,9 +4134,9 @@ impl From<Lpuart5IppIndLpuartDsrNSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart5IppIndLpuartRiNSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_18 for Mode: ALT2"]
-    SELECT_GPIO_AD_18_ALT2 = 0x0,
+    SelectGpioAd18Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_04 for Mode: ALT6"]
-    SELECT_GPIO_SD_B2_04_ALT6 = 0x01,
+    SelectGpioSdB204Alt6 = 0x01,
 }
 impl Lpuart5IppIndLpuartRiNSelectInputDaisy {
     #[inline(always)]
@@ -4165,15 +4165,15 @@ impl From<Lpuart5IppIndLpuartRiNSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart5IppIndLpuartRxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_15 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_15_ALT2 = 0x0,
+    SelectGpioEmcB115Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_36 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_36_ALT2 = 0x01,
+    SelectGpioEmcB136Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_EMC_B2_18 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B2_18_ALT2 = 0x02,
+    SelectGpioEmcB218Alt2 = 0x02,
     #[doc = "Selecting Pad: GPIO_AD_27 for Mode: ALT1"]
-    SELECT_GPIO_AD_27_ALT1 = 0x03,
+    SelectGpioAd27Alt1 = 0x03,
     #[doc = "Selecting Pad: GPIO_SD_B2_09 for Mode: ALT6"]
-    SELECT_GPIO_SD_B2_09_ALT6 = 0x04,
+    SelectGpioSdB209Alt6 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
@@ -4205,15 +4205,15 @@ impl From<Lpuart5IppIndLpuartRxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart5IppIndLpuartTxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_14 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_14_ALT2 = 0x0,
+    SelectGpioEmcB114Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_35 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_35_ALT2 = 0x01,
+    SelectGpioEmcB135Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_EMC_B2_17 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B2_17_ALT2 = 0x02,
+    SelectGpioEmcB217Alt2 = 0x02,
     #[doc = "Selecting Pad: GPIO_AD_26 for Mode: ALT1"]
-    SELECT_GPIO_AD_26_ALT1 = 0x03,
+    SelectGpioAd26Alt1 = 0x03,
     #[doc = "Selecting Pad: GPIO_SD_B2_08 for Mode: ALT6"]
-    SELECT_GPIO_SD_B2_08_ALT6 = 0x04,
+    SelectGpioSdB208Alt6 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
@@ -4245,11 +4245,11 @@ impl From<Lpuart5IppIndLpuartTxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart6IppIndLpuartCtsNSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_33 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_33_ALT2 = 0x0,
+    SelectGpioEmcB133Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_26 for Mode: ALT0"]
-    SELECT_GPIO_AD_26_ALT0 = 0x01,
+    SelectGpioAd26Alt0 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_12 for Mode: ALT4"]
-    SELECT_GPIO_B2_12_ALT4 = 0x02,
+    SelectGpioB212Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpuart6IppIndLpuartCtsNSelectInputDaisy {
@@ -4279,9 +4279,9 @@ impl From<Lpuart6IppIndLpuartCtsNSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart6IppIndLpuartDcdNSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_29 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_29_ALT9 = 0x0,
+    SelectGpioEmcB129Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_07 for Mode: ALT3"]
-    SELECT_GPIO_B2_07_ALT3 = 0x01,
+    SelectGpioB207Alt3 = 0x01,
 }
 impl Lpuart6IppIndLpuartDcdNSelectInputDaisy {
     #[inline(always)]
@@ -4310,9 +4310,9 @@ impl From<Lpuart6IppIndLpuartDcdNSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart6IppIndLpuartDsrNSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_30 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_30_ALT9 = 0x0,
+    SelectGpioEmcB130Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_06 for Mode: ALT3"]
-    SELECT_GPIO_B2_06_ALT3 = 0x01,
+    SelectGpioB206Alt3 = 0x01,
 }
 impl Lpuart6IppIndLpuartDsrNSelectInputDaisy {
     #[inline(always)]
@@ -4341,9 +4341,9 @@ impl From<Lpuart6IppIndLpuartDsrNSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart6IppIndLpuartRiNSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_27 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_27_ALT9 = 0x0,
+    SelectGpioEmcB127Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_08 for Mode: ALT4"]
-    SELECT_GPIO_B2_08_ALT4 = 0x01,
+    SelectGpioB208Alt4 = 0x01,
 }
 impl Lpuart6IppIndLpuartRiNSelectInputDaisy {
     #[inline(always)]
@@ -4372,11 +4372,11 @@ impl From<Lpuart6IppIndLpuartRiNSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart6IppIndLpuartRxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_32 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_32_ALT2 = 0x0,
+    SelectGpioEmcB132Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_25 for Mode: ALT0"]
-    SELECT_GPIO_AD_25_ALT0 = 0x01,
+    SelectGpioAd25Alt0 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_11 for Mode: ALT4"]
-    SELECT_GPIO_B2_11_ALT4 = 0x02,
+    SelectGpioB211Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpuart6IppIndLpuartRxdSelectInputDaisy {
@@ -4406,11 +4406,11 @@ impl From<Lpuart6IppIndLpuartRxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart6IppIndLpuartTxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_31 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_31_ALT2 = 0x0,
+    SelectGpioEmcB131Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_24 for Mode: ALT0"]
-    SELECT_GPIO_AD_24_ALT0 = 0x01,
+    SelectGpioAd24Alt0 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_10 for Mode: ALT4"]
-    SELECT_GPIO_B2_10_ALT4 = 0x02,
+    SelectGpioB210Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpuart6IppIndLpuartTxdSelectInputDaisy {
@@ -4440,9 +4440,9 @@ impl From<Lpuart6IppIndLpuartTxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart8IppIndLpuartCtsNSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_02 for Mode: ALT9"]
-    SELECT_GPIO_SD_B2_02_ALT9 = 0x0,
+    SelectGpioSdB202Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_10 for Mode: ALT3"]
-    SELECT_GPIO_B2_10_ALT3 = 0x01,
+    SelectGpioB210Alt3 = 0x01,
 }
 impl Lpuart8IppIndLpuartCtsNSelectInputDaisy {
     #[inline(always)]
@@ -4471,11 +4471,11 @@ impl From<Lpuart8IppIndLpuartCtsNSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart8IppIndLpuartRxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_31 for Mode: ALT4"]
-    SELECT_GPIO_AD_31_ALT4 = 0x0,
+    SelectGpioAd31Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_01 for Mode: ALT9"]
-    SELECT_GPIO_SD_B2_01_ALT9 = 0x01,
+    SelectGpioSdB201Alt9 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_13 for Mode: ALT2"]
-    SELECT_GPIO_B2_13_ALT2 = 0x02,
+    SelectGpioB213Alt2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpuart8IppIndLpuartRxdSelectInputDaisy {
@@ -4505,11 +4505,11 @@ impl From<Lpuart8IppIndLpuartRxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart8IppIndLpuartTxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_30 for Mode: ALT4"]
-    SELECT_GPIO_AD_30_ALT4 = 0x0,
+    SelectGpioAd30Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_00 for Mode: ALT9"]
-    SELECT_GPIO_SD_B2_00_ALT9 = 0x01,
+    SelectGpioSdB200Alt9 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_12 for Mode: ALT2"]
-    SELECT_GPIO_B2_12_ALT2 = 0x02,
+    SelectGpioB212Alt2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Lpuart8IppIndLpuartTxdSelectInputDaisy {
@@ -4539,9 +4539,9 @@ impl From<Lpuart8IppIndLpuartTxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart9IppIndLpuartRxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_17 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_17_ALT2 = 0x0,
+    SelectGpioEmcB117Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_04 for Mode: ALT2"]
-    SELECT_GPIO_B1_04_ALT2 = 0x01,
+    SelectGpioB104Alt2 = 0x01,
 }
 impl Lpuart9IppIndLpuartRxdSelectInputDaisy {
     #[inline(always)]
@@ -4570,9 +4570,9 @@ impl From<Lpuart9IppIndLpuartRxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpuart9IppIndLpuartTxdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_16 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_16_ALT2 = 0x0,
+    SelectGpioEmcB116Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_06 for Mode: ALT2"]
-    SELECT_GPIO_B1_06_ALT2 = 0x01,
+    SelectGpioB106Alt2 = 0x01,
 }
 impl Lpuart9IppIndLpuartTxdSelectInputDaisy {
     #[inline(always)]
@@ -4601,13 +4601,13 @@ impl From<Lpuart9IppIndLpuartTxdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MicIppIndMicPdmBitstreamSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_AD_01 for Mode: ALT2"]
-    SELECT_GPIO_AD_01_ALT2 = 0x0,
+    SelectGpioAd01Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_28 for Mode: ALT12"]
-    SELECT_GPIO_AD_28_ALT12 = 0x01,
+    SelectGpioAd28Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B2_00 for Mode: ALT12"]
-    SELECT_GPIO_SD_B2_00_ALT12 = 0x02,
+    SelectGpioSdB200Alt12 = 0x02,
     #[doc = "Selecting Pad: GPIO_B2_10 for Mode: ALT0"]
-    SELECT_GPIO_B2_10_ALT0 = 0x03,
+    SelectGpioB210Alt0 = 0x03,
 }
 impl MicIppIndMicPdmBitstreamSelectInput0Daisy {
     #[inline(always)]
@@ -4636,13 +4636,13 @@ impl From<MicIppIndMicPdmBitstreamSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MicIppIndMicPdmBitstreamSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_AD_02 for Mode: ALT2"]
-    SELECT_GPIO_AD_02_ALT2 = 0x0,
+    SelectGpioAd02Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_29 for Mode: ALT12"]
-    SELECT_GPIO_AD_29_ALT12 = 0x01,
+    SelectGpioAd29Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B2_01 for Mode: ALT12"]
-    SELECT_GPIO_SD_B2_01_ALT12 = 0x02,
+    SelectGpioSdB201Alt12 = 0x02,
     #[doc = "Selecting Pad: GPIO_B2_11 for Mode: ALT0"]
-    SELECT_GPIO_B2_11_ALT0 = 0x03,
+    SelectGpioB211Alt0 = 0x03,
 }
 impl MicIppIndMicPdmBitstreamSelectInput1Daisy {
     #[inline(always)]
@@ -4671,13 +4671,13 @@ impl From<MicIppIndMicPdmBitstreamSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MicIppIndMicPdmBitstreamSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_AD_03 for Mode: ALT2"]
-    SELECT_GPIO_AD_03_ALT2 = 0x0,
+    SelectGpioAd03Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_26 for Mode: ALT12"]
-    SELECT_GPIO_AD_26_ALT12 = 0x01,
+    SelectGpioAd26Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B2_02 for Mode: ALT12"]
-    SELECT_GPIO_SD_B2_02_ALT12 = 0x02,
+    SelectGpioSdB202Alt12 = 0x02,
     #[doc = "Selecting Pad: GPIO_B2_12 for Mode: ALT0"]
-    SELECT_GPIO_B2_12_ALT0 = 0x03,
+    SelectGpioB212Alt0 = 0x03,
 }
 impl MicIppIndMicPdmBitstreamSelectInput2Daisy {
     #[inline(always)]
@@ -4706,13 +4706,13 @@ impl From<MicIppIndMicPdmBitstreamSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MicIppIndMicPdmBitstreamSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_AD_04 for Mode: ALT2"]
-    SELECT_GPIO_AD_04_ALT2 = 0x0,
+    SelectGpioAd04Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_32 for Mode: ALT12"]
-    SELECT_GPIO_AD_32_ALT12 = 0x01,
+    SelectGpioAd32Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B2_03 for Mode: ALT12"]
-    SELECT_GPIO_SD_B2_03_ALT12 = 0x02,
+    SelectGpioSdB203Alt12 = 0x02,
     #[doc = "Selecting Pad: GPIO_B2_13 for Mode: ALT0"]
-    SELECT_GPIO_B2_13_ALT0 = 0x03,
+    SelectGpioB213Alt0 = 0x03,
 }
 impl MicIppIndMicPdmBitstreamSelectInput3Daisy {
     #[inline(always)]
@@ -4741,9 +4741,9 @@ impl From<MicIppIndMicPdmBitstreamSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcClkgenIppTmrClkSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_20 for Mode: ALT7"]
-    SELECT_GPIO_AD_20_ALT7 = 0x0,
+    SelectGpioAd20Alt7 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_00 for Mode: ALT8"]
-    SELECT_GPIO_SD_B2_00_ALT8 = 0x01,
+    SelectGpioSdB200Alt8 = 0x01,
 }
 impl NetcClkgenIppTmrClkSelectInputDaisy {
     #[inline(always)]
@@ -4772,21 +4772,21 @@ impl From<NetcClkgenIppTmrClkSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcEmdioInSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_19 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_19_ALT10 = 0x0,
+    SelectGpioEmcB119Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_41 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B1_41_ALT1 = 0x01,
+    SelectGpioEmcB141Alt1 = 0x01,
     #[doc = "Selecting Pad: GPIO_EMC_B2_01 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B2_01_ALT3 = 0x02,
+    SelectGpioEmcB201Alt3 = 0x02,
     #[doc = "Selecting Pad: GPIO_EMC_B2_20 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B2_20_ALT4 = 0x03,
+    SelectGpioEmcB220Alt4 = 0x03,
     #[doc = "Selecting Pad: GPIO_AD_31 for Mode: ALT7"]
-    SELECT_GPIO_AD_31_ALT7 = 0x04,
+    SelectGpioAd31Alt7 = 0x04,
     #[doc = "Selecting Pad: GPIO_SD_B2_10 for Mode: ALT10"]
-    SELECT_GPIO_SD_B2_10_ALT10 = 0x05,
+    SelectGpioSdB210Alt10 = 0x05,
     #[doc = "Selecting Pad: GPIO_B1_12 for Mode: ALT1"]
-    SELECT_GPIO_B1_12_ALT1 = 0x06,
+    SelectGpioB112Alt1 = 0x06,
     #[doc = "Selecting Pad: GPIO_B2_02 for Mode: ALT3"]
-    SELECT_GPIO_B2_02_ALT3 = 0x07,
+    SelectGpioB202Alt3 = 0x07,
 }
 impl NetcEmdioInSelectInputDaisy {
     #[inline(always)]
@@ -4815,9 +4815,9 @@ impl From<NetcEmdioInSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcEth2ColSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_19 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_19_ALT4 = 0x0,
+    SelectGpioEmcB119Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_41 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_41_ALT4 = 0x01,
+    SelectGpioEmcB141Alt4 = 0x01,
 }
 impl NetcEth2ColSelectInputDaisy {
     #[inline(always)]
@@ -4846,9 +4846,9 @@ impl From<NetcEth2ColSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcEth2CrsSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_18 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_18_ALT4 = 0x0,
+    SelectGpioEmcB118Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_40 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_40_ALT4 = 0x01,
+    SelectGpioEmcB140Alt4 = 0x01,
 }
 impl NetcEth2CrsSelectInputDaisy {
     #[inline(always)]
@@ -4877,11 +4877,11 @@ impl From<NetcEth2CrsSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcEth2SlvMdcInSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_16 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_16_ALT9 = 0x0,
+    SelectGpioEmcB116Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_40 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_40_ALT2 = 0x01,
+    SelectGpioEmcB140Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_01 for Mode: ALT10"]
-    SELECT_GPIO_B2_01_ALT10 = 0x02,
+    SelectGpioB201Alt10 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcEth2SlvMdcInSelectInputDaisy {
@@ -4911,11 +4911,11 @@ impl From<NetcEth2SlvMdcInSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcEth2SlvMdioInSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_17 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_17_ALT9 = 0x0,
+    SelectGpioEmcB117Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_41 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_41_ALT2 = 0x01,
+    SelectGpioEmcB141Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_00 for Mode: ALT10"]
-    SELECT_GPIO_B2_00_ALT10 = 0x02,
+    SelectGpioB200Alt10 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcEth2SlvMdioInSelectInputDaisy {
@@ -4945,9 +4945,9 @@ impl From<NetcEth2SlvMdioInSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcEth3ColSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_15 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_15_ALT4 = 0x0,
+    SelectGpioEmcB115Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_04 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_04_ALT9 = 0x01,
+    SelectGpioEmcB204Alt9 = 0x01,
 }
 impl NetcEth3ColSelectInputDaisy {
     #[inline(always)]
@@ -4976,9 +4976,9 @@ impl From<NetcEth3ColSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcEth3CrsSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_14 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_14_ALT4 = 0x0,
+    SelectGpioEmcB114Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_03 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_03_ALT9 = 0x01,
+    SelectGpioEmcB203Alt9 = 0x01,
 }
 impl NetcEth3CrsSelectInputDaisy {
     #[inline(always)]
@@ -5007,11 +5007,11 @@ impl From<NetcEth3CrsSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcEth3SlvMdcInSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_16 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_16_ALT4 = 0x0,
+    SelectGpioEmcB116Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_24 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_24_ALT9 = 0x01,
+    SelectGpioEmcB124Alt9 = 0x01,
     #[doc = "Selecting Pad: GPIO_EMC_B2_19 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_19_ALT9 = 0x02,
+    SelectGpioEmcB219Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcEth3SlvMdcInSelectInputDaisy {
@@ -5041,11 +5041,11 @@ impl From<NetcEth3SlvMdcInSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcEth3SlvMdioInSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_17 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_17_ALT4 = 0x0,
+    SelectGpioEmcB117Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_25 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_25_ALT9 = 0x01,
+    SelectGpioEmcB125Alt9 = 0x01,
     #[doc = "Selecting Pad: GPIO_EMC_B2_20 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_20_ALT9 = 0x02,
+    SelectGpioEmcB220Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcEth3SlvMdioInSelectInputDaisy {
@@ -5075,11 +5075,11 @@ impl From<NetcEth3SlvMdioInSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcEth4ColSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_15 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_15_ALT9 = 0x0,
+    SelectGpioEmcB115Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_06 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B2_06_ALT4 = 0x01,
+    SelectGpioEmcB206Alt4 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_01 for Mode: ALT8"]
-    SELECT_GPIO_B2_01_ALT8 = 0x02,
+    SelectGpioB201Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcEth4ColSelectInputDaisy {
@@ -5109,11 +5109,11 @@ impl From<NetcEth4ColSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcEth4CrsSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_14 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_14_ALT9 = 0x0,
+    SelectGpioEmcB114Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_05 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B2_05_ALT4 = 0x01,
+    SelectGpioEmcB205Alt4 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_00 for Mode: ALT8"]
-    SELECT_GPIO_B2_00_ALT8 = 0x02,
+    SelectGpioB200Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcEth4CrsSelectInputDaisy {
@@ -5143,9 +5143,9 @@ impl From<NetcEth4CrsSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcEth4SlvMdcInSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_16 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_16_ALT6 = 0x0,
+    SelectGpioEmcB116Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_05 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B2_05_ALT1 = 0x01,
+    SelectGpioEmcB205Alt1 = 0x01,
 }
 impl NetcEth4SlvMdcInSelectInputDaisy {
     #[inline(always)]
@@ -5174,9 +5174,9 @@ impl From<NetcEth4SlvMdcInSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcEth4SlvMdioInSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_17 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_17_ALT6 = 0x0,
+    SelectGpioEmcB117Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_06 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B2_06_ALT1 = 0x01,
+    SelectGpioEmcB206Alt1 = 0x01,
 }
 impl NetcEth4SlvMdioInSelectInputDaisy {
     #[inline(always)]
@@ -5205,9 +5205,9 @@ impl From<NetcEth4SlvMdioInSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth0RxClkSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_00 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B2_00_ALT4 = 0x0,
+    SelectGpioEmcB200Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_15 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B2_15_ALT3 = 0x01,
+    SelectGpioEmcB215Alt3 = 0x01,
 }
 impl NetcPinmuxIppIndEth0RxClkSelectInputDaisy {
     #[inline(always)]
@@ -5236,9 +5236,9 @@ impl From<NetcPinmuxIppIndEth0RxClkSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth0RxDvSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_40 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_40_ALT9 = 0x0,
+    SelectGpioEmcB140Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_11 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B2_11_ALT3 = 0x01,
+    SelectGpioEmcB211Alt3 = 0x01,
 }
 impl NetcPinmuxIppIndEth0RxDvSelectInputDaisy {
     #[inline(always)]
@@ -5267,9 +5267,9 @@ impl From<NetcPinmuxIppIndEth0RxDvSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth0RxErSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_41 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_41_ALT9 = 0x0,
+    SelectGpioEmcB141Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_12 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B2_12_ALT3 = 0x01,
+    SelectGpioEmcB212Alt3 = 0x01,
 }
 impl NetcPinmuxIppIndEth0RxErSelectInputDaisy {
     #[inline(always)]
@@ -5298,9 +5298,9 @@ impl From<NetcPinmuxIppIndEth0RxErSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth0RxdSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_38 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_38_ALT9 = 0x0,
+    SelectGpioEmcB138Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_09 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B2_09_ALT3 = 0x01,
+    SelectGpioEmcB209Alt3 = 0x01,
 }
 impl NetcPinmuxIppIndEth0RxdSelectInput0Daisy {
     #[inline(always)]
@@ -5329,9 +5329,9 @@ impl From<NetcPinmuxIppIndEth0RxdSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth0RxdSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_39 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_39_ALT9 = 0x0,
+    SelectGpioEmcB139Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_10 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B2_10_ALT3 = 0x01,
+    SelectGpioEmcB210Alt3 = 0x01,
 }
 impl NetcPinmuxIppIndEth0RxdSelectInput1Daisy {
     #[inline(always)]
@@ -5360,9 +5360,9 @@ impl From<NetcPinmuxIppIndEth0RxdSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth0RxdSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_01 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B2_01_ALT4 = 0x0,
+    SelectGpioEmcB201Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_16 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B2_16_ALT3 = 0x01,
+    SelectGpioEmcB216Alt3 = 0x01,
 }
 impl NetcPinmuxIppIndEth0RxdSelectInput2Daisy {
     #[inline(always)]
@@ -5391,9 +5391,9 @@ impl From<NetcPinmuxIppIndEth0RxdSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth0RxdSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_02 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B2_02_ALT4 = 0x0,
+    SelectGpioEmcB202Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_17 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B2_17_ALT3 = 0x01,
+    SelectGpioEmcB217Alt3 = 0x01,
 }
 impl NetcPinmuxIppIndEth0RxdSelectInput3Daisy {
     #[inline(always)]
@@ -5422,9 +5422,9 @@ impl From<NetcPinmuxIppIndEth0RxdSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth0TxClkSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_37 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_37_ALT9 = 0x0,
+    SelectGpioEmcB137Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_08 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B2_08_ALT3 = 0x01,
+    SelectGpioEmcB208Alt3 = 0x01,
 }
 impl NetcPinmuxIppIndEth0TxClkSelectInputDaisy {
     #[inline(always)]
@@ -5453,13 +5453,13 @@ impl From<NetcPinmuxIppIndEth0TxClkSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth2RxClkSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_21 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_21_ALT4 = 0x0,
+    SelectGpioEmcB121Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_33 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_33_ALT10 = 0x01,
+    SelectGpioEmcB133Alt10 = 0x01,
     #[doc = "Selecting Pad: GPIO_EMC_B1_38 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_38_ALT4 = 0x02,
+    SelectGpioEmcB138Alt4 = 0x02,
     #[doc = "Selecting Pad: GPIO_B2_13 for Mode: ALT11"]
-    SELECT_GPIO_B2_13_ALT11 = 0x03,
+    SelectGpioB213Alt11 = 0x03,
 }
 impl NetcPinmuxIppIndEth2RxClkSelectInputDaisy {
     #[inline(always)]
@@ -5488,11 +5488,11 @@ impl From<NetcPinmuxIppIndEth2RxClkSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth2RxDvSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_13 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_13_ALT3 = 0x0,
+    SelectGpioEmcB113Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_32 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_32_ALT4 = 0x01,
+    SelectGpioEmcB132Alt4 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_12 for Mode: ALT11"]
-    SELECT_GPIO_B2_12_ALT11 = 0x02,
+    SelectGpioB212Alt11 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth2RxDvSelectInputDaisy {
@@ -5522,9 +5522,9 @@ impl From<NetcPinmuxIppIndEth2RxDvSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth2RxErSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_33 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_33_ALT4 = 0x0,
+    SelectGpioEmcB133Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_01 for Mode: ALT11"]
-    SELECT_GPIO_B2_01_ALT11 = 0x01,
+    SelectGpioB201Alt11 = 0x01,
 }
 impl NetcPinmuxIppIndEth2RxErSelectInputDaisy {
     #[inline(always)]
@@ -5553,11 +5553,11 @@ impl From<NetcPinmuxIppIndEth2RxErSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth2RxdSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_16 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_16_ALT3 = 0x0,
+    SelectGpioEmcB116Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_30 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_30_ALT4 = 0x01,
+    SelectGpioEmcB130Alt4 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_10 for Mode: ALT11"]
-    SELECT_GPIO_B2_10_ALT11 = 0x02,
+    SelectGpioB210Alt11 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth2RxdSelectInput0Daisy {
@@ -5587,11 +5587,11 @@ impl From<NetcPinmuxIppIndEth2RxdSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth2RxdSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_17 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_17_ALT3 = 0x0,
+    SelectGpioEmcB117Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_31 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_31_ALT4 = 0x01,
+    SelectGpioEmcB131Alt4 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_11 for Mode: ALT11"]
-    SELECT_GPIO_B2_11_ALT11 = 0x02,
+    SelectGpioB211Alt11 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth2RxdSelectInput1Daisy {
@@ -5621,11 +5621,11 @@ impl From<NetcPinmuxIppIndEth2RxdSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth2RxdSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_22 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_22_ALT4 = 0x0,
+    SelectGpioEmcB122Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_34 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_34_ALT4 = 0x01,
+    SelectGpioEmcB134Alt4 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_02 for Mode: ALT11"]
-    SELECT_GPIO_B2_02_ALT11 = 0x02,
+    SelectGpioB202Alt11 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth2RxdSelectInput2Daisy {
@@ -5655,11 +5655,11 @@ impl From<NetcPinmuxIppIndEth2RxdSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth2RxdSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_23 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_23_ALT4 = 0x0,
+    SelectGpioEmcB123Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_35 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_35_ALT4 = 0x01,
+    SelectGpioEmcB135Alt4 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_03 for Mode: ALT11"]
-    SELECT_GPIO_B2_03_ALT11 = 0x02,
+    SelectGpioB203Alt11 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth2RxdSelectInput3Daisy {
@@ -5689,11 +5689,11 @@ impl From<NetcPinmuxIppIndEth2RxdSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth2TxClkSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_15 for Mode: ALT3"]
-    SELECT_GPIO_EMC_B1_15_ALT3 = 0x0,
+    SelectGpioEmcB115Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B1_29 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_29_ALT4 = 0x01,
+    SelectGpioEmcB129Alt4 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_09 for Mode: ALT11"]
-    SELECT_GPIO_B2_09_ALT11 = 0x02,
+    SelectGpioB209Alt11 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth2TxClkSelectInputDaisy {
@@ -5723,9 +5723,9 @@ impl From<NetcPinmuxIppIndEth2TxClkSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth3RxClkSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_02 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_02_ALT4 = 0x0,
+    SelectGpioEmcB102Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_15 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_15_ALT9 = 0x01,
+    SelectGpioEmcB215Alt9 = 0x01,
 }
 impl NetcPinmuxIppIndEth3RxClkSelectInputDaisy {
     #[inline(always)]
@@ -5754,9 +5754,9 @@ impl From<NetcPinmuxIppIndEth3RxClkSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth3RxDvSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_11 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_11_ALT4 = 0x0,
+    SelectGpioEmcB111Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_11 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_11_ALT9 = 0x01,
+    SelectGpioEmcB211Alt9 = 0x01,
 }
 impl NetcPinmuxIppIndEth3RxDvSelectInputDaisy {
     #[inline(always)]
@@ -5785,9 +5785,9 @@ impl From<NetcPinmuxIppIndEth3RxDvSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth3RxErSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_12 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_12_ALT4 = 0x0,
+    SelectGpioEmcB112Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_12 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_12_ALT9 = 0x01,
+    SelectGpioEmcB212Alt9 = 0x01,
 }
 impl NetcPinmuxIppIndEth3RxErSelectInputDaisy {
     #[inline(always)]
@@ -5816,9 +5816,9 @@ impl From<NetcPinmuxIppIndEth3RxErSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth3RxdSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_09 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_09_ALT4 = 0x0,
+    SelectGpioEmcB109Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_09 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_09_ALT9 = 0x01,
+    SelectGpioEmcB209Alt9 = 0x01,
 }
 impl NetcPinmuxIppIndEth3RxdSelectInput0Daisy {
     #[inline(always)]
@@ -5847,9 +5847,9 @@ impl From<NetcPinmuxIppIndEth3RxdSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth3RxdSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_10 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_10_ALT4 = 0x0,
+    SelectGpioEmcB110Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_10 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_10_ALT9 = 0x01,
+    SelectGpioEmcB210Alt9 = 0x01,
 }
 impl NetcPinmuxIppIndEth3RxdSelectInput1Daisy {
     #[inline(always)]
@@ -5878,9 +5878,9 @@ impl From<NetcPinmuxIppIndEth3RxdSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth3RxdSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_04 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_04_ALT4 = 0x0,
+    SelectGpioEmcB104Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_16 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_16_ALT9 = 0x01,
+    SelectGpioEmcB216Alt9 = 0x01,
 }
 impl NetcPinmuxIppIndEth3RxdSelectInput2Daisy {
     #[inline(always)]
@@ -5909,9 +5909,9 @@ impl From<NetcPinmuxIppIndEth3RxdSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth3RxdSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_03 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_03_ALT4 = 0x0,
+    SelectGpioEmcB103Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_17 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_17_ALT9 = 0x01,
+    SelectGpioEmcB217Alt9 = 0x01,
 }
 impl NetcPinmuxIppIndEth3RxdSelectInput3Daisy {
     #[inline(always)]
@@ -5940,9 +5940,9 @@ impl From<NetcPinmuxIppIndEth3RxdSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth3TxClkSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_08 for Mode: ALT4"]
-    SELECT_GPIO_EMC_B1_08_ALT4 = 0x0,
+    SelectGpioEmcB108Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_08 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B2_08_ALT9 = 0x01,
+    SelectGpioEmcB208Alt9 = 0x01,
 }
 impl NetcPinmuxIppIndEth3TxClkSelectInputDaisy {
     #[inline(always)]
@@ -5971,11 +5971,11 @@ impl From<NetcPinmuxIppIndEth3TxClkSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth4RxClkSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_02 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_02_ALT9 = 0x0,
+    SelectGpioEmcB102Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_08 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B2_08_ALT1 = 0x01,
+    SelectGpioEmcB208Alt1 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_11 for Mode: ALT8"]
-    SELECT_GPIO_B1_11_ALT8 = 0x02,
+    SelectGpioB111Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth4RxClkSelectInputDaisy {
@@ -6005,11 +6005,11 @@ impl From<NetcPinmuxIppIndEth4RxClkSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth4RxDvSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_11 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_11_ALT9 = 0x0,
+    SelectGpioEmcB111Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_19 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B2_19_ALT1 = 0x01,
+    SelectGpioEmcB219Alt1 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_06 for Mode: ALT8"]
-    SELECT_GPIO_B1_06_ALT8 = 0x02,
+    SelectGpioB106Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth4RxDvSelectInputDaisy {
@@ -6039,11 +6039,11 @@ impl From<NetcPinmuxIppIndEth4RxDvSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth4RxErSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_12 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_12_ALT9 = 0x0,
+    SelectGpioEmcB112Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_20 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B2_20_ALT1 = 0x01,
+    SelectGpioEmcB220Alt1 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_12 for Mode: ALT8"]
-    SELECT_GPIO_B1_12_ALT8 = 0x02,
+    SelectGpioB112Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth4RxErSelectInputDaisy {
@@ -6073,11 +6073,11 @@ impl From<NetcPinmuxIppIndEth4RxErSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth4RxdSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_09 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_09_ALT9 = 0x0,
+    SelectGpioEmcB109Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_17 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B2_17_ALT1 = 0x01,
+    SelectGpioEmcB217Alt1 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_04 for Mode: ALT8"]
-    SELECT_GPIO_B1_04_ALT8 = 0x02,
+    SelectGpioB104Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth4RxdSelectInput0Daisy {
@@ -6107,11 +6107,11 @@ impl From<NetcPinmuxIppIndEth4RxdSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth4RxdSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_10 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_10_ALT9 = 0x0,
+    SelectGpioEmcB110Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_18 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B2_18_ALT1 = 0x01,
+    SelectGpioEmcB218Alt1 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_05 for Mode: ALT8"]
-    SELECT_GPIO_B1_05_ALT8 = 0x02,
+    SelectGpioB105Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth4RxdSelectInput1Daisy {
@@ -6141,11 +6141,11 @@ impl From<NetcPinmuxIppIndEth4RxdSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth4RxdSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_04 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_04_ALT9 = 0x0,
+    SelectGpioEmcB104Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_10 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B2_10_ALT1 = 0x01,
+    SelectGpioEmcB210Alt1 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_09 for Mode: ALT8"]
-    SELECT_GPIO_B1_09_ALT8 = 0x02,
+    SelectGpioB109Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth4RxdSelectInput2Daisy {
@@ -6175,11 +6175,11 @@ impl From<NetcPinmuxIppIndEth4RxdSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth4RxdSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_03 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_03_ALT9 = 0x0,
+    SelectGpioEmcB103Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_09 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B2_09_ALT1 = 0x01,
+    SelectGpioEmcB209Alt1 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_10 for Mode: ALT8"]
-    SELECT_GPIO_B1_10_ALT8 = 0x02,
+    SelectGpioB110Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth4RxdSelectInput3Daisy {
@@ -6209,11 +6209,11 @@ impl From<NetcPinmuxIppIndEth4RxdSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcPinmuxIppIndEth4TxClkSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_08 for Mode: ALT9"]
-    SELECT_GPIO_EMC_B1_08_ALT9 = 0x0,
+    SelectGpioEmcB108Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_16 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B2_16_ALT1 = 0x01,
+    SelectGpioEmcB216Alt1 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_03 for Mode: ALT8"]
-    SELECT_GPIO_B1_03_ALT8 = 0x02,
+    SelectGpioB103Alt8 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl NetcPinmuxIppIndEth4TxClkSelectInputDaisy {
@@ -6243,13 +6243,13 @@ impl From<NetcPinmuxIppIndEth4TxClkSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcTmrTrig1SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_20 for Mode: ALT6"]
-    SELECT_GPIO_AD_20_ALT6 = 0x0,
+    SelectGpioAd20Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_24 for Mode: ALT7"]
-    SELECT_GPIO_AD_24_ALT7 = 0x01,
+    SelectGpioAd24Alt7 = 0x01,
     #[doc = "Selecting Pad: GPIO_AD_32 for Mode: ALT7"]
-    SELECT_GPIO_AD_32_ALT7 = 0x02,
+    SelectGpioAd32Alt7 = 0x02,
     #[doc = "Selecting Pad: GPIO_SD_B2_11 for Mode: ALT8"]
-    SELECT_GPIO_SD_B2_11_ALT8 = 0x03,
+    SelectGpioSdB211Alt8 = 0x03,
 }
 impl NetcTmrTrig1SelectInputDaisy {
     #[inline(always)]
@@ -6278,13 +6278,13 @@ impl From<NetcTmrTrig1SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcTmrTrig2SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_21 for Mode: ALT6"]
-    SELECT_GPIO_AD_21_ALT6 = 0x0,
+    SelectGpioAd21Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_25 for Mode: ALT7"]
-    SELECT_GPIO_AD_25_ALT7 = 0x01,
+    SelectGpioAd25Alt7 = 0x01,
     #[doc = "Selecting Pad: GPIO_AD_33 for Mode: ALT7"]
-    SELECT_GPIO_AD_33_ALT7 = 0x02,
+    SelectGpioAd33Alt7 = 0x02,
     #[doc = "Selecting Pad: GPIO_SD_B2_10 for Mode: ALT8"]
-    SELECT_GPIO_SD_B2_10_ALT8 = 0x03,
+    SelectGpioSdB210Alt8 = 0x03,
 }
 impl NetcTmrTrig2SelectInputDaisy {
     #[inline(always)]
@@ -6313,9 +6313,9 @@ impl From<NetcTmrTrig2SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ode {
     #[doc = "Disabled"]
-    ODE_0_DISABLED = 0x0,
+    Ode0Disabled = 0x0,
     #[doc = "Enabled"]
-    ODE_1_ENABLED = 0x01,
+    Ode1Enabled = 0x01,
 }
 impl Ode {
     #[inline(always)]
@@ -6344,9 +6344,9 @@ impl From<Ode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pdrv {
     #[doc = "high driver"]
-    PDRV_0_HIGH_DRIVER = 0x0,
+    Pdrv0HighDriver = 0x0,
     #[doc = "normal driver"]
-    PDRV_1_NORMAL_DRIVER = 0x01,
+    Pdrv1NormalDriver = 0x01,
 }
 impl Pdrv {
     #[inline(always)]
@@ -6375,9 +6375,9 @@ impl From<Pdrv> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pue {
     #[doc = "Pull Disable, Highz"]
-    PUE_0_PULL_DISABLE__HIGHZ = 0x0,
+    Pue0PullDisable_highz = 0x0,
     #[doc = "Pull Enable"]
-    PUE_1_PULL_ENABLE = 0x01,
+    Pue1PullEnable = 0x01,
 }
 impl Pue {
     #[inline(always)]
@@ -6406,13 +6406,13 @@ impl From<Pue> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pull {
     #[doc = "Forbidden"]
-    PULL_0_FORBIDDEN = 0x0,
+    Pull0Forbidden = 0x0,
     #[doc = "PU"]
-    PULL_1_PU = 0x01,
+    Pull1Pu = 0x01,
     #[doc = "PD"]
-    PULL_2_PD = 0x02,
+    Pull2Pd = 0x02,
     #[doc = "No Pull"]
-    PULL_3_NO_PULL = 0x03,
+    Pull3NoPull = 0x03,
 }
 impl Pull {
     #[inline(always)]
@@ -6441,9 +6441,9 @@ impl From<Pull> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pus {
     #[doc = "Weak pull down"]
-    PUS_0_WEAK_PULL_DOWN = 0x0,
+    Pus0WeakPullDown = 0x0,
     #[doc = "Weak pull up"]
-    PUS_1_WEAK_PULL_UP = 0x01,
+    Pus1WeakPullUp = 0x01,
 }
 impl Pus {
     #[inline(always)]
@@ -6472,11 +6472,11 @@ impl From<Pus> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer1Tmr0InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_18 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_18_ALT2 = 0x0,
+    SelectGpioEmcB118Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_09 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_09_ALT10 = 0x01,
+    SelectGpioEmcB209Alt10 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_00 for Mode: ALT3"]
-    SELECT_GPIO_B1_00_ALT3 = 0x02,
+    SelectGpioB100Alt3 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Qtimer1Tmr0InputSelectInputDaisy {
@@ -6506,11 +6506,11 @@ impl From<Qtimer1Tmr0InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer1Tmr1InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_13 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B1_13_ALT10 = 0x0,
+    SelectGpioEmcB113Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_10 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_10_ALT10 = 0x01,
+    SelectGpioEmcB210Alt10 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_01 for Mode: ALT3"]
-    SELECT_GPIO_B1_01_ALT3 = 0x02,
+    SelectGpioB101Alt3 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Qtimer1Tmr1InputSelectInputDaisy {
@@ -6540,9 +6540,9 @@ impl From<Qtimer1Tmr1InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer1Tmr2InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_11 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_11_ALT10 = 0x0,
+    SelectGpioEmcB211Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_02 for Mode: ALT3"]
-    SELECT_GPIO_B1_02_ALT3 = 0x01,
+    SelectGpioB102Alt3 = 0x01,
 }
 impl Qtimer1Tmr2InputSelectInputDaisy {
     #[inline(always)]
@@ -6571,11 +6571,11 @@ impl From<Qtimer1Tmr2InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer2Tmr0InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_19 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_19_ALT2 = 0x0,
+    SelectGpioEmcB119Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_13 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_13_ALT10 = 0x01,
+    SelectGpioEmcB213Alt10 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_03 for Mode: ALT3"]
-    SELECT_GPIO_B1_03_ALT3 = 0x02,
+    SelectGpioB103Alt3 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Qtimer2Tmr0InputSelectInputDaisy {
@@ -6605,11 +6605,11 @@ impl From<Qtimer2Tmr0InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer2Tmr1InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_39 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_39_ALT6 = 0x0,
+    SelectGpioEmcB139Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_14 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_14_ALT10 = 0x01,
+    SelectGpioEmcB214Alt10 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_04 for Mode: ALT3"]
-    SELECT_GPIO_B1_04_ALT3 = 0x02,
+    SelectGpioB104Alt3 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Qtimer2Tmr1InputSelectInputDaisy {
@@ -6639,9 +6639,9 @@ impl From<Qtimer2Tmr1InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer2Tmr2InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_15 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_15_ALT10 = 0x0,
+    SelectGpioEmcB215Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_05 for Mode: ALT3"]
-    SELECT_GPIO_B1_05_ALT3 = 0x01,
+    SelectGpioB105Alt3 = 0x01,
 }
 impl Qtimer2Tmr2InputSelectInputDaisy {
     #[inline(always)]
@@ -6670,11 +6670,11 @@ impl From<Qtimer2Tmr2InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer3Tmr0InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_20 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_20_ALT2 = 0x0,
+    SelectGpioEmcB120Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_17 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_17_ALT10 = 0x01,
+    SelectGpioEmcB217Alt10 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_06 for Mode: ALT3"]
-    SELECT_GPIO_B1_06_ALT3 = 0x02,
+    SelectGpioB106Alt3 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Qtimer3Tmr0InputSelectInputDaisy {
@@ -6704,11 +6704,11 @@ impl From<Qtimer3Tmr0InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer3Tmr1InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_40 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_40_ALT6 = 0x0,
+    SelectGpioEmcB140Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_18 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_18_ALT10 = 0x01,
+    SelectGpioEmcB218Alt10 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_07 for Mode: ALT3"]
-    SELECT_GPIO_B1_07_ALT3 = 0x02,
+    SelectGpioB107Alt3 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Qtimer3Tmr1InputSelectInputDaisy {
@@ -6738,9 +6738,9 @@ impl From<Qtimer3Tmr1InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer3Tmr2InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_19 for Mode: ALT10"]
-    SELECT_GPIO_EMC_B2_19_ALT10 = 0x0,
+    SelectGpioEmcB219Alt10 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_08 for Mode: ALT3"]
-    SELECT_GPIO_B1_08_ALT3 = 0x01,
+    SelectGpioB108Alt3 = 0x01,
 }
 impl Qtimer3Tmr2InputSelectInputDaisy {
     #[inline(always)]
@@ -6769,11 +6769,11 @@ impl From<Qtimer3Tmr2InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer4Tmr0InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_21 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_21_ALT2 = 0x0,
+    SelectGpioEmcB121Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_00 for Mode: ALT9"]
-    SELECT_GPIO_AD_00_ALT9 = 0x01,
+    SelectGpioAd00Alt9 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_09 for Mode: ALT3"]
-    SELECT_GPIO_B1_09_ALT3 = 0x02,
+    SelectGpioB109Alt3 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Qtimer4Tmr0InputSelectInputDaisy {
@@ -6803,11 +6803,11 @@ impl From<Qtimer4Tmr0InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer4Tmr1InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_41 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B1_41_ALT6 = 0x0,
+    SelectGpioEmcB141Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_01 for Mode: ALT9"]
-    SELECT_GPIO_AD_01_ALT9 = 0x01,
+    SelectGpioAd01Alt9 = 0x01,
     #[doc = "Selecting Pad: GPIO_B1_10 for Mode: ALT3"]
-    SELECT_GPIO_B1_10_ALT3 = 0x02,
+    SelectGpioB110Alt3 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Qtimer4Tmr1InputSelectInputDaisy {
@@ -6837,9 +6837,9 @@ impl From<Qtimer4Tmr1InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer4Tmr2InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_02 for Mode: ALT9"]
-    SELECT_GPIO_AD_02_ALT9 = 0x0,
+    SelectGpioAd02Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_11 for Mode: ALT3"]
-    SELECT_GPIO_B1_11_ALT3 = 0x01,
+    SelectGpioB111Alt3 = 0x01,
 }
 impl Qtimer4Tmr2InputSelectInputDaisy {
     #[inline(always)]
@@ -6868,11 +6868,11 @@ impl From<Qtimer4Tmr2InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer5Tmr0InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_22 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_22_ALT2 = 0x0,
+    SelectGpioEmcB122Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_04 for Mode: ALT9"]
-    SELECT_GPIO_AD_04_ALT9 = 0x01,
+    SelectGpioAd04Alt9 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_07 for Mode: ALT0"]
-    SELECT_GPIO_B2_07_ALT0 = 0x02,
+    SelectGpioB207Alt0 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Qtimer5Tmr0InputSelectInputDaisy {
@@ -6902,11 +6902,11 @@ impl From<Qtimer5Tmr0InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer5Tmr1InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_00 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B2_00_ALT2 = 0x0,
+    SelectGpioEmcB200Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_05 for Mode: ALT9"]
-    SELECT_GPIO_AD_05_ALT9 = 0x01,
+    SelectGpioAd05Alt9 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_08 for Mode: ALT0"]
-    SELECT_GPIO_B2_08_ALT0 = 0x02,
+    SelectGpioB208Alt0 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Qtimer5Tmr1InputSelectInputDaisy {
@@ -6936,9 +6936,9 @@ impl From<Qtimer5Tmr1InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer5Tmr2InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_06 for Mode: ALT9"]
-    SELECT_GPIO_AD_06_ALT9 = 0x0,
+    SelectGpioAd06Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_09 for Mode: ALT0"]
-    SELECT_GPIO_B2_09_ALT0 = 0x01,
+    SelectGpioB209Alt0 = 0x01,
 }
 impl Qtimer5Tmr2InputSelectInputDaisy {
     #[inline(always)]
@@ -6967,11 +6967,11 @@ impl From<Qtimer5Tmr2InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer6Tmr0InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_23 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_23_ALT2 = 0x0,
+    SelectGpioEmcB123Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_08 for Mode: ALT9"]
-    SELECT_GPIO_AD_08_ALT9 = 0x01,
+    SelectGpioAd08Alt9 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B2_01 for Mode: ALT3"]
-    SELECT_GPIO_SD_B2_01_ALT3 = 0x02,
+    SelectGpioSdB201Alt3 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Qtimer6Tmr0InputSelectInputDaisy {
@@ -7001,11 +7001,11 @@ impl From<Qtimer6Tmr0InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer6Tmr1InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_01 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B2_01_ALT2 = 0x0,
+    SelectGpioEmcB201Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_09 for Mode: ALT9"]
-    SELECT_GPIO_AD_09_ALT9 = 0x01,
+    SelectGpioAd09Alt9 = 0x01,
     #[doc = "Selecting Pad: GPIO_SD_B2_02 for Mode: ALT3"]
-    SELECT_GPIO_SD_B2_02_ALT3 = 0x02,
+    SelectGpioSdB202Alt3 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Qtimer6Tmr1InputSelectInputDaisy {
@@ -7035,9 +7035,9 @@ impl From<Qtimer6Tmr1InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer6Tmr2InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_10 for Mode: ALT9"]
-    SELECT_GPIO_AD_10_ALT9 = 0x0,
+    SelectGpioAd10Alt9 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_03 for Mode: ALT3"]
-    SELECT_GPIO_SD_B2_03_ALT3 = 0x01,
+    SelectGpioSdB203Alt3 = 0x01,
 }
 impl Qtimer6Tmr2InputSelectInputDaisy {
     #[inline(always)]
@@ -7066,9 +7066,9 @@ impl From<Qtimer6Tmr2InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer7Tmr0InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_24 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_24_ALT2 = 0x0,
+    SelectGpioEmcB124Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_04 for Mode: ALT3"]
-    SELECT_GPIO_SD_B2_04_ALT3 = 0x01,
+    SelectGpioSdB204Alt3 = 0x01,
 }
 impl Qtimer7Tmr0InputSelectInputDaisy {
     #[inline(always)]
@@ -7097,9 +7097,9 @@ impl From<Qtimer7Tmr0InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer7Tmr1InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_02 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B2_02_ALT2 = 0x0,
+    SelectGpioEmcB202Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_05 for Mode: ALT3"]
-    SELECT_GPIO_SD_B2_05_ALT3 = 0x01,
+    SelectGpioSdB205Alt3 = 0x01,
 }
 impl Qtimer7Tmr1InputSelectInputDaisy {
     #[inline(always)]
@@ -7128,9 +7128,9 @@ impl From<Qtimer7Tmr1InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer8Tmr0InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_25 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_25_ALT2 = 0x0,
+    SelectGpioEmcB125Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_08 for Mode: ALT3"]
-    SELECT_GPIO_SD_B2_08_ALT3 = 0x01,
+    SelectGpioSdB208Alt3 = 0x01,
 }
 impl Qtimer8Tmr0InputSelectInputDaisy {
     #[inline(always)]
@@ -7159,9 +7159,9 @@ impl From<Qtimer8Tmr0InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer8Tmr1InputSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_03 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B2_03_ALT2 = 0x0,
+    SelectGpioEmcB203Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_09 for Mode: ALT3"]
-    SELECT_GPIO_SD_B2_09_ALT3 = 0x01,
+    SelectGpioSdB209Alt3 = 0x01,
 }
 impl Qtimer8Tmr1InputSelectInputDaisy {
     #[inline(always)]
@@ -7190,11 +7190,11 @@ impl From<Qtimer8Tmr1InputSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai4IpgClkSaiMclkSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_17 for Mode: ALT0"]
-    SELECT_GPIO_AD_17_ALT0 = 0x0,
+    SelectGpioAd17Alt0 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_05 for Mode: ALT12"]
-    SELECT_GPIO_B1_05_ALT12 = 0x01,
+    SelectGpioB105Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_00 for Mode: ALT4"]
-    SELECT_GPIO_B2_00_ALT4 = 0x02,
+    SelectGpioB200Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Sai4IpgClkSaiMclkSelectInputDaisy {
@@ -7224,11 +7224,11 @@ impl From<Sai4IpgClkSaiMclkSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai4IppIndSaiRxbclkSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_19 for Mode: ALT0"]
-    SELECT_GPIO_AD_19_ALT0 = 0x0,
+    SelectGpioAd19Alt0 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_06 for Mode: ALT12"]
-    SELECT_GPIO_B1_06_ALT12 = 0x01,
+    SelectGpioB106Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_05 for Mode: ALT4"]
-    SELECT_GPIO_B2_05_ALT4 = 0x02,
+    SelectGpioB205Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Sai4IppIndSaiRxbclkSelectInputDaisy {
@@ -7258,11 +7258,11 @@ impl From<Sai4IppIndSaiRxbclkSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai4IppIndSaiRxdataSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_AD_20 for Mode: ALT0"]
-    SELECT_GPIO_AD_20_ALT0 = 0x0,
+    SelectGpioAd20Alt0 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_01 for Mode: ALT12"]
-    SELECT_GPIO_B1_01_ALT12 = 0x01,
+    SelectGpioB101Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_06 for Mode: ALT4"]
-    SELECT_GPIO_B2_06_ALT4 = 0x02,
+    SelectGpioB206Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Sai4IppIndSaiRxdataSelectInput0Daisy {
@@ -7292,9 +7292,9 @@ impl From<Sai4IppIndSaiRxdataSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai4IppIndSaiRxdataSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_B1_02 for Mode: ALT12"]
-    SELECT_GPIO_B1_02_ALT12 = 0x0,
+    SelectGpioB102Alt12 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_07 for Mode: ALT6"]
-    SELECT_GPIO_B2_07_ALT6 = 0x01,
+    SelectGpioB207Alt6 = 0x01,
 }
 impl Sai4IppIndSaiRxdataSelectInput1Daisy {
     #[inline(always)]
@@ -7323,11 +7323,11 @@ impl From<Sai4IppIndSaiRxdataSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai4IppIndSaiRxsyncSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_18 for Mode: ALT0"]
-    SELECT_GPIO_AD_18_ALT0 = 0x0,
+    SelectGpioAd18Alt0 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_07 for Mode: ALT12"]
-    SELECT_GPIO_B1_07_ALT12 = 0x01,
+    SelectGpioB107Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_04 for Mode: ALT4"]
-    SELECT_GPIO_B2_04_ALT4 = 0x02,
+    SelectGpioB204Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Sai4IppIndSaiRxsyncSelectInputDaisy {
@@ -7357,11 +7357,11 @@ impl From<Sai4IppIndSaiRxsyncSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai4IppIndSaiTxbclkSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_22 for Mode: ALT0"]
-    SELECT_GPIO_AD_22_ALT0 = 0x0,
+    SelectGpioAd22Alt0 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_08 for Mode: ALT12"]
-    SELECT_GPIO_B1_08_ALT12 = 0x01,
+    SelectGpioB108Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_01 for Mode: ALT4"]
-    SELECT_GPIO_B2_01_ALT4 = 0x02,
+    SelectGpioB201Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Sai4IppIndSaiTxbclkSelectInputDaisy {
@@ -7391,11 +7391,11 @@ impl From<Sai4IppIndSaiTxbclkSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai4IppIndSaiTxsyncSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_23 for Mode: ALT0"]
-    SELECT_GPIO_AD_23_ALT0 = 0x0,
+    SelectGpioAd23Alt0 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_09 for Mode: ALT12"]
-    SELECT_GPIO_B1_09_ALT12 = 0x01,
+    SelectGpioB109Alt12 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_02 for Mode: ALT4"]
-    SELECT_GPIO_B2_02_ALT4 = 0x02,
+    SelectGpioB202Alt4 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Sai4IppIndSaiTxsyncSelectInputDaisy {
@@ -7425,9 +7425,9 @@ impl From<Sai4IppIndSaiTxsyncSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sinc1IppIndEmbitSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_AD_04 for Mode: ALT6"]
-    SELECT_GPIO_AD_04_ALT6 = 0x0,
+    SelectGpioAd04Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_21 for Mode: ALT3"]
-    SELECT_GPIO_AD_21_ALT3 = 0x01,
+    SelectGpioAd21Alt3 = 0x01,
 }
 impl Sinc1IppIndEmbitSelectInput0Daisy {
     #[inline(always)]
@@ -7456,9 +7456,9 @@ impl From<Sinc1IppIndEmbitSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sinc1IppIndEmbitSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_AD_06 for Mode: ALT6"]
-    SELECT_GPIO_AD_06_ALT6 = 0x0,
+    SelectGpioAd06Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_23 for Mode: ALT3"]
-    SELECT_GPIO_AD_23_ALT3 = 0x01,
+    SelectGpioAd23Alt3 = 0x01,
 }
 impl Sinc1IppIndEmbitSelectInput1Daisy {
     #[inline(always)]
@@ -7487,9 +7487,9 @@ impl From<Sinc1IppIndEmbitSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sinc1IppIndEmbitSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_AD_08 for Mode: ALT6"]
-    SELECT_GPIO_AD_08_ALT6 = 0x0,
+    SelectGpioAd08Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B1_01 for Mode: ALT1"]
-    SELECT_GPIO_SD_B1_01_ALT1 = 0x01,
+    SelectGpioSdB101Alt1 = 0x01,
 }
 impl Sinc1IppIndEmbitSelectInput2Daisy {
     #[inline(always)]
@@ -7518,9 +7518,9 @@ impl From<Sinc1IppIndEmbitSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sinc1IppIndEmbitSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_AD_10 for Mode: ALT6"]
-    SELECT_GPIO_AD_10_ALT6 = 0x0,
+    SelectGpioAd10Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B1_03 for Mode: ALT1"]
-    SELECT_GPIO_SD_B1_03_ALT1 = 0x01,
+    SelectGpioSdB103Alt1 = 0x01,
 }
 impl Sinc1IppIndEmbitSelectInput3Daisy {
     #[inline(always)]
@@ -7549,9 +7549,9 @@ impl From<Sinc1IppIndEmbitSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sinc1IppIndEmclkSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_AD_03 for Mode: ALT6"]
-    SELECT_GPIO_AD_03_ALT6 = 0x0,
+    SelectGpioAd03Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_20 for Mode: ALT3"]
-    SELECT_GPIO_AD_20_ALT3 = 0x01,
+    SelectGpioAd20Alt3 = 0x01,
 }
 impl Sinc1IppIndEmclkSelectInput0Daisy {
     #[inline(always)]
@@ -7580,9 +7580,9 @@ impl From<Sinc1IppIndEmclkSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sinc1IppIndEmclkSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_AD_05 for Mode: ALT6"]
-    SELECT_GPIO_AD_05_ALT6 = 0x0,
+    SelectGpioAd05Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_22 for Mode: ALT3"]
-    SELECT_GPIO_AD_22_ALT3 = 0x01,
+    SelectGpioAd22Alt3 = 0x01,
 }
 impl Sinc1IppIndEmclkSelectInput1Daisy {
     #[inline(always)]
@@ -7611,9 +7611,9 @@ impl From<Sinc1IppIndEmclkSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sinc1IppIndEmclkSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_AD_07 for Mode: ALT6"]
-    SELECT_GPIO_AD_07_ALT6 = 0x0,
+    SelectGpioAd07Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B1_00 for Mode: ALT1"]
-    SELECT_GPIO_SD_B1_00_ALT1 = 0x01,
+    SelectGpioSdB100Alt1 = 0x01,
 }
 impl Sinc1IppIndEmclkSelectInput2Daisy {
     #[inline(always)]
@@ -7642,9 +7642,9 @@ impl From<Sinc1IppIndEmclkSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sinc1IppIndEmclkSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_AD_09 for Mode: ALT6"]
-    SELECT_GPIO_AD_09_ALT6 = 0x0,
+    SelectGpioAd09Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B1_02 for Mode: ALT1"]
-    SELECT_GPIO_SD_B1_02_ALT1 = 0x01,
+    SelectGpioSdB102Alt1 = 0x01,
 }
 impl Sinc1IppIndEmclkSelectInput3Daisy {
     #[inline(always)]
@@ -7673,11 +7673,11 @@ impl From<Sinc1IppIndEmclkSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sinc2IppIndEmbitSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_AD_31 for Mode: ALT3"]
-    SELECT_GPIO_AD_31_ALT3 = 0x0,
+    SelectGpioAd31Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B1_05 for Mode: ALT2"]
-    SELECT_GPIO_SD_B1_05_ALT2 = 0x01,
+    SelectGpioSdB105Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_09 for Mode: ALT1"]
-    SELECT_GPIO_B2_09_ALT1 = 0x02,
+    SelectGpioB209Alt1 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Sinc2IppIndEmbitSelectInput2Daisy {
@@ -7707,9 +7707,9 @@ impl From<Sinc2IppIndEmbitSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sinc2IppIndEmbitSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_AD_33 for Mode: ALT3"]
-    SELECT_GPIO_AD_33_ALT3 = 0x0,
+    SelectGpioAd33Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_11 for Mode: ALT1"]
-    SELECT_GPIO_B2_11_ALT1 = 0x01,
+    SelectGpioB211Alt1 = 0x01,
 }
 impl Sinc2IppIndEmbitSelectInput3Daisy {
     #[inline(always)]
@@ -7738,9 +7738,9 @@ impl From<Sinc2IppIndEmbitSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sinc2IppIndEmclkSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_AD_26 for Mode: ALT3"]
-    SELECT_GPIO_AD_26_ALT3 = 0x0,
+    SelectGpioAd26Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_13 for Mode: ALT1"]
-    SELECT_GPIO_B2_13_ALT1 = 0x01,
+    SelectGpioB213Alt1 = 0x01,
 }
 impl Sinc2IppIndEmclkSelectInput0Daisy {
     #[inline(always)]
@@ -7769,11 +7769,11 @@ impl From<Sinc2IppIndEmclkSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sinc2IppIndEmclkSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_AD_30 for Mode: ALT3"]
-    SELECT_GPIO_AD_30_ALT3 = 0x0,
+    SelectGpioAd30Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B1_04 for Mode: ALT2"]
-    SELECT_GPIO_SD_B1_04_ALT2 = 0x01,
+    SelectGpioSdB104Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_08 for Mode: ALT1"]
-    SELECT_GPIO_B2_08_ALT1 = 0x02,
+    SelectGpioB208Alt1 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Sinc2IppIndEmclkSelectInput2Daisy {
@@ -7803,9 +7803,9 @@ impl From<Sinc2IppIndEmclkSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sinc2IppIndEmclkSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_AD_32 for Mode: ALT3"]
-    SELECT_GPIO_AD_32_ALT3 = 0x0,
+    SelectGpioAd32Alt3 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_10 for Mode: ALT1"]
-    SELECT_GPIO_B2_10_ALT1 = 0x01,
+    SelectGpioB210Alt1 = 0x01,
 }
 impl Sinc2IppIndEmclkSelectInput3Daisy {
     #[inline(always)]
@@ -7834,11 +7834,11 @@ impl From<Sinc2IppIndEmclkSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SpdifSpdifIn1SelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_12 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B2_12_ALT2 = 0x0,
+    SelectGpioEmcB212Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_15 for Mode: ALT0"]
-    SELECT_GPIO_AD_15_ALT0 = 0x01,
+    SelectGpioAd15Alt0 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_08 for Mode: ALT9"]
-    SELECT_GPIO_B2_08_ALT9 = 0x02,
+    SelectGpioB208Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl SpdifSpdifIn1SelectInputDaisy {
@@ -7868,9 +7868,9 @@ impl From<SpdifSpdifIn1SelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sre {
     #[doc = "Fast Slew Rate"]
-    SRE_0_FAST_SLEW_RATE = 0x0,
+    Sre0FastSlewRate = 0x0,
     #[doc = "Slow Slew Rate"]
-    SRE_1_SLOW_SLEW_RATE = 0x01,
+    Sre1SlowSlewRate = 0x01,
 }
 impl Sre {
     #[inline(always)]
@@ -7900,22 +7900,22 @@ impl From<Sre> for u8 {
 pub enum SwMuxCtlPadGpioAd00MuxMode {
     _RESERVED_0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: CAN2_TX of instance: can2"]
-    ALT1_CAN2_TX = 0x01,
+    Alt1Can2Tx = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: MIC_CLK of instance: mic"]
-    ALT2_MIC_CLK = 0x02,
+    Alt2MicClk = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: GPT2_CAPTURE1 of instance: gpt2"]
-    ALT3_GPT2_CAPTURE1 = 0x03,
+    Alt3Gpt2Capture1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM1_PWMA00 of instance: flexpwm1"]
-    ALT4_FLEXPWM1_PWMA0 = 0x04,
+    Alt4Flexpwm1Pwma0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO00 of instance: gpio4"]
-    ALT5_GPIO4_IO0 = 0x05,
+    Alt5Gpio4Io0 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: SINC1_MOD_CLK0 of instance: sinc1"]
-    ALT6_SINC1_MOD_CLK0 = 0x06,
+    Alt6Sinc1ModClk0 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO00 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO0 = 0x08,
+    Alt8Flexio2Flexio0 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: QTIMER4_TIMER0 of instance: qtimer4"]
-    ALT9_QTIMER4_TIMER0 = 0x09,
+    Alt9Qtimer4Timer0 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -7951,22 +7951,22 @@ impl From<SwMuxCtlPadGpioAd00MuxMode> for u8 {
 pub enum SwMuxCtlPadGpioAd01MuxMode {
     _RESERVED_0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: CAN2_RX of instance: can2"]
-    ALT1_CAN2_RX = 0x01,
+    Alt1Can2Rx = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: MIC_BITSTREAM00 of instance: mic"]
-    ALT2_MIC_BITSTREAM0 = 0x02,
+    Alt2MicBitstream0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: GPT2_CAPTURE2 of instance: gpt2"]
-    ALT3_GPT2_CAPTURE2 = 0x03,
+    Alt3Gpt2Capture2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM1_PWMB00 of instance: flexpwm1"]
-    ALT4_FLEXPWM1_PWMB0 = 0x04,
+    Alt4Flexpwm1Pwmb0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO01 of instance: gpio4"]
-    ALT5_GPIO4_IO1 = 0x05,
+    Alt5Gpio4Io1 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: SINC1_MOD_CLK1 of instance: sinc1"]
-    ALT6_SINC1_MOD_CLK1 = 0x06,
+    Alt6Sinc1ModClk1 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO01 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO1 = 0x08,
+    Alt8Flexio2Flexio1 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: QTIMER4_TIMER1 of instance: qtimer4"]
-    ALT9_QTIMER4_TIMER1 = 0x09,
+    Alt9Qtimer4Timer1 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -8003,20 +8003,20 @@ pub enum SwMuxCtlPadGpioAd02MuxMode {
     _RESERVED_0 = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: MIC_BITSTREAM01 of instance: mic"]
-    ALT2_MIC_BITSTREAM1 = 0x02,
+    Alt2MicBitstream1 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: GPT2_COMPARE1 of instance: gpt2"]
-    ALT3_GPT2_COMPARE1 = 0x03,
+    Alt3Gpt2Compare1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM1_PWMA01 of instance: flexpwm1"]
-    ALT4_FLEXPWM1_PWMA1 = 0x04,
+    Alt4Flexpwm1Pwma1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO02 of instance: gpio4"]
-    ALT5_GPIO4_IO2 = 0x05,
+    Alt5Gpio4Io2 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: SINC1_MOD_CLK2 of instance: sinc1"]
-    ALT6_SINC1_MOD_CLK2 = 0x06,
+    Alt6Sinc1ModClk2 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO02 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO2 = 0x08,
+    Alt8Flexio2Flexio2 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: QTIMER4_TIMER2 of instance: qtimer4"]
-    ALT9_QTIMER4_TIMER2 = 0x09,
+    Alt9Qtimer4Timer2 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -8053,20 +8053,20 @@ pub enum SwMuxCtlPadGpioAd03MuxMode {
     _RESERVED_0 = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: MIC_BITSTREAM02 of instance: mic"]
-    ALT2_MIC_BITSTREAM2 = 0x02,
+    Alt2MicBitstream2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: GPT2_COMPARE2 of instance: gpt2"]
-    ALT3_GPT2_COMPARE2 = 0x03,
+    Alt3Gpt2Compare2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM1_PWMB01 of instance: flexpwm1"]
-    ALT4_FLEXPWM1_PWMB1 = 0x04,
+    Alt4Flexpwm1Pwmb1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO03 of instance: gpio4"]
-    ALT5_GPIO4_IO3 = 0x05,
+    Alt5Gpio4Io3 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: SINC1_EMCLK00 of instance: sinc1"]
-    ALT6_SINC1_EMCLK0 = 0x06,
+    Alt6Sinc1Emclk0 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO03 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO3 = 0x08,
+    Alt8Flexio2Flexio3 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: QTIMER4_TIMER3 of instance: qtimer4"]
-    ALT9_QTIMER4_TIMER3 = 0x09,
+    Alt9Qtimer4Timer3 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -8103,20 +8103,20 @@ pub enum SwMuxCtlPadGpioAd04MuxMode {
     _RESERVED_0 = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: MIC_BITSTREAM03 of instance: mic"]
-    ALT2_MIC_BITSTREAM3 = 0x02,
+    Alt2MicBitstream3 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: GPT2_COMPARE3 of instance: gpt2"]
-    ALT3_GPT2_COMPARE3 = 0x03,
+    Alt3Gpt2Compare3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM1_PWMB02 of instance: flexpwm1"]
-    ALT4_FLEXPWM1_PWMB2 = 0x04,
+    Alt4Flexpwm1Pwmb2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO04 of instance: gpio4"]
-    ALT5_GPIO4_IO4 = 0x05,
+    Alt5Gpio4Io4 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: SINC1_EMBIT00 of instance: sinc1"]
-    ALT6_SINC1_EMBIT0 = 0x06,
+    Alt6Sinc1Embit0 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO04 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO4 = 0x08,
+    Alt8Flexio2Flexio4 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: QTIMER5_TIMER0 of instance: qtimer5"]
-    ALT9_QTIMER5_TIMER0 = 0x09,
+    Alt9Qtimer5Timer0 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -8154,19 +8154,19 @@ pub enum SwMuxCtlPadGpioAd05MuxMode {
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: GPT2_CLK of instance: gpt2"]
-    ALT3_GPT2_CLK = 0x03,
+    Alt3Gpt2Clk = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM1_PWMA02 of instance: flexpwm1"]
-    ALT4_FLEXPWM1_PWMA2 = 0x04,
+    Alt4Flexpwm1Pwma2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO05 of instance: gpio4"]
-    ALT5_GPIO4_IO5 = 0x05,
+    Alt5Gpio4Io5 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: SINC1_EMCLK01 of instance: sinc1"]
-    ALT6_SINC1_EMCLK1 = 0x06,
+    Alt6Sinc1Emclk1 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: CCM_ENET_REF_CLK_25M of instance: ccm"]
-    ALT7_CCM_ENET_REF_CLK_25M = 0x07,
+    Alt7CcmEnetRefClk25m = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO05 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO5 = 0x08,
+    Alt8Flexio2Flexio5 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: QTIMER5_TIMER1 of instance: qtimer5"]
-    ALT9_QTIMER5_TIMER1 = 0x09,
+    Alt9Qtimer5Timer1 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -8201,22 +8201,22 @@ impl From<SwMuxCtlPadGpioAd05MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd06MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USB_OTG2_OC of instance: usb"]
-    ALT0_USB_OTG2_OC = 0x0,
+    Alt0UsbOtg2Oc = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: CAN3_TX of instance: can3"]
-    ALT1_CAN3_TX = 0x01,
+    Alt1Can3Tx = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM1_PWMX00 of instance: flexpwm1"]
-    ALT4_FLEXPWM1_PWMX0 = 0x04,
+    Alt4Flexpwm1Pwmx0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO06 of instance: gpio4"]
-    ALT5_GPIO4_IO6 = 0x05,
+    Alt5Gpio4Io6 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: SINC1_EMBIT01 of instance: sinc1"]
-    ALT6_SINC1_EMBIT1 = 0x06,
+    Alt6Sinc1Embit1 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO06 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO6 = 0x08,
+    Alt8Flexio2Flexio6 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: QTIMER5_TIMER2 of instance: qtimer5"]
-    ALT9_QTIMER5_TIMER2 = 0x09,
+    Alt9Qtimer5Timer2 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -8251,22 +8251,22 @@ impl From<SwMuxCtlPadGpioAd06MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd07MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USB_OTG2_PWR of instance: usb"]
-    ALT0_USB_OTG2_PWR = 0x0,
+    Alt0UsbOtg2Pwr = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: CAN3_RX of instance: can3"]
-    ALT1_CAN3_RX = 0x01,
+    Alt1Can3Rx = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM1_PWMX01 of instance: flexpwm1"]
-    ALT4_FLEXPWM1_PWMX1 = 0x04,
+    Alt4Flexpwm1Pwmx1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO07 of instance: gpio4"]
-    ALT5_GPIO4_IO7 = 0x05,
+    Alt5Gpio4Io7 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: SINC1_EMCLK02 of instance: sinc1"]
-    ALT6_SINC1_EMCLK2 = 0x06,
+    Alt6Sinc1Emclk2 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO07 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO7 = 0x08,
+    Alt8Flexio2Flexio7 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: QTIMER5_TIMER3 of instance: qtimer5"]
-    ALT9_QTIMER5_TIMER3 = 0x09,
+    Alt9Qtimer5Timer3 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -8301,22 +8301,22 @@ impl From<SwMuxCtlPadGpioAd07MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd08MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USBPHY2_OTG_ID of instance: usbphy2"]
-    ALT0_USBPHY2_OTG_ID = 0x0,
+    Alt0Usbphy2OtgId = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: LPI2C5_SCL of instance: lpi2c5"]
-    ALT1_LPI2C5_SCL = 0x01,
+    Alt1Lpi2c5Scl = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM1_PWMX02 of instance: flexpwm1"]
-    ALT4_FLEXPWM1_PWMX2 = 0x04,
+    Alt4Flexpwm1Pwmx2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO08 of instance: gpio4"]
-    ALT5_GPIO4_IO8 = 0x05,
+    Alt5Gpio4Io8 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: SINC1_EMBIT02 of instance: sinc1"]
-    ALT6_SINC1_EMBIT2 = 0x06,
+    Alt6Sinc1Embit2 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO08 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO8 = 0x08,
+    Alt8Flexio2Flexio8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: QTIMER6_TIMER0 of instance: qtimer6"]
-    ALT9_QTIMER6_TIMER0 = 0x09,
+    Alt9Qtimer6Timer0 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -8351,22 +8351,22 @@ impl From<SwMuxCtlPadGpioAd08MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd09MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USBPHY1_OTG_ID of instance: usbphy1"]
-    ALT0_USBPHY1_OTG_ID = 0x0,
+    Alt0Usbphy1OtgId = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: LPI2C5_SDA of instance: lpi2c5"]
-    ALT1_LPI2C5_SDA = 0x01,
+    Alt1Lpi2c5Sda = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM1_PWMX03 of instance: flexpwm1"]
-    ALT4_FLEXPWM1_PWMX3 = 0x04,
+    Alt4Flexpwm1Pwmx3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO09 of instance: gpio4"]
-    ALT5_GPIO4_IO9 = 0x05,
+    Alt5Gpio4Io9 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: SINC1_EMCLK03 of instance: sinc1"]
-    ALT6_SINC1_EMCLK3 = 0x06,
+    Alt6Sinc1Emclk3 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO09 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO9 = 0x08,
+    Alt8Flexio2Flexio9 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: QTIMER6_TIMER1 of instance: qtimer6"]
-    ALT9_QTIMER6_TIMER1 = 0x09,
+    Alt9Qtimer6Timer1 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -8401,21 +8401,21 @@ impl From<SwMuxCtlPadGpioAd09MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd10MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USB_OTG1_PWR of instance: usb"]
-    ALT0_USB_OTG1_PWR = 0x0,
+    Alt0UsbOtg1Pwr = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM2_PWMX00 of instance: flexpwm2"]
-    ALT4_FLEXPWM2_PWMX0 = 0x04,
+    Alt4Flexpwm2Pwmx0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO10 of instance: gpio4"]
-    ALT5_GPIO4_IO10 = 0x05,
+    Alt5Gpio4Io10 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: SINC1_EMBIT03 of instance: sinc1"]
-    ALT6_SINC1_EMBIT3 = 0x06,
+    Alt6Sinc1Embit3 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO10 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO10 = 0x08,
+    Alt8Flexio2Flexio10 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: QTIMER6_TIMER2 of instance: qtimer6"]
-    ALT9_QTIMER6_TIMER2 = 0x09,
+    Alt9Qtimer6Timer2 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -8450,21 +8450,21 @@ impl From<SwMuxCtlPadGpioAd10MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd11MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USB_OTG1_OC of instance: usb"]
-    ALT0_USB_OTG1_OC = 0x0,
+    Alt0UsbOtg1Oc = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM2_PWMX01 of instance: flexpwm2"]
-    ALT4_FLEXPWM2_PWMX1 = 0x04,
+    Alt4Flexpwm2Pwmx1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO11 of instance: gpio4"]
-    ALT5_GPIO4_IO11 = 0x05,
+    Alt5Gpio4Io11 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: SINC_FILTER_GLUE1_BREAK of instance: sinc_filter_glue1"]
-    ALT6_SINC_FILTER_GLUE1_BREAK = 0x06,
+    Alt6SincFilterGlue1Break = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO11 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO11 = 0x08,
+    Alt8Flexio2Flexio11 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: QTIMER6_TIMER3 of instance: qtimer6"]
-    ALT9_QTIMER6_TIMER3 = 0x09,
+    Alt9Qtimer6Timer3 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -8499,23 +8499,23 @@ impl From<SwMuxCtlPadGpioAd11MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd12MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SPDIF_LOCK of instance: spdif"]
-    ALT0_SPDIF_LOCK = 0x0,
+    Alt0SpdifLock = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: LPI2C5_SCLS of instance: lpi2c5"]
-    ALT1_LPI2C5_SCLS = 0x01,
+    Alt1Lpi2c5Scls = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: GPT1_CAPTURE1 of instance: gpt1"]
-    ALT2_GPT1_CAPTURE1 = 0x02,
+    Alt2Gpt1Capture1 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: KPP_ROW07 of instance: kpp"]
-    ALT3_KPP_ROW7 = 0x03,
+    Alt3KppRow7 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM2_PWMX02 of instance: flexpwm2"]
-    ALT4_FLEXPWM2_PWMX2 = 0x04,
+    Alt4Flexpwm2Pwmx2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO12 of instance: gpio4"]
-    ALT5_GPIO4_IO12 = 0x05,
+    Alt5Gpio4Io12 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT18 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT18 = 0x06,
+    Alt6Xbar1XbarInout18 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: EWM_EWM_OUT_B of instance: ewm"]
-    ALT7_EWM_EWM_OUT_B = 0x07,
+    Alt7EwmEwmOutB = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO12 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO12 = 0x08,
+    Alt8Flexio2Flexio12 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
@@ -8551,23 +8551,23 @@ impl From<SwMuxCtlPadGpioAd12MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd13MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SPDIF_SR_CLK of instance: spdif"]
-    ALT0_SPDIF_SR_CLK = 0x0,
+    Alt0SpdifSrClk = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: LPI2C5_SDAS of instance: lpi2c5"]
-    ALT1_LPI2C5_SDAS = 0x01,
+    Alt1Lpi2c5Sdas = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: GPT1_CAPTURE2 of instance: gpt1"]
-    ALT2_GPT1_CAPTURE2 = 0x02,
+    Alt2Gpt1Capture2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: KPP_COL07 of instance: kpp"]
-    ALT3_KPP_COL7 = 0x03,
+    Alt3KppCol7 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM2_PWMX03 of instance: flexpwm2"]
-    ALT4_FLEXPWM2_PWMX3 = 0x04,
+    Alt4Flexpwm2Pwmx3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO13 of instance: gpio4"]
-    ALT5_GPIO4_IO13 = 0x05,
+    Alt5Gpio4Io13 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPUART3_TX of instance: lpuart3"]
-    ALT6_LPUART3_TX = 0x06,
+    Alt6Lpuart3Tx = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: USDHC2_CD_B of instance: usdhc2"]
-    ALT7_USDHC2_CD_B = 0x07,
+    Alt7Usdhc2CdB = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO13 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO13 = 0x08,
+    Alt8Flexio2Flexio13 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
@@ -8603,23 +8603,23 @@ impl From<SwMuxCtlPadGpioAd13MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd14MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SPDIF_EXT_CLK of instance: spdif"]
-    ALT0_SPDIF_EXT_CLK = 0x0,
+    Alt0SpdifExtClk = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: LPI2C5_HREQ of instance: lpi2c5"]
-    ALT1_LPI2C5_HREQ = 0x01,
+    Alt1Lpi2c5Hreq = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: GPT1_COMPARE1 of instance: gpt1"]
-    ALT2_GPT1_COMPARE1 = 0x02,
+    Alt2Gpt1Compare1 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: KPP_ROW06 of instance: kpp"]
-    ALT3_KPP_ROW6 = 0x03,
+    Alt3KppRow6 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM3_PWMX00 of instance: flexpwm3"]
-    ALT4_FLEXPWM3_PWMX0 = 0x04,
+    Alt4Flexpwm3Pwmx0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO14 of instance: gpio4"]
-    ALT5_GPIO4_IO14 = 0x05,
+    Alt5Gpio4Io14 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPUART3_RX of instance: lpuart3"]
-    ALT6_LPUART3_RX = 0x06,
+    Alt6Lpuart3Rx = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: USDHC2_WP of instance: usdhc2"]
-    ALT7_USDHC2_WP = 0x07,
+    Alt7Usdhc2Wp = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO14 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO14 = 0x08,
+    Alt8Flexio2Flexio14 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
@@ -8655,29 +8655,29 @@ impl From<SwMuxCtlPadGpioAd14MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd15MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SPDIF_IN of instance: spdif"]
-    ALT0_SPDIF_IN = 0x0,
+    Alt0SpdifIn = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: LPUART10_TX of instance: lpuart10"]
-    ALT1_LPUART10_TX = 0x01,
+    Alt1Lpuart10Tx = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: GPT1_COMPARE2 of instance: gpt1"]
-    ALT2_GPT1_COMPARE2 = 0x02,
+    Alt2Gpt1Compare2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: KPP_COL06 of instance: kpp"]
-    ALT3_KPP_COL6 = 0x03,
+    Alt3KppCol6 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM3_PWMX01 of instance: flexpwm3"]
-    ALT4_FLEXPWM3_PWMX1 = 0x04,
+    Alt4Flexpwm3Pwmx1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO15 of instance: gpio4"]
-    ALT5_GPIO4_IO15 = 0x05,
+    Alt5Gpio4Io15 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPUART3_CTS_B of instance: lpuart3"]
-    ALT6_LPUART3_CTS_B = 0x06,
+    Alt6Lpuart3CtsB = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: LPSPI3_PCS1 of instance: lpspi3"]
-    ALT7_LPSPI3_PCS1 = 0x07,
+    Alt7Lpspi3Pcs1 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO15 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO15 = 0x08,
+    Alt8Flexio2Flexio15 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: CAN1_TX of instance: can1"]
-    ALT9_CAN1_TX = 0x09,
+    Alt9Can1Tx = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_CLK_ECAT_CLK25 of instance: ecat"]
-    ALT12_ECAT_CLK_ECAT_CLK25 = 0x0c,
+    Alt12EcatClkEcatClk25 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -8709,29 +8709,29 @@ impl From<SwMuxCtlPadGpioAd15MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd16MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SPDIF_OUT of instance: spdif"]
-    ALT0_SPDIF_OUT = 0x0,
+    Alt0SpdifOut = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: LPUART10_RX of instance: lpuart10"]
-    ALT1_LPUART10_RX = 0x01,
+    Alt1Lpuart10Rx = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: GPT1_COMPARE3 of instance: gpt1"]
-    ALT2_GPT1_COMPARE3 = 0x02,
+    Alt2Gpt1Compare3 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: KPP_ROW05 of instance: kpp"]
-    ALT3_KPP_ROW5 = 0x03,
+    Alt3KppRow5 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM3_PWMX02 of instance: flexpwm3"]
-    ALT4_FLEXPWM3_PWMX2 = 0x04,
+    Alt4Flexpwm3Pwmx2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO16 of instance: gpio4"]
-    ALT5_GPIO4_IO16 = 0x05,
+    Alt5Gpio4Io16 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPUART3_RTS_B of instance: lpuart3"]
-    ALT6_LPUART3_RTS_B = 0x06,
+    Alt6Lpuart3RtsB = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: LPSPI3_SCK of instance: lpspi3"]
-    ALT7_LPSPI3_SCK = 0x07,
+    Alt7Lpspi3Sck = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO16 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO16 = 0x08,
+    Alt8Flexio2Flexio16 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: CAN1_RX of instance: can1"]
-    ALT9_CAN1_RX = 0x09,
+    Alt9Can1Rx = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_LINK_0 of instance: ecat"]
-    ALT12_ECAT_LINK0 = 0x0c,
+    Alt12EcatLink0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -8763,29 +8763,29 @@ impl From<SwMuxCtlPadGpioAd16MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd17MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SAI4_MCLK of instance: sai4"]
-    ALT0_SAI4_MCLK = 0x0,
+    Alt0Sai4Mclk = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: ACMP1_CMPO of instance: acmp1"]
-    ALT1_ACMP1_CMPO = 0x01,
+    Alt1Acmp1Cmpo = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: GPT1_CLK of instance: gpt1"]
-    ALT2_GPT1_CLK = 0x02,
+    Alt2Gpt1Clk = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: KPP_COL05 of instance: kpp"]
-    ALT3_KPP_COL5 = 0x03,
+    Alt3KppCol5 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM3_PWMX03 of instance: flexpwm3"]
-    ALT4_FLEXPWM3_PWMX3 = 0x04,
+    Alt4Flexpwm3Pwmx3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO17 of instance: gpio4"]
-    ALT5_GPIO4_IO17 = 0x05,
+    Alt5Gpio4Io17 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: I3C2_PUR of instance: i3c2"]
-    ALT6_I3C2_PUR = 0x06,
+    Alt6I3c2Pur = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: LPSPI3_PCS0 of instance: lpspi3"]
-    ALT7_LPSPI3_PCS0 = 0x07,
+    Alt7Lpspi3Pcs0 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO17 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO17 = 0x08,
+    Alt8Flexio2Flexio17 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPI2C3_HREQ of instance: lpi2c3"]
-    ALT9_LPI2C3_HREQ = 0x09,
+    Alt9Lpi2c3Hreq = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_LINK_1 of instance: ecat"]
-    ALT12_ECAT_LINK1 = 0x0c,
+    Alt12EcatLink1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -8817,29 +8817,29 @@ impl From<SwMuxCtlPadGpioAd17MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd18MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SAI4_RX_SYNC of instance: sai4"]
-    ALT0_SAI4_RX_SYNC = 0x0,
+    Alt0Sai4RxSync = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: ACMP2_CMPO of instance: acmp2"]
-    ALT1_ACMP2_CMPO = 0x01,
+    Alt1Acmp2Cmpo = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART5_RI_B of instance: lpuart5"]
-    ALT2_LPUART5_RI_B = 0x02,
+    Alt2Lpuart5RiB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: KPP_ROW04 of instance: kpp"]
-    ALT3_KPP_ROW4 = 0x03,
+    Alt3KppRow4 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM4_PWMX00 of instance: flexpwm4"]
-    ALT4_FLEXPWM4_PWMX0 = 0x04,
+    Alt4Flexpwm4Pwmx0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO18 of instance: gpio4"]
-    ALT5_GPIO4_IO18 = 0x05,
+    Alt5Gpio4Io18 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: I3C2_SCL of instance: i3c2"]
-    ALT6_I3C2_SCL = 0x06,
+    Alt6I3c2Scl = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: LPSPI3_SDO of instance: lpspi3"]
-    ALT7_LPSPI3_SDO = 0x07,
+    Alt7Lpspi3Sdo = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO18 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO18 = 0x08,
+    Alt8Flexio2Flexio18 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPI2C3_SCL of instance: lpi2c3"]
-    ALT9_LPI2C3_SCL = 0x09,
+    Alt9Lpi2c3Scl = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_PROM_CLK of instance: ecat"]
-    ALT12_ECAT_SCL = 0x0c,
+    Alt12EcatScl = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -8871,29 +8871,29 @@ impl From<SwMuxCtlPadGpioAd18MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd19MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SAI4_RX_BCLK of instance: sai4"]
-    ALT0_SAI4_RX_BCLK = 0x0,
+    Alt0Sai4RxBclk = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: ACMP3_CMPO of instance: acmp3"]
-    ALT1_ACMP3_CMPO = 0x01,
+    Alt1Acmp3Cmpo = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT19 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT19 = 0x02,
+    Alt2Xbar1XbarInout19 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: KPP_COL04 of instance: kpp"]
-    ALT3_KPP_COL4 = 0x03,
+    Alt3KppCol4 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM4_PWMX01 of instance: flexpwm4"]
-    ALT4_FLEXPWM4_PWMX1 = 0x04,
+    Alt4Flexpwm4Pwmx1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO19 of instance: gpio4"]
-    ALT5_GPIO4_IO19 = 0x05,
+    Alt5Gpio4Io19 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: I3C2_SDA of instance: i3c2"]
-    ALT6_I3C2_SDA = 0x06,
+    Alt6I3c2Sda = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: LPSPI3_SDI of instance: lpspi3"]
-    ALT7_LPSPI3_SDI = 0x07,
+    Alt7Lpspi3Sdi = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO19 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO19 = 0x08,
+    Alt8Flexio2Flexio19 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPI2C3_SDA of instance: lpi2c3"]
-    ALT9_LPI2C3_SDA = 0x09,
+    Alt9Lpi2c3Sda = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_PROM_DATA of instance: ecat"]
-    ALT12_ECAT_SDA = 0x0c,
+    Alt12EcatSda = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -8925,23 +8925,23 @@ impl From<SwMuxCtlPadGpioAd19MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd20MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SAI4_RX_DATA00 of instance: sai4"]
-    ALT0_SAI4_RX_DATA0 = 0x0,
+    Alt0Sai4RxData0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: ACMP4_CMPO of instance: acmp4"]
-    ALT1_ACMP4_CMPO = 0x01,
+    Alt1Acmp4Cmpo = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPIT2_TRIGGER00 of instance: lpit2"]
-    ALT2_LPIT2_TRIGGER0 = 0x02,
+    Alt2Lpit2Trigger0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC1_EMCLK00 of instance: sinc1"]
-    ALT3_SINC1_EMCLK0 = 0x03,
+    Alt3Sinc1Emclk0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM4_PWMX02 of instance: flexpwm4"]
-    ALT4_FLEXPWM4_PWMX2 = 0x04,
+    Alt4Flexpwm4Pwmx2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO20 of instance: gpio4"]
-    ALT5_GPIO4_IO20 = 0x05,
+    Alt5Gpio4Io20 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: NETC_TMR_TRIG1 of instance: netc"]
-    ALT6_NETC_TMR_1588_TRIG1 = 0x06,
+    Alt6NetcTmr1588Trig1 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_1588_CLK of instance: netc_clkgen"]
-    ALT7_NETC_CLKGEN_TMR_1588_CLK = 0x07,
+    Alt7NetcClkgenTmr1588Clk = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO20 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO20 = 0x08,
+    Alt8Flexio2Flexio20 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
@@ -8977,27 +8977,27 @@ impl From<SwMuxCtlPadGpioAd20MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd21MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SAI4_TX_DATA00 of instance: sai4"]
-    ALT0_SAI4_TX_DATA0 = 0x0,
+    Alt0Sai4TxData0 = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPIT2_TRIGGER01 of instance: lpit2"]
-    ALT2_LPIT2_TRIGGER1 = 0x02,
+    Alt2Lpit2Trigger1 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC1_EMBIT00 of instance: sinc1"]
-    ALT3_SINC1_EMBIT0 = 0x03,
+    Alt3Sinc1Embit0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM4_PWMX03 of instance: flexpwm4"]
-    ALT4_FLEXPWM4_PWMX3 = 0x04,
+    Alt4Flexpwm4Pwmx3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO21 of instance: gpio4"]
-    ALT5_GPIO4_IO21 = 0x05,
+    Alt5Gpio4Io21 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: NETC_TMR_TRIG2 of instance: netc"]
-    ALT6_NETC_TMR_1588_TRIG2 = 0x06,
+    Alt6NetcTmr1588Trig2 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_TMR_GCLK of instance: netc"]
-    ALT7_NETC_TMR_1588_GCLK = 0x07,
+    Alt7NetcTmr1588Gclk = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO21 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO21 = 0x08,
+    Alt8Flexio2Flexio21 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_LED_RUN of instance: ecat"]
-    ALT12_ECAT_LED_RUN = 0x0c,
+    Alt12EcatLedRun = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9029,25 +9029,25 @@ impl From<SwMuxCtlPadGpioAd21MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd22MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SAI4_TX_BCLK of instance: sai4"]
-    ALT0_SAI4_TX_BCLK = 0x0,
+    Alt0Sai4TxBclk = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPIT2_TRIGGER02 of instance: lpit2"]
-    ALT2_LPIT2_TRIGGER2 = 0x02,
+    Alt2Lpit2Trigger2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC1_EMCLK01 of instance: sinc1"]
-    ALT3_SINC1_EMCLK1 = 0x03,
+    Alt3Sinc1Emclk1 = 0x03,
     _RESERVED_4 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO22 of instance: gpio4"]
-    ALT5_GPIO4_IO22 = 0x05,
+    Alt5Gpio4Io22 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_TMR_ALARM1 of instance: netc"]
-    ALT7_NETC_TMR_1588_ALARM1 = 0x07,
+    Alt7NetcTmr1588Alarm1 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO22 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO22 = 0x08,
+    Alt8Flexio2Flexio22 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_LED_ERR of instance: ecat"]
-    ALT12_ECAT_LED_ERR = 0x0c,
+    Alt12EcatLedErr = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9079,25 +9079,25 @@ impl From<SwMuxCtlPadGpioAd22MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd23MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SAI4_TX_SYNC of instance: sai4"]
-    ALT0_SAI4_TX_SYNC = 0x0,
+    Alt0Sai4TxSync = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPIT2_TRIGGER03 of instance: lpit2"]
-    ALT2_LPIT2_TRIGGER3 = 0x02,
+    Alt2Lpit2Trigger3 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC1_EMBIT01 of instance: sinc1"]
-    ALT3_SINC1_EMBIT1 = 0x03,
+    Alt3Sinc1Embit1 = 0x03,
     _RESERVED_4 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO23 of instance: gpio4"]
-    ALT5_GPIO4_IO23 = 0x05,
+    Alt5Gpio4Io23 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_TMR_ALARM2 of instance: netc"]
-    ALT7_NETC_TMR_1588_ALARM2 = 0x07,
+    Alt7NetcTmr1588Alarm2 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO23 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO23 = 0x08,
+    Alt8Flexio2Flexio23 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_LED_STATE_RUN of instance: ecat"]
-    ALT12_ECAT_LED_STATE_RUN = 0x0c,
+    Alt12EcatLedStateRun = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9129,26 +9129,26 @@ impl From<SwMuxCtlPadGpioAd23MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd24MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: LPUART6_TX of instance: lpuart6"]
-    ALT0_LPUART6_TX = 0x0,
+    Alt0Lpuart6Tx = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: LPI2C4_SCL of instance: lpi2c4"]
-    ALT1_LPI2C4_SCL = 0x01,
+    Alt1Lpi2c4Scl = 0x01,
     _RESERVED_2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC2_MOD_CLK1 of instance: sinc2"]
-    ALT3_SINC2_MOD_CLK1 = 0x03,
+    Alt3Sinc2ModClk1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM2_PWMA00 of instance: flexpwm2"]
-    ALT4_FLEXPWM2_PWMA0 = 0x04,
+    Alt4Flexpwm2Pwma0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO24 of instance: gpio4"]
-    ALT5_GPIO4_IO24 = 0x05,
+    Alt5Gpio4Io24 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_TMR_TRIG1 of instance: netc"]
-    ALT7_NETC_TMR_1588_TRIG1 = 0x07,
+    Alt7NetcTmr1588Trig1 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO24 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO24 = 0x08,
+    Alt8Flexio2Flexio24 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_LINK_ACT00 of instance: ecat"]
-    ALT12_ECAT_LINK_ACT0 = 0x0c,
+    Alt12EcatLinkAct0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9180,27 +9180,27 @@ impl From<SwMuxCtlPadGpioAd24MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd25MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: LPUART6_RX of instance: lpuart6"]
-    ALT0_LPUART6_RX = 0x0,
+    Alt0Lpuart6Rx = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: LPI2C4_SDA of instance: lpi2c4"]
-    ALT1_LPI2C4_SDA = 0x01,
+    Alt1Lpi2c4Sda = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPSPI5_PCS3 of instance: lpspi5"]
-    ALT2_LPSPI5_PCS3 = 0x02,
+    Alt2Lpspi5Pcs3 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC2_MOD_CLK2 of instance: sinc2"]
-    ALT3_SINC2_MOD_CLK2 = 0x03,
+    Alt3Sinc2ModClk2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM2_PWMB00 of instance: flexpwm2"]
-    ALT4_FLEXPWM2_PWMB0 = 0x04,
+    Alt4Flexpwm2Pwmb0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO25 of instance: gpio4"]
-    ALT5_GPIO4_IO25 = 0x05,
+    Alt5Gpio4Io25 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_TMR_TRIG2 of instance: netc"]
-    ALT7_NETC_TMR_1588_TRIG2 = 0x07,
+    Alt7NetcTmr1588Trig2 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO25 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO25 = 0x08,
+    Alt8Flexio2Flexio25 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_LINK_ACT01 of instance: ecat"]
-    ALT12_ECAT_LINK_ACT1 = 0x0c,
+    Alt12EcatLinkAct1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9232,29 +9232,29 @@ impl From<SwMuxCtlPadGpioAd25MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd26MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: LPUART6_CTS_B of instance: lpuart6"]
-    ALT0_LPUART6_CTS_B = 0x0,
+    Alt0Lpuart6CtsB = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: LPUART5_TX of instance: lpuart5"]
-    ALT1_LPUART5_TX = 0x01,
+    Alt1Lpuart5Tx = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPSPI5_PCS2 of instance: lpspi5"]
-    ALT2_LPSPI5_PCS2 = 0x02,
+    Alt2Lpspi5Pcs2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC2_EMCLK00 of instance: sinc2"]
-    ALT3_SINC2_EMCLK0 = 0x03,
+    Alt3Sinc2Emclk0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM2_PWMA01 of instance: flexpwm2"]
-    ALT4_FLEXPWM2_PWMA1 = 0x04,
+    Alt4Flexpwm2Pwma1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO26 of instance: gpio4"]
-    ALT5_GPIO4_IO26 = 0x05,
+    Alt5Gpio4Io26 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_ROW00 of instance: kpp"]
-    ALT6_KPP_ROW0 = 0x06,
+    Alt6KppRow0 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_TMR_PP1 of instance: netc"]
-    ALT7_NETC_TMR_1588_PP1 = 0x07,
+    Alt7NetcTmr1588Pp1 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO26 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO26 = 0x08,
+    Alt8Flexio2Flexio26 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: USDHC2_CD_B of instance: usdhc2"]
-    ALT9_USDHC2_CD_B = 0x09,
+    Alt9Usdhc2CdB = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: MIC_BITSTREAM02 of instance: mic"]
-    ALT12_MIC_BITSTREAM2 = 0x0c,
+    Alt12MicBitstream2 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9286,29 +9286,29 @@ impl From<SwMuxCtlPadGpioAd26MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd27MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: LPUART6_RTS_B of instance: lpuart6"]
-    ALT0_LPUART6_RTS_B = 0x0,
+    Alt0Lpuart6RtsB = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: LPUART5_RX of instance: lpuart5"]
-    ALT1_LPUART5_RX = 0x01,
+    Alt1Lpuart5Rx = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPSPI5_PCS1 of instance: lpspi5"]
-    ALT2_LPSPI5_PCS1 = 0x02,
+    Alt2Lpspi5Pcs1 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC2_EMBIT00 of instance: sinc2"]
-    ALT3_SINC2_EMBIT0 = 0x03,
+    Alt3Sinc2Embit0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM2_PWMB01 of instance: flexpwm2"]
-    ALT4_FLEXPWM2_PWMB1 = 0x04,
+    Alt4Flexpwm2Pwmb1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO27 of instance: gpio4"]
-    ALT5_GPIO4_IO27 = 0x05,
+    Alt5Gpio4Io27 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_COL00 of instance: kpp"]
-    ALT6_KPP_COL0 = 0x06,
+    Alt6KppCol0 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_TMR_PP2 of instance: netc"]
-    ALT7_NETC_TMR_1588_PP2 = 0x07,
+    Alt7NetcTmr1588Pp2 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO27 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO27 = 0x08,
+    Alt8Flexio2Flexio27 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: USDHC2_WP of instance: usdhc2"]
-    ALT9_USDHC2_WP = 0x09,
+    Alt9Usdhc2Wp = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: MIC_CLK of instance: mic"]
-    ALT12_MIC_CLK = 0x0c,
+    Alt12MicClk = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9340,28 +9340,28 @@ impl From<SwMuxCtlPadGpioAd27MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd28MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: LPSPI5_SCK of instance: lpspi5"]
-    ALT0_LPSPI5_SCK = 0x0,
+    Alt0Lpspi5Sck = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: I3C1_PUR of instance: i3c1"]
-    ALT2_I3C1_PUR = 0x02,
+    Alt2I3c1Pur = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC2_EMCLK01 of instance: sinc2"]
-    ALT3_SINC2_EMCLK1 = 0x03,
+    Alt3Sinc2Emclk1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM2_PWMB02 of instance: flexpwm2"]
-    ALT4_FLEXPWM2_PWMB2 = 0x04,
+    Alt4Flexpwm2Pwmb2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO28 of instance: gpio4"]
-    ALT5_GPIO4_IO28 = 0x05,
+    Alt5Gpio4Io28 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_ROW03 of instance: kpp"]
-    ALT6_KPP_ROW3 = 0x06,
+    Alt6KppRow3 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_TMR_PP3 of instance: netc"]
-    ALT7_NETC_TMR_1588_PP3 = 0x07,
+    Alt7NetcTmr1588Pp3 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO28 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO28 = 0x08,
+    Alt8Flexio2Flexio28 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: USDHC2_RESET_B of instance: usdhc2"]
-    ALT9_USDHC2_RESET_B = 0x09,
+    Alt9Usdhc2ResetB = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: MIC_BITSTREAM00 of instance: mic"]
-    ALT12_MIC_BITSTREAM0 = 0x0c,
+    Alt12MicBitstream0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9393,28 +9393,28 @@ impl From<SwMuxCtlPadGpioAd28MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd29MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: LPSPI5_PCS0 of instance: lpspi5"]
-    ALT0_LPSPI5_PCS0 = 0x0,
+    Alt0Lpspi5Pcs0 = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: USDHC2_CD_B of instance: usdhc2"]
-    ALT2_USDHC2_CD_B = 0x02,
+    Alt2Usdhc2CdB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC2_EMBIT01 of instance: sinc2"]
-    ALT3_SINC2_EMBIT1 = 0x03,
+    Alt3Sinc2Embit1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: FLEXPWM2_PWMA02 of instance: flexpwm2"]
-    ALT4_FLEXPWM2_PWMA2 = 0x04,
+    Alt4Flexpwm2Pwma2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO29 of instance: gpio4"]
-    ALT5_GPIO4_IO29 = 0x05,
+    Alt5Gpio4Io29 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_COL03 of instance: kpp"]
-    ALT6_KPP_COL3 = 0x06,
+    Alt6KppCol3 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: EWM_EWM_OUT_B of instance: ewm"]
-    ALT7_EWM_EWM_OUT_B = 0x07,
+    Alt7EwmEwmOutB = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO29 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO29 = 0x08,
+    Alt8Flexio2Flexio29 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: USDHC2_VSELECT of instance: usdhc2"]
-    ALT9_USDHC2_VSELECT = 0x09,
+    Alt9Usdhc2Vselect = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: MIC_BITSTREAM01 of instance: mic"]
-    ALT12_MIC_BITSTREAM1 = 0x0c,
+    Alt12MicBitstream1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9446,29 +9446,29 @@ impl From<SwMuxCtlPadGpioAd29MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd30MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: LPSPI5_SDO of instance: lpspi5"]
-    ALT0_LPSPI5_SDO = 0x0,
+    Alt0Lpspi5Sdo = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: USB_OTG2_OC of instance: usb"]
-    ALT1_USB_OTG2_OC = 0x01,
+    Alt1UsbOtg2Oc = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: CAN2_TX of instance: can2"]
-    ALT2_CAN2_TX = 0x02,
+    Alt2Can2Tx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC2_EMCLK02 of instance: sinc2"]
-    ALT3_SINC2_EMCLK2 = 0x03,
+    Alt3Sinc2Emclk2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPUART8_TX of instance: lpuart8"]
-    ALT4_LPUART8_TX = 0x04,
+    Alt4Lpuart8Tx = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO30 of instance: gpio4"]
-    ALT5_GPIO4_IO30 = 0x05,
+    Alt5Gpio4Io30 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_ROW02 of instance: kpp"]
-    ALT6_KPP_ROW2 = 0x06,
+    Alt6KppRow2 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_EMDC of instance: netc"]
-    ALT7_NETC_EMDC = 0x07,
+    Alt7NetcEmdc = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO30 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO30 = 0x08,
+    Alt8Flexio2Flexio30 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: XBAR1_XBAR_INOUT24 of instance: xbar1"]
-    ALT9_XBAR1_XBAR_INOUT24 = 0x09,
+    Alt9Xbar1XbarInout24 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_MCLK of instance: ecat"]
-    ALT12_ECAT_MDC = 0x0c,
+    Alt12EcatMdc = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9500,29 +9500,29 @@ impl From<SwMuxCtlPadGpioAd30MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd31MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: LPSPI5_SDI of instance: lpspi5"]
-    ALT0_LPSPI5_SDI = 0x0,
+    Alt0Lpspi5Sdi = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: USB_OTG2_PWR of instance: usb"]
-    ALT1_USB_OTG2_PWR = 0x01,
+    Alt1UsbOtg2Pwr = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: CAN2_RX of instance: can2"]
-    ALT2_CAN2_RX = 0x02,
+    Alt2Can2Rx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC2_EMBIT02 of instance: sinc2"]
-    ALT3_SINC2_EMBIT2 = 0x03,
+    Alt3Sinc2Embit2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPUART8_RX of instance: lpuart8"]
-    ALT4_LPUART8_RX = 0x04,
+    Alt4Lpuart8Rx = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO31 of instance: gpio4"]
-    ALT5_GPIO4_IO31 = 0x05,
+    Alt5Gpio4Io31 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_COL02 of instance: kpp"]
-    ALT6_KPP_COL2 = 0x06,
+    Alt6KppCol2 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_EMDIO of instance: netc"]
-    ALT7_NETC_EMDIO = 0x07,
+    Alt7NetcEmdio = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO2_FLEXIO31 of instance: flexio2"]
-    ALT8_FLEXIO2_FLEXIO31 = 0x08,
+    Alt8Flexio2Flexio31 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: XBAR1_XBAR_INOUT25 of instance: xbar1"]
-    ALT9_XBAR1_XBAR_INOUT25 = 0x09,
+    Alt9Xbar1XbarInout25 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_MDIO of instance: ecat"]
-    ALT12_ECAT_MDIO = 0x0c,
+    Alt12EcatMdio = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9554,28 +9554,28 @@ impl From<SwMuxCtlPadGpioAd31MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd32MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: LPI2C5_SCL of instance: lpi2c5"]
-    ALT0_LPI2C5_SCL = 0x0,
+    Alt0Lpi2c5Scl = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: USBPHY2_OTG_ID of instance: usbphy2"]
-    ALT1_USBPHY2_OTG_ID = 0x01,
+    Alt1Usbphy2OtgId = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: GPC_PMIC_RDY of instance: gpc"]
-    ALT2_GPC_PMIC_RDY = 0x02,
+    Alt2GpcPmicRdy = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC2_EMCLK03 of instance: sinc2"]
-    ALT3_SINC2_EMCLK3 = 0x03,
+    Alt3Sinc2Emclk3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: USDHC1_CD_B of instance: usdhc1"]
-    ALT4_USDHC1_CD_B = 0x04,
+    Alt4Usdhc1CdB = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO00 of instance: gpio5"]
-    ALT5_GPIO5_IO0 = 0x05,
+    Alt5Gpio5Io0 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_ROW01 of instance: kpp"]
-    ALT6_KPP_ROW1 = 0x06,
+    Alt6KppRow1 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_TMR_TRIG1 of instance: netc"]
-    ALT7_NETC_TMR_1588_TRIG1 = 0x07,
+    Alt7NetcTmr1588Trig1 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPUART10_TX of instance: lpuart10"]
-    ALT8_LPUART10_TX = 0x08,
+    Alt8Lpuart10Tx = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: MIC_BITSTREAM03 of instance: mic"]
-    ALT12_MIC_BITSTREAM3 = 0x0c,
+    Alt12MicBitstream3 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9607,23 +9607,23 @@ impl From<SwMuxCtlPadGpioAd32MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd33MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: LPI2C5_SDA of instance: lpi2c5"]
-    ALT0_LPI2C5_SDA = 0x0,
+    Alt0Lpi2c5Sda = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: USBPHY1_OTG_ID of instance: usbphy1"]
-    ALT1_USBPHY1_OTG_ID = 0x01,
+    Alt1Usbphy1OtgId = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT17 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT17 = 0x02,
+    Alt2Xbar1XbarInout17 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC2_EMBIT03 of instance: sinc2"]
-    ALT3_SINC2_EMBIT3 = 0x03,
+    Alt3Sinc2Embit3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: USDHC1_WP of instance: usdhc1"]
-    ALT4_USDHC1_WP = 0x04,
+    Alt4Usdhc1Wp = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO01 of instance: gpio5"]
-    ALT5_GPIO5_IO1 = 0x05,
+    Alt5Gpio5Io1 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_COL01 of instance: kpp"]
-    ALT6_KPP_COL1 = 0x06,
+    Alt6KppCol1 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_TMR_TRIG2 of instance: netc"]
-    ALT7_NETC_TMR_1588_TRIG2 = 0x07,
+    Alt7NetcTmr1588Trig2 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPUART10_RX of instance: lpuart10"]
-    ALT8_LPUART10_RX = 0x08,
+    Alt8Lpuart10Rx = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
@@ -9659,22 +9659,22 @@ impl From<SwMuxCtlPadGpioAd33MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd34MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: I3C2_SCL of instance: i3c2"]
-    ALT0_I3C2_SCL = 0x0,
+    Alt0I3c2Scl = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: USB_OTG1_PWR of instance: usb"]
-    ALT1_USB_OTG1_PWR = 0x01,
+    Alt1UsbOtg1Pwr = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT18 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT18 = 0x02,
+    Alt2Xbar1XbarInout18 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC_FILTER_GLUE2_BREAK of instance: sinc_filter_glue2"]
-    ALT3_SINC_FILTER_GLUE2_BREAK = 0x03,
+    Alt3SincFilterGlue2Break = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: USDHC1_VSELECT of instance: usdhc1"]
-    ALT4_USDHC1_VSELECT = 0x04,
+    Alt4Usdhc1Vselect = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO02 of instance: gpio5"]
-    ALT5_GPIO5_IO2 = 0x05,
+    Alt5Gpio5Io2 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_TMR_ALARM1 of instance: netc"]
-    ALT7_NETC_TMR_1588_ALARM1 = 0x07,
+    Alt7NetcTmr1588Alarm1 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPUART10_CTS_B of instance: lpuart10"]
-    ALT8_LPUART10_CTS_B = 0x08,
+    Alt8Lpuart10CtsB = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
@@ -9710,22 +9710,22 @@ impl From<SwMuxCtlPadGpioAd34MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioAd35MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: I3C2_SDA of instance: i3c2"]
-    ALT0_I3C2_SDA = 0x0,
+    Alt0I3c2Sda = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: USB_OTG1_OC of instance: usb"]
-    ALT1_USB_OTG1_OC = 0x01,
+    Alt1UsbOtg1Oc = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT19 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT19 = 0x02,
+    Alt2Xbar1XbarInout19 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: SINC2_MOD_CLK0 of instance: sinc2"]
-    ALT3_SINC2_MOD_CLK0 = 0x03,
+    Alt3Sinc2ModClk0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: USDHC1_RESET_B of instance: usdhc1"]
-    ALT4_USDHC1_RESET_B = 0x04,
+    Alt4Usdhc1ResetB = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO03 of instance: gpio5"]
-    ALT5_GPIO5_IO3 = 0x05,
+    Alt5Gpio5Io3 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: NETC_TMR_ALARM2 of instance: netc"]
-    ALT7_NETC_TMR_1588_ALARM2 = 0x07,
+    Alt7NetcTmr1588Alarm2 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPUART10_RTS_B of instance: lpuart10"]
-    ALT8_LPUART10_RTS_B = 0x08,
+    Alt8Lpuart10RtsB = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
@@ -9761,22 +9761,22 @@ impl From<SwMuxCtlPadGpioAd35MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB100MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_TXD00 of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_TXD0 = 0x0,
+    Alt0NetcPinmuxEth1Txd0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: ADC2_CONV_D00 of instance: adc2"]
-    ALT1_ADC2_CONV_D0 = 0x01,
+    Alt1Adc2ConvD0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SEMC_CSX01 of instance: semc"]
-    ALT2_SEMC_CSX1 = 0x02,
+    Alt2SemcCsx1 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER1_TIMER0 of instance: qtimer1"]
-    ALT3_QTIMER1_TIMER0 = 0x03,
+    Alt3Qtimer1Timer0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XBAR1_XBAR_INOUT26 of instance: xbar1"]
-    ALT4_XBAR1_XBAR_INOUT26 = 0x04,
+    Alt4Xbar1XbarInout26 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO00 of instance: gpio6"]
-    ALT5_GPIO6_IO0 = 0x05,
+    Alt5Gpio6Io0 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: TPM5_CH00 of instance: tpm5"]
-    ALT6_TPM5_CH0 = 0x06,
+    Alt6Tpm5Ch0 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_TXD00 of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_TXD0 = 0x08,
+    Alt8NetcPinmuxEth4Txd0 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
@@ -9812,27 +9812,27 @@ impl From<SwMuxCtlPadGpioB100MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB101MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_TXD01 of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_TXD1 = 0x0,
+    Alt0NetcPinmuxEth1Txd1 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: ADC2_CONV_D01 of instance: adc2"]
-    ALT1_ADC2_CONV_D1 = 0x01,
+    Alt1Adc2ConvD1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SEMC_CSX02 of instance: semc"]
-    ALT2_SEMC_CSX2 = 0x02,
+    Alt2SemcCsx2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER1_TIMER1 of instance: qtimer1"]
-    ALT3_QTIMER1_TIMER1 = 0x03,
+    Alt3Qtimer1Timer1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XBAR1_XBAR_INOUT27 of instance: xbar1"]
-    ALT4_XBAR1_XBAR_INOUT27 = 0x04,
+    Alt4Xbar1XbarInout27 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO01 of instance: gpio6"]
-    ALT5_GPIO6_IO1 = 0x05,
+    Alt5Gpio6Io1 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: TPM5_CH01 of instance: tpm5"]
-    ALT6_TPM5_CH1 = 0x06,
+    Alt6Tpm5Ch1 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_TXD01 of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_TXD1 = 0x08,
+    Alt8NetcPinmuxEth4Txd1 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: SAI4_RX_DATA00 of instance: sai4"]
-    ALT12_SAI4_RX_DATA0 = 0x0c,
+    Alt12Sai4RxData0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9864,29 +9864,29 @@ impl From<SwMuxCtlPadGpioB101MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB102MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_TX_EN of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_TX_EN = 0x0,
+    Alt0NetcPinmuxEth1TxEn = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: ADC2_CONV_D02 of instance: adc2"]
-    ALT1_ADC2_CONV_D2 = 0x01,
+    Alt1Adc2ConvD2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPI2C6_SCL of instance: lpi2c6"]
-    ALT2_LPI2C6_SCL = 0x02,
+    Alt2Lpi2c6Scl = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER1_TIMER2 of instance: qtimer1"]
-    ALT3_QTIMER1_TIMER2 = 0x03,
+    Alt3Qtimer1Timer2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XBAR1_XBAR_INOUT28 of instance: xbar1"]
-    ALT4_XBAR1_XBAR_INOUT28 = 0x04,
+    Alt4Xbar1XbarInout28 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO02 of instance: gpio6"]
-    ALT5_GPIO6_IO2 = 0x05,
+    Alt5Gpio6Io2 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: TPM5_CH02 of instance: tpm5"]
-    ALT6_TPM5_CH2 = 0x06,
+    Alt6Tpm5Ch2 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_B_SS1_B of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_B_SS1_B = 0x07,
+    Alt7Flexspi1Bus2bitBSs1B = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_TX_EN of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_TX_EN = 0x08,
+    Alt8NetcPinmuxEth4TxEn = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART11_TX of instance: lpuart11"]
-    ALT9_LPUART11_TX = 0x09,
+    Alt9Lpuart11Tx = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: SAI4_RX_DATA01 of instance: sai4"]
-    ALT12_SAI4_RX_DATA1 = 0x0c,
+    Alt12Sai4RxData1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9918,29 +9918,29 @@ impl From<SwMuxCtlPadGpioB102MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB103MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_TX_CLK of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_TX_CLK = 0x0,
+    Alt0NetcPinmuxEth1TxClk = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: ADC2_CONV_D03 of instance: adc2"]
-    ALT1_ADC2_CONV_D3 = 0x01,
+    Alt1Adc2ConvD3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPI2C6_SDA of instance: lpi2c6"]
-    ALT2_LPI2C6_SDA = 0x02,
+    Alt2Lpi2c6Sda = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER2_TIMER0 of instance: qtimer2"]
-    ALT3_QTIMER2_TIMER0 = 0x03,
+    Alt3Qtimer2Timer0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XBAR1_XBAR_INOUT29 of instance: xbar1"]
-    ALT4_XBAR1_XBAR_INOUT29 = 0x04,
+    Alt4Xbar1XbarInout29 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO03 of instance: gpio6"]
-    ALT5_GPIO6_IO3 = 0x05,
+    Alt5Gpio6Io3 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: TPM5_CH03 of instance: tpm5"]
-    ALT6_TPM5_CH3 = 0x06,
+    Alt6Tpm5Ch3 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_B_DQS of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_B_DQS = 0x07,
+    Alt7Flexspi1Bus2bitBDqs = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_TX_CLK of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_TX_CLK = 0x08,
+    Alt8NetcPinmuxEth4TxClk = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART11_RX of instance: lpuart11"]
-    ALT9_LPUART11_RX = 0x09,
+    Alt9Lpuart11Rx = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: SAI4_RX_DATA02 of instance: sai4"]
-    ALT12_SAI4_RX_DATA2 = 0x0c,
+    Alt12Sai4RxData2 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -9972,28 +9972,28 @@ impl From<SwMuxCtlPadGpioB103MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB104MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_RXD00 of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_RXD0 = 0x0,
+    Alt0NetcPinmuxEth1Rxd0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: ADC2_CONV_D04 of instance: adc2"]
-    ALT1_ADC2_CONV_D4 = 0x01,
+    Alt1Adc2ConvD4 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART9_RX of instance: lpuart9"]
-    ALT2_LPUART9_RX = 0x02,
+    Alt2Lpuart9Rx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER2_TIMER1 of instance: qtimer2"]
-    ALT3_QTIMER2_TIMER1 = 0x03,
+    Alt3Qtimer2Timer1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XBAR1_XBAR_INOUT30 of instance: xbar1"]
-    ALT4_XBAR1_XBAR_INOUT30 = 0x04,
+    Alt4Xbar1XbarInout30 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO04 of instance: gpio6"]
-    ALT5_GPIO6_IO4 = 0x05,
+    Alt5Gpio6Io4 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: TPM5_EXTCLK of instance: tpm5"]
-    ALT6_TPM5_EXTCLK = 0x06,
+    Alt6Tpm5Extclk = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_B_SS0_B of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_B_SS0_B = 0x07,
+    Alt7Flexspi1Bus2bitBSs0B = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_RXD00 of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_RXD0 = 0x08,
+    Alt8NetcPinmuxEth4Rxd0 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: SAI4_RX_DATA03 of instance: sai4"]
-    ALT12_SAI4_RX_DATA3 = 0x0c,
+    Alt12Sai4RxData3 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10025,28 +10025,28 @@ impl From<SwMuxCtlPadGpioB104MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB105MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_RXD01 of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_RXD1 = 0x0,
+    Alt0NetcPinmuxEth1Rxd1 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: ADC2_CONV_D05 of instance: adc2"]
-    ALT1_ADC2_CONV_D5 = 0x01,
+    Alt1Adc2ConvD5 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART9_CTS_B of instance: lpuart9"]
-    ALT2_LPUART9_CTS_B = 0x02,
+    Alt2Lpuart9CtsB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER2_TIMER2 of instance: qtimer2"]
-    ALT3_QTIMER2_TIMER2 = 0x03,
+    Alt3Qtimer2Timer2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XBAR1_XBAR_INOUT31 of instance: xbar1"]
-    ALT4_XBAR1_XBAR_INOUT31 = 0x04,
+    Alt4Xbar1XbarInout31 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO05 of instance: gpio6"]
-    ALT5_GPIO6_IO5 = 0x05,
+    Alt5Gpio6Io5 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: TPM6_EXTCLK of instance: tpm6"]
-    ALT6_TPM6_EXTCLK = 0x06,
+    Alt6Tpm6Extclk = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_B_SCLK of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_B_SCLK = 0x07,
+    Alt7Flexspi1Bus2bitBSclk = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_RXD01 of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_RXD1 = 0x08,
+    Alt8NetcPinmuxEth4Rxd1 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: SAI4_MCLK of instance: sai4"]
-    ALT12_SAI4_MCLK = 0x0c,
+    Alt12Sai4Mclk = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10078,28 +10078,28 @@ impl From<SwMuxCtlPadGpioB105MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB106MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_RX_DV of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_RX_DV = 0x0,
+    Alt0NetcPinmuxEth1RxDv = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: ADC2_CONV_D06 of instance: adc2"]
-    ALT1_ADC2_CONV_D6 = 0x01,
+    Alt1Adc2ConvD6 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART9_TX of instance: lpuart9"]
-    ALT2_LPUART9_TX = 0x02,
+    Alt2Lpuart9Tx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER3_TIMER0 of instance: qtimer3"]
-    ALT3_QTIMER3_TIMER0 = 0x03,
+    Alt3Qtimer3Timer0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XBAR1_XBAR_INOUT32 of instance: xbar1"]
-    ALT4_XBAR1_XBAR_INOUT32 = 0x04,
+    Alt4Xbar1XbarInout32 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO06 of instance: gpio6"]
-    ALT5_GPIO6_IO6 = 0x05,
+    Alt5Gpio6Io6 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: TPM6_CH00 of instance: tpm6"]
-    ALT6_TPM6_CH0 = 0x06,
+    Alt6Tpm6Ch0 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_B_DATA07 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_B_DATA7 = 0x07,
+    Alt7Flexspi1Bus2bitBData7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_RX_DV of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_RX_DV = 0x08,
+    Alt8NetcPinmuxEth4RxDv = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: SAI4_RX_BCLK of instance: sai4"]
-    ALT12_SAI4_RX_BCLK = 0x0c,
+    Alt12Sai4RxBclk = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10131,29 +10131,29 @@ impl From<SwMuxCtlPadGpioB106MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB107MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_TXD02 of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_TXD2 = 0x0,
+    Alt0NetcPinmuxEth1Txd2 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: ADC2_CONV_D07 of instance: adc2"]
-    ALT1_ADC2_CONV_D7 = 0x01,
+    Alt1Adc2ConvD7 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART9_RTS_B of instance: lpuart9"]
-    ALT2_LPUART9_RTS_B = 0x02,
+    Alt2Lpuart9RtsB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER3_TIMER1 of instance: qtimer3"]
-    ALT3_QTIMER3_TIMER1 = 0x03,
+    Alt3Qtimer3Timer1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XBAR1_XBAR_INOUT33 of instance: xbar1"]
-    ALT4_XBAR1_XBAR_INOUT33 = 0x04,
+    Alt4Xbar1XbarInout33 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO07 of instance: gpio6"]
-    ALT5_GPIO6_IO7 = 0x05,
+    Alt5Gpio6Io7 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: TPM6_CH01 of instance: tpm6"]
-    ALT6_TPM6_CH1 = 0x06,
+    Alt6Tpm6Ch1 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_B_DATA06 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_B_DATA6 = 0x07,
+    Alt7Flexspi1Bus2bitBData6 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_TXD02 of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_TXD2 = 0x08,
+    Alt8NetcPinmuxEth4Txd2 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI6_SDI of instance: lpspi6"]
-    ALT9_LPSPI6_SDI = 0x09,
+    Alt9Lpspi6Sdi = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: SAI4_RX_SYNC of instance: sai4"]
-    ALT12_SAI4_RX_SYNC = 0x0c,
+    Alt12Sai4RxSync = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10185,29 +10185,29 @@ impl From<SwMuxCtlPadGpioB107MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB108MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_TXD03 of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_TXD3 = 0x0,
+    Alt0NetcPinmuxEth1Txd3 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: ADC2_CONV_RDY_CLK of instance: adc2"]
-    ALT1_ADC2_CONV_RDY_CLK = 0x01,
+    Alt1Adc2ConvRdyClk = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: USDHC1_CD_B of instance: usdhc1"]
-    ALT2_USDHC1_CD_B = 0x02,
+    Alt2Usdhc1CdB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER3_TIMER2 of instance: qtimer3"]
-    ALT3_QTIMER3_TIMER2 = 0x03,
+    Alt3Qtimer3Timer2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XBAR1_XBAR_INOUT36 of instance: xbar1"]
-    ALT4_XBAR1_XBAR_INOUT36 = 0x04,
+    Alt4Xbar1XbarInout36 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO08 of instance: gpio6"]
-    ALT5_GPIO6_IO8 = 0x05,
+    Alt5Gpio6Io8 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: TPM6_CH02 of instance: tpm6"]
-    ALT6_TPM6_CH2 = 0x06,
+    Alt6Tpm6Ch2 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_B_DATA05 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_B_DATA5 = 0x07,
+    Alt7Flexspi1Bus2bitBData5 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_TXD03 of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_TXD3 = 0x08,
+    Alt8NetcPinmuxEth4Txd3 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI6_SDO of instance: lpspi6"]
-    ALT9_LPSPI6_SDO = 0x09,
+    Alt9Lpspi6Sdo = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: SAI4_TX_BCLK of instance: sai4"]
-    ALT12_SAI4_TX_BCLK = 0x0c,
+    Alt12Sai4TxBclk = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10239,28 +10239,28 @@ impl From<SwMuxCtlPadGpioB108MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB109MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_RXD02 of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_RXD2 = 0x0,
+    Alt0NetcPinmuxEth1Rxd2 = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: USDHC1_WP of instance: usdhc1"]
-    ALT2_USDHC1_WP = 0x02,
+    Alt2Usdhc1Wp = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER4_TIMER0 of instance: qtimer4"]
-    ALT3_QTIMER4_TIMER0 = 0x03,
+    Alt3Qtimer4Timer0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XBAR1_XBAR_INOUT37 of instance: xbar1"]
-    ALT4_XBAR1_XBAR_INOUT37 = 0x04,
+    Alt4Xbar1XbarInout37 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO09 of instance: gpio6"]
-    ALT5_GPIO6_IO9 = 0x05,
+    Alt5Gpio6Io9 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: TPM6_CH03 of instance: tpm6"]
-    ALT6_TPM6_CH3 = 0x06,
+    Alt6Tpm6Ch3 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_B_DATA04 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_B_DATA4 = 0x07,
+    Alt7Flexspi1Bus2bitBData4 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_RXD02 of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_RXD2 = 0x08,
+    Alt8NetcPinmuxEth4Rxd2 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI6_PCS1 of instance: lpspi6"]
-    ALT9_LPSPI6_PCS1 = 0x09,
+    Alt9Lpspi6Pcs1 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: SAI4_TX_SYNC of instance: sai4"]
-    ALT12_SAI4_TX_SYNC = 0x0c,
+    Alt12Sai4TxSync = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10292,27 +10292,27 @@ impl From<SwMuxCtlPadGpioB109MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB110MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_RXD03 of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_RXD3 = 0x0,
+    Alt0NetcPinmuxEth1Rxd3 = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: USDHC1_RESET_B of instance: usdhc1"]
-    ALT2_USDHC1_RESET_B = 0x02,
+    Alt2Usdhc1ResetB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER4_TIMER1 of instance: qtimer4"]
-    ALT3_QTIMER4_TIMER1 = 0x03,
+    Alt3Qtimer4Timer1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XBAR1_XBAR_INOUT34 of instance: xbar1"]
-    ALT4_XBAR1_XBAR_INOUT34 = 0x04,
+    Alt4Xbar1XbarInout34 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO10 of instance: gpio6"]
-    ALT5_GPIO6_IO10 = 0x05,
+    Alt5Gpio6Io10 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_B_DATA03 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_B_DATA3 = 0x07,
+    Alt7Flexspi1Bus2bitBData3 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_RXD03 of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_RXD3 = 0x08,
+    Alt8NetcPinmuxEth4Rxd3 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI6_PCS2 of instance: lpspi6"]
-    ALT9_LPSPI6_PCS2 = 0x09,
+    Alt9Lpspi6Pcs2 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: SAI4_TX_DATA00 of instance: sai4"]
-    ALT12_SAI4_TX_DATA0 = 0x0c,
+    Alt12Sai4TxData0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10344,26 +10344,26 @@ impl From<SwMuxCtlPadGpioB110MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB111MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_RX_CLK of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_RX_CLK = 0x0,
+    Alt0NetcPinmuxEth1RxClk = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER4_TIMER2 of instance: qtimer4"]
-    ALT3_QTIMER4_TIMER2 = 0x03,
+    Alt3Qtimer4Timer2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XBAR1_XBAR_INOUT35 of instance: xbar1"]
-    ALT4_XBAR1_XBAR_INOUT35 = 0x04,
+    Alt4Xbar1XbarInout35 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO11 of instance: gpio6"]
-    ALT5_GPIO6_IO11 = 0x05,
+    Alt5Gpio6Io11 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_B_DATA02 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_B_DATA2 = 0x07,
+    Alt7Flexspi1Bus2bitBData2 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_RX_CLK of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_RX_CLK = 0x08,
+    Alt8NetcPinmuxEth4RxClk = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI6_PCS3 of instance: lpspi6"]
-    ALT9_LPSPI6_PCS3 = 0x09,
+    Alt9Lpspi6Pcs3 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: SAI4_TX_DATA01 of instance: sai4"]
-    ALT12_SAI4_TX_DATA1 = 0x0c,
+    Alt12Sai4TxData1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10395,25 +10395,25 @@ impl From<SwMuxCtlPadGpioB111MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB112MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_RX_ER of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_RX_ER = 0x0,
+    Alt0NetcPinmuxEth1RxEr = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_EMDIO of instance: netc"]
-    ALT1_NETC_EMDIO = 0x01,
+    Alt1NetcEmdio = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     _RESERVED_4 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO12 of instance: gpio6"]
-    ALT5_GPIO6_IO12 = 0x05,
+    Alt5Gpio6Io12 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_B_DATA01 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_B_DATA1 = 0x07,
+    Alt7Flexspi1Bus2bitBData1 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_RX_ER of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_RX_ER = 0x08,
+    Alt8NetcPinmuxEth4RxEr = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI6_PCS0 of instance: lpspi6"]
-    ALT9_LPSPI6_PCS0 = 0x09,
+    Alt9Lpspi6Pcs0 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: SAI4_TX_DATA02 of instance: sai4"]
-    ALT12_SAI4_TX_DATA2 = 0x0c,
+    Alt12Sai4TxData2 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10445,27 +10445,27 @@ impl From<SwMuxCtlPadGpioB112MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB113MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_PINMUX_ETH1_TX_ER of instance: netc_pinmux"]
-    ALT0_NETC_PINMUX_ETH1_TX_ER = 0x0,
+    Alt0NetcPinmuxEth1TxEr = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_EMDC of instance: netc"]
-    ALT1_NETC_EMDC = 0x01,
+    Alt1NetcEmdc = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: USDHC1_VSELECT of instance: usdhc1"]
-    ALT2_USDHC1_VSELECT = 0x02,
+    Alt2Usdhc1Vselect = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: CCM_ENET_REF_CLK_25M of instance: ccm"]
-    ALT3_CCM_ENET_REF_CLK_25M = 0x03,
+    Alt3CcmEnetRefClk25m = 0x03,
     _RESERVED_4 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO13 of instance: gpio6"]
-    ALT5_GPIO6_IO13 = 0x05,
+    Alt5Gpio6Io13 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_B_DATA00 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_B_DATA0 = 0x07,
+    Alt7Flexspi1Bus2bitBData0 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_PINMUX_ETH4_TX_ER of instance: netc_pinmux"]
-    ALT8_NETC_PINMUX_ETH4_TX_ER = 0x08,
+    Alt8NetcPinmuxEth4TxEr = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI6_SCK of instance: lpspi6"]
-    ALT9_LPSPI6_SCK = 0x09,
+    Alt9Lpspi6Sck = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: SAI4_TX_DATA03 of instance: sai4"]
-    ALT12_SAI4_TX_DATA3 = 0x0c,
+    Alt12Sai4TxData3 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10497,27 +10497,27 @@ impl From<SwMuxCtlPadGpioB113MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB200MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_ETH1_CRS of instance: netc"]
-    ALT0_NETC_ETH1_CRS = 0x0,
+    Alt0NetcEth1Crs = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SEMC_CSX03 of instance: semc"]
-    ALT1_SEMC_CSX3 = 0x01,
+    Alt1SemcCsx3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPIT3_TRIGGER00 of instance: lpit3"]
-    ALT2_LPIT3_TRIGGER0 = 0x02,
+    Alt2Lpit3Trigger0 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: SAI4_MCLK of instance: sai4"]
-    ALT4_SAI4_MCLK = 0x04,
+    Alt4Sai4Mclk = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO14 of instance: gpio6"]
-    ALT5_GPIO6_IO14 = 0x05,
+    Alt5Gpio6Io14 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_ETH4_CRS of instance: netc"]
-    ALT8_NETC_ETH4_CRS = 0x08,
+    Alt8NetcEth4Crs = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI6_SDI of instance: lpspi6"]
-    ALT9_LPSPI6_SDI = 0x09,
+    Alt9Lpspi6Sdi = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: NETC_ETH2_SLV_MDIO of instance: netc"]
-    ALT10_NETC_ETH2_SLV_MDIO = 0x0a,
+    Alt10NetcEth2SlvMdio = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_CLK_ECAT_CLK25 of instance: ecat"]
-    ALT12_ECAT_CLK_ECAT_CLK25 = 0x0c,
+    Alt12EcatClkEcatClk25 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10549,28 +10549,28 @@ impl From<SwMuxCtlPadGpioB200MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB201MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: NETC_ETH1_COL of instance: netc"]
-    ALT0_NETC_ETH1_COL = 0x0,
+    Alt0NetcEth1Col = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPIT3_TRIGGER01 of instance: lpit3"]
-    ALT2_LPIT3_TRIGGER1 = 0x02,
+    Alt2Lpit3Trigger1 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: SAI4_TX_BCLK of instance: sai4"]
-    ALT4_SAI4_TX_BCLK = 0x04,
+    Alt4Sai4TxBclk = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO15 of instance: gpio6"]
-    ALT5_GPIO6_IO15 = 0x05,
+    Alt5Gpio6Io15 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: FLEXSPI1_BUS2BIT_A_SS1_B of instance: flexspi1_bus2bit"]
-    ALT6_FLEXSPI1_BUS2BIT_A_SS1_B = 0x06,
+    Alt6Flexspi1Bus2bitASs1B = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_ETH4_COL of instance: netc"]
-    ALT8_NETC_ETH4_COL = 0x08,
+    Alt8NetcEth4Col = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI6_SDO of instance: lpspi6"]
-    ALT9_LPSPI6_SDO = 0x09,
+    Alt9Lpspi6Sdo = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: NETC_ETH2_SLV_MDC of instance: netc"]
-    ALT10_NETC_ETH2_SLV_MDC = 0x0a,
+    Alt10NetcEth2SlvMdc = 0x0a,
     #[doc = "Select mux mode: ALT11 mux port: NETC_PINMUX_ETH2_RX_ER of instance: netc_pinmux"]
-    ALT11_NETC_PINMUX_ETH2_RX_ER = 0x0b,
+    Alt11NetcPinmuxEth2RxEr = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_ER_1 of instance: ecat"]
-    ALT12_ECAT_PT1_RX_ER = 0x0c,
+    Alt12EcatPt1RxEr = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10604,25 +10604,25 @@ pub enum SwMuxCtlPadGpioB202MuxMode {
     _RESERVED_0 = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPIT3_TRIGGER02 of instance: lpit3"]
-    ALT2_LPIT3_TRIGGER2 = 0x02,
+    Alt2Lpit3Trigger2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_EMDIO of instance: netc"]
-    ALT3_NETC_EMDIO = 0x03,
+    Alt3NetcEmdio = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: SAI4_TX_SYNC of instance: sai4"]
-    ALT4_SAI4_TX_SYNC = 0x04,
+    Alt4Sai4TxSync = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO16 of instance: gpio6"]
-    ALT5_GPIO6_IO16 = 0x05,
+    Alt5Gpio6Io16 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: FLEXSPI1_BUS2BIT_B_SCLK of instance: flexspi1_bus2bit"]
-    ALT6_FLEXSPI1_BUS2BIT_B_SCLK = 0x06,
+    Alt6Flexspi1Bus2bitBSclk = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: CCM_ENET_REF_CLK_25M of instance: ccm"]
-    ALT9_CCM_ENET_REF_CLK_25M = 0x09,
+    Alt9CcmEnetRefClk25m = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: EWM_EWM_OUT_B of instance: ewm"]
-    ALT10_EWM_EWM_OUT_B = 0x0a,
+    Alt10EwmEwmOutB = 0x0a,
     #[doc = "Select mux mode: ALT11 mux port: NETC_PINMUX_ETH2_RXD02 of instance: netc_pinmux"]
-    ALT11_NETC_PINMUX_ETH2_RXD2 = 0x0b,
+    Alt11NetcPinmuxEth2Rxd2 = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_DATA2_1 of instance: ecat"]
-    ALT12_ECAT_PT1_RXD2 = 0x0c,
+    Alt12EcatPt1Rxd2 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10656,24 +10656,24 @@ pub enum SwMuxCtlPadGpioB203MuxMode {
     _RESERVED_0 = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPIT3_TRIGGER03 of instance: lpit3"]
-    ALT2_LPIT3_TRIGGER3 = 0x02,
+    Alt2Lpit3Trigger3 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_EMDC of instance: netc"]
-    ALT3_NETC_EMDC = 0x03,
+    Alt3NetcEmdc = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: SAI4_TX_DATA00 of instance: sai4"]
-    ALT4_SAI4_TX_DATA0 = 0x04,
+    Alt4Sai4TxData0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO17 of instance: gpio6"]
-    ALT5_GPIO6_IO17 = 0x05,
+    Alt5Gpio6Io17 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_A_DATA04 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_A_DATA4 = 0x07,
+    Alt7Flexspi1Bus2bitAData4 = 0x07,
     _RESERVED_8 = 0x08,
     _RESERVED_9 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: XSPI_SLV_DATA04 of instance: xspi_slv"]
-    ALT10_XSPI_SLV_DATA4 = 0x0a,
+    Alt10XspiSlvData4 = 0x0a,
     #[doc = "Select mux mode: ALT11 mux port: NETC_PINMUX_ETH2_RXD03 of instance: netc_pinmux"]
-    ALT11_NETC_PINMUX_ETH2_RXD3 = 0x0b,
+    Alt11NetcPinmuxEth2Rxd3 = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_DATA3_1 of instance: ecat"]
-    ALT12_ECAT_PT1_RXD3 = 0x0c,
+    Alt12EcatPt1Rxd3 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10705,28 +10705,28 @@ impl From<SwMuxCtlPadGpioB203MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB204MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SINC1_MOD_CLK0 of instance: sinc1"]
-    ALT0_SINC1_MOD_CLK0 = 0x0,
+    Alt0Sinc1ModClk0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC2_MOD_CLK0 of instance: sinc2"]
-    ALT1_SINC2_MOD_CLK0 = 0x01,
+    Alt1Sinc2ModClk0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_MOD_CLK0 of instance: sinc3"]
-    ALT2_SINC3_MOD_CLK0 = 0x02,
+    Alt2Sinc3ModClk0 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: SAI4_RX_SYNC of instance: sai4"]
-    ALT4_SAI4_RX_SYNC = 0x04,
+    Alt4Sai4RxSync = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO18 of instance: gpio6"]
-    ALT5_GPIO6_IO18 = 0x05,
+    Alt5Gpio6Io18 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_A_DATA05 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_A_DATA5 = 0x07,
+    Alt7Flexspi1Bus2bitAData5 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: TPM3_EXTCLK of instance: tpm3"]
-    ALT8_TPM3_EXTCLK = 0x08,
+    Alt8Tpm3Extclk = 0x08,
     _RESERVED_9 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: XSPI_SLV_DATA05 of instance: xspi_slv"]
-    ALT10_XSPI_SLV_DATA5 = 0x0a,
+    Alt10XspiSlvData5 = 0x0a,
     #[doc = "Select mux mode: ALT11 mux port: NETC_PINMUX_ETH2_TXD02 of instance: netc_pinmux"]
-    ALT11_NETC_PINMUX_ETH2_TXD2 = 0x0b,
+    Alt11NetcPinmuxEth2Txd2 = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_DATA2_1 of instance: ecat"]
-    ALT12_ECAT_PT1_TXD2 = 0x0c,
+    Alt12EcatPt1Txd2 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10758,29 +10758,29 @@ impl From<SwMuxCtlPadGpioB204MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB205MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SINC1_MOD_CLK1 of instance: sinc1"]
-    ALT0_SINC1_MOD_CLK1 = 0x0,
+    Alt0Sinc1ModClk1 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC2_MOD_CLK1 of instance: sinc2"]
-    ALT1_SINC2_MOD_CLK1 = 0x01,
+    Alt1Sinc2ModClk1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_MOD_CLK1 of instance: sinc3"]
-    ALT2_SINC3_MOD_CLK1 = 0x02,
+    Alt2Sinc3ModClk1 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: SAI4_RX_BCLK of instance: sai4"]
-    ALT4_SAI4_RX_BCLK = 0x04,
+    Alt4Sai4RxBclk = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO19 of instance: gpio6"]
-    ALT5_GPIO6_IO19 = 0x05,
+    Alt5Gpio6Io19 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: MIC_CLK of instance: mic"]
-    ALT6_MIC_CLK = 0x06,
+    Alt6MicClk = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_A_DATA06 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_A_DATA6 = 0x07,
+    Alt7Flexspi1Bus2bitAData6 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: TPM3_CH00 of instance: tpm3"]
-    ALT8_TPM3_CH0 = 0x08,
+    Alt8Tpm3Ch0 = 0x08,
     _RESERVED_9 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: XSPI_SLV_DATA06 of instance: xspi_slv"]
-    ALT10_XSPI_SLV_DATA6 = 0x0a,
+    Alt10XspiSlvData6 = 0x0a,
     #[doc = "Select mux mode: ALT11 mux port: NETC_PINMUX_ETH2_TXD03 of instance: netc_pinmux"]
-    ALT11_NETC_PINMUX_ETH2_TXD3 = 0x0b,
+    Alt11NetcPinmuxEth2Txd3 = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_DATA3_1 of instance: ecat"]
-    ALT12_ECAT_PT1_TXD3 = 0x0c,
+    Alt12EcatPt1Txd3 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10812,30 +10812,30 @@ impl From<SwMuxCtlPadGpioB205MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB206MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SINC1_MOD_CLK2 of instance: sinc1"]
-    ALT0_SINC1_MOD_CLK2 = 0x0,
+    Alt0Sinc1ModClk2 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC2_MOD_CLK2 of instance: sinc2"]
-    ALT1_SINC2_MOD_CLK2 = 0x01,
+    Alt1Sinc2ModClk2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_MOD_CLK2 of instance: sinc3"]
-    ALT2_SINC3_MOD_CLK2 = 0x02,
+    Alt2Sinc3ModClk2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART6_DSR_B of instance: lpuart6"]
-    ALT3_LPUART6_DSR_B = 0x03,
+    Alt3Lpuart6DsrB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: SAI4_RX_DATA00 of instance: sai4"]
-    ALT4_SAI4_RX_DATA0 = 0x04,
+    Alt4Sai4RxData0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO20 of instance: gpio6"]
-    ALT5_GPIO6_IO20 = 0x05,
+    Alt5Gpio6Io20 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_A_DATA07 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_A_DATA7 = 0x07,
+    Alt7Flexspi1Bus2bitAData7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: TPM3_CH01 of instance: tpm3"]
-    ALT8_TPM3_CH1 = 0x08,
+    Alt8Tpm3Ch1 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART11_TX of instance: lpuart11"]
-    ALT9_LPUART11_TX = 0x09,
+    Alt9Lpuart11Tx = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: XSPI_SLV_DATA07 of instance: xspi_slv"]
-    ALT10_XSPI_SLV_DATA7 = 0x0a,
+    Alt10XspiSlvData7 = 0x0a,
     #[doc = "Select mux mode: ALT11 mux port: NETC_PINMUX_ETH2_TXD00 of instance: netc_pinmux"]
-    ALT11_NETC_PINMUX_ETH2_TXD0 = 0x0b,
+    Alt11NetcPinmuxEth2Txd0 = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_DATA0_1 of instance: ecat"]
-    ALT12_ECAT_PT1_TXD0 = 0x0c,
+    Alt12EcatPt1Txd0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10867,29 +10867,29 @@ impl From<SwMuxCtlPadGpioB206MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB207MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: QTIMER5_TIMER0 of instance: qtimer5"]
-    ALT0_QTIMER5_TIMER0 = 0x0,
+    Alt0Qtimer5Timer0 = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART6_DCD_B of instance: lpuart6"]
-    ALT3_LPUART6_DCD_B = 0x03,
+    Alt3Lpuart6DcdB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: SAI4_TX_DATA01 of instance: sai4"]
-    ALT4_SAI4_TX_DATA1 = 0x04,
+    Alt4Sai4TxData1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO21 of instance: gpio6"]
-    ALT5_GPIO6_IO21 = 0x05,
+    Alt5Gpio6Io21 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: SAI4_RX_DATA01 of instance: sai4"]
-    ALT6_SAI4_RX_DATA1 = 0x06,
+    Alt6Sai4RxData1 = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_A_DQS of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_A_DQS = 0x07,
+    Alt7Flexspi1Bus2bitADqs = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: TPM3_CH02 of instance: tpm3"]
-    ALT8_TPM3_CH2 = 0x08,
+    Alt8Tpm3Ch2 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART11_RX of instance: lpuart11"]
-    ALT9_LPUART11_RX = 0x09,
+    Alt9Lpuart11Rx = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: XSPI_SLV_DQS of instance: xspi_slv"]
-    ALT10_XSPI_SLV_DQS = 0x0a,
+    Alt10XspiSlvDqs = 0x0a,
     #[doc = "Select mux mode: ALT11 mux port: NETC_PINMUX_ETH2_TXD01 of instance: netc_pinmux"]
-    ALT11_NETC_PINMUX_ETH2_TXD1 = 0x0b,
+    Alt11NetcPinmuxEth2Txd1 = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_DATA1_1 of instance: ecat"]
-    ALT12_ECAT_PT1_TXD1 = 0x0c,
+    Alt12EcatPt1Txd1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10921,29 +10921,29 @@ impl From<SwMuxCtlPadGpioB207MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB208MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: QTIMER5_TIMER1 of instance: qtimer5"]
-    ALT0_QTIMER5_TIMER1 = 0x0,
+    Alt0Qtimer5Timer1 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC2_EMCLK02 of instance: sinc2"]
-    ALT1_SINC2_EMCLK2 = 0x01,
+    Alt1Sinc2Emclk2 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPUART6_RI_B of instance: lpuart6"]
-    ALT4_LPUART6_RI_B = 0x04,
+    Alt4Lpuart6RiB = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO22 of instance: gpio6"]
-    ALT5_GPIO6_IO22 = 0x05,
+    Alt5Gpio6Io22 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPI2C6_SCL of instance: lpi2c6"]
-    ALT6_LPI2C6_SCL = 0x06,
+    Alt6Lpi2c6Scl = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_A_SCLK of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_A_SCLK = 0x07,
+    Alt7Flexspi1Bus2bitASclk = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: TPM3_CH03 of instance: tpm3"]
-    ALT8_TPM3_CH3 = 0x08,
+    Alt8Tpm3Ch3 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: SPDIF_IN of instance: spdif"]
-    ALT9_SPDIF_IN = 0x09,
+    Alt9SpdifIn = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: XSPI_SLV_CLK of instance: xspi_slv"]
-    ALT10_XSPI_SLV_CLK = 0x0a,
+    Alt10XspiSlvClk = 0x0a,
     #[doc = "Select mux mode: ALT11 mux port: NETC_PINMUX_ETH2_TX_EN of instance: netc_pinmux"]
-    ALT11_NETC_PINMUX_ETH2_TX_EN = 0x0b,
+    Alt11NetcPinmuxEth2TxEn = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_EN_1 of instance: ecat"]
-    ALT12_ECAT_PT1_TX_EN = 0x0c,
+    Alt12EcatPt1TxEn = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10975,29 +10975,29 @@ impl From<SwMuxCtlPadGpioB208MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB209MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: QTIMER5_TIMER2 of instance: qtimer5"]
-    ALT0_QTIMER5_TIMER2 = 0x0,
+    Alt0Qtimer5Timer2 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC2_EMBIT02 of instance: sinc2"]
-    ALT1_SINC2_EMBIT2 = 0x01,
+    Alt1Sinc2Embit2 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPUART6_DTR_B of instance: lpuart6"]
-    ALT4_LPUART6_DTR_B = 0x04,
+    Alt4Lpuart6DtrB = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO23 of instance: gpio6"]
-    ALT5_GPIO6_IO23 = 0x05,
+    Alt5Gpio6Io23 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPI2C6_SDA of instance: lpi2c6"]
-    ALT6_LPI2C6_SDA = 0x06,
+    Alt6Lpi2c6Sda = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_A_SS0_B of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_A_SS0_B = 0x07,
+    Alt7Flexspi1Bus2bitASs0B = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: TPM4_EXTCLK of instance: tpm4"]
-    ALT8_TPM4_EXTCLK = 0x08,
+    Alt8Tpm4Extclk = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: SPDIF_OUT of instance: spdif"]
-    ALT9_SPDIF_OUT = 0x09,
+    Alt9SpdifOut = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: XSPI_SLV_CS of instance: xspi_slv"]
-    ALT10_XSPI_SLV_CS = 0x0a,
+    Alt10XspiSlvCs = 0x0a,
     #[doc = "Select mux mode: ALT11 mux port: NETC_PINMUX_ETH2_TX_CLK of instance: netc_pinmux"]
-    ALT11_NETC_PINMUX_ETH2_TX_CLK = 0x0b,
+    Alt11NetcPinmuxEth2TxClk = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_CLK_1 of instance: ecat"]
-    ALT12_ECAT_PT1_TX_CLK = 0x0c,
+    Alt12EcatPt1TxClk = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11029,31 +11029,31 @@ impl From<SwMuxCtlPadGpioB209MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB210MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: MIC_BITSTREAM00 of instance: mic"]
-    ALT0_MIC_BITSTREAM0 = 0x0,
+    Alt0MicBitstream0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC2_EMCLK03 of instance: sinc2"]
-    ALT1_SINC2_EMCLK3 = 0x01,
+    Alt1Sinc2Emclk3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: CAN3_TX of instance: can3"]
-    ALT2_CAN3_TX = 0x02,
+    Alt2Can3Tx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART8_CTS_B of instance: lpuart8"]
-    ALT3_LPUART8_CTS_B = 0x03,
+    Alt3Lpuart8CtsB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPUART6_TX of instance: lpuart6"]
-    ALT4_LPUART6_TX = 0x04,
+    Alt4Lpuart6Tx = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO24 of instance: gpio6"]
-    ALT5_GPIO6_IO24 = 0x05,
+    Alt5Gpio6Io24 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPI2C4_SCL of instance: lpi2c4"]
-    ALT6_LPI2C4_SCL = 0x06,
+    Alt6Lpi2c4Scl = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_A_DATA00 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_A_DATA0 = 0x07,
+    Alt7Flexspi1Bus2bitAData0 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: TPM4_CH00 of instance: tpm4"]
-    ALT8_TPM4_CH0 = 0x08,
+    Alt8Tpm4Ch0 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI4_SCK of instance: lpspi4"]
-    ALT9_LPSPI4_SCK = 0x09,
+    Alt9Lpspi4Sck = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: XSPI_SLV_DATA00 of instance: xspi_slv"]
-    ALT10_XSPI_SLV_DATA0 = 0x0a,
+    Alt10XspiSlvData0 = 0x0a,
     #[doc = "Select mux mode: ALT11 mux port: NETC_PINMUX_ETH2_RXD00 of instance: netc_pinmux"]
-    ALT11_NETC_PINMUX_ETH2_RXD0 = 0x0b,
+    Alt11NetcPinmuxEth2Rxd0 = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_DATA0_1 of instance: ecat"]
-    ALT12_ECAT_PT1_RXD0 = 0x0c,
+    Alt12EcatPt1Rxd0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11085,31 +11085,31 @@ impl From<SwMuxCtlPadGpioB210MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB211MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: MIC_BITSTREAM01 of instance: mic"]
-    ALT0_MIC_BITSTREAM1 = 0x0,
+    Alt0MicBitstream1 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC2_EMBIT03 of instance: sinc2"]
-    ALT1_SINC2_EMBIT3 = 0x01,
+    Alt1Sinc2Embit3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: CAN3_RX of instance: can3"]
-    ALT2_CAN3_RX = 0x02,
+    Alt2Can3Rx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART8_RTS_B of instance: lpuart8"]
-    ALT3_LPUART8_RTS_B = 0x03,
+    Alt3Lpuart8RtsB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPUART6_RX of instance: lpuart6"]
-    ALT4_LPUART6_RX = 0x04,
+    Alt4Lpuart6Rx = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO25 of instance: gpio6"]
-    ALT5_GPIO6_IO25 = 0x05,
+    Alt5Gpio6Io25 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPI2C4_SDA of instance: lpi2c4"]
-    ALT6_LPI2C4_SDA = 0x06,
+    Alt6Lpi2c4Sda = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_A_DATA01 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_A_DATA1 = 0x07,
+    Alt7Flexspi1Bus2bitAData1 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: TPM4_CH01 of instance: tpm4"]
-    ALT8_TPM4_CH1 = 0x08,
+    Alt8Tpm4Ch1 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI4_SDI of instance: lpspi4"]
-    ALT9_LPSPI4_SDI = 0x09,
+    Alt9Lpspi4Sdi = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: XSPI_SLV_DATA01 of instance: xspi_slv"]
-    ALT10_XSPI_SLV_DATA1 = 0x0a,
+    Alt10XspiSlvData1 = 0x0a,
     #[doc = "Select mux mode: ALT11 mux port: NETC_PINMUX_ETH2_RXD01 of instance: netc_pinmux"]
-    ALT11_NETC_PINMUX_ETH2_RXD1 = 0x0b,
+    Alt11NetcPinmuxEth2Rxd1 = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_DATA1_1 of instance: ecat"]
-    ALT12_ECAT_PT1_RXD1 = 0x0c,
+    Alt12EcatPt1Rxd1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11141,30 +11141,30 @@ impl From<SwMuxCtlPadGpioB211MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB212MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: MIC_BITSTREAM02 of instance: mic"]
-    ALT0_MIC_BITSTREAM2 = 0x0,
+    Alt0MicBitstream2 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC_FILTER_GLUE2_BREAK of instance: sinc_filter_glue2"]
-    ALT1_SINC_FILTER_GLUE2_BREAK = 0x01,
+    Alt1SincFilterGlue2Break = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART8_TX of instance: lpuart8"]
-    ALT2_LPUART8_TX = 0x02,
+    Alt2Lpuart8Tx = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPUART6_CTS_B of instance: lpuart6"]
-    ALT4_LPUART6_CTS_B = 0x04,
+    Alt4Lpuart6CtsB = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO26 of instance: gpio6"]
-    ALT5_GPIO6_IO26 = 0x05,
+    Alt5Gpio6Io26 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: CAN3_TX of instance: can3"]
-    ALT6_CAN3_TX = 0x06,
+    Alt6Can3Tx = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_A_DATA02 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_A_DATA2 = 0x07,
+    Alt7Flexspi1Bus2bitAData2 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: TPM4_CH02 of instance: tpm4"]
-    ALT8_TPM4_CH2 = 0x08,
+    Alt8Tpm4Ch2 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI4_SDO of instance: lpspi4"]
-    ALT9_LPSPI4_SDO = 0x09,
+    Alt9Lpspi4Sdo = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: XSPI_SLV_DATA02 of instance: xspi_slv"]
-    ALT10_XSPI_SLV_DATA2 = 0x0a,
+    Alt10XspiSlvData2 = 0x0a,
     #[doc = "Select mux mode: ALT11 mux port: NETC_PINMUX_ETH2_RX_DV of instance: netc_pinmux"]
-    ALT11_NETC_PINMUX_ETH2_RX_DV = 0x0b,
+    Alt11NetcPinmuxEth2RxDv = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_DV_1 of instance: ecat"]
-    ALT12_ECAT_PT1_RX_DV = 0x0c,
+    Alt12EcatPt1RxDv = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11196,30 +11196,30 @@ impl From<SwMuxCtlPadGpioB212MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioB213MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: MIC_BITSTREAM03 of instance: mic"]
-    ALT0_MIC_BITSTREAM3 = 0x0,
+    Alt0MicBitstream3 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC2_EMCLK00 of instance: sinc2"]
-    ALT1_SINC2_EMCLK0 = 0x01,
+    Alt1Sinc2Emclk0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART8_RX of instance: lpuart8"]
-    ALT2_LPUART8_RX = 0x02,
+    Alt2Lpuart8Rx = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPUART6_RTS_B of instance: lpuart6"]
-    ALT4_LPUART6_RTS_B = 0x04,
+    Alt4Lpuart6RtsB = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO6_IO27 of instance: gpio6"]
-    ALT5_GPIO6_IO27 = 0x05,
+    Alt5Gpio6Io27 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: CAN3_RX of instance: can3"]
-    ALT6_CAN3_RX = 0x06,
+    Alt6Can3Rx = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: FLEXSPI1_BUS2BIT_A_DATA03 of instance: flexspi1_bus2bit"]
-    ALT7_FLEXSPI1_BUS2BIT_A_DATA3 = 0x07,
+    Alt7Flexspi1Bus2bitAData3 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: TPM4_CH03 of instance: tpm4"]
-    ALT8_TPM4_CH3 = 0x08,
+    Alt8Tpm4Ch3 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI4_PCS0 of instance: lpspi4"]
-    ALT9_LPSPI4_PCS0 = 0x09,
+    Alt9Lpspi4Pcs0 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: XSPI_SLV_DATA03 of instance: xspi_slv"]
-    ALT10_XSPI_SLV_DATA3 = 0x0a,
+    Alt10XspiSlvData3 = 0x0a,
     #[doc = "Select mux mode: ALT11 mux port: NETC_PINMUX_ETH2_RX_CLK of instance: netc_pinmux"]
-    ALT11_NETC_PINMUX_ETH2_RX_CLK = 0x0b,
+    Alt11NetcPinmuxEth2RxClk = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_CLK_1 of instance: ecat"]
-    ALT12_ECAT_PT1_RX_CLK = 0x0c,
+    Alt12EcatPt1RxClk = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11251,29 +11251,29 @@ impl From<SwMuxCtlPadGpioB213MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB100MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA00 of instance: semc"]
-    ALT0_SEMC_DATA0 = 0x0,
+    Alt0SemcData0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: XBAR1_XBAR_INOUT04 of instance: xbar1"]
-    ALT1_XBAR1_XBAR_INOUT4 = 0x01,
+    Alt1Xbar1XbarInout4 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_MOD_CLK0 of instance: sinc3"]
-    ALT2_SINC3_MOD_CLK0 = 0x02,
+    Alt2Sinc3ModClk0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART3_CTS_B of instance: lpuart3"]
-    ALT3_LPUART3_CTS_B = 0x03,
+    Alt3Lpuart3CtsB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_TXD03 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_TXD3 = 0x04,
+    Alt4NetcPinmuxEth3Txd3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO00 of instance: gpio2"]
-    ALT5_GPIO2_IO0 = 0x05,
+    Alt5Gpio2Io0 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_ROW03 of instance: kpp"]
-    ALT6_KPP_ROW3 = 0x06,
+    Alt6KppRow3 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO00 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO0 = 0x08,
+    Alt8Flexio1Flexio0 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_TXD03 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_TXD3 = 0x09,
+    Alt9NetcPinmuxEth4Txd3 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: ECAT_TX_DATA3_0 of instance: ecat"]
-    ALT10_ECAT_PT0_TXD3 = 0x0a,
+    Alt10EcatPt0Txd3 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA00 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA0 = 0x0c,
+    Alt12AhbSramcData0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11305,29 +11305,29 @@ impl From<SwMuxCtlPadGpioEmcB100MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB101MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA01 of instance: semc"]
-    ALT0_SEMC_DATA1 = 0x0,
+    Alt0SemcData1 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: XBAR1_XBAR_INOUT05 of instance: xbar1"]
-    ALT1_XBAR1_XBAR_INOUT5 = 0x01,
+    Alt1Xbar1XbarInout5 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_MOD_CLK1 of instance: sinc3"]
-    ALT2_SINC3_MOD_CLK1 = 0x02,
+    Alt2Sinc3ModClk1 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART3_RTS_B of instance: lpuart3"]
-    ALT3_LPUART3_RTS_B = 0x03,
+    Alt3Lpuart3RtsB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_TXD02 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_TXD2 = 0x04,
+    Alt4NetcPinmuxEth3Txd2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO01 of instance: gpio2"]
-    ALT5_GPIO2_IO1 = 0x05,
+    Alt5Gpio2Io1 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_COL03 of instance: kpp"]
-    ALT6_KPP_COL3 = 0x06,
+    Alt6KppCol3 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO01 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO1 = 0x08,
+    Alt8Flexio1Flexio1 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_TXD02 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_TXD2 = 0x09,
+    Alt9NetcPinmuxEth4Txd2 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: ECAT_TX_DATA2_0 of instance: ecat"]
-    ALT10_ECAT_PT0_TXD2 = 0x0a,
+    Alt10EcatPt0Txd2 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA01 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA1 = 0x0c,
+    Alt12AhbSramcData1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11359,29 +11359,29 @@ impl From<SwMuxCtlPadGpioEmcB101MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB102MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA02 of instance: semc"]
-    ALT0_SEMC_DATA2 = 0x0,
+    Alt0SemcData2 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: XBAR1_XBAR_INOUT06 of instance: xbar1"]
-    ALT1_XBAR1_XBAR_INOUT6 = 0x01,
+    Alt1Xbar1XbarInout6 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_MOD_CLK2 of instance: sinc3"]
-    ALT2_SINC3_MOD_CLK2 = 0x02,
+    Alt2Sinc3ModClk2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART3_RX of instance: lpuart3"]
-    ALT3_LPUART3_RX = 0x03,
+    Alt3Lpuart3Rx = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_RX_CLK of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_RX_CLK = 0x04,
+    Alt4NetcPinmuxEth3RxClk = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO02 of instance: gpio2"]
-    ALT5_GPIO2_IO2 = 0x05,
+    Alt5Gpio2Io2 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_ROW02 of instance: kpp"]
-    ALT6_KPP_ROW2 = 0x06,
+    Alt6KppRow2 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO02 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO2 = 0x08,
+    Alt8Flexio1Flexio2 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_RX_CLK of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_RX_CLK = 0x09,
+    Alt9NetcPinmuxEth4RxClk = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: ECAT_RX_CLK_0 of instance: ecat"]
-    ALT10_ECAT_PT0_RX_CLK = 0x0a,
+    Alt10EcatPt0RxClk = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA02 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA2 = 0x0c,
+    Alt12AhbSramcData2 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11413,29 +11413,29 @@ impl From<SwMuxCtlPadGpioEmcB102MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB103MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA03 of instance: semc"]
-    ALT0_SEMC_DATA3 = 0x0,
+    Alt0SemcData3 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: XBAR1_XBAR_INOUT07 of instance: xbar1"]
-    ALT1_XBAR1_XBAR_INOUT7 = 0x01,
+    Alt1Xbar1XbarInout7 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_EMCLK00 of instance: sinc3"]
-    ALT2_SINC3_EMCLK0 = 0x02,
+    Alt2Sinc3Emclk0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART3_TX of instance: lpuart3"]
-    ALT3_LPUART3_TX = 0x03,
+    Alt3Lpuart3Tx = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_RXD03 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_RXD3 = 0x04,
+    Alt4NetcPinmuxEth3Rxd3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO03 of instance: gpio2"]
-    ALT5_GPIO2_IO3 = 0x05,
+    Alt5Gpio2Io3 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_COL02 of instance: kpp"]
-    ALT6_KPP_COL2 = 0x06,
+    Alt6KppCol2 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO03 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO3 = 0x08,
+    Alt8Flexio1Flexio3 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_RXD03 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_RXD3 = 0x09,
+    Alt9NetcPinmuxEth4Rxd3 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: ECAT_RX_DATA3_0 of instance: ecat"]
-    ALT10_ECAT_PT0_RXD3 = 0x0a,
+    Alt10EcatPt0Rxd3 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA03 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA3 = 0x0c,
+    Alt12AhbSramcData3 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11467,29 +11467,29 @@ impl From<SwMuxCtlPadGpioEmcB103MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB104MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA04 of instance: semc"]
-    ALT0_SEMC_DATA4 = 0x0,
+    Alt0SemcData4 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: XBAR1_XBAR_INOUT08 of instance: xbar1"]
-    ALT1_XBAR1_XBAR_INOUT8 = 0x01,
+    Alt1Xbar1XbarInout8 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_EMBIT00 of instance: sinc3"]
-    ALT2_SINC3_EMBIT0 = 0x02,
+    Alt2Sinc3Embit0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART3_DSR_B of instance: lpuart3"]
-    ALT3_LPUART3_DSR_B = 0x03,
+    Alt3Lpuart3DsrB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_RXD02 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_RXD2 = 0x04,
+    Alt4NetcPinmuxEth3Rxd2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO04 of instance: gpio2"]
-    ALT5_GPIO2_IO4 = 0x05,
+    Alt5Gpio2Io4 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_ROW01 of instance: kpp"]
-    ALT6_KPP_ROW1 = 0x06,
+    Alt6KppRow1 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO04 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO4 = 0x08,
+    Alt8Flexio1Flexio4 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_RXD02 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_RXD2 = 0x09,
+    Alt9NetcPinmuxEth4Rxd2 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: ECAT_RX_DATA2_0 of instance: ecat"]
-    ALT10_ECAT_PT0_RXD2 = 0x0a,
+    Alt10EcatPt0Rxd2 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA04 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA4 = 0x0c,
+    Alt12AhbSramcData4 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11521,29 +11521,29 @@ impl From<SwMuxCtlPadGpioEmcB104MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB105MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA05 of instance: semc"]
-    ALT0_SEMC_DATA5 = 0x0,
+    Alt0SemcData5 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: XBAR1_XBAR_INOUT09 of instance: xbar1"]
-    ALT1_XBAR1_XBAR_INOUT9 = 0x01,
+    Alt1Xbar1XbarInout9 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_EMCLK01 of instance: sinc3"]
-    ALT2_SINC3_EMCLK1 = 0x02,
+    Alt2Sinc3Emclk1 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART3_DCD_B of instance: lpuart3"]
-    ALT3_LPUART3_DCD_B = 0x03,
+    Alt3Lpuart3DcdB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_TXD00 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_TXD0 = 0x04,
+    Alt4NetcPinmuxEth3Txd0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO05 of instance: gpio2"]
-    ALT5_GPIO2_IO5 = 0x05,
+    Alt5Gpio2Io5 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_ROW07 of instance: kpp"]
-    ALT6_KPP_ROW7 = 0x06,
+    Alt6KppRow7 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO05 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO5 = 0x08,
+    Alt8Flexio1Flexio5 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_TXD00 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_TXD0 = 0x09,
+    Alt9NetcPinmuxEth4Txd0 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: ECAT_TX_DATA0_0 of instance: ecat"]
-    ALT10_ECAT_PT0_TXD0 = 0x0a,
+    Alt10EcatPt0Txd0 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA05 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA5 = 0x0c,
+    Alt12AhbSramcData5 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11575,29 +11575,29 @@ impl From<SwMuxCtlPadGpioEmcB105MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB106MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA06 of instance: semc"]
-    ALT0_SEMC_DATA6 = 0x0,
+    Alt0SemcData6 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMB03 of instance: flexpwm4"]
-    ALT1_FLEXPWM4_PWMB3 = 0x01,
+    Alt1Flexpwm4Pwmb3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_EMBIT01 of instance: sinc3"]
-    ALT2_SINC3_EMBIT1 = 0x02,
+    Alt2Sinc3Embit1 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART3_RI_B of instance: lpuart3"]
-    ALT3_LPUART3_RI_B = 0x03,
+    Alt3Lpuart3RiB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_TXD01 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_TXD1 = 0x04,
+    Alt4NetcPinmuxEth3Txd1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO06 of instance: gpio2"]
-    ALT5_GPIO2_IO6 = 0x05,
+    Alt5Gpio2Io6 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_COL07 of instance: kpp"]
-    ALT6_KPP_COL7 = 0x06,
+    Alt6KppCol7 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO06 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO6 = 0x08,
+    Alt8Flexio1Flexio6 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_TXD01 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_TXD1 = 0x09,
+    Alt9NetcPinmuxEth4Txd1 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: ECAT_TX_DATA1_0 of instance: ecat"]
-    ALT10_ECAT_PT0_TXD1 = 0x0a,
+    Alt10EcatPt0Txd1 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA06 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA6 = 0x0c,
+    Alt12AhbSramcData6 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11629,29 +11629,29 @@ impl From<SwMuxCtlPadGpioEmcB106MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB107MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA07 of instance: semc"]
-    ALT0_SEMC_DATA7 = 0x0,
+    Alt0SemcData7 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMA03 of instance: flexpwm4"]
-    ALT1_FLEXPWM4_PWMA3 = 0x01,
+    Alt1Flexpwm4Pwma3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_EMCLK02 of instance: sinc3"]
-    ALT2_SINC3_EMCLK2 = 0x02,
+    Alt2Sinc3Emclk2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART3_DTR_B of instance: lpuart3"]
-    ALT3_LPUART3_DTR_B = 0x03,
+    Alt3Lpuart3DtrB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_TX_EN of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_TX_EN = 0x04,
+    Alt4NetcPinmuxEth3TxEn = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO07 of instance: gpio2"]
-    ALT5_GPIO2_IO7 = 0x05,
+    Alt5Gpio2Io7 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_ROW06 of instance: kpp"]
-    ALT6_KPP_ROW6 = 0x06,
+    Alt6KppRow6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO07 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO7 = 0x08,
+    Alt8Flexio1Flexio7 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_TX_EN of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_TX_EN = 0x09,
+    Alt9NetcPinmuxEth4TxEn = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: ECAT_TX_EN_0 of instance: ecat"]
-    ALT10_ECAT_PT0_TX_EN = 0x0a,
+    Alt10EcatPt0TxEn = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA07 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA7 = 0x0c,
+    Alt12AhbSramcData7 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11683,29 +11683,29 @@ impl From<SwMuxCtlPadGpioEmcB107MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB108MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DM00 of instance: semc"]
-    ALT0_SEMC_DM0 = 0x0,
+    Alt0SemcDm0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMB03 of instance: flexpwm2"]
-    ALT1_FLEXPWM2_PWMB3 = 0x01,
+    Alt1Flexpwm2Pwmb3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_EMBIT02 of instance: sinc3"]
-    ALT2_SINC3_EMBIT2 = 0x02,
+    Alt2Sinc3Embit2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART4_DSR_B of instance: lpuart4"]
-    ALT3_LPUART4_DSR_B = 0x03,
+    Alt3Lpuart4DsrB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_TX_CLK of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_TX_CLK = 0x04,
+    Alt4NetcPinmuxEth3TxClk = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO08 of instance: gpio2"]
-    ALT5_GPIO2_IO8 = 0x05,
+    Alt5Gpio2Io8 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_COL06 of instance: kpp"]
-    ALT6_KPP_COL6 = 0x06,
+    Alt6KppCol6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO08 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO8 = 0x08,
+    Alt8Flexio1Flexio8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_TX_CLK of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_TX_CLK = 0x09,
+    Alt9NetcPinmuxEth4TxClk = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: ECAT_TX_CLK_0 of instance: ecat"]
-    ALT10_ECAT_PT0_TX_CLK = 0x0a,
+    Alt10EcatPt0TxClk = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_LBB of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_LBB = 0x0c,
+    Alt12AhbSramcLbb = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11737,29 +11737,29 @@ impl From<SwMuxCtlPadGpioEmcB108MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB109MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR00 of instance: semc"]
-    ALT0_SEMC_ADDR0 = 0x0,
+    Alt0SemcAddr0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMA03 of instance: flexpwm2"]
-    ALT1_FLEXPWM2_PWMA3 = 0x01,
+    Alt1Flexpwm2Pwma3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_EMCLK03 of instance: sinc3"]
-    ALT2_SINC3_EMCLK3 = 0x02,
+    Alt2Sinc3Emclk3 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART4_DCD_B of instance: lpuart4"]
-    ALT3_LPUART4_DCD_B = 0x03,
+    Alt3Lpuart4DcdB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_RXD00 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_RXD0 = 0x04,
+    Alt4NetcPinmuxEth3Rxd0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO09 of instance: gpio2"]
-    ALT5_GPIO2_IO9 = 0x05,
+    Alt5Gpio2Io9 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_ROW05 of instance: kpp"]
-    ALT6_KPP_ROW5 = 0x06,
+    Alt6KppRow5 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO09 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO9 = 0x08,
+    Alt8Flexio1Flexio9 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_RXD00 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_RXD0 = 0x09,
+    Alt9NetcPinmuxEth4Rxd0 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: ECAT_RX_DATA0_0 of instance: ecat"]
-    ALT10_ECAT_PT0_RXD0 = 0x0a,
+    Alt10EcatPt0Rxd0 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR00 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR0 = 0x0c,
+    Alt12AhbSramcAddr0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11791,29 +11791,29 @@ impl From<SwMuxCtlPadGpioEmcB109MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB110MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR01 of instance: semc"]
-    ALT0_SEMC_ADDR1 = 0x0,
+    Alt0SemcAddr1 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMB03 of instance: flexpwm3"]
-    ALT1_FLEXPWM3_PWMB3 = 0x01,
+    Alt1Flexpwm3Pwmb3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC3_EMBIT03 of instance: sinc3"]
-    ALT2_SINC3_EMBIT3 = 0x02,
+    Alt2Sinc3Embit3 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART4_RI_B of instance: lpuart4"]
-    ALT3_LPUART4_RI_B = 0x03,
+    Alt3Lpuart4RiB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_RXD01 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_RXD1 = 0x04,
+    Alt4NetcPinmuxEth3Rxd1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO10 of instance: gpio2"]
-    ALT5_GPIO2_IO10 = 0x05,
+    Alt5Gpio2Io10 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_COL05 of instance: kpp"]
-    ALT6_KPP_COL5 = 0x06,
+    Alt6KppCol5 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO10 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO10 = 0x08,
+    Alt8Flexio1Flexio10 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_RXD01 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_RXD1 = 0x09,
+    Alt9NetcPinmuxEth4Rxd1 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: ECAT_RX_DATA1_0 of instance: ecat"]
-    ALT10_ECAT_PT0_RXD1 = 0x0a,
+    Alt10EcatPt0Rxd1 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR01 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR1 = 0x0c,
+    Alt12AhbSramcAddr1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11845,29 +11845,29 @@ impl From<SwMuxCtlPadGpioEmcB110MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB111MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR02 of instance: semc"]
-    ALT0_SEMC_ADDR2 = 0x0,
+    Alt0SemcAddr2 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMA03 of instance: flexpwm3"]
-    ALT1_FLEXPWM3_PWMA3 = 0x01,
+    Alt1Flexpwm3Pwma3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC_FILTER_GLUE3_BREAK of instance: sinc_filter_glue3"]
-    ALT2_SINC_FILTER_GLUE3_BREAK = 0x02,
+    Alt2SincFilterGlue3Break = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPUART4_DTR_B of instance: lpuart4"]
-    ALT3_LPUART4_DTR_B = 0x03,
+    Alt3Lpuart4DtrB = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_RX_DV of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_RX_DV = 0x04,
+    Alt4NetcPinmuxEth3RxDv = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO11 of instance: gpio2"]
-    ALT5_GPIO2_IO11 = 0x05,
+    Alt5Gpio2Io11 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_ROW04 of instance: kpp"]
-    ALT6_KPP_ROW4 = 0x06,
+    Alt6KppRow4 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO11 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO11 = 0x08,
+    Alt8Flexio1Flexio11 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_RX_DV of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_RX_DV = 0x09,
+    Alt9NetcPinmuxEth4RxDv = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: ECAT_RX_DV_0 of instance: ecat"]
-    ALT10_ECAT_PT0_RX_DV = 0x0a,
+    Alt10EcatPt0RxDv = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR02 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR2 = 0x0c,
+    Alt12AhbSramcAddr2 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11899,28 +11899,28 @@ impl From<SwMuxCtlPadGpioEmcB111MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB112MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR03 of instance: semc"]
-    ALT0_SEMC_ADDR3 = 0x0,
+    Alt0SemcAddr3 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMA00 of instance: flexpwm4"]
-    ALT1_FLEXPWM4_PWMA0 = 0x01,
+    Alt1Flexpwm4Pwma0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART4_TX of instance: lpuart4"]
-    ALT2_LPUART4_TX = 0x02,
+    Alt2Lpuart4Tx = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_RX_ER of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_RX_ER = 0x04,
+    Alt4NetcPinmuxEth3RxEr = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO12 of instance: gpio2"]
-    ALT5_GPIO2_IO12 = 0x05,
+    Alt5Gpio2Io12 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_COL04 of instance: kpp"]
-    ALT6_KPP_COL4 = 0x06,
+    Alt6KppCol4 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO12 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO12 = 0x08,
+    Alt8Flexio1Flexio12 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_RX_ER of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_RX_ER = 0x09,
+    Alt9NetcPinmuxEth4RxEr = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: ECAT_PT0_RX_ER of instance: ecat"]
-    ALT10_ECAT_PT0_RX_ER = 0x0a,
+    Alt10EcatPt0RxEr = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR03 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR3 = 0x0c,
+    Alt12AhbSramcAddr3 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -11952,29 +11952,29 @@ impl From<SwMuxCtlPadGpioEmcB112MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB113MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR04 of instance: semc"]
-    ALT0_SEMC_ADDR4 = 0x0,
+    Alt0SemcAddr4 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMB00 of instance: flexpwm4"]
-    ALT1_FLEXPWM4_PWMB0 = 0x01,
+    Alt1Flexpwm4Pwmb0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART4_RX of instance: lpuart4"]
-    ALT2_LPUART4_RX = 0x02,
+    Alt2Lpuart4Rx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH2_RX_DV of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH2_RX_DV = 0x03,
+    Alt3NetcPinmuxEth2RxDv = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH3_TX_ER of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH3_TX_ER = 0x04,
+    Alt4NetcPinmuxEth3TxEr = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO13 of instance: gpio2"]
-    ALT5_GPIO2_IO13 = 0x05,
+    Alt5Gpio2Io13 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_COL01 of instance: kpp"]
-    ALT6_KPP_COL1 = 0x06,
+    Alt6KppCol1 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO13 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO13 = 0x08,
+    Alt8Flexio1Flexio13 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH4_TX_ER of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH4_TX_ER = 0x09,
+    Alt9NetcPinmuxEth4TxEr = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: QTIMER1_TIMER1 of instance: qtimer1"]
-    ALT10_QTIMER1_TIMER1 = 0x0a,
+    Alt10Qtimer1Timer1 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR04 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR4 = 0x0c,
+    Alt12AhbSramcAddr4 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12006,29 +12006,29 @@ impl From<SwMuxCtlPadGpioEmcB113MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB114MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR05 of instance: semc"]
-    ALT0_SEMC_ADDR5 = 0x0,
+    Alt0SemcAddr5 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMA01 of instance: flexpwm4"]
-    ALT1_FLEXPWM4_PWMA1 = 0x01,
+    Alt1Flexpwm4Pwma1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART5_TX of instance: lpuart5"]
-    ALT2_LPUART5_TX = 0x02,
+    Alt2Lpuart5Tx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH2_TX_EN of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH2_TX_EN = 0x03,
+    Alt3NetcPinmuxEth2TxEn = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_ETH3_CRS of instance: netc"]
-    ALT4_NETC_ETH3_CRS = 0x04,
+    Alt4NetcEth3Crs = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO14 of instance: gpio2"]
-    ALT5_GPIO2_IO14 = 0x05,
+    Alt5Gpio2Io14 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_ROW00 of instance: kpp"]
-    ALT6_KPP_ROW0 = 0x06,
+    Alt6KppRow0 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO14 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO14 = 0x08,
+    Alt8Flexio1Flexio14 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_ETH4_CRS of instance: netc"]
-    ALT9_NETC_ETH4_CRS = 0x09,
+    Alt9NetcEth4Crs = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: LPUART4_CTS_B of instance: lpuart4"]
-    ALT10_LPUART4_CTS_B = 0x0a,
+    Alt10Lpuart4CtsB = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR05 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR5 = 0x0c,
+    Alt12AhbSramcAddr5 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12060,29 +12060,29 @@ impl From<SwMuxCtlPadGpioEmcB114MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB115MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR06 of instance: semc"]
-    ALT0_SEMC_ADDR6 = 0x0,
+    Alt0SemcAddr6 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMB01 of instance: flexpwm4"]
-    ALT1_FLEXPWM4_PWMB1 = 0x01,
+    Alt1Flexpwm4Pwmb1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART5_RX of instance: lpuart5"]
-    ALT2_LPUART5_RX = 0x02,
+    Alt2Lpuart5Rx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH2_TX_CLK of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH2_TX_CLK = 0x03,
+    Alt3NetcPinmuxEth2TxClk = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_ETH3_COL of instance: netc"]
-    ALT4_NETC_ETH3_COL = 0x04,
+    Alt4NetcEth3Col = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO15 of instance: gpio2"]
-    ALT5_GPIO2_IO15 = 0x05,
+    Alt5Gpio2Io15 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: KPP_COL00 of instance: kpp"]
-    ALT6_KPP_COL0 = 0x06,
+    Alt6KppCol0 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO15 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO15 = 0x08,
+    Alt8Flexio1Flexio15 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_ETH4_COL of instance: netc"]
-    ALT9_NETC_ETH4_COL = 0x09,
+    Alt9NetcEth4Col = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: LPUART4_RTS_B of instance: lpuart4"]
-    ALT10_LPUART4_RTS_B = 0x0a,
+    Alt10Lpuart4RtsB = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR06 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR6 = 0x0c,
+    Alt12AhbSramcAddr6 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12114,29 +12114,29 @@ impl From<SwMuxCtlPadGpioEmcB115MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB116MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR07 of instance: semc"]
-    ALT0_SEMC_ADDR7 = 0x0,
+    Alt0SemcAddr7 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMB02 of instance: flexpwm4"]
-    ALT1_FLEXPWM4_PWMB2 = 0x01,
+    Alt1Flexpwm4Pwmb2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART9_TX of instance: lpuart9"]
-    ALT2_LPUART9_TX = 0x02,
+    Alt2Lpuart9Tx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH2_RXD00 of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH2_RXD0 = 0x03,
+    Alt3NetcPinmuxEth2Rxd0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_ETH3_SLV_MDC of instance: netc"]
-    ALT4_NETC_ETH3_SLV_MDC = 0x04,
+    Alt4NetcEth3SlvMdc = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO16 of instance: gpio2"]
-    ALT5_GPIO2_IO16 = 0x05,
+    Alt5Gpio2Io16 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: NETC_ETH4_SLV_MDC of instance: netc"]
-    ALT6_NETC_ETH4_SLV_MDC = 0x06,
+    Alt6NetcEth4SlvMdc = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO16 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO16 = 0x08,
+    Alt8Flexio1Flexio16 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_ETH2_SLV_MDC of instance: netc"]
-    ALT9_NETC_ETH2_SLV_MDC = 0x09,
+    Alt9NetcEth2SlvMdc = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: LPSPI6_PCS2 of instance: lpspi6"]
-    ALT10_LPSPI6_PCS2 = 0x0a,
+    Alt10Lpspi6Pcs2 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR07 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR7 = 0x0c,
+    Alt12AhbSramcAddr7 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12168,29 +12168,29 @@ impl From<SwMuxCtlPadGpioEmcB116MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB117MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR08 of instance: semc"]
-    ALT0_SEMC_ADDR8 = 0x0,
+    Alt0SemcAddr8 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMA02 of instance: flexpwm4"]
-    ALT1_FLEXPWM4_PWMA2 = 0x01,
+    Alt1Flexpwm4Pwma2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART9_RX of instance: lpuart9"]
-    ALT2_LPUART9_RX = 0x02,
+    Alt2Lpuart9Rx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH2_RXD01 of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH2_RXD1 = 0x03,
+    Alt3NetcPinmuxEth2Rxd1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_ETH3_SLV_MDIO of instance: netc"]
-    ALT4_NETC_ETH3_SLV_MDIO = 0x04,
+    Alt4NetcEth3SlvMdio = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO17 of instance: gpio2"]
-    ALT5_GPIO2_IO17 = 0x05,
+    Alt5Gpio2Io17 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: NETC_ETH4_SLV_MDIO of instance: netc"]
-    ALT6_NETC_ETH4_SLV_MDIO = 0x06,
+    Alt6NetcEth4SlvMdio = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO17 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO17 = 0x08,
+    Alt8Flexio1Flexio17 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_ETH2_SLV_MDIO of instance: netc"]
-    ALT9_NETC_ETH2_SLV_MDIO = 0x09,
+    Alt9NetcEth2SlvMdio = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: LPSPI6_PCS1 of instance: lpspi6"]
-    ALT10_LPSPI6_PCS1 = 0x0a,
+    Alt10Lpspi6Pcs1 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR08 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR8 = 0x0c,
+    Alt12AhbSramcAddr8 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12222,27 +12222,27 @@ impl From<SwMuxCtlPadGpioEmcB117MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB118MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR09 of instance: semc"]
-    ALT0_SEMC_ADDR9 = 0x0,
+    Alt0SemcAddr9 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMA00 of instance: flexpwm2"]
-    ALT1_FLEXPWM2_PWMA0 = 0x01,
+    Alt1Flexpwm2Pwma0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: QTIMER1_TIMER0 of instance: qtimer1"]
-    ALT2_QTIMER1_TIMER0 = 0x02,
+    Alt2Qtimer1Timer0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPSPI6_SCK of instance: lpspi6"]
-    ALT3_LPSPI6_SCK = 0x03,
+    Alt3Lpspi6Sck = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_ETH2_CRS of instance: netc"]
-    ALT4_NETC_ETH2_CRS = 0x04,
+    Alt4NetcEth2Crs = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO18 of instance: gpio2"]
-    ALT5_GPIO2_IO18 = 0x05,
+    Alt5Gpio2Io18 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO18 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO18 = 0x08,
+    Alt8Flexio1Flexio18 = 0x08,
     _RESERVED_9 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: NETC_EMDC of instance: netc"]
-    ALT10_NETC_EMDC = 0x0a,
+    Alt10NetcEmdc = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR09 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR9 = 0x0c,
+    Alt12AhbSramcAddr9 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12274,27 +12274,27 @@ impl From<SwMuxCtlPadGpioEmcB118MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB119MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR11 of instance: semc"]
-    ALT0_SEMC_ADDR11 = 0x0,
+    Alt0SemcAddr11 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMB00 of instance: flexpwm2"]
-    ALT1_FLEXPWM2_PWMB0 = 0x01,
+    Alt1Flexpwm2Pwmb0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: QTIMER2_TIMER0 of instance: qtimer2"]
-    ALT2_QTIMER2_TIMER0 = 0x02,
+    Alt2Qtimer2Timer0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPSPI6_SDI of instance: lpspi6"]
-    ALT3_LPSPI6_SDI = 0x03,
+    Alt3Lpspi6Sdi = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_ETH2_COL of instance: netc"]
-    ALT4_NETC_ETH2_COL = 0x04,
+    Alt4NetcEth2Col = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO19 of instance: gpio2"]
-    ALT5_GPIO2_IO19 = 0x05,
+    Alt5Gpio2Io19 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO19 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO19 = 0x08,
+    Alt8Flexio1Flexio19 = 0x08,
     _RESERVED_9 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: NETC_EMDIO of instance: netc"]
-    ALT10_NETC_EMDIO = 0x0a,
+    Alt10NetcEmdio = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR11 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR11 = 0x0c,
+    Alt12AhbSramcAddr11 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12326,26 +12326,26 @@ impl From<SwMuxCtlPadGpioEmcB119MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB120MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR12 of instance: semc"]
-    ALT0_SEMC_ADDR12 = 0x0,
+    Alt0SemcAddr12 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMA01 of instance: flexpwm2"]
-    ALT1_FLEXPWM2_PWMA1 = 0x01,
+    Alt1Flexpwm2Pwma1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: QTIMER3_TIMER0 of instance: qtimer3"]
-    ALT2_QTIMER3_TIMER0 = 0x02,
+    Alt2Qtimer3Timer0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPSPI6_SDO of instance: lpspi6"]
-    ALT3_LPSPI6_SDO = 0x03,
+    Alt3Lpspi6Sdo = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_TX_ER of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_TX_ER = 0x04,
+    Alt4NetcPinmuxEth2TxEr = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO20 of instance: gpio2"]
-    ALT5_GPIO2_IO20 = 0x05,
+    Alt5Gpio2Io20 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO20 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO20 = 0x08,
+    Alt8Flexio1Flexio20 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR12 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR12 = 0x0c,
+    Alt12AhbSramcAddr12 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12377,28 +12377,28 @@ impl From<SwMuxCtlPadGpioEmcB120MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB121MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_BA0 of instance: semc"]
-    ALT0_SEMC_BA0 = 0x0,
+    Alt0SemcBa0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMB01 of instance: flexpwm2"]
-    ALT1_FLEXPWM2_PWMB1 = 0x01,
+    Alt1Flexpwm2Pwmb1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: QTIMER4_TIMER0 of instance: qtimer4"]
-    ALT2_QTIMER4_TIMER0 = 0x02,
+    Alt2Qtimer4Timer0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPSPI6_PCS0 of instance: lpspi6"]
-    ALT3_LPSPI6_PCS0 = 0x03,
+    Alt3Lpspi6Pcs0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_RX_CLK of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_RX_CLK = 0x04,
+    Alt4NetcPinmuxEth2RxClk = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO21 of instance: gpio2"]
-    ALT5_GPIO2_IO21 = 0x05,
+    Alt5Gpio2Io21 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO21 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO21 = 0x08,
+    Alt8Flexio1Flexio21 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART4_CTS_B of instance: lpuart4"]
-    ALT9_LPUART4_CTS_B = 0x09,
+    Alt9Lpuart4CtsB = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: FLEXSPI2_BUS2BIT_B_DQS of instance: flexspi2_bus2bit"]
-    ALT10_FLEXSPI2_BUS2BIT_B_DQS = 0x0a,
+    Alt10Flexspi2Bus2bitBDqs = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR13 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR13 = 0x0c,
+    Alt12AhbSramcAddr13 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12430,28 +12430,28 @@ impl From<SwMuxCtlPadGpioEmcB121MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB122MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_BA1 of instance: semc"]
-    ALT0_SEMC_BA1 = 0x0,
+    Alt0SemcBa1 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMB02 of instance: flexpwm2"]
-    ALT1_FLEXPWM2_PWMB2 = 0x01,
+    Alt1Flexpwm2Pwmb2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: QTIMER5_TIMER0 of instance: qtimer5"]
-    ALT2_QTIMER5_TIMER0 = 0x02,
+    Alt2Qtimer5Timer0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPSPI4_SCK of instance: lpspi4"]
-    ALT3_LPSPI4_SCK = 0x03,
+    Alt3Lpspi4Sck = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_RXD02 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_RXD2 = 0x04,
+    Alt4NetcPinmuxEth2Rxd2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO22 of instance: gpio2"]
-    ALT5_GPIO2_IO22 = 0x05,
+    Alt5Gpio2Io22 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO22 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO22 = 0x08,
+    Alt8Flexio1Flexio22 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART4_RTS_B of instance: lpuart4"]
-    ALT9_LPUART4_RTS_B = 0x09,
+    Alt9Lpuart4RtsB = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: FLEXSPI2_BUS2BIT_B_DATA03 of instance: flexspi2_bus2bit"]
-    ALT10_FLEXSPI2_BUS2BIT_B_DATA3 = 0x0a,
+    Alt10Flexspi2Bus2bitBData3 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR14 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR14 = 0x0c,
+    Alt12AhbSramcAddr14 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12483,27 +12483,27 @@ impl From<SwMuxCtlPadGpioEmcB122MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB123MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR10 of instance: semc"]
-    ALT0_SEMC_ADDR10 = 0x0,
+    Alt0SemcAddr10 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMA02 of instance: flexpwm2"]
-    ALT1_FLEXPWM2_PWMA2 = 0x01,
+    Alt1Flexpwm2Pwma2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: QTIMER6_TIMER0 of instance: qtimer6"]
-    ALT2_QTIMER6_TIMER0 = 0x02,
+    Alt2Qtimer6Timer0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPSPI4_SDI of instance: lpspi4"]
-    ALT3_LPSPI4_SDI = 0x03,
+    Alt3Lpspi4Sdi = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_RXD03 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_RXD3 = 0x04,
+    Alt4NetcPinmuxEth2Rxd3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO23 of instance: gpio2"]
-    ALT5_GPIO2_IO23 = 0x05,
+    Alt5Gpio2Io23 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO23 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO23 = 0x08,
+    Alt8Flexio1Flexio23 = 0x08,
     _RESERVED_9 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: FLEXSPI2_BUS2BIT_B_DATA02 of instance: flexspi2_bus2bit"]
-    ALT10_FLEXSPI2_BUS2BIT_B_DATA2 = 0x0a,
+    Alt10Flexspi2Bus2bitBData2 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR10 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR10 = 0x0c,
+    Alt12AhbSramcAddr10 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12535,28 +12535,28 @@ impl From<SwMuxCtlPadGpioEmcB123MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB124MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_CAS of instance: semc"]
-    ALT0_SEMC_CAS = 0x0,
+    Alt0SemcCas = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMA00 of instance: flexpwm1"]
-    ALT1_FLEXPWM1_PWMA0 = 0x01,
+    Alt1Flexpwm1Pwma0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: QTIMER7_TIMER0 of instance: qtimer7"]
-    ALT2_QTIMER7_TIMER0 = 0x02,
+    Alt2Qtimer7Timer0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPSPI4_SDO of instance: lpspi4"]
-    ALT3_LPSPI4_SDO = 0x03,
+    Alt3Lpspi4Sdo = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_TXD03 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_TXD3 = 0x04,
+    Alt4NetcPinmuxEth2Txd3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO24 of instance: gpio2"]
-    ALT5_GPIO2_IO24 = 0x05,
+    Alt5Gpio2Io24 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO24 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO24 = 0x08,
+    Alt8Flexio1Flexio24 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_ETH3_SLV_MDC of instance: netc"]
-    ALT9_NETC_ETH3_SLV_MDC = 0x09,
+    Alt9NetcEth3SlvMdc = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: FLEXSPI2_BUS2BIT_B_DATA01 of instance: flexspi2_bus2bit"]
-    ALT10_FLEXSPI2_BUS2BIT_B_DATA1 = 0x0a,
+    Alt10Flexspi2Bus2bitBData1 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR15 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR15 = 0x0c,
+    Alt12AhbSramcAddr15 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12588,28 +12588,28 @@ impl From<SwMuxCtlPadGpioEmcB124MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB125MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_RAS of instance: semc"]
-    ALT0_SEMC_RAS = 0x0,
+    Alt0SemcRas = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMB00 of instance: flexpwm1"]
-    ALT1_FLEXPWM1_PWMB0 = 0x01,
+    Alt1Flexpwm1Pwmb0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: QTIMER8_TIMER0 of instance: qtimer8"]
-    ALT2_QTIMER8_TIMER0 = 0x02,
+    Alt2Qtimer8Timer0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPSPI4_PCS0 of instance: lpspi4"]
-    ALT3_LPSPI4_PCS0 = 0x03,
+    Alt3Lpspi4Pcs0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_TXD02 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_TXD2 = 0x04,
+    Alt4NetcPinmuxEth2Txd2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO25 of instance: gpio2"]
-    ALT5_GPIO2_IO25 = 0x05,
+    Alt5Gpio2Io25 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXIO1_FLEXIO25 of instance: flexio1"]
-    ALT8_FLEXIO1_FLEXIO25 = 0x08,
+    Alt8Flexio1Flexio25 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_ETH3_SLV_MDIO of instance: netc"]
-    ALT9_NETC_ETH3_SLV_MDIO = 0x09,
+    Alt9NetcEth3SlvMdio = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: FLEXSPI2_BUS2BIT_B_DATA00 of instance: flexspi2_bus2bit"]
-    ALT10_FLEXSPI2_BUS2BIT_B_DATA0 = 0x0a,
+    Alt10Flexspi2Bus2bitBData0 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADDR16 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADDR16 = 0x0c,
+    Alt12AhbSramcAddr16 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12641,27 +12641,27 @@ impl From<SwMuxCtlPadGpioEmcB125MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB126MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_CLK of instance: semc"]
-    ALT0_SEMC_CLK = 0x0,
+    Alt0SemcClk = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMA01 of instance: flexpwm1"]
-    ALT1_FLEXPWM1_PWMA1 = 0x01,
+    Alt1Flexpwm1Pwma1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT10 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT10 = 0x02,
+    Alt2Xbar1XbarInout10 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_A_SS1_B of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_A_SS1_B = 0x03,
+    Alt3Flexspi2Bus2bitASs1B = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_TXD01 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_TXD1 = 0x04,
+    Alt4NetcPinmuxEth2Txd1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO26 of instance: gpio2"]
-    ALT5_GPIO2_IO26 = 0x05,
+    Alt5Gpio2Io26 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: ECAT_TX_DATA1_1 of instance: ecat"]
-    ALT6_ECAT_PT1_TXD1 = 0x06,
+    Alt6EcatPt1Txd1 = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     _RESERVED_9 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: LPSPI6_SCK of instance: lpspi6"]
-    ALT10_LPSPI6_SCK = 0x0a,
+    Alt10Lpspi6Sck = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_WE of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_WE = 0x0c,
+    Alt12AhbSramcWe = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12693,28 +12693,28 @@ impl From<SwMuxCtlPadGpioEmcB126MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB127MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_CKE of instance: semc"]
-    ALT0_SEMC_CKE = 0x0,
+    Alt0SemcCke = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMB01 of instance: flexpwm1"]
-    ALT1_FLEXPWM1_PWMB1 = 0x01,
+    Alt1Flexpwm1Pwmb1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT11 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT11 = 0x02,
+    Alt2Xbar1XbarInout11 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_B_SS1_B of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_B_SS1_B = 0x03,
+    Alt3Flexspi2Bus2bitBSs1B = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_TXD00 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_TXD0 = 0x04,
+    Alt4NetcPinmuxEth2Txd0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO27 of instance: gpio2"]
-    ALT5_GPIO2_IO27 = 0x05,
+    Alt5Gpio2Io27 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: ECAT_TX_DATA0_1 of instance: ecat"]
-    ALT6_ECAT_PT1_TXD0 = 0x06,
+    Alt6EcatPt1Txd0 = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART6_RI_B of instance: lpuart6"]
-    ALT9_LPUART6_RI_B = 0x09,
+    Alt9Lpuart6RiB = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: LPSPI6_SDI of instance: lpspi6"]
-    ALT10_LPSPI6_SDI = 0x0a,
+    Alt10Lpspi6Sdi = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_OEB of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_OEB = 0x0c,
+    Alt12AhbSramcOeb = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12746,28 +12746,28 @@ impl From<SwMuxCtlPadGpioEmcB127MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB128MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_WE of instance: semc"]
-    ALT0_SEMC_WE = 0x0,
+    Alt0SemcWe = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMB02 of instance: flexpwm1"]
-    ALT1_FLEXPWM1_PWMB2 = 0x01,
+    Alt1Flexpwm1Pwmb2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT12 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT12 = 0x02,
+    Alt2Xbar1XbarInout12 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_B_SS0_B of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_B_SS0_B = 0x03,
+    Alt3Flexspi2Bus2bitBSs0B = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_TX_EN of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_TX_EN = 0x04,
+    Alt4NetcPinmuxEth2TxEn = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO28 of instance: gpio2"]
-    ALT5_GPIO2_IO28 = 0x05,
+    Alt5Gpio2Io28 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: ECAT_TX_EN_1 of instance: ecat"]
-    ALT6_ECAT_PT1_TX_EN = 0x06,
+    Alt6EcatPt1TxEn = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART6_DTR_B of instance: lpuart6"]
-    ALT9_LPUART6_DTR_B = 0x09,
+    Alt9Lpuart6DtrB = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: LPSPI6_SDO of instance: lpspi6"]
-    ALT10_LPSPI6_SDO = 0x0a,
+    Alt10Lpspi6Sdo = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_ADV of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_ADV = 0x0c,
+    Alt12AhbSramcAdv = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12799,28 +12799,28 @@ impl From<SwMuxCtlPadGpioEmcB128MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB129MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_CS0 of instance: semc"]
-    ALT0_SEMC_CS0 = 0x0,
+    Alt0SemcCs0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMA02 of instance: flexpwm1"]
-    ALT1_FLEXPWM1_PWMA2 = 0x01,
+    Alt1Flexpwm1Pwma2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT13 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT13 = 0x02,
+    Alt2Xbar1XbarInout13 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_B_DQS of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_B_DQS = 0x03,
+    Alt3Flexspi2Bus2bitBDqs = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_TX_CLK of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_TX_CLK = 0x04,
+    Alt4NetcPinmuxEth2TxClk = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO29 of instance: gpio2"]
-    ALT5_GPIO2_IO29 = 0x05,
+    Alt5Gpio2Io29 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: ECAT_TX_CLK_1 of instance: ecat"]
-    ALT6_ECAT_PT1_TX_CLK = 0x06,
+    Alt6EcatPt1TxClk = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART6_DCD_B of instance: lpuart6"]
-    ALT9_LPUART6_DCD_B = 0x09,
+    Alt9Lpuart6DcdB = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: LPSPI6_PCS0 of instance: lpspi6"]
-    ALT10_LPSPI6_PCS0 = 0x0a,
+    Alt10Lpspi6Pcs0 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_CS0 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_CS0 = 0x0c,
+    Alt12AhbSramcCs0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12852,28 +12852,28 @@ impl From<SwMuxCtlPadGpioEmcB129MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB130MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA08 of instance: semc"]
-    ALT0_SEMC_DATA8 = 0x0,
+    Alt0SemcData8 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMA00 of instance: flexpwm3"]
-    ALT1_FLEXPWM3_PWMA0 = 0x01,
+    Alt1Flexpwm3Pwma0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT14 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT14 = 0x02,
+    Alt2Xbar1XbarInout14 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_B_DATA03 of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_B_DATA3 = 0x03,
+    Alt3Flexspi2Bus2bitBData3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_RXD00 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_RXD0 = 0x04,
+    Alt4NetcPinmuxEth2Rxd0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO30 of instance: gpio2"]
-    ALT5_GPIO2_IO30 = 0x05,
+    Alt5Gpio2Io30 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: ECAT_RX_DATA0_1 of instance: ecat"]
-    ALT6_ECAT_PT1_RXD0 = 0x06,
+    Alt6EcatPt1Rxd0 = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART6_DSR_B of instance: lpuart6"]
-    ALT9_LPUART6_DSR_B = 0x09,
+    Alt9Lpuart6DsrB = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: LPSPI6_PCS1 of instance: lpspi6"]
-    ALT10_LPSPI6_PCS1 = 0x0a,
+    Alt10Lpspi6Pcs1 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA08 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA8 = 0x0c,
+    Alt12AhbSramcData8 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12905,28 +12905,28 @@ impl From<SwMuxCtlPadGpioEmcB130MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB131MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA09 of instance: semc"]
-    ALT0_SEMC_DATA9 = 0x0,
+    Alt0SemcData9 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMB00 of instance: flexpwm3"]
-    ALT1_FLEXPWM3_PWMB0 = 0x01,
+    Alt1Flexpwm3Pwmb0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART6_TX of instance: lpuart6"]
-    ALT2_LPUART6_TX = 0x02,
+    Alt2Lpuart6Tx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_B_DATA02 of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_B_DATA2 = 0x03,
+    Alt3Flexspi2Bus2bitBData2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_RXD01 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_RXD1 = 0x04,
+    Alt4NetcPinmuxEth2Rxd1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO31 of instance: gpio2"]
-    ALT5_GPIO2_IO31 = 0x05,
+    Alt5Gpio2Io31 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: ECAT_RX_DATA1_1 of instance: ecat"]
-    ALT6_ECAT_PT1_RXD1 = 0x06,
+    Alt6EcatPt1Rxd1 = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI5_SCK of instance: lpspi5"]
-    ALT9_LPSPI5_SCK = 0x09,
+    Alt9Lpspi5Sck = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: LPSPI6_PCS2 of instance: lpspi6"]
-    ALT10_LPSPI6_PCS2 = 0x0a,
+    Alt10Lpspi6Pcs2 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA09 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA9 = 0x0c,
+    Alt12AhbSramcData9 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -12958,28 +12958,28 @@ impl From<SwMuxCtlPadGpioEmcB131MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB132MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA10 of instance: semc"]
-    ALT0_SEMC_DATA10 = 0x0,
+    Alt0SemcData10 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMA01 of instance: flexpwm3"]
-    ALT1_FLEXPWM3_PWMA1 = 0x01,
+    Alt1Flexpwm3Pwma1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART6_RX of instance: lpuart6"]
-    ALT2_LPUART6_RX = 0x02,
+    Alt2Lpuart6Rx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_B_DATA01 of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_B_DATA1 = 0x03,
+    Alt3Flexspi2Bus2bitBData1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_RX_DV of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_RX_DV = 0x04,
+    Alt4NetcPinmuxEth2RxDv = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO00 of instance: gpio3"]
-    ALT5_GPIO3_IO0 = 0x05,
+    Alt5Gpio3Io0 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: ECAT_RX_DV_1 of instance: ecat"]
-    ALT6_ECAT_PT1_RX_DV = 0x06,
+    Alt6EcatPt1RxDv = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI5_SDO of instance: lpspi5"]
-    ALT9_LPSPI5_SDO = 0x09,
+    Alt9Lpspi5Sdo = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: LPSPI6_PCS3 of instance: lpspi6"]
-    ALT10_LPSPI6_PCS3 = 0x0a,
+    Alt10Lpspi6Pcs3 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA10 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA10 = 0x0c,
+    Alt12AhbSramcData10 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13011,28 +13011,28 @@ impl From<SwMuxCtlPadGpioEmcB132MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB133MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA11 of instance: semc"]
-    ALT0_SEMC_DATA11 = 0x0,
+    Alt0SemcData11 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMB01 of instance: flexpwm3"]
-    ALT1_FLEXPWM3_PWMB1 = 0x01,
+    Alt1Flexpwm3Pwmb1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART6_CTS_B of instance: lpuart6"]
-    ALT2_LPUART6_CTS_B = 0x02,
+    Alt2Lpuart6CtsB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_B_DATA00 of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_B_DATA0 = 0x03,
+    Alt3Flexspi2Bus2bitBData0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_RX_ER of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_RX_ER = 0x04,
+    Alt4NetcPinmuxEth2RxEr = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO01 of instance: gpio3"]
-    ALT5_GPIO3_IO1 = 0x05,
+    Alt5Gpio3Io1 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: ECAT_RX_ER_1 of instance: ecat"]
-    ALT6_ECAT_PT1_RX_ER = 0x06,
+    Alt6EcatPt1RxEr = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPSPI5_SDI of instance: lpspi5"]
-    ALT9_LPSPI5_SDI = 0x09,
+    Alt9Lpspi5Sdi = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: NETC_PINMUX_ETH2_RX_CLK of instance: netc_pinmux"]
-    ALT10_NETC_PINMUX_ETH2_RX_CLK = 0x0a,
+    Alt10NetcPinmuxEth2RxClk = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA11 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA11 = 0x0c,
+    Alt12AhbSramcData11 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13064,28 +13064,28 @@ impl From<SwMuxCtlPadGpioEmcB133MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB134MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA12 of instance: semc"]
-    ALT0_SEMC_DATA12 = 0x0,
+    Alt0SemcData12 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMB02 of instance: flexpwm3"]
-    ALT1_FLEXPWM3_PWMB2 = 0x01,
+    Alt1Flexpwm3Pwmb2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART6_RTS_B of instance: lpuart6"]
-    ALT2_LPUART6_RTS_B = 0x02,
+    Alt2Lpuart6RtsB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_B_SCLK of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_B_SCLK = 0x03,
+    Alt3Flexspi2Bus2bitBSclk = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_RXD02 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_RXD2 = 0x04,
+    Alt4NetcPinmuxEth2Rxd2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO02 of instance: gpio3"]
-    ALT5_GPIO3_IO2 = 0x05,
+    Alt5Gpio3Io2 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: ECAT_RX_DATA2_1 of instance: ecat"]
-    ALT6_ECAT_PT1_RXD2 = 0x06,
+    Alt6EcatPt1Rxd2 = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH0_TXD00 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH0_TXD0 = 0x09,
+    Alt9NetcPinmuxEth0Txd0 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: LPSPI5_PCS0 of instance: lpspi5"]
-    ALT10_LPSPI5_PCS0 = 0x0a,
+    Alt10Lpspi5Pcs0 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA12 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA12 = 0x0c,
+    Alt12AhbSramcData12 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13117,28 +13117,28 @@ impl From<SwMuxCtlPadGpioEmcB134MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB135MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA13 of instance: semc"]
-    ALT0_SEMC_DATA13 = 0x0,
+    Alt0SemcData13 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMA02 of instance: flexpwm3"]
-    ALT1_FLEXPWM3_PWMA2 = 0x01,
+    Alt1Flexpwm3Pwma2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART5_TX of instance: lpuart5"]
-    ALT2_LPUART5_TX = 0x02,
+    Alt2Lpuart5Tx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_A_DATA00 of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_A_DATA0 = 0x03,
+    Alt3Flexspi2Bus2bitAData0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_RXD03 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_RXD3 = 0x04,
+    Alt4NetcPinmuxEth2Rxd3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO03 of instance: gpio3"]
-    ALT5_GPIO3_IO3 = 0x05,
+    Alt5Gpio3Io3 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: ECAT_RX_DATA3_1 of instance: ecat"]
-    ALT6_ECAT_PT1_RXD3 = 0x06,
+    Alt6EcatPt1Rxd3 = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH0_TXD01 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH0_TXD1 = 0x09,
+    Alt9NetcPinmuxEth0Txd1 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: LPSPI5_PCS1 of instance: lpspi5"]
-    ALT10_LPSPI5_PCS1 = 0x0a,
+    Alt10Lpspi5Pcs1 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA13 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA13 = 0x0c,
+    Alt12AhbSramcData13 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13170,27 +13170,27 @@ impl From<SwMuxCtlPadGpioEmcB135MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB136MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA14 of instance: semc"]
-    ALT0_SEMC_DATA14 = 0x0,
+    Alt0SemcData14 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMA00 of instance: flexpwm1"]
-    ALT1_FLEXPWM1_PWMA0 = 0x01,
+    Alt1Flexpwm1Pwma0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART5_RX of instance: lpuart5"]
-    ALT2_LPUART5_RX = 0x02,
+    Alt2Lpuart5Rx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_A_DATA01 of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_A_DATA1 = 0x03,
+    Alt3Flexspi2Bus2bitAData1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_TXD03 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_TXD3 = 0x04,
+    Alt4NetcPinmuxEth2Txd3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO04 of instance: gpio3"]
-    ALT5_GPIO3_IO4 = 0x05,
+    Alt5Gpio3Io4 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: ECAT_TX_DATA3_1 of instance: ecat"]
-    ALT6_ECAT_PT1_TXD3 = 0x06,
+    Alt6EcatPt1Txd3 = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH0_TX_EN of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH0_TX_EN = 0x09,
+    Alt9NetcPinmuxEth0TxEn = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA14 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA14 = 0x0c,
+    Alt12AhbSramcData14 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13222,27 +13222,27 @@ impl From<SwMuxCtlPadGpioEmcB136MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB137MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA15 of instance: semc"]
-    ALT0_SEMC_DATA15 = 0x0,
+    Alt0SemcData15 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMB00 of instance: flexpwm1"]
-    ALT1_FLEXPWM1_PWMB0 = 0x01,
+    Alt1Flexpwm1Pwmb0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART5_CTS_B of instance: lpuart5"]
-    ALT2_LPUART5_CTS_B = 0x02,
+    Alt2Lpuart5CtsB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_A_DATA02 of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_A_DATA2 = 0x03,
+    Alt3Flexspi2Bus2bitAData2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_TXD02 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_TXD2 = 0x04,
+    Alt4NetcPinmuxEth2Txd2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO05 of instance: gpio3"]
-    ALT5_GPIO3_IO5 = 0x05,
+    Alt5Gpio3Io5 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: ECAT_TX_DATA2_1 of instance: ecat"]
-    ALT6_ECAT_PT1_TXD2 = 0x06,
+    Alt6EcatPt1Txd2 = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH0_TX_CLK of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH0_TX_CLK = 0x09,
+    Alt9NetcPinmuxEth0TxClk = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_DATA15 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_DATA15 = 0x0c,
+    Alt12AhbSramcData15 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13274,27 +13274,27 @@ impl From<SwMuxCtlPadGpioEmcB137MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB138MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DM01 of instance: semc"]
-    ALT0_SEMC_DM1 = 0x0,
+    Alt0SemcDm1 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMB03 of instance: flexpwm1"]
-    ALT1_FLEXPWM1_PWMB3 = 0x01,
+    Alt1Flexpwm1Pwmb3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART5_RTS_B of instance: lpuart5"]
-    ALT2_LPUART5_RTS_B = 0x02,
+    Alt2Lpuart5RtsB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_A_DATA03 of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_A_DATA3 = 0x03,
+    Alt3Flexspi2Bus2bitAData3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_RX_CLK of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_RX_CLK = 0x04,
+    Alt4NetcPinmuxEth2RxClk = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO06 of instance: gpio3"]
-    ALT5_GPIO3_IO6 = 0x05,
+    Alt5Gpio3Io6 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: ECAT_RX_CLK_1 of instance: ecat"]
-    ALT6_ECAT_PT1_RX_CLK = 0x06,
+    Alt6EcatPt1RxClk = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH0_RXD00 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH0_RXD0 = 0x09,
+    Alt9NetcPinmuxEth0Rxd0 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_UBB of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_UBB = 0x0c,
+    Alt12AhbSramcUbb = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13326,27 +13326,27 @@ impl From<SwMuxCtlPadGpioEmcB138MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB139MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DQS of instance: semc"]
-    ALT0_SEMC_DQS = 0x0,
+    Alt0SemcDqs = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMA03 of instance: flexpwm1"]
-    ALT1_FLEXPWM1_PWMA3 = 0x01,
+    Alt1Flexpwm1Pwma3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT15 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT15 = 0x02,
+    Alt2Xbar1XbarInout15 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_A_SS0_B of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_A_SS0_B = 0x03,
+    Alt3Flexspi2Bus2bitASs0B = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH2_TX_ER of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH2_TX_ER = 0x04,
+    Alt4NetcPinmuxEth2TxEr = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO07 of instance: gpio3"]
-    ALT5_GPIO3_IO7 = 0x05,
+    Alt5Gpio3Io7 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: QTIMER2_TIMER1 of instance: qtimer2"]
-    ALT6_QTIMER2_TIMER1 = 0x06,
+    Alt6Qtimer2Timer1 = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH0_RXD01 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH0_RXD1 = 0x09,
+    Alt9NetcPinmuxEth0Rxd1 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_CS1 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_CS1 = 0x0c,
+    Alt12AhbSramcCs1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13378,27 +13378,27 @@ impl From<SwMuxCtlPadGpioEmcB139MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB140MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_RDY of instance: semc"]
-    ALT0_SEMC_RDY = 0x0,
+    Alt0SemcRdy = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_EMDC of instance: netc"]
-    ALT1_NETC_EMDC = 0x01,
+    Alt1NetcEmdc = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: NETC_ETH2_SLV_MDC of instance: netc"]
-    ALT2_NETC_ETH2_SLV_MDC = 0x02,
+    Alt2NetcEth2SlvMdc = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_A_DQS of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_A_DQS = 0x03,
+    Alt3Flexspi2Bus2bitADqs = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_ETH2_CRS of instance: netc"]
-    ALT4_NETC_ETH2_CRS = 0x04,
+    Alt4NetcEth2Crs = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO08 of instance: gpio3"]
-    ALT5_GPIO3_IO8 = 0x05,
+    Alt5Gpio3Io8 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: QTIMER3_TIMER1 of instance: qtimer3"]
-    ALT6_QTIMER3_TIMER1 = 0x06,
+    Alt6Qtimer3Timer1 = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH0_RX_DV of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH0_RX_DV = 0x09,
+    Alt9NetcPinmuxEth0RxDv = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_CS2 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_CS2 = 0x0c,
+    Alt12AhbSramcCs2 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13430,27 +13430,27 @@ impl From<SwMuxCtlPadGpioEmcB140MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB141MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_CSX00 of instance: semc"]
-    ALT0_SEMC_CSX0 = 0x0,
+    Alt0SemcCsx0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_EMDIO of instance: netc"]
-    ALT1_NETC_EMDIO = 0x01,
+    Alt1NetcEmdio = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: NETC_ETH2_SLV_MDIO of instance: netc"]
-    ALT2_NETC_ETH2_SLV_MDIO = 0x02,
+    Alt2NetcEth2SlvMdio = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: FLEXSPI2_BUS2BIT_A_SCLK of instance: flexspi2_bus2bit"]
-    ALT3_FLEXSPI2_BUS2BIT_A_SCLK = 0x03,
+    Alt3Flexspi2Bus2bitASclk = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_ETH2_COL of instance: netc"]
-    ALT4_NETC_ETH2_COL = 0x04,
+    Alt4NetcEth2Col = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO09 of instance: gpio3"]
-    ALT5_GPIO3_IO9 = 0x05,
+    Alt5Gpio3Io9 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: QTIMER4_TIMER1 of instance: qtimer4"]
-    ALT6_QTIMER4_TIMER1 = 0x06,
+    Alt6Qtimer4Timer1 = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH0_RX_ER of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH0_RX_ER = 0x09,
+    Alt9NetcPinmuxEth0RxEr = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: AHB_SRAMC_CS3 of instance: ahb_sramc"]
-    ALT12_AHB_SRAMC_CS3 = 0x0c,
+    Alt12AhbSramcCs3 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13482,29 +13482,29 @@ impl From<SwMuxCtlPadGpioEmcB141MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB200MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA16 of instance: semc"]
-    ALT0_SEMC_DATA16 = 0x0,
+    Alt0SemcData16 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: CCM_ENET_REF_CLK_25M of instance: ccm"]
-    ALT1_CCM_ENET_REF_CLK_25M = 0x01,
+    Alt1CcmEnetRefClk25m = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: QTIMER5_TIMER1 of instance: qtimer5"]
-    ALT2_QTIMER5_TIMER1 = 0x02,
+    Alt2Qtimer5Timer1 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_EMDC of instance: netc"]
-    ALT3_NETC_EMDC = 0x03,
+    Alt3NetcEmdc = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH0_RX_CLK of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH0_RX_CLK = 0x04,
+    Alt4NetcPinmuxEth0RxClk = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO10 of instance: gpio3"]
-    ALT5_GPIO3_IO10 = 0x05,
+    Alt5Gpio3Io10 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT20 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT20 = 0x06,
+    Alt6Xbar1XbarInout20 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPSPI5_SCK of instance: lpspi5"]
-    ALT8_LPSPI5_SCK = 0x08,
+    Alt8Lpspi5Sck = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPI2C3_SCL of instance: lpi2c3"]
-    ALT9_LPI2C3_SCL = 0x09,
+    Alt9Lpi2c3Scl = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: FLEXPWM3_PWMA00 of instance: flexpwm3"]
-    ALT10_FLEXPWM3_PWMA0 = 0x0a,
+    Alt10Flexpwm3Pwma0 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_CLK_0 of instance: ecat"]
-    ALT12_ECAT_PT0_RX_CLK = 0x0c,
+    Alt12EcatPt0RxClk = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13536,29 +13536,29 @@ impl From<SwMuxCtlPadGpioEmcB200MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB201MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA17 of instance: semc"]
-    ALT0_SEMC_DATA17 = 0x0,
+    Alt0SemcData17 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: USDHC2_CD_B of instance: usdhc2"]
-    ALT1_USDHC2_CD_B = 0x01,
+    Alt1Usdhc2CdB = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: QTIMER6_TIMER1 of instance: qtimer6"]
-    ALT2_QTIMER6_TIMER1 = 0x02,
+    Alt2Qtimer6Timer1 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_EMDIO of instance: netc"]
-    ALT3_NETC_EMDIO = 0x03,
+    Alt3NetcEmdio = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH0_RXD02 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH0_RXD2 = 0x04,
+    Alt4NetcPinmuxEth0Rxd2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO11 of instance: gpio3"]
-    ALT5_GPIO3_IO11 = 0x05,
+    Alt5Gpio3Io11 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT21 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT21 = 0x06,
+    Alt6Xbar1XbarInout21 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPSPI5_PCS0 of instance: lpspi5"]
-    ALT8_LPSPI5_PCS0 = 0x08,
+    Alt8Lpspi5Pcs0 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPI2C3_SDA of instance: lpi2c3"]
-    ALT9_LPI2C3_SDA = 0x09,
+    Alt9Lpi2c3Sda = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: FLEXPWM3_PWMB00 of instance: flexpwm3"]
-    ALT10_FLEXPWM3_PWMB0 = 0x0a,
+    Alt10Flexpwm3Pwmb0 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_DATA2_0 of instance: ecat"]
-    ALT12_ECAT_PT0_RXD2 = 0x0c,
+    Alt12EcatPt0Rxd2 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13590,28 +13590,28 @@ impl From<SwMuxCtlPadGpioEmcB201MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB202MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA18 of instance: semc"]
-    ALT0_SEMC_DATA18 = 0x0,
+    Alt0SemcData18 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: USDHC2_WP of instance: usdhc2"]
-    ALT1_USDHC2_WP = 0x01,
+    Alt1Usdhc2Wp = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: QTIMER7_TIMER1 of instance: qtimer7"]
-    ALT2_QTIMER7_TIMER1 = 0x02,
+    Alt2Qtimer7Timer1 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH0_RXD03 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH0_RXD3 = 0x04,
+    Alt4NetcPinmuxEth0Rxd3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO12 of instance: gpio3"]
-    ALT5_GPIO3_IO12 = 0x05,
+    Alt5Gpio3Io12 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT22 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT22 = 0x06,
+    Alt6Xbar1XbarInout22 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPSPI5_SDO of instance: lpspi5"]
-    ALT8_LPSPI5_SDO = 0x08,
+    Alt8Lpspi5Sdo = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: CCM_CLKO1 of instance: ccm"]
-    ALT9_CCM_CLKO1 = 0x09,
+    Alt9CcmClko1 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: FLEXPWM3_PWMA01 of instance: flexpwm3"]
-    ALT10_FLEXPWM3_PWMA1 = 0x0a,
+    Alt10Flexpwm3Pwma1 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_DATA3_0 of instance: ecat"]
-    ALT12_ECAT_PT0_RXD3 = 0x0c,
+    Alt12EcatPt0Rxd3 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13643,28 +13643,28 @@ impl From<SwMuxCtlPadGpioEmcB202MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB203MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA19 of instance: semc"]
-    ALT0_SEMC_DATA19 = 0x0,
+    Alt0SemcData19 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: USDHC2_VSELECT of instance: usdhc2"]
-    ALT1_USDHC2_VSELECT = 0x01,
+    Alt1Usdhc2Vselect = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: QTIMER8_TIMER1 of instance: qtimer8"]
-    ALT2_QTIMER8_TIMER1 = 0x02,
+    Alt2Qtimer8Timer1 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH0_TXD02 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH0_TXD2 = 0x04,
+    Alt4NetcPinmuxEth0Txd2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO13 of instance: gpio3"]
-    ALT5_GPIO3_IO13 = 0x05,
+    Alt5Gpio3Io13 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT23 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT23 = 0x06,
+    Alt6Xbar1XbarInout23 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPSPI5_SDI of instance: lpspi5"]
-    ALT8_LPSPI5_SDI = 0x08,
+    Alt8Lpspi5Sdi = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_ETH3_CRS of instance: netc"]
-    ALT9_NETC_ETH3_CRS = 0x09,
+    Alt9NetcEth3Crs = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: FLEXPWM3_PWMB01 of instance: flexpwm3"]
-    ALT10_FLEXPWM3_PWMB1 = 0x0a,
+    Alt10Flexpwm3Pwmb1 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_DATA2_0 of instance: ecat"]
-    ALT12_ECAT_PT0_TXD2 = 0x0c,
+    Alt12EcatPt0Txd2 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13696,28 +13696,28 @@ impl From<SwMuxCtlPadGpioEmcB203MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB204MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA20 of instance: semc"]
-    ALT0_SEMC_DATA20 = 0x0,
+    Alt0SemcData20 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: USDHC2_RESET_B of instance: usdhc2"]
-    ALT1_USDHC2_RESET_B = 0x01,
+    Alt1Usdhc2ResetB = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SAI2_MCLK of instance: sai2"]
-    ALT2_SAI2_MCLK = 0x02,
+    Alt2Sai2Mclk = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_PINMUX_ETH0_TXD03 of instance: netc_pinmux"]
-    ALT4_NETC_PINMUX_ETH0_TXD3 = 0x04,
+    Alt4NetcPinmuxEth0Txd3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO14 of instance: gpio3"]
-    ALT5_GPIO3_IO14 = 0x05,
+    Alt5Gpio3Io14 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT24 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT24 = 0x06,
+    Alt6Xbar1XbarInout24 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPSPI3_SCK of instance: lpspi3"]
-    ALT8_LPSPI3_SCK = 0x08,
+    Alt8Lpspi3Sck = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_ETH3_COL of instance: netc"]
-    ALT9_NETC_ETH3_COL = 0x09,
+    Alt9NetcEth3Col = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: FLEXPWM3_PWMB02 of instance: flexpwm3"]
-    ALT10_FLEXPWM3_PWMB2 = 0x0a,
+    Alt10Flexpwm3Pwmb2 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_DATA3_0 of instance: ecat"]
-    ALT12_ECAT_PT0_TXD3 = 0x0c,
+    Alt12EcatPt0Txd3 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13749,29 +13749,29 @@ impl From<SwMuxCtlPadGpioEmcB204MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB205MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA21 of instance: semc"]
-    ALT0_SEMC_DATA21 = 0x0,
+    Alt0SemcData21 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_ETH4_SLV_MDC of instance: netc"]
-    ALT1_NETC_ETH4_SLV_MDC = 0x01,
+    Alt1NetcEth4SlvMdc = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SAI2_RX_SYNC of instance: sai2"]
-    ALT2_SAI2_RX_SYNC = 0x02,
+    Alt2Sai2RxSync = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_TXD00 of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_TXD0 = 0x03,
+    Alt3NetcPinmuxEth0Txd0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_ETH4_CRS of instance: netc"]
-    ALT4_NETC_ETH4_CRS = 0x04,
+    Alt4NetcEth4Crs = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO15 of instance: gpio3"]
-    ALT5_GPIO3_IO15 = 0x05,
+    Alt5Gpio3Io15 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT25 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT25 = 0x06,
+    Alt6Xbar1XbarInout25 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPSPI3_PCS0 of instance: lpspi3"]
-    ALT8_LPSPI3_PCS0 = 0x08,
+    Alt8Lpspi3Pcs0 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_TXD00 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_TXD0 = 0x09,
+    Alt9NetcPinmuxEth3Txd0 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: FLEXPWM3_PWMA02 of instance: flexpwm3"]
-    ALT10_FLEXPWM3_PWMA2 = 0x0a,
+    Alt10Flexpwm3Pwma2 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_DATA0_0 of instance: ecat"]
-    ALT12_ECAT_PT0_TXD0 = 0x0c,
+    Alt12EcatPt0Txd0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13803,29 +13803,29 @@ impl From<SwMuxCtlPadGpioEmcB205MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB206MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA22 of instance: semc"]
-    ALT0_SEMC_DATA22 = 0x0,
+    Alt0SemcData22 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_ETH4_SLV_MDIO of instance: netc"]
-    ALT1_NETC_ETH4_SLV_MDIO = 0x01,
+    Alt1NetcEth4SlvMdio = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SAI2_RX_BCLK of instance: sai2"]
-    ALT2_SAI2_RX_BCLK = 0x02,
+    Alt2Sai2RxBclk = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_TXD01 of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_TXD1 = 0x03,
+    Alt3NetcPinmuxEth0Txd1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_ETH4_COL of instance: netc"]
-    ALT4_NETC_ETH4_COL = 0x04,
+    Alt4NetcEth4Col = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO16 of instance: gpio3"]
-    ALT5_GPIO3_IO16 = 0x05,
+    Alt5Gpio3Io16 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT26 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT26 = 0x06,
+    Alt6Xbar1XbarInout26 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPSPI3_SDO of instance: lpspi3"]
-    ALT8_LPSPI3_SDO = 0x08,
+    Alt8Lpspi3Sdo = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_TXD01 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_TXD1 = 0x09,
+    Alt9NetcPinmuxEth3Txd1 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: FLEXPWM3_PWMB03 of instance: flexpwm3"]
-    ALT10_FLEXPWM3_PWMB3 = 0x0a,
+    Alt10Flexpwm3Pwmb3 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_DATA1_0 of instance: ecat"]
-    ALT12_ECAT_PT0_TXD1 = 0x0c,
+    Alt12EcatPt0Txd1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13857,28 +13857,28 @@ impl From<SwMuxCtlPadGpioEmcB206MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB207MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA23 of instance: semc"]
-    ALT0_SEMC_DATA23 = 0x0,
+    Alt0SemcData23 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_TX_ER of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_TX_ER = 0x01,
+    Alt1NetcPinmuxEth4TxEr = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SAI2_RX_DATA of instance: sai2"]
-    ALT2_SAI2_RX_DATA = 0x02,
+    Alt2Sai2RxData = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_TX_EN of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_TX_EN = 0x03,
+    Alt3NetcPinmuxEth0TxEn = 0x03,
     _RESERVED_4 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO17 of instance: gpio3"]
-    ALT5_GPIO3_IO17 = 0x05,
+    Alt5Gpio3Io17 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT27 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT27 = 0x06,
+    Alt6Xbar1XbarInout27 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPSPI3_SDI of instance: lpspi3"]
-    ALT8_LPSPI3_SDI = 0x08,
+    Alt8Lpspi3Sdi = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_TX_EN of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_TX_EN = 0x09,
+    Alt9NetcPinmuxEth3TxEn = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: FLEXPWM3_PWMA03 of instance: flexpwm3"]
-    ALT10_FLEXPWM3_PWMA3 = 0x0a,
+    Alt10Flexpwm3Pwma3 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_EN_0 of instance: ecat"]
-    ALT12_ECAT_PT0_TX_EN = 0x0c,
+    Alt12EcatPt0TxEn = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13910,28 +13910,28 @@ impl From<SwMuxCtlPadGpioEmcB207MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB208MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DM02 of instance: semc"]
-    ALT0_SEMC_DM2 = 0x0,
+    Alt0SemcDm2 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_RX_CLK of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_RX_CLK = 0x01,
+    Alt1NetcPinmuxEth4RxClk = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SAI2_TX_DATA of instance: sai2"]
-    ALT2_SAI2_TX_DATA = 0x02,
+    Alt2Sai2TxData = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_TX_CLK of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_TX_CLK = 0x03,
+    Alt3NetcPinmuxEth0TxClk = 0x03,
     _RESERVED_4 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO18 of instance: gpio3"]
-    ALT5_GPIO3_IO18 = 0x05,
+    Alt5Gpio3Io18 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT28 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT28 = 0x06,
+    Alt6Xbar1XbarInout28 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPSPI3_PCS3 of instance: lpspi3"]
-    ALT8_LPSPI3_PCS3 = 0x08,
+    Alt8Lpspi3Pcs3 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_TX_CLK of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_TX_CLK = 0x09,
+    Alt9NetcPinmuxEth3TxClk = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: CCM_CLKO2 of instance: ccm"]
-    ALT10_CCM_CLKO2 = 0x0a,
+    Alt10CcmClko2 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_CLK_0 of instance: ecat"]
-    ALT12_ECAT_PT0_TX_CLK = 0x0c,
+    Alt12EcatPt0TxClk = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -13963,28 +13963,28 @@ impl From<SwMuxCtlPadGpioEmcB208MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB209MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA24 of instance: semc"]
-    ALT0_SEMC_DATA24 = 0x0,
+    Alt0SemcData24 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_RXD03 of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_RXD3 = 0x01,
+    Alt1NetcPinmuxEth4Rxd3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SAI2_TX_BCLK of instance: sai2"]
-    ALT2_SAI2_TX_BCLK = 0x02,
+    Alt2Sai2TxBclk = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_RXD00 of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_RXD0 = 0x03,
+    Alt3NetcPinmuxEth0Rxd0 = 0x03,
     _RESERVED_4 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO19 of instance: gpio3"]
-    ALT5_GPIO3_IO19 = 0x05,
+    Alt5Gpio3Io19 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT29 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT29 = 0x06,
+    Alt6Xbar1XbarInout29 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPSPI3_PCS2 of instance: lpspi3"]
-    ALT8_LPSPI3_PCS2 = 0x08,
+    Alt8Lpspi3Pcs2 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_RXD00 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_RXD0 = 0x09,
+    Alt9NetcPinmuxEth3Rxd0 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: QTIMER1_TIMER0 of instance: qtimer1"]
-    ALT10_QTIMER1_TIMER0 = 0x0a,
+    Alt10Qtimer1Timer0 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_DATA0_0 of instance: ecat"]
-    ALT12_ECAT_PT0_RXD0 = 0x0c,
+    Alt12EcatPt0Rxd0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14016,28 +14016,28 @@ impl From<SwMuxCtlPadGpioEmcB209MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB210MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA25 of instance: semc"]
-    ALT0_SEMC_DATA25 = 0x0,
+    Alt0SemcData25 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_RXD02 of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_RXD2 = 0x01,
+    Alt1NetcPinmuxEth4Rxd2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SAI2_TX_SYNC of instance: sai2"]
-    ALT2_SAI2_TX_SYNC = 0x02,
+    Alt2Sai2TxSync = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_RXD01 of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_RXD1 = 0x03,
+    Alt3NetcPinmuxEth0Rxd1 = 0x03,
     _RESERVED_4 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO20 of instance: gpio3"]
-    ALT5_GPIO3_IO20 = 0x05,
+    Alt5Gpio3Io20 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT30 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT30 = 0x06,
+    Alt6Xbar1XbarInout30 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPSPI3_PCS1 of instance: lpspi3"]
-    ALT8_LPSPI3_PCS1 = 0x08,
+    Alt8Lpspi3Pcs1 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_RXD01 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_RXD1 = 0x09,
+    Alt9NetcPinmuxEth3Rxd1 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: QTIMER1_TIMER1 of instance: qtimer1"]
-    ALT10_QTIMER1_TIMER1 = 0x0a,
+    Alt10Qtimer1Timer1 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_DATA1_0 of instance: ecat"]
-    ALT12_ECAT_PT0_RXD1 = 0x0c,
+    Alt12EcatPt0Rxd1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14069,29 +14069,29 @@ impl From<SwMuxCtlPadGpioEmcB210MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB211MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA26 of instance: semc"]
-    ALT0_SEMC_DATA26 = 0x0,
+    Alt0SemcData26 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_TXD03 of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_TXD3 = 0x01,
+    Alt1NetcPinmuxEth4Txd3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SPDIF_OUT of instance: spdif"]
-    ALT2_SPDIF_OUT = 0x02,
+    Alt2SpdifOut = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_RX_DV of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_RX_DV = 0x03,
+    Alt3NetcPinmuxEth0RxDv = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPSPI5_PCS3 of instance: lpspi5"]
-    ALT4_LPSPI5_PCS3 = 0x04,
+    Alt4Lpspi5Pcs3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO21 of instance: gpio3"]
-    ALT5_GPIO3_IO21 = 0x05,
+    Alt5Gpio3Io21 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT31 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT31 = 0x06,
+    Alt6Xbar1XbarInout31 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: SAI3_RX_SYNC of instance: sai3"]
-    ALT8_SAI3_RX_SYNC = 0x08,
+    Alt8Sai3RxSync = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_RX_DV of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_RX_DV = 0x09,
+    Alt9NetcPinmuxEth3RxDv = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: QTIMER1_TIMER2 of instance: qtimer1"]
-    ALT10_QTIMER1_TIMER2 = 0x0a,
+    Alt10Qtimer1Timer2 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_DV_0 of instance: ecat"]
-    ALT12_ECAT_PT0_RX_DV = 0x0c,
+    Alt12EcatPt0RxDv = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14123,29 +14123,29 @@ impl From<SwMuxCtlPadGpioEmcB211MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB212MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA27 of instance: semc"]
-    ALT0_SEMC_DATA27 = 0x0,
+    Alt0SemcData27 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_TXD02 of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_TXD2 = 0x01,
+    Alt1NetcPinmuxEth4Txd2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SPDIF_IN of instance: spdif"]
-    ALT2_SPDIF_IN = 0x02,
+    Alt2SpdifIn = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_RX_ER of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_RX_ER = 0x03,
+    Alt3NetcPinmuxEth0RxEr = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPSPI5_PCS2 of instance: lpspi5"]
-    ALT4_LPSPI5_PCS2 = 0x04,
+    Alt4Lpspi5Pcs2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO22 of instance: gpio3"]
-    ALT5_GPIO3_IO22 = 0x05,
+    Alt5Gpio3Io22 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT32 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT32 = 0x06,
+    Alt6Xbar1XbarInout32 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: SAI3_RX_BCLK of instance: sai3"]
-    ALT8_SAI3_RX_BCLK = 0x08,
+    Alt8Sai3RxBclk = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_RX_ER of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_RX_ER = 0x09,
+    Alt9NetcPinmuxEth3RxEr = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: QTIMER1_TIMER3 of instance: qtimer1"]
-    ALT10_QTIMER1_TIMER3 = 0x0a,
+    Alt10Qtimer1Timer3 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_PT0_RX_ER of instance: ecat"]
-    ALT12_ECAT_PT0_RX_ER = 0x0c,
+    Alt12EcatPt0RxEr = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14177,29 +14177,29 @@ impl From<SwMuxCtlPadGpioEmcB212MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB213MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA28 of instance: semc"]
-    ALT0_SEMC_DATA28 = 0x0,
+    Alt0SemcData28 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_TXD00 of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_TXD0 = 0x01,
+    Alt1NetcPinmuxEth4Txd0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART11_TX of instance: lpuart11"]
-    ALT2_LPUART11_TX = 0x02,
+    Alt2Lpuart11Tx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_TXD03 of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_TXD3 = 0x03,
+    Alt3NetcPinmuxEth0Txd3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPSPI5_PCS1 of instance: lpspi5"]
-    ALT4_LPSPI5_PCS1 = 0x04,
+    Alt4Lpspi5Pcs1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO23 of instance: gpio3"]
-    ALT5_GPIO3_IO23 = 0x05,
+    Alt5Gpio3Io23 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT33 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT33 = 0x06,
+    Alt6Xbar1XbarInout33 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: SAI3_RX_DATA of instance: sai3"]
-    ALT8_SAI3_RX_DATA = 0x08,
+    Alt8Sai3RxData = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_TXD03 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_TXD3 = 0x09,
+    Alt9NetcPinmuxEth3Txd3 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: QTIMER2_TIMER0 of instance: qtimer2"]
-    ALT10_QTIMER2_TIMER0 = 0x0a,
+    Alt10Qtimer2Timer0 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_DATA0_1 of instance: ecat"]
-    ALT12_ECAT_PT1_TXD0 = 0x0c,
+    Alt12EcatPt1Txd0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14231,29 +14231,29 @@ impl From<SwMuxCtlPadGpioEmcB213MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB214MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA29 of instance: semc"]
-    ALT0_SEMC_DATA29 = 0x0,
+    Alt0SemcData29 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_TXD01 of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_TXD1 = 0x01,
+    Alt1NetcPinmuxEth4Txd1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART11_RX of instance: lpuart11"]
-    ALT2_LPUART11_RX = 0x02,
+    Alt2Lpuart11Rx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_TXD02 of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_TXD2 = 0x03,
+    Alt3NetcPinmuxEth0Txd2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPUART5_DSR_B of instance: lpuart5"]
-    ALT4_LPUART5_DSR_B = 0x04,
+    Alt4Lpuart5DsrB = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO24 of instance: gpio3"]
-    ALT5_GPIO3_IO24 = 0x05,
+    Alt5Gpio3Io24 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT34 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT34 = 0x06,
+    Alt6Xbar1XbarInout34 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: SAI3_TX_DATA of instance: sai3"]
-    ALT8_SAI3_TX_DATA = 0x08,
+    Alt8Sai3TxData = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_TXD02 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_TXD2 = 0x09,
+    Alt9NetcPinmuxEth3Txd2 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: QTIMER2_TIMER1 of instance: qtimer2"]
-    ALT10_QTIMER2_TIMER1 = 0x0a,
+    Alt10Qtimer2Timer1 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_DATA1_1 of instance: ecat"]
-    ALT12_ECAT_PT1_TXD1 = 0x0c,
+    Alt12EcatPt1Txd1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14285,29 +14285,29 @@ impl From<SwMuxCtlPadGpioEmcB214MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB215MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA30 of instance: semc"]
-    ALT0_SEMC_DATA30 = 0x0,
+    Alt0SemcData30 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_TX_EN of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_TX_EN = 0x01,
+    Alt1NetcPinmuxEth4TxEn = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART11_CTS_B of instance: lpuart11"]
-    ALT2_LPUART11_CTS_B = 0x02,
+    Alt2Lpuart11CtsB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_RX_CLK of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_RX_CLK = 0x03,
+    Alt3NetcPinmuxEth0RxClk = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPUART5_DCD_B of instance: lpuart5"]
-    ALT4_LPUART5_DCD_B = 0x04,
+    Alt4Lpuart5DcdB = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO25 of instance: gpio3"]
-    ALT5_GPIO3_IO25 = 0x05,
+    Alt5Gpio3Io25 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT35 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT35 = 0x06,
+    Alt6Xbar1XbarInout35 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: SAI3_TX_BCLK of instance: sai3"]
-    ALT8_SAI3_TX_BCLK = 0x08,
+    Alt8Sai3TxBclk = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_RX_CLK of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_RX_CLK = 0x09,
+    Alt9NetcPinmuxEth3RxClk = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: QTIMER2_TIMER2 of instance: qtimer2"]
-    ALT10_QTIMER2_TIMER2 = 0x0a,
+    Alt10Qtimer2Timer2 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_EN_1 of instance: ecat"]
-    ALT12_ECAT_PT1_TX_EN = 0x0c,
+    Alt12EcatPt1TxEn = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14339,29 +14339,29 @@ impl From<SwMuxCtlPadGpioEmcB215MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB216MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA31 of instance: semc"]
-    ALT0_SEMC_DATA31 = 0x0,
+    Alt0SemcData31 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_TX_CLK of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_TX_CLK = 0x01,
+    Alt1NetcPinmuxEth4TxClk = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART11_RTS_B of instance: lpuart11"]
-    ALT2_LPUART11_RTS_B = 0x02,
+    Alt2Lpuart11RtsB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_RXD02 of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_RXD2 = 0x03,
+    Alt3NetcPinmuxEth0Rxd2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPUART5_DTR_B of instance: lpuart5"]
-    ALT4_LPUART5_DTR_B = 0x04,
+    Alt4Lpuart5DtrB = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO26 of instance: gpio3"]
-    ALT5_GPIO3_IO26 = 0x05,
+    Alt5Gpio3Io26 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT14 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT14 = 0x06,
+    Alt6Xbar1XbarInout14 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: SAI3_TX_SYNC of instance: sai3"]
-    ALT8_SAI3_TX_SYNC = 0x08,
+    Alt8Sai3TxSync = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_RXD02 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_RXD2 = 0x09,
+    Alt9NetcPinmuxEth3Rxd2 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: QTIMER2_TIMER3 of instance: qtimer2"]
-    ALT10_QTIMER2_TIMER3 = 0x0a,
+    Alt10Qtimer2Timer3 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_TX_CLK_1 of instance: ecat"]
-    ALT12_ECAT_PT1_TX_CLK = 0x0c,
+    Alt12EcatPt1TxClk = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14393,28 +14393,28 @@ impl From<SwMuxCtlPadGpioEmcB216MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB217MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DM03 of instance: semc"]
-    ALT0_SEMC_DM3 = 0x0,
+    Alt0SemcDm3 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_RXD00 of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_RXD0 = 0x01,
+    Alt1NetcPinmuxEth4Rxd0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART5_TX of instance: lpuart5"]
-    ALT2_LPUART5_TX = 0x02,
+    Alt2Lpuart5Tx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_RXD03 of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_RXD3 = 0x03,
+    Alt3NetcPinmuxEth0Rxd3 = 0x03,
     _RESERVED_4 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO27 of instance: gpio3"]
-    ALT5_GPIO3_IO27 = 0x05,
+    Alt5Gpio3Io27 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT15 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT15 = 0x06,
+    Alt6Xbar1XbarInout15 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: SAI3_MCLK of instance: sai3"]
-    ALT8_SAI3_MCLK = 0x08,
+    Alt8Sai3Mclk = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_RXD03 of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_RXD3 = 0x09,
+    Alt9NetcPinmuxEth3Rxd3 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: QTIMER3_TIMER0 of instance: qtimer3"]
-    ALT10_QTIMER3_TIMER0 = 0x0a,
+    Alt10Qtimer3Timer0 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_DATA0_1 of instance: ecat"]
-    ALT12_ECAT_PT1_RXD0 = 0x0c,
+    Alt12EcatPt1Rxd0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14446,28 +14446,28 @@ impl From<SwMuxCtlPadGpioEmcB217MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB218MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_DQS4 of instance: semc"]
-    ALT0_SEMC_DQS4 = 0x0,
+    Alt0SemcDqs4 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_RXD01 of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_RXD1 = 0x01,
+    Alt1NetcPinmuxEth4Rxd1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART5_RX of instance: lpuart5"]
-    ALT2_LPUART5_RX = 0x02,
+    Alt2Lpuart5Rx = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_PINMUX_ETH0_TX_ER of instance: netc_pinmux"]
-    ALT3_NETC_PINMUX_ETH0_TX_ER = 0x03,
+    Alt3NetcPinmuxEth0TxEr = 0x03,
     _RESERVED_4 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO28 of instance: gpio3"]
-    ALT5_GPIO3_IO28 = 0x05,
+    Alt5Gpio3Io28 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT16 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT16 = 0x06,
+    Alt6Xbar1XbarInout16 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: EWM_EWM_OUT_B of instance: ewm"]
-    ALT8_EWM_EWM_OUT_B = 0x08,
+    Alt8EwmEwmOutB = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_PINMUX_ETH3_TX_ER of instance: netc_pinmux"]
-    ALT9_NETC_PINMUX_ETH3_TX_ER = 0x09,
+    Alt9NetcPinmuxEth3TxEr = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: QTIMER3_TIMER1 of instance: qtimer3"]
-    ALT10_QTIMER3_TIMER1 = 0x0a,
+    Alt10Qtimer3Timer1 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_DATA1_1 of instance: ecat"]
-    ALT12_ECAT_PT1_RXD1 = 0x0c,
+    Alt12EcatPt1Rxd1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14499,29 +14499,29 @@ impl From<SwMuxCtlPadGpioEmcB218MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB219MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_CLKX00 of instance: semc"]
-    ALT0_SEMC_CLKX0 = 0x0,
+    Alt0SemcClkx0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_RX_DV of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_RX_DV = 0x01,
+    Alt1NetcPinmuxEth4RxDv = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART5_CTS_B of instance: lpuart5"]
-    ALT2_LPUART5_CTS_B = 0x02,
+    Alt2Lpuart5CtsB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_ETH0_CRS of instance: netc"]
-    ALT3_NETC_ETH0_CRS = 0x03,
+    Alt3NetcEth0Crs = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_EMDC of instance: netc"]
-    ALT4_NETC_EMDC = 0x04,
+    Alt4NetcEmdc = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO29 of instance: gpio3"]
-    ALT5_GPIO3_IO29 = 0x05,
+    Alt5Gpio3Io29 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT36 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT36 = 0x06,
+    Alt6Xbar1XbarInout36 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPI2C3_SCL of instance: lpi2c3"]
-    ALT8_LPI2C3_SCL = 0x08,
+    Alt8Lpi2c3Scl = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_ETH3_SLV_MDC of instance: netc"]
-    ALT9_NETC_ETH3_SLV_MDC = 0x09,
+    Alt9NetcEth3SlvMdc = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: QTIMER3_TIMER2 of instance: qtimer3"]
-    ALT10_QTIMER3_TIMER2 = 0x0a,
+    Alt10Qtimer3Timer2 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_DV_1 of instance: ecat"]
-    ALT12_ECAT_PT1_RX_DV = 0x0c,
+    Alt12EcatPt1RxDv = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14553,29 +14553,29 @@ impl From<SwMuxCtlPadGpioEmcB219MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioEmcB220MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: SEMC_CLKX01 of instance: semc"]
-    ALT0_SEMC_CLKX1 = 0x0,
+    Alt0SemcClkx1 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: NETC_PINMUX_ETH4_RX_ER of instance: netc_pinmux"]
-    ALT1_NETC_PINMUX_ETH4_RX_ER = 0x01,
+    Alt1NetcPinmuxEth4RxEr = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: LPUART5_RTS_B of instance: lpuart5"]
-    ALT2_LPUART5_RTS_B = 0x02,
+    Alt2Lpuart5RtsB = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: NETC_ETH0_COL of instance: netc"]
-    ALT3_NETC_ETH0_COL = 0x03,
+    Alt3NetcEth0Col = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: NETC_EMDIO of instance: netc"]
-    ALT4_NETC_EMDIO = 0x04,
+    Alt4NetcEmdio = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO30 of instance: gpio3"]
-    ALT5_GPIO3_IO30 = 0x05,
+    Alt5Gpio3Io30 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: XBAR1_XBAR_INOUT37 of instance: xbar1"]
-    ALT6_XBAR1_XBAR_INOUT37 = 0x06,
+    Alt6Xbar1XbarInout37 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: LPI2C3_SDA of instance: lpi2c3"]
-    ALT8_LPI2C3_SDA = 0x08,
+    Alt8Lpi2c3Sda = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_ETH3_SLV_MDIO of instance: netc"]
-    ALT9_NETC_ETH3_SLV_MDIO = 0x09,
+    Alt9NetcEth3SlvMdio = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: QTIMER3_TIMER3 of instance: qtimer3"]
-    ALT10_QTIMER3_TIMER3 = 0x0a,
+    Alt10Qtimer3Timer3 = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RX_ER_1 of instance: ecat"]
-    ALT12_ECAT_PT1_RX_ER = 0x0c,
+    Alt12EcatPt1RxEr = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14607,27 +14607,27 @@ impl From<SwMuxCtlPadGpioEmcB220MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB100MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC1_CMD of instance: usdhc1"]
-    ALT0_USDHC1_CMD = 0x0,
+    Alt0Usdhc1Cmd = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC1_EMCLK02 of instance: sinc1"]
-    ALT1_SINC1_EMCLK2 = 0x01,
+    Alt1Sinc1Emclk2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT20 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT20 = 0x02,
+    Alt2Xbar1XbarInout20 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPTMR2_ALT1 of instance: lptmr2"]
-    ALT3_LPTMR2_ALT1 = 0x03,
+    Alt3Lptmr2Alt1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XSPI_SLV_CS of instance: xspi_slv"]
-    ALT4_XSPI_SLV_CS = 0x04,
+    Alt4XspiSlvCs = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO04 of instance: gpio5"]
-    ALT5_GPIO5_IO4 = 0x05,
+    Alt5Gpio5Io4 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPSPI3_PCS0 of instance: lpspi3"]
-    ALT6_LPSPI3_PCS0 = 0x06,
+    Alt6Lpspi3Pcs0 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: KPP_ROW07 of instance: kpp"]
-    ALT8_KPP_ROW7 = 0x08,
+    Alt8KppRow7 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: CCM_CLKO1 of instance: ccm"]
-    ALT12_CCM_CLKO1 = 0x0c,
+    Alt12CcmClko1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14659,27 +14659,27 @@ impl From<SwMuxCtlPadGpioSdB100MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB101MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC1_CLK of instance: usdhc1"]
-    ALT0_USDHC1_CLK = 0x0,
+    Alt0Usdhc1Clk = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC1_EMBIT02 of instance: sinc1"]
-    ALT1_SINC1_EMBIT2 = 0x01,
+    Alt1Sinc1Embit2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT21 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT21 = 0x02,
+    Alt2Xbar1XbarInout21 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPTMR2_ALT2 of instance: lptmr2"]
-    ALT3_LPTMR2_ALT2 = 0x03,
+    Alt3Lptmr2Alt2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XSPI_SLV_CLK of instance: xspi_slv"]
-    ALT4_XSPI_SLV_CLK = 0x04,
+    Alt4XspiSlvClk = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO05 of instance: gpio5"]
-    ALT5_GPIO5_IO5 = 0x05,
+    Alt5Gpio5Io5 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPSPI3_SCK of instance: lpspi3"]
-    ALT6_LPSPI3_SCK = 0x06,
+    Alt6Lpspi3Sck = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: KPP_COL07 of instance: kpp"]
-    ALT8_KPP_COL7 = 0x08,
+    Alt8KppCol7 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: CCM_CLKO2 of instance: ccm"]
-    ALT12_CCM_CLKO2 = 0x0c,
+    Alt12CcmClko2 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14711,28 +14711,28 @@ impl From<SwMuxCtlPadGpioSdB101MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB102MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC1_DATA0 of instance: usdhc1"]
-    ALT0_USDHC1_DATA0 = 0x0,
+    Alt0Usdhc1Data0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC1_EMCLK03 of instance: sinc1"]
-    ALT1_SINC1_EMCLK3 = 0x01,
+    Alt1Sinc1Emclk3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT22 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT22 = 0x02,
+    Alt2Xbar1XbarInout22 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPTMR2_ALT3 of instance: lptmr2"]
-    ALT3_LPTMR2_ALT3 = 0x03,
+    Alt3Lptmr2Alt3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XSPI_SLV_DATA04 of instance: xspi_slv"]
-    ALT4_XSPI_SLV_DATA4 = 0x04,
+    Alt4XspiSlvData4 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO06 of instance: gpio5"]
-    ALT5_GPIO5_IO6 = 0x05,
+    Alt5Gpio5Io6 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPSPI3_SDO of instance: lpspi3"]
-    ALT6_LPSPI3_SDO = 0x06,
+    Alt6Lpspi3Sdo = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: KPP_ROW06 of instance: kpp"]
-    ALT8_KPP_ROW6 = 0x08,
+    Alt8KppRow6 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: FLEXSPI1_BUS2BIT_A_SS1_B of instance: flexspi1_bus2bit"]
-    ALT9_FLEXSPI1_BUS2BIT_A_SS1_B = 0x09,
+    Alt9Flexspi1Bus2bitASs1B = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_RESET_OUT of instance: ecat"]
-    ALT12_ECAT_RESET_OUT = 0x0c,
+    Alt12EcatResetOut = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14764,24 +14764,24 @@ impl From<SwMuxCtlPadGpioSdB102MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB103MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC1_DATA1 of instance: usdhc1"]
-    ALT0_USDHC1_DATA1 = 0x0,
+    Alt0Usdhc1Data1 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC1_EMBIT03 of instance: sinc1"]
-    ALT1_SINC1_EMBIT3 = 0x01,
+    Alt1Sinc1Embit3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XBAR1_XBAR_INOUT23 of instance: xbar1"]
-    ALT2_XBAR1_XBAR_INOUT23 = 0x02,
+    Alt2Xbar1XbarInout23 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPTMR3_ALT1 of instance: lptmr3"]
-    ALT3_LPTMR3_ALT1 = 0x03,
+    Alt3Lptmr3Alt1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XSPI_SLV_DATA05 of instance: xspi_slv"]
-    ALT4_XSPI_SLV_DATA5 = 0x04,
+    Alt4XspiSlvData5 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO07 of instance: gpio5"]
-    ALT5_GPIO5_IO7 = 0x05,
+    Alt5Gpio5Io7 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPSPI3_SDI of instance: lpspi3"]
-    ALT6_LPSPI3_SDI = 0x06,
+    Alt6Lpspi3Sdi = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: KPP_COL06 of instance: kpp"]
-    ALT8_KPP_COL6 = 0x08,
+    Alt8KppCol6 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: FLEXSPI1_BUS2BIT_B_SS1_B of instance: flexspi1_bus2bit"]
-    ALT9_FLEXSPI1_BUS2BIT_B_SS1_B = 0x09,
+    Alt9Flexspi1Bus2bitBSs1B = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -14816,24 +14816,24 @@ impl From<SwMuxCtlPadGpioSdB103MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB104MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC1_DATA2 of instance: usdhc1"]
-    ALT0_USDHC1_DATA2 = 0x0,
+    Alt0Usdhc1Data2 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: SINC_FILTER_GLUE1_BREAK of instance: sinc_filter_glue1"]
-    ALT1_SINC_FILTER_GLUE1_BREAK = 0x01,
+    Alt1SincFilterGlue1Break = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC2_EMCLK02 of instance: sinc2"]
-    ALT2_SINC2_EMCLK2 = 0x02,
+    Alt2Sinc2Emclk2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPTMR3_ALT2 of instance: lptmr3"]
-    ALT3_LPTMR3_ALT2 = 0x03,
+    Alt3Lptmr3Alt2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XSPI_SLV_DATA06 of instance: xspi_slv"]
-    ALT4_XSPI_SLV_DATA6 = 0x04,
+    Alt4XspiSlvData6 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO08 of instance: gpio5"]
-    ALT5_GPIO5_IO8 = 0x05,
+    Alt5Gpio5Io8 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPSPI3_PCS1 of instance: lpspi3"]
-    ALT6_LPSPI3_PCS1 = 0x06,
+    Alt6Lpspi3Pcs1 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: FLEXSPI1_BUS2BIT_B_SS0_B of instance: flexspi1_bus2bit"]
-    ALT8_FLEXSPI1_BUS2BIT_B_SS0_B = 0x08,
+    Alt8Flexspi1Bus2bitBSs0B = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: FLEXSPI1_BUS2BIT_A_SS1_B of instance: flexspi1_bus2bit"]
-    ALT9_FLEXSPI1_BUS2BIT_A_SS1_B = 0x09,
+    Alt9Flexspi1Bus2bitASs1B = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -14868,22 +14868,22 @@ impl From<SwMuxCtlPadGpioSdB104MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB105MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC1_DATA3 of instance: usdhc1"]
-    ALT0_USDHC1_DATA3 = 0x0,
+    Alt0Usdhc1Data3 = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: SINC2_EMBIT02 of instance: sinc2"]
-    ALT2_SINC2_EMBIT2 = 0x02,
+    Alt2Sinc2Embit2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: LPTMR3_ALT3 of instance: lptmr3"]
-    ALT3_LPTMR3_ALT3 = 0x03,
+    Alt3Lptmr3Alt3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: XSPI_SLV_DATA07 of instance: xspi_slv"]
-    ALT4_XSPI_SLV_DATA7 = 0x04,
+    Alt4XspiSlvData7 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO09 of instance: gpio5"]
-    ALT5_GPIO5_IO9 = 0x05,
+    Alt5Gpio5Io9 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPSPI3_PCS2 of instance: lpspi3"]
-    ALT6_LPSPI3_PCS2 = 0x06,
+    Alt6Lpspi3Pcs2 = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: FLEXSPI1_BUS2BIT_B_SS0_B of instance: flexspi1_bus2bit"]
-    ALT9_FLEXSPI1_BUS2BIT_B_SS0_B = 0x09,
+    Alt9Flexspi1Bus2bitBSs0B = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -14918,28 +14918,28 @@ impl From<SwMuxCtlPadGpioSdB105MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB200MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA3 of instance: usdhc2"]
-    ALT0_USDHC2_DATA3 = 0x0,
+    Alt0Usdhc2Data3 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXSPI1_BUS2BIT_B_DATA04 of instance: flexspi1_bus2bit"]
-    ALT1_FLEXSPI1_BUS2BIT_B_DATA4 = 0x01,
+    Alt1Flexspi1Bus2bitBData4 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XSPI_SLV_DATA04 of instance: xspi_slv"]
-    ALT2_XSPI_SLV_DATA4 = 0x02,
+    Alt2XspiSlvData4 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: XBAR1_XBAR_INOUT17 of instance: xbar1"]
-    ALT3_XBAR1_XBAR_INOUT17 = 0x03,
+    Alt3Xbar1XbarInout17 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: KPP_ROW01 of instance: kpp"]
-    ALT4_KPP_ROW1 = 0x04,
+    Alt4KppRow1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO10 of instance: gpio5"]
-    ALT5_GPIO5_IO10 = 0x05,
+    Alt5Gpio5Io10 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPSPI3_PCS3 of instance: lpspi3"]
-    ALT6_LPSPI3_PCS3 = 0x06,
+    Alt6Lpspi3Pcs3 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_1588_CLK of instance: netc_clkgen"]
-    ALT8_NETC_CLKGEN_TMR_1588_CLK = 0x08,
+    Alt8NetcClkgenTmr1588Clk = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART8_TX of instance: lpuart8"]
-    ALT9_LPUART8_TX = 0x09,
+    Alt9Lpuart8Tx = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: MIC_BITSTREAM00 of instance: mic"]
-    ALT12_MIC_BITSTREAM0 = 0x0c,
+    Alt12MicBitstream0 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -14971,27 +14971,27 @@ impl From<SwMuxCtlPadGpioSdB200MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB201MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA2 of instance: usdhc2"]
-    ALT0_USDHC2_DATA2 = 0x0,
+    Alt0Usdhc2Data2 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXSPI1_BUS2BIT_B_DATA05 of instance: flexspi1_bus2bit"]
-    ALT1_FLEXSPI1_BUS2BIT_B_DATA5 = 0x01,
+    Alt1Flexspi1Bus2bitBData5 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XSPI_SLV_DATA05 of instance: xspi_slv"]
-    ALT2_XSPI_SLV_DATA5 = 0x02,
+    Alt2XspiSlvData5 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER6_TIMER0 of instance: qtimer6"]
-    ALT3_QTIMER6_TIMER0 = 0x03,
+    Alt3Qtimer6Timer0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: KPP_COL01 of instance: kpp"]
-    ALT4_KPP_COL1 = 0x04,
+    Alt4KppCol1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO11 of instance: gpio5"]
-    ALT5_GPIO5_IO11 = 0x05,
+    Alt5Gpio5Io11 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_TMR_GCLK of instance: netc"]
-    ALT8_NETC_TMR_1588_GCLK = 0x08,
+    Alt8NetcTmr1588Gclk = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART8_RX of instance: lpuart8"]
-    ALT9_LPUART8_RX = 0x09,
+    Alt9Lpuart8Rx = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: MIC_BITSTREAM01 of instance: mic"]
-    ALT12_MIC_BITSTREAM1 = 0x0c,
+    Alt12MicBitstream1 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -15023,27 +15023,27 @@ impl From<SwMuxCtlPadGpioSdB201MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB202MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA1 of instance: usdhc2"]
-    ALT0_USDHC2_DATA1 = 0x0,
+    Alt0Usdhc2Data1 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXSPI1_BUS2BIT_B_DATA06 of instance: flexspi1_bus2bit"]
-    ALT1_FLEXSPI1_BUS2BIT_B_DATA6 = 0x01,
+    Alt1Flexspi1Bus2bitBData6 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XSPI_SLV_DATA06 of instance: xspi_slv"]
-    ALT2_XSPI_SLV_DATA6 = 0x02,
+    Alt2XspiSlvData6 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER6_TIMER1 of instance: qtimer6"]
-    ALT3_QTIMER6_TIMER1 = 0x03,
+    Alt3Qtimer6Timer1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: KPP_ROW00 of instance: kpp"]
-    ALT4_KPP_ROW0 = 0x04,
+    Alt4KppRow0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO12 of instance: gpio5"]
-    ALT5_GPIO5_IO12 = 0x05,
+    Alt5Gpio5Io12 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_TMR_ALARM1 of instance: netc"]
-    ALT8_NETC_TMR_1588_ALARM1 = 0x08,
+    Alt8NetcTmr1588Alarm1 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART8_CTS_B of instance: lpuart8"]
-    ALT9_LPUART8_CTS_B = 0x09,
+    Alt9Lpuart8CtsB = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: MIC_BITSTREAM02 of instance: mic"]
-    ALT12_MIC_BITSTREAM2 = 0x0c,
+    Alt12MicBitstream2 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -15075,27 +15075,27 @@ impl From<SwMuxCtlPadGpioSdB202MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB203MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA0 of instance: usdhc2"]
-    ALT0_USDHC2_DATA0 = 0x0,
+    Alt0Usdhc2Data0 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXSPI1_BUS2BIT_B_DATA07 of instance: flexspi1_bus2bit"]
-    ALT1_FLEXSPI1_BUS2BIT_B_DATA7 = 0x01,
+    Alt1Flexspi1Bus2bitBData7 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XSPI_SLV_DATA07 of instance: xspi_slv"]
-    ALT2_XSPI_SLV_DATA7 = 0x02,
+    Alt2XspiSlvData7 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER6_TIMER2 of instance: qtimer6"]
-    ALT3_QTIMER6_TIMER2 = 0x03,
+    Alt3Qtimer6Timer2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: KPP_COL00 of instance: kpp"]
-    ALT4_KPP_COL0 = 0x04,
+    Alt4KppCol0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO13 of instance: gpio5"]
-    ALT5_GPIO5_IO13 = 0x05,
+    Alt5Gpio5Io13 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_TMR_ALARM2 of instance: netc"]
-    ALT8_NETC_TMR_1588_ALARM2 = 0x08,
+    Alt8NetcTmr1588Alarm2 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: LPUART8_RTS_B of instance: lpuart8"]
-    ALT9_LPUART8_RTS_B = 0x09,
+    Alt9Lpuart8RtsB = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: MIC_BITSTREAM03 of instance: mic"]
-    ALT12_MIC_BITSTREAM3 = 0x0c,
+    Alt12MicBitstream3 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -15127,26 +15127,26 @@ impl From<SwMuxCtlPadGpioSdB203MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB204MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC2_CLK of instance: usdhc2"]
-    ALT0_USDHC2_CLK = 0x0,
+    Alt0Usdhc2Clk = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXSPI1_BUS2BIT_B_SS1_B of instance: flexspi1_bus2bit"]
-    ALT1_FLEXSPI1_BUS2BIT_B_SS1_B = 0x01,
+    Alt1Flexspi1Bus2bitBSs1B = 0x01,
     _RESERVED_2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER7_TIMER0 of instance: qtimer7"]
-    ALT3_QTIMER7_TIMER0 = 0x03,
+    Alt3Qtimer7Timer0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: KPP_ROW03 of instance: kpp"]
-    ALT4_KPP_ROW3 = 0x04,
+    Alt4KppRow3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO14 of instance: gpio5"]
-    ALT5_GPIO5_IO14 = 0x05,
+    Alt5Gpio5Io14 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPUART5_RI_B of instance: lpuart5"]
-    ALT6_LPUART5_RI_B = 0x06,
+    Alt6Lpuart5RiB = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_TMR_PP1 of instance: netc"]
-    ALT8_NETC_TMR_1588_PP1 = 0x08,
+    Alt8NetcTmr1588Pp1 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: MIC_CLK of instance: mic"]
-    ALT12_MIC_CLK = 0x0c,
+    Alt12MicClk = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -15178,22 +15178,22 @@ impl From<SwMuxCtlPadGpioSdB204MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB205MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC2_CMD of instance: usdhc2"]
-    ALT0_USDHC2_CMD = 0x0,
+    Alt0Usdhc2Cmd = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXSPI1_BUS2BIT_B_DQS of instance: flexspi1_bus2bit"]
-    ALT1_FLEXSPI1_BUS2BIT_B_DQS = 0x01,
+    Alt1Flexspi1Bus2bitBDqs = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XSPI_SLV_DQS of instance: xspi_slv"]
-    ALT2_XSPI_SLV_DQS = 0x02,
+    Alt2XspiSlvDqs = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER7_TIMER1 of instance: qtimer7"]
-    ALT3_QTIMER7_TIMER1 = 0x03,
+    Alt3Qtimer7Timer1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPSPI4_PCS3 of instance: lpspi4"]
-    ALT4_LPSPI4_PCS3 = 0x04,
+    Alt4Lpspi4Pcs3 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO15 of instance: gpio5"]
-    ALT5_GPIO5_IO15 = 0x05,
+    Alt5Gpio5Io15 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPUART5_DTR_B of instance: lpuart5"]
-    ALT6_LPUART5_DTR_B = 0x06,
+    Alt6Lpuart5DtrB = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_TMR_PP2 of instance: netc"]
-    ALT8_NETC_TMR_1588_PP2 = 0x08,
+    Alt8NetcTmr1588Pp2 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
@@ -15229,22 +15229,22 @@ impl From<SwMuxCtlPadGpioSdB205MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB206MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC2_RESET_B of instance: usdhc2"]
-    ALT0_USDHC2_RESET_B = 0x0,
+    Alt0Usdhc2ResetB = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXSPI1_BUS2BIT_B_SS0_B of instance: flexspi1_bus2bit"]
-    ALT1_FLEXSPI1_BUS2BIT_B_SS0_B = 0x01,
+    Alt1Flexspi1Bus2bitBSs0B = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XSPI_SLV_CS of instance: xspi_slv"]
-    ALT2_XSPI_SLV_CS = 0x02,
+    Alt2XspiSlvCs = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER7_TIMER2 of instance: qtimer7"]
-    ALT3_QTIMER7_TIMER2 = 0x03,
+    Alt3Qtimer7Timer2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPSPI4_PCS2 of instance: lpspi4"]
-    ALT4_LPSPI4_PCS2 = 0x04,
+    Alt4Lpspi4Pcs2 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO16 of instance: gpio5"]
-    ALT5_GPIO5_IO16 = 0x05,
+    Alt5Gpio5Io16 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPUART5_CTS_B of instance: lpuart5"]
-    ALT6_LPUART5_CTS_B = 0x06,
+    Alt6Lpuart5CtsB = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_TMR_PP3 of instance: netc"]
-    ALT8_NETC_TMR_1588_PP3 = 0x08,
+    Alt8NetcTmr1588Pp3 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
@@ -15280,22 +15280,22 @@ impl From<SwMuxCtlPadGpioSdB206MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB207MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC2_STROBE of instance: usdhc2"]
-    ALT0_USDHC2_STROBE = 0x0,
+    Alt0Usdhc2Strobe = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXSPI1_BUS2BIT_B_SCLK of instance: flexspi1_bus2bit"]
-    ALT1_FLEXSPI1_BUS2BIT_B_SCLK = 0x01,
+    Alt1Flexspi1Bus2bitBSclk = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XSPI_SLV_CLK of instance: xspi_slv"]
-    ALT2_XSPI_SLV_CLK = 0x02,
+    Alt2XspiSlvClk = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER7_TIMER3 of instance: qtimer7"]
-    ALT3_QTIMER7_TIMER3 = 0x03,
+    Alt3Qtimer7Timer3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPSPI4_PCS1 of instance: lpspi4"]
-    ALT4_LPSPI4_PCS1 = 0x04,
+    Alt4Lpspi4Pcs1 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO17 of instance: gpio5"]
-    ALT5_GPIO5_IO17 = 0x05,
+    Alt5Gpio5Io17 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPUART5_RTS_B of instance: lpuart5"]
-    ALT6_LPUART5_RTS_B = 0x06,
+    Alt6Lpuart5RtsB = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_TMR_ALARM1 of instance: netc"]
-    ALT8_NETC_TMR_1588_ALARM1 = 0x08,
+    Alt8NetcTmr1588Alarm1 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
@@ -15331,24 +15331,24 @@ impl From<SwMuxCtlPadGpioSdB207MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB208MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA4 of instance: usdhc2"]
-    ALT0_USDHC2_DATA4 = 0x0,
+    Alt0Usdhc2Data4 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXSPI1_BUS2BIT_B_DATA00 of instance: flexspi1_bus2bit"]
-    ALT1_FLEXSPI1_BUS2BIT_B_DATA0 = 0x01,
+    Alt1Flexspi1Bus2bitBData0 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XSPI_SLV_DATA00 of instance: xspi_slv"]
-    ALT2_XSPI_SLV_DATA0 = 0x02,
+    Alt2XspiSlvData0 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER8_TIMER0 of instance: qtimer8"]
-    ALT3_QTIMER8_TIMER0 = 0x03,
+    Alt3Qtimer8Timer0 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPSPI4_SCK of instance: lpspi4"]
-    ALT4_LPSPI4_SCK = 0x04,
+    Alt4Lpspi4Sck = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO18 of instance: gpio5"]
-    ALT5_GPIO5_IO18 = 0x05,
+    Alt5Gpio5Io18 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPUART5_TX of instance: lpuart5"]
-    ALT6_LPUART5_TX = 0x06,
+    Alt6Lpuart5Tx = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_TMR_ALARM2 of instance: netc"]
-    ALT8_NETC_TMR_1588_ALARM2 = 0x08,
+    Alt8NetcTmr1588Alarm2 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_TMR_PP2 of instance: netc"]
-    ALT9_NETC_TMR_1588_PP2 = 0x09,
+    Alt9NetcTmr1588Pp2 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -15383,23 +15383,23 @@ impl From<SwMuxCtlPadGpioSdB208MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB209MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA5 of instance: usdhc2"]
-    ALT0_USDHC2_DATA5 = 0x0,
+    Alt0Usdhc2Data5 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXSPI1_BUS2BIT_B_DATA01 of instance: flexspi1_bus2bit"]
-    ALT1_FLEXSPI1_BUS2BIT_B_DATA1 = 0x01,
+    Alt1Flexspi1Bus2bitBData1 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XSPI_SLV_DATA01 of instance: xspi_slv"]
-    ALT2_XSPI_SLV_DATA1 = 0x02,
+    Alt2XspiSlvData1 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER8_TIMER1 of instance: qtimer8"]
-    ALT3_QTIMER8_TIMER1 = 0x03,
+    Alt3Qtimer8Timer1 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPSPI4_PCS0 of instance: lpspi4"]
-    ALT4_LPSPI4_PCS0 = 0x04,
+    Alt4Lpspi4Pcs0 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO19 of instance: gpio5"]
-    ALT5_GPIO5_IO19 = 0x05,
+    Alt5Gpio5Io19 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPUART5_RX of instance: lpuart5"]
-    ALT6_LPUART5_RX = 0x06,
+    Alt6Lpuart5Rx = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_TMR_PP1 of instance: netc"]
-    ALT9_NETC_TMR_1588_PP1 = 0x09,
+    Alt9NetcTmr1588Pp1 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -15434,29 +15434,29 @@ impl From<SwMuxCtlPadGpioSdB209MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB210MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA6 of instance: usdhc2"]
-    ALT0_USDHC2_DATA6 = 0x0,
+    Alt0Usdhc2Data6 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXSPI1_BUS2BIT_B_DATA02 of instance: flexspi1_bus2bit"]
-    ALT1_FLEXSPI1_BUS2BIT_B_DATA2 = 0x01,
+    Alt1Flexspi1Bus2bitBData2 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XSPI_SLV_DATA02 of instance: xspi_slv"]
-    ALT2_XSPI_SLV_DATA2 = 0x02,
+    Alt2XspiSlvData2 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER8_TIMER2 of instance: qtimer8"]
-    ALT3_QTIMER8_TIMER2 = 0x03,
+    Alt3Qtimer8Timer2 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPSPI4_SDO of instance: lpspi4"]
-    ALT4_LPSPI4_SDO = 0x04,
+    Alt4Lpspi4Sdo = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO20 of instance: gpio5"]
-    ALT5_GPIO5_IO20 = 0x05,
+    Alt5Gpio5Io20 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPUART5_DCD_B of instance: lpuart5"]
-    ALT6_LPUART5_DCD_B = 0x06,
+    Alt6Lpuart5DcdB = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_TMR_TRIG2 of instance: netc"]
-    ALT8_NETC_TMR_1588_TRIG2 = 0x08,
+    Alt8NetcTmr1588Trig2 = 0x08,
     #[doc = "Select mux mode: ALT9 mux port: NETC_TMR_PP3 of instance: netc"]
-    ALT9_NETC_TMR_1588_PP3 = 0x09,
+    Alt9NetcTmr1588Pp3 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: NETC_EMDIO of instance: netc"]
-    ALT10_NETC_EMDIO = 0x0a,
+    Alt10NetcEmdio = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_MDIO of instance: ecat"]
-    ALT12_ECAT_MDIO = 0x0c,
+    Alt12EcatMdio = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -15488,29 +15488,29 @@ impl From<SwMuxCtlPadGpioSdB210MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB211MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA7 of instance: usdhc2"]
-    ALT0_USDHC2_DATA7 = 0x0,
+    Alt0Usdhc2Data7 = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXSPI1_BUS2BIT_B_DATA03 of instance: flexspi1_bus2bit"]
-    ALT1_FLEXSPI1_BUS2BIT_B_DATA3 = 0x01,
+    Alt1Flexspi1Bus2bitBData3 = 0x01,
     #[doc = "Select mux mode: ALT2 mux port: XSPI_SLV_DATA03 of instance: xspi_slv"]
-    ALT2_XSPI_SLV_DATA3 = 0x02,
+    Alt2XspiSlvData3 = 0x02,
     #[doc = "Select mux mode: ALT3 mux port: QTIMER8_TIMER3 of instance: qtimer8"]
-    ALT3_QTIMER8_TIMER3 = 0x03,
+    Alt3Qtimer8Timer3 = 0x03,
     #[doc = "Select mux mode: ALT4 mux port: LPSPI4_SDI of instance: lpspi4"]
-    ALT4_LPSPI4_SDI = 0x04,
+    Alt4Lpspi4Sdi = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO21 of instance: gpio5"]
-    ALT5_GPIO5_IO21 = 0x05,
+    Alt5Gpio5Io21 = 0x05,
     #[doc = "Select mux mode: ALT6 mux port: LPUART5_DSR_B of instance: lpuart5"]
-    ALT6_LPUART5_DSR_B = 0x06,
+    Alt6Lpuart5DsrB = 0x06,
     #[doc = "Select mux mode: ALT7 mux port: SFA_ATX_CLK_OUT of instance: sfa"]
-    ALT7_SFA_ATX_CLK_OUT = 0x07,
+    Alt7SfaAtxClkOut = 0x07,
     #[doc = "Select mux mode: ALT8 mux port: NETC_TMR_TRIG1 of instance: netc"]
-    ALT8_NETC_TMR_1588_TRIG1 = 0x08,
+    Alt8NetcTmr1588Trig1 = 0x08,
     _RESERVED_9 = 0x09,
     #[doc = "Select mux mode: ALT10 mux port: NETC_EMDC of instance: netc"]
-    ALT10_NETC_EMDC = 0x0a,
+    Alt10NetcEmdc = 0x0a,
     _RESERVED_b = 0x0b,
     #[doc = "Select mux mode: ALT12 mux port: ECAT_MCLK of instance: ecat"]
-    ALT12_ECAT_MDC = 0x0c,
+    Alt12EcatMdc = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -15542,14 +15542,14 @@ impl From<SwMuxCtlPadGpioSdB211MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwMuxCtlPadGpioSdB212MuxMode {
     #[doc = "Select mux mode: ALT0 mux port: FLEXSPI1_BUS2BIT_A_DQS of instance: flexspi1_bus2bit"]
-    ALT0_FLEXSPI1_BUS2BIT_A_DQS = 0x0,
+    Alt0Flexspi1Bus2bitADqs = 0x0,
     #[doc = "Select mux mode: ALT1 mux port: FLEXSPI1_BUS2BIT_B_DQS of instance: flexspi1_bus2bit"]
-    ALT1_FLEXSPI1_BUS2BIT_B_DQS = 0x01,
+    Alt1Flexspi1Bus2bitBDqs = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     _RESERVED_4 = 0x04,
     #[doc = "Select mux mode: ALT5 mux port: GPIO5_IO22 of instance: gpio5"]
-    ALT5_GPIO5_IO22 = 0x05,
+    Alt5Gpio5Io22 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
 }
@@ -15580,9 +15580,9 @@ impl From<SwMuxCtlPadGpioSdB212MuxMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UsbIppIndOtg2OcSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_06 for Mode: ALT0"]
-    SELECT_GPIO_AD_06_ALT0 = 0x0,
+    SelectGpioAd06Alt0 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_30 for Mode: ALT1"]
-    SELECT_GPIO_AD_30_ALT1 = 0x01,
+    SelectGpioAd30Alt1 = 0x01,
 }
 impl UsbIppIndOtg2OcSelectInputDaisy {
     #[inline(always)]
@@ -15611,9 +15611,9 @@ impl From<UsbIppIndOtg2OcSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UsbIppIndOtgOcSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_11 for Mode: ALT0"]
-    SELECT_GPIO_AD_11_ALT0 = 0x0,
+    SelectGpioAd11Alt0 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_35 for Mode: ALT1"]
-    SELECT_GPIO_AD_35_ALT1 = 0x01,
+    SelectGpioAd35Alt1 = 0x01,
 }
 impl UsbIppIndOtgOcSelectInputDaisy {
     #[inline(always)]
@@ -15642,9 +15642,9 @@ impl From<UsbIppIndOtgOcSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usbphy1UsbIdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_09 for Mode: ALT0"]
-    SELECT_GPIO_AD_09_ALT0 = 0x0,
+    SelectGpioAd09Alt0 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_33 for Mode: ALT1"]
-    SELECT_GPIO_AD_33_ALT1 = 0x01,
+    SelectGpioAd33Alt1 = 0x01,
 }
 impl Usbphy1UsbIdSelectInputDaisy {
     #[inline(always)]
@@ -15673,9 +15673,9 @@ impl From<Usbphy1UsbIdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usbphy2UsbIdSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_08 for Mode: ALT0"]
-    SELECT_GPIO_AD_08_ALT0 = 0x0,
+    SelectGpioAd08Alt0 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_32 for Mode: ALT1"]
-    SELECT_GPIO_AD_32_ALT1 = 0x01,
+    SelectGpioAd32Alt1 = 0x01,
 }
 impl Usbphy2UsbIdSelectInputDaisy {
     #[inline(always)]
@@ -15704,9 +15704,9 @@ impl From<Usbphy2UsbIdSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usdhc1IppCardDetSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_32 for Mode: ALT4"]
-    SELECT_GPIO_AD_32_ALT4 = 0x0,
+    SelectGpioAd32Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_08 for Mode: ALT2"]
-    SELECT_GPIO_B1_08_ALT2 = 0x01,
+    SelectGpioB108Alt2 = 0x01,
 }
 impl Usdhc1IppCardDetSelectInputDaisy {
     #[inline(always)]
@@ -15735,9 +15735,9 @@ impl From<Usdhc1IppCardDetSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usdhc1IppWpOnSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_AD_33 for Mode: ALT4"]
-    SELECT_GPIO_AD_33_ALT4 = 0x0,
+    SelectGpioAd33Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_09 for Mode: ALT2"]
-    SELECT_GPIO_B1_09_ALT2 = 0x01,
+    SelectGpioB109Alt2 = 0x01,
 }
 impl Usdhc1IppWpOnSelectInputDaisy {
     #[inline(always)]
@@ -15766,13 +15766,13 @@ impl From<Usdhc1IppWpOnSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usdhc2IppCardDetSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_01 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B2_01_ALT1 = 0x0,
+    SelectGpioEmcB201Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_13 for Mode: ALT7"]
-    SELECT_GPIO_AD_13_ALT7 = 0x01,
+    SelectGpioAd13Alt7 = 0x01,
     #[doc = "Selecting Pad: GPIO_AD_26 for Mode: ALT9"]
-    SELECT_GPIO_AD_26_ALT9 = 0x02,
+    SelectGpioAd26Alt9 = 0x02,
     #[doc = "Selecting Pad: GPIO_AD_29 for Mode: ALT2"]
-    SELECT_GPIO_AD_29_ALT2 = 0x03,
+    SelectGpioAd29Alt2 = 0x03,
 }
 impl Usdhc2IppCardDetSelectInputDaisy {
     #[inline(always)]
@@ -15801,11 +15801,11 @@ impl From<Usdhc2IppCardDetSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usdhc2IppWpOnSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_02 for Mode: ALT1"]
-    SELECT_GPIO_EMC_B2_02_ALT1 = 0x0,
+    SelectGpioEmcB202Alt1 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_14 for Mode: ALT7"]
-    SELECT_GPIO_AD_14_ALT7 = 0x01,
+    SelectGpioAd14Alt7 = 0x01,
     #[doc = "Selecting Pad: GPIO_AD_27 for Mode: ALT9"]
-    SELECT_GPIO_AD_27_ALT9 = 0x02,
+    SelectGpioAd27Alt9 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Usdhc2IppWpOnSelectInputDaisy {
@@ -15835,9 +15835,9 @@ impl From<Usdhc2IppWpOnSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput14Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_30 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_30_ALT2 = 0x0,
+    SelectGpioEmcB130Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_16 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_16_ALT6 = 0x01,
+    SelectGpioEmcB216Alt6 = 0x01,
 }
 impl Xbar1XbarInSelectInput14Daisy {
     #[inline(always)]
@@ -15866,9 +15866,9 @@ impl From<Xbar1XbarInSelectInput14Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput15Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B1_39 for Mode: ALT2"]
-    SELECT_GPIO_EMC_B1_39_ALT2 = 0x0,
+    SelectGpioEmcB139Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_EMC_B2_17 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_17_ALT6 = 0x01,
+    SelectGpioEmcB217Alt6 = 0x01,
 }
 impl Xbar1XbarInSelectInput15Daisy {
     #[inline(always)]
@@ -15897,9 +15897,9 @@ impl From<Xbar1XbarInSelectInput15Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput17Daisy {
     #[doc = "Selecting Pad: GPIO_AD_33 for Mode: ALT2"]
-    SELECT_GPIO_AD_33_ALT2 = 0x0,
+    SelectGpioAd33Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_00 for Mode: ALT3"]
-    SELECT_GPIO_SD_B2_00_ALT3 = 0x01,
+    SelectGpioSdB200Alt3 = 0x01,
 }
 impl Xbar1XbarInSelectInput17Daisy {
     #[inline(always)]
@@ -15928,9 +15928,9 @@ impl From<Xbar1XbarInSelectInput17Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput18Daisy {
     #[doc = "Selecting Pad: GPIO_AD_12 for Mode: ALT6"]
-    SELECT_GPIO_AD_12_ALT6 = 0x0,
+    SelectGpioAd12Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_34 for Mode: ALT2"]
-    SELECT_GPIO_AD_34_ALT2 = 0x01,
+    SelectGpioAd34Alt2 = 0x01,
 }
 impl Xbar1XbarInSelectInput18Daisy {
     #[inline(always)]
@@ -15959,9 +15959,9 @@ impl From<Xbar1XbarInSelectInput18Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput19Daisy {
     #[doc = "Selecting Pad: GPIO_AD_19 for Mode: ALT2"]
-    SELECT_GPIO_AD_19_ALT2 = 0x0,
+    SelectGpioAd19Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_35 for Mode: ALT2"]
-    SELECT_GPIO_AD_35_ALT2 = 0x01,
+    SelectGpioAd35Alt2 = 0x01,
 }
 impl Xbar1XbarInSelectInput19Daisy {
     #[inline(always)]
@@ -15990,9 +15990,9 @@ impl From<Xbar1XbarInSelectInput19Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput20Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_00 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_00_ALT6 = 0x0,
+    SelectGpioEmcB200Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B1_00 for Mode: ALT2"]
-    SELECT_GPIO_SD_B1_00_ALT2 = 0x01,
+    SelectGpioSdB100Alt2 = 0x01,
 }
 impl Xbar1XbarInSelectInput20Daisy {
     #[inline(always)]
@@ -16021,9 +16021,9 @@ impl From<Xbar1XbarInSelectInput20Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput21Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_01 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_01_ALT6 = 0x0,
+    SelectGpioEmcB201Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B1_01 for Mode: ALT2"]
-    SELECT_GPIO_SD_B1_01_ALT2 = 0x01,
+    SelectGpioSdB101Alt2 = 0x01,
 }
 impl Xbar1XbarInSelectInput21Daisy {
     #[inline(always)]
@@ -16052,9 +16052,9 @@ impl From<Xbar1XbarInSelectInput21Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput22Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_02 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_02_ALT6 = 0x0,
+    SelectGpioEmcB202Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B1_02 for Mode: ALT2"]
-    SELECT_GPIO_SD_B1_02_ALT2 = 0x01,
+    SelectGpioSdB102Alt2 = 0x01,
 }
 impl Xbar1XbarInSelectInput22Daisy {
     #[inline(always)]
@@ -16083,9 +16083,9 @@ impl From<Xbar1XbarInSelectInput22Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput23Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_03 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_03_ALT6 = 0x0,
+    SelectGpioEmcB203Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B1_03 for Mode: ALT2"]
-    SELECT_GPIO_SD_B1_03_ALT2 = 0x01,
+    SelectGpioSdB103Alt2 = 0x01,
 }
 impl Xbar1XbarInSelectInput23Daisy {
     #[inline(always)]
@@ -16114,9 +16114,9 @@ impl From<Xbar1XbarInSelectInput23Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput24Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_04 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_04_ALT6 = 0x0,
+    SelectGpioEmcB204Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_30 for Mode: ALT9"]
-    SELECT_GPIO_AD_30_ALT9 = 0x01,
+    SelectGpioAd30Alt9 = 0x01,
 }
 impl Xbar1XbarInSelectInput24Daisy {
     #[inline(always)]
@@ -16145,9 +16145,9 @@ impl From<Xbar1XbarInSelectInput24Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput25Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_05 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_05_ALT6 = 0x0,
+    SelectGpioEmcB205Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_AD_31 for Mode: ALT9"]
-    SELECT_GPIO_AD_31_ALT9 = 0x01,
+    SelectGpioAd31Alt9 = 0x01,
 }
 impl Xbar1XbarInSelectInput25Daisy {
     #[inline(always)]
@@ -16176,9 +16176,9 @@ impl From<Xbar1XbarInSelectInput25Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput26Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_06 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_06_ALT6 = 0x0,
+    SelectGpioEmcB206Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_00 for Mode: ALT4"]
-    SELECT_GPIO_B1_00_ALT4 = 0x01,
+    SelectGpioB100Alt4 = 0x01,
 }
 impl Xbar1XbarInSelectInput26Daisy {
     #[inline(always)]
@@ -16207,9 +16207,9 @@ impl From<Xbar1XbarInSelectInput26Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput27Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_07 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_07_ALT6 = 0x0,
+    SelectGpioEmcB207Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_01 for Mode: ALT4"]
-    SELECT_GPIO_B1_01_ALT4 = 0x01,
+    SelectGpioB101Alt4 = 0x01,
 }
 impl Xbar1XbarInSelectInput27Daisy {
     #[inline(always)]
@@ -16238,9 +16238,9 @@ impl From<Xbar1XbarInSelectInput27Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput28Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_08 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_08_ALT6 = 0x0,
+    SelectGpioEmcB208Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_02 for Mode: ALT4"]
-    SELECT_GPIO_B1_02_ALT4 = 0x01,
+    SelectGpioB102Alt4 = 0x01,
 }
 impl Xbar1XbarInSelectInput28Daisy {
     #[inline(always)]
@@ -16269,9 +16269,9 @@ impl From<Xbar1XbarInSelectInput28Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput29Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_09 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_09_ALT6 = 0x0,
+    SelectGpioEmcB209Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_03 for Mode: ALT4"]
-    SELECT_GPIO_B1_03_ALT4 = 0x01,
+    SelectGpioB103Alt4 = 0x01,
 }
 impl Xbar1XbarInSelectInput29Daisy {
     #[inline(always)]
@@ -16300,9 +16300,9 @@ impl From<Xbar1XbarInSelectInput29Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput30Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_10 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_10_ALT6 = 0x0,
+    SelectGpioEmcB210Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_04 for Mode: ALT4"]
-    SELECT_GPIO_B1_04_ALT4 = 0x01,
+    SelectGpioB104Alt4 = 0x01,
 }
 impl Xbar1XbarInSelectInput30Daisy {
     #[inline(always)]
@@ -16331,9 +16331,9 @@ impl From<Xbar1XbarInSelectInput30Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput31Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_11 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_11_ALT6 = 0x0,
+    SelectGpioEmcB211Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_05 for Mode: ALT4"]
-    SELECT_GPIO_B1_05_ALT4 = 0x01,
+    SelectGpioB105Alt4 = 0x01,
 }
 impl Xbar1XbarInSelectInput31Daisy {
     #[inline(always)]
@@ -16362,9 +16362,9 @@ impl From<Xbar1XbarInSelectInput31Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput32Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_12 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_12_ALT6 = 0x0,
+    SelectGpioEmcB212Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_06 for Mode: ALT4"]
-    SELECT_GPIO_B1_06_ALT4 = 0x01,
+    SelectGpioB106Alt4 = 0x01,
 }
 impl Xbar1XbarInSelectInput32Daisy {
     #[inline(always)]
@@ -16393,9 +16393,9 @@ impl From<Xbar1XbarInSelectInput32Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput33Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_13 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_13_ALT6 = 0x0,
+    SelectGpioEmcB213Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_07 for Mode: ALT4"]
-    SELECT_GPIO_B1_07_ALT4 = 0x01,
+    SelectGpioB107Alt4 = 0x01,
 }
 impl Xbar1XbarInSelectInput33Daisy {
     #[inline(always)]
@@ -16424,9 +16424,9 @@ impl From<Xbar1XbarInSelectInput33Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput34Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_14 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_14_ALT6 = 0x0,
+    SelectGpioEmcB214Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_10 for Mode: ALT4"]
-    SELECT_GPIO_B1_10_ALT4 = 0x01,
+    SelectGpioB110Alt4 = 0x01,
 }
 impl Xbar1XbarInSelectInput34Daisy {
     #[inline(always)]
@@ -16455,9 +16455,9 @@ impl From<Xbar1XbarInSelectInput34Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput35Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_15 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_15_ALT6 = 0x0,
+    SelectGpioEmcB215Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_11 for Mode: ALT4"]
-    SELECT_GPIO_B1_11_ALT4 = 0x01,
+    SelectGpioB111Alt4 = 0x01,
 }
 impl Xbar1XbarInSelectInput35Daisy {
     #[inline(always)]
@@ -16486,9 +16486,9 @@ impl From<Xbar1XbarInSelectInput35Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput36Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_19 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_19_ALT6 = 0x0,
+    SelectGpioEmcB219Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_08 for Mode: ALT4"]
-    SELECT_GPIO_B1_08_ALT4 = 0x01,
+    SelectGpioB108Alt4 = 0x01,
 }
 impl Xbar1XbarInSelectInput36Daisy {
     #[inline(always)]
@@ -16517,9 +16517,9 @@ impl From<Xbar1XbarInSelectInput36Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xbar1XbarInSelectInput37Daisy {
     #[doc = "Selecting Pad: GPIO_EMC_B2_20 for Mode: ALT6"]
-    SELECT_GPIO_EMC_B2_20_ALT6 = 0x0,
+    SelectGpioEmcB220Alt6 = 0x0,
     #[doc = "Selecting Pad: GPIO_B1_09 for Mode: ALT4"]
-    SELECT_GPIO_B1_09_ALT4 = 0x01,
+    SelectGpioB109Alt4 = 0x01,
 }
 impl Xbar1XbarInSelectInput37Daisy {
     #[inline(always)]
@@ -16548,11 +16548,11 @@ impl From<Xbar1XbarInSelectInput37Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum XspiSlvIppIndCsSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B1_00 for Mode: ALT4"]
-    SELECT_GPIO_SD_B1_00_ALT4 = 0x0,
+    SelectGpioSdB100Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_06 for Mode: ALT2"]
-    SELECT_GPIO_SD_B2_06_ALT2 = 0x01,
+    SelectGpioSdB206Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_09 for Mode: ALT10"]
-    SELECT_GPIO_B2_09_ALT10 = 0x02,
+    SelectGpioB209Alt10 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl XspiSlvIppIndCsSelectInputDaisy {
@@ -16582,9 +16582,9 @@ impl From<XspiSlvIppIndCsSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum XspiSlvIppIndDqsSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_05 for Mode: ALT2"]
-    SELECT_GPIO_SD_B2_05_ALT2 = 0x0,
+    SelectGpioSdB205Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_07 for Mode: ALT10"]
-    SELECT_GPIO_B2_07_ALT10 = 0x01,
+    SelectGpioB207Alt10 = 0x01,
 }
 impl XspiSlvIppIndDqsSelectInputDaisy {
     #[inline(always)]
@@ -16613,9 +16613,9 @@ impl From<XspiSlvIppIndDqsSelectInputDaisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum XspiSlvIppIndIoSelectInput0Daisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_08 for Mode: ALT2"]
-    SELECT_GPIO_SD_B2_08_ALT2 = 0x0,
+    SelectGpioSdB208Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_10 for Mode: ALT10"]
-    SELECT_GPIO_B2_10_ALT10 = 0x01,
+    SelectGpioB210Alt10 = 0x01,
 }
 impl XspiSlvIppIndIoSelectInput0Daisy {
     #[inline(always)]
@@ -16644,9 +16644,9 @@ impl From<XspiSlvIppIndIoSelectInput0Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum XspiSlvIppIndIoSelectInput1Daisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_09 for Mode: ALT2"]
-    SELECT_GPIO_SD_B2_09_ALT2 = 0x0,
+    SelectGpioSdB209Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_11 for Mode: ALT10"]
-    SELECT_GPIO_B2_11_ALT10 = 0x01,
+    SelectGpioB211Alt10 = 0x01,
 }
 impl XspiSlvIppIndIoSelectInput1Daisy {
     #[inline(always)]
@@ -16675,9 +16675,9 @@ impl From<XspiSlvIppIndIoSelectInput1Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum XspiSlvIppIndIoSelectInput2Daisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_10 for Mode: ALT2"]
-    SELECT_GPIO_SD_B2_10_ALT2 = 0x0,
+    SelectGpioSdB210Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_12 for Mode: ALT10"]
-    SELECT_GPIO_B2_12_ALT10 = 0x01,
+    SelectGpioB212Alt10 = 0x01,
 }
 impl XspiSlvIppIndIoSelectInput2Daisy {
     #[inline(always)]
@@ -16706,9 +16706,9 @@ impl From<XspiSlvIppIndIoSelectInput2Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum XspiSlvIppIndIoSelectInput3Daisy {
     #[doc = "Selecting Pad: GPIO_SD_B2_11 for Mode: ALT2"]
-    SELECT_GPIO_SD_B2_11_ALT2 = 0x0,
+    SelectGpioSdB211Alt2 = 0x0,
     #[doc = "Selecting Pad: GPIO_B2_13 for Mode: ALT10"]
-    SELECT_GPIO_B2_13_ALT10 = 0x01,
+    SelectGpioB213Alt10 = 0x01,
 }
 impl XspiSlvIppIndIoSelectInput3Daisy {
     #[inline(always)]
@@ -16737,11 +16737,11 @@ impl From<XspiSlvIppIndIoSelectInput3Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum XspiSlvIppIndIoSelectInput4Daisy {
     #[doc = "Selecting Pad: GPIO_SD_B1_02 for Mode: ALT4"]
-    SELECT_GPIO_SD_B1_02_ALT4 = 0x0,
+    SelectGpioSdB102Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_00 for Mode: ALT2"]
-    SELECT_GPIO_SD_B2_00_ALT2 = 0x01,
+    SelectGpioSdB200Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_03 for Mode: ALT10"]
-    SELECT_GPIO_B2_03_ALT10 = 0x02,
+    SelectGpioB203Alt10 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl XspiSlvIppIndIoSelectInput4Daisy {
@@ -16771,11 +16771,11 @@ impl From<XspiSlvIppIndIoSelectInput4Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum XspiSlvIppIndIoSelectInput5Daisy {
     #[doc = "Selecting Pad: GPIO_SD_B1_03 for Mode: ALT4"]
-    SELECT_GPIO_SD_B1_03_ALT4 = 0x0,
+    SelectGpioSdB103Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_01 for Mode: ALT2"]
-    SELECT_GPIO_SD_B2_01_ALT2 = 0x01,
+    SelectGpioSdB201Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_04 for Mode: ALT10"]
-    SELECT_GPIO_B2_04_ALT10 = 0x02,
+    SelectGpioB204Alt10 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl XspiSlvIppIndIoSelectInput5Daisy {
@@ -16805,11 +16805,11 @@ impl From<XspiSlvIppIndIoSelectInput5Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum XspiSlvIppIndIoSelectInput6Daisy {
     #[doc = "Selecting Pad: GPIO_SD_B1_04 for Mode: ALT4"]
-    SELECT_GPIO_SD_B1_04_ALT4 = 0x0,
+    SelectGpioSdB104Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_02 for Mode: ALT2"]
-    SELECT_GPIO_SD_B2_02_ALT2 = 0x01,
+    SelectGpioSdB202Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_05 for Mode: ALT10"]
-    SELECT_GPIO_B2_05_ALT10 = 0x02,
+    SelectGpioB205Alt10 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl XspiSlvIppIndIoSelectInput6Daisy {
@@ -16839,11 +16839,11 @@ impl From<XspiSlvIppIndIoSelectInput6Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum XspiSlvIppIndIoSelectInput7Daisy {
     #[doc = "Selecting Pad: GPIO_SD_B1_05 for Mode: ALT4"]
-    SELECT_GPIO_SD_B1_05_ALT4 = 0x0,
+    SelectGpioSdB105Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_03 for Mode: ALT2"]
-    SELECT_GPIO_SD_B2_03_ALT2 = 0x01,
+    SelectGpioSdB203Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_06 for Mode: ALT10"]
-    SELECT_GPIO_B2_06_ALT10 = 0x02,
+    SelectGpioB206Alt10 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl XspiSlvIppIndIoSelectInput7Daisy {
@@ -16873,11 +16873,11 @@ impl From<XspiSlvIppIndIoSelectInput7Daisy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum XspiSlvIppIndSckSelectInputDaisy {
     #[doc = "Selecting Pad: GPIO_SD_B1_01 for Mode: ALT4"]
-    SELECT_GPIO_SD_B1_01_ALT4 = 0x0,
+    SelectGpioSdB101Alt4 = 0x0,
     #[doc = "Selecting Pad: GPIO_SD_B2_07 for Mode: ALT2"]
-    SELECT_GPIO_SD_B2_07_ALT2 = 0x01,
+    SelectGpioSdB207Alt2 = 0x01,
     #[doc = "Selecting Pad: GPIO_B2_08 for Mode: ALT10"]
-    SELECT_GPIO_B2_08_ALT10 = 0x02,
+    SelectGpioB208Alt10 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl XspiSlvIppIndSckSelectInputDaisy {

@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dfmt {
     #[doc = "Processor-core domain assignment"]
-    CPU = 0x0,
+    Cpu = 0x0,
     #[doc = "Non-processor domain assignment"]
-    NONCPU = 0x01,
+    Noncpu = 0x01,
 }
 impl Dfmt {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<Dfmt> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Didb {
     #[doc = "Use MDAn\\[3:0\\] as the domain identifier."]
-    REG = 0x0,
+    Reg = 0x0,
     #[doc = "Use the DID input as the domain identifier."]
-    INPUT = 0x01,
+    Input = 0x01,
 }
 impl Didb {
     #[inline(always)]
@@ -65,11 +65,11 @@ impl From<Didb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dids {
     #[doc = "Use MDAm\\[3:0\\] as the domain identifier."]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Use the input DID as the domain identifier."]
-    ONE = 0x01,
+    One = 0x01,
     #[doc = "Use MDAm\\[3:2\\] concatenated with the low-order 2 bits of the input DID (DID_in\\[1:0\\]) as the domain identifier."]
-    TWO = 0x02,
+    Two = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Dids {
@@ -99,21 +99,21 @@ impl From<Dids> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Eatr {
     #[doc = "Secure user mode, instruction fetch access."]
-    SUI = 0x0,
+    Sui = 0x0,
     #[doc = "Secure user mode, data access."]
-    SUD = 0x01,
+    Sud = 0x01,
     #[doc = "Secure privileged mode, instruction fetch access."]
-    SPI = 0x02,
+    Spi = 0x02,
     #[doc = "Secure privileged mode, data access."]
-    SPD = 0x03,
+    Spd = 0x03,
     #[doc = "Nonsecure user mode, instruction fetch access."]
-    NSUI = 0x04,
+    Nsui = 0x04,
     #[doc = "Nonsecure user mode, data access."]
-    NSUD = 0x05,
+    Nsud = 0x05,
     #[doc = "Nonsecure privileged mode, instruction fetch access."]
-    NSPI = 0x06,
+    Nspi = 0x06,
     #[doc = "Nonsecure privileged mode, data access."]
-    NSPD = 0x07,
+    Nspd = 0x07,
 }
 impl Eatr {
     #[inline(always)]
@@ -181,9 +181,9 @@ impl From<Eport> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Erw {
     #[doc = "Read access"]
-    READ = 0x0,
+    Read = 0x0,
     #[doc = "Write access"]
-    WRITE = 0x01,
+    Write = 0x01,
 }
 impl Erw {
     #[inline(always)]
@@ -212,13 +212,13 @@ impl From<Erw> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Est {
     #[doc = "No access violation has been detected."]
-    NOVIO0 = 0x0,
+    Novio0 = 0x0,
     #[doc = "No access violation has been detected."]
-    NOVIO1 = 0x01,
+    Novio1 = 0x01,
     #[doc = "A single access violation has been detected."]
-    SINGLE = 0x02,
+    Single = 0x02,
     #[doc = "Multiple access violations for this domain have been detected by this submodule instance. Only the address and attribute information for the first error have been captured in DERR_W0_i and DERR_W1_i."]
-    MULTI = 0x03,
+    Multi = 0x03,
 }
 impl Est {
     #[inline(always)]
@@ -247,13 +247,13 @@ impl From<Est> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lk {
     #[doc = "Register can be written by any secure privileged write."]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Register can be written by any secure privileged write."]
-    ONE = 0x01,
+    One = 0x01,
     #[doc = "Register can only be written by a secure privileged write from the bus master that locked the register."]
-    TWO = 0x02,
+    Two = 0x02,
     #[doc = "Register is locked (read-only) until the next reset."]
-    THREE = 0x03,
+    Three = 0x03,
 }
 impl Lk {
     #[inline(always)]
@@ -282,21 +282,21 @@ impl From<Lk> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Mbacsel {
     #[doc = "select MBC_MEMN_GLBAC0 access control policy for block B"]
-    GLBAC0 = 0x0,
+    Glbac0 = 0x0,
     #[doc = "select MBC_MEMN_GLBAC1 access control policy for block B"]
-    GLBAC1 = 0x01,
+    Glbac1 = 0x01,
     #[doc = "select MBC_MEMN_GLBAC2 access control policy for block B"]
-    GLBAC2 = 0x02,
+    Glbac2 = 0x02,
     #[doc = "select MBC_MEMN_GLBAC3 access control policy for block B"]
-    GLBAC3 = 0x03,
+    Glbac3 = 0x03,
     #[doc = "select MBC_MEMN_GLBAC4 access control policy for block B"]
-    GLBAC4 = 0x04,
+    Glbac4 = 0x04,
     #[doc = "select MBC_MEMN_GLBAC5 access control policy for block B"]
-    GLBAC5 = 0x05,
+    Glbac5 = 0x05,
     #[doc = "select MBC_MEMN_GLBAC6 access control policy for block B"]
-    GLBAC6 = 0x06,
+    Glbac6 = 0x06,
     #[doc = "select MBC_MEMN_GLBAC7 access control policy for block B"]
-    GLBAC7 = 0x07,
+    Glbac7 = 0x07,
 }
 impl Mbacsel {
     #[inline(always)]
@@ -325,21 +325,21 @@ impl From<Mbacsel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Mracsel {
     #[doc = "Select MRC_GLBAC0 access control policy"]
-    SEL0 = 0x0,
+    Sel0 = 0x0,
     #[doc = "Select MRC_GLBAC1 access control policy"]
-    SEL1 = 0x01,
+    Sel1 = 0x01,
     #[doc = "Select MRC_GLBAC2 access control policy"]
-    SEL2 = 0x02,
+    Sel2 = 0x02,
     #[doc = "Select MRC_GLBAC3 access control policy"]
-    SEL3 = 0x03,
+    Sel3 = 0x03,
     #[doc = "Select MRC_GLBAC4 access control policy"]
-    SEL4 = 0x04,
+    Sel4 = 0x04,
     #[doc = "Select MRC_GLBAC5 access control policy"]
-    SEL5 = 0x05,
+    Sel5 = 0x05,
     #[doc = "Select MRC_GLBAC6 access control policy"]
-    SEL6 = 0x06,
+    Sel6 = 0x06,
     #[doc = "Select MRC_GLBAC7 access control policy"]
-    SEL7 = 0x07,
+    Sel7 = 0x07,
 }
 impl Mracsel {
     #[inline(always)]
@@ -368,9 +368,9 @@ impl From<Mracsel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ncm {
     #[doc = "Bus master is a processor."]
-    CPU = 0x0,
+    Cpu = 0x0,
     #[doc = "Bus master is a non-processor."]
-    NON_CPU = 0x01,
+    NonCpu = 0x01,
 }
 impl Ncm {
     #[inline(always)]
@@ -399,13 +399,13 @@ impl From<Ncm> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pa {
     #[doc = "Force the bus attribute for this master to user."]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Force the bus attribute for this master to privileged."]
-    ONE = 0x01,
+    One = 0x01,
     #[doc = "Use the bus master's privileged/user attribute directly."]
-    TWO = 0x02,
+    Two = 0x02,
     #[doc = "Use the bus master's privileged/user attribute directly."]
-    THREE = 0x03,
+    Three = 0x03,
 }
 impl Pa {
     #[inline(always)]
@@ -434,9 +434,9 @@ impl From<Pa> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pcurrns {
     #[doc = "Processor is in Secure state"]
-    SECURE = 0x0,
+    Secure = 0x0,
     #[doc = "Processor is in Nonsecure state"]
-    NONSECURE = 0x01,
+    Nonsecure = 0x01,
 }
 impl Pcurrns {
     #[inline(always)]
@@ -465,13 +465,13 @@ impl From<Pcurrns> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pe {
     #[doc = "No process identifier is included in the domain hit evaluation."]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "No process identifier is included in the domain hit evaluation."]
-    ONE = 0x01,
+    One = 0x01,
     #[doc = "PE = 2"]
-    TWO = 0x02,
+    Two = 0x02,
     #[doc = "PE = 3"]
-    THREE = 0x03,
+    Three = 0x03,
 }
 impl Pe {
     #[inline(always)]
@@ -500,13 +500,13 @@ impl From<Pe> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sa {
     #[doc = "Force the bus attribute for this master to secure."]
-    SEC = 0x0,
+    Sec = 0x0,
     #[doc = "Force the bus attribute for this master to nonsecure."]
-    NONSEC = 0x01,
+    Nonsec = 0x01,
     #[doc = "Use the bus master's secure/nonsecure attribute directly."]
-    SRC0 = 0x02,
+    Src0 = 0x02,
     #[doc = "Use the bus master's secure/nonsecure attribute directly."]
-    SRC1 = 0x03,
+    Src1 = 0x03,
 }
 impl Sa {
     #[inline(always)]

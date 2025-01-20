@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Buf21en {
     #[doc = "buffer is disabled"]
-    BUFFER_DIS = 0x0,
+    BufferDis = 0x0,
     #[doc = "buffer is enabled"]
-    BUFFER_ENB = 0x01,
+    BufferEnb = 0x01,
 }
 impl Buf21en {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<Buf21en> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Chopen {
     #[doc = "Chop oscillator is disabled."]
-    CHP_OSC_DIS = 0x0,
+    ChpOscDis = 0x0,
     #[doc = "Chop oscillator is enabled."]
-    CHP_OSC_ENB = 0x01,
+    ChpOscEnb = 0x01,
 }
 impl Chopen {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<Chopen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Hcbgen {
     #[doc = "HC Bandgap is disabled"]
-    HC_BG_DIS = 0x0,
+    HcBgDis = 0x0,
     #[doc = "HC Bandgap is enabled"]
-    HC_BG_ENB = 0x01,
+    HcBgEnb = 0x01,
 }
 impl Hcbgen {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<Hcbgen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum HiPwrLv {
     #[doc = "buffer is in low power mode"]
-    LOW_MODE = 0x0,
+    LowMode = 0x0,
     #[doc = "buffer is in high power mode"]
-    HIGH_MODE = 0x01,
+    HighMode = 0x01,
 }
 impl HiPwrLv {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<HiPwrLv> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Icompen {
     #[doc = "Disabled"]
-    DIS = 0x0,
+    Dis = 0x0,
     #[doc = "Enabled"]
-    ENB = 0x01,
+    Enb = 0x01,
 }
 impl Icompen {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<Icompen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpbgen {
     #[doc = "LP Bandgap is disabled"]
-    LP_BG_DIS = 0x0,
+    LpBgDis = 0x0,
     #[doc = "LP Bandgap is enabled"]
-    LP_BG_ENB = 0x01,
+    LpBgEnb = 0x01,
 }
 impl Lpbgen {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<Lpbgen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Regen {
     #[doc = "Internal 1.75 V regulator is disabled."]
-    INT_REG_DIS = 0x0,
+    IntRegDis = 0x0,
     #[doc = "Internal 1.75 V regulator is enabled."]
-    INT_REG_ENB = 0x01,
+    IntRegEnb = 0x01,
 }
 impl Regen {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<Regen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Vrefst {
     #[doc = "The module is disabled or not stable."]
-    MOD_DISABLE = 0x0,
+    ModDisable = 0x0,
     #[doc = "The module is stable."]
-    MOD_STABLE = 0x01,
+    ModStable = 0x01,
 }
 impl Vrefst {
     #[inline(always)]

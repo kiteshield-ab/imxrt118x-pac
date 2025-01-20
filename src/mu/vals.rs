@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ep {
     #[doc = "Not pending"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Pending"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Ep {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<Ep> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FcrF0 {
     #[doc = "Clear MUB_FSR\\[Fn\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Set MUB_FSR\\[Fn\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl FcrF0 {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<FcrF0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FcrF1 {
     #[doc = "Clear MUB_FSR\\[Fn\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Set MUB_FSR\\[Fn\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl FcrF1 {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<FcrF1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FcrF2 {
     #[doc = "Clear MUB_FSR\\[Fn\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Set MUB_FSR\\[Fn\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl FcrF2 {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<FcrF2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FsrF0 {
     #[doc = "MUB_FCR\\[Fn\\] = 0"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "MUB_FCR\\[Fn\\] = 1"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl FsrF0 {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<FsrF0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FsrF1 {
     #[doc = "MUB_FCR\\[Fn\\] = 0"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "MUB_FCR\\[Fn\\] = 1"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl FsrF1 {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<FsrF1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FsrF2 {
     #[doc = "MUB_FCR\\[Fn\\] = 0"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "MUB_FCR\\[Fn\\] = 1"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl FsrF2 {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<FsrF2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Fup {
     #[doc = "No pending update flags (initiated by MUA)"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Pending update flags (initiated by MUA)"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Fup {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<Fup> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gie0 {
     #[doc = "Disable"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Enable"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Gie0 {
     #[inline(always)]
@@ -282,9 +282,9 @@ impl From<Gie0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gie1 {
     #[doc = "Disable"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Enable"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Gie1 {
     #[inline(always)]
@@ -313,9 +313,9 @@ impl From<Gie1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gie2 {
     #[doc = "Disable"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Enable"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Gie2 {
     #[inline(always)]
@@ -344,9 +344,9 @@ impl From<Gie2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gie3 {
     #[doc = "Disable"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Enable"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Gie3 {
     #[inline(always)]
@@ -375,9 +375,9 @@ impl From<Gie3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gip0 {
     #[doc = "Not pending"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Pending"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Gip0 {
     #[inline(always)]
@@ -406,9 +406,9 @@ impl From<Gip0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gip1 {
     #[doc = "Not pending"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Pending"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Gip1 {
     #[inline(always)]
@@ -437,9 +437,9 @@ impl From<Gip1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gip2 {
     #[doc = "Not pending"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Pending"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Gip2 {
     #[inline(always)]
@@ -468,9 +468,9 @@ impl From<Gip2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gip3 {
     #[doc = "Not pending"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Pending"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Gip3 {
     #[inline(always)]
@@ -499,9 +499,9 @@ impl From<Gip3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gir0 {
     #[doc = "Not requested"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Requested"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Gir0 {
     #[inline(always)]
@@ -530,9 +530,9 @@ impl From<Gir0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gir1 {
     #[doc = "Not requested"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Requested"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Gir1 {
     #[inline(always)]
@@ -561,9 +561,9 @@ impl From<Gir1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gir2 {
     #[doc = "Not requested"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Requested"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Gir2 {
     #[inline(always)]
@@ -592,9 +592,9 @@ impl From<Gir2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gir3 {
     #[doc = "Not requested"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Requested"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Gir3 {
     #[inline(always)]
@@ -623,9 +623,9 @@ impl From<Gir3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Girp {
     #[doc = "No request sent"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Request sent"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Girp {
     #[inline(always)]
@@ -654,9 +654,9 @@ impl From<Girp> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Mur {
     #[doc = "Idle"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Reset"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Mur {
     #[inline(always)]
@@ -685,9 +685,9 @@ impl From<Mur> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Murie {
     #[doc = "Disable"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Enable"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Murie {
     #[inline(always)]
@@ -716,9 +716,9 @@ impl From<Murie> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Murip {
     #[doc = "Reset not issued"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Reset issued"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Murip {
     #[inline(always)]
@@ -747,9 +747,9 @@ impl From<Murip> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Murs {
     #[doc = "Out of reset"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "In reset"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Murs {
     #[inline(always)]
@@ -778,9 +778,9 @@ impl From<Murs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rf0 {
     #[doc = "Not full"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Full"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Rf0 {
     #[inline(always)]
@@ -809,9 +809,9 @@ impl From<Rf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rf1 {
     #[doc = "Not full"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Full"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Rf1 {
     #[inline(always)]
@@ -840,9 +840,9 @@ impl From<Rf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rf2 {
     #[doc = "Not full"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Full"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Rf2 {
     #[inline(always)]
@@ -871,9 +871,9 @@ impl From<Rf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rf3 {
     #[doc = "Not full"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Full"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Rf3 {
     #[inline(always)]
@@ -902,9 +902,9 @@ impl From<Rf3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rfp {
     #[doc = "Not pending; MUB is not writing to a Transmit register"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Pending; MUB is writing to a Transmit register"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Rfp {
     #[inline(always)]
@@ -933,9 +933,9 @@ impl From<Rfp> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rie0 {
     #[doc = "Disable"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Enable"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Rie0 {
     #[inline(always)]
@@ -964,9 +964,9 @@ impl From<Rie0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rie1 {
     #[doc = "Disable"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Enable"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Rie1 {
     #[inline(always)]
@@ -995,9 +995,9 @@ impl From<Rie1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rie2 {
     #[doc = "Disable"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Enable"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Rie2 {
     #[inline(always)]
@@ -1026,9 +1026,9 @@ impl From<Rie2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rie3 {
     #[doc = "Disable"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Enable"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Rie3 {
     #[inline(always)]
@@ -1057,9 +1057,9 @@ impl From<Rie3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Te0 {
     #[doc = "Not empty"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Empty"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Te0 {
     #[inline(always)]
@@ -1088,9 +1088,9 @@ impl From<Te0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Te1 {
     #[doc = "Not empty"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Empty"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Te1 {
     #[inline(always)]
@@ -1119,9 +1119,9 @@ impl From<Te1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Te2 {
     #[doc = "Not empty"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Empty"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Te2 {
     #[inline(always)]
@@ -1150,9 +1150,9 @@ impl From<Te2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Te3 {
     #[doc = "Not empty"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Empty"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Te3 {
     #[inline(always)]
@@ -1181,9 +1181,9 @@ impl From<Te3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tep {
     #[doc = "Not pending; MUB is reading no Receive (RRn) register"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Pending; MUB is reading a Receive (RRn) register"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Tep {
     #[inline(always)]
@@ -1212,9 +1212,9 @@ impl From<Tep> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tie0 {
     #[doc = "Disable"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Enable"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Tie0 {
     #[inline(always)]
@@ -1243,9 +1243,9 @@ impl From<Tie0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tie1 {
     #[doc = "Disable"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Enable"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Tie1 {
     #[inline(always)]
@@ -1274,9 +1274,9 @@ impl From<Tie1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tie2 {
     #[doc = "Disable"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Enable"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Tie2 {
     #[inline(always)]
@@ -1305,9 +1305,9 @@ impl From<Tie2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tie3 {
     #[doc = "Disable"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Enable"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Tie3 {
     #[inline(always)]

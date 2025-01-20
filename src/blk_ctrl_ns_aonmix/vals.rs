@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum BlkholeModeB {
     #[doc = "AON Domain SSI master will enter into blackhole mode"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "AON Domain SSI master will exit from blackhole mode"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl BlkholeModeB {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<BlkholeModeB> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DcdcInLowVol {
     #[doc = "Voltage on DCDC_IN is higher than 2.6V"]
-    NO = 0x0,
+    No = 0x0,
     #[doc = "Voltage on DCDC_IN is lower than 2.6V"]
-    OVER = 0x01,
+    Over = 0x01,
 }
 impl DcdcInLowVol {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<DcdcInLowVol> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DcdcOverCur {
     #[doc = "No Overcurrent on DCDC output"]
-    NO = 0x0,
+    No = 0x0,
     #[doc = "Overcurrent on DCDC output"]
-    OVER = 0x01,
+    Over = 0x01,
 }
 impl DcdcOverCur {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<DcdcOverCur> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DcdcOverVol {
     #[doc = "No Overvoltage on DCDC VDDLP0 or VDDLP8 output"]
-    NO = 0x0,
+    No = 0x0,
     #[doc = "Overvoltage on DCDC VDDLP0 or VDDLP8 output"]
-    OVERVOLTAGE = 0x01,
+    Overvoltage = 0x01,
 }
 impl DcdcOverVol {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<DcdcOverVol> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DcdcStatusCaptClr {
     #[doc = "No change"]
-    OVER = 0x0,
+    Over = 0x0,
     #[doc = "Clear the 3 bits of DCDC captured status: DCDC_OVER_VOL, DCDC_OVER_CUR, and DCDC_IN_LOW_VOL"]
-    NO = 0x01,
+    No = 0x01,
 }
 impl DcdcStatusCaptClr {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<DcdcStatusCaptClr> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum I3cOnChipStrongPullDis {
     #[doc = "On-chip strong pull is enabled"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "On-chip strong pull is disabled"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl I3cOnChipStrongPullDis {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<I3cOnChipStrongPullDis> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Can1 {
     #[doc = "CAN1 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "CAN1 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Can1 {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<M33Can1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Can3 {
     #[doc = "CAN3 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "CAN3 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Can3 {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<M33Can3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Edma3 {
     #[doc = "EDMA3 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "EDMA3 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Edma3 {
     #[inline(always)]
@@ -282,9 +282,9 @@ impl From<M33Edma3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Gpt1 {
     #[doc = "GPT1 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "GPT1 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Gpt1 {
     #[inline(always)]
@@ -313,9 +313,9 @@ impl From<M33Gpt1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33I3c1 {
     #[doc = "I3C1 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "I3C1 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33I3c1 {
     #[inline(always)]
@@ -344,9 +344,9 @@ impl From<M33I3c1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpi2c1 {
     #[doc = "LPI2C1 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPI2C1 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpi2c1 {
     #[inline(always)]
@@ -375,9 +375,9 @@ impl From<M33Lpi2c1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpi2c2 {
     #[doc = "LPI2C2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPI2C2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpi2c2 {
     #[inline(always)]
@@ -406,9 +406,9 @@ impl From<M33Lpi2c2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpit1 {
     #[doc = "LPIT1 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPIT1 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpit1 {
     #[inline(always)]
@@ -437,9 +437,9 @@ impl From<M33Lpit1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpspi1 {
     #[doc = "LPSPI1 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPSPI1 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpspi1 {
     #[inline(always)]
@@ -468,9 +468,9 @@ impl From<M33Lpspi1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpspi2 {
     #[doc = "LPSPI2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPSPI2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpspi2 {
     #[inline(always)]
@@ -499,9 +499,9 @@ impl From<M33Lpspi2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lptmr1 {
     #[doc = "LPTMR1 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPTMR1 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lptmr1 {
     #[inline(always)]
@@ -530,9 +530,9 @@ impl From<M33Lptmr1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Sai1 {
     #[doc = "SAI1 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "SAI1 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Sai1 {
     #[inline(always)]
@@ -561,9 +561,9 @@ impl From<M33Sai1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33SleepSel {
     #[doc = "Select SLEEPING as request source"]
-    SLEEPING = 0x0,
+    Sleeping = 0x0,
     #[doc = "Select SLEEPDEEP as request source"]
-    SLEEPDEEP = 0x01,
+    Sleepdeep = 0x01,
 }
 impl M33SleepSel {
     #[inline(always)]
@@ -592,9 +592,9 @@ impl From<M33SleepSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Tpm1 {
     #[doc = "TPM1 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "TPM1 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Tpm1 {
     #[inline(always)]
@@ -623,9 +623,9 @@ impl From<M33Tpm1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Tpm2 {
     #[doc = "TPM2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "TPM2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Tpm2 {
     #[inline(always)]
@@ -654,9 +654,9 @@ impl From<M33Tpm2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Wdog1 {
     #[doc = "WDOG1 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "WDOG1 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Wdog1 {
     #[inline(always)]
@@ -685,9 +685,9 @@ impl From<M33Wdog1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Wdog2 {
     #[doc = "WDOG2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "WDOG2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Wdog2 {
     #[inline(always)]
@@ -716,9 +716,9 @@ impl From<M33Wdog2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Can1 {
     #[doc = "CAN1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "CAN1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Can1 {
     #[inline(always)]
@@ -747,9 +747,9 @@ impl From<M7Can1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Can3 {
     #[doc = "CAN3 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "CAN3 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Can3 {
     #[inline(always)]
@@ -778,9 +778,9 @@ impl From<M7Can3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Edma3 {
     #[doc = "EDMA3 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "EDMA3 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Edma3 {
     #[inline(always)]
@@ -809,9 +809,9 @@ impl From<M7Edma3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Gpt1 {
     #[doc = "GPT1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "GPT1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Gpt1 {
     #[inline(always)]
@@ -840,9 +840,9 @@ impl From<M7Gpt1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7I3c1 {
     #[doc = "I3C1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "I3C1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7I3c1 {
     #[inline(always)]
@@ -871,9 +871,9 @@ impl From<M7I3c1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpi2c1 {
     #[doc = "LPI2C1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPI2C1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpi2c1 {
     #[inline(always)]
@@ -902,9 +902,9 @@ impl From<M7Lpi2c1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpi2c2 {
     #[doc = "LPI2C2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPI2C2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpi2c2 {
     #[inline(always)]
@@ -933,9 +933,9 @@ impl From<M7Lpi2c2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpit1 {
     #[doc = "LPIT1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPIT1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpit1 {
     #[inline(always)]
@@ -964,9 +964,9 @@ impl From<M7Lpit1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpspi1 {
     #[doc = "LPSPI1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPSPI1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpspi1 {
     #[inline(always)]
@@ -995,9 +995,9 @@ impl From<M7Lpspi1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpspi2 {
     #[doc = "LPSPI2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPSPI2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpspi2 {
     #[inline(always)]
@@ -1026,9 +1026,9 @@ impl From<M7Lpspi2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lptmr1 {
     #[doc = "LPTMR1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPTMR1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lptmr1 {
     #[inline(always)]
@@ -1057,9 +1057,9 @@ impl From<M7Lptmr1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Sai1 {
     #[doc = "SAI1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "SAI1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Sai1 {
     #[inline(always)]
@@ -1088,9 +1088,9 @@ impl From<M7Sai1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7SleepSel {
     #[doc = "Select SLEEPING as request source"]
-    SLEEPING = 0x0,
+    Sleeping = 0x0,
     #[doc = "Select SLEEPDEEP as request source"]
-    SLEEPDEEP = 0x01,
+    Sleepdeep = 0x01,
 }
 impl M7SleepSel {
     #[inline(always)]
@@ -1119,9 +1119,9 @@ impl From<M7SleepSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Tpm1 {
     #[doc = "TPM1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "TPM1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Tpm1 {
     #[inline(always)]
@@ -1150,9 +1150,9 @@ impl From<M7Tpm1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Tpm2 {
     #[doc = "TPM2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "TPM2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Tpm2 {
     #[inline(always)]
@@ -1181,9 +1181,9 @@ impl From<M7Tpm2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Wdog1 {
     #[doc = "WDOG1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "WDOG1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Wdog1 {
     #[inline(always)]
@@ -1212,9 +1212,9 @@ impl From<M7Wdog1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Wdog2 {
     #[doc = "WDOG2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "WDOG2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Wdog2 {
     #[inline(always)]
@@ -1243,9 +1243,9 @@ impl From<M7Wdog2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OcotpBusy {
     #[doc = "OCOTP is not busy"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "OCOTP is busy"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl OcotpBusy {
     #[inline(always)]
@@ -1274,9 +1274,9 @@ impl From<OcotpBusy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OcotpCalibrated {
     #[doc = "OCOTP is not calibrated"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "OCOTP is calibrated"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl OcotpCalibrated {
     #[inline(always)]
@@ -1305,9 +1305,9 @@ impl From<OcotpCalibrated> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OsccaFuseReadDis {
     #[doc = "Read is allowed"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Read is not allowed"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl OsccaFuseReadDis {
     #[inline(always)]
@@ -1336,9 +1336,9 @@ impl From<OsccaFuseReadDis> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai1MclkDir {
     #[doc = "SAI1_MCLK is input signal"]
-    INPUT = 0x0,
+    Input = 0x0,
     #[doc = "SAI1_MCLK is output signal"]
-    OUTPUT = 0x01,
+    Output = 0x01,
 }
 impl Sai1MclkDir {
     #[inline(always)]

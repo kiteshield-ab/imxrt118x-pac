@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Clkgate400meg {
     #[doc = "Not Gated"]
-    NG = 0x0,
+    Ng = 0x0,
     #[doc = "Gated"]
-    GATE = 0x01,
+    Gate = 0x01,
 }
 impl Clkgate400meg {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<Clkgate400meg> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpEn {
     #[doc = "High Gain mode (HP)"]
-    HP = 0x0,
+    Hp = 0x0,
     #[doc = "Low-power mode (LP)"]
-    LP = 0x01,
+    Lp = 0x01,
 }
 impl LpEn {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<LpEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Osc24mControlMode {
     #[doc = "Software mode (default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl Osc24mControlMode {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<Osc24mControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Osc24mGate {
     #[doc = "Not Gated"]
-    NG = 0x0,
+    Ng = 0x0,
     #[doc = "Gated"]
-    GATE = 0x01,
+    Gate = 0x01,
 }
 impl Osc24mGate {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<Osc24mGate> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Osc24mStable {
     #[doc = "Not Stable"]
-    NS = 0x0,
+    Ns = 0x0,
     #[doc = "Stable"]
-    STABLE = 0x01,
+    Stable = 0x01,
 }
 impl Osc24mStable {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<Osc24mStable> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscCompMode {
     #[doc = "Single-ended mode (default)"]
-    SINGLE = 0x0,
+    Single = 0x0,
     #[doc = "Differential mode (test mode)"]
-    DIFF = 0x01,
+    Diff = 0x01,
 }
 impl OscCompMode {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<OscCompMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pwd {
     #[doc = "No Power down"]
-    PD = 0x0,
+    Pd = 0x0,
     #[doc = "Power down"]
-    PU = 0x01,
+    Pu = 0x01,
 }
 impl Pwd {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<Pwd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rc24mControlMode {
     #[doc = "Software mode (default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl Rc24mControlMode {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<Rc24mControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rc400mControlMode {
     #[doc = "Software mode (default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl Rc400mControlMode {
     #[inline(always)]
@@ -282,9 +282,9 @@ impl From<Rc400mControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SourceSel24m {
     #[doc = "OSC_RC24M"]
-    OSC_RC24M = 0x0,
+    OscRc24m = 0x0,
     #[doc = "OSC24M"]
-    OSC24M = 0x01,
+    Osc24m = 0x01,
 }
 impl SourceSel24m {
     #[inline(always)]
@@ -313,9 +313,9 @@ impl From<SourceSel24m> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ten {
     #[doc = "Power down"]
-    PD = 0x0,
+    Pd = 0x0,
     #[doc = "Power up"]
-    PU = 0x01,
+    Pu = 0x01,
 }
 impl Ten {
     #[inline(always)]

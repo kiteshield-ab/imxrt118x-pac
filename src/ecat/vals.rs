@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlControlBf4 {
     #[doc = "No Ack of Error Ind in AL status register"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Ack of Error Ind in AL status register"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlControlBf4 {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<AlControlBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlControlBf5 {
     #[doc = "No request"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Device Identification request"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlControlBf5 {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<AlControlBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlControlPdiBf4 {
     #[doc = "No Ack of Error Ind in AL status register"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Ack of Error Ind in AL status register"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlControlPdiBf4 {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<AlControlPdiBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlControlPdiBf5 {
     #[doc = "No request"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Device Identification request"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlControlPdiBf5 {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<AlControlPdiBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlEventRequestBf0 {
     #[doc = "No AL Control Register change"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "AL Control Register has been written3"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlEventRequestBf0 {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<AlEventRequestBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlEventRequestBf1 {
     #[doc = "No change on DC Latch Inputs"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "At least one change on DC Latch Inputs"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlEventRequestBf1 {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<AlEventRequestBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlEventRequestBf10 {
     #[doc = "No SyncManager2 interrupt"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "SyncManager 2 interrupt pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlEventRequestBf10 {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<AlEventRequestBf10> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlEventRequestBf11 {
     #[doc = "No SyncManager 3 interrupt"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "SyncManager 3 interrupt pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlEventRequestBf11 {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<AlEventRequestBf11> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlEventRequestBf12 {
     #[doc = "No SyncManager4 interrupt"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "SyncManager 4 interrupt pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlEventRequestBf12 {
     #[inline(always)]
@@ -282,9 +282,9 @@ impl From<AlEventRequestBf12> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlEventRequestBf13 {
     #[doc = "No SyncManager 5 interrupt"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "SyncManager 5 interrupt pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlEventRequestBf13 {
     #[inline(always)]
@@ -313,9 +313,9 @@ impl From<AlEventRequestBf13> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlEventRequestBf14 {
     #[doc = "No SyncManager 6 interrupt"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "SyncManager6 interrupt pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlEventRequestBf14 {
     #[inline(always)]
@@ -344,9 +344,9 @@ impl From<AlEventRequestBf14> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlEventRequestBf15 {
     #[doc = "No SyncManager 7 interrupt"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "SyncManager 7 interrupt pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlEventRequestBf15 {
     #[inline(always)]
@@ -375,9 +375,9 @@ impl From<AlEventRequestBf15> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlEventRequestBf4 {
     #[doc = "No change in any SyncManager"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "At least one SyncManager changed"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlEventRequestBf4 {
     #[inline(always)]
@@ -406,9 +406,9 @@ impl From<AlEventRequestBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlEventRequestBf5 {
     #[doc = "No command pending"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "EEPROM command pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlEventRequestBf5 {
     #[inline(always)]
@@ -437,9 +437,9 @@ impl From<AlEventRequestBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlEventRequestBf6 {
     #[doc = "Has not expired"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Has expired"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlEventRequestBf6 {
     #[inline(always)]
@@ -468,9 +468,9 @@ impl From<AlEventRequestBf6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlEventRequestBf8 {
     #[doc = "No SyncManager 0 interrupt"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "SyncManager 0 interrupt pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlEventRequestBf8 {
     #[inline(always)]
@@ -499,9 +499,9 @@ impl From<AlEventRequestBf8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlEventRequestBf9 {
     #[doc = "No SyncManager 1 interrupt"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "SyncManager 1 interrupt pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlEventRequestBf9 {
     #[inline(always)]
@@ -530,9 +530,9 @@ impl From<AlEventRequestBf9> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlStatusBf4 {
     #[doc = "Device is in State as requested or Flag cleared by command"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Device has not entered requested State or changed State as result of a local action"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlStatusBf4 {
     #[inline(always)]
@@ -561,9 +561,9 @@ impl From<AlStatusBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlStatusBf5 {
     #[doc = "Device Identification not valid"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Device Identification loaded"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlStatusBf5 {
     #[inline(always)]
@@ -592,9 +592,9 @@ impl From<AlStatusBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlStatusPdiBf4 {
     #[doc = "Device is in State as requested or Flag cleared by command"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Device has not entered requested State or changed State as result of a local action"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlStatusPdiBf4 {
     #[inline(always)]
@@ -623,9 +623,9 @@ impl From<AlStatusPdiBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AlStatusPdiBf5 {
     #[doc = "Device Identification not valid"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Device Identification loaded"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AlStatusPdiBf5 {
     #[inline(always)]
@@ -654,9 +654,9 @@ impl From<AlStatusPdiBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AsynchronousSynchronousMicrocontrollerBf0 {
     #[doc = "no error"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "error detected"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AsynchronousSynchronousMicrocontrollerBf0 {
     #[inline(always)]
@@ -685,9 +685,9 @@ impl From<AsynchronousSynchronousMicrocontrollerBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AsynchronousSynchronousMicrocontrollerBf1 {
     #[doc = "no error"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "error detected"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AsynchronousSynchronousMicrocontrollerBf1 {
     #[inline(always)]
@@ -716,9 +716,9 @@ impl From<AsynchronousSynchronousMicrocontrollerBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AsynchronousSynchronousMicrocontrollerBf2 {
     #[doc = "no error"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "error detected"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AsynchronousSynchronousMicrocontrollerBf2 {
     #[inline(always)]
@@ -747,9 +747,9 @@ impl From<AsynchronousSynchronousMicrocontrollerBf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AsynchronousSynchronousMicrocontrollerBf3 {
     #[doc = "no error"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "error detected"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl AsynchronousSynchronousMicrocontrollerBf3 {
     #[inline(always)]
@@ -778,9 +778,9 @@ impl From<AsynchronousSynchronousMicrocontrollerBf3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Bf31 {
     #[doc = "Local copy of System Time less than received System Time"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Local copy of System Time greater than or equal to received System Time"]
-    BF_VAL_3 = 0x01,
+    BfVal3 = 0x01,
 }
 impl Bf31 {
     #[inline(always)]
@@ -809,9 +809,9 @@ impl From<Bf31> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CyclicUnitControlBf0 {
     #[doc = "ECAT-controlled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI-controlled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl CyclicUnitControlBf0 {
     #[inline(always)]
@@ -840,9 +840,9 @@ impl From<CyclicUnitControlBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CyclicUnitControlBf4 {
     #[doc = "ECAT-controlled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI-controlled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl CyclicUnitControlBf4 {
     #[inline(always)]
@@ -871,9 +871,9 @@ impl From<CyclicUnitControlBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CyclicUnitControlBf5 {
     #[doc = "ECAT-controlled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI-controlled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl CyclicUnitControlBf5 {
     #[inline(always)]
@@ -902,9 +902,9 @@ impl From<CyclicUnitControlBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CyclicUnitControlPdiBf0 {
     #[doc = "ECAT-controlled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI-controlled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl CyclicUnitControlPdiBf0 {
     #[inline(always)]
@@ -933,9 +933,9 @@ impl From<CyclicUnitControlPdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CyclicUnitControlPdiBf4 {
     #[doc = "ECAT-controlled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI-controlled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl CyclicUnitControlPdiBf4 {
     #[inline(always)]
@@ -964,9 +964,9 @@ impl From<CyclicUnitControlPdiBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CyclicUnitControlPdiBf5 {
     #[doc = "ECAT-controlled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI-controlled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl CyclicUnitControlPdiBf5 {
     #[inline(always)]
@@ -1091,9 +1091,9 @@ impl From<EcatEventMaskPdiBf0> for u16 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEventRequestBf0 {
     #[doc = "No change on DC Latch Inputs"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "At least one change on DC Latch Inputs"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EcatEventRequestBf0 {
     #[inline(always)]
@@ -1122,9 +1122,9 @@ impl From<EcatEventRequestBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEventRequestBf10 {
     #[doc = "No Sync Channel 6 event"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Sync Channel 6 event pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EcatEventRequestBf10 {
     #[inline(always)]
@@ -1153,9 +1153,9 @@ impl From<EcatEventRequestBf10> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEventRequestBf11 {
     #[doc = "No Sync Channel 7 event"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Sync Channel 7 event pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EcatEventRequestBf11 {
     #[inline(always)]
@@ -1184,9 +1184,9 @@ impl From<EcatEventRequestBf11> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEventRequestBf2 {
     #[doc = "No change in DL Status"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "DL Status change"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EcatEventRequestBf2 {
     #[inline(always)]
@@ -1215,9 +1215,9 @@ impl From<EcatEventRequestBf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEventRequestBf3 {
     #[doc = "No change in AL Status"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "AL Status change"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EcatEventRequestBf3 {
     #[inline(always)]
@@ -1246,9 +1246,9 @@ impl From<EcatEventRequestBf3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEventRequestBf4 {
     #[doc = "No Sync Channel 0 event"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Sync Channel 0 event pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EcatEventRequestBf4 {
     #[inline(always)]
@@ -1277,9 +1277,9 @@ impl From<EcatEventRequestBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEventRequestBf5 {
     #[doc = "No Sync Channel 1 event"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Sync Channel 1 event pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EcatEventRequestBf5 {
     #[inline(always)]
@@ -1308,9 +1308,9 @@ impl From<EcatEventRequestBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEventRequestBf6 {
     #[doc = "No Sync Channel 2 event"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Sync Channel 2 event pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EcatEventRequestBf6 {
     #[inline(always)]
@@ -1339,9 +1339,9 @@ impl From<EcatEventRequestBf6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEventRequestBf7 {
     #[doc = "No Sync Channel 3 event"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Sync Channel 3 event pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EcatEventRequestBf7 {
     #[inline(always)]
@@ -1370,9 +1370,9 @@ impl From<EcatEventRequestBf7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEventRequestBf8 {
     #[doc = "No Sync Channel 4 event"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Sync Channel 4 event pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EcatEventRequestBf8 {
     #[inline(always)]
@@ -1401,9 +1401,9 @@ impl From<EcatEventRequestBf8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatEventRequestBf9 {
     #[doc = "No Sync Channel 5 event"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Sync Channel 5 event pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EcatEventRequestBf9 {
     #[inline(always)]
@@ -1432,9 +1432,9 @@ impl From<EcatEventRequestBf9> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromConfigurationBf0 {
     #[doc = "no"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "yes (PDI has EEPROM control)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromConfigurationBf0 {
     #[inline(always)]
@@ -1463,9 +1463,9 @@ impl From<EepromConfigurationBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromConfigurationBf1 {
     #[doc = "Do not change Bit 0x0501\\[0\\]"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Reset Bit 0x0501\\[0\\] to 0"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromConfigurationBf1 {
     #[inline(always)]
@@ -1494,9 +1494,9 @@ impl From<EepromConfigurationBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromConfigurationPdiBf0 {
     #[doc = "no"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "yes (PDI has EEPROM control)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromConfigurationPdiBf0 {
     #[inline(always)]
@@ -1525,9 +1525,9 @@ impl From<EepromConfigurationPdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromConfigurationPdiBf1 {
     #[doc = "Do not change Bit 0x0501\\[0\\]"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Reset Bit 0x0501\\[0\\] to 0"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromConfigurationPdiBf1 {
     #[inline(always)]
@@ -1556,9 +1556,9 @@ impl From<EepromConfigurationPdiBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusBf0 {
     #[doc = "Write requests are disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Write requests are enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusBf0 {
     #[inline(always)]
@@ -1587,9 +1587,9 @@ impl From<EepromControlStatusBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusBf11 {
     #[doc = "Checksum ok"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Checksum error"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusBf11 {
     #[inline(always)]
@@ -1618,9 +1618,9 @@ impl From<EepromControlStatusBf11> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusBf12 {
     #[doc = "EEPROM loaded, device information ok"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "EEPROM not loaded, device information not available (EEPROM loading in progress or finished with a failure)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusBf12 {
     #[inline(always)]
@@ -1649,9 +1649,9 @@ impl From<EepromControlStatusBf12> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusBf13 {
     #[doc = "No error"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Missing EEPROM acknowledge or invalid command"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusBf13 {
     #[inline(always)]
@@ -1680,9 +1680,9 @@ impl From<EepromControlStatusBf13> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusBf14 {
     #[doc = "No error"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Write Command without Write enable"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusBf14 {
     #[inline(always)]
@@ -1711,9 +1711,9 @@ impl From<EepromControlStatusBf14> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusBf15 {
     #[doc = "EEPROM Interface is idle"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "EEPROM Interface is busy"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusBf15 {
     #[inline(always)]
@@ -1742,9 +1742,9 @@ impl From<EepromControlStatusBf15> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusBf5 {
     #[doc = "Normal operation (I2C interface used)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI emulates EEPROM (I2C not used)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusBf5 {
     #[inline(always)]
@@ -1773,9 +1773,9 @@ impl From<EepromControlStatusBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusBf6 {
     #[doc = "4 Bytes"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "8 Bytes"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusBf6 {
     #[inline(always)]
@@ -1804,9 +1804,9 @@ impl From<EepromControlStatusBf6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusBf7 {
     #[doc = "1 address byte (1Kbit to 16Kbit EEPROMs)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "2 address bytes (32Kbit to 4 Mbit EEPROMs)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusBf7 {
     #[inline(always)]
@@ -1835,14 +1835,14 @@ impl From<EepromControlStatusBf7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusBf8 {
     #[doc = "No command/EEPROM idle (clear error bits)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Read"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "Write"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Reload"]
-    BF_VAL_3 = 0x04,
+    BfVal3 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
@@ -1874,9 +1874,9 @@ impl From<EepromControlStatusBf8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusPdiBf0 {
     #[doc = "Write requests are disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Write requests are enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusPdiBf0 {
     #[inline(always)]
@@ -1905,9 +1905,9 @@ impl From<EepromControlStatusPdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusPdiBf11 {
     #[doc = "Checksum ok"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Checksum error"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusPdiBf11 {
     #[inline(always)]
@@ -1936,9 +1936,9 @@ impl From<EepromControlStatusPdiBf11> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusPdiBf12 {
     #[doc = "EEPROM loaded, device information ok"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "EEPROM not loaded, device information not available (EEPROM loading in progress or finished with a failure)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusPdiBf12 {
     #[inline(always)]
@@ -1967,9 +1967,9 @@ impl From<EepromControlStatusPdiBf12> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusPdiBf13 {
     #[doc = "No error"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Missing EEPROM acknowledge or invalid command"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusPdiBf13 {
     #[inline(always)]
@@ -1998,9 +1998,9 @@ impl From<EepromControlStatusPdiBf13> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusPdiBf14 {
     #[doc = "No error"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Write Command without Write enable"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusPdiBf14 {
     #[inline(always)]
@@ -2029,9 +2029,9 @@ impl From<EepromControlStatusPdiBf14> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusPdiBf15 {
     #[doc = "EEPROM Interface is idle"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "EEPROM Interface is busy"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusPdiBf15 {
     #[inline(always)]
@@ -2060,9 +2060,9 @@ impl From<EepromControlStatusPdiBf15> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusPdiBf5 {
     #[doc = "Normal operation (I2C interface used)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI emulates EEPROM (I2C not used)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusPdiBf5 {
     #[inline(always)]
@@ -2091,9 +2091,9 @@ impl From<EepromControlStatusPdiBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusPdiBf6 {
     #[doc = "4 Bytes"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "8 Bytes"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusPdiBf6 {
     #[inline(always)]
@@ -2122,9 +2122,9 @@ impl From<EepromControlStatusPdiBf6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusPdiBf7 {
     #[doc = "1 address byte (1Kbit to 16Kbit EEPROMs)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "2 address bytes (32Kbit to 4 Mbit EEPROMs)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EepromControlStatusPdiBf7 {
     #[inline(always)]
@@ -2153,14 +2153,14 @@ impl From<EepromControlStatusPdiBf7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EepromControlStatusPdiBf8 {
     #[doc = "No command/EEPROM idle (clear error bits)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Read"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "Write"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Reload"]
-    BF_VAL_3 = 0x04,
+    BfVal3 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
@@ -2192,9 +2192,9 @@ impl From<EepromControlStatusPdiBf8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ErrLedOverrideBf4 {
     #[doc = "Override disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Override enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl ErrLedOverrideBf4 {
     #[inline(always)]
@@ -2223,9 +2223,9 @@ impl From<ErrLedOverrideBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscConfigurationBf0 {
     #[doc = "AL status register has to be set by PDI"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "AL status register will be set to value written to AL control register"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscConfigurationBf0 {
     #[inline(always)]
@@ -2254,9 +2254,9 @@ impl From<EscConfigurationBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscConfigurationBf1 {
     #[doc = "disabled (if bits \\[7:4\\]=0)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "enabled at all ports (overrides bits \\[7:4\\])"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscConfigurationBf1 {
     #[inline(always)]
@@ -2285,9 +2285,9 @@ impl From<EscConfigurationBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscConfigurationBf2 {
     #[doc = "disabled (power saving)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscConfigurationBf2 {
     #[inline(always)]
@@ -2316,9 +2316,9 @@ impl From<EscConfigurationBf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscConfigurationBf3 {
     #[doc = "disabled (power saving)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscConfigurationBf3 {
     #[inline(always)]
@@ -2347,9 +2347,9 @@ impl From<EscConfigurationBf3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscConfigurationBf4 {
     #[doc = "disabled (if bit 1=0)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscConfigurationBf4 {
     #[inline(always)]
@@ -2378,9 +2378,9 @@ impl From<EscConfigurationBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscConfigurationBf5 {
     #[doc = "disabled (if bit 1=0)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscConfigurationBf5 {
     #[inline(always)]
@@ -2409,9 +2409,9 @@ impl From<EscConfigurationBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlControlBf0 {
     #[doc = "EtherCAT frames are processed, non-EtherCAT frames are forwarded without processing or modification."]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "EtherCAT frames are processed, non-EtherCAT frames are destroyed."]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlControlBf0 {
     #[inline(always)]
@@ -2440,9 +2440,9 @@ impl From<EscDlControlBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlControlBf1 {
     #[doc = "permanent use"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "use for about 1 second, then revert to previous settings"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlControlBf1 {
     #[inline(always)]
@@ -2471,13 +2471,13 @@ impl From<EscDlControlBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlControlBf10 {
     #[doc = "Auto"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Auto Close"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "Open"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     #[doc = "Closed"]
-    BF_VAL_3 = 0x03,
+    BfVal3 = 0x03,
 }
 impl EscDlControlBf10 {
     #[inline(always)]
@@ -2506,9 +2506,9 @@ impl From<EscDlControlBf10> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlControlBf24 {
     #[doc = "Ignore Station Alias"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Alias can be used for all configured address command types (FPRD, FPWR, ...)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlControlBf24 {
     #[inline(always)]
@@ -2537,13 +2537,13 @@ impl From<EscDlControlBf24> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlControlBf8 {
     #[doc = "Auto"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Auto Close"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "Open"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     #[doc = "Closed"]
-    BF_VAL_3 = 0x03,
+    BfVal3 = 0x03,
 }
 impl EscDlControlBf8 {
     #[inline(always)]
@@ -2572,9 +2572,9 @@ impl From<EscDlControlBf8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlControlPdiBf0 {
     #[doc = "EtherCAT frames are processed, non-EtherCAT frames are forwarded without processing or modification."]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "EtherCAT frames are processed, non-EtherCAT frames are destroyed."]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlControlPdiBf0 {
     #[inline(always)]
@@ -2603,9 +2603,9 @@ impl From<EscDlControlPdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlControlPdiBf1 {
     #[doc = "permanent use"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "use for about 1 second, then revert to previous settings"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlControlPdiBf1 {
     #[inline(always)]
@@ -2634,13 +2634,13 @@ impl From<EscDlControlPdiBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlControlPdiBf10 {
     #[doc = "Auto"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Auto Close"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "Open"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     #[doc = "Closed"]
-    BF_VAL_3 = 0x03,
+    BfVal3 = 0x03,
 }
 impl EscDlControlPdiBf10 {
     #[inline(always)]
@@ -2669,9 +2669,9 @@ impl From<EscDlControlPdiBf10> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlControlPdiBf24 {
     #[doc = "Ignore Station Alias"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Alias can be used for all configured address command types (FPRD, FPWR, ...)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlControlPdiBf24 {
     #[inline(always)]
@@ -2700,13 +2700,13 @@ impl From<EscDlControlPdiBf24> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlControlPdiBf8 {
     #[doc = "Auto"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Auto Close"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "Open"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     #[doc = "Closed"]
-    BF_VAL_3 = 0x03,
+    BfVal3 = 0x03,
 }
 impl EscDlControlPdiBf8 {
     #[inline(always)]
@@ -2735,9 +2735,9 @@ impl From<EscDlControlPdiBf8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlStatusBf0 {
     #[doc = "PDI operational/EEPROM loaded correctly:"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "EEPROM loaded correctly, PDI operational (access to Process Data RAM)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlStatusBf0 {
     #[inline(always)]
@@ -2766,9 +2766,9 @@ impl From<EscDlStatusBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlStatusBf1 {
     #[doc = "Watchdog expired"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Watchdog reloaded"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlStatusBf1 {
     #[inline(always)]
@@ -2797,9 +2797,9 @@ impl From<EscDlStatusBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlStatusBf10 {
     #[doc = "Open"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Closed"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlStatusBf10 {
     #[inline(always)]
@@ -2828,9 +2828,9 @@ impl From<EscDlStatusBf10> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlStatusBf11 {
     #[doc = "No stable communication"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Communication established"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlStatusBf11 {
     #[inline(always)]
@@ -2859,9 +2859,9 @@ impl From<EscDlStatusBf11> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlStatusBf2 {
     #[doc = "Deactivated for all ports"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Activated for at least one port"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlStatusBf2 {
     #[inline(always)]
@@ -2890,9 +2890,9 @@ impl From<EscDlStatusBf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlStatusBf4 {
     #[doc = "No link"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Link detected"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlStatusBf4 {
     #[inline(always)]
@@ -2921,9 +2921,9 @@ impl From<EscDlStatusBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlStatusBf5 {
     #[doc = "No link"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Link detected"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlStatusBf5 {
     #[inline(always)]
@@ -2952,9 +2952,9 @@ impl From<EscDlStatusBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlStatusBf8 {
     #[doc = "Open"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Closed"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlStatusBf8 {
     #[inline(always)]
@@ -2983,9 +2983,9 @@ impl From<EscDlStatusBf8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscDlStatusBf9 {
     #[doc = "No stable communication"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Communication established"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscDlStatusBf9 {
     #[inline(always)]
@@ -3014,9 +3014,9 @@ impl From<EscDlStatusBf9> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscFeaturesSupportedBf0 {
     #[doc = "Bit oriented"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Byte oriented"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscFeaturesSupportedBf0 {
     #[inline(always)]
@@ -3045,9 +3045,9 @@ impl From<EscFeaturesSupportedBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscFeaturesSupportedBf1 {
     #[doc = "allowed"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "not supported"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscFeaturesSupportedBf1 {
     #[inline(always)]
@@ -3076,9 +3076,9 @@ impl From<EscFeaturesSupportedBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscFeaturesSupportedBf10 {
     #[doc = "Supported"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Not supported"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscFeaturesSupportedBf10 {
     #[inline(always)]
@@ -3107,9 +3107,9 @@ impl From<EscFeaturesSupportedBf10> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscFeaturesSupportedBf11 {
     #[doc = "Variable configuration"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Fixed configuration (refer to documentation of supporting ESCs)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscFeaturesSupportedBf11 {
     #[inline(always)]
@@ -3138,9 +3138,9 @@ impl From<EscFeaturesSupportedBf11> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscFeaturesSupportedBf2 {
     #[doc = "Not available"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Available"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscFeaturesSupportedBf2 {
     #[inline(always)]
@@ -3169,9 +3169,9 @@ impl From<EscFeaturesSupportedBf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscFeaturesSupportedBf3 {
     #[doc = "32 bit"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "64 bit"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscFeaturesSupportedBf3 {
     #[inline(always)]
@@ -3200,9 +3200,9 @@ impl From<EscFeaturesSupportedBf3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscFeaturesSupportedBf6 {
     #[doc = "Not available"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Available"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscFeaturesSupportedBf6 {
     #[inline(always)]
@@ -3231,9 +3231,9 @@ impl From<EscFeaturesSupportedBf6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscFeaturesSupportedBf7 {
     #[doc = "Not supported"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Supported, frames with wrong FCS and additional nibble will be counted separately in Forwarded RX Error Counter"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscFeaturesSupportedBf7 {
     #[inline(always)]
@@ -3262,9 +3262,9 @@ impl From<EscFeaturesSupportedBf7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscFeaturesSupportedBf8 {
     #[doc = "Not available"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Available"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscFeaturesSupportedBf8 {
     #[inline(always)]
@@ -3293,9 +3293,9 @@ impl From<EscFeaturesSupportedBf8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscFeaturesSupportedBf9 {
     #[doc = "Supported"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Not supported"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscFeaturesSupportedBf9 {
     #[inline(always)]
@@ -3324,9 +3324,9 @@ impl From<EscFeaturesSupportedBf9> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscWriteProtectionBf0 {
     #[doc = "Protection disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Protection enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscWriteProtectionBf0 {
     #[inline(always)]
@@ -3355,9 +3355,9 @@ impl From<EscWriteProtectionBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EscWriteProtectionPdiBf0 {
     #[doc = "Protection disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Protection enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl EscWriteProtectionPdiBf0 {
     #[inline(always)]
@@ -3386,9 +3386,9 @@ impl From<EscWriteProtectionPdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FmmuActivateBf0 {
     #[doc = "FMMU deactivated"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "FMMU activated. FMMU checks logically addressed blocks to be mapped according to configured mapping"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl FmmuActivateBf0 {
     #[inline(always)]
@@ -3417,9 +3417,9 @@ impl From<FmmuActivateBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FmmuActivatePdiBf0 {
     #[doc = "FMMU deactivated"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "FMMU activated. FMMU checks logically addressed blocks to be mapped according to configured mapping"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl FmmuActivatePdiBf0 {
     #[inline(always)]
@@ -3448,9 +3448,9 @@ impl From<FmmuActivatePdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FmmuTypeBf0 {
     #[doc = "Ignore mapping for read accesses"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Use mapping for read accesses"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl FmmuTypeBf0 {
     #[inline(always)]
@@ -3479,9 +3479,9 @@ impl From<FmmuTypeBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FmmuTypeBf1 {
     #[doc = "Ignore mapping for write accesses"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Use mapping for write accesses"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl FmmuTypeBf1 {
     #[inline(always)]
@@ -3510,9 +3510,9 @@ impl From<FmmuTypeBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FmmuTypePdiBf0 {
     #[doc = "Ignore mapping for read accesses"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Use mapping for read accesses"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl FmmuTypePdiBf0 {
     #[inline(always)]
@@ -3541,9 +3541,9 @@ impl From<FmmuTypePdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FmmuTypePdiBf1 {
     #[doc = "Ignore mapping for write accesses"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Use mapping for write accesses"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl FmmuTypePdiBf1 {
     #[inline(always)]
@@ -3572,9 +3572,9 @@ impl From<FmmuTypePdiBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Latch0ControlBf0 {
     #[doc = "Continuous Latch active"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Single event (only first event active)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl Latch0ControlBf0 {
     #[inline(always)]
@@ -3603,9 +3603,9 @@ impl From<Latch0ControlBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Latch0ControlBf1 {
     #[doc = "Continuous Latch active"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Single event (only first event active)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl Latch0ControlBf1 {
     #[inline(always)]
@@ -3634,9 +3634,9 @@ impl From<Latch0ControlBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Latch0StatusBf0 {
     #[doc = "Positive edge not detected or continuous mode"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Positive edge detected in single event mode only."]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl Latch0StatusBf0 {
     #[inline(always)]
@@ -3665,9 +3665,9 @@ impl From<Latch0StatusBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Latch0StatusBf1 {
     #[doc = "Negative edge not detected or continuous mode"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Negative edge detected in single event mode only"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl Latch0StatusBf1 {
     #[inline(always)]
@@ -3696,9 +3696,9 @@ impl From<Latch0StatusBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Latch1ControlBf0 {
     #[doc = "Continuous Latch active"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Single event (only first event active)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl Latch1ControlBf0 {
     #[inline(always)]
@@ -3727,9 +3727,9 @@ impl From<Latch1ControlBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Latch1ControlBf1 {
     #[doc = "Continuous Latch active"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Single event (only first event active)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl Latch1ControlBf1 {
     #[inline(always)]
@@ -3758,9 +3758,9 @@ impl From<Latch1ControlBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Latch1StatusBf0 {
     #[doc = "Positive edge not detected or continuous mode"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Positive edge detected in single event mode only."]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl Latch1StatusBf0 {
     #[inline(always)]
@@ -3789,9 +3789,9 @@ impl From<Latch1StatusBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Latch1StatusBf1 {
     #[doc = "Negative edge not detected or continuous mode"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Negative edge detected in single event mode only."]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl Latch1StatusBf1 {
     #[inline(always)]
@@ -3820,9 +3820,9 @@ impl From<Latch1StatusBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusBf0 {
     #[doc = "Write disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Write enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementControlOrStatusBf0 {
     #[inline(always)]
@@ -3851,9 +3851,9 @@ impl From<MiiManagementControlOrStatusBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusBf1 {
     #[doc = "Only ECAT control"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI control possible"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementControlOrStatusBf1 {
     #[inline(always)]
@@ -3882,9 +3882,9 @@ impl From<MiiManagementControlOrStatusBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusBf13 {
     #[doc = "No read error"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Read error occurred (PHY or register not available)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementControlOrStatusBf13 {
     #[inline(always)]
@@ -3913,9 +3913,9 @@ impl From<MiiManagementControlOrStatusBf13> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusBf14 {
     #[doc = "Last Command was successful"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Invalid command or write command without Write Enable"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementControlOrStatusBf14 {
     #[inline(always)]
@@ -3944,9 +3944,9 @@ impl From<MiiManagementControlOrStatusBf14> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusBf15 {
     #[doc = "MII Management Interface is idle"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "MII Management Interface is busy"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementControlOrStatusBf15 {
     #[inline(always)]
@@ -3975,9 +3975,9 @@ impl From<MiiManagementControlOrStatusBf15> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusBf2 {
     #[doc = "Disabled for all ports"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Enabled for at least one MII port, refer to PHY Port Status (0x0518 ff.) for details"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementControlOrStatusBf2 {
     #[inline(always)]
@@ -4006,11 +4006,11 @@ impl From<MiiManagementControlOrStatusBf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusBf8 {
     #[doc = "No command/MI idle (clear error bits)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Read"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "Write"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiiManagementControlOrStatusBf8 {
@@ -4040,9 +4040,9 @@ impl From<MiiManagementControlOrStatusBf8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusPdiBf0 {
     #[doc = "Write disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Write enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementControlOrStatusPdiBf0 {
     #[inline(always)]
@@ -4071,9 +4071,9 @@ impl From<MiiManagementControlOrStatusPdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusPdiBf1 {
     #[doc = "Only ECAT control"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI control possible"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementControlOrStatusPdiBf1 {
     #[inline(always)]
@@ -4102,9 +4102,9 @@ impl From<MiiManagementControlOrStatusPdiBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusPdiBf13 {
     #[doc = "No read error"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Read error occurred (PHY or register not available)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementControlOrStatusPdiBf13 {
     #[inline(always)]
@@ -4133,9 +4133,9 @@ impl From<MiiManagementControlOrStatusPdiBf13> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusPdiBf14 {
     #[doc = "Last Command was successful"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Invalid command or write command without Write Enable"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementControlOrStatusPdiBf14 {
     #[inline(always)]
@@ -4164,9 +4164,9 @@ impl From<MiiManagementControlOrStatusPdiBf14> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusPdiBf15 {
     #[doc = "MII Management Interface is idle"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "MII Management Interface is busy"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementControlOrStatusPdiBf15 {
     #[inline(always)]
@@ -4195,9 +4195,9 @@ impl From<MiiManagementControlOrStatusPdiBf15> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusPdiBf2 {
     #[doc = "Disabled for all ports"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Enabled for at least one MII port, refer to PHY Port Status (0x0518 ff.) for details"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementControlOrStatusPdiBf2 {
     #[inline(always)]
@@ -4226,11 +4226,11 @@ impl From<MiiManagementControlOrStatusPdiBf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementControlOrStatusPdiBf8 {
     #[doc = "No command/MI idle (clear error bits)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Read"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "Write"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiiManagementControlOrStatusPdiBf8 {
@@ -4260,9 +4260,9 @@ impl From<MiiManagementControlOrStatusPdiBf8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementEcatAccessStateBf0 {
     #[doc = "ECAT enables PDI takeover of MII management interface"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "ECAT claims exclusive access to MII management interface"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementEcatAccessStateBf0 {
     #[inline(always)]
@@ -4291,9 +4291,9 @@ impl From<MiiManagementEcatAccessStateBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementEcatAccessStatePdiBf0 {
     #[doc = "ECAT enables PDI takeover of MII management interface"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "ECAT claims exclusive access to MII management interface"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementEcatAccessStatePdiBf0 {
     #[inline(always)]
@@ -4322,9 +4322,9 @@ impl From<MiiManagementEcatAccessStatePdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementPdiAccessStateBf0 {
     #[doc = "ECAT has access to MII management"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI has access to MII management"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementPdiAccessStateBf0 {
     #[inline(always)]
@@ -4353,9 +4353,9 @@ impl From<MiiManagementPdiAccessStateBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementPdiAccessStateBf1 {
     #[doc = "Do not change Bit 0x0517\\[0\\]"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Reset Bit 0x0517\\[0\\] to 0"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementPdiAccessStateBf1 {
     #[inline(always)]
@@ -4384,9 +4384,9 @@ impl From<MiiManagementPdiAccessStateBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementPdiAccessStatePdiBf0 {
     #[doc = "ECAT has access to MII management"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI has access to MII management"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementPdiAccessStatePdiBf0 {
     #[inline(always)]
@@ -4415,9 +4415,9 @@ impl From<MiiManagementPdiAccessStatePdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MiiManagementPdiAccessStatePdiBf1 {
     #[doc = "Do not change Bit 0x0517\\[0\\]"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Reset Bit 0x0517\\[0\\] to 0"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl MiiManagementPdiAccessStatePdiBf1 {
     #[inline(always)]
@@ -4542,42 +4542,42 @@ impl From<PdiAlEventMaskPdiBf0> for u32 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdiControlBf0 {
     #[doc = "Interface deactivated (no PDI)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "4 Digital Input"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "4 Digital Output"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     #[doc = "2 Digital Input and 2 Digital Output"]
-    BF_VAL_3 = 0x03,
+    BfVal3 = 0x03,
     #[doc = "Digital I/O"]
-    BF_VAL_4 = 0x04,
+    BfVal4 = 0x04,
     #[doc = "SPI Slave"]
-    BF_VAL_5 = 0x05,
+    BfVal5 = 0x05,
     #[doc = "Oversampling I/O"]
-    BF_VAL_6 = 0x06,
+    BfVal6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "16 Bit asynchronous Microcontroller interface"]
-    BF_VAL_8 = 0x08,
+    BfVal8 = 0x08,
     #[doc = "8 Bit asynchronous Microcontroller interface"]
-    BF_VAL_9 = 0x09,
+    BfVal9 = 0x09,
     #[doc = "16 Bit synchronous Microcontroller interface"]
-    BF_VAL_10 = 0x0a,
+    BfVal10 = 0x0a,
     #[doc = "8 Bit synchronous Microcontroller interface"]
-    BF_VAL_11 = 0x0b,
+    BfVal11 = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
     #[doc = "32 Digital Input and 0 Digital Output"]
-    BF_VAL_12 = 0x10,
+    BfVal12 = 0x10,
     #[doc = "24 Digital Input and 8 Digital Output"]
-    BF_VAL_13 = 0x11,
+    BfVal13 = 0x11,
     #[doc = "16 Digital Input and 16 Digital Output"]
-    BF_VAL_14 = 0x12,
+    BfVal14 = 0x12,
     #[doc = "8 Digital Input and 24 Digital Output"]
-    BF_VAL_15 = 0x13,
+    BfVal15 = 0x13,
     #[doc = "0 Digital Input and 32 Digital Output"]
-    BF_VAL_16 = 0x14,
+    BfVal16 = 0x14,
     _RESERVED_15 = 0x15,
     _RESERVED_16 = 0x16,
     _RESERVED_17 = 0x17,
@@ -4686,7 +4686,7 @@ pub enum PdiControlBf0 {
     _RESERVED_7e = 0x7e,
     _RESERVED_7f = 0x7f,
     #[doc = "On-chip bus."]
-    BF_VAL_17 = 0x80,
+    BfVal17 = 0x80,
     _RESERVED_81 = 0x81,
     _RESERVED_82 = 0x82,
     _RESERVED_83 = 0x83,
@@ -4842,9 +4842,9 @@ impl From<PdiControlBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdiInformationBf0 {
     #[doc = "Disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl PdiInformationBf0 {
     #[inline(always)]
@@ -4873,9 +4873,9 @@ impl From<PdiInformationBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdiInformationBf1 {
     #[doc = "not loaded"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "loaded"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl PdiInformationBf1 {
     #[inline(always)]
@@ -4904,9 +4904,9 @@ impl From<PdiInformationBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdiInformationBf2 {
     #[doc = "PDI not active"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI active"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl PdiInformationBf2 {
     #[inline(always)]
@@ -4935,9 +4935,9 @@ impl From<PdiInformationBf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdiInformationBf3 {
     #[doc = "PDI configuration ok"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI configuration invalid"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl PdiInformationBf3 {
     #[inline(always)]
@@ -4966,25 +4966,25 @@ impl From<PdiInformationBf3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdiOnChipBusConfigurationBf0 {
     #[doc = "asynchronous"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "synchronous multiplication factor (N * 25 MHz)"]
-    BF_VAL_1_1 = 0x01,
+    BfVal11 = 0x01,
     #[doc = "synchronous multiplication factor (N * 25 MHz)"]
-    BF_VAL_1_2 = 0x02,
+    BfVal12 = 0x02,
     #[doc = "synchronous multiplication factor (N * 25 MHz)"]
-    BF_VAL_1_3 = 0x03,
+    BfVal13 = 0x03,
     #[doc = "synchronous multiplication factor (N * 25 MHz)"]
-    BF_VAL_1_4 = 0x04,
+    BfVal14 = 0x04,
     #[doc = "synchronous multiplication factor (N * 25 MHz)"]
-    BF_VAL_1_5 = 0x05,
+    BfVal15 = 0x05,
     #[doc = "synchronous multiplication factor (N * 25 MHz)"]
-    BF_VAL_1_6 = 0x06,
+    BfVal16 = 0x06,
     #[doc = "synchronous multiplication factor (N * 25 MHz)"]
-    BF_VAL_1_7 = 0x07,
+    BfVal17 = 0x07,
     #[doc = "synchronous multiplication factor (N * 25 MHz)"]
-    BF_VAL_1_8 = 0x08,
+    BfVal18 = 0x08,
     #[doc = "synchronous multiplication factor (N * 25 MHz)"]
-    BF_VAL_1_9 = 0x09,
+    BfVal19 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -5035,13 +5035,13 @@ impl From<PdiOnChipBusConfigurationBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdiOnChipBusConfigurationBf5 {
     #[doc = "Intel Avalon"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "AXI 010: Xilinx PLB v4.6"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Xilinx OPB"]
-    BF_VAL_2 = 0x04,
+    BfVal2 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
@@ -5073,11 +5073,11 @@ impl From<PdiOnChipBusConfigurationBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdiOnChipBusExtendedConfigurationBf0 {
     #[doc = "4 cycles"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "1 cycle (typical)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "2 cycles"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl PdiOnChipBusExtendedConfigurationBf0 {
@@ -5107,11 +5107,11 @@ impl From<PdiOnChipBusExtendedConfigurationBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdiOnChipBusExtendedConfigurationBf8 {
     #[doc = "AXI3"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "AXI4"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "AXI4 LITE"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     _RESERVED_3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
@@ -5145,9 +5145,9 @@ impl From<PdiOnChipBusExtendedConfigurationBf8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PhyAddressBf7 {
     #[doc = "Register 0x0510\\[7:3\\] shows PHY address of port 0 (this is also the PHY address offset, if the PHY addresses are consecutive)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Register 0x0510\\[7:3\\] shows PHY address of port 0x0512\\[4:0\\] (valid values 0-3)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl PhyAddressBf7 {
     #[inline(always)]
@@ -5176,9 +5176,9 @@ impl From<PhyAddressBf7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PhyPortStatusBf0 {
     #[doc = "No physical link"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Physical link detected"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl PhyPortStatusBf0 {
     #[inline(always)]
@@ -5207,9 +5207,9 @@ impl From<PhyPortStatusBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PhyPortStatusBf1 {
     #[doc = "No link"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Link detected"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl PhyPortStatusBf1 {
     #[inline(always)]
@@ -5238,9 +5238,9 @@ impl From<PhyPortStatusBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PhyPortStatusBf2 {
     #[doc = "No error"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Link error, link inhibited"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl PhyPortStatusBf2 {
     #[inline(always)]
@@ -5269,9 +5269,9 @@ impl From<PhyPortStatusBf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PhyPortStatusBf3 {
     #[doc = "No read error occurred"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "A read error has occurred"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl PhyPortStatusBf3 {
     #[inline(always)]
@@ -5300,9 +5300,9 @@ impl From<PhyPortStatusBf3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PhyPortStatusBf4 {
     #[doc = "No error detected"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Link partner error"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl PhyPortStatusBf4 {
     #[inline(always)]
@@ -5331,9 +5331,9 @@ impl From<PhyPortStatusBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PhyPortStatusBf5 {
     #[doc = "No update"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PHY configuration was updated"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl PhyPortStatusBf5 {
     #[inline(always)]
@@ -5362,9 +5362,9 @@ impl From<PhyPortStatusBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RegisterEepromPdiAccessStateBf0 {
     #[doc = "PDI releases EEPROM access"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI takes EEPROM access (PDI has EEPROM control)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl RegisterEepromPdiAccessStateBf0 {
     #[inline(always)]
@@ -5393,9 +5393,9 @@ impl From<RegisterEepromPdiAccessStateBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RegisterEepromPdiAccessStatePdiBf0 {
     #[doc = "PDI releases EEPROM access"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "PDI takes EEPROM access (PDI has EEPROM control)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl RegisterEepromPdiAccessStatePdiBf0 {
     #[inline(always)]
@@ -5424,9 +5424,9 @@ impl From<RegisterEepromPdiAccessStatePdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RegisterWriteProtectionBf0 {
     #[doc = "Protection disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Protection enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl RegisterWriteProtectionBf0 {
     #[inline(always)]
@@ -5455,9 +5455,9 @@ impl From<RegisterWriteProtectionBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RegisterWriteProtectionPdiBf0 {
     #[doc = "Protection disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Protection enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl RegisterWriteProtectionPdiBf0 {
     #[inline(always)]
@@ -5486,9 +5486,9 @@ impl From<RegisterWriteProtectionPdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RunLedOverrideBf4 {
     #[doc = "Override disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Override enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl RunLedOverrideBf4 {
     #[inline(always)]
@@ -5517,13 +5517,13 @@ impl From<RunLedOverrideBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncLatch1And0PdiConfigurationBf0 {
     #[doc = "Push-Pull active low"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Open Drain (active low)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "Push-Pull active high"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     #[doc = "Open Source (active high)"]
-    BF_VAL_3 = 0x03,
+    BfVal3 = 0x03,
 }
 impl SyncLatch1And0PdiConfigurationBf0 {
     #[inline(always)]
@@ -5552,9 +5552,9 @@ impl From<SyncLatch1And0PdiConfigurationBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncLatch1And0PdiConfigurationBf2 {
     #[doc = "LATCH0 Input"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "SYNC0 Output"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncLatch1And0PdiConfigurationBf2 {
     #[inline(always)]
@@ -5583,9 +5583,9 @@ impl From<SyncLatch1And0PdiConfigurationBf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncLatch1And0PdiConfigurationBf3 {
     #[doc = "Disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncLatch1And0PdiConfigurationBf3 {
     #[inline(always)]
@@ -5614,13 +5614,13 @@ impl From<SyncLatch1And0PdiConfigurationBf3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncLatch1And0PdiConfigurationBf4 {
     #[doc = "Push-Pull active low"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Open Drain (active low)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "Push-Pull active high"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     #[doc = "Open Source (active high)"]
-    BF_VAL_3 = 0x03,
+    BfVal3 = 0x03,
 }
 impl SyncLatch1And0PdiConfigurationBf4 {
     #[inline(always)]
@@ -5649,9 +5649,9 @@ impl From<SyncLatch1And0PdiConfigurationBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncLatch1And0PdiConfigurationBf6 {
     #[doc = "LATCH1 input"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "SYNC1 output"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncLatch1And0PdiConfigurationBf6 {
     #[inline(always)]
@@ -5680,9 +5680,9 @@ impl From<SyncLatch1And0PdiConfigurationBf6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncLatch1And0PdiConfigurationBf7 {
     #[doc = "Disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncLatch1And0PdiConfigurationBf7 {
     #[inline(always)]
@@ -5711,9 +5711,9 @@ impl From<SyncLatch1And0PdiConfigurationBf7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerActivateBf0 {
     #[doc = "Disable: Access to Memory without SyncManager control"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Enable: SyncManager is active and controls Memory area set in configuration"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncmanagerActivateBf0 {
     #[inline(always)]
@@ -5742,9 +5742,9 @@ impl From<SyncmanagerActivateBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerActivateBf6 {
     #[doc = "No"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Generate Latch event when EtherCAT master issues a buffer exchange"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncmanagerActivateBf6 {
     #[inline(always)]
@@ -5773,9 +5773,9 @@ impl From<SyncmanagerActivateBf6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerActivateBf7 {
     #[doc = "No"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Generate Latch events when PDI issues a buffer exchange or when PDI accesses buffer start address"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncmanagerActivateBf7 {
     #[inline(always)]
@@ -5804,9 +5804,9 @@ impl From<SyncmanagerActivateBf7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerActivatePdiBf0 {
     #[doc = "Disable: Access to Memory without SyncManager control"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Enable: SyncManager is active and controls Memory area set in configuration"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncmanagerActivatePdiBf0 {
     #[inline(always)]
@@ -5835,9 +5835,9 @@ impl From<SyncmanagerActivatePdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerActivatePdiBf6 {
     #[doc = "No"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Generate Latch event when EtherCAT master issues a buffer exchange"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncmanagerActivatePdiBf6 {
     #[inline(always)]
@@ -5866,9 +5866,9 @@ impl From<SyncmanagerActivatePdiBf6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerActivatePdiBf7 {
     #[doc = "No"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Generate Latch events when PDI issues a buffer exchange or when PDI accesses buffer start address"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncmanagerActivatePdiBf7 {
     #[inline(always)]
@@ -5897,10 +5897,10 @@ impl From<SyncmanagerActivatePdiBf7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerControlRegisterBf0 {
     #[doc = "Buffered (3 buffer mode)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Mailbox (Single buffer mode)"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl SyncmanagerControlRegisterBf0 {
@@ -5930,9 +5930,9 @@ impl From<SyncmanagerControlRegisterBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerControlRegisterBf2 {
     #[doc = "Read: ECAT read access, PDI write access."]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Write: ECAT write access, PDI read access."]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
 }
@@ -5963,9 +5963,9 @@ impl From<SyncmanagerControlRegisterBf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerControlRegisterBf4 {
     #[doc = "Disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncmanagerControlRegisterBf4 {
     #[inline(always)]
@@ -5994,9 +5994,9 @@ impl From<SyncmanagerControlRegisterBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerControlRegisterBf5 {
     #[doc = "Disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncmanagerControlRegisterBf5 {
     #[inline(always)]
@@ -6025,9 +6025,9 @@ impl From<SyncmanagerControlRegisterBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerControlRegisterBf6 {
     #[doc = "Disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncmanagerControlRegisterBf6 {
     #[inline(always)]
@@ -6056,10 +6056,10 @@ impl From<SyncmanagerControlRegisterBf6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerControlRegisterPdiBf0 {
     #[doc = "Buffered (3 buffer mode)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Mailbox (Single buffer mode)"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl SyncmanagerControlRegisterPdiBf0 {
@@ -6089,9 +6089,9 @@ impl From<SyncmanagerControlRegisterPdiBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerControlRegisterPdiBf2 {
     #[doc = "Read: ECAT read access, PDI write access."]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Write: ECAT write access, PDI read access."]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
 }
@@ -6122,9 +6122,9 @@ impl From<SyncmanagerControlRegisterPdiBf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerControlRegisterPdiBf4 {
     #[doc = "Disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncmanagerControlRegisterPdiBf4 {
     #[inline(always)]
@@ -6153,9 +6153,9 @@ impl From<SyncmanagerControlRegisterPdiBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerControlRegisterPdiBf5 {
     #[doc = "Disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncmanagerControlRegisterPdiBf5 {
     #[inline(always)]
@@ -6184,9 +6184,9 @@ impl From<SyncmanagerControlRegisterPdiBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerControlRegisterPdiBf6 {
     #[doc = "Disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Enabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncmanagerControlRegisterPdiBf6 {
     #[inline(always)]
@@ -6215,9 +6215,9 @@ impl From<SyncmanagerControlRegisterPdiBf6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerStatusBf0 {
     #[doc = "Interrupt cleared after first byte of buffer was read"]
-    BF_VAL_1 = 0x0,
+    BfVal1 = 0x0,
     #[doc = "Interrupt after buffer was completely and successfully written"]
-    BF_VAL_0 = 0x01,
+    BfVal0 = 0x01,
 }
 impl SyncmanagerStatusBf0 {
     #[inline(always)]
@@ -6246,9 +6246,9 @@ impl From<SyncmanagerStatusBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerStatusBf1 {
     #[doc = "Interrupt cleared after first byte of buffer was written"]
-    BF_VAL_1 = 0x0,
+    BfVal1 = 0x0,
     #[doc = "Interrupt after buffer was completely and successfully read"]
-    BF_VAL_0 = 0x01,
+    BfVal0 = 0x01,
 }
 impl SyncmanagerStatusBf1 {
     #[inline(always)]
@@ -6277,9 +6277,9 @@ impl From<SyncmanagerStatusBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerStatusBf3 {
     #[doc = "Mailbox empty"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Mailbox full"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl SyncmanagerStatusBf3 {
     #[inline(always)]
@@ -6308,13 +6308,13 @@ impl From<SyncmanagerStatusBf3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SyncmanagerStatusBf4 {
     #[doc = "1st buffer"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "2nd buffer"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
     #[doc = "3rd buffer"]
-    BF_VAL_2 = 0x02,
+    BfVal2 = 0x02,
     #[doc = "(no buffer written)"]
-    BF_VAL_3 = 0x03,
+    BfVal3 = 0x03,
 }
 impl SyncmanagerStatusBf4 {
     #[inline(always)]
@@ -6387,9 +6387,9 @@ impl From<UniPulseLengthOfSyncsignalsBf0> for u16 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UnitActivationRegisterBf0 {
     #[doc = "Deactivated"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Activated"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl UnitActivationRegisterBf0 {
     #[inline(always)]
@@ -6418,9 +6418,9 @@ impl From<UnitActivationRegisterBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UnitActivationRegisterBf1 {
     #[doc = "Deactivated"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "SYNC0 pulse is generated"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl UnitActivationRegisterBf1 {
     #[inline(always)]
@@ -6449,9 +6449,9 @@ impl From<UnitActivationRegisterBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UnitActivationRegisterBf2 {
     #[doc = "Deactivated"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "SYNC1 pulse is generated"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl UnitActivationRegisterBf2 {
     #[inline(always)]
@@ -6480,9 +6480,9 @@ impl From<UnitActivationRegisterBf2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UnitActivationRegisterBf3 {
     #[doc = "Disabled"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Auto-activation enabled. 0x0981\\[0\\] is set automatically after Start Time is written"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl UnitActivationRegisterBf3 {
     #[inline(always)]
@@ -6511,9 +6511,9 @@ impl From<UnitActivationRegisterBf3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UnitActivationRegisterBf4 {
     #[doc = "No extension"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Extend 32 bit written Start Time to 64 bit"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl UnitActivationRegisterBf4 {
     #[inline(always)]
@@ -6542,9 +6542,9 @@ impl From<UnitActivationRegisterBf4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UnitActivationRegisterBf5 {
     #[doc = "Disabled. SyncSignal generation if Start Time is reached."]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Immediate SyncSignal generation if Start Time is outside near future (see 0x0981\\[6\\])"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl UnitActivationRegisterBf5 {
     #[inline(always)]
@@ -6573,9 +6573,9 @@ impl From<UnitActivationRegisterBf5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UnitActivationRegisterBf6 {
     #[doc = "1/2 DC width future (2^31ns or 2^63ns)"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "~2.1 sec. future (2^31ns)"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl UnitActivationRegisterBf6 {
     #[inline(always)]
@@ -6604,9 +6604,9 @@ impl From<UnitActivationRegisterBf6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UnitActivationRegisterBf7 {
     #[doc = "Deactivated"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Immediately generate one ping only on SYNC0-1 according to 0x0981\\[2:1\\] for debugging."]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl UnitActivationRegisterBf7 {
     #[inline(always)]
@@ -6635,9 +6635,9 @@ impl From<UnitActivationRegisterBf7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UnitActivationStatusBf0 {
     #[doc = "First SYNC0 pulse is not pending"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "First SYNC0 pulse is pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl UnitActivationStatusBf0 {
     #[inline(always)]
@@ -6666,9 +6666,9 @@ impl From<UnitActivationStatusBf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UnitActivationStatusBf1 {
     #[doc = "First SYNC1 pulse is not pending"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "First SYNC1 pulse is pending"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl UnitActivationStatusBf1 {
     #[inline(always)]
@@ -6697,9 +6697,9 @@ impl From<UnitActivationStatusBf1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UnitActivationStatusBf2 {
     #[doc = "Start Time was within near future"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Start Time was out of near future (0x0981\\[6\\])"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl UnitActivationStatusBf2 {
     #[inline(always)]
@@ -6772,9 +6772,9 @@ impl From<UnitSync0CycleTimeBf0> for u32 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum WatchdogStatusProcessDataBf0 {
     #[doc = "Watchdog Process Data expired"]
-    BF_VAL_0 = 0x0,
+    BfVal0 = 0x0,
     #[doc = "Watchdog Process Data is active or disabled"]
-    BF_VAL_1 = 0x01,
+    BfVal1 = 0x01,
 }
 impl WatchdogStatusProcessDataBf0 {
     #[inline(always)]

@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum E0tgslrZeroLookahead {
     #[doc = "Use MIN_LOOKAHEAD value"]
-    USE = 0x0,
+    Use = 0x0,
     #[doc = "If a gate control list is configured or when time specific departure is enabled on any traffic class (PTCaTSDR\\[TSDE\\] set to 1, where a corresponds to the traffic class number), use MIN_LOOKAHEAD value, otherwise use value of zero"]
-    ZERO = 0x01,
+    Zero = 0x01,
 }
 impl E0tgslrZeroLookahead {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<E0tgslrZeroLookahead> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum E1tgslrZeroLookahead {
     #[doc = "Use MIN_LOOKAHEAD value"]
-    USE = 0x0,
+    Use = 0x0,
     #[doc = "If a gate control list is configured or when time specific departure is enabled on any traffic class (PTCaTSDR\\[TSDE\\] set to 1, where a corresponds to the traffic class number), use MIN_LOOKAHEAD value, otherwise use value of zero"]
-    ZERO = 0x01,
+    Zero = 0x01,
 }
 impl E1tgslrZeroLookahead {
     #[inline(always)]

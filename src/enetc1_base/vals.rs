@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum L3cd {
     #[doc = "Enabled"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disabled"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl L3cd {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<L3cd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum L4cd {
     #[doc = "Enabled"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disabled"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl L4cd {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<L4cd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Oai {
     #[doc = "Indicates that the Inner is not valid if only one tag is found"]
-    NOT_VALID = 0x0,
+    NotValid = 0x0,
     #[doc = "Indicates that the outer should be used as the Inner if only one tag is found"]
-    OUTER = 0x01,
+    Outer = 0x01,
 }
 impl Oai {
     #[inline(always)]
@@ -96,13 +96,13 @@ impl From<Oai> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PinvlanrTpid {
     #[doc = "Standard C-VLAN 0x8100"]
-    C_VLAN = 0x0,
+    CVlan = 0x0,
     #[doc = "Standard S-VLAN 0x88A8"]
-    S_VLAN = 0x01,
+    SVlan = 0x01,
     #[doc = "Custom VLAN as defined by CVLANR1\\[ETYPE\\]"]
-    CVLANR1_ETYPE = 0x02,
+    Cvlanr1Etype = 0x02,
     #[doc = "Custom VLAN as defined by CVLANR2\\[ETYPE\\]"]
-    CVLANR2_ETYPE = 0x03,
+    Cvlanr2Etype = 0x03,
 }
 impl PinvlanrTpid {
     #[inline(always)]
@@ -131,13 +131,13 @@ impl From<PinvlanrTpid> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PonvlanrTpid {
     #[doc = "Standard C-VLAN 0x8100"]
-    C_VLAN = 0x0,
+    CVlan = 0x0,
     #[doc = "Standard S-VLAN 0x88A8"]
-    S_VLAN = 0x01,
+    SVlan = 0x01,
     #[doc = "Custom VLAN as defined by CVLANR1\\[ETYPE\\]"]
-    CVLANR1_ETYPE = 0x02,
+    Cvlanr1Etype = 0x02,
     #[doc = "Custom VLAN as defined by CVLANR2\\[ETYPE\\]"]
-    CVLANR2_ETYPE = 0x03,
+    Cvlanr2Etype = 0x03,
 }
 impl PonvlanrTpid {
     #[inline(always)]
@@ -166,13 +166,13 @@ impl From<PonvlanrTpid> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Psi0vlanrTpid {
     #[doc = "Standard C-VLAN 0x8100"]
-    C_VLAN = 0x0,
+    CVlan = 0x0,
     #[doc = "Standard S-VLAN 0x88A8"]
-    S_VLAN = 0x01,
+    SVlan = 0x01,
     #[doc = "Custom VLAN as defined by CVLANR1\\[ETYPE\\]. Note that CVLANR1\\[V\\] is not checked for SI-based VLAN insertion; TPID value specified in CVLANR1\\[ETYPE\\] will be used to construct the VLAN header regardless of the value specified in CVLANR1\\[V\\]."]
-    CVLANR1_V = 0x02,
+    Cvlanr1V = 0x02,
     #[doc = "Custom VLAN as defined by CVLANR2\\[ETYPE\\]. Note that CVLANR2\\[V\\] is not checked for SI-based VLAN insertion; TPID value specified in CVLANR2\\[ETYPE\\] will be used to construct the VLAN header regardless of the value specified in CVLANR2\\[V\\]."]
-    CVLANR2_V = 0x03,
+    Cvlanr2V = 0x03,
 }
 impl Psi0vlanrTpid {
     #[inline(always)]
@@ -201,13 +201,13 @@ impl From<Psi0vlanrTpid> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Psi1vlanrTpid {
     #[doc = "Standard C-VLAN 0x8100"]
-    C_VLAN = 0x0,
+    CVlan = 0x0,
     #[doc = "Standard S-VLAN 0x88A8"]
-    S_VLAN = 0x01,
+    SVlan = 0x01,
     #[doc = "Custom VLAN as defined by CVLANR1\\[ETYPE\\]. Note that CVLANR1\\[V\\] is not checked for SI-based VLAN insertion; TPID value specified in CVLANR1\\[ETYPE\\] will be used to construct the VLAN header regardless of the value specified in CVLANR1\\[V\\]."]
-    CVLANR1_V = 0x02,
+    Cvlanr1V = 0x02,
     #[doc = "Custom VLAN as defined by CVLANR2\\[ETYPE\\]. Note that CVLANR2\\[V\\] is not checked for SI-based VLAN insertion; TPID value specified in CVLANR2\\[ETYPE\\] will be used to construct the VLAN header regardless of the value specified in CVLANR2\\[V\\]."]
-    CVLANR2_V = 0x03,
+    Cvlanr2V = 0x03,
 }
 impl Psi1vlanrTpid {
     #[inline(always)]
@@ -236,9 +236,9 @@ impl From<Psi1vlanrTpid> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Si0VlanUta {
     #[doc = "SI 0 does not qualify for reception of untagged frames"]
-    NOT_QUALIFIED = 0x0,
+    NotQualified = 0x0,
     #[doc = "SI 0 does qualify for reception of untagged frames"]
-    QUALIFY = 0x01,
+    Qualify = 0x01,
 }
 impl Si0VlanUta {
     #[inline(always)]
@@ -267,9 +267,9 @@ impl From<Si0VlanUta> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Si1VlanUta {
     #[doc = "SI 1 does not qualify for reception of untagged frames"]
-    NOT_QUALIFIED = 0x0,
+    NotQualified = 0x0,
     #[doc = "SI 1 does qualify for reception of untagged frames"]
-    QUALIFY = 0x01,
+    Qualify = 0x01,
 }
 impl Si1VlanUta {
     #[inline(always)]
@@ -298,9 +298,9 @@ impl From<Si1VlanUta> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Vs {
     #[doc = "Inner VLAN tag will be used for VLAN filtering"]
-    INNER_VLAN = 0x0,
+    InnerVlan = 0x0,
     #[doc = "Outer VLAN tag will be used for VLAN filtering"]
-    OUTER_VLAN = 0x01,
+    OuterVlan = 0x01,
 }
 impl Vs {
     #[inline(always)]

@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cm33LockupTrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl Cm33LockupTrigMode {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<Cm33LockupTrigMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cm33ResetTrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl Cm33ResetTrigMode {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<Cm33ResetTrigMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cm7LockupTrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl Cm7LockupTrigMode {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<Cm7LockupTrigMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cm7ResetTrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl Cm7ResetTrigMode {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<Cm7ResetTrigMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DcdcOvvtTrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl DcdcOvvtTrigMode {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<DcdcOvvtTrigMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EcatRstoTrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl EcatRstoTrigMode {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<EcatRstoTrigMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EdgelockTrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl EdgelockTrigMode {
     #[inline(always)]
@@ -220,21 +220,21 @@ impl From<EdgelockTrigMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IppBootMode {
     #[doc = "Boot from internal Fuses"]
-    BOOTOPT0 = 0x0,
+    Bootopt0 = 0x0,
     #[doc = "Serial Downloader: USB1 or LPUART1"]
-    BOOTOPT1 = 0x01,
+    Bootopt1 = 0x01,
     #[doc = "USDHC1 8-bit eMMC 5.1"]
-    BOOTOPT2 = 0x02,
+    Bootopt2 = 0x02,
     #[doc = "USDHC2 4-bit SD 3.0"]
-    BOOTOPT3 = 0x03,
+    Bootopt3 = 0x03,
     #[doc = "FlexSPI Serial NOR with SFDP (JESD-216) discoverable parameters"]
-    BOOTOPT4 = 0x04,
+    Bootopt4 = 0x04,
     #[doc = "FlexSPI Serial NAND 2k page"]
-    BOOTOPT5 = 0x05,
+    Bootopt5 = 0x05,
     #[doc = "FlexSPI Serial NAND 4k page"]
-    BOOTOPT6 = 0x06,
+    Bootopt6 = 0x06,
     #[doc = "Test mode/Infinite loop mode"]
-    BOOTOPT7 = 0x07,
+    Bootopt7 = 0x07,
     _RESERVED_8 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
@@ -319,9 +319,9 @@ impl From<IppBootMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum JtagswTrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl JtagswTrigMode {
     #[inline(always)]
@@ -350,9 +350,9 @@ impl From<JtagswTrigMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TempsenseTrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl TempsenseTrigMode {
     #[inline(always)]
@@ -381,9 +381,9 @@ impl From<TempsenseTrigMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wdog1TrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl Wdog1TrigMode {
     #[inline(always)]
@@ -412,9 +412,9 @@ impl From<Wdog1TrigMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wdog2TrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl Wdog2TrigMode {
     #[inline(always)]
@@ -443,9 +443,9 @@ impl From<Wdog2TrigMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wdog3TrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl Wdog3TrigMode {
     #[inline(always)]
@@ -474,9 +474,9 @@ impl From<Wdog3TrigMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wdog4TrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl Wdog4TrigMode {
     #[inline(always)]
@@ -505,9 +505,9 @@ impl From<Wdog4TrigMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wdog5TrigMode {
     #[doc = "Level-sensitive: System stays in reset until the reset source deasserts."]
-    LEVEL = 0x0,
+    Level = 0x0,
     #[doc = "Edge-sensitive: System resets once, even if the reset source remains asserted."]
-    EDGE = 0x01,
+    Edge = 0x01,
 }
 impl Wdog5TrigMode {
     #[inline(always)]

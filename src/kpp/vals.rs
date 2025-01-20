@@ -99,9 +99,9 @@ impl From<Kco> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Kdie {
     #[doc = "No interrupt request is generated when KPKD is set."]
-    KDIE_0 = 0x0,
+    Kdie0 = 0x0,
     #[doc = "An interrupt request is generated when KPKD is set."]
-    KDIE_1 = 0x01,
+    Kdie1 = 0x01,
 }
 impl Kdie {
     #[inline(always)]
@@ -130,9 +130,9 @@ impl From<Kdie> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Kdsc {
     #[doc = "No effect"]
-    KDSC_0 = 0x0,
+    Kdsc0 = 0x0,
     #[doc = "Set bits that clear the keypad depress synchronizer chain"]
-    KDSC_1 = 0x01,
+    Kdsc1 = 0x01,
 }
 impl Kdsc {
     #[inline(always)]
@@ -161,9 +161,9 @@ impl From<Kdsc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Kpkd {
     #[doc = "No key presses detected"]
-    KPKD_0 = 0x0,
+    Kpkd0 = 0x0,
     #[doc = "A key has been depressed"]
-    KPKD_1 = 0x01,
+    Kpkd1 = 0x01,
 }
 impl Kpkd {
     #[inline(always)]
@@ -192,9 +192,9 @@ impl From<Kpkd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Kpkr {
     #[doc = "No key release detected"]
-    KPKR_0 = 0x0,
+    Kpkr0 = 0x0,
     #[doc = "All keys have been released"]
-    KPKR_1 = 0x01,
+    Kpkr1 = 0x01,
 }
 impl Kpkr {
     #[inline(always)]
@@ -319,9 +319,9 @@ impl From<Kre> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Krie {
     #[doc = "No interrupt request is generated when KPKR is set."]
-    KRIE_0 = 0x0,
+    Krie0 = 0x0,
     #[doc = "An interrupt request is generated when KPKR is set."]
-    KRIE_1 = 0x01,
+    Krie1 = 0x01,
 }
 impl Krie {
     #[inline(always)]
@@ -350,9 +350,9 @@ impl From<Krie> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Krss {
     #[doc = "No effect"]
-    KRSS_0 = 0x0,
+    Krss0 = 0x0,
     #[doc = "Set bits which sets keypad release synchronizer chain"]
-    KRSS_1 = 0x01,
+    Krss1 = 0x01,
 }
 impl Krss {
     #[inline(always)]

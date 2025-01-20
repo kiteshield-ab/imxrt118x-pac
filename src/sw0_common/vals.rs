@@ -4,7 +4,7 @@
 pub enum AccessMeth {
     _RESERVED_0 = 0x0,
     #[doc = "Index"]
-    INDEX = 0x01,
+    Index = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     _RESERVED_4 = 0x04,
@@ -47,11 +47,11 @@ impl From<AccessMeth> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MaxGclLen {
     #[doc = "64"]
-    LEN_64 = 0x0,
+    Len64 = 0x0,
     #[doc = "128"]
-    LEN_128 = 0x01,
+    Len128 = 0x01,
     #[doc = "256"]
-    LEN_256 = 0x02,
+    Len256 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MaxGclLen {
@@ -81,9 +81,9 @@ impl From<MaxGclLen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rd {
     #[doc = "Enabled"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disabled"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl Rd {
     #[inline(always)]

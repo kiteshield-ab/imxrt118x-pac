@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AddrErr0 {
     #[doc = "OCRAM access error does not happen on OCRAM bank0."]
-    ADDR_ERR0_0 = 0x0,
+    AddrErr00 = 0x0,
     #[doc = "OCRAM access error happens on OCRAM bank0."]
-    ADDR_ERR0_1 = 0x01,
+    AddrErr01 = 0x01,
 }
 impl AddrErr0 {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<AddrErr0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AddrErr0SigEn {
     #[doc = "Disabled"]
-    ADDR_ERR0_SIG_EN_0 = 0x0,
+    AddrErr0SigEn0 = 0x0,
     #[doc = "Enabled"]
-    ADDR_ERR0_SIG_EN_1 = 0x01,
+    AddrErr0SigEn1 = 0x01,
 }
 impl AddrErr0SigEn {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<AddrErr0SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AddrErr0StatEn {
     #[doc = "Disabled"]
-    ADDR_ERR0_STAT_EN_0 = 0x0,
+    AddrErr0StatEn0 = 0x0,
     #[doc = "Enabled"]
-    ADDR_ERR0_STAT_EN_1 = 0x01,
+    AddrErr0StatEn1 = 0x01,
 }
 impl AddrErr0StatEn {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<AddrErr0StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AddrErr1 {
     #[doc = "OCRAM access error does not happen on OCRAM bank1."]
-    ADDR_ERR1_0 = 0x0,
+    AddrErr10 = 0x0,
     #[doc = "OCRAM access error happens on OCRAM bank1."]
-    ADDR_ERR1_1 = 0x01,
+    AddrErr11 = 0x01,
 }
 impl AddrErr1 {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<AddrErr1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AddrErr1SigEn {
     #[doc = "Disabled"]
-    ADDR_ERR1_SIG_EN_0 = 0x0,
+    AddrErr1SigEn0 = 0x0,
     #[doc = "Enabled"]
-    ADDR_ERR1_SIG_EN_1 = 0x01,
+    AddrErr1SigEn1 = 0x01,
 }
 impl AddrErr1SigEn {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<AddrErr1SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AddrErr1StatEn {
     #[doc = "Disabled"]
-    ADDR_ERR1_STAT_EN_0 = 0x0,
+    AddrErr1StatEn0 = 0x0,
     #[doc = "Enabled"]
-    ADDR_ERR1_STAT_EN_1 = 0x01,
+    AddrErr1StatEn1 = 0x01,
 }
 impl AddrErr1StatEn {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<AddrErr1StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AddrErr2 {
     #[doc = "OCRAM access error does not happen on OCRAM bank2."]
-    ADDR_ERR2_0 = 0x0,
+    AddrErr20 = 0x0,
     #[doc = "OCRAM access error happens on OCRAM bank2."]
-    ADDR_ERR2_1 = 0x01,
+    AddrErr21 = 0x01,
 }
 impl AddrErr2 {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<AddrErr2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AddrErr2SigEn {
     #[doc = "Disabled"]
-    ADDR_ERR2_SIG_EN_0 = 0x0,
+    AddrErr2SigEn0 = 0x0,
     #[doc = "Enabled"]
-    ADDR_ERR2_SIG_EN_1 = 0x01,
+    AddrErr2SigEn1 = 0x01,
 }
 impl AddrErr2SigEn {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<AddrErr2SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AddrErr2StatEn {
     #[doc = "Disabled"]
-    ADDR_ERR2_STAT_EN_0 = 0x0,
+    AddrErr2StatEn0 = 0x0,
     #[doc = "Enabled"]
-    ADDR_ERR2_STAT_EN_1 = 0x01,
+    AddrErr2StatEn1 = 0x01,
 }
 impl AddrErr2StatEn {
     #[inline(always)]
@@ -282,9 +282,9 @@ impl From<AddrErr2StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AddrErr3 {
     #[doc = "OCRAM access error does not happen on OCRAM bank3."]
-    ADDR_ERR3_0 = 0x0,
+    AddrErr30 = 0x0,
     #[doc = "OCRAM access error happens on OCRAM bank3."]
-    ADDR_ERR3_1 = 0x01,
+    AddrErr31 = 0x01,
 }
 impl AddrErr3 {
     #[inline(always)]
@@ -313,9 +313,9 @@ impl From<AddrErr3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AddrErr3SigEn {
     #[doc = "Disabled"]
-    ADDR_ERR3_SIG_EN_0 = 0x0,
+    AddrErr3SigEn0 = 0x0,
     #[doc = "Enabled"]
-    ADDR_ERR3_SIG_EN_1 = 0x01,
+    AddrErr3SigEn1 = 0x01,
 }
 impl AddrErr3SigEn {
     #[inline(always)]
@@ -344,9 +344,9 @@ impl From<AddrErr3SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AddrErr3StatEn {
     #[doc = "Disabled"]
-    ADDR_ERR3_STAT_EN_0 = 0x0,
+    AddrErr3StatEn0 = 0x0,
     #[doc = "Enabled"]
-    ADDR_ERR3_STAT_EN_1 = 0x01,
+    AddrErr3StatEn1 = 0x01,
 }
 impl AddrErr3StatEn {
     #[inline(always)]
@@ -375,9 +375,9 @@ impl From<AddrErr3StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EccEn {
     #[doc = "Disable."]
-    ECC_EN_0 = 0x0,
+    EccEn0 = 0x0,
     #[doc = "Enable."]
-    ECC_EN_1 = 0x01,
+    EccEn1 = 0x01,
 }
 impl EccEn {
     #[inline(always)]
@@ -406,9 +406,9 @@ impl From<EccEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MultiErr0 {
     #[doc = "Multiple bits error does not happen on OCRAM bank0."]
-    MULTI_ERR0_0 = 0x0,
+    MultiErr00 = 0x0,
     #[doc = "Multiple bits error happens on OCRAM bank0."]
-    MULTI_ERR0_1 = 0x01,
+    MultiErr01 = 0x01,
 }
 impl MultiErr0 {
     #[inline(always)]
@@ -437,9 +437,9 @@ impl From<MultiErr0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MultiErr0SigEn {
     #[doc = "Disabled"]
-    MULTI_ERR0_SIG_EN_0 = 0x0,
+    MultiErr0SigEn0 = 0x0,
     #[doc = "Enabled"]
-    MULTI_ERR0_SIG_EN_1 = 0x01,
+    MultiErr0SigEn1 = 0x01,
 }
 impl MultiErr0SigEn {
     #[inline(always)]
@@ -468,9 +468,9 @@ impl From<MultiErr0SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MultiErr0StatEn {
     #[doc = "Disabled"]
-    MULTI_ERR0_STAT_EN_0 = 0x0,
+    MultiErr0StatEn0 = 0x0,
     #[doc = "Enabled"]
-    MULTI_ERR0_STAT_EN_1 = 0x01,
+    MultiErr0StatEn1 = 0x01,
 }
 impl MultiErr0StatEn {
     #[inline(always)]
@@ -499,9 +499,9 @@ impl From<MultiErr0StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MultiErr1 {
     #[doc = "Multiple bits error does not happen on OCRAM bank1."]
-    MULTI_ERR1_0 = 0x0,
+    MultiErr10 = 0x0,
     #[doc = "Multiple bits error happens on OCRAM bank1."]
-    MULTI_ERR1_1 = 0x01,
+    MultiErr11 = 0x01,
 }
 impl MultiErr1 {
     #[inline(always)]
@@ -530,9 +530,9 @@ impl From<MultiErr1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MultiErr1SigEn {
     #[doc = "Disabled"]
-    MULTI_ERR1_SIG_EN_0 = 0x0,
+    MultiErr1SigEn0 = 0x0,
     #[doc = "Enabled"]
-    MULTI_ERR1_SIG_EN_1 = 0x01,
+    MultiErr1SigEn1 = 0x01,
 }
 impl MultiErr1SigEn {
     #[inline(always)]
@@ -561,9 +561,9 @@ impl From<MultiErr1SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MultiErr1StatEn {
     #[doc = "Disabled"]
-    MULTI_ERR1_STAT_EN_0 = 0x0,
+    MultiErr1StatEn0 = 0x0,
     #[doc = "Enabled"]
-    MULTI_ERR1_STAT_EN_1 = 0x01,
+    MultiErr1StatEn1 = 0x01,
 }
 impl MultiErr1StatEn {
     #[inline(always)]
@@ -592,9 +592,9 @@ impl From<MultiErr1StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MultiErr2 {
     #[doc = "Multiple bits error does not happen on OCRAM bank2."]
-    MULTI_ERR2_0 = 0x0,
+    MultiErr20 = 0x0,
     #[doc = "Multiple bits error happens on OCRAM bank2."]
-    MULTI_ERR2_1 = 0x01,
+    MultiErr21 = 0x01,
 }
 impl MultiErr2 {
     #[inline(always)]
@@ -623,9 +623,9 @@ impl From<MultiErr2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MultiErr2SigEn {
     #[doc = "Disabled"]
-    MULTI_ERR2_SIG_EN_0 = 0x0,
+    MultiErr2SigEn0 = 0x0,
     #[doc = "Enabled"]
-    MULTI_ERR2_SIG_EN_1 = 0x01,
+    MultiErr2SigEn1 = 0x01,
 }
 impl MultiErr2SigEn {
     #[inline(always)]
@@ -654,9 +654,9 @@ impl From<MultiErr2SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MultiErr2StatEn {
     #[doc = "Disabled"]
-    MULTI_ERR2_STAT_EN_0 = 0x0,
+    MultiErr2StatEn0 = 0x0,
     #[doc = "Enabled"]
-    MULTI_ERR2_STAT_EN_1 = 0x01,
+    MultiErr2StatEn1 = 0x01,
 }
 impl MultiErr2StatEn {
     #[inline(always)]
@@ -685,9 +685,9 @@ impl From<MultiErr2StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MultiErr3 {
     #[doc = "Multiple bits error does not happen on OCRAM bank3."]
-    MULTI_ERR3_0 = 0x0,
+    MultiErr30 = 0x0,
     #[doc = "Multiple bits error happens on OCRAM bank3."]
-    MULTI_ERR3_1 = 0x01,
+    MultiErr31 = 0x01,
 }
 impl MultiErr3 {
     #[inline(always)]
@@ -716,9 +716,9 @@ impl From<MultiErr3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MultiErr3SigEn {
     #[doc = "Disabled"]
-    MULTI_ERR3_SIG_EN_0 = 0x0,
+    MultiErr3SigEn0 = 0x0,
     #[doc = "Enabled"]
-    MULTI_ERR3_SIG_EN_1 = 0x01,
+    MultiErr3SigEn1 = 0x01,
 }
 impl MultiErr3SigEn {
     #[inline(always)]
@@ -747,9 +747,9 @@ impl From<MultiErr3SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MultiErr3StatEn {
     #[doc = "Disabled"]
-    MULTI_ERR3_STAT_EN_0 = 0x0,
+    MultiErr3StatEn0 = 0x0,
     #[doc = "Enabled"]
-    MULTI_ERR3_STAT_EN_1 = 0x01,
+    MultiErr3StatEn1 = 0x01,
 }
 impl MultiErr3StatEn {
     #[inline(always)]
@@ -778,9 +778,9 @@ impl From<MultiErr3StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ReadAddrPipeEn {
     #[doc = "Disable."]
-    READ_ADDR_PIPE_EN_0 = 0x0,
+    ReadAddrPipeEn0 = 0x0,
     #[doc = "Enable."]
-    READ_ADDR_PIPE_EN_1 = 0x01,
+    ReadAddrPipeEn1 = 0x01,
 }
 impl ReadAddrPipeEn {
     #[inline(always)]
@@ -809,9 +809,9 @@ impl From<ReadAddrPipeEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ReadAddrPipePending {
     #[doc = "No update pending status for READ_ADDR_PIPE_EN."]
-    READ_ADDR_PIPE_PENDING_0 = 0x0,
+    ReadAddrPipePending0 = 0x0,
     #[doc = "When READ_ADDR_PIPE_EN register bit is changed, this register bit will be set until the new setup becomes valid in the controller."]
-    READ_ADDR_PIPE_PENDING_1 = 0x01,
+    ReadAddrPipePending1 = 0x01,
 }
 impl ReadAddrPipePending {
     #[inline(always)]
@@ -840,9 +840,9 @@ impl From<ReadAddrPipePending> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ReadDataWaitEn {
     #[doc = "Disable."]
-    READ_DATA_WAIT_EN_0 = 0x0,
+    ReadDataWaitEn0 = 0x0,
     #[doc = "Enable."]
-    READ_DATA_WAIT_EN_1 = 0x01,
+    ReadDataWaitEn1 = 0x01,
 }
 impl ReadDataWaitEn {
     #[inline(always)]
@@ -871,9 +871,9 @@ impl From<ReadDataWaitEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ReadDataWaitPending {
     #[doc = "No update pending status for READ_DATA_WAIT_EN."]
-    READ_DATA_WAIT_PENDING_0 = 0x0,
+    ReadDataWaitPending0 = 0x0,
     #[doc = "When READ_DATA_WAIT_EN register bit is changed, this register bit will be set until the new setup becomes valid in the controller."]
-    READ_DATA_WAIT_PENDING_1 = 0x01,
+    ReadDataWaitPending1 = 0x01,
 }
 impl ReadDataWaitPending {
     #[inline(always)]
@@ -902,9 +902,9 @@ impl From<ReadDataWaitPending> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SingleErr0 {
     #[doc = "Single bit error does not happen on OCRAM bank0."]
-    SINGLE_ERR0_0 = 0x0,
+    SingleErr00 = 0x0,
     #[doc = "Single bit error happens on OCRAM bank0."]
-    SINGLE_ERR0_1 = 0x01,
+    SingleErr01 = 0x01,
 }
 impl SingleErr0 {
     #[inline(always)]
@@ -933,9 +933,9 @@ impl From<SingleErr0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SingleErr0SigEn {
     #[doc = "Disabled"]
-    SINGLE_ERR0_SIG_EN_0 = 0x0,
+    SingleErr0SigEn0 = 0x0,
     #[doc = "Enabled"]
-    SINGLE_ERR0_SIG_EN_1 = 0x01,
+    SingleErr0SigEn1 = 0x01,
 }
 impl SingleErr0SigEn {
     #[inline(always)]
@@ -964,9 +964,9 @@ impl From<SingleErr0SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SingleErr0StatEn {
     #[doc = "Disabled"]
-    SINGLE_ERR0_STAT_EN_0 = 0x0,
+    SingleErr0StatEn0 = 0x0,
     #[doc = "Enabled"]
-    SINGLE_ERR0_STAT_EN_1 = 0x01,
+    SingleErr0StatEn1 = 0x01,
 }
 impl SingleErr0StatEn {
     #[inline(always)]
@@ -995,9 +995,9 @@ impl From<SingleErr0StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SingleErr1 {
     #[doc = "Single bit error does not happen on OCRAM bank1."]
-    SINGLE_ERR1_0 = 0x0,
+    SingleErr10 = 0x0,
     #[doc = "Single bit error happens on OCRAM bank1."]
-    SINGLE_ERR1_1 = 0x01,
+    SingleErr11 = 0x01,
 }
 impl SingleErr1 {
     #[inline(always)]
@@ -1026,9 +1026,9 @@ impl From<SingleErr1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SingleErr1SigEn {
     #[doc = "Disabled"]
-    SINGLE_ERR1_SIG_EN_0 = 0x0,
+    SingleErr1SigEn0 = 0x0,
     #[doc = "Enabled"]
-    SINGLE_ERR1_SIG_EN_1 = 0x01,
+    SingleErr1SigEn1 = 0x01,
 }
 impl SingleErr1SigEn {
     #[inline(always)]
@@ -1057,9 +1057,9 @@ impl From<SingleErr1SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SingleErr1StatEn {
     #[doc = "Disabled"]
-    SINGLE_ERR1_STAT_EN_0 = 0x0,
+    SingleErr1StatEn0 = 0x0,
     #[doc = "Enabled"]
-    SINGLE_ERR1_STAT_EN_1 = 0x01,
+    SingleErr1StatEn1 = 0x01,
 }
 impl SingleErr1StatEn {
     #[inline(always)]
@@ -1088,9 +1088,9 @@ impl From<SingleErr1StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SingleErr2 {
     #[doc = "Single bit error does not happen on OCRAM bank2."]
-    SINGLE_ERR2_0 = 0x0,
+    SingleErr20 = 0x0,
     #[doc = "Single bit error happens on OCRAM bank2."]
-    SINGLE_ERR2_1 = 0x01,
+    SingleErr21 = 0x01,
 }
 impl SingleErr2 {
     #[inline(always)]
@@ -1119,9 +1119,9 @@ impl From<SingleErr2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SingleErr2SigEn {
     #[doc = "Disabled"]
-    SINGLE_ERR2_SIG_EN_0 = 0x0,
+    SingleErr2SigEn0 = 0x0,
     #[doc = "Enabled"]
-    SINGLE_ERR2_SIG_EN_1 = 0x01,
+    SingleErr2SigEn1 = 0x01,
 }
 impl SingleErr2SigEn {
     #[inline(always)]
@@ -1150,9 +1150,9 @@ impl From<SingleErr2SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SingleErr2StatEn {
     #[doc = "Disabled"]
-    SINGLE_ERR2_STAT_EN_0 = 0x0,
+    SingleErr2StatEn0 = 0x0,
     #[doc = "Enabled"]
-    SINGLE_ERR2_STAT_EN_1 = 0x01,
+    SingleErr2StatEn1 = 0x01,
 }
 impl SingleErr2StatEn {
     #[inline(always)]
@@ -1181,9 +1181,9 @@ impl From<SingleErr2StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SingleErr3 {
     #[doc = "Single bit error does not happen on OCRAM bank3."]
-    SINGLE_ERR3_0 = 0x0,
+    SingleErr30 = 0x0,
     #[doc = "Single bit error happens on OCRAM bank3."]
-    SINGLE_ERR3_1 = 0x01,
+    SingleErr31 = 0x01,
 }
 impl SingleErr3 {
     #[inline(always)]
@@ -1212,9 +1212,9 @@ impl From<SingleErr3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SingleErr3SigEn {
     #[doc = "Disabled"]
-    SINGLE_ERR3_SIG_EN_0 = 0x0,
+    SingleErr3SigEn0 = 0x0,
     #[doc = "Enabled"]
-    SINGLE_ERR3_SIG_EN_1 = 0x01,
+    SingleErr3SigEn1 = 0x01,
 }
 impl SingleErr3SigEn {
     #[inline(always)]
@@ -1243,9 +1243,9 @@ impl From<SingleErr3SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SingleErr3StatEn {
     #[doc = "Disabled"]
-    SINGLE_ERR3_STAT_EN_0 = 0x0,
+    SingleErr3StatEn0 = 0x0,
     #[doc = "Enabled"]
-    SINGLE_ERR3_STAT_EN_1 = 0x01,
+    SingleErr3StatEn1 = 0x01,
 }
 impl SingleErr3StatEn {
     #[inline(always)]
@@ -1274,9 +1274,9 @@ impl From<SingleErr3StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum StrbErr0 {
     #[doc = "AXI strobe error does not happen on OCRAM bank0."]
-    STRB_ERR0_0 = 0x0,
+    StrbErr00 = 0x0,
     #[doc = "AXI strobe error happens on OCRAM bank0."]
-    STRB_ERR0_1 = 0x01,
+    StrbErr01 = 0x01,
 }
 impl StrbErr0 {
     #[inline(always)]
@@ -1305,9 +1305,9 @@ impl From<StrbErr0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum StrbErr0SigEn {
     #[doc = "Disabled"]
-    STRB_ERR0_SIG_EN_0 = 0x0,
+    StrbErr0SigEn0 = 0x0,
     #[doc = "Enabled"]
-    STRB_ERR0_SIG_EN_1 = 0x01,
+    StrbErr0SigEn1 = 0x01,
 }
 impl StrbErr0SigEn {
     #[inline(always)]
@@ -1336,9 +1336,9 @@ impl From<StrbErr0SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum StrbErr0StatEn {
     #[doc = "Disabled"]
-    STRB_ERR0_STAT_EN_0 = 0x0,
+    StrbErr0StatEn0 = 0x0,
     #[doc = "Enabled"]
-    STRB_ERR0_STAT_EN_1 = 0x01,
+    StrbErr0StatEn1 = 0x01,
 }
 impl StrbErr0StatEn {
     #[inline(always)]
@@ -1367,9 +1367,9 @@ impl From<StrbErr0StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum StrbErr1 {
     #[doc = "AXI strobe error does not happen on OCRAM bank1."]
-    STRB_ERR1_0 = 0x0,
+    StrbErr10 = 0x0,
     #[doc = "AXI strobe error happens on OCRAM bank1."]
-    STRB_ERR1_1 = 0x01,
+    StrbErr11 = 0x01,
 }
 impl StrbErr1 {
     #[inline(always)]
@@ -1398,9 +1398,9 @@ impl From<StrbErr1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum StrbErr1SigEn {
     #[doc = "Disabled"]
-    STRB_ERR1_SIG_EN_0 = 0x0,
+    StrbErr1SigEn0 = 0x0,
     #[doc = "Enabled"]
-    STRB_ERR1_SIG_EN_1 = 0x01,
+    StrbErr1SigEn1 = 0x01,
 }
 impl StrbErr1SigEn {
     #[inline(always)]
@@ -1429,9 +1429,9 @@ impl From<StrbErr1SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum StrbErr1StatEn {
     #[doc = "Disabled"]
-    STRB_ERR1_STAT_EN_0 = 0x0,
+    StrbErr1StatEn0 = 0x0,
     #[doc = "Enabled"]
-    STRB_ERR1_STAT_EN_1 = 0x01,
+    StrbErr1StatEn1 = 0x01,
 }
 impl StrbErr1StatEn {
     #[inline(always)]
@@ -1460,9 +1460,9 @@ impl From<StrbErr1StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum StrbErr2 {
     #[doc = "AXI strobe error does not happen on OCRAM bank2."]
-    STRB_ERR2_0 = 0x0,
+    StrbErr20 = 0x0,
     #[doc = "AXI strobe error happens on OCRAM bank2."]
-    STRB_ERR2_1 = 0x01,
+    StrbErr21 = 0x01,
 }
 impl StrbErr2 {
     #[inline(always)]
@@ -1491,9 +1491,9 @@ impl From<StrbErr2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum StrbErr2SigEn {
     #[doc = "Disabled"]
-    STRB_ERR2_SIG_EN_0 = 0x0,
+    StrbErr2SigEn0 = 0x0,
     #[doc = "Enabled"]
-    STRB_ERR2_SIG_EN_1 = 0x01,
+    StrbErr2SigEn1 = 0x01,
 }
 impl StrbErr2SigEn {
     #[inline(always)]
@@ -1522,9 +1522,9 @@ impl From<StrbErr2SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum StrbErr2StatEn {
     #[doc = "Disabled"]
-    STRB_ERR2_STAT_EN_0 = 0x0,
+    StrbErr2StatEn0 = 0x0,
     #[doc = "Enabled"]
-    STRB_ERR2_STAT_EN_1 = 0x01,
+    StrbErr2StatEn1 = 0x01,
 }
 impl StrbErr2StatEn {
     #[inline(always)]
@@ -1553,9 +1553,9 @@ impl From<StrbErr2StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum StrbErr3 {
     #[doc = "AXI strobe error does not happen on OCRAM bank3."]
-    STRB_ERR3_0 = 0x0,
+    StrbErr30 = 0x0,
     #[doc = "AXI strobe error happens on OCRAM bank3."]
-    STRB_ERR3_1 = 0x01,
+    StrbErr31 = 0x01,
 }
 impl StrbErr3 {
     #[inline(always)]
@@ -1584,9 +1584,9 @@ impl From<StrbErr3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum StrbErr3SigEn {
     #[doc = "Disabled"]
-    STRB_ERR3_SIG_EN_0 = 0x0,
+    StrbErr3SigEn0 = 0x0,
     #[doc = "Enabled"]
-    STRB_ERR3_SIG_EN_1 = 0x01,
+    StrbErr3SigEn1 = 0x01,
 }
 impl StrbErr3SigEn {
     #[inline(always)]
@@ -1615,9 +1615,9 @@ impl From<StrbErr3SigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum StrbErr3StatEn {
     #[doc = "Disabled"]
-    STRB_ERR3_STAT_EN_0 = 0x0,
+    StrbErr3StatEn0 = 0x0,
     #[doc = "Enabled"]
-    STRB_ERR3_STAT_EN_1 = 0x01,
+    StrbErr3StatEn1 = 0x01,
 }
 impl StrbErr3StatEn {
     #[inline(always)]
@@ -1646,9 +1646,9 @@ impl From<StrbErr3StatEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum WriteAddrPipeEn {
     #[doc = "Disable."]
-    WRITE_ADDR_PIPE_EN_0 = 0x0,
+    WriteAddrPipeEn0 = 0x0,
     #[doc = "Enable."]
-    WRITE_ADDR_PIPE_EN_1 = 0x01,
+    WriteAddrPipeEn1 = 0x01,
 }
 impl WriteAddrPipeEn {
     #[inline(always)]
@@ -1677,9 +1677,9 @@ impl From<WriteAddrPipeEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum WriteAddrPipePending {
     #[doc = "No update pending status for WRITE_ADDR_PIPE_EN."]
-    WRITE_ADDR_PIPE_PENDING_0 = 0x0,
+    WriteAddrPipePending0 = 0x0,
     #[doc = "When WRITE_ADDR_PIPE_EN register bit is changed, this register bit will be set until the new setup becomes valid in the controller."]
-    WRITE_ADDR_PIPE_PENDING_1 = 0x01,
+    WriteAddrPipePending1 = 0x01,
 }
 impl WriteAddrPipePending {
     #[inline(always)]
@@ -1708,9 +1708,9 @@ impl From<WriteAddrPipePending> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum WriteDataPipeEn {
     #[doc = "Disable."]
-    WRITE_DATA_PIPE_EN_0 = 0x0,
+    WriteDataPipeEn0 = 0x0,
     #[doc = "Enable."]
-    WRITE_DATA_PIPE_EN_1 = 0x01,
+    WriteDataPipeEn1 = 0x01,
 }
 impl WriteDataPipeEn {
     #[inline(always)]
@@ -1739,9 +1739,9 @@ impl From<WriteDataPipeEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum WriteDataPipePending {
     #[doc = "No update pending status for WRITE_DATA_PIPE_EN."]
-    WRITE_DATA_PIPE_PENDING_0 = 0x0,
+    WriteDataPipePending0 = 0x0,
     #[doc = "When WRITE_DATA_PIPE_EN register bit is changed, this register bit will be set until the new setup becomes valid in the controller."]
-    WRITE_DATA_PIPE_PENDING_1 = 0x01,
+    WriteDataPipePending1 = 0x01,
 }
 impl WriteDataPipePending {
     #[inline(always)]

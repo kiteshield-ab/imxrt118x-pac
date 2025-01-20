@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmp0irq {
     #[doc = "No match has occurred (the position counter does not match the COMP0 value)"]
-    CMP0IRQ0 = 0x0,
+    Cmp0irq0 = 0x0,
     #[doc = "COMP match has occurred (the position counter matches the COMP0 value)"]
-    CMP0IRQ1 = 0x01,
+    Cmp0irq1 = 0x01,
 }
 impl Cmp0irq {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<Cmp0irq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmp1f {
     #[doc = "When the position counter is less than value of COMP1 register"]
-    CMP1F0 = 0x0,
+    Cmp1f0 = 0x0,
     #[doc = "When the position counter is greater or equal than value of COMP1 register"]
-    CMP1F1 = 0x01,
+    Cmp1f1 = 0x01,
 }
 impl Cmp1f {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<Cmp1f> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmp1irq {
     #[doc = "No match has occurred (the position counter does not match the COMP1 value)"]
-    CMP1IRQ0 = 0x0,
+    Cmp1irq0 = 0x0,
     #[doc = "COMP1 match has occurred (the position counter matches the COMP1 value)"]
-    CMP1IRQ1 = 0x01,
+    Cmp1irq1 = 0x01,
 }
 impl Cmp1irq {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<Cmp1irq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmp2f {
     #[doc = "When the position counter is less than value of COMP2 register"]
-    CMP2F0 = 0x0,
+    Cmp2f0 = 0x0,
     #[doc = "When the position counter is greater or equal than value of COMP2 register"]
-    CMP2F1 = 0x01,
+    Cmp2f1 = 0x01,
 }
 impl Cmp2f {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<Cmp2f> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmp2irq {
     #[doc = "No match has occurred (the position counter does not match the COMP2 value)"]
-    CMP2IRQ0 = 0x0,
+    Cmp2irq0 = 0x0,
     #[doc = "COMP2 match has occurred (the position counter matches the COMP2 value)"]
-    CMP2IRQ1 = 0x01,
+    Cmp2irq1 = 0x01,
 }
 impl Cmp2irq {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<Cmp2irq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmp3f {
     #[doc = "When the position counter value is less than value of COMP3 register"]
-    CMP3F0 = 0x0,
+    Cmp3f0 = 0x0,
     #[doc = "When the position counter is greater or equal than value of COMP3 register"]
-    CMP3F1 = 0x01,
+    Cmp3f1 = 0x01,
 }
 impl Cmp3f {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<Cmp3f> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmp3irq {
     #[doc = "No match has occurred (the position counter does not match the COMP3 value)"]
-    CMP3IRQ0 = 0x0,
+    Cmp3irq0 = 0x0,
     #[doc = "COMP3 match has occurred (the position counter matches the COMP3 value)"]
-    CMP3IRQ1 = 0x01,
+    Cmp3irq1 = 0x01,
 }
 impl Cmp3irq {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<Cmp3irq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmpf0 {
     #[doc = "When the position counter is less than value of COMP0 register"]
-    CMPF00 = 0x0,
+    Cmpf00 = 0x0,
     #[doc = "When the position counter is greater or equal than value of COMP0 register"]
-    CMPF01 = 0x01,
+    Cmpf01 = 0x01,
 }
 impl Cmpf0 {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<Cmpf0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dir {
     #[doc = "Current count was in the down direction"]
-    DIR0 = 0x0,
+    Dir0 = 0x0,
     #[doc = "Current count was in the up direction"]
-    DIR1 = 0x01,
+    Dir1 = 0x01,
 }
 impl Dir {
     #[inline(always)]
@@ -282,9 +282,9 @@ impl From<Dir> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dirie {
     #[doc = "Disabled"]
-    DIRIE0 = 0x0,
+    Dirie0 = 0x0,
     #[doc = "Enabled"]
-    DIRIE1 = 0x01,
+    Dirie1 = 0x01,
 }
 impl Dirie {
     #[inline(always)]
@@ -313,9 +313,9 @@ impl From<Dirie> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dirirq {
     #[doc = "Count direction unchanged"]
-    DIRIRQ0 = 0x0,
+    Dirirq0 = 0x0,
     #[doc = "Count direction changed"]
-    DIRIRQ1 = 0x01,
+    Dirirq1 = 0x01,
 }
 impl Dirirq {
     #[inline(always)]
@@ -344,9 +344,9 @@ impl From<Dirirq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dmaen {
     #[doc = "DMA is disabled"]
-    DMAEN_0 = 0x0,
+    Dmaen0 = 0x0,
     #[doc = "DMA is enabled. DMA request asserts automatically when the values in the outer-set of buffered compare registers (UCOMP0/LCOMP0;UCOMP1/LCOMP1;UCOMP2/LCOMP2;UCOMP3/LCOMP3), initial registers(UINIT/LINIT) and modulus registers (UMOD/LMOD) are loaded into the inner-set of buffer and then LDOK is cleared automatically. After the completion of this DMA transfer, LDOK is set automatically, it ensures outer-set values can be loaded into inner-set which in turn triggers DMA again."]
-    DMAEN_1 = 0x01,
+    Dmaen1 = 0x01,
 }
 impl Dmaen {
     #[inline(always)]
@@ -375,9 +375,9 @@ impl From<Dmaen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FiltCs {
     #[doc = "Peripheral Clock"]
-    FILT_CS0 = 0x0,
+    FiltCs0 = 0x0,
     #[doc = "Prescaled peripheral clock by PRSC"]
-    FILT_CS1 = 0x01,
+    FiltCs1 = 0x01,
 }
 impl FiltCs {
     #[inline(always)]
@@ -406,9 +406,9 @@ impl From<FiltCs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Hie {
     #[doc = "Disabled"]
-    HIE0 = 0x0,
+    Hie0 = 0x0,
     #[doc = "Enabled"]
-    HIE1 = 0x01,
+    Hie1 = 0x01,
 }
 impl Hie {
     #[inline(always)]
@@ -437,9 +437,9 @@ impl From<Hie> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Hip {
     #[doc = "No action"]
-    HIP0 = 0x0,
+    Hip0 = 0x0,
     #[doc = "HOME signal initializes the position counter"]
-    HIP1 = 0x01,
+    Hip1 = 0x01,
 }
 impl Hip {
     #[inline(always)]
@@ -468,9 +468,9 @@ impl From<Hip> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Hirq {
     #[doc = "No transition on the HOME/ENABLE signal has occurred"]
-    HIRQ0 = 0x0,
+    Hirq0 = 0x0,
     #[doc = "A transition on the HOME/ENABLE signal has occurred"]
-    HIRQ1 = 0x01,
+    Hirq1 = 0x01,
 }
 impl Hirq {
     #[inline(always)]
@@ -499,9 +499,9 @@ impl From<Hirq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Hne {
     #[doc = "When CTRL\\[OPMODE\\] = 0,use HOME positive edge to trigger initialization of position counters. When CTRL\\[OPMODE\\] = 1,use ENABLE high level to enable POS/POSD/WDG/REV counters"]
-    HNE0 = 0x0,
+    Hne0 = 0x0,
     #[doc = "When CTRL\\[OPMODE\\] = 0,use HOME negative edge to trigger initialization of position counters. When CTRL\\[OPMODE\\] = 1,use ENABLE low level to enable POS/POSD/WDG/REV counters"]
-    HNE1 = 0x01,
+    Hne1 = 0x01,
 }
 impl Hne {
     #[inline(always)]
@@ -530,9 +530,9 @@ impl From<Hne> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Initpos {
     #[doc = "Don't initialize position counter on rising edge of TRIGGER"]
-    INITPOS0 = 0x0,
+    Initpos0 = 0x0,
     #[doc = "Initialize position counter on rising edge of TRIGGER"]
-    INITPOS1 = 0x01,
+    Initpos1 = 0x01,
 }
 impl Initpos {
     #[inline(always)]
@@ -561,9 +561,9 @@ impl From<Initpos> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ldmod {
     #[doc = "Buffered registers are loaded and take effect immediately upon CTRL\\[LDOK\\] is set."]
-    LDMOD0 = 0x0,
+    Ldmod0 = 0x0,
     #[doc = "Buffered registers are loaded and take effect at the next roll-over or roll-under if CTRL\\[LDOK\\] is set."]
-    LDMOD1 = 0x01,
+    Ldmod1 = 0x01,
 }
 impl Ldmod {
     #[inline(always)]
@@ -592,9 +592,9 @@ impl From<Ldmod> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ldok {
     #[doc = "No loading action taken. Users can write new values to buffered registers (writing into outer-set of these buffered registers)"]
-    LDOK0 = 0x0,
+    Ldok0 = 0x0,
     #[doc = "Outer-set values are ready to be loaded into inner-set and take effect. The loading time point depends on CTRL2\\[LDMOD\\]."]
-    LDOK1 = 0x01,
+    Ldok1 = 0x01,
 }
 impl Ldok {
     #[inline(always)]
@@ -623,9 +623,9 @@ impl From<Ldok> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Once {
     #[doc = "Position counter counts repeatedly"]
-    ONCE0 = 0x0,
+    Once0 = 0x0,
     #[doc = "Position counter counts until roll-over or roll-under, then stop."]
-    ONCE1 = 0x01,
+    Once1 = 0x01,
 }
 impl Once {
     #[inline(always)]
@@ -654,9 +654,9 @@ impl From<Once> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Opmode {
     #[doc = "Decode Mode: Input nodes INDEX/PRESET and HOME/ENABLE are assigned to function of INDEX and HOME."]
-    OPMODE0 = 0x0,
+    Opmode0 = 0x0,
     #[doc = "Count Mode: Input nodes INDEX/PRESET and HOME/ENABLE are assigned to functions of PRESET and ENABLE. In this mode: (1)only when ENABLE=1, all counters (position/position difference/revolution/watchdog) can run, when ENABLE=0, all counters (position/position difference/revolution/watchdog) can't run. (2) the rising edge of PRESET input can initialize position/revolution/watchdog counters (position counter initialization also need referring to bit CTRL\\[REV\\])."]
-    OPMODE1 = 0x01,
+    Opmode1 = 0x01,
 }
 impl Opmode {
     #[inline(always)]
@@ -685,9 +685,9 @@ impl From<Opmode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Outctl {
     #[doc = "POS_MATCH\\[x\\](x range is 0-3) is asserted when the Position Counter is equal to according compare value (UCOMPx/LCOMPx)(x range is 0-3), and de-asserted when the Position Counter not equal to the compare value (UCOMPx/LCOMPx)(x range is 0-3)"]
-    OUTCTL0 = 0x0,
+    Outctl0 = 0x0,
     #[doc = "All POS_MATCH\\[x\\](x range is 0-3) are asserted a pulse, when the UPOS, LPOS, REV, or POSD registers are read"]
-    OUTCTL1 = 0x01,
+    Outctl1 = 0x01,
 }
 impl Outctl {
     #[inline(always)]
@@ -716,9 +716,9 @@ impl From<Outctl> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ph1 {
     #[doc = "Standard quadrature decoder, where PHASEA and PHASEB represent a two-phase quadrature signal."]
-    PH10 = 0x0,
+    Ph10 = 0x0,
     #[doc = "Single phase mode, bypass the quadrature decoder, refer to CTRL2\\[CMODE\\] description"]
-    PH11 = 0x01,
+    Ph11 = 0x01,
 }
 impl Ph1 {
     #[inline(always)]
@@ -747,9 +747,9 @@ impl From<Ph1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pmen {
     #[doc = "Period measurement functions are not used. POSD is loaded to POSDH and then cleared whenever POSD, UPOS, LPOS or REV is read."]
-    PMEN0 = 0x0,
+    Pmen0 = 0x0,
     #[doc = "Period measurement functions are used. POSD is loaded into POSDH and then cleared only when POSD is read."]
-    PMEN1 = 0x01,
+    Pmen1 = 0x01,
 }
 impl Pmen {
     #[inline(always)]
@@ -778,9 +778,9 @@ impl From<Pmen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qdn {
     #[doc = "Generates a positive quadrature decoder signal"]
-    QDN0 = 0x0,
+    Qdn0 = 0x0,
     #[doc = "Generates a negative quadrature decoder signal"]
-    QDN1 = 0x01,
+    Qdn1 = 0x01,
 }
 impl Qdn {
     #[inline(always)]
@@ -809,9 +809,9 @@ impl From<Qdn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rev {
     #[doc = "Count normally and the position counter initialization uses upper/lower initialization register UINIT/LINIT"]
-    REV0 = 0x0,
+    Rev0 = 0x0,
     #[doc = "Count in the reverse direction and the position counter initialization uses upper/lower modulus register UMOD/LMOD"]
-    REV1 = 0x01,
+    Rev1 = 0x01,
 }
 impl Rev {
     #[inline(always)]
@@ -840,9 +840,9 @@ impl From<Rev> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Revmod {
     #[doc = "Use INDEX pulse to increment/decrement revolution counter (REV)"]
-    REVMOD0 = 0x0,
+    Revmod0 = 0x0,
     #[doc = "Use modulus counting roll-over/under to increment/decrement revolution counter (REV)"]
-    REVMOD1 = 0x01,
+    Revmod1 = 0x01,
 }
 impl Revmod {
     #[inline(always)]
@@ -871,9 +871,9 @@ impl From<Revmod> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Roie {
     #[doc = "Disabled"]
-    ROIE = 0x0,
+    Roie = 0x0,
     #[doc = "Enabled"]
-    ROIE1 = 0x01,
+    Roie1 = 0x01,
 }
 impl Roie {
     #[inline(always)]
@@ -902,9 +902,9 @@ impl From<Roie> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Roirq {
     #[doc = "No roll-over has occurred"]
-    ROIRQ0 = 0x0,
+    Roirq0 = 0x0,
     #[doc = "Roll-over has occurred"]
-    ROIRQ1 = 0x01,
+    Roirq1 = 0x01,
 }
 impl Roirq {
     #[inline(always)]
@@ -933,9 +933,9 @@ impl From<Roirq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ruie {
     #[doc = "Disabled"]
-    RUIE0 = 0x0,
+    Ruie0 = 0x0,
     #[doc = "Enabled"]
-    RUIE1 = 0x01,
+    Ruie1 = 0x01,
 }
 impl Ruie {
     #[inline(always)]
@@ -964,9 +964,9 @@ impl From<Ruie> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ruirq {
     #[doc = "No roll-under has occurred"]
-    RUIRQ0 = 0x0,
+    Ruirq0 = 0x0,
     #[doc = "Roll-under has occurred"]
-    RUIRQ1 = 0x01,
+    Ruirq1 = 0x01,
 }
 impl Ruirq {
     #[inline(always)]
@@ -995,9 +995,9 @@ impl From<Ruirq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sabie {
     #[doc = "Disabled"]
-    SABIE0 = 0x0,
+    Sabie0 = 0x0,
     #[doc = "Enabled"]
-    SABIE1 = 0x01,
+    Sabie1 = 0x01,
 }
 impl Sabie {
     #[inline(always)]
@@ -1026,9 +1026,9 @@ impl From<Sabie> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sabirq {
     #[doc = "No simultaneous change of PHASEA and PHASEB has occurred"]
-    SABIRQ0 = 0x0,
+    Sabirq0 = 0x0,
     #[doc = "A simultaneous change of PHASEA and PHASEB has occurred"]
-    SABIRQ1 = 0x01,
+    Sabirq1 = 0x01,
 }
 impl Sabirq {
     #[inline(always)]
@@ -1057,9 +1057,9 @@ impl From<Sabirq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Swip {
     #[doc = "No action"]
-    SWIP0 = 0x0,
+    Swip0 = 0x0,
     #[doc = "Initialize position counter"]
-    SWIP1 = 0x01,
+    Swip1 = 0x01,
 }
 impl Swip {
     #[inline(always)]
@@ -1088,9 +1088,9 @@ impl From<Swip> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tce {
     #[doc = "Disabled"]
-    TCE0 = 0x0,
+    Tce0 = 0x0,
     #[doc = "Enabled"]
-    TCE1 = 0x01,
+    Tce1 = 0x01,
 }
 impl Tce {
     #[inline(always)]
@@ -1119,9 +1119,9 @@ impl From<Tce> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ten {
     #[doc = "Disabled"]
-    TEN0 = 0x0,
+    Ten0 = 0x0,
     #[doc = "Enabled"]
-    TEN1 = 0x01,
+    Ten1 = 0x01,
 }
 impl Ten {
     #[inline(always)]
@@ -1150,9 +1150,9 @@ impl From<Ten> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wde {
     #[doc = "Disabled"]
-    WDE0 = 0x0,
+    Wde0 = 0x0,
     #[doc = "Enabled"]
-    WDE1 = 0x01,
+    Wde1 = 0x01,
 }
 impl Wde {
     #[inline(always)]
@@ -1181,9 +1181,9 @@ impl From<Wde> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wdie {
     #[doc = "Disabled"]
-    WDIE0 = 0x0,
+    Wdie0 = 0x0,
     #[doc = "Enabled"]
-    WDIE1 = 0x01,
+    Wdie1 = 0x01,
 }
 impl Wdie {
     #[inline(always)]
@@ -1212,9 +1212,9 @@ impl From<Wdie> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wdirq {
     #[doc = "No Watchdog timeout interrupt has occurred"]
-    WDIRQ0 = 0x0,
+    Wdirq0 = 0x0,
     #[doc = "Watchdog timeout interrupt has occurred"]
-    WDIRQ1 = 0x01,
+    Wdirq1 = 0x01,
 }
 impl Wdirq {
     #[inline(always)]
@@ -1243,9 +1243,9 @@ impl From<Wdirq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xie {
     #[doc = "Disabled"]
-    XIE0 = 0x0,
+    Xie0 = 0x0,
     #[doc = "Enabled"]
-    XIE1 = 0x01,
+    Xie1 = 0x01,
 }
 impl Xie {
     #[inline(always)]
@@ -1274,9 +1274,9 @@ impl From<Xie> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xip {
     #[doc = "INDEX pulse does not initialize the position counter"]
-    XIP0 = 0x0,
+    Xip0 = 0x0,
     #[doc = "INDEX pulse initializes the position counter"]
-    XIP1 = 0x01,
+    Xip1 = 0x01,
 }
 impl Xip {
     #[inline(always)]
@@ -1305,9 +1305,9 @@ impl From<Xip> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xirq {
     #[doc = "INDEX/PRESET pulse has not occurred"]
-    XIRQ0 = 0x0,
+    Xirq0 = 0x0,
     #[doc = "INDEX/PRESET pulse has occurred"]
-    XIRQ1 = 0x01,
+    Xirq1 = 0x01,
 }
 impl Xirq {
     #[inline(always)]
@@ -1336,9 +1336,9 @@ impl From<Xirq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xne {
     #[doc = "Use positive edge of INDEX/PRESET pulse"]
-    XNE0 = 0x0,
+    Xne0 = 0x0,
     #[doc = "Use negative edge of INDEX/PRESET pulse"]
-    XNE1 = 0x01,
+    Xne1 = 0x01,
 }
 impl Xne {
     #[inline(always)]

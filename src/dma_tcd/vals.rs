@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pal {
     #[doc = "User protection level for DMA transfers"]
-    USER_PROTECTION = 0x0,
+    UserProtection = 0x0,
     #[doc = "Privileged protection level for DMA transfers"]
-    PRIVILEGED_PROTECTION = 0x01,
+    PrivilegedProtection = 0x01,
 }
 impl Pal {
     #[inline(always)]
@@ -34,19 +34,19 @@ impl From<Pal> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Size {
     #[doc = "8-bit"]
-    EIGHT_BIT = 0x0,
+    EightBit = 0x0,
     #[doc = "16-bit"]
-    SIXTEEN_BIT = 0x01,
+    SixteenBit = 0x01,
     #[doc = "32-bit"]
-    THIRTYTWO_BIT = 0x02,
+    ThirtytwoBit = 0x02,
     #[doc = "64-bit"]
-    SIXTYFOUR_BIT = 0x03,
+    SixtyfourBit = 0x03,
     #[doc = "16-byte"]
-    SIXTEEN_BYTE = 0x04,
+    SixteenByte = 0x04,
     #[doc = "32-byte"]
-    THIRTYTWO_BYTE = 0x05,
+    ThirtytwoByte = 0x05,
     #[doc = "64-byte"]
-    SIXTYFOUR_BYTE = 0x06,
+    SixtyfourByte = 0x06,
     _RESERVED_7 = 0x07,
 }
 impl Size {

@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AckMode {
     #[doc = "Disable ACK mode."]
-    DISABLE_ACK = 0x0,
+    DisableAck = 0x0,
     #[doc = "Enable ACK mode."]
-    ENABLE_ACK = 0x01,
+    EnableAck = 0x01,
 }
 impl AckMode {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<AckMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Busy {
     #[doc = "Current observe is not busy"]
-    NON_BUSY = 0x0,
+    NonBusy = 0x0,
     #[doc = "Current observe is busy"]
-    BUSY = 0x01,
+    Busy = 0x01,
 }
 impl Busy {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<Busy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ClockRootAuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl ClockRootAuthenTzNs {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<ClockRootAuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ClockRootAuthenTzUser {
     #[doc = "Clock Root settings cannot be changed in user mode."]
-    USRMODE_N0 = 0x0,
+    UsrmodeN0 = 0x0,
     #[doc = "Clock Root settings can be changed in user mode."]
-    USRMODE_YES = 0x01,
+    UsrmodeYes = 0x01,
 }
 impl ClockRootAuthenTzUser {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<ClockRootAuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ClockRootControlOff {
     #[doc = "Clock root is enabled"]
-    ENABLED = 0x0,
+    Enabled = 0x0,
     #[doc = "Clock root is disabled"]
-    DISABLED = 0x01,
+    Disabled = 0x01,
 }
 impl ClockRootControlOff {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<ClockRootControlOff> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ClockRootStatus0Off {
     #[doc = "Clock root is enabled"]
-    ENABLED = 0x0,
+    Enabled = 0x0,
     #[doc = "Clock root is disabled"]
-    DISABLED = 0x01,
+    Disabled = 0x01,
 }
 impl ClockRootStatus0Off {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<ClockRootStatus0Off> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FreqMeasureDone {
     #[doc = "Frequency measurement is on-going or not started"]
-    FREQ_MEAS_ON = 0x0,
+    FreqMeasOn = 0x0,
     #[doc = "Frequency measurement is done."]
-    FREQ_MEAS_DONE = 0x01,
+    FreqMeasDone = 0x01,
 }
 impl FreqMeasureDone {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<FreqMeasureDone> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprPrivateAuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprPrivateAuthenTzNs {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<GprPrivateAuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprPrivateAuthenTzUser {
     #[doc = "Registers of private GPR cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of private GPR can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprPrivateAuthenTzUser {
     #[inline(always)]
@@ -282,9 +282,9 @@ impl From<GprPrivateAuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared0AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared0AuthenTzNs {
     #[inline(always)]
@@ -313,9 +313,9 @@ impl From<GprShared0AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared0AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared0AuthenTzUser {
     #[inline(always)]
@@ -344,9 +344,9 @@ impl From<GprShared0AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared10AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared10AuthenTzNs {
     #[inline(always)]
@@ -375,9 +375,9 @@ impl From<GprShared10AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared10AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared10AuthenTzUser {
     #[inline(always)]
@@ -406,9 +406,9 @@ impl From<GprShared10AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared11AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared11AuthenTzNs {
     #[inline(always)]
@@ -437,9 +437,9 @@ impl From<GprShared11AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared11AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared11AuthenTzUser {
     #[inline(always)]
@@ -468,9 +468,9 @@ impl From<GprShared11AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared12AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared12AuthenTzNs {
     #[inline(always)]
@@ -499,9 +499,9 @@ impl From<GprShared12AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared12AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared12AuthenTzUser {
     #[inline(always)]
@@ -530,9 +530,9 @@ impl From<GprShared12AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared13AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared13AuthenTzNs {
     #[inline(always)]
@@ -561,9 +561,9 @@ impl From<GprShared13AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared13AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared13AuthenTzUser {
     #[inline(always)]
@@ -592,9 +592,9 @@ impl From<GprShared13AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared14AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared14AuthenTzNs {
     #[inline(always)]
@@ -623,9 +623,9 @@ impl From<GprShared14AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared14AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared14AuthenTzUser {
     #[inline(always)]
@@ -654,9 +654,9 @@ impl From<GprShared14AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared15AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared15AuthenTzNs {
     #[inline(always)]
@@ -685,9 +685,9 @@ impl From<GprShared15AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared15AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared15AuthenTzUser {
     #[inline(always)]
@@ -716,9 +716,9 @@ impl From<GprShared15AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared1AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared1AuthenTzNs {
     #[inline(always)]
@@ -747,9 +747,9 @@ impl From<GprShared1AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared1AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared1AuthenTzUser {
     #[inline(always)]
@@ -778,9 +778,9 @@ impl From<GprShared1AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared2AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared2AuthenTzNs {
     #[inline(always)]
@@ -809,9 +809,9 @@ impl From<GprShared2AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared2AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared2AuthenTzUser {
     #[inline(always)]
@@ -840,9 +840,9 @@ impl From<GprShared2AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared3AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared3AuthenTzNs {
     #[inline(always)]
@@ -871,9 +871,9 @@ impl From<GprShared3AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared3AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared3AuthenTzUser {
     #[inline(always)]
@@ -902,9 +902,9 @@ impl From<GprShared3AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared4AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared4AuthenTzNs {
     #[inline(always)]
@@ -933,9 +933,9 @@ impl From<GprShared4AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared4AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared4AuthenTzUser {
     #[inline(always)]
@@ -964,9 +964,9 @@ impl From<GprShared4AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared5AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared5AuthenTzNs {
     #[inline(always)]
@@ -995,9 +995,9 @@ impl From<GprShared5AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared5AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared5AuthenTzUser {
     #[inline(always)]
@@ -1026,9 +1026,9 @@ impl From<GprShared5AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared6AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared6AuthenTzNs {
     #[inline(always)]
@@ -1057,9 +1057,9 @@ impl From<GprShared6AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared6AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared6AuthenTzUser {
     #[inline(always)]
@@ -1088,9 +1088,9 @@ impl From<GprShared6AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared7AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared7AuthenTzNs {
     #[inline(always)]
@@ -1119,9 +1119,9 @@ impl From<GprShared7AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared7AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared7AuthenTzUser {
     #[inline(always)]
@@ -1150,9 +1150,9 @@ impl From<GprShared7AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared8AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared8AuthenTzNs {
     #[inline(always)]
@@ -1181,9 +1181,9 @@ impl From<GprShared8AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared8AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared8AuthenTzUser {
     #[inline(always)]
@@ -1212,9 +1212,9 @@ impl From<GprShared8AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared9AuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl GprShared9AuthenTzNs {
     #[inline(always)]
@@ -1243,9 +1243,9 @@ impl From<GprShared9AuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GprShared9AuthenTzUser {
     #[doc = "Registers of shared GPR slice cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Registers of shared GPR slice can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl GprShared9AuthenTzUser {
     #[inline(always)]
@@ -1274,9 +1274,9 @@ impl From<GprShared9AuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum InUse {
     #[doc = "Clock Source is not being used."]
-    CLKSRC_NOTUSED = 0x0,
+    ClksrcNotused = 0x0,
     #[doc = "Clock Source is being used."]
-    CLKSRC_USED = 0x01,
+    ClksrcUsed = 0x01,
 }
 impl InUse {
     #[inline(always)]
@@ -1305,9 +1305,9 @@ impl From<InUse> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgAuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl LpcgAuthenTzNs {
     #[inline(always)]
@@ -1336,9 +1336,9 @@ impl From<LpcgAuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgAuthenTzUser {
     #[doc = "LPCG settings cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "LPCG settings can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl LpcgAuthenTzUser {
     #[inline(always)]
@@ -1367,13 +1367,13 @@ impl From<LpcgAuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm0LpmSettingD0 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1406,13 +1406,13 @@ impl From<LpcgLpm0LpmSettingD0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm0LpmSettingD1 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1445,13 +1445,13 @@ impl From<LpcgLpm0LpmSettingD1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm0LpmSettingD2 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1484,13 +1484,13 @@ impl From<LpcgLpm0LpmSettingD2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm0LpmSettingD3 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1523,13 +1523,13 @@ impl From<LpcgLpm0LpmSettingD3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm0LpmSettingD4 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1562,13 +1562,13 @@ impl From<LpcgLpm0LpmSettingD4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm0LpmSettingD5 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1601,13 +1601,13 @@ impl From<LpcgLpm0LpmSettingD5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm0LpmSettingD6 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1640,13 +1640,13 @@ impl From<LpcgLpm0LpmSettingD6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm0LpmSettingD7 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1679,13 +1679,13 @@ impl From<LpcgLpm0LpmSettingD7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm1LpmSettingD10 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1718,13 +1718,13 @@ impl From<LpcgLpm1LpmSettingD10> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm1LpmSettingD11 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1757,13 +1757,13 @@ impl From<LpcgLpm1LpmSettingD11> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm1LpmSettingD12 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1796,13 +1796,13 @@ impl From<LpcgLpm1LpmSettingD12> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm1LpmSettingD13 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1835,13 +1835,13 @@ impl From<LpcgLpm1LpmSettingD13> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm1LpmSettingD14 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1874,13 +1874,13 @@ impl From<LpcgLpm1LpmSettingD14> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm1LpmSettingD15 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1913,13 +1913,13 @@ impl From<LpcgLpm1LpmSettingD15> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm1LpmSettingD8 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1952,13 +1952,13 @@ impl From<LpcgLpm1LpmSettingD8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpm1LpmSettingD9 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1991,13 +1991,13 @@ impl From<LpcgLpm1LpmSettingD9> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpcgLpmCurLpmSettingCur {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2030,13 +2030,13 @@ impl From<LpcgLpmCurLpmSettingCur> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Mux {
     #[doc = "Select clock source 0"]
-    SOURCE0 = 0x0,
+    Source0 = 0x0,
     #[doc = "Select clock source 1"]
-    SOURCE1 = 0x01,
+    Source1 = 0x01,
     #[doc = "Select clock source 2"]
-    SOURCE2 = 0x02,
+    Source2 = 0x02,
     #[doc = "Select clock source 3"]
-    SOURCE3 = 0x03,
+    Source3 = 0x03,
 }
 impl Mux {
     #[inline(always)]
@@ -2065,9 +2065,9 @@ impl From<Mux> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ObserveAuthenTzNs {
     #[doc = "Cannot be changed in non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl ObserveAuthenTzNs {
     #[inline(always)]
@@ -2096,9 +2096,9 @@ impl From<ObserveAuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ObserveAuthenTzUser {
     #[doc = "Observe slice settings cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Observe slice settings can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl ObserveAuthenTzUser {
     #[inline(always)]
@@ -2127,9 +2127,9 @@ impl From<ObserveAuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ObserveControlOff {
     #[doc = "observe slice is on"]
-    OBS_SL_ON = 0x0,
+    ObsSlOn = 0x0,
     #[doc = "observe slice is off"]
-    OBS_SL_OFF = 0x01,
+    ObsSlOff = 0x01,
 }
 impl ObserveControlOff {
     #[inline(always)]
@@ -2158,9 +2158,9 @@ impl From<ObserveControlOff> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ObserveControlRaw {
     #[doc = "Select divided signal."]
-    SEL_DIV = 0x0,
+    SelDiv = 0x0,
     #[doc = "Select raw signal."]
-    SEL_RAW = 0x01,
+    SelRaw = 0x01,
 }
 impl ObserveControlRaw {
     #[inline(always)]
@@ -2189,9 +2189,9 @@ impl From<ObserveControlRaw> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ObserveControlReset {
     #[doc = "Reset deasserts"]
-    RST_DEASSERT = 0x0,
+    RstDeassert = 0x0,
     #[doc = "Reset asserts"]
-    RST_ASSERT = 0x01,
+    RstAssert = 0x01,
 }
 impl ObserveControlReset {
     #[inline(always)]
@@ -2220,9 +2220,9 @@ impl From<ObserveControlReset> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ObserveStatusOff {
     #[doc = "observe slice is on"]
-    ON = 0x0,
+    On = 0x0,
     #[doc = "observe slice is off"]
-    OFF = 0x01,
+    Off = 0x01,
 }
 impl ObserveStatusOff {
     #[inline(always)]
@@ -2251,9 +2251,9 @@ impl From<ObserveStatusOff> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ObserveStatusRaw {
     #[doc = "Select divided signal."]
-    SEL_DIV = 0x0,
+    SelDiv = 0x0,
     #[doc = "Select raw signal."]
-    SEL_RAW = 0x01,
+    SelRaw = 0x01,
 }
 impl ObserveStatusRaw {
     #[inline(always)]
@@ -2282,9 +2282,9 @@ impl From<ObserveStatusRaw> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ObserveStatusReset {
     #[doc = "Observe divider is not in reset state"]
-    DIV_NOT_RST = 0x0,
+    DivNotRst = 0x0,
     #[doc = "Observe divider is in reset state"]
-    DIV_RST = 0x01,
+    DivRst = 0x01,
 }
 impl ObserveStatusReset {
     #[inline(always)]
@@ -2313,9 +2313,9 @@ impl From<ObserveStatusReset> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllAuthenTzNs {
     #[doc = "Cannot be changed in Non-secure mode."]
-    NONSEC_NO = 0x0,
+    NonsecNo = 0x0,
     #[doc = "Can be changed in Non-secure mode."]
-    NONSEC_YES = 0x01,
+    NonsecYes = 0x01,
 }
 impl OscpllAuthenTzNs {
     #[inline(always)]
@@ -2344,9 +2344,9 @@ impl From<OscpllAuthenTzNs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllAuthenTzUser {
     #[doc = "Clock Source settings cannot be changed in user mode."]
-    USR_MODE_NO = 0x0,
+    UsrModeNo = 0x0,
     #[doc = "Clock Source settings can be changed in user mode."]
-    USR_MODE_YES = 0x01,
+    UsrModeYes = 0x01,
 }
 impl OscpllAuthenTzUser {
     #[inline(always)]
@@ -2375,9 +2375,9 @@ impl From<OscpllAuthenTzUser> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllDirectOn {
     #[doc = "Clock source is OFF."]
-    CLKSRC_OFF = 0x0,
+    ClksrcOff = 0x0,
     #[doc = "Clock source is ON."]
-    CLKSRC_ON = 0x01,
+    ClksrcOn = 0x01,
 }
 impl OscpllDirectOn {
     #[inline(always)]
@@ -2406,13 +2406,13 @@ impl From<OscpllDirectOn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm0LpmSettingD0 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2445,13 +2445,13 @@ impl From<OscpllLpm0LpmSettingD0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm0LpmSettingD1 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2484,13 +2484,13 @@ impl From<OscpllLpm0LpmSettingD1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm0LpmSettingD2 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2523,13 +2523,13 @@ impl From<OscpllLpm0LpmSettingD2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm0LpmSettingD3 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2562,13 +2562,13 @@ impl From<OscpllLpm0LpmSettingD3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm0LpmSettingD4 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2601,13 +2601,13 @@ impl From<OscpllLpm0LpmSettingD4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm0LpmSettingD5 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2640,13 +2640,13 @@ impl From<OscpllLpm0LpmSettingD5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm0LpmSettingD6 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2679,13 +2679,13 @@ impl From<OscpllLpm0LpmSettingD6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm0LpmSettingD7 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2718,13 +2718,13 @@ impl From<OscpllLpm0LpmSettingD7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm1LpmSettingD10 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2757,13 +2757,13 @@ impl From<OscpllLpm1LpmSettingD10> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm1LpmSettingD11 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2796,13 +2796,13 @@ impl From<OscpllLpm1LpmSettingD11> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm1LpmSettingD12 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2835,13 +2835,13 @@ impl From<OscpllLpm1LpmSettingD12> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm1LpmSettingD13 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2874,13 +2874,13 @@ impl From<OscpllLpm1LpmSettingD13> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm1LpmSettingD14 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2913,13 +2913,13 @@ impl From<OscpllLpm1LpmSettingD14> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm1LpmSettingD15 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2952,13 +2952,13 @@ impl From<OscpllLpm1LpmSettingD15> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm1LpmSettingD8 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2991,13 +2991,13 @@ impl From<OscpllLpm1LpmSettingD8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpm1LpmSettingD9 {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -3030,13 +3030,13 @@ impl From<OscpllLpm1LpmSettingD9> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OscpllLpmCurLpmSettingCur {
     #[doc = "Clock Source will be OFF in any CPU mode."]
-    CLKSRC_OFF_ALL = 0x0,
+    ClksrcOffAll = 0x0,
     #[doc = "Clock Source will be ON in RUN mode, OFF in WAIT/STOP/SUSPEND mode."]
-    CLKSRC_ONRUN = 0x01,
+    ClksrcOnrun = 0x01,
     #[doc = "Clock Source will be ON in RUN/WAIT mode, OFF in STOP/SUSPEND mode."]
-    CLKSRC_ONRUNWAIT = 0x02,
+    ClksrcOnrunwait = 0x02,
     #[doc = "Clock Source will be ON in RUN/WAIT/STOP mode, OFF in SUSPEND mode."]
-    CLKSRC_ONRUNWAITSTOP = 0x03,
+    ClksrcOnrunwaitstop = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,

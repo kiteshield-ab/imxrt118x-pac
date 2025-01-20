@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Vld {
     #[doc = "No CHn_ES\\[ERR\\] fields are set to 1"]
-    NO_FIELD_SET_ONE = 0x0,
+    NoFieldSetOne = 0x0,
     #[doc = "At least one CHn_ES\\[ERR\\] field is set to 1, indicating a valid error exists that software has not cleared"]
-    ATLEAST_ONE_FIELD = 0x01,
+    AtleastOneField = 0x01,
 }
 impl Vld {
     #[inline(always)]

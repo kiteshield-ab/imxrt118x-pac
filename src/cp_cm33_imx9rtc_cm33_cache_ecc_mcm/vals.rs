@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CodeCacheEccmTag {
     #[doc = "Data"]
-    DATA = 0x0,
+    Data = 0x0,
     #[doc = "Tag"]
-    TAG = 0x01,
+    Tag = 0x01,
 }
 impl CodeCacheEccmTag {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<CodeCacheEccmTag> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CodeCacheEccsTag {
     #[doc = "Data"]
-    DATA = 0x0,
+    Data = 0x0,
     #[doc = "Tag"]
-    TAG = 0x01,
+    Tag = 0x01,
 }
 impl CodeCacheEccsTag {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<CodeCacheEccsTag> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CodeCacheErrmIntEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl CodeCacheErrmIntEn {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<CodeCacheErrmIntEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CodeCacheErrmIntSigEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl CodeCacheErrmIntSigEn {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<CodeCacheErrmIntSigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CodeCacheErrmOverIntEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl CodeCacheErrmOverIntEn {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<CodeCacheErrmOverIntEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CodeCacheErrmOverIntSigEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl CodeCacheErrmOverIntSigEn {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<CodeCacheErrmOverIntSigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CodeCacheErrsIntEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl CodeCacheErrsIntEn {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<CodeCacheErrsIntEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CodeCacheErrsIntSigEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl CodeCacheErrsIntSigEn {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<CodeCacheErrsIntSigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CodeCacheErrsOverIntEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl CodeCacheErrsOverIntEn {
     #[inline(always)]
@@ -282,9 +282,9 @@ impl From<CodeCacheErrsOverIntEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CodeCacheErrsOverIntSigEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl CodeCacheErrsOverIntSigEn {
     #[inline(always)]
@@ -313,9 +313,9 @@ impl From<CodeCacheErrsOverIntSigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ReccDis {
     #[doc = "Enable"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disable"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl ReccDis {
     #[inline(always)]
@@ -344,9 +344,9 @@ impl From<ReccDis> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SystemCacheEccErrmIntEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl SystemCacheEccErrmIntEn {
     #[inline(always)]
@@ -375,9 +375,9 @@ impl From<SystemCacheEccErrmIntEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SystemCacheEccErrmOverIntEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl SystemCacheEccErrmOverIntEn {
     #[inline(always)]
@@ -406,9 +406,9 @@ impl From<SystemCacheEccErrmOverIntEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SystemCacheEccErrsIntEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl SystemCacheEccErrsIntEn {
     #[inline(always)]
@@ -437,9 +437,9 @@ impl From<SystemCacheEccErrsIntEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SystemCacheEccErrsOverIntEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl SystemCacheEccErrsOverIntEn {
     #[inline(always)]
@@ -468,9 +468,9 @@ impl From<SystemCacheEccErrsOverIntEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SystemCacheEccmTag {
     #[doc = "Data"]
-    DATA = 0x0,
+    Data = 0x0,
     #[doc = "Tag"]
-    TAG = 0x01,
+    Tag = 0x01,
 }
 impl SystemCacheEccmTag {
     #[inline(always)]
@@ -499,9 +499,9 @@ impl From<SystemCacheEccmTag> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SystemCacheEccsTag {
     #[doc = "Data"]
-    DATA = 0x0,
+    Data = 0x0,
     #[doc = "Tag"]
-    TAG = 0x01,
+    Tag = 0x01,
 }
 impl SystemCacheEccsTag {
     #[inline(always)]
@@ -530,9 +530,9 @@ impl From<SystemCacheEccsTag> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SystemCacheErrmIntSigEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl SystemCacheErrmIntSigEn {
     #[inline(always)]
@@ -561,9 +561,9 @@ impl From<SystemCacheErrmIntSigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SystemCacheErrmOverIntSigEn {
     #[doc = "Masked"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enabled"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl SystemCacheErrmOverIntSigEn {
     #[inline(always)]
@@ -592,9 +592,9 @@ impl From<SystemCacheErrmOverIntSigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SystemCacheErrsIntSigEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl SystemCacheErrsIntSigEn {
     #[inline(always)]
@@ -623,9 +623,9 @@ impl From<SystemCacheErrsIntSigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SystemCacheErrsOverIntSigEn {
     #[doc = "Mask"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enable"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl SystemCacheErrsOverIntSigEn {
     #[inline(always)]
@@ -654,9 +654,9 @@ impl From<SystemCacheErrsOverIntSigEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum WeccDis {
     #[doc = "Enable"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disable"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl WeccDis {
     #[inline(always)]

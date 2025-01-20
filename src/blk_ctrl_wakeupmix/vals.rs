@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Adc1IpgStopMode {
     #[doc = "This module is functional in Stop Mode"]
-    FUNC = 0x0,
+    Func = 0x0,
     #[doc = "This module is not functional in Stop Mode"]
-    NONFUNC = 0x01,
+    Nonfunc = 0x01,
 }
 impl Adc1IpgStopMode {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<Adc1IpgStopMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Adc2IpgStopMode {
     #[doc = "This module is functional in Stop Mode"]
-    FUNC = 0x0,
+    Func = 0x0,
     #[doc = "This module is not functional in Stop Mode"]
-    NONFUNC = 0x01,
+    Nonfunc = 0x01,
 }
 impl Adc2IpgStopMode {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<Adc2IpgStopMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Advp {
     #[doc = "ADV# is active low."]
-    ADVP0 = 0x0,
+    Advp0 = 0x0,
     #[doc = "ADV# is active high."]
-    ADVP1 = 0x01,
+    Advp1 = 0x01,
 }
 impl Advp {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<Advp> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Am {
     #[doc = "Address/Data MUX mode (ADMUX)"]
-    AM0 = 0x0,
+    Am0 = 0x0,
     #[doc = "Address/Data non-MUX mode (Non-ADMUX)"]
-    AM1 = 0x01,
+    Am1 = 0x01,
 }
 impl Am {
     #[inline(always)]
@@ -175,9 +175,9 @@ impl From<AsyncEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum BlkholeModeB {
     #[doc = "WAKEUP Domain to M7 SSI master will exit blackhole mode"]
-    EXIT = 0x0,
+    Exit = 0x0,
     #[doc = "WAKEUP Domain to M7 SSI master will enter blackhole mode"]
-    ENTER = 0x01,
+    Enter = 0x01,
 }
 impl BlkholeModeB {
     #[inline(always)]
@@ -206,9 +206,9 @@ impl From<BlkholeModeB> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ExcErrRespEn {
     #[doc = "OKAY response"]
-    OKAY_RESPONSE = 0x0,
+    OkayResponse = 0x0,
     #[doc = "SLVError response"]
-    SLVERROR_RESPONSE = 0x01,
+    SlverrorResponse = 0x01,
 }
 impl ExcErrRespEn {
     #[inline(always)]
@@ -237,9 +237,9 @@ impl From<ExcErrRespEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GlbRst {
     #[doc = "EtherCAT is out of reset"]
-    OUT_RESET = 0x0,
+    OutReset = 0x0,
     #[doc = "EtherCAT is held in reset"]
-    IN_RESET = 0x01,
+    InReset = 0x01,
 }
 impl GlbRst {
     #[inline(always)]
@@ -268,9 +268,9 @@ impl From<GlbRst> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GpioB1SelectNasrc {
     #[doc = "Show the 4-bit PMOS compensation codes in GPIO_B1_NASRC field"]
-    PMOS = 0x0,
+    Pmos = 0x0,
     #[doc = "Show the 4-bit NMOS compensation codes in GPIO_B1_NASRC field"]
-    NMOS = 0x01,
+    Nmos = 0x01,
 }
 impl GpioB1SelectNasrc {
     #[inline(always)]
@@ -299,9 +299,9 @@ impl From<GpioB1SelectNasrc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GpioEmc2SelectNasrc {
     #[doc = "Show the 4-bit PMOS compensation codes in GPIO_EMC2_NASRC field"]
-    PMOS = 0x0,
+    Pmos = 0x0,
     #[doc = "Show the 4-bit NMOS compensation codes in GPIO_EMC2_NASRC field"]
-    NMOS = 0x01,
+    Nmos = 0x01,
 }
 impl GpioEmc2SelectNasrc {
     #[inline(always)]
@@ -330,9 +330,9 @@ impl From<GpioEmc2SelectNasrc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum I3cOnChipStrongPullDis {
     #[doc = "On-chip strong pull is enabled"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "On-chip strong pull is disabled"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl I3cOnChipStrongPullDis {
     #[inline(always)]
@@ -361,9 +361,9 @@ impl From<I3cOnChipStrongPullDis> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel10 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel10 {
     #[inline(always)]
@@ -392,9 +392,9 @@ impl From<IomuxcXbarDirSel10> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel11 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel11 {
     #[inline(always)]
@@ -423,9 +423,9 @@ impl From<IomuxcXbarDirSel11> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel12 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel12 {
     #[inline(always)]
@@ -454,9 +454,9 @@ impl From<IomuxcXbarDirSel12> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel13 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel13 {
     #[inline(always)]
@@ -485,9 +485,9 @@ impl From<IomuxcXbarDirSel13> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel14 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel14 {
     #[inline(always)]
@@ -516,9 +516,9 @@ impl From<IomuxcXbarDirSel14> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel15 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel15 {
     #[inline(always)]
@@ -547,9 +547,9 @@ impl From<IomuxcXbarDirSel15> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel16 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel16 {
     #[inline(always)]
@@ -578,9 +578,9 @@ impl From<IomuxcXbarDirSel16> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel17 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel17 {
     #[inline(always)]
@@ -609,9 +609,9 @@ impl From<IomuxcXbarDirSel17> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel18 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel18 {
     #[inline(always)]
@@ -640,9 +640,9 @@ impl From<IomuxcXbarDirSel18> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel19 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel19 {
     #[inline(always)]
@@ -671,9 +671,9 @@ impl From<IomuxcXbarDirSel19> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel20 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel20 {
     #[inline(always)]
@@ -702,9 +702,9 @@ impl From<IomuxcXbarDirSel20> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel21 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel21 {
     #[inline(always)]
@@ -733,9 +733,9 @@ impl From<IomuxcXbarDirSel21> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel22 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel22 {
     #[inline(always)]
@@ -764,9 +764,9 @@ impl From<IomuxcXbarDirSel22> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel23 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel23 {
     #[inline(always)]
@@ -795,9 +795,9 @@ impl From<IomuxcXbarDirSel23> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel24 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel24 {
     #[inline(always)]
@@ -826,9 +826,9 @@ impl From<IomuxcXbarDirSel24> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel25 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel25 {
     #[inline(always)]
@@ -857,9 +857,9 @@ impl From<IomuxcXbarDirSel25> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel26 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel26 {
     #[inline(always)]
@@ -888,9 +888,9 @@ impl From<IomuxcXbarDirSel26> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel27 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel27 {
     #[inline(always)]
@@ -919,9 +919,9 @@ impl From<IomuxcXbarDirSel27> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel28 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel28 {
     #[inline(always)]
@@ -950,9 +950,9 @@ impl From<IomuxcXbarDirSel28> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel29 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel29 {
     #[inline(always)]
@@ -981,9 +981,9 @@ impl From<IomuxcXbarDirSel29> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel30 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel30 {
     #[inline(always)]
@@ -1012,9 +1012,9 @@ impl From<IomuxcXbarDirSel30> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel31 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel31 {
     #[inline(always)]
@@ -1043,9 +1043,9 @@ impl From<IomuxcXbarDirSel31> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel32 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel32 {
     #[inline(always)]
@@ -1074,9 +1074,9 @@ impl From<IomuxcXbarDirSel32> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel33 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel33 {
     #[inline(always)]
@@ -1105,9 +1105,9 @@ impl From<IomuxcXbarDirSel33> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel34 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel34 {
     #[inline(always)]
@@ -1136,9 +1136,9 @@ impl From<IomuxcXbarDirSel34> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel35 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel35 {
     #[inline(always)]
@@ -1167,9 +1167,9 @@ impl From<IomuxcXbarDirSel35> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel36 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel36 {
     #[inline(always)]
@@ -1198,9 +1198,9 @@ impl From<IomuxcXbarDirSel36> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel37 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel37 {
     #[inline(always)]
@@ -1229,9 +1229,9 @@ impl From<IomuxcXbarDirSel37> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel4 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel4 {
     #[inline(always)]
@@ -1260,9 +1260,9 @@ impl From<IomuxcXbarDirSel4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel5 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel5 {
     #[inline(always)]
@@ -1291,9 +1291,9 @@ impl From<IomuxcXbarDirSel5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel6 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel6 {
     #[inline(always)]
@@ -1322,9 +1322,9 @@ impl From<IomuxcXbarDirSel6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel7 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel7 {
     #[inline(always)]
@@ -1353,9 +1353,9 @@ impl From<IomuxcXbarDirSel7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel8 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel8 {
     #[inline(always)]
@@ -1384,9 +1384,9 @@ impl From<IomuxcXbarDirSel8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IomuxcXbarDirSel9 {
     #[doc = "XBAR_INOUT as input"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "XBAR_INOUT as output"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl IomuxcXbarDirSel9 {
     #[inline(always)]
@@ -1415,9 +1415,9 @@ impl From<IomuxcXbarDirSel9> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IrqStatus {
     #[doc = "Interrupt not asserted"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Interrupt asserted"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl IrqStatus {
     #[inline(always)]
@@ -1446,9 +1446,9 @@ impl From<IrqStatus> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpit1Trig0InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Lpit1Trig0InputSel {
     #[inline(always)]
@@ -1477,9 +1477,9 @@ impl From<Lpit1Trig0InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpit1Trig1InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Lpit1Trig1InputSel {
     #[inline(always)]
@@ -1508,9 +1508,9 @@ impl From<Lpit1Trig1InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpit1Trig2InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Lpit1Trig2InputSel {
     #[inline(always)]
@@ -1539,9 +1539,9 @@ impl From<Lpit1Trig2InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpit1Trig3InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Lpit1Trig3InputSel {
     #[inline(always)]
@@ -1570,9 +1570,9 @@ impl From<Lpit1Trig3InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpit2Trig0InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Lpit2Trig0InputSel {
     #[inline(always)]
@@ -1601,9 +1601,9 @@ impl From<Lpit2Trig0InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpit2Trig1InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Lpit2Trig1InputSel {
     #[inline(always)]
@@ -1632,9 +1632,9 @@ impl From<Lpit2Trig1InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpit2Trig2InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Lpit2Trig2InputSel {
     #[inline(always)]
@@ -1663,9 +1663,9 @@ impl From<Lpit2Trig2InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpit2Trig3InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Lpit2Trig3InputSel {
     #[inline(always)]
@@ -1694,9 +1694,9 @@ impl From<Lpit2Trig3InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpit3Trig0InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Lpit3Trig0InputSel {
     #[inline(always)]
@@ -1725,9 +1725,9 @@ impl From<Lpit3Trig0InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpit3Trig1InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Lpit3Trig1InputSel {
     #[inline(always)]
@@ -1756,9 +1756,9 @@ impl From<Lpit3Trig1InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpit3Trig2InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Lpit3Trig2InputSel {
     #[inline(always)]
@@ -1787,9 +1787,9 @@ impl From<Lpit3Trig2InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lpit3Trig3InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Lpit3Trig3InputSel {
     #[inline(always)]
@@ -1818,9 +1818,9 @@ impl From<Lpit3Trig3InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Can2 {
     #[doc = "CAN2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "CAN2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Can2 {
     #[inline(always)]
@@ -1849,9 +1849,9 @@ impl From<M33Can2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Edma4 {
     #[doc = "EDMA4 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "EDMA4 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Edma4 {
     #[inline(always)]
@@ -1880,9 +1880,9 @@ impl From<M33Edma4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Flexio1 {
     #[doc = "FLEXIO1 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "FLEXIO1 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Flexio1 {
     #[inline(always)]
@@ -1911,9 +1911,9 @@ impl From<M33Flexio1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Flexio2 {
     #[doc = "FLEXIO2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "FLEXIO2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Flexio2 {
     #[inline(always)]
@@ -1942,9 +1942,9 @@ impl From<M33Flexio2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Flexpwm1 {
     #[doc = "FLEXPWM1 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "FLEXPWM1 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Flexpwm1 {
     #[inline(always)]
@@ -1973,9 +1973,9 @@ impl From<M33Flexpwm1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Flexpwm2 {
     #[doc = "FLEXPWM2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "FLEXPWM2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Flexpwm2 {
     #[inline(always)]
@@ -2004,9 +2004,9 @@ impl From<M33Flexpwm2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Flexpwm3 {
     #[doc = "FLEXPWM3 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "FLEXPWM3 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Flexpwm3 {
     #[inline(always)]
@@ -2035,9 +2035,9 @@ impl From<M33Flexpwm3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Flexpwm4 {
     #[doc = "FLEXPWM4 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "FLEXPWM4 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Flexpwm4 {
     #[inline(always)]
@@ -2066,9 +2066,9 @@ impl From<M33Flexpwm4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Gpt2 {
     #[doc = "GPT2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "GPT2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Gpt2 {
     #[inline(always)]
@@ -2097,9 +2097,9 @@ impl From<M33Gpt2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33I3c2 {
     #[doc = "I3C2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "I3C2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33I3c2 {
     #[inline(always)]
@@ -2128,9 +2128,9 @@ impl From<M33I3c2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpi2c3 {
     #[doc = "LPI2C3 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpi2c3 {
     #[inline(always)]
@@ -2159,9 +2159,9 @@ impl From<M33Lpi2c3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpi2c4 {
     #[doc = "LPI2C4 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPI2C4 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpi2c4 {
     #[inline(always)]
@@ -2190,9 +2190,9 @@ impl From<M33Lpi2c4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpi2c5 {
     #[doc = "LPI2C5 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPI2C5 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpi2c5 {
     #[inline(always)]
@@ -2221,9 +2221,9 @@ impl From<M33Lpi2c5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpi2c6 {
     #[doc = "LPI2C6 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPI2C6 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpi2c6 {
     #[inline(always)]
@@ -2252,9 +2252,9 @@ impl From<M33Lpi2c6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpit2 {
     #[doc = "LPIT2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPIT2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpit2 {
     #[inline(always)]
@@ -2283,9 +2283,9 @@ impl From<M33Lpit2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpit3 {
     #[doc = "LPIT3 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPIT3 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpit3 {
     #[inline(always)]
@@ -2314,9 +2314,9 @@ impl From<M33Lpit3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpspi3 {
     #[doc = "LPSPI3 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPSPI3 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpspi3 {
     #[inline(always)]
@@ -2345,9 +2345,9 @@ impl From<M33Lpspi3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpspi4 {
     #[doc = "LPSPI4 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPSPI4 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpspi4 {
     #[inline(always)]
@@ -2376,9 +2376,9 @@ impl From<M33Lpspi4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpspi5 {
     #[doc = "LPSPI5 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPSPI5 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpspi5 {
     #[inline(always)]
@@ -2407,9 +2407,9 @@ impl From<M33Lpspi5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lpspi6 {
     #[doc = "LPSPI6 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPSPI6 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lpspi6 {
     #[inline(always)]
@@ -2438,9 +2438,9 @@ impl From<M33Lpspi6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lptmr2 {
     #[doc = "LPTMR2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPTMR2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lptmr2 {
     #[inline(always)]
@@ -2469,9 +2469,9 @@ impl From<M33Lptmr2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Lptmr3 {
     #[doc = "LPTMR3 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPTMR3 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Lptmr3 {
     #[inline(always)]
@@ -2500,9 +2500,9 @@ impl From<M33Lptmr3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Mic {
     #[doc = "MIC does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "MIC enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Mic {
     #[inline(always)]
@@ -2531,9 +2531,9 @@ impl From<M33Mic> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Qtimer1 {
     #[doc = "QTIMER1 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER1 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Qtimer1 {
     #[inline(always)]
@@ -2562,9 +2562,9 @@ impl From<M33Qtimer1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Qtimer2 {
     #[doc = "QTIMER2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Qtimer2 {
     #[inline(always)]
@@ -2593,9 +2593,9 @@ impl From<M33Qtimer2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Qtimer3 {
     #[doc = "QTIMER3 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER3 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Qtimer3 {
     #[inline(always)]
@@ -2624,9 +2624,9 @@ impl From<M33Qtimer3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Qtimer4 {
     #[doc = "QTIMER4 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER4 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Qtimer4 {
     #[inline(always)]
@@ -2655,9 +2655,9 @@ impl From<M33Qtimer4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Qtimer5 {
     #[doc = "QTIMER5 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER5 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Qtimer5 {
     #[inline(always)]
@@ -2686,9 +2686,9 @@ impl From<M33Qtimer5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Qtimer6 {
     #[doc = "QTIMER6 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER6 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Qtimer6 {
     #[inline(always)]
@@ -2717,9 +2717,9 @@ impl From<M33Qtimer6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Qtimer7 {
     #[doc = "QTIMER7 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER7 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Qtimer7 {
     #[inline(always)]
@@ -2748,9 +2748,9 @@ impl From<M33Qtimer7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Qtimer8 {
     #[doc = "QTIMER8 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER8 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Qtimer8 {
     #[inline(always)]
@@ -2779,9 +2779,9 @@ impl From<M33Qtimer8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Sai2 {
     #[doc = "SAI2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "SAI2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Sai2 {
     #[inline(always)]
@@ -2810,9 +2810,9 @@ impl From<M33Sai2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Sai3 {
     #[doc = "SAI3 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "SAI3 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Sai3 {
     #[inline(always)]
@@ -2841,9 +2841,9 @@ impl From<M33Sai3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Sai4 {
     #[doc = "SAI4 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "SAI4 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Sai4 {
     #[inline(always)]
@@ -2872,9 +2872,9 @@ impl From<M33Sai4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Sinc1 {
     #[doc = "I3C2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "I3C2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Sinc1 {
     #[inline(always)]
@@ -2903,9 +2903,9 @@ impl From<M33Sinc1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Sinc2 {
     #[doc = "SINC2 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "SINC2 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Sinc2 {
     #[inline(always)]
@@ -2934,9 +2934,9 @@ impl From<M33Sinc2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Sinc3 {
     #[doc = "SINC3 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "SINC3 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Sinc3 {
     #[inline(always)]
@@ -2965,9 +2965,9 @@ impl From<M33Sinc3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Tpm3 {
     #[doc = "TPM3 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "TPM3 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Tpm3 {
     #[inline(always)]
@@ -2996,9 +2996,9 @@ impl From<M33Tpm3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Tpm4 {
     #[doc = "does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Tpm4 {
     #[inline(always)]
@@ -3027,9 +3027,9 @@ impl From<M33Tpm4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Tpm5 {
     #[doc = "TPM5 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "TPM5 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Tpm5 {
     #[inline(always)]
@@ -3058,9 +3058,9 @@ impl From<M33Tpm5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Tpm6 {
     #[doc = "TPM6 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "TPM6 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Tpm6 {
     #[inline(always)]
@@ -3089,9 +3089,9 @@ impl From<M33Tpm6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Wdog3 {
     #[doc = "WDOG3 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "WDOG3 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Wdog3 {
     #[inline(always)]
@@ -3120,9 +3120,9 @@ impl From<M33Wdog3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Wdog4 {
     #[doc = "WDOG4 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "WDOG4 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Wdog4 {
     #[inline(always)]
@@ -3151,9 +3151,9 @@ impl From<M33Wdog4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33Wdog5 {
     #[doc = "WDOG5 does not enter debug halted mode with CM33"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "WDOG5 enters debug halted mode when CM33 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M33Wdog5 {
     #[inline(always)]
@@ -3182,9 +3182,9 @@ impl From<M33Wdog5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Can2 {
     #[doc = "CAN2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "CAN2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Can2 {
     #[inline(always)]
@@ -3213,9 +3213,9 @@ impl From<M7Can2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Edma4 {
     #[doc = "EDMA4 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "EDMA4 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Edma4 {
     #[inline(always)]
@@ -3244,9 +3244,9 @@ impl From<M7Edma4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Flexio1 {
     #[doc = "FLEXIO1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "FLEXIO1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Flexio1 {
     #[inline(always)]
@@ -3275,9 +3275,9 @@ impl From<M7Flexio1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Flexio2 {
     #[doc = "FLEXIO2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "FLEXIO2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Flexio2 {
     #[inline(always)]
@@ -3306,9 +3306,9 @@ impl From<M7Flexio2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Flexpwm1 {
     #[doc = "FLEXPWM1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "FLEXPWM1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Flexpwm1 {
     #[inline(always)]
@@ -3337,9 +3337,9 @@ impl From<M7Flexpwm1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Flexpwm2 {
     #[doc = "FLEXPWM2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "FLEXPWM2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Flexpwm2 {
     #[inline(always)]
@@ -3368,9 +3368,9 @@ impl From<M7Flexpwm2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Flexpwm3 {
     #[doc = "FLEXPWM3 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "FLEXPWM3 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Flexpwm3 {
     #[inline(always)]
@@ -3399,9 +3399,9 @@ impl From<M7Flexpwm3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Flexpwm4 {
     #[doc = "FLEXPWM4 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "FLEXPWM4 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Flexpwm4 {
     #[inline(always)]
@@ -3430,9 +3430,9 @@ impl From<M7Flexpwm4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Gpt2 {
     #[doc = "GPT2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "GPT2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Gpt2 {
     #[inline(always)]
@@ -3461,9 +3461,9 @@ impl From<M7Gpt2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7I3c2 {
     #[doc = "I3C2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "I3C2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7I3c2 {
     #[inline(always)]
@@ -3492,9 +3492,9 @@ impl From<M7I3c2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpi2c3 {
     #[doc = "LPI2C3 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPI2C3 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpi2c3 {
     #[inline(always)]
@@ -3523,9 +3523,9 @@ impl From<M7Lpi2c3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpi2c4 {
     #[doc = "LPI2C4 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPI2C4 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpi2c4 {
     #[inline(always)]
@@ -3554,9 +3554,9 @@ impl From<M7Lpi2c4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpi2c5 {
     #[doc = "LPI2C5 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPI2C5 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpi2c5 {
     #[inline(always)]
@@ -3585,9 +3585,9 @@ impl From<M7Lpi2c5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpi2c6 {
     #[doc = "LPI2C6\" does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPI2C6\" enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpi2c6 {
     #[inline(always)]
@@ -3616,9 +3616,9 @@ impl From<M7Lpi2c6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpit2 {
     #[doc = "LPIT2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPIT2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpit2 {
     #[inline(always)]
@@ -3647,9 +3647,9 @@ impl From<M7Lpit2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpit3 {
     #[doc = "LPIT3 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPIT3 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpit3 {
     #[inline(always)]
@@ -3678,9 +3678,9 @@ impl From<M7Lpit3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpspi3 {
     #[doc = "WDOD3 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "WDOG3 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpspi3 {
     #[inline(always)]
@@ -3709,9 +3709,9 @@ impl From<M7Lpspi3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpspi4 {
     #[doc = "LPSPI4 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPSPI4 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpspi4 {
     #[inline(always)]
@@ -3740,9 +3740,9 @@ impl From<M7Lpspi4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpspi5 {
     #[doc = "LPTMR3 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpspi5 {
     #[inline(always)]
@@ -3771,9 +3771,9 @@ impl From<M7Lpspi5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lpspi6 {
     #[doc = "LPSPI6 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPSPI6 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lpspi6 {
     #[inline(always)]
@@ -3802,9 +3802,9 @@ impl From<M7Lpspi6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lptmr2 {
     #[doc = "LPTMR2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPTMR2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lptmr2 {
     #[inline(always)]
@@ -3833,9 +3833,9 @@ impl From<M7Lptmr2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Lptmr3 {
     #[doc = "LPTMR3 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "LPTMR3 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Lptmr3 {
     #[inline(always)]
@@ -3864,9 +3864,9 @@ impl From<M7Lptmr3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Mic {
     #[doc = "MIC does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "MIC enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Mic {
     #[inline(always)]
@@ -3895,9 +3895,9 @@ impl From<M7Mic> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Qtimer1 {
     #[doc = "QTIMER1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Qtimer1 {
     #[inline(always)]
@@ -3926,9 +3926,9 @@ impl From<M7Qtimer1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Qtimer2 {
     #[doc = "QTIMER2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Qtimer2 {
     #[inline(always)]
@@ -3957,9 +3957,9 @@ impl From<M7Qtimer2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Qtimer3 {
     #[doc = "QTIMER3 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER3 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Qtimer3 {
     #[inline(always)]
@@ -3988,9 +3988,9 @@ impl From<M7Qtimer3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Qtimer4 {
     #[doc = "QTIMER4 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER4 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Qtimer4 {
     #[inline(always)]
@@ -4019,9 +4019,9 @@ impl From<M7Qtimer4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Qtimer5 {
     #[doc = "QTIMER5 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER5 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Qtimer5 {
     #[inline(always)]
@@ -4050,9 +4050,9 @@ impl From<M7Qtimer5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Qtimer6 {
     #[doc = "does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Qtimer6 {
     #[inline(always)]
@@ -4081,9 +4081,9 @@ impl From<M7Qtimer6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Qtimer7 {
     #[doc = "QTIMER7 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER7 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Qtimer7 {
     #[inline(always)]
@@ -4112,9 +4112,9 @@ impl From<M7Qtimer7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Qtimer8 {
     #[doc = "QTIMER8 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "QTIMER8 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Qtimer8 {
     #[inline(always)]
@@ -4143,9 +4143,9 @@ impl From<M7Qtimer8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Sai2 {
     #[doc = "SAI2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "SAI2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Sai2 {
     #[inline(always)]
@@ -4174,9 +4174,9 @@ impl From<M7Sai2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Sai3 {
     #[doc = "SAI3 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "SAI3 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Sai3 {
     #[inline(always)]
@@ -4205,9 +4205,9 @@ impl From<M7Sai3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Sai4 {
     #[doc = "SAI4 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "SAI4 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Sai4 {
     #[inline(always)]
@@ -4236,9 +4236,9 @@ impl From<M7Sai4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Sinc1 {
     #[doc = "SINC1 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "SINC1 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Sinc1 {
     #[inline(always)]
@@ -4267,9 +4267,9 @@ impl From<M7Sinc1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Sinc2 {
     #[doc = "SINC2 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "SINC2 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Sinc2 {
     #[inline(always)]
@@ -4298,9 +4298,9 @@ impl From<M7Sinc2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Sinc3 {
     #[doc = "SINC3 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "SINC3 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Sinc3 {
     #[inline(always)]
@@ -4329,9 +4329,9 @@ impl From<M7Sinc3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Tpm3 {
     #[doc = "TPM3 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "TPM3 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Tpm3 {
     #[inline(always)]
@@ -4360,9 +4360,9 @@ impl From<M7Tpm3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Tpm4 {
     #[doc = "TPM4 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "TPM4 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Tpm4 {
     #[inline(always)]
@@ -4391,9 +4391,9 @@ impl From<M7Tpm4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Tpm5 {
     #[doc = "TPM5 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "TPM5 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Tpm5 {
     #[inline(always)]
@@ -4422,9 +4422,9 @@ impl From<M7Tpm5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Tpm6 {
     #[doc = "TPM5 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "TPM5 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Tpm6 {
     #[inline(always)]
@@ -4453,9 +4453,9 @@ impl From<M7Tpm6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7Wdog5 {
     #[doc = "WDOG5 does not enter debug halted mode with CM7"]
-    MASK = 0x0,
+    Mask = 0x0,
     #[doc = "WDOG5 enters debug halted mode when CM7 is debug halted"]
-    UNMASK = 0x01,
+    Unmask = 0x01,
 }
 impl M7Wdog5 {
     #[inline(always)]
@@ -4484,7 +4484,7 @@ impl From<M7Wdog5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcLinkCfg0IoVar {
     #[doc = "None"]
-    NONE = 0x0,
+    None = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
@@ -4528,11 +4528,11 @@ impl From<NetcLinkCfg0IoVar> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcLinkCfg0MiiProt {
     #[doc = "MII"]
-    MII = 0x0,
+    Mii = 0x0,
     #[doc = "RMII"]
-    RMII = 0x01,
+    Rmii = 0x01,
     #[doc = "RGMII"]
-    RGMII = 0x02,
+    Rgmii = 0x02,
     _RESERVED_3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
@@ -4574,7 +4574,7 @@ impl From<NetcLinkCfg0MiiProt> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcLinkCfg1IoVar {
     #[doc = "None"]
-    NONE = 0x0,
+    None = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
@@ -4618,11 +4618,11 @@ impl From<NetcLinkCfg1IoVar> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcLinkCfg1MiiProt {
     #[doc = "MII"]
-    MII = 0x0,
+    Mii = 0x0,
     #[doc = "RMII"]
-    RMII = 0x01,
+    Rmii = 0x01,
     #[doc = "RGMII"]
-    RGMII = 0x02,
+    Rgmii = 0x02,
     _RESERVED_3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
@@ -4664,25 +4664,25 @@ impl From<NetcLinkCfg1MiiProt> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcLinkCfg2IoVar {
     #[doc = "None"]
-    DISABLE = 0x0,
+    Disable = 0x0,
     #[doc = "no description available"]
-    RES_1 = 0x01,
+    Res1 = 0x01,
     #[doc = "no description available"]
-    RES_2 = 0x02,
+    Res2 = 0x02,
     #[doc = "no description available"]
-    RES_3 = 0x03,
+    Res3 = 0x03,
     #[doc = "no description available"]
-    RES_4 = 0x04,
+    Res4 = 0x04,
     #[doc = "no description available"]
-    RES_5 = 0x05,
+    Res5 = 0x05,
     #[doc = "no description available"]
-    RES_6 = 0x06,
+    Res6 = 0x06,
     #[doc = "no description available"]
-    RES_7 = 0x07,
+    Res7 = 0x07,
     #[doc = "no description available"]
-    RES_8 = 0x08,
+    Res8 = 0x08,
     #[doc = "no description available"]
-    RES_9 = 0x09,
+    Res9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -4717,11 +4717,11 @@ impl From<NetcLinkCfg2IoVar> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NetcLinkCfg2MiiProt {
     #[doc = "MII"]
-    MII = 0x0,
+    Mii = 0x0,
     #[doc = "RMII"]
-    RMII = 0x01,
+    Rmii = 0x01,
     #[doc = "RGMII"]
-    RGMII = 0x02,
+    Rgmii = 0x02,
     _RESERVED_3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
@@ -4763,9 +4763,9 @@ impl From<NetcLinkCfg2MiiProt> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PauseMode {
     #[doc = "WAKEUP Domain to M7 SSI master will enter pause mode"]
-    EXIT = 0x0,
+    Exit = 0x0,
     #[doc = "WAKEUP Domain to M7 SSI master will exit pause mode"]
-    ENTER = 0x01,
+    Enter = 0x01,
 }
 impl PauseMode {
     #[inline(always)]
@@ -4842,9 +4842,9 @@ impl From<PolSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Port1RmiiRefClkDir {
     #[doc = "Port1 RMII Reference clock is input"]
-    INPUT = 0x0,
+    Input = 0x0,
     #[doc = "Port1 RMII Reference clock is output"]
-    OUTPUT = 0x01,
+    Output = 0x01,
 }
 impl Port1RmiiRefClkDir {
     #[inline(always)]
@@ -4873,9 +4873,9 @@ impl From<Port1RmiiRefClkDir> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Port2RmiiRefClkDir {
     #[doc = "Port2 RMII Reference clock is input"]
-    INPUT = 0x0,
+    Input = 0x0,
     #[doc = "Port2 RMII Reference clock is output"]
-    OUTPUT = 0x01,
+    Output = 0x01,
 }
 impl Port2RmiiRefClkDir {
     #[inline(always)]
@@ -4904,9 +4904,9 @@ impl From<Port2RmiiRefClkDir> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Port3RmiiRefClkDir {
     #[doc = "Port3 RMII Reference clock is input"]
-    INPUT = 0x0,
+    Input = 0x0,
     #[doc = "Port3 RMII Reference clock is output"]
-    OUTPUT = 0x01,
+    Output = 0x01,
 }
 impl Port3RmiiRefClkDir {
     #[inline(always)]
@@ -4935,9 +4935,9 @@ impl From<Port3RmiiRefClkDir> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Port4RmiiRefClkDir {
     #[doc = "Port4 RMII Reference clock is input"]
-    INPUT = 0x0,
+    Input = 0x0,
     #[doc = "Port4 RMII Reference clock is output"]
-    OUTPUT = 0x01,
+    Output = 0x01,
 }
 impl Port4RmiiRefClkDir {
     #[inline(always)]
@@ -4966,13 +4966,13 @@ impl From<Port4RmiiRefClkDir> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pre {
     #[doc = "Time granularity is 1 clock cycle."]
-    PRE0 = 0x0,
+    Pre0 = 0x0,
     #[doc = "Time granularity is 2 clock cycles."]
-    PRE1 = 0x01,
+    Pre1 = 0x01,
     #[doc = "Time granularity is 3 clock cycles."]
-    PRE2 = 0x02,
+    Pre2 = 0x02,
     #[doc = "Time granularity is 4 clock cycles."]
-    PRE3 = 0x03,
+    Pre3 = 0x03,
 }
 impl Pre {
     #[inline(always)]
@@ -5001,9 +5001,9 @@ impl From<Pre> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ps {
     #[doc = "8bit"]
-    PS8 = 0x0,
+    Ps8 = 0x0,
     #[doc = "16bit"]
-    PS16 = 0x01,
+    Ps16 = 0x01,
 }
 impl Ps {
     #[inline(always)]
@@ -5032,9 +5032,9 @@ impl From<Ps> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer1Tmr0InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer1Tmr0InputSel {
     #[inline(always)]
@@ -5063,9 +5063,9 @@ impl From<Qtimer1Tmr0InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer1Tmr1InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer1Tmr1InputSel {
     #[inline(always)]
@@ -5094,9 +5094,9 @@ impl From<Qtimer1Tmr1InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer1Tmr2InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer1Tmr2InputSel {
     #[inline(always)]
@@ -5125,9 +5125,9 @@ impl From<Qtimer1Tmr2InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer1Tmr3InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer1Tmr3InputSel {
     #[inline(always)]
@@ -5156,9 +5156,9 @@ impl From<Qtimer1Tmr3InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer1TmrCntsFreeze {
     #[doc = "Timer counter works normally"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Reset counter and output flags"]
-    FLAGS = 0x01,
+    Flags = 0x01,
 }
 impl Qtimer1TmrCntsFreeze {
     #[inline(always)]
@@ -5187,9 +5187,9 @@ impl From<Qtimer1TmrCntsFreeze> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer2Tmr0InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer2Tmr0InputSel {
     #[inline(always)]
@@ -5218,9 +5218,9 @@ impl From<Qtimer2Tmr0InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer2Tmr1InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer2Tmr1InputSel {
     #[inline(always)]
@@ -5249,9 +5249,9 @@ impl From<Qtimer2Tmr1InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer2Tmr2InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer2Tmr2InputSel {
     #[inline(always)]
@@ -5280,9 +5280,9 @@ impl From<Qtimer2Tmr2InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer2Tmr3InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer2Tmr3InputSel {
     #[inline(always)]
@@ -5311,9 +5311,9 @@ impl From<Qtimer2Tmr3InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer2TmrCntsFreeze {
     #[doc = "Timer counter works normally"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Reset counter and output flags"]
-    FLAGS = 0x01,
+    Flags = 0x01,
 }
 impl Qtimer2TmrCntsFreeze {
     #[inline(always)]
@@ -5342,9 +5342,9 @@ impl From<Qtimer2TmrCntsFreeze> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer3Tmr0InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer3Tmr0InputSel {
     #[inline(always)]
@@ -5373,9 +5373,9 @@ impl From<Qtimer3Tmr0InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer3Tmr1InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer3Tmr1InputSel {
     #[inline(always)]
@@ -5404,9 +5404,9 @@ impl From<Qtimer3Tmr1InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer3Tmr2InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer3Tmr2InputSel {
     #[inline(always)]
@@ -5435,9 +5435,9 @@ impl From<Qtimer3Tmr2InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer3Tmr3InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer3Tmr3InputSel {
     #[inline(always)]
@@ -5466,9 +5466,9 @@ impl From<Qtimer3Tmr3InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer3TmrCntsFreeze {
     #[doc = "Timer counter works normally"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Reset counter and ouput flags"]
-    FLAGS = 0x01,
+    Flags = 0x01,
 }
 impl Qtimer3TmrCntsFreeze {
     #[inline(always)]
@@ -5497,9 +5497,9 @@ impl From<Qtimer3TmrCntsFreeze> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer4Tmr0InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer4Tmr0InputSel {
     #[inline(always)]
@@ -5528,9 +5528,9 @@ impl From<Qtimer4Tmr0InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer4Tmr1InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer4Tmr1InputSel {
     #[inline(always)]
@@ -5559,9 +5559,9 @@ impl From<Qtimer4Tmr1InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer4Tmr2InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer4Tmr2InputSel {
     #[inline(always)]
@@ -5590,9 +5590,9 @@ impl From<Qtimer4Tmr2InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer4Tmr3InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer4Tmr3InputSel {
     #[inline(always)]
@@ -5621,9 +5621,9 @@ impl From<Qtimer4Tmr3InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer4TmrCntsFreeze {
     #[doc = "Timer counter works normally"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Reset counter and output flags"]
-    FLAGS = 0x01,
+    Flags = 0x01,
 }
 impl Qtimer4TmrCntsFreeze {
     #[inline(always)]
@@ -5652,9 +5652,9 @@ impl From<Qtimer4TmrCntsFreeze> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer5Tmr0InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer5Tmr0InputSel {
     #[inline(always)]
@@ -5683,9 +5683,9 @@ impl From<Qtimer5Tmr0InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer5Tmr1InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer5Tmr1InputSel {
     #[inline(always)]
@@ -5714,9 +5714,9 @@ impl From<Qtimer5Tmr1InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer5Tmr2InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer5Tmr2InputSel {
     #[inline(always)]
@@ -5745,9 +5745,9 @@ impl From<Qtimer5Tmr2InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer5Tmr3InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer5Tmr3InputSel {
     #[inline(always)]
@@ -5776,9 +5776,9 @@ impl From<Qtimer5Tmr3InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer5TmrCntsFreeze {
     #[doc = "Timer counter works normally"]
-    NORMAL_COUNTER = 0x0,
+    NormalCounter = 0x0,
     #[doc = "Reset counter and output flags"]
-    RESET_COUNTER = 0x01,
+    ResetCounter = 0x01,
 }
 impl Qtimer5TmrCntsFreeze {
     #[inline(always)]
@@ -5807,9 +5807,9 @@ impl From<Qtimer5TmrCntsFreeze> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer6Tmr0InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer6Tmr0InputSel {
     #[inline(always)]
@@ -5838,9 +5838,9 @@ impl From<Qtimer6Tmr0InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer6Tmr1InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer6Tmr1InputSel {
     #[inline(always)]
@@ -5869,9 +5869,9 @@ impl From<Qtimer6Tmr1InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer6Tmr2InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer6Tmr2InputSel {
     #[inline(always)]
@@ -5900,9 +5900,9 @@ impl From<Qtimer6Tmr2InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer6Tmr3InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer6Tmr3InputSel {
     #[inline(always)]
@@ -5931,9 +5931,9 @@ impl From<Qtimer6Tmr3InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer7Tmr0InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer7Tmr0InputSel {
     #[inline(always)]
@@ -5962,9 +5962,9 @@ impl From<Qtimer7Tmr0InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer7Tmr1InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer7Tmr1InputSel {
     #[inline(always)]
@@ -5993,9 +5993,9 @@ impl From<Qtimer7Tmr1InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer7Tmr2InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer7Tmr2InputSel {
     #[inline(always)]
@@ -6024,9 +6024,9 @@ impl From<Qtimer7Tmr2InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer7Tmr3InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer7Tmr3InputSel {
     #[inline(always)]
@@ -6055,9 +6055,9 @@ impl From<Qtimer7Tmr3InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer7TmrCntsFreeze {
     #[doc = "Timer counter works normally"]
-    NORMAL_COUNTER = 0x0,
+    NormalCounter = 0x0,
     #[doc = "Reset counter and output flags"]
-    RESET_COUNTER = 0x01,
+    ResetCounter = 0x01,
 }
 impl Qtimer7TmrCntsFreeze {
     #[inline(always)]
@@ -6086,9 +6086,9 @@ impl From<Qtimer7TmrCntsFreeze> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer8Tmr0InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer8Tmr0InputSel {
     #[inline(always)]
@@ -6117,9 +6117,9 @@ impl From<Qtimer8Tmr0InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer8Tmr1InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer8Tmr1InputSel {
     #[inline(always)]
@@ -6148,9 +6148,9 @@ impl From<Qtimer8Tmr1InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer8Tmr2InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer8Tmr2InputSel {
     #[inline(always)]
@@ -6179,9 +6179,9 @@ impl From<Qtimer8Tmr2InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer8Tmr3InputSel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl Qtimer8Tmr3InputSel {
     #[inline(always)]
@@ -6210,9 +6210,9 @@ impl From<Qtimer8Tmr3InputSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Qtimer8TmrCntsFreeze {
     #[doc = "Timer counter works normally"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Reset counter and output flags"]
-    FLAGS = 0x01,
+    Flags = 0x01,
 }
 impl Qtimer8TmrCntsFreeze {
     #[inline(always)]
@@ -6241,9 +6241,9 @@ impl From<Qtimer8TmrCntsFreeze> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RevmiiRate {
     #[doc = "MII interface is operating at 100Mbps"]
-    MII_100 = 0x0,
+    Mii100 = 0x0,
     #[doc = "MII interface is operating at 10Mbps"]
-    MII_10 = 0x01,
+    Mii10 = 0x01,
 }
 impl RevmiiRate {
     #[inline(always)]
@@ -6272,9 +6272,9 @@ impl From<RevmiiRate> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RmiiRefClkDir0 {
     #[doc = "RMII REF_CLK is input"]
-    INPUT = 0x0,
+    Input = 0x0,
     #[doc = "RMII REF_CLK is output driven by ECAT_CLK_ROOT/2"]
-    OUTPUT = 0x01,
+    Output = 0x01,
 }
 impl RmiiRefClkDir0 {
     #[inline(always)]
@@ -6303,9 +6303,9 @@ impl From<RmiiRefClkDir0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RmiiRefClkDir1 {
     #[doc = "RMII REF_CLK is input"]
-    INPUT = 0x0,
+    Input = 0x0,
     #[doc = "RMII REF_CLK is output driven by ECAT_CLK_ROOT/2"]
-    OUTPUT = 0x01,
+    Output = 0x01,
 }
 impl RmiiRefClkDir1 {
     #[inline(always)]
@@ -6334,9 +6334,9 @@ impl From<RmiiRefClkDir1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RmiiSel0 {
     #[doc = "EtherCAT port0 is in MII mode"]
-    MII = 0x0,
+    Mii = 0x0,
     #[doc = "EtherCAT port0 is in RMII mode"]
-    RMII = 0x01,
+    Rmii = 0x01,
 }
 impl RmiiSel0 {
     #[inline(always)]
@@ -6365,9 +6365,9 @@ impl From<RmiiSel0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RmiiSel1 {
     #[doc = "EtherCAT port1 is in MII mode"]
-    MII = 0x0,
+    Mii = 0x0,
     #[doc = "EtherCAT port1 is in RMII mode"]
-    RMII = 0x01,
+    Rmii = 0x01,
 }
 impl RmiiSel1 {
     #[inline(always)]
@@ -6396,13 +6396,13 @@ impl From<RmiiSel1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai2Mclk3Sel {
     #[doc = "SPDIF_CLK_ROOT"]
-    CLK_ROOT = 0x0,
+    ClkRoot = 0x0,
     #[doc = "spdif_tx_clk2"]
-    TX_CLK2 = 0x01,
+    TxClk2 = 0x01,
     #[doc = "spdif_srclk"]
-    SRCLK = 0x02,
+    Srclk = 0x02,
     #[doc = "spdif_outclock"]
-    OUTCLK = 0x03,
+    Outclk = 0x03,
 }
 impl Sai2Mclk3Sel {
     #[inline(always)]
@@ -6431,9 +6431,9 @@ impl From<Sai2Mclk3Sel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai2MclkDir {
     #[doc = "SAI2_MCLK is input signal"]
-    INPUT = 0x0,
+    Input = 0x0,
     #[doc = "SAI2_MCLK is output signal"]
-    OUTPUT = 0x01,
+    Output = 0x01,
 }
 impl Sai2MclkDir {
     #[inline(always)]
@@ -6462,13 +6462,13 @@ impl From<Sai2MclkDir> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai3Mclk3Sel {
     #[doc = "SPDIF_CLK_ROOT"]
-    CLK_ROOT = 0x0,
+    ClkRoot = 0x0,
     #[doc = "spdif_tx_clk2"]
-    TX_CLK2 = 0x01,
+    TxClk2 = 0x01,
     #[doc = "spdif_srclk"]
-    SRCLK = 0x02,
+    Srclk = 0x02,
     #[doc = "spdif_outclock"]
-    OUTCLK = 0x03,
+    Outclk = 0x03,
 }
 impl Sai3Mclk3Sel {
     #[inline(always)]
@@ -6497,9 +6497,9 @@ impl From<Sai3Mclk3Sel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai3MclkDir {
     #[doc = "SAI3_MCLK is input signal"]
-    MCLK_INPUT = 0x0,
+    MclkInput = 0x0,
     #[doc = "SAI3_MCLK is output signal"]
-    MCLK_OUTPUT = 0x01,
+    MclkOutput = 0x01,
 }
 impl Sai3MclkDir {
     #[inline(always)]
@@ -6528,18 +6528,18 @@ impl From<Sai3MclkDir> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai4Mclk1Sel {
     #[doc = "SAI4_CLK_ROOT"]
-    SAI4_CLK_ROOT = 0x0,
+    Sai4ClkRoot = 0x0,
     #[doc = "SAI2_CLK_ROOT"]
-    SAI2_CLK_ROOT = 0x01,
+    Sai2ClkRoot = 0x01,
     _RESERVED_2 = 0x02,
     #[doc = "SAI3_CLK_ROOT"]
-    SAI3_CLK_ROOT = 0x03,
+    Sai3ClkRoot = 0x03,
     #[doc = "SAI4 MCLK IO pin"]
-    SAI4_MCLK_IO = 0x04,
+    Sai4MclkIo = 0x04,
     #[doc = "SAI2 MCLK IO pin"]
-    SAI2_MCLK_IO = 0x05,
+    Sai2MclkIo = 0x05,
     #[doc = "SAI3 MCLK IO pin"]
-    SAI3_MCLK_IO = 0x06,
+    Sai3MclkIo = 0x06,
     _RESERVED_7 = 0x07,
 }
 impl Sai4Mclk1Sel {
@@ -6569,18 +6569,18 @@ impl From<Sai4Mclk1Sel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai4Mclk2Sel {
     #[doc = "SAI4_CLK_ROOT"]
-    SAI4_CLK_ROOT = 0x0,
+    Sai4ClkRoot = 0x0,
     #[doc = "SAI2_CLK_ROOT"]
-    SAI2_CLK_ROOT = 0x01,
+    Sai2ClkRoot = 0x01,
     _RESERVED_2 = 0x02,
     #[doc = "SAI3_CLK_ROOT"]
-    SAI3_CLK_ROOT = 0x03,
+    Sai3ClkRoot = 0x03,
     #[doc = "SAI4 MCLK IO pin"]
-    SAI4_MCLK_IO = 0x04,
+    Sai4MclkIo = 0x04,
     #[doc = "SAI2 MCLK IO pin"]
-    SAI2_MCLK_IO = 0x05,
+    Sai2MclkIo = 0x05,
     #[doc = "SAI3 MCLK IO pin"]
-    SAI3_MCLK_IO = 0x06,
+    Sai3MclkIo = 0x06,
     _RESERVED_7 = 0x07,
 }
 impl Sai4Mclk2Sel {
@@ -6610,13 +6610,13 @@ impl From<Sai4Mclk2Sel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sai4Mclk3Sel {
     #[doc = "SPDIF_CLK_ROOT"]
-    CLK_ROOT = 0x0,
+    ClkRoot = 0x0,
     #[doc = "spdif_tx_clk2"]
-    TX_CLK2 = 0x01,
+    TxClk2 = 0x01,
     #[doc = "spdif_srclk"]
-    SRCLK = 0x02,
+    Srclk = 0x02,
     #[doc = "spdif_outclock"]
-    OUTCLK = 0x03,
+    Outclk = 0x03,
 }
 impl Sai4Mclk3Sel {
     #[inline(always)]
@@ -6693,9 +6693,9 @@ impl From<SyncEnable> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TmrExtClkSel {
     #[doc = "CCM tmr_1588_clk_root is selected"]
-    CCM_TIMER = 0x0,
+    CcmTimer = 0x0,
     #[doc = "External pin is selected"]
-    EXT_PIN = 0x01,
+    ExtPin = 0x01,
 }
 impl TmrExtClkSel {
     #[inline(always)]
@@ -6724,9 +6724,9 @@ impl From<TmrExtClkSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TmrTrig1Sel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl TmrTrig1Sel {
     #[inline(always)]
@@ -6755,9 +6755,9 @@ impl From<TmrTrig1Sel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TmrTrig2Sel {
     #[doc = "Input from IOMUX"]
-    IOMUX = 0x0,
+    Iomux = 0x0,
     #[doc = "Input from XBAR"]
-    XBAR = 0x01,
+    Xbar = 0x01,
 }
 impl TmrTrig2Sel {
     #[inline(always)]

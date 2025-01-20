@@ -3,12 +3,12 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Bwc {
     #[doc = "No eDMA engine stalls"]
-    NO_STALL = 0x0,
+    NoStall = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "eDMA engine stalls for 4 cycles after each R/W"]
-    ENGINE_STALLS_FOUR = 0x02,
+    EngineStallsFour = 0x02,
     #[doc = "eDMA engine stalls for 8 cycles after each R/W"]
-    ENGINE_STALLS_EIGHT = 0x03,
+    EngineStallsEight = 0x03,
 }
 impl Bwc {
     #[inline(always)]

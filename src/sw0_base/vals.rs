@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Busy {
     #[doc = "Idle"]
-    IDLE = 0x0,
+    Idle = 0x0,
     #[doc = "Busy"]
-    BUSY = 0x01,
+    Busy = 0x01,
 }
 impl Busy {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<Busy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cbdc {
     #[doc = "No BD with CI=1 completed"]
-    NO_BD = 0x0,
+    NoBd = 0x0,
     #[doc = "Processed BD with CI=1"]
-    BD_CI_1 = 0x01,
+    BdCi1 = 0x01,
 }
 impl Cbdc {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<Cbdc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EtPort0 {
     #[doc = "Port has no entry in the Egress Treatment table"]
-    NO_ENTRY = 0x0,
+    NoEntry = 0x0,
     #[doc = "Port has an entry in the Egress Treatment table"]
-    PORT_ENTRY = 0x01,
+    PortEntry = 0x01,
 }
 impl EtPort0 {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<EtPort0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EtPort1 {
     #[doc = "Port has no entry in the Egress Treatment table"]
-    NO_ENTRY = 0x0,
+    NoEntry = 0x0,
     #[doc = "Port has an entry in the Egress Treatment table"]
-    PORT_ENTRY = 0x01,
+    PortEntry = 0x01,
 }
 impl EtPort1 {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<EtPort1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EtPort2 {
     #[doc = "Port has no entry in the Egress Treatment table"]
-    NO_ENTRY = 0x0,
+    NoEntry = 0x0,
     #[doc = "Port has an entry in the Egress Treatment table"]
-    PORT_ENTRY = 0x01,
+    PortEntry = 0x01,
 }
 impl EtPort2 {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<EtPort2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EtPort3 {
     #[doc = "Port has no entry in the Egress Treatment table"]
-    NO_ENTRY = 0x0,
+    NoEntry = 0x0,
     #[doc = "Port has an entry in the Egress Treatment table"]
-    PORT_ENTRY = 0x01,
+    PortEntry = 0x01,
 }
 impl EtPort3 {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<EtPort3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EtPort4 {
     #[doc = "Port has no entry in the Egress Treatment table"]
-    NO_ENTRY = 0x0,
+    NoEntry = 0x0,
     #[doc = "Port has an entry in the Egress Treatment table"]
-    PORT_ENTRY = 0x01,
+    PortEntry = 0x01,
 }
 impl EtPort4 {
     #[inline(always)]
@@ -220,7 +220,7 @@ impl From<EtPort4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Mloc {
     #[doc = "Common memory"]
-    CM = 0x0,
+    Cm = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
@@ -252,7 +252,7 @@ impl From<Mloc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum WordSize {
     #[doc = "24 bytes"]
-    B_24 = 0x0,
+    B24 = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,

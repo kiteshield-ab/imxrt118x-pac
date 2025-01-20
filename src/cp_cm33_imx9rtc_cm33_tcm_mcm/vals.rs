@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ReccDis {
     #[doc = "Enable"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disable"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl ReccDis {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<ReccDis> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum WeccDis {
     #[doc = "Enable"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disable"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl WeccDis {
     #[inline(always)]

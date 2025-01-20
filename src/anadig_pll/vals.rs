@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ArmPllControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl ArmPllControlMode {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<ArmPllControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ArmPllCtrlBypass {
     #[doc = "Function mode"]
-    FUNC = 0x0,
+    Func = 0x0,
     #[doc = "Bypass Mode"]
-    BYPASS = 0x01,
+    Bypass = 0x01,
 }
 impl ArmPllCtrlBypass {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<ArmPllCtrlBypass> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ArmPllCtrlHoldRingOff {
     #[doc = "Normal operation"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Initialize PLL start up"]
-    ENABLE = 0x01,
+    Enable = 0x01,
 }
 impl ArmPllCtrlHoldRingOff {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<ArmPllCtrlHoldRingOff> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ArmPllCtrlPowerup {
     #[doc = "Power down the PLL"]
-    PDOWN = 0x0,
+    Pdown = 0x0,
     #[doc = "Power Up the PLL"]
-    PUP = 0x01,
+    Pup = 0x01,
 }
 impl ArmPllCtrlPowerup {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<ArmPllCtrlPowerup> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ArmPllStable {
     #[doc = "ARM PLL is not stable"]
-    NS = 0x0,
+    Ns = 0x0,
     #[doc = "ARM PLL is stable"]
-    STABLE = 0x01,
+    Stable = 0x01,
 }
 impl ArmPllStable {
     #[inline(always)]
@@ -158,13 +158,13 @@ impl From<ArmPllStable> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DivSelect {
     #[doc = "div_select=130x1: div_select=150x2"]
-    DIV2_1 = 0x0,
+    Div21 = 0x0,
     #[doc = "div_select=160x3: div_select=200x4"]
-    DIV4_1 = 0x01,
+    Div41 = 0x01,
     #[doc = "div_select=220x5: div_select=250x6"]
-    DIV8_1 = 0x02,
+    Div81 = 0x02,
     #[doc = "div_select=300x7: div_select=240"]
-    DIV1_1 = 0x03,
+    Div11 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -197,9 +197,9 @@ impl From<DivSelect> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllAudioControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl PllAudioControlMode {
     #[inline(always)]
@@ -228,9 +228,9 @@ impl From<PllAudioControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllAudioGate {
     #[doc = "No gate"]
-    NOGATE = 0x0,
+    Nogate = 0x0,
     #[doc = "Gate the output"]
-    GATED = 0x01,
+    Gated = 0x01,
 }
 impl PllAudioGate {
     #[inline(always)]
@@ -259,13 +259,13 @@ impl From<PllAudioGate> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PostDivSel {
     #[doc = "post_div=2"]
-    DIV2 = 0x0,
+    Div2 = 0x0,
     #[doc = "post_div=4"]
-    DIV4 = 0x01,
+    Div4 = 0x01,
     #[doc = "post_div=8"]
-    DIV8 = 0x02,
+    Div8 = 0x02,
     #[doc = "post_div=1"]
-    DIV1 = 0x03,
+    Div1 = 0x03,
 }
 impl PostDivSel {
     #[inline(always)]
@@ -294,9 +294,9 @@ impl From<PostDivSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll1ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll1ControlMode {
     #[inline(always)]
@@ -325,9 +325,9 @@ impl From<SysPll1ControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll1CtrlEnableClk {
     #[doc = "Enable"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disable"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl SysPll1CtrlEnableClk {
     #[inline(always)]
@@ -356,9 +356,9 @@ impl From<SysPll1CtrlEnableClk> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll1Div2ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll1Div2ControlMode {
     #[inline(always)]
@@ -387,9 +387,9 @@ impl From<SysPll1Div2ControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll1Div5ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll1Div5ControlMode {
     #[inline(always)]
@@ -418,9 +418,9 @@ impl From<SysPll1Div5ControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll1Gate {
     #[doc = "No gate"]
-    NOGATE = 0x0,
+    Nogate = 0x0,
     #[doc = "Gate the output"]
-    GATED = 0x01,
+    Gated = 0x01,
 }
 impl SysPll1Gate {
     #[inline(always)]
@@ -449,9 +449,9 @@ impl From<SysPll1Gate> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll1Stable {
     #[doc = "Not Stable"]
-    NS = 0x0,
+    Ns = 0x0,
     #[doc = "Stable"]
-    STABLE = 0x01,
+    Stable = 0x01,
 }
 impl SysPll1Stable {
     #[inline(always)]
@@ -480,9 +480,9 @@ impl From<SysPll1Stable> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll2ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll2ControlMode {
     #[inline(always)]
@@ -511,9 +511,9 @@ impl From<SysPll2ControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll2CtrlBypass {
     #[doc = "Function mode"]
-    FUNC = 0x0,
+    Func = 0x0,
     #[doc = "Bypass Mode"]
-    BYPASS = 0x01,
+    Bypass = 0x01,
 }
 impl SysPll2CtrlBypass {
     #[inline(always)]
@@ -542,9 +542,9 @@ impl From<SysPll2CtrlBypass> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll2CtrlHoldRingOff {
     #[doc = "Normal operation"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Initialize PLL start up"]
-    ENABLE = 0x01,
+    Enable = 0x01,
 }
 impl SysPll2CtrlHoldRingOff {
     #[inline(always)]
@@ -573,9 +573,9 @@ impl From<SysPll2CtrlHoldRingOff> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll2CtrlPowerup {
     #[doc = "Power down the PLL"]
-    PDOWN = 0x0,
+    Pdown = 0x0,
     #[doc = "Power Up the PLL"]
-    PUP = 0x01,
+    Pup = 0x01,
 }
 impl SysPll2CtrlPowerup {
     #[inline(always)]
@@ -604,9 +604,9 @@ impl From<SysPll2CtrlPowerup> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll2PfdPfd0Div1Clkgate {
     #[doc = "PFD0 fractional divider clock is enabled."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Fractional divider clock (reference PFD0) is off (power savings)"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl SysPll2PfdPfd0Div1Clkgate {
     #[inline(always)]
@@ -635,9 +635,9 @@ impl From<SysPll2PfdPfd0Div1Clkgate> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll2PfdPfd1Div1Clkgate {
     #[doc = "PFD1 fractional divider clock is enabled."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Fractional divider clock (reference PFD1) is off (power savings)"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl SysPll2PfdPfd1Div1Clkgate {
     #[inline(always)]
@@ -666,9 +666,9 @@ impl From<SysPll2PfdPfd1Div1Clkgate> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll2PfdPfd2Div1Clkgate {
     #[doc = "PFD2 fractional divider clock is enabled."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Fractional divider clock (reference PFD2) is off (power savings)"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl SysPll2PfdPfd2Div1Clkgate {
     #[inline(always)]
@@ -697,9 +697,9 @@ impl From<SysPll2PfdPfd2Div1Clkgate> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll2PfdPfd3Div1Clkgate {
     #[doc = "PFD3 fractional divider clock is enabled."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Fractional divider clock (reference PFD3) is off (power savings)"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl SysPll2PfdPfd3Div1Clkgate {
     #[inline(always)]
@@ -728,9 +728,9 @@ impl From<SysPll2PfdPfd3Div1Clkgate> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll2UpdatePfd0ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll2UpdatePfd0ControlMode {
     #[inline(always)]
@@ -759,9 +759,9 @@ impl From<SysPll2UpdatePfd0ControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll2UpdatePfd1ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll2UpdatePfd1ControlMode {
     #[inline(always)]
@@ -790,9 +790,9 @@ impl From<SysPll2UpdatePfd1ControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll2UpdatePfd2ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll2UpdatePfd2ControlMode {
     #[inline(always)]
@@ -821,9 +821,9 @@ impl From<SysPll2UpdatePfd2ControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll2UpdatePfd3ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll2UpdatePfd3ControlMode {
     #[inline(always)]
@@ -852,9 +852,9 @@ impl From<SysPll2UpdatePfd3ControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll3ControlMode {
     #[inline(always)]
@@ -883,9 +883,9 @@ impl From<SysPll3ControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3CtrlBypass {
     #[doc = "Function mode"]
-    FUNC = 0x0,
+    Func = 0x0,
     #[doc = "Bypass Mode"]
-    BYPASS = 0x01,
+    Bypass = 0x01,
 }
 impl SysPll3CtrlBypass {
     #[inline(always)]
@@ -914,9 +914,9 @@ impl From<SysPll3CtrlBypass> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3CtrlHoldRingOff {
     #[doc = "Normal operation"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Initialize PLL start up"]
-    ENABLE = 0x01,
+    Enable = 0x01,
 }
 impl SysPll3CtrlHoldRingOff {
     #[inline(always)]
@@ -945,9 +945,9 @@ impl From<SysPll3CtrlHoldRingOff> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3CtrlPowerup {
     #[doc = "Power down the PLL"]
-    PDOWN = 0x0,
+    Pdown = 0x0,
     #[doc = "Power Up the PLL"]
-    PUP = 0x01,
+    Pup = 0x01,
 }
 impl SysPll3CtrlPowerup {
     #[inline(always)]
@@ -976,9 +976,9 @@ impl From<SysPll3CtrlPowerup> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3Div2ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll3Div2ControlMode {
     #[inline(always)]
@@ -1007,9 +1007,9 @@ impl From<SysPll3Div2ControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3PfdPfd0Div1Clkgate {
     #[doc = "PFD0 fractional divider clock is enabled"]
-    ON = 0x0,
+    On = 0x0,
     #[doc = "Fractional divider clock (reference ref_pfd0) is off (power savings"]
-    OFF = 0x01,
+    Off = 0x01,
 }
 impl SysPll3PfdPfd0Div1Clkgate {
     #[inline(always)]
@@ -1038,9 +1038,9 @@ impl From<SysPll3PfdPfd0Div1Clkgate> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3PfdPfd1Div1Clkgate {
     #[doc = "PFD1 fractional divider clock is enabled"]
-    ON = 0x0,
+    On = 0x0,
     #[doc = "Fractional divider clock (reference PFD1) is off (power savings)"]
-    OFF = 0x01,
+    Off = 0x01,
 }
 impl SysPll3PfdPfd1Div1Clkgate {
     #[inline(always)]
@@ -1069,9 +1069,9 @@ impl From<SysPll3PfdPfd1Div1Clkgate> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3PfdPfd2Div1Clkgate {
     #[doc = "PFD2 fractional divider clock is enabled"]
-    ON = 0x0,
+    On = 0x0,
     #[doc = "Fractional divider clock (reference PFD2) is off (power savings)"]
-    OFF = 0x01,
+    Off = 0x01,
 }
 impl SysPll3PfdPfd2Div1Clkgate {
     #[inline(always)]
@@ -1100,9 +1100,9 @@ impl From<SysPll3PfdPfd2Div1Clkgate> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3PfdPfd3Div1Clkgate {
     #[doc = "PFD3 fractional divider clock is enabled"]
-    ON = 0x0,
+    On = 0x0,
     #[doc = "Fractional divider clock (reference PFD3) is off (power savings)"]
-    OFF = 0x01,
+    Off = 0x01,
 }
 impl SysPll3PfdPfd3Div1Clkgate {
     #[inline(always)]
@@ -1131,9 +1131,9 @@ impl From<SysPll3PfdPfd3Div1Clkgate> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3Stable {
     #[doc = "Not Stable"]
-    NS = 0x0,
+    Ns = 0x0,
     #[doc = "Stable"]
-    STABLE = 0x01,
+    Stable = 0x01,
 }
 impl SysPll3Stable {
     #[inline(always)]
@@ -1162,9 +1162,9 @@ impl From<SysPll3Stable> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3UpdatePfd0ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll3UpdatePfd0ControlMode {
     #[inline(always)]
@@ -1193,9 +1193,9 @@ impl From<SysPll3UpdatePfd0ControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3UpdatePfd1ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll3UpdatePfd1ControlMode {
     #[inline(always)]
@@ -1224,9 +1224,9 @@ impl From<SysPll3UpdatePfd1ControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3UpdatePfd2ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll3UpdatePfd2ControlMode {
     #[inline(always)]
@@ -1255,9 +1255,9 @@ impl From<SysPll3UpdatePfd2ControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysPll3UpdatePfd3ControlMode {
     #[doc = "Software Mode (Default)"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "GPC Mode"]
-    GPC = 0x01,
+    Gpc = 0x01,
 }
 impl SysPll3UpdatePfd3ControlMode {
     #[inline(always)]

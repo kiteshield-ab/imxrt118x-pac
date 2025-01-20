@@ -26,5 +26,8 @@ rm lib.rs
 # mv lib.rs src/lib.rs
  
 cargo fmt
+# remove reserved enum fields
+# find . -name \*.rs -print0 | xargs -0 sed -i'' '/.*_RESERVED_.*=.*,/d'
+# cargo fmt
 git diff --stat
 

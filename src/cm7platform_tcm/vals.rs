@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MemPwrStEn {
     #[doc = "Memory power status will not be considered when determining slice power status."]
-    EN = 0x0,
+    En = 0x0,
     #[doc = "Memory power status will be considered when determining slice power status."]
-    DIS = 0x01,
+    Dis = 0x01,
 }
 impl MemPwrStEn {
     #[inline(always)]

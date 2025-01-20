@@ -3,15 +3,15 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Clksrc {
     #[doc = "No clock"]
-    NO_CLOCK = 0x0,
+    NoClock = 0x0,
     #[doc = "Peripheral clock (MODULE_CLK)"]
-    CLOCK_001 = 0x01,
+    Clock001 = 0x01,
     #[doc = "High-frequency reference clock (ipg_clk_highfreq)"]
-    CLOCK_010 = 0x02,
+    Clock010 = 0x02,
     #[doc = "External clock"]
-    CLOCK_011 = 0x03,
+    Clock011 = 0x03,
     #[doc = "Low-frequency reference clock (ipg_clk_32k)"]
-    CLOCK_100 = 0x04,
+    Clock100 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
@@ -43,9 +43,9 @@ impl From<Clksrc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dbgen {
     #[doc = "Disable in Debug mode"]
-    DEBUG_DIS = 0x0,
+    DebugDis = 0x0,
     #[doc = "Enable in Debug mode"]
-    DEBUG_EN = 0x01,
+    DebugEn = 0x01,
 }
 impl Dbgen {
     #[inline(always)]
@@ -74,9 +74,9 @@ impl From<Dbgen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dozeen {
     #[doc = "Disable in Doze mode"]
-    DOZE_DIS = 0x0,
+    DozeDis = 0x0,
     #[doc = "Enable in Doze mode"]
-    DOZE_EN = 0x01,
+    DozeEn = 0x01,
 }
 impl Dozeen {
     #[inline(always)]
@@ -105,9 +105,9 @@ impl From<Dozeen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Enmod {
     #[doc = "Restart counting from frozen values after GPT is enabled (EN=1)."]
-    RESUME_COUNT = 0x0,
+    ResumeCount = 0x0,
     #[doc = "Reset counting from 0 after GPT is enabled (EN=1)."]
-    ZERO_COUNT = 0x01,
+    ZeroCount = 0x01,
 }
 impl Enmod {
     #[inline(always)]
@@ -136,9 +136,9 @@ impl From<Enmod> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Frr {
     #[doc = "Restart mode. After a compare event, the counter resets to 0000_0000h and resumes counting."]
-    RESTART = 0x0,
+    Restart = 0x0,
     #[doc = "Free-Run mode. After a compare event, the counter continues counting until FFFF_FFFFh and then rolls over to 0."]
-    FREE_RUN = 0x01,
+    FreeRun = 0x01,
 }
 impl Frr {
     #[inline(always)]
@@ -167,13 +167,13 @@ impl From<Frr> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Im1 {
     #[doc = "Capture disabled"]
-    DISABLED = 0x0,
+    Disabled = 0x0,
     #[doc = "Capture on rising edge only"]
-    RISING = 0x01,
+    Rising = 0x01,
     #[doc = "Capture on falling edge only"]
-    FALLING = 0x02,
+    Falling = 0x02,
     #[doc = "Capture on both edges"]
-    BOTH = 0x03,
+    Both = 0x03,
 }
 impl Im1 {
     #[inline(always)]
@@ -202,13 +202,13 @@ impl From<Im1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Im2 {
     #[doc = "Capture disabled"]
-    DISABLED = 0x0,
+    Disabled = 0x0,
     #[doc = "Capture on rising edge only"]
-    RISING = 0x01,
+    Rising = 0x01,
     #[doc = "Capture on falling edge only"]
-    FALLING = 0x02,
+    Falling = 0x02,
     #[doc = "Capture on both edges"]
-    BOTH = 0x03,
+    Both = 0x03,
 }
 impl Im2 {
     #[inline(always)]
@@ -237,15 +237,15 @@ impl From<Im2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Om1 {
     #[doc = "Output disabled. No response on the signal."]
-    DISABLED = 0x0,
+    Disabled = 0x0,
     #[doc = "Toggle output"]
-    TOGGLE = 0x01,
+    Toggle = 0x01,
     #[doc = "Clear output"]
-    CLEAR = 0x02,
+    Clear = 0x02,
     #[doc = "Set output"]
-    SET = 0x03,
+    Set = 0x03,
     #[doc = "Generate a low pulse that is one input clock cycle wide on the output signal. When OMn is first programmed as 1xx, the output is set to one immediately on the next input clock (if it was not already). The input clock here refers to the clock selected by the CLKSRC field of this register."]
-    PULSE = 0x04,
+    Pulse = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
@@ -277,15 +277,15 @@ impl From<Om1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Om2 {
     #[doc = "Output disabled. No response on the signal."]
-    DISABLED = 0x0,
+    Disabled = 0x0,
     #[doc = "Toggle output"]
-    TOGGLE = 0x01,
+    Toggle = 0x01,
     #[doc = "Clear output"]
-    CLEAR = 0x02,
+    Clear = 0x02,
     #[doc = "Set output"]
-    SET = 0x03,
+    Set = 0x03,
     #[doc = "Generate a low pulse that is one input clock cycle wide on the output signal. When OMn is first programmed as 1xx, the output is set to one immediately on the next input clock (if it was not already). The input clock here refers to the clock selected by the CLKSRC field of this register."]
-    PULSE = 0x04,
+    Pulse = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
@@ -317,15 +317,15 @@ impl From<Om2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Om3 {
     #[doc = "Output disabled. No response on the signal."]
-    DISABLED = 0x0,
+    Disabled = 0x0,
     #[doc = "Toggle output"]
-    TOGGLE = 0x01,
+    Toggle = 0x01,
     #[doc = "Clear output"]
-    CLEAR = 0x02,
+    Clear = 0x02,
     #[doc = "Set output"]
-    SET = 0x03,
+    Set = 0x03,
     #[doc = "Generate a low pulse that is one input clock cycle wide on the output signal. When OMn is first programmed as 1xx, the output is set to one immediately on the next input clock (if it was not already). The input clock here refers to the clock selected by the CLKSRC field of this register."]
-    PULSE = 0x04,
+    Pulse = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
@@ -409,9 +409,9 @@ impl From<Prescaler> for u16 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prescaler24m {
     #[doc = "Divide by 1"]
-    DIV_BY_1 = 0x0,
+    DivBy1 = 0x0,
     #[doc = "Divide by 2"]
-    DIV_BY_2 = 0x01,
+    DivBy2 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     _RESERVED_4 = 0x04,
@@ -426,7 +426,7 @@ pub enum Prescaler24m {
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Divide by 16"]
-    DIV_BY_16 = 0x0f,
+    DivBy16 = 0x0f,
 }
 impl Prescaler24m {
     #[inline(always)]
@@ -455,9 +455,9 @@ impl From<Prescaler24m> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Stopen {
     #[doc = "Disable in Stop mode"]
-    STOP_DIS = 0x0,
+    StopDis = 0x0,
     #[doc = "Enable in Stop mode"]
-    STOP_EN = 0x01,
+    StopEn = 0x01,
 }
 impl Stopen {
     #[inline(always)]
@@ -486,9 +486,9 @@ impl From<Stopen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Waiten {
     #[doc = "Disable in Wait mode"]
-    WAIT_DIS = 0x0,
+    WaitDis = 0x0,
     #[doc = "Enable in Wait mode"]
-    WAIT_EN = 0x01,
+    WaitEn = 0x01,
 }
 impl Waiten {
     #[inline(always)]

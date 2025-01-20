@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ClcrLgo {
     #[doc = "Write: no effect. Read: no line command active."]
-    NO_EFFECT = 0x0,
+    NoEffect = 0x0,
     #[doc = "Write: initiate line command. Read: line command active."]
-    INIT_CMD = 0x01,
+    InitCmd = 0x01,
 }
 impl ClcrLgo {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<ClcrLgo> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CsarLgo {
     #[doc = "Write: no effect. Read: no line command active."]
-    NO_EFFECT = 0x0,
+    NoEffect = 0x0,
     #[doc = "Write: initiate line command. Read: line command active."]
-    INIT_CMD = 0x01,
+    InitCmd = 0x01,
 }
 impl CsarLgo {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<CsarLgo> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Frcnoallc {
     #[doc = "Allocation on cache misses"]
-    FRCNOALLC_0 = 0x0,
+    Frcnoallc0 = 0x0,
     #[doc = "Forces no allocation on cache misses (must also have FRCWT asserted)"]
-    FRCNOALLC_1 = 0x01,
+    Frcnoallc1 = 0x01,
 }
 impl Frcnoallc {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<Frcnoallc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Frcwt {
     #[doc = "Does not force"]
-    FRCWT_0 = 0x0,
+    Frcwt0 = 0x0,
     #[doc = "Force"]
-    FRCWT_1 = 0x01,
+    Frcwt1 = 0x01,
 }
 impl Frcwt {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<Frcwt> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Go {
     #[doc = "Write: no effect. Read: no cache command active"]
-    NO_EFFECT = 0x0,
+    NoEffect = 0x0,
     #[doc = "Write: initiates command; Read: cache command active"]
-    INIT_CMD = 0x01,
+    InitCmd = 0x01,
 }
 impl Go {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<Go> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Invw0 {
     #[doc = "No operation"]
-    NO_OPERATION = 0x0,
+    NoOperation = 0x0,
     #[doc = "When you write 1 to GO, invalidates all lines in way 0."]
-    INVW0 = 0x01,
+    Invw0 = 0x01,
 }
 impl Invw0 {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<Invw0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Invw1 {
     #[doc = "No operation"]
-    NO_OPERATION = 0x0,
+    NoOperation = 0x0,
     #[doc = "When you write 1 to GO, invalidates all lines in way 1"]
-    INVW1 = 0x01,
+    Invw1 = 0x01,
 }
 impl Invw1 {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<Invw1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lacc {
     #[doc = "Read"]
-    READ = 0x0,
+    Read = 0x0,
     #[doc = "Write"]
-    WRITE = 0x01,
+    Write = 0x01,
 }
 impl Lacc {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<Lacc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ladsel {
     #[doc = "Cache address"]
-    CACHE_ADDR = 0x0,
+    CacheAddr = 0x0,
     #[doc = "Physical address"]
-    PHYS_ADDR = 0x01,
+    PhysAddr = 0x01,
 }
 impl Ladsel {
     #[inline(always)]
@@ -282,13 +282,13 @@ impl From<Ladsel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lcmd {
     #[doc = "Search and read or write"]
-    SEARCH_RW = 0x0,
+    SearchRw = 0x0,
     #[doc = "Invalidate"]
-    INVALIDATE = 0x01,
+    Invalidate = 0x01,
     #[doc = "Push"]
-    PUSH = 0x02,
+    Push = 0x02,
     #[doc = "Clear"]
-    CLEAR = 0x03,
+    Clear = 0x03,
 }
 impl Lcmd {
     #[inline(always)]
@@ -317,9 +317,9 @@ impl From<Lcmd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pushw0 {
     #[doc = "No operation"]
-    NO_OPERATION = 0x0,
+    NoOperation = 0x0,
     #[doc = "When you write 1 to GO, push all modified lines in way 0"]
-    PUSHW0 = 0x01,
+    Pushw0 = 0x01,
 }
 impl Pushw0 {
     #[inline(always)]
@@ -348,9 +348,9 @@ impl From<Pushw0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pushw1 {
     #[doc = "No operation"]
-    NO_OPERATION = 0x0,
+    NoOperation = 0x0,
     #[doc = "When you write 1 to GO, push all modified lines in way 1"]
-    PUSHW1 = 0x01,
+    Pushw1 = 0x01,
 }
 impl Pushw1 {
     #[inline(always)]
@@ -379,9 +379,9 @@ impl From<Pushw1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tdsel {
     #[doc = "Data"]
-    DATA = 0x0,
+    Data = 0x0,
     #[doc = "Tag"]
-    TAG = 0x01,
+    Tag = 0x01,
 }
 impl Tdsel {
     #[inline(always)]
@@ -410,9 +410,9 @@ impl From<Tdsel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wsel {
     #[doc = "Way 0"]
-    WAY0 = 0x0,
+    Way0 = 0x0,
     #[doc = "Way 1"]
-    WAY1 = 0x01,
+    Way1 = 0x01,
 }
 impl Wsel {
     #[inline(always)]

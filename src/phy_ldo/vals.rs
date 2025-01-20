@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LinregPwruploadDis {
     #[doc = "Internal pull-down enabled"]
-    LINREG_PWRUPLOAD_DIS_0 = 0x0,
+    LinregPwruploadDis0 = 0x0,
     #[doc = "Internal pull-down disabled"]
-    LINREG_PWRUPLOAD_DIS_1 = 0x01,
+    LinregPwruploadDis1 = 0x01,
 }
 impl LinregPwruploadDis {
     #[inline(always)]

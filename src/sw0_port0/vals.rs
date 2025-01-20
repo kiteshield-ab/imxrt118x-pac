@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DgsTc0 {
     #[doc = "Closed"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Open"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl DgsTc0 {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<DgsTc0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DgsTc1 {
     #[doc = "Closed"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Open"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl DgsTc1 {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<DgsTc1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DgsTc2 {
     #[doc = "Closed"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Open"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl DgsTc2 {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<DgsTc2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DgsTc3 {
     #[doc = "Closed"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Open"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl DgsTc3 {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<DgsTc3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DgsTc4 {
     #[doc = "Closed"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Open"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl DgsTc4 {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<DgsTc4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DgsTc5 {
     #[doc = "Closed"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Open"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl DgsTc5 {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<DgsTc5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DgsTc6 {
     #[doc = "Closed"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Open"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl DgsTc6 {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<DgsTc6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DgsTc7 {
     #[doc = "Closed"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Open"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl DgsTc7 {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<DgsTc7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Drme {
     #[doc = "Preserve the DR value in the outer VLAN."]
-    PRESERVE = 0x0,
+    Preserve = 0x0,
     #[doc = "Update DR value in the outer VLAN based on DEnDEI field."]
-    UPDATE = 0x01,
+    Update = 0x01,
 }
 impl Drme {
     #[inline(always)]
@@ -282,9 +282,9 @@ impl From<Drme> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Fmma {
     #[doc = "Discard the frame and counted against the port's Tx discard count register (PTXDCR) along with the setting of the Frame Modification Misconfiguration Discard Reason (FMMDR) flag to 1 in the port's Tx discard count reason register 0 (PTXDCRR0)."]
-    DISCARD = 0x0,
+    Discard = 0x0,
     #[doc = "Transmit the frame without performing any of the ingress and egress frame modification actions specified."]
-    TRANSMIT = 0x01,
+    Transmit = 0x01,
 }
 impl Fmma {
     #[inline(always)]
@@ -313,9 +313,9 @@ impl From<Fmma> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum L3hfp {
     #[doc = "No L3 header present. Indicates to the parser of not parsing the L3 header. Parsing in this case would go as far as the L2 header regardless of whether or not there is an L3 header in the frame. This option should not be used if there are any table lookup entries that contain L3/L4 key fields that could be matched against a frame."]
-    L3_HDR_NOT_PRESET = 0x0,
+    L3HdrNotPreset = 0x0,
     #[doc = "Parse L3 header if present in the frame."]
-    L3_HDR_PRESENT = 0x01,
+    L3HdrPresent = 0x01,
 }
 impl L3hfp {
     #[inline(always)]
@@ -344,9 +344,9 @@ impl From<L3hfp> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum L4hfp {
     #[doc = "No L4 header present. Indicates to the parser of not parsing the L4 header. Parsing in this case would go as far as the L3 header if configured to parse it (L3HFP=1) regardless of whether or not there is an L4 header in the frame. This option should not be used if there are any table lookup entries that contain L4 key fields that could be matched against a frame."]
-    L4_HDR_NOT_PRESENT = 0x0,
+    L4HdrNotPresent = 0x0,
     #[doc = "Parse L4 header if present in the frame"]
-    L4_HDR_PRESENT = 0x01,
+    L4HdrPresent = 0x01,
 }
 impl L4hfp {
     #[inline(always)]
@@ -375,9 +375,9 @@ impl From<L4hfp> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RxBusy {
     #[doc = "Idle"]
-    IDLE = 0x0,
+    Idle = 0x0,
     #[doc = "Busy"]
-    BUSY = 0x01,
+    Busy = 0x01,
 }
 impl RxBusy {
     #[inline(always)]
@@ -406,9 +406,9 @@ impl From<RxBusy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rxdis {
     #[doc = "Rx path is enabled."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Rx path is disabled."]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl Rxdis {
     #[inline(always)]
@@ -437,9 +437,9 @@ impl From<Rxdis> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Srcprnd {
     #[doc = "Enabled"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disabled"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl Srcprnd {
     #[inline(always)]
@@ -468,9 +468,9 @@ impl From<Srcprnd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TxBusy {
     #[doc = "Idle"]
-    IDLE = 0x0,
+    Idle = 0x0,
     #[doc = "Busy"]
-    BUSY = 0x01,
+    Busy = 0x01,
 }
 impl TxBusy {
     #[inline(always)]
@@ -499,9 +499,9 @@ impl From<TxBusy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Txdis {
     #[doc = "Tx path is enabled"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Tx path is disabled."]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl Txdis {
     #[inline(always)]

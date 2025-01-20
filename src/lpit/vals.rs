@@ -3,13 +3,13 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Mode {
     #[doc = "32-bit periodic counter"]
-    CTR_32BIT = 0x0,
+    Ctr32bit = 0x0,
     #[doc = "Dual 16-bit periodic counter"]
-    CTR_DUAL_16BIT = 0x01,
+    CtrDual16bit = 0x01,
     #[doc = "32-bit trigger accumulator"]
-    TRIG_ACCUM_32BIT = 0x02,
+    TrigAccum32bit = 0x02,
     #[doc = "32-bit trigger input capture"]
-    TRIG_INPUT_32BIT = 0x03,
+    TrigInput32bit = 0x03,
 }
 impl Mode {
     #[inline(always)]
@@ -38,9 +38,9 @@ impl From<Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tif0 {
     #[doc = "Not timed out"]
-    TIMEOUT_NO = 0x0,
+    TimeoutNo = 0x0,
     #[doc = "Timed out"]
-    TIMEOUT_YES = 0x01,
+    TimeoutYes = 0x01,
 }
 impl Tif0 {
     #[inline(always)]
@@ -69,9 +69,9 @@ impl From<Tif0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tif1 {
     #[doc = "Not timed out"]
-    TIMEOUT_NO = 0x0,
+    TimeoutNo = 0x0,
     #[doc = "Timed out"]
-    TIMEOUT_YES = 0x01,
+    TimeoutYes = 0x01,
 }
 impl Tif1 {
     #[inline(always)]
@@ -100,9 +100,9 @@ impl From<Tif1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tif2 {
     #[doc = "Not timed out"]
-    TIMEOUT_NO = 0x0,
+    TimeoutNo = 0x0,
     #[doc = "Timed out"]
-    TIMEOUT_YES = 0x01,
+    TimeoutYes = 0x01,
 }
 impl Tif2 {
     #[inline(always)]
@@ -131,9 +131,9 @@ impl From<Tif2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tif3 {
     #[doc = "Not timed out"]
-    TIMEOUT_NO = 0x0,
+    TimeoutNo = 0x0,
     #[doc = "Timed out"]
-    TIMEOUT_YES = 0x01,
+    TimeoutYes = 0x01,
 }
 impl Tif3 {
     #[inline(always)]
@@ -242,13 +242,13 @@ impl From<TmrVal> for u32 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TrgSel {
     #[doc = "Timer channel 0-3 trigger source"]
-    TRIG_SOURCE_0 = 0x0,
+    TrigSource0 = 0x0,
     #[doc = "Timer channel 0-3 trigger source"]
-    TRIG_SOURCE_1 = 0x01,
+    TrigSource1 = 0x01,
     #[doc = "Timer channel 0-3 trigger source"]
-    TRIG_SOURCE_2 = 0x02,
+    TrigSource2 = 0x02,
     #[doc = "Timer channel 0-3 trigger source"]
-    TRIG_SOURCE_3 = 0x03,
+    TrigSource3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -289,9 +289,9 @@ impl From<TrgSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TrgSrc {
     #[doc = "External"]
-    EXT_TRIG = 0x0,
+    ExtTrig = 0x0,
     #[doc = "Internal"]
-    INT_TRIG = 0x01,
+    IntTrig = 0x01,
 }
 impl TrgSrc {
     #[inline(always)]
@@ -320,9 +320,9 @@ impl From<TrgSrc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tsot {
     #[doc = "Immediately"]
-    IMMEDIATELY = 0x0,
+    Immediately = 0x0,
     #[doc = "When a rising edge is detected"]
-    RISING_EDGE = 0x01,
+    RisingEdge = 0x01,
 }
 impl Tsot {
     #[inline(always)]

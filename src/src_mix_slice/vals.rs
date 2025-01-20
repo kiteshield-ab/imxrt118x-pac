@@ -3,13 +3,13 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EdgelockHdskCtrlPoffCntMode {
     #[doc = "Not use counter, raise Edgelock handshake done to GPC once get Edgelock ack"]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "Delay after receiving Edgelock ack, delay cycle number is POFF_CNT_CFG"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "Ignore Edgelock ack, raise Edgelock handshake done to GPC when counting to POFF_CNT_CFG value"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "Time out mode, raise Edgelock handshake done to GPC when either Edgelock ack received or counting to POFF_CNT_CFG value"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
 }
 impl EdgelockHdskCtrlPoffCntMode {
     #[inline(always)]
@@ -38,13 +38,13 @@ impl From<EdgelockHdskCtrlPoffCntMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EdgelockHdskCtrlPonCntMode {
     #[doc = "Not use counter, raise Edgelock handshake done to GPC once get Edgelock ack"]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "Delay after receiving Edgelock ack, delay cycle number is PON_CNT_CFG"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "Ignore Edgelock ack, raise Edgelock handshake done to GPC when counting to PON_CNT_CFG value"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "Time out mode, raise Edgelock handshake done to GPC when either Edgelock ack received or counting to PON_CNT_CFG value"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
 }
 impl EdgelockHdskCtrlPonCntMode {
     #[inline(always)]
@@ -73,9 +73,9 @@ impl From<EdgelockHdskCtrlPonCntMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EdgelockHdskSoft {
     #[doc = "Clear to 0 to trigger Edgelock handshake for power on."]
-    TRIG0 = 0x0,
+    Trig0 = 0x0,
     #[doc = "Write to 1 to trigger Edgelock handshake for power off."]
-    TRIG1 = 0x01,
+    Trig1 = 0x01,
 }
 impl EdgelockHdskSoft {
     #[inline(always)]
@@ -104,9 +104,9 @@ impl From<EdgelockHdskSoft> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IsoOnSoft {
     #[doc = "Clear to 0 to trigger isolation off"]
-    TRIG0 = 0x0,
+    Trig0 = 0x0,
     #[doc = "Write 1 to trigger isolation on"]
-    TRIG1 = 0x01,
+    Trig1 = 0x01,
 }
 impl IsoOnSoft {
     #[inline(always)]
@@ -135,21 +135,21 @@ impl From<IsoOnSoft> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD0 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD0 {
     #[inline(always)]
@@ -178,21 +178,21 @@ impl From<LpmSettingD0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD1 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD1 {
     #[inline(always)]
@@ -221,21 +221,21 @@ impl From<LpmSettingD1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD10 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD10 {
     #[inline(always)]
@@ -264,21 +264,21 @@ impl From<LpmSettingD10> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD11 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD11 {
     #[inline(always)]
@@ -307,21 +307,21 @@ impl From<LpmSettingD11> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD12 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD12 {
     #[inline(always)]
@@ -350,21 +350,21 @@ impl From<LpmSettingD12> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD13 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD13 {
     #[inline(always)]
@@ -393,21 +393,21 @@ impl From<LpmSettingD13> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD14 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD14 {
     #[inline(always)]
@@ -436,21 +436,21 @@ impl From<LpmSettingD14> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD15 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD15 {
     #[inline(always)]
@@ -479,21 +479,21 @@ impl From<LpmSettingD15> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD2 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD2 {
     #[inline(always)]
@@ -522,21 +522,21 @@ impl From<LpmSettingD2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD3 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD3 {
     #[inline(always)]
@@ -565,21 +565,21 @@ impl From<LpmSettingD3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD4 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD4 {
     #[inline(always)]
@@ -608,21 +608,21 @@ impl From<LpmSettingD4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD5 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD5 {
     #[inline(always)]
@@ -651,21 +651,21 @@ impl From<LpmSettingD5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD6 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD6 {
     #[inline(always)]
@@ -694,21 +694,21 @@ impl From<LpmSettingD6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD7 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD7 {
     #[inline(always)]
@@ -737,21 +737,21 @@ impl From<LpmSettingD7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD8 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD8 {
     #[inline(always)]
@@ -780,21 +780,21 @@ impl From<LpmSettingD8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LpmSettingD9 {
     #[doc = "Not used. Do not write this value."]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "power on when domain n is in RUN, off in WAIT/STOP/SUSPEND"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "power on when domain n is in RUN/WAIT, off in STOP/SUSPEND"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "power on when domain n is in RUN/WAIT/STOP, off in SUSPEND"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
     #[doc = "power always on"]
-    VALN_4 = 0x04,
+    Valn4 = 0x04,
     #[doc = "power always on"]
-    VALN_5 = 0x05,
+    Valn5 = 0x05,
     #[doc = "power always on"]
-    VALN_6 = 0x06,
+    Valn6 = 0x06,
     #[doc = "power always on"]
-    VALN_7 = 0x07,
+    Valn7 = 0x07,
 }
 impl LpmSettingD9 {
     #[inline(always)]
@@ -823,9 +823,9 @@ impl From<LpmSettingD9> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdnSoft {
     #[doc = "Clear to 0 to trigger a power up sequence."]
-    TRIG0 = 0x0,
+    Trig0 = 0x0,
     #[doc = "Write 1 to trigger a power down sequence."]
-    TRIG1 = 0x01,
+    Trig1 = 0x01,
 }
 impl PdnSoft {
     #[inline(always)]
@@ -854,9 +854,9 @@ impl From<PdnSoft> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PoffBusy {
     #[doc = "Does not send Edgelock handshake for power down."]
-    EN = 0x0,
+    En = 0x0,
     #[doc = "Sends Edgelock handshake for power down."]
-    DIS = 0x01,
+    Dis = 0x01,
 }
 impl PoffBusy {
     #[inline(always)]
@@ -885,13 +885,13 @@ impl From<PoffBusy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PswCtrlPoffCntMode {
     #[doc = "Not use counter, raise power_on/off done to GPC once get psw ack"]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "Delay after receiving psw ack, delay cycle number is POFF_CNT_CFG. When POFF_CNT_CFG value in HF/LF is different, bigger value will be used."]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "Ignore psw ack, raise power_on/off done to GPC when counting to POFF_CNT_CFG value. When POFF_CNT_CFG value in HF/LF is different, bigger value will be used."]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "Time out mode, raise power_on/off done to GPC when either psw ack received or counting to POFF_CNT_CFG value. When POFF_CNT_CFG value in HF/LF is different, bigger value will be used."]
-    VAL3 = 0x03,
+    Val3 = 0x03,
 }
 impl PswCtrlPoffCntMode {
     #[inline(always)]
@@ -920,13 +920,13 @@ impl From<PswCtrlPoffCntMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PswCtrlPonCntMode {
     #[doc = "Not use counter, raise power_on/off done to GPC once get psw ack"]
-    VAL0 = 0x0,
+    Val0 = 0x0,
     #[doc = "Delay after receiving psw ack, delay cycle number is PON_CNT_CFG"]
-    VAL1 = 0x01,
+    Val1 = 0x01,
     #[doc = "Ignore psw ack, raise power_on/off done to GPC when counting to PON_CNT_CFG value"]
-    VAL2 = 0x02,
+    Val2 = 0x02,
     #[doc = "Time out mode, raise power_on/off done to GPC when either psw ack received or counting to PON_CNT_CFG value"]
-    VAL3 = 0x03,
+    Val3 = 0x03,
 }
 impl PswCtrlPonCntMode {
     #[inline(always)]
@@ -955,9 +955,9 @@ impl From<PswCtrlPonCntMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PswOffSoft {
     #[doc = "Clear to 0 to trigger power switch on"]
-    TRIG0 = 0x0,
+    Trig0 = 0x0,
     #[doc = "Write 1 to trigger power switch off"]
-    TRIG1 = 0x01,
+    Trig1 = 0x01,
 }
 impl PswOffSoft {
     #[inline(always)]
@@ -986,9 +986,9 @@ impl From<PswOffSoft> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PswStat {
     #[doc = "power switch on"]
-    ON = 0x0,
+    On = 0x0,
     #[doc = "power switch off"]
-    OFF = 0x01,
+    Off = 0x01,
 }
 impl PswStat {
     #[inline(always)]
@@ -1017,9 +1017,9 @@ impl From<PswStat> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RstCtrlSoft {
     #[doc = "Clear to 0 to trigger reset deassert"]
-    TRIG0 = 0x0,
+    Trig0 = 0x0,
     #[doc = "Write 1 to trigger reset assert"]
-    TRIG1 = 0x01,
+    Trig1 = 0x01,
 }
 impl RstCtrlSoft {
     #[inline(always)]
@@ -1048,9 +1048,9 @@ impl From<RstCtrlSoft> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RstStat {
     #[doc = "reset asserted"]
-    ASSERT = 0x0,
+    Assert = 0x0,
     #[doc = "reset released"]
-    DEASSERT = 0x01,
+    Deassert = 0x01,
 }
 impl RstStat {
     #[inline(always)]

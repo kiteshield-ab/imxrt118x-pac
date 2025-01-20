@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rcs {
     #[doc = "Unsuccessful"]
-    RECONFIG = 0x0,
+    Reconfig = 0x0,
     #[doc = "Successful"]
-    SUCCESS = 0x01,
+    Success = 0x01,
 }
 impl Rcs {
     #[inline(always)]
@@ -34,13 +34,13 @@ impl From<Rcs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tst {
     #[doc = "Disable WDOG Test mode"]
-    DIS = 0x0,
+    Dis = 0x0,
     #[doc = "Enable WDOG User mode"]
-    EN = 0x01,
+    En = 0x01,
     #[doc = "Enable WDOG Test mode"]
-    ENABLES_2 = 0x02,
+    Enables2 = 0x02,
     #[doc = "Enable WDOG Test mode"]
-    ENABLES_3 = 0x03,
+    Enables3 = 0x03,
 }
 impl Tst {
     #[inline(always)]
@@ -69,9 +69,9 @@ impl From<Tst> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ulk {
     #[doc = "Locked"]
-    LOCK = 0x0,
+    Lock = 0x0,
     #[doc = "Unlocked"]
-    UNLOCK = 0x01,
+    Unlock = 0x01,
 }
 impl Ulk {
     #[inline(always)]

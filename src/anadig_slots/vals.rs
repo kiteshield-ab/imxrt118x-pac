@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AllowNonsecure {
     #[doc = "Do not allow non-secure write access"]
-    PREVENT = 0x0,
+    Prevent = 0x0,
     #[doc = "Allow non-secure write access"]
-    ALLOW = 0x01,
+    Allow = 0x01,
 }
 impl AllowNonsecure {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<AllowNonsecure> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AllowUser {
     #[doc = "Do not allow user write access"]
-    PREVENT = 0x0,
+    Prevent = 0x0,
     #[doc = "Allow user write access"]
-    ALLOW = 0x01,
+    Allow = 0x01,
 }
 impl AllowUser {
     #[inline(always)]

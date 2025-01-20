@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Instr {
     #[doc = "Data access for DMA transfers"]
-    DATA = 0x0,
+    Data = 0x0,
     #[doc = "Instruction access for DMA transfers"]
-    INSTR = 0x01,
+    Instr = 0x01,
 }
 impl Instr {
     #[inline(always)]
@@ -82,24 +82,24 @@ impl From<Signext> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Swap {
     #[doc = "disabled"]
-    DISABLE = 0x0,
+    Disable = 0x0,
     #[doc = "read with 8-bit swap"]
-    READ_SWAP8 = 0x01,
+    ReadSwap8 = 0x01,
     #[doc = "read with 16-bit swap"]
-    READ_SWAP16 = 0x02,
+    ReadSwap16 = 0x02,
     #[doc = "read with 32-bit swap"]
-    READ_SWAP32 = 0x03,
+    ReadSwap32 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     _RESERVED_8 = 0x08,
     #[doc = "write with 8-bit swap"]
-    WRITE_SWAP8 = 0x09,
+    WriteSwap8 = 0x09,
     #[doc = "write with 16-bit swap"]
-    WRITE_SWAP16 = 0x0a,
+    WriteSwap16 = 0x0a,
     #[doc = "write with 32-bit swap"]
-    WRITE_SWAP32 = 0x0b,
+    WriteSwap32 = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
@@ -132,11 +132,11 @@ impl From<Swap> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tmc {
     #[doc = "Read/Write"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Read Only"]
-    READ_ONLY = 0x01,
+    ReadOnly = 0x01,
     #[doc = "Write Only"]
-    WRITE_ONLY = 0x02,
+    WriteOnly = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Tmc {

@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rcd {
     #[doc = "Reference Clock has not been detected as active. Registers in timer clock domain are not allowed to be accessed; reads return 0, writes are ignored."]
-    REF_CLK_NOT_ACTIVE = 0x0,
+    RefClkNotActive = 0x0,
     #[doc = "Reference Clock has been detected as active. Registers in timer clock domain are allowed to be accessed."]
-    REF_CLK_ACTIVE = 0x01,
+    RefClkActive = 0x01,
 }
 impl Rcd {
     #[inline(always)]

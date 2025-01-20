@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Clk1mErr {
     #[doc = "No error."]
-    NO_ERROR = 0x0,
+    NoError = 0x0,
     #[doc = "Indicates error."]
-    INDICATES_ERROR = 0x01,
+    IndicatesError = 0x01,
 }
 impl Clk1mErr {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<Clk1mErr> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ClrErr {
     #[doc = "Normal operation"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Clears the error flag CLK1M_ERR in status register STAT0."]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl ClrErr {
     #[inline(always)]

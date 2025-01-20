@@ -3,13 +3,13 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum BtnTimeout {
     #[doc = "5 seconds."]
-    SEC_5 = 0x0,
+    Sec5 = 0x0,
     #[doc = "10 seconds."]
-    SEC_10 = 0x01,
+    Sec10 = 0x01,
     #[doc = "15 seconds."]
-    SEC_15 = 0x02,
+    Sec15 = 0x02,
     #[doc = "Timeout disabled. Long button presses will not request a power down."]
-    DISABLE = 0x03,
+    Disable = 0x03,
 }
 impl BtnTimeout {
     #[inline(always)]
@@ -38,11 +38,11 @@ impl From<BtnTimeout> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CalVal {
     #[doc = "+0 counts per each 32768 ticks of the counter clock."]
-    ADD_0_PER_32768_TICKS = 0x0,
+    Add0Per32768Ticks = 0x0,
     #[doc = "+1 counts per each 32768 ticks of the counter clock."]
-    ADD_1_PER_32768_TICKS = 0x01,
+    Add1Per32768Ticks = 0x01,
     #[doc = "+2 counts per each 32768 ticks of the counter clock."]
-    ADD_2_PER_32768_TICKS = 0x02,
+    Add2Per32768Ticks = 0x02,
     _RESERVED_3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
@@ -56,11 +56,11 @@ pub enum CalVal {
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "+15 counts per each 32768 ticks of the counter clock."]
-    ADD_15_PER_32768_TICKS = 0x0f,
+    Add15Per32768Ticks = 0x0f,
     #[doc = "-16 counts per each 32768 ticks of the counter clock."]
-    SUB_16_PER_32768_TICKS = 0x10,
+    Sub16Per32768Ticks = 0x10,
     #[doc = "-15 counts per each 32768 ticks of the counter clock."]
-    SUB_15_PER_32768_TICKS = 0x11,
+    Sub15Per32768Ticks = 0x11,
     _RESERVED_12 = 0x12,
     _RESERVED_13 = 0x13,
     _RESERVED_14 = 0x14,
@@ -74,9 +74,9 @@ pub enum CalVal {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "-2 counts per each 32768 ticks of the counter clock."]
-    SUB_2_PER_32768_TICKS = 0x1e,
+    Sub2Per32768Ticks = 0x1e,
     #[doc = "-1 counts per each 32768 ticks of the counter clock."]
-    SUB_1_PER_32768_TICKS = 0x1f,
+    Sub1Per32768Ticks = 0x1f,
 }
 impl CalVal {
     #[inline(always)]
@@ -105,13 +105,13 @@ impl From<CalVal> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Debounce {
     #[doc = "50 milliseconds."]
-    MSEC_50 = 0x0,
+    Msec50 = 0x0,
     #[doc = "100 milliseconds."]
-    MSEC_100 = 0x01,
+    Msec100 = 0x01,
     #[doc = "500 milliseconds."]
-    MSEC_500 = 0x02,
+    Msec500 = 0x02,
     #[doc = "0 milliseconds."]
-    MSEC_0 = 0x03,
+    Msec0 = 0x03,
 }
 impl Debounce {
     #[inline(always)]
@@ -140,9 +140,9 @@ impl From<Debounce> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EmgOff {
     #[doc = "An emergency power off has not been requested."]
-    NO_EVENT = 0x0,
+    NoEvent = 0x0,
     #[doc = "An emergency power off has been requested."]
-    EVENT_ASSERTED = 0x01,
+    EventAsserted = 0x01,
 }
 impl EmgOff {
     #[inline(always)]
@@ -215,9 +215,9 @@ impl From<GprSz> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl0 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl0 {
     #[inline(always)]
@@ -246,9 +246,9 @@ impl From<PadCtrl0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl1 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl1 {
     #[inline(always)]
@@ -277,9 +277,9 @@ impl From<PadCtrl1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl10 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl10 {
     #[inline(always)]
@@ -308,9 +308,9 @@ impl From<PadCtrl10> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl11 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl11 {
     #[inline(always)]
@@ -339,9 +339,9 @@ impl From<PadCtrl11> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl12 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl12 {
     #[inline(always)]
@@ -370,9 +370,9 @@ impl From<PadCtrl12> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl13 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl13 {
     #[inline(always)]
@@ -401,9 +401,9 @@ impl From<PadCtrl13> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl14 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl14 {
     #[inline(always)]
@@ -432,9 +432,9 @@ impl From<PadCtrl14> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl15 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl15 {
     #[inline(always)]
@@ -463,9 +463,9 @@ impl From<PadCtrl15> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl2 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl2 {
     #[inline(always)]
@@ -494,9 +494,9 @@ impl From<PadCtrl2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl3 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl3 {
     #[inline(always)]
@@ -525,9 +525,9 @@ impl From<PadCtrl3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl4 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl4 {
     #[inline(always)]
@@ -556,9 +556,9 @@ impl From<PadCtrl4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl5 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl5 {
     #[inline(always)]
@@ -587,9 +587,9 @@ impl From<PadCtrl5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl6 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl6 {
     #[inline(always)]
@@ -618,9 +618,9 @@ impl From<PadCtrl6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl7 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl7 {
     #[inline(always)]
@@ -649,9 +649,9 @@ impl From<PadCtrl7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl8 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl8 {
     #[inline(always)]
@@ -680,9 +680,9 @@ impl From<PadCtrl8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PadCtrl9 {
     #[doc = "Deasserts bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Assert bit n in bbnsm_pad_ctrl\\[n\\]"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PadCtrl9 {
     #[inline(always)]
@@ -711,9 +711,9 @@ impl From<PadCtrl9> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwrOff {
     #[doc = "The power off interrupt has not been requested."]
-    NO_EVENT = 0x0,
+    NoEvent = 0x0,
     #[doc = "The power off interrupt has been requested."]
-    EVENT_ASSERTED = 0x01,
+    EventAsserted = 0x01,
 }
 impl PwrOff {
     #[inline(always)]
@@ -742,9 +742,9 @@ impl From<PwrOff> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwrOn {
     #[doc = "The power on interrupt has not been requested."]
-    NO_EVENT = 0x0,
+    NoEvent = 0x0,
     #[doc = "The power on interrupt has been requested."]
-    EVENT_ASSERTED = 0x01,
+    EventAsserted = 0x01,
 }
 impl PwrOn {
     #[inline(always)]
@@ -774,9 +774,9 @@ impl From<PwrOn> for u8 {
 pub enum RtcEn {
     _RESERVED_0 = 0x0,
     #[doc = "Disable the real-time counter."]
-    DISABLED = 0x01,
+    Disabled = 0x01,
     #[doc = "Enable the real-time counter."]
-    ENABLED = 0x02,
+    Enabled = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl RtcEn {
@@ -807,9 +807,9 @@ impl From<RtcEn> for u8 {
 pub enum RtcIntEn {
     _RESERVED_0 = 0x0,
     #[doc = "Do not issue an interrupt when RTC has rolled over. The interrupt is cleared when this value is written."]
-    DISABLED = 0x01,
+    Disabled = 0x01,
     #[doc = "Issue an interrupt when RTC has rolled over."]
-    ENABLED = 0x02,
+    Enabled = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl RtcIntEn {
@@ -840,9 +840,9 @@ impl From<RtcIntEn> for u8 {
 pub enum RtcRoll {
     _RESERVED_0 = 0x0,
     #[doc = "The real-time counter has not rolled over."]
-    NO_EVENT = 0x01,
+    NoEvent = 0x01,
     #[doc = "The real-time counter has rolled over."]
-    EVENT_ASSERTED = 0x02,
+    EventAsserted = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl RtcRoll {
@@ -873,9 +873,9 @@ impl From<RtcRoll> for u8 {
 pub enum Ta {
     _RESERVED_0 = 0x0,
     #[doc = "The real-time counter has not reached the alarm time."]
-    NO_EVENT = 0x01,
+    NoEvent = 0x01,
     #[doc = "The real-time counter has reached the alarm time."]
-    EVENT_ASSERTED = 0x02,
+    EventAsserted = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Ta {
@@ -906,9 +906,9 @@ impl From<Ta> for u8 {
 pub enum TaEn {
     _RESERVED_0 = 0x0,
     #[doc = "Disable the time alarm."]
-    DISABLED = 0x01,
+    Disabled = 0x01,
     #[doc = "Enable the time alarm. A time alarm event occurs if the value in the real-time counter register is equal to the value in the time alarm register."]
-    ENABLED = 0x02,
+    Enabled = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl TaEn {
@@ -939,9 +939,9 @@ impl From<TaEn> for u8 {
 pub enum TaIntEn {
     _RESERVED_0 = 0x0,
     #[doc = "Do not issue an interrupt when RTC has reached alarm time. The interrupt is cleared when this value is written."]
-    DISABLED = 0x01,
+    Disabled = 0x01,
     #[doc = "Issue an interrupt when RTC has reached alarm time."]
-    ENABLED = 0x02,
+    Enabled = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl TaIntEn {
@@ -971,13 +971,13 @@ impl From<TaIntEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TurnOnTime {
     #[doc = "500 milliseconds."]
-    MSEC_50 = 0x0,
+    Msec50 = 0x0,
     #[doc = "50 milliseconds."]
-    MSEC_100 = 0x01,
+    Msec100 = 0x01,
     #[doc = "100 milliseconds."]
-    MSEC_500 = 0x02,
+    Msec500 = 0x02,
     #[doc = "0 milliseconds."]
-    MSEC_0 = 0x03,
+    Msec0 = 0x03,
 }
 impl TurnOnTime {
     #[inline(always)]

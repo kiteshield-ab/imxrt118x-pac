@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AddrErr {
     #[doc = "Normal"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Error. An access control violation has occurred. The request address used does not match the MDIO PHY's address (clause 22) or MDIO port address (clause 45) assigned."]
-    ERROR = 0x01,
+    Error = 0x01,
 }
 impl AddrErr {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<AddrErr> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Bsy1 {
     #[doc = "An MDIO transaction is not occurring; software may access other MDIO registers."]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "An MDIO transaction is occurring."]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Bsy1 {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<Bsy1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Bsy2 {
     #[doc = "An MDIO transaction is not occurring; software may access other MDIO registers."]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "An MDIO transaction is occurring."]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Bsy2 {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<Bsy2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cim {
     #[doc = "Masked"]
-    MASKED = 0x0,
+    Masked = 0x0,
     #[doc = "Enabled"]
-    ENABLED = 0x01,
+    Enabled = 0x01,
 }
 impl Cim {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<Cim> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmp {
     #[doc = "An MDIO command completion did not occur."]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "An MDIO command completion occurred."]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Cmp {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<Cmp> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ehold {
     #[doc = "Normal operation. MDIO hold time is specified in ."]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Extended Operation"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Ehold {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<Ehold> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Enc45 {
     #[doc = "Clause 22 transactions are used."]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Clause 45 transactions are used."]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl Enc45 {
     #[inline(always)]
@@ -220,21 +220,21 @@ impl From<Enc45> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MdioHold {
     #[doc = "1 NETC cycle"]
-    NETC1 = 0x0,
+    Netc1 = 0x0,
     #[doc = "3 NETC cycles"]
-    NETC3 = 0x01,
+    Netc3 = 0x01,
     #[doc = "5 NETC cycles (default - recommended value)"]
-    NETC5 = 0x02,
+    Netc5 = 0x02,
     #[doc = "7 NETC cycles"]
-    NETC7 = 0x03,
+    Netc7 = 0x03,
     #[doc = "9 NETC cycles"]
-    NETC9 = 0x04,
+    Netc9 = 0x04,
     #[doc = "11 NETC cycles"]
-    NETC11 = 0x05,
+    Netc11 = 0x05,
     #[doc = "13 NETC cycles"]
-    NETC13 = 0x06,
+    Netc13 = 0x06,
     #[doc = "15 NETC cycles"]
-    NETC15 = 0x07,
+    Netc15 = 0x07,
 }
 impl MdioHold {
     #[inline(always)]
@@ -263,9 +263,9 @@ impl From<MdioHold> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MdioRdEr {
     #[doc = "No error"]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "The last read transaction received no response from a PHY; any data read should be considered invalid (for example, the PHY address does not match any PHY available on the MDIO bus)."]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl MdioRdEr {
     #[inline(always)]
@@ -294,9 +294,9 @@ impl From<MdioRdEr> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Neg {
     #[doc = "Normal operation - positive edge"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "MDIO is driven by master on MDC negative edge (default for external MDIOs)"]
-    NEGATIVE = 0x01,
+    Negative = 0x01,
 }
 impl Neg {
     #[inline(always)]
@@ -325,9 +325,9 @@ impl From<Neg> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PreDis {
     #[doc = "Generation of MDIO preamble is enabled (default operation)."]
-    ZERO = 0x0,
+    Zero = 0x0,
     #[doc = "Generation of MDIO preamble is disabled"]
-    ONE = 0x01,
+    One = 0x01,
 }
 impl PreDis {
     #[inline(always)]

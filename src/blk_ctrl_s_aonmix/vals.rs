@@ -771,9 +771,9 @@ impl From<Cm7IrqMask7M> for u32 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DapCtr {
     #[doc = "DAP access is not granted by ROM"]
-    DAP_NO = 0x0,
+    DapNo = 0x0,
     #[doc = "DAP access is granted by ROM"]
-    DAP_YES = 0x01,
+    DapYes = 0x01,
 }
 impl DapCtr {
     #[inline(always)]
@@ -802,9 +802,9 @@ impl From<DapCtr> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EdgelockHaltAck {
     #[doc = "EdgeLock is not fully halted and its clocks must be enabled"]
-    EDGELOCK_NOT_HALTED = 0x0,
+    EdgelockNotHalted = 0x0,
     #[doc = "EdgeLock is fully halted indicating clocks may be removed"]
-    EDGELOCK_HALTED = 0x01,
+    EdgelockHalted = 0x01,
 }
 impl EdgelockHaltAck {
     #[inline(always)]
@@ -833,9 +833,9 @@ impl From<EdgelockHaltAck> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum EdgelockHaltExitIrqClr {
     #[doc = "Remove the clear signal. This bit is not self-clearing and need SW to clear."]
-    REMOVE_CLR = 0x0,
+    RemoveClr = 0x0,
     #[doc = "Clear EdgeLock halt exit interrupt"]
-    INT_CLR = 0x01,
+    IntClr = 0x01,
 }
 impl EdgelockHaltExitIrqClr {
     #[inline(always)]
@@ -864,9 +864,9 @@ impl From<EdgelockHaltExitIrqClr> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ForceRoundRobin {
     #[doc = "Enable force round robin(default)"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disable force round robin"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl ForceRoundRobin {
     #[inline(always)]
@@ -895,9 +895,9 @@ impl From<ForceRoundRobin> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M0HighPriority {
     #[doc = "Default Priority"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "High Priority"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl M0HighPriority {
     #[inline(always)]
@@ -926,9 +926,9 @@ impl From<M0HighPriority> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M1HighPriority {
     #[doc = "Default Priority"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "High Priority"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl M1HighPriority {
     #[inline(always)]
@@ -957,9 +957,9 @@ impl From<M1HighPriority> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M2HighPriority {
     #[doc = "Default Priority"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "High Priority"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl M2HighPriority {
     #[inline(always)]
@@ -988,11 +988,11 @@ impl From<M2HighPriority> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M33CfgTcmSize {
     #[doc = "Regular TCM, 128KB Code TCM and 128KB Sys TCM"]
-    TCM_SIZE3 = 0x0,
+    TcmSize3 = 0x0,
     #[doc = "Double Code TCM, 256KB Code TCM"]
-    TCM_SIZE2 = 0x01,
+    TcmSize2 = 0x01,
     #[doc = "Double Sys TCM, 256KB Sys TCM"]
-    TCM_SIZE1 = 0x02,
+    TcmSize1 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl M33CfgTcmSize {
@@ -1022,9 +1022,9 @@ impl From<M33CfgTcmSize> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M3HighPriority {
     #[doc = "Default Priority"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "High Priority"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl M3HighPriority {
     #[inline(always)]
@@ -1053,9 +1053,9 @@ impl From<M3HighPriority> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M4HighPriority {
     #[doc = "Default Priority"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "High Priority"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl M4HighPriority {
     #[inline(always)]
@@ -1084,9 +1084,9 @@ impl From<M4HighPriority> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M5HighPriority {
     #[doc = "Default Priority"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "High Priority"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl M5HighPriority {
     #[inline(always)]
@@ -1115,9 +1115,9 @@ impl From<M5HighPriority> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M6HighPriority {
     #[doc = "Default Priority"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "High Priority"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl M6HighPriority {
     #[inline(always)]
@@ -1146,16 +1146,16 @@ impl From<M6HighPriority> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum M7CfgTcmSize {
     #[doc = "Regular TCM, 256KB ITCM and 256KB DTCM"]
-    REG_ITCM = 0x0,
+    RegItcm = 0x0,
     #[doc = "Double ITCM, 512KB ITCM"]
-    DOUBLE_ITCM = 0x01,
+    DoubleItcm = 0x01,
     #[doc = "Double DTCM, 512KB DTCM"]
-    DOUBLE_DTCM = 0x02,
+    DoubleDtcm = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "HALF ITCM, 128KB ITCM and 384KB DTCM"]
-    HALF_ITCM = 0x04,
+    HalfItcm = 0x04,
     #[doc = "HALF DTCM, 384KB ITCM and 128KB DTCM"]
-    HALF_DTCM = 0x05,
+    HalfDtcm = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
 }
@@ -1186,9 +1186,9 @@ impl From<M7CfgTcmSize> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ocram1InitDone {
     #[doc = "OCRAM1 memory is under initialization"]
-    OCRAM_INIT = 0x0,
+    OcramInit = 0x0,
     #[doc = "OCRAM1 memory initialization is complete"]
-    OCRAM_INIT_DONE = 0x01,
+    OcramInitDone = 0x01,
 }
 impl Ocram1InitDone {
     #[inline(always)]
@@ -1217,9 +1217,9 @@ impl From<Ocram1InitDone> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ocram2InitDone {
     #[doc = "OCRAM2 memory is under initialization"]
-    OCRAM_INIT = 0x0,
+    OcramInit = 0x0,
     #[doc = "OCRAM2 memory initialization is complete"]
-    OCRAM_INIT_DONE = 0x01,
+    OcramInitDone = 0x01,
 }
 impl Ocram2InitDone {
     #[inline(always)]

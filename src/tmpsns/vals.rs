@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Finish {
     #[doc = "No read"]
-    NO_READING = 0x0,
+    NoReading = 0x0,
     #[doc = "New read"]
-    NEW_READING = 0x01,
+    NewReading = 0x01,
 }
 impl Finish {
     #[inline(always)]
@@ -114,9 +114,9 @@ impl From<Freq> for u16 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pwd {
     #[doc = "Active"]
-    ACTIVE = 0x0,
+    Active = 0x0,
     #[doc = "Inactive"]
-    INACTIVE = 0x01,
+    Inactive = 0x01,
 }
 impl Pwd {
     #[inline(always)]
@@ -145,9 +145,9 @@ impl From<Pwd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdFull {
     #[doc = "Active"]
-    ACTIVE = 0x0,
+    Active = 0x0,
     #[doc = "Inactive"]
-    INACTIVE = 0x01,
+    Inactive = 0x01,
 }
 impl PwdFull {
     #[inline(always)]
@@ -176,9 +176,9 @@ impl From<PwdFull> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Start {
     #[doc = "No read"]
-    NO_READING_TAKEN = 0x0,
+    NoReadingTaken = 0x0,
     #[doc = "New read"]
-    NEW_READING = 0x01,
+    NewReading = 0x01,
 }
 impl Start {
     #[inline(always)]

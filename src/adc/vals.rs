@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AdcActive {
     #[doc = "The ADC is IDLE. There are no pending triggers to service and no active commands are being processed."]
-    NOT_ACTIVE = 0x0,
+    NotActive = 0x0,
     #[doc = "The ADC is processing a conversion, running through the power up delay, or servicing a trigger."]
-    BUSY = 0x01,
+    Busy = 0x01,
 }
 impl AdcActive {
     #[inline(always)]
@@ -34,27 +34,27 @@ impl From<AdcActive> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CalAvgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -88,9 +88,9 @@ impl From<CalAvgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CalRdy {
     #[doc = "Calibration is incomplete or hasn't been ran."]
-    NOT_SET = 0x0,
+    NotSet = 0x0,
     #[doc = "The ADC is calibrated."]
-    HARDWARE_CAL_STEP_COMPLETED = 0x01,
+    HardwareCalStepCompleted = 0x01,
 }
 impl CalRdy {
     #[inline(always)]
@@ -119,9 +119,9 @@ impl From<CalRdy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CalReq {
     #[doc = "No request for hardware calibration has been made."]
-    NO_CALIBRATION_REQUEST = 0x0,
+    NoCalibrationRequest = 0x0,
     #[doc = "A request for hardware calibration has been made"]
-    CALIBRATION_REQUEST_PENDING = 0x01,
+    CalibrationRequestPending = 0x01,
 }
 impl CalReq {
     #[inline(always)]
@@ -150,9 +150,9 @@ impl From<CalReq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Calofs {
     #[doc = "Calibration function disabled"]
-    NO_ACTIVE_OFFSET_CALIBRATION_REQUEST = 0x0,
+    NoActiveOffsetCalibrationRequest = 0x0,
     #[doc = "Request for offset calibration function"]
-    OFFSET_CALIBRATION_REQUEST_PENDING = 0x01,
+    OffsetCalibrationRequestPending = 0x01,
 }
 impl Calofs {
     #[inline(always)]
@@ -181,9 +181,9 @@ impl From<Calofs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Calofsi {
     #[doc = "Calibration Not Implemented."]
-    CAL_FUNCTION_NOT_AVAILABLE = 0x0,
+    CalFunctionNotAvailable = 0x0,
     #[doc = "Calibration Implemented."]
-    CAL_FUNCTION_AVAILABLE = 0x01,
+    CalFunctionAvailable = 0x01,
 }
 impl Calofsi {
     #[inline(always)]
@@ -212,9 +212,9 @@ impl From<Calofsi> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Calofsmode {
     #[doc = "Configure offset calibration for 12-bit mode."]
-    OFSTRIM_12_BIT = 0x0,
+    Ofstrim12Bit = 0x0,
     #[doc = "Configure offset calibration for 16-bit mode."]
-    OFSTRIM_16_BIT = 0x01,
+    Ofstrim16Bit = 0x01,
 }
 impl Calofsmode {
     #[inline(always)]
@@ -243,25 +243,25 @@ impl From<Calofsmode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdact {
     #[doc = "No command is currently in progress."]
-    NO_COMMAND_ACTIVE = 0x0,
+    NoCommandActive = 0x0,
     #[doc = "Command 1 currently being executed."]
-    COMMAND_1 = 0x01,
+    Command1 = 0x01,
     #[doc = "Command 2 currently being executed."]
-    COMMAND_2 = 0x02,
+    Command2 = 0x02,
     #[doc = "Associated command number is currently being executed."]
-    COMMAND_X_3 = 0x03,
+    CommandX3 = 0x03,
     #[doc = "Associated command number is currently being executed."]
-    COMMAND_X_4 = 0x04,
+    CommandX4 = 0x04,
     #[doc = "Associated command number is currently being executed."]
-    COMMAND_X_5 = 0x05,
+    CommandX5 = 0x05,
     #[doc = "Associated command number is currently being executed."]
-    COMMAND_X_6 = 0x06,
+    CommandX6 = 0x06,
     #[doc = "Associated command number is currently being executed."]
-    COMMAND_X_7 = 0x07,
+    CommandX7 = 0x07,
     #[doc = "Associated command number is currently being executed."]
-    COMMAND_X_8 = 0x08,
+    CommandX8 = 0x08,
     #[doc = "Associated command number is currently being executed."]
-    COMMAND_X_9 = 0x09,
+    CommandX9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -296,27 +296,27 @@ impl From<Cmdact> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh10Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -350,32 +350,32 @@ impl From<Cmdh10Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh10Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh10Loop {
     #[inline(always)]
@@ -404,32 +404,32 @@ impl From<Cmdh10Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh10Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh10Next {
     #[inline(always)]
@@ -458,21 +458,21 @@ impl From<Cmdh10Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh10Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh10Sts {
     #[inline(always)]
@@ -501,27 +501,27 @@ impl From<Cmdh10Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh11Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -555,32 +555,32 @@ impl From<Cmdh11Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh11Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh11Loop {
     #[inline(always)]
@@ -609,32 +609,32 @@ impl From<Cmdh11Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh11Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh11Next {
     #[inline(always)]
@@ -663,21 +663,21 @@ impl From<Cmdh11Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh11Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh11Sts {
     #[inline(always)]
@@ -706,27 +706,27 @@ impl From<Cmdh11Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh12Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -760,32 +760,32 @@ impl From<Cmdh12Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh12Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh12Loop {
     #[inline(always)]
@@ -814,32 +814,32 @@ impl From<Cmdh12Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh12Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh12Next {
     #[inline(always)]
@@ -868,21 +868,21 @@ impl From<Cmdh12Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh12Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh12Sts {
     #[inline(always)]
@@ -911,27 +911,27 @@ impl From<Cmdh12Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh13Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -965,32 +965,32 @@ impl From<Cmdh13Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh13Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh13Loop {
     #[inline(always)]
@@ -1019,32 +1019,32 @@ impl From<Cmdh13Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh13Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh13Next {
     #[inline(always)]
@@ -1073,21 +1073,21 @@ impl From<Cmdh13Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh13Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh13Sts {
     #[inline(always)]
@@ -1116,27 +1116,27 @@ impl From<Cmdh13Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh14Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -1170,32 +1170,32 @@ impl From<Cmdh14Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh14Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh14Loop {
     #[inline(always)]
@@ -1224,32 +1224,32 @@ impl From<Cmdh14Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh14Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh14Next {
     #[inline(always)]
@@ -1278,21 +1278,21 @@ impl From<Cmdh14Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh14Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh14Sts {
     #[inline(always)]
@@ -1321,27 +1321,27 @@ impl From<Cmdh14Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh15Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -1375,32 +1375,32 @@ impl From<Cmdh15Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh15Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh15Loop {
     #[inline(always)]
@@ -1429,32 +1429,32 @@ impl From<Cmdh15Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh15Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh15Next {
     #[inline(always)]
@@ -1483,21 +1483,21 @@ impl From<Cmdh15Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh15Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh15Sts {
     #[inline(always)]
@@ -1526,27 +1526,27 @@ impl From<Cmdh15Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh1Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -1580,12 +1580,12 @@ impl From<Cmdh1Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh1Cmpen {
     #[doc = "Compare disabled."]
-    DISABLED_ALWAYS_STORE_RESULT = 0x0,
+    DisabledAlwaysStoreResult = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Compare enabled. Store on true."]
-    COMPARE_RESULT_STORE_IF_TRUE = 0x02,
+    CompareResultStoreIfTrue = 0x02,
     #[doc = "Compare enabled. Repeat channel acquisition (sample/convert/compare) until true."]
-    COMPARE_RESULT_KEEP_CONVERTING_UNTIL_TRUE_STORE_IF_TRUE = 0x03,
+    CompareResultKeepConvertingUntilTrueStoreIfTrue = 0x03,
 }
 impl Cmdh1Cmpen {
     #[inline(always)]
@@ -1614,32 +1614,32 @@ impl From<Cmdh1Cmpen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh1Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh1Loop {
     #[inline(always)]
@@ -1668,32 +1668,32 @@ impl From<Cmdh1Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh1Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh1Next {
     #[inline(always)]
@@ -1722,21 +1722,21 @@ impl From<Cmdh1Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh1Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh1Sts {
     #[inline(always)]
@@ -1765,27 +1765,27 @@ impl From<Cmdh1Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh2Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -1819,12 +1819,12 @@ impl From<Cmdh2Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh2Cmpen {
     #[doc = "Compare disabled."]
-    DISABLED_ALWAYS_STORE_RESULT = 0x0,
+    DisabledAlwaysStoreResult = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Compare enabled. Store on true."]
-    COMPARE_RESULT_STORE_IF_TRUE = 0x02,
+    CompareResultStoreIfTrue = 0x02,
     #[doc = "Compare enabled. Repeat channel acquisition (sample/convert/compare) until true."]
-    COMPARE_RESULT_KEEP_CONVERTING_UNTIL_TRUE_STORE_IF_TRUE = 0x03,
+    CompareResultKeepConvertingUntilTrueStoreIfTrue = 0x03,
 }
 impl Cmdh2Cmpen {
     #[inline(always)]
@@ -1853,32 +1853,32 @@ impl From<Cmdh2Cmpen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh2Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh2Loop {
     #[inline(always)]
@@ -1907,32 +1907,32 @@ impl From<Cmdh2Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh2Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh2Next {
     #[inline(always)]
@@ -1961,21 +1961,21 @@ impl From<Cmdh2Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh2Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh2Sts {
     #[inline(always)]
@@ -2004,27 +2004,27 @@ impl From<Cmdh2Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh3Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -2058,12 +2058,12 @@ impl From<Cmdh3Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh3Cmpen {
     #[doc = "Compare disabled."]
-    DISABLED_ALWAYS_STORE_RESULT = 0x0,
+    DisabledAlwaysStoreResult = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Compare enabled. Store on true."]
-    COMPARE_RESULT_STORE_IF_TRUE = 0x02,
+    CompareResultStoreIfTrue = 0x02,
     #[doc = "Compare enabled. Repeat channel acquisition (sample/convert/compare) until true."]
-    COMPARE_RESULT_KEEP_CONVERTING_UNTIL_TRUE_STORE_IF_TRUE = 0x03,
+    CompareResultKeepConvertingUntilTrueStoreIfTrue = 0x03,
 }
 impl Cmdh3Cmpen {
     #[inline(always)]
@@ -2092,32 +2092,32 @@ impl From<Cmdh3Cmpen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh3Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh3Loop {
     #[inline(always)]
@@ -2146,32 +2146,32 @@ impl From<Cmdh3Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh3Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh3Next {
     #[inline(always)]
@@ -2200,21 +2200,21 @@ impl From<Cmdh3Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh3Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh3Sts {
     #[inline(always)]
@@ -2243,27 +2243,27 @@ impl From<Cmdh3Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh4Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -2297,12 +2297,12 @@ impl From<Cmdh4Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh4Cmpen {
     #[doc = "Compare disabled."]
-    DISABLED_ALWAYS_STORE_RESULT = 0x0,
+    DisabledAlwaysStoreResult = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Compare enabled. Store on true."]
-    COMPARE_RESULT_STORE_IF_TRUE = 0x02,
+    CompareResultStoreIfTrue = 0x02,
     #[doc = "Compare enabled. Repeat channel acquisition (sample/convert/compare) until true."]
-    COMPARE_RESULT_KEEP_CONVERTING_UNTIL_TRUE_STORE_IF_TRUE = 0x03,
+    CompareResultKeepConvertingUntilTrueStoreIfTrue = 0x03,
 }
 impl Cmdh4Cmpen {
     #[inline(always)]
@@ -2331,32 +2331,32 @@ impl From<Cmdh4Cmpen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh4Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh4Loop {
     #[inline(always)]
@@ -2385,32 +2385,32 @@ impl From<Cmdh4Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh4Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh4Next {
     #[inline(always)]
@@ -2439,21 +2439,21 @@ impl From<Cmdh4Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh4Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh4Sts {
     #[inline(always)]
@@ -2482,27 +2482,27 @@ impl From<Cmdh4Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh5Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -2536,32 +2536,32 @@ impl From<Cmdh5Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh5Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh5Loop {
     #[inline(always)]
@@ -2590,32 +2590,32 @@ impl From<Cmdh5Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh5Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh5Next {
     #[inline(always)]
@@ -2644,21 +2644,21 @@ impl From<Cmdh5Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh5Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh5Sts {
     #[inline(always)]
@@ -2687,27 +2687,27 @@ impl From<Cmdh5Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh6Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -2741,32 +2741,32 @@ impl From<Cmdh6Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh6Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh6Loop {
     #[inline(always)]
@@ -2795,32 +2795,32 @@ impl From<Cmdh6Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh6Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh6Next {
     #[inline(always)]
@@ -2849,21 +2849,21 @@ impl From<Cmdh6Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh6Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh6Sts {
     #[inline(always)]
@@ -2892,27 +2892,27 @@ impl From<Cmdh6Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh7Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -2946,32 +2946,32 @@ impl From<Cmdh7Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh7Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh7Loop {
     #[inline(always)]
@@ -3000,32 +3000,32 @@ impl From<Cmdh7Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh7Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh7Next {
     #[inline(always)]
@@ -3054,21 +3054,21 @@ impl From<Cmdh7Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh7Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh7Sts {
     #[inline(always)]
@@ -3097,27 +3097,27 @@ impl From<Cmdh7Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh8Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -3151,32 +3151,32 @@ impl From<Cmdh8Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh8Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh8Loop {
     #[inline(always)]
@@ -3205,32 +3205,32 @@ impl From<Cmdh8Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh8Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh8Next {
     #[inline(always)]
@@ -3259,21 +3259,21 @@ impl From<Cmdh8Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh8Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh8Sts {
     #[inline(always)]
@@ -3302,27 +3302,27 @@ impl From<Cmdh8Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh9Avgs {
     #[doc = "Single conversion."]
-    NO_AVERAGE = 0x0,
+    NoAverage = 0x0,
     #[doc = "2 conversions averaged."]
-    AVERAGE_2 = 0x01,
+    Average2 = 0x01,
     #[doc = "4 conversions averaged."]
-    AVERAGE_4 = 0x02,
+    Average4 = 0x02,
     #[doc = "8 conversions averaged."]
-    AVERAGE_8 = 0x03,
+    Average8 = 0x03,
     #[doc = "16 conversions averaged."]
-    AVERAGE_16 = 0x04,
+    Average16 = 0x04,
     #[doc = "32 conversions averaged."]
-    AVERAGE_32 = 0x05,
+    Average32 = 0x05,
     #[doc = "64 conversions averaged."]
-    AVERAGE_64 = 0x06,
+    Average64 = 0x06,
     #[doc = "128 conversions averaged."]
-    AVERAGE_128 = 0x07,
+    Average128 = 0x07,
     #[doc = "256 conversions averaged."]
-    AVERAGE_256 = 0x08,
+    Average256 = 0x08,
     #[doc = "512 conversions averaged."]
-    AVERAGE_512 = 0x09,
+    Average512 = 0x09,
     #[doc = "1024 conversions averaged."]
-    AVERAGE_1024 = 0x0a,
+    Average1024 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -3356,32 +3356,32 @@ impl From<Cmdh9Avgs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh9Loop {
     #[doc = "Looping not enabled. Command executes 1 time."]
-    CMD_EXEC_1X = 0x0,
+    CmdExec1x = 0x0,
     #[doc = "Loop 1 time. Command executes 2 times."]
-    CMD_EXEC_2X = 0x01,
+    CmdExec2x = 0x01,
     #[doc = "Loop 2 times. Command executes 3 times."]
-    CMD_EXEC_3X = 0x02,
+    CmdExec3x = 0x02,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_3 = 0x03,
+    CmdExecutesCorrespondingTimes3 = 0x03,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_4 = 0x04,
+    CmdExecutesCorrespondingTimes4 = 0x04,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_5 = 0x05,
+    CmdExecutesCorrespondingTimes5 = 0x05,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_6 = 0x06,
+    CmdExecutesCorrespondingTimes6 = 0x06,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_7 = 0x07,
+    CmdExecutesCorrespondingTimes7 = 0x07,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_8 = 0x08,
+    CmdExecutesCorrespondingTimes8 = 0x08,
     #[doc = "Loop corresponding number of times. Command executes LOOP+1 times."]
-    CMD_EXECUTES_CORRESPONDING_TIMES_9 = 0x09,
+    CmdExecutesCorrespondingTimes9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Loop 15 times. Command executes 16 times."]
-    CMD_EXEC_15X = 0x0f,
+    CmdExec15x = 0x0f,
 }
 impl Cmdh9Loop {
     #[inline(always)]
@@ -3410,32 +3410,32 @@ impl From<Cmdh9Loop> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh9Next {
     #[doc = "No next command defined. Terminate conversions at completion of current command. If lower priority trigger pending, begin command associated with lower priority trigger."]
-    NO_NEXT_CMD_TERMINATE_ON_FINISH = 0x0,
+    NoNextCmdTerminateOnFinish = 0x0,
     #[doc = "Select CMD1 command buffer register as next command."]
-    DO_CMD1_NEXT = 0x01,
+    DoCmd1Next = 0x01,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_2 = 0x02,
+    DoCorrespondingCmdNext2 = 0x02,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_3 = 0x03,
+    DoCorrespondingCmdNext3 = 0x03,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_4 = 0x04,
+    DoCorrespondingCmdNext4 = 0x04,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_5 = 0x05,
+    DoCorrespondingCmdNext5 = 0x05,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_6 = 0x06,
+    DoCorrespondingCmdNext6 = 0x06,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_7 = 0x07,
+    DoCorrespondingCmdNext7 = 0x07,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_8 = 0x08,
+    DoCorrespondingCmdNext8 = 0x08,
     #[doc = "Select corresponding CMD command buffer register as next command"]
-    DO_CORRESPONDING_CMD_NEXT_9 = 0x09,
+    DoCorrespondingCmdNext9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Select CMD15 command buffer register as next command."]
-    DO_CMD15_NEXT = 0x0f,
+    DoCmd15Next = 0x0f,
 }
 impl Cmdh9Next {
     #[inline(always)]
@@ -3464,21 +3464,21 @@ impl From<Cmdh9Next> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdh9Sts {
     #[doc = "Minimum sample time of 3.5 ADCK cycles."]
-    SAMPLE_3P5 = 0x0,
+    Sample3p5 = 0x0,
     #[doc = "3.5 + 21 ADCK cycles; 5.5 ADCK cycles total sample time."]
-    SAMPLE_5P5 = 0x01,
+    Sample5p5 = 0x01,
     #[doc = "3.5 + 22 ADCK cycles; 7.5 ADCK cycles total sample time."]
-    SAMPLE_7P5 = 0x02,
+    Sample7p5 = 0x02,
     #[doc = "3.5 + 23 ADCK cycles; 11.5 ADCK cycles total sample time."]
-    SAMPLE_11P5 = 0x03,
+    Sample11p5 = 0x03,
     #[doc = "3.5 + 24 ADCK cycles; 19.5 ADCK cycles total sample time."]
-    SAMPLE_19P5 = 0x04,
+    Sample19p5 = 0x04,
     #[doc = "3.5 + 25 ADCK cycles; 35.5 ADCK cycles total sample time."]
-    SAMPLE_35P5 = 0x05,
+    Sample35p5 = 0x05,
     #[doc = "3.5 + 26 ADCK cycles; 67.5 ADCK cycles total sample time."]
-    SAMPLE_67P5 = 0x06,
+    Sample67p5 = 0x06,
     #[doc = "3.5 + 27 ADCK cycles; 131.5 ADCK cycles total sample time."]
-    SAMPLE_131P5 = 0x07,
+    Sample131p5 = 0x07,
 }
 impl Cmdh9Sts {
     #[inline(always)]
@@ -3507,25 +3507,25 @@ impl From<Cmdh9Sts> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl10Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -3547,9 +3547,9 @@ pub enum Cmdl10Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl10Adch {
     #[inline(always)]
@@ -3578,25 +3578,25 @@ impl From<Cmdl10Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl10AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -3618,9 +3618,9 @@ pub enum Cmdl10AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl10AltbAdch {
     #[inline(always)]
@@ -3649,9 +3649,9 @@ impl From<Cmdl10AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl10AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl10AltbCscale {
     #[inline(always)]
@@ -3680,9 +3680,9 @@ impl From<Cmdl10AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl10Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl10Cscale {
     #[inline(always)]
@@ -3711,13 +3711,13 @@ impl From<Cmdl10Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl10Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl10Ctype {
     #[inline(always)]
@@ -3746,9 +3746,9 @@ impl From<Cmdl10Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl10Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl10Mode {
     #[inline(always)]
@@ -3777,25 +3777,25 @@ impl From<Cmdl10Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl11Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -3817,9 +3817,9 @@ pub enum Cmdl11Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl11Adch {
     #[inline(always)]
@@ -3848,25 +3848,25 @@ impl From<Cmdl11Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl11AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -3888,9 +3888,9 @@ pub enum Cmdl11AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl11AltbAdch {
     #[inline(always)]
@@ -3919,9 +3919,9 @@ impl From<Cmdl11AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl11AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl11AltbCscale {
     #[inline(always)]
@@ -3950,9 +3950,9 @@ impl From<Cmdl11AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl11Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl11Cscale {
     #[inline(always)]
@@ -3981,13 +3981,13 @@ impl From<Cmdl11Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl11Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl11Ctype {
     #[inline(always)]
@@ -4016,9 +4016,9 @@ impl From<Cmdl11Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl11Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl11Mode {
     #[inline(always)]
@@ -4047,25 +4047,25 @@ impl From<Cmdl11Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl12Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -4087,9 +4087,9 @@ pub enum Cmdl12Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl12Adch {
     #[inline(always)]
@@ -4118,25 +4118,25 @@ impl From<Cmdl12Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl12AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -4158,9 +4158,9 @@ pub enum Cmdl12AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl12AltbAdch {
     #[inline(always)]
@@ -4189,9 +4189,9 @@ impl From<Cmdl12AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl12AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl12AltbCscale {
     #[inline(always)]
@@ -4220,9 +4220,9 @@ impl From<Cmdl12AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl12Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl12Cscale {
     #[inline(always)]
@@ -4251,13 +4251,13 @@ impl From<Cmdl12Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl12Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl12Ctype {
     #[inline(always)]
@@ -4286,9 +4286,9 @@ impl From<Cmdl12Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl12Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl12Mode {
     #[inline(always)]
@@ -4317,25 +4317,25 @@ impl From<Cmdl12Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl13Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -4357,9 +4357,9 @@ pub enum Cmdl13Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl13Adch {
     #[inline(always)]
@@ -4388,25 +4388,25 @@ impl From<Cmdl13Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl13AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -4428,9 +4428,9 @@ pub enum Cmdl13AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl13AltbAdch {
     #[inline(always)]
@@ -4459,9 +4459,9 @@ impl From<Cmdl13AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl13AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl13AltbCscale {
     #[inline(always)]
@@ -4490,9 +4490,9 @@ impl From<Cmdl13AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl13Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl13Cscale {
     #[inline(always)]
@@ -4521,13 +4521,13 @@ impl From<Cmdl13Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl13Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl13Ctype {
     #[inline(always)]
@@ -4556,9 +4556,9 @@ impl From<Cmdl13Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl13Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl13Mode {
     #[inline(always)]
@@ -4587,25 +4587,25 @@ impl From<Cmdl13Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl14Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -4627,9 +4627,9 @@ pub enum Cmdl14Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl14Adch {
     #[inline(always)]
@@ -4658,25 +4658,25 @@ impl From<Cmdl14Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl14AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -4698,9 +4698,9 @@ pub enum Cmdl14AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl14AltbAdch {
     #[inline(always)]
@@ -4729,9 +4729,9 @@ impl From<Cmdl14AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl14AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl14AltbCscale {
     #[inline(always)]
@@ -4760,9 +4760,9 @@ impl From<Cmdl14AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl14Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl14Cscale {
     #[inline(always)]
@@ -4791,13 +4791,13 @@ impl From<Cmdl14Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl14Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl14Ctype {
     #[inline(always)]
@@ -4826,9 +4826,9 @@ impl From<Cmdl14Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl14Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl14Mode {
     #[inline(always)]
@@ -4857,25 +4857,25 @@ impl From<Cmdl14Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl15Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -4897,9 +4897,9 @@ pub enum Cmdl15Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl15Adch {
     #[inline(always)]
@@ -4928,25 +4928,25 @@ impl From<Cmdl15Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl15AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -4968,9 +4968,9 @@ pub enum Cmdl15AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl15AltbAdch {
     #[inline(always)]
@@ -4999,9 +4999,9 @@ impl From<Cmdl15AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl15AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl15AltbCscale {
     #[inline(always)]
@@ -5030,9 +5030,9 @@ impl From<Cmdl15AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl15Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl15Cscale {
     #[inline(always)]
@@ -5061,13 +5061,13 @@ impl From<Cmdl15Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl15Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl15Ctype {
     #[inline(always)]
@@ -5096,9 +5096,9 @@ impl From<Cmdl15Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl15Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl15Mode {
     #[inline(always)]
@@ -5127,25 +5127,25 @@ impl From<Cmdl15Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl1Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -5167,9 +5167,9 @@ pub enum Cmdl1Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl1Adch {
     #[inline(always)]
@@ -5198,25 +5198,25 @@ impl From<Cmdl1Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl1AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -5238,9 +5238,9 @@ pub enum Cmdl1AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl1AltbAdch {
     #[inline(always)]
@@ -5269,9 +5269,9 @@ impl From<Cmdl1AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl1AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl1AltbCscale {
     #[inline(always)]
@@ -5300,9 +5300,9 @@ impl From<Cmdl1AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl1Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl1Cscale {
     #[inline(always)]
@@ -5331,13 +5331,13 @@ impl From<Cmdl1Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl1Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl1Ctype {
     #[inline(always)]
@@ -5366,9 +5366,9 @@ impl From<Cmdl1Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl1Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl1Mode {
     #[inline(always)]
@@ -5397,25 +5397,25 @@ impl From<Cmdl1Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl2Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -5437,9 +5437,9 @@ pub enum Cmdl2Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl2Adch {
     #[inline(always)]
@@ -5468,25 +5468,25 @@ impl From<Cmdl2Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl2AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -5508,9 +5508,9 @@ pub enum Cmdl2AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl2AltbAdch {
     #[inline(always)]
@@ -5539,9 +5539,9 @@ impl From<Cmdl2AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl2AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl2AltbCscale {
     #[inline(always)]
@@ -5570,9 +5570,9 @@ impl From<Cmdl2AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl2Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl2Cscale {
     #[inline(always)]
@@ -5601,13 +5601,13 @@ impl From<Cmdl2Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl2Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl2Ctype {
     #[inline(always)]
@@ -5636,9 +5636,9 @@ impl From<Cmdl2Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl2Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl2Mode {
     #[inline(always)]
@@ -5667,25 +5667,25 @@ impl From<Cmdl2Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl3Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -5707,9 +5707,9 @@ pub enum Cmdl3Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl3Adch {
     #[inline(always)]
@@ -5738,25 +5738,25 @@ impl From<Cmdl3Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl3AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -5778,9 +5778,9 @@ pub enum Cmdl3AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl3AltbAdch {
     #[inline(always)]
@@ -5809,9 +5809,9 @@ impl From<Cmdl3AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl3AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl3AltbCscale {
     #[inline(always)]
@@ -5840,9 +5840,9 @@ impl From<Cmdl3AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl3Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl3Cscale {
     #[inline(always)]
@@ -5871,13 +5871,13 @@ impl From<Cmdl3Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl3Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl3Ctype {
     #[inline(always)]
@@ -5906,9 +5906,9 @@ impl From<Cmdl3Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl3Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl3Mode {
     #[inline(always)]
@@ -5937,25 +5937,25 @@ impl From<Cmdl3Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl4Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -5977,9 +5977,9 @@ pub enum Cmdl4Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl4Adch {
     #[inline(always)]
@@ -6008,25 +6008,25 @@ impl From<Cmdl4Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl4AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -6048,9 +6048,9 @@ pub enum Cmdl4AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl4AltbAdch {
     #[inline(always)]
@@ -6079,9 +6079,9 @@ impl From<Cmdl4AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl4AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl4AltbCscale {
     #[inline(always)]
@@ -6110,9 +6110,9 @@ impl From<Cmdl4AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl4Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl4Cscale {
     #[inline(always)]
@@ -6141,13 +6141,13 @@ impl From<Cmdl4Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl4Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl4Ctype {
     #[inline(always)]
@@ -6176,9 +6176,9 @@ impl From<Cmdl4Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl4Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl4Mode {
     #[inline(always)]
@@ -6207,25 +6207,25 @@ impl From<Cmdl4Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl5Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -6247,9 +6247,9 @@ pub enum Cmdl5Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl5Adch {
     #[inline(always)]
@@ -6278,25 +6278,25 @@ impl From<Cmdl5Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl5AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -6318,9 +6318,9 @@ pub enum Cmdl5AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl5AltbAdch {
     #[inline(always)]
@@ -6349,9 +6349,9 @@ impl From<Cmdl5AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl5AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl5AltbCscale {
     #[inline(always)]
@@ -6380,9 +6380,9 @@ impl From<Cmdl5AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl5Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl5Cscale {
     #[inline(always)]
@@ -6411,13 +6411,13 @@ impl From<Cmdl5Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl5Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl5Ctype {
     #[inline(always)]
@@ -6446,9 +6446,9 @@ impl From<Cmdl5Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl5Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl5Mode {
     #[inline(always)]
@@ -6477,25 +6477,25 @@ impl From<Cmdl5Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl6Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -6517,9 +6517,9 @@ pub enum Cmdl6Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl6Adch {
     #[inline(always)]
@@ -6548,25 +6548,25 @@ impl From<Cmdl6Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl6AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -6588,9 +6588,9 @@ pub enum Cmdl6AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl6AltbAdch {
     #[inline(always)]
@@ -6619,9 +6619,9 @@ impl From<Cmdl6AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl6AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl6AltbCscale {
     #[inline(always)]
@@ -6650,9 +6650,9 @@ impl From<Cmdl6AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl6Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl6Cscale {
     #[inline(always)]
@@ -6681,13 +6681,13 @@ impl From<Cmdl6Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl6Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl6Ctype {
     #[inline(always)]
@@ -6716,9 +6716,9 @@ impl From<Cmdl6Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl6Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl6Mode {
     #[inline(always)]
@@ -6747,25 +6747,25 @@ impl From<Cmdl6Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl7Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -6787,9 +6787,9 @@ pub enum Cmdl7Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl7Adch {
     #[inline(always)]
@@ -6818,25 +6818,25 @@ impl From<Cmdl7Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl7AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -6858,9 +6858,9 @@ pub enum Cmdl7AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl7AltbAdch {
     #[inline(always)]
@@ -6889,9 +6889,9 @@ impl From<Cmdl7AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl7AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl7AltbCscale {
     #[inline(always)]
@@ -6920,9 +6920,9 @@ impl From<Cmdl7AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl7Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl7Cscale {
     #[inline(always)]
@@ -6951,13 +6951,13 @@ impl From<Cmdl7Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl7Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl7Ctype {
     #[inline(always)]
@@ -6986,9 +6986,9 @@ impl From<Cmdl7Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl7Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl7Mode {
     #[inline(always)]
@@ -7017,25 +7017,25 @@ impl From<Cmdl7Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl8Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -7057,9 +7057,9 @@ pub enum Cmdl8Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl8Adch {
     #[inline(always)]
@@ -7088,25 +7088,25 @@ impl From<Cmdl8Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl8AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -7128,9 +7128,9 @@ pub enum Cmdl8AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl8AltbAdch {
     #[inline(always)]
@@ -7159,9 +7159,9 @@ impl From<Cmdl8AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl8AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl8AltbCscale {
     #[inline(always)]
@@ -7190,9 +7190,9 @@ impl From<Cmdl8AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl8Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl8Cscale {
     #[inline(always)]
@@ -7221,13 +7221,13 @@ impl From<Cmdl8Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl8Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl8Ctype {
     #[inline(always)]
@@ -7256,9 +7256,9 @@ impl From<Cmdl8Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl8Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl8Mode {
     #[inline(always)]
@@ -7287,25 +7287,25 @@ impl From<Cmdl8Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl9Adch {
     #[doc = "Select CH0A or CH0B or CH0A/CH0B pair."]
-    SELECT_CH0 = 0x0,
+    SelectCh0 = 0x0,
     #[doc = "Select CH1A or CH1B or CH1A/CH1B pair."]
-    SELECT_CH1 = 0x01,
+    SelectCh1 = 0x01,
     #[doc = "Select CH2A or CH2B or CH2A/CH2B pair."]
-    SELECT_CH2 = 0x02,
+    SelectCh2 = 0x02,
     #[doc = "Select CH3A or CH3B or CH3A/CH3B pair."]
-    SELECT_CH3 = 0x03,
+    SelectCh3 = 0x03,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_4 = 0x04,
+    SelectCorrespondingChannel4 = 0x04,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_5 = 0x05,
+    SelectCorrespondingChannel5 = 0x05,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_6 = 0x06,
+    SelectCorrespondingChannel6 = 0x06,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_7 = 0x07,
+    SelectCorrespondingChannel7 = 0x07,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_8 = 0x08,
+    SelectCorrespondingChannel8 = 0x08,
     #[doc = "Select corresponding channel CHnA or CHnB or CHnA/CHnB pair."]
-    SELECT_CORRESPONDING_CHANNEL_9 = 0x09,
+    SelectCorrespondingChannel9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -7327,9 +7327,9 @@ pub enum Cmdl9Adch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30A or CH30B or CH30A/CH30B pair."]
-    SELECT_CH30 = 0x1e,
+    SelectCh30 = 0x1e,
     #[doc = "Select CH31A or CH31B or CH31A/CH31B pair."]
-    SELECT_CH31 = 0x1f,
+    SelectCh31 = 0x1f,
 }
 impl Cmdl9Adch {
     #[inline(always)]
@@ -7358,25 +7358,25 @@ impl From<Cmdl9Adch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl9AltbAdch {
     #[doc = "Select CH0B"]
-    SELECT_CH0B = 0x0,
+    SelectCh0b = 0x0,
     #[doc = "Select CH1B"]
-    SELECT_CH1B = 0x01,
+    SelectCh1b = 0x01,
     #[doc = "Select CH2B"]
-    SELECT_CH2B = 0x02,
+    SelectCh2b = 0x02,
     #[doc = "Select CH3B"]
-    SELECT_CH3B = 0x03,
+    SelectCh3b = 0x03,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_4 = 0x04,
+    SelectCorrespondingChnB4 = 0x04,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_5 = 0x05,
+    SelectCorrespondingChnB5 = 0x05,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_6 = 0x06,
+    SelectCorrespondingChnB6 = 0x06,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_7 = 0x07,
+    SelectCorrespondingChnB7 = 0x07,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_8 = 0x08,
+    SelectCorrespondingChnB8 = 0x08,
     #[doc = "Select corresponding channel CHnB"]
-    SELECT_CORRESPONDING_CHN_B_9 = 0x09,
+    SelectCorrespondingChnB9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -7398,9 +7398,9 @@ pub enum Cmdl9AltbAdch {
     _RESERVED_1c = 0x1c,
     _RESERVED_1d = 0x1d,
     #[doc = "Select CH30B"]
-    SELECT_CH30B = 0x1e,
+    SelectCh30b = 0x1e,
     #[doc = "Select CH31B"]
-    SELECT_CH31B = 0x1f,
+    SelectCh31b = 0x1f,
 }
 impl Cmdl9AltbAdch {
     #[inline(always)]
@@ -7429,9 +7429,9 @@ impl From<Cmdl9AltbAdch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl9AltbCscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_1 = 0x01,
+    FullScale1 = 0x01,
 }
 impl Cmdl9AltbCscale {
     #[inline(always)]
@@ -7460,9 +7460,9 @@ impl From<Cmdl9AltbCscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl9Cscale {
     #[doc = "Scale selected analog channel (Factor of 1/2)"]
-    HALF_SCALE = 0x0,
+    HalfScale = 0x0,
     #[doc = "(Default) Full scale (Factor of 1)"]
-    FULL_SCALE_2 = 0x01,
+    FullScale2 = 0x01,
 }
 impl Cmdl9Cscale {
     #[inline(always)]
@@ -7491,13 +7491,13 @@ impl From<Cmdl9Cscale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl9Ctype {
     #[doc = "Single-Ended Mode. Only A side channel is converted."]
-    SINGLE_ENDED_A_SIDE_CHANNEL = 0x0,
+    SingleEndedASideChannel = 0x0,
     #[doc = "Single-Ended Mode. Only B side channel is converted."]
-    SINGLE_ENDED_B_SIDE_CHANNEL = 0x01,
+    SingleEndedBSideChannel = 0x01,
     #[doc = "Differential Mode. A-B."]
-    DIFFERENTIAL_A_MINUS_B = 0x02,
+    DifferentialAMinusB = 0x02,
     #[doc = "Dual-Single-Ended Mode. Both A side and B side channels are converted independently."]
-    DUAL_A_AND_B = 0x03,
+    DualAAndB = 0x03,
 }
 impl Cmdl9Ctype {
     #[inline(always)]
@@ -7526,9 +7526,9 @@ impl From<Cmdl9Ctype> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdl9Mode {
     #[doc = "Standard resolution. Single-ended 12-bit conversion; Differential 13-bit conversion with 2's complement output."]
-    DATA_12_BITS = 0x0,
+    Data12Bits = 0x0,
     #[doc = "High resolution. Single-ended 16-bit conversion; Differential 16-bit conversion with 2's complement output."]
-    DATA_16_BITS = 0x01,
+    Data16Bits = 0x01,
 }
 impl Cmdl9Mode {
     #[inline(always)]
@@ -7557,32 +7557,32 @@ impl From<Cmdl9Mode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmdsrc {
     #[doc = "Not a valid value CMDSRC value for a dataword in RESFIFO. 0x0 is only found in initial FIFO state prior to an ADC conversion result dataword being stored to a RESFIFO buffer."]
-    NOT_VALID = 0x0,
+    NotValid = 0x0,
     #[doc = "CMD1 buffer used as control settings for this conversion."]
-    CMD1 = 0x01,
+    Cmd1 = 0x01,
     #[doc = "Corresponding command buffer used as control settings for this conversion."]
-    CORRESPONDING_CMD_2 = 0x02,
+    CorrespondingCmd2 = 0x02,
     #[doc = "Corresponding command buffer used as control settings for this conversion."]
-    CORRESPONDING_CMD_3 = 0x03,
+    CorrespondingCmd3 = 0x03,
     #[doc = "Corresponding command buffer used as control settings for this conversion."]
-    CORRESPONDING_CMD_4 = 0x04,
+    CorrespondingCmd4 = 0x04,
     #[doc = "Corresponding command buffer used as control settings for this conversion."]
-    CORRESPONDING_CMD_5 = 0x05,
+    CorrespondingCmd5 = 0x05,
     #[doc = "Corresponding command buffer used as control settings for this conversion."]
-    CORRESPONDING_CMD_6 = 0x06,
+    CorrespondingCmd6 = 0x06,
     #[doc = "Corresponding command buffer used as control settings for this conversion."]
-    CORRESPONDING_CMD_7 = 0x07,
+    CorrespondingCmd7 = 0x07,
     #[doc = "Corresponding command buffer used as control settings for this conversion."]
-    CORRESPONDING_CMD_8 = 0x08,
+    CorrespondingCmd8 = 0x08,
     #[doc = "Corresponding command buffer used as control settings for this conversion."]
-    CORRESPONDING_CMD_9 = 0x09,
+    CorrespondingCmd9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "CMD15 buffer used as control settings for this conversion."]
-    CMD15 = 0x0f,
+    Cmd15 = 0x0f,
 }
 impl Cmdsrc {
     #[inline(always)]
@@ -7611,15 +7611,15 @@ impl From<Cmdsrc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Csw {
     #[doc = "Channel scaling not supported. CSCALE control field not implemented."]
-    CSCALE_NOT_SUPPORTED = 0x0,
+    CscaleNotSupported = 0x0,
     #[doc = "Channel scaling supported. 1-bit CSCALE control field."]
-    BIT_WIDTH_1 = 0x01,
+    BitWidth1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     #[doc = "Channel scaling supported. 6-bit CSCALE control field."]
-    BIT_WIDTH_6 = 0x06,
+    BitWidth6 = 0x06,
     _RESERVED_7 = 0x07,
 }
 impl Csw {
@@ -7649,9 +7649,9 @@ impl From<Csw> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Diffen {
     #[doc = "Differential operation not supported."]
-    DIFFERENTIAL_NOT_SUPPORTED = 0x0,
+    DifferentialNotSupported = 0x0,
     #[doc = "Differential operation supported. CMDLa\\[CTYPE\\] controls fields implemented."]
-    DIFFERENTIAL_SUPPORTED = 0x01,
+    DifferentialSupported = 0x01,
 }
 impl Diffen {
     #[inline(always)]
@@ -7680,9 +7680,9 @@ impl From<Diffen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dozen {
     #[doc = "ADC is enabled in low power mode."]
-    ENABLED = 0x0,
+    Enabled = 0x0,
     #[doc = "ADC is disabled in low power mode."]
-    DISABLED = 0x01,
+    Disabled = 0x01,
 }
 impl Dozen {
     #[inline(always)]
@@ -7711,9 +7711,9 @@ impl From<Dozen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FifoSelA {
     #[doc = "Result written to FIFO 0"]
-    STORE_TO_FIFO0 = 0x0,
+    StoreToFifo0 = 0x0,
     #[doc = "Result written to FIFO 1"]
-    STORE_TO_FIFO1 = 0x01,
+    StoreToFifo1 = 0x01,
 }
 impl FifoSelA {
     #[inline(always)]
@@ -7742,9 +7742,9 @@ impl From<FifoSelA> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FifoSelB {
     #[doc = "Result written to FIFO 0"]
-    STORE_TO_FIFO0 = 0x0,
+    StoreToFifo0 = 0x0,
     #[doc = "Result written to FIFO 1"]
-    STORE_TO_FIFO1 = 0x01,
+    StoreToFifo1 = 0x01,
 }
 impl FifoSelB {
     #[inline(always)]
@@ -7774,16 +7774,16 @@ impl From<FifoSelB> for u8 {
 pub enum Fifosize {
     _RESERVED_0 = 0x0,
     #[doc = "Result FIFO depth = 2 dataword."]
-    ENTRIES_2 = 0x01,
+    Entries2 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     #[doc = "Result FIFO depth = 4 datawords."]
-    ENTRIES_4 = 0x04,
+    Entries4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "Result FIFO depth = 8 datawords."]
-    ENTRIES_8 = 0x08,
+    Entries8 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
@@ -7792,7 +7792,7 @@ pub enum Fifosize {
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
     #[doc = "Result FIFO depth = 16 datawords."]
-    ENTRIES_16 = 0x10,
+    Entries16 = 0x10,
     _RESERVED_11 = 0x11,
     _RESERVED_12 = 0x12,
     _RESERVED_13 = 0x13,
@@ -7809,7 +7809,7 @@ pub enum Fifosize {
     _RESERVED_1e = 0x1e,
     _RESERVED_1f = 0x1f,
     #[doc = "Result FIFO depth = 32 datawords."]
-    ENTRIES_32 = 0x20,
+    Entries32 = 0x20,
     _RESERVED_21 = 0x21,
     _RESERVED_22 = 0x22,
     _RESERVED_23 = 0x23,
@@ -7842,7 +7842,7 @@ pub enum Fifosize {
     _RESERVED_3e = 0x3e,
     _RESERVED_3f = 0x3f,
     #[doc = "Result FIFO depth = 64 datawords."]
-    ENTRIES_64 = 0x40,
+    Entries64 = 0x40,
     _RESERVED_41 = 0x41,
     _RESERVED_42 = 0x42,
     _RESERVED_43 = 0x43,
@@ -8062,9 +8062,9 @@ impl From<Fifosize> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Fof0 {
     #[doc = "No result FIFO 0 overflow has occurred since the last time the flag was cleared."]
-    NO_OVERFLOW = 0x0,
+    NoOverflow = 0x0,
     #[doc = "At least one result FIFO 0 overflow has occurred since the last time the flag was cleared."]
-    OVERFLOW_DETECTED = 0x01,
+    OverflowDetected = 0x01,
 }
 impl Fof0 {
     #[inline(always)]
@@ -8093,9 +8093,9 @@ impl From<Fof0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Fof1 {
     #[doc = "No result FIFO1 overflow has occurred since the last time the flag was cleared."]
-    NO_OVERFLOW = 0x0,
+    NoOverflow = 0x0,
     #[doc = "At least one result FIFO1 overflow has occurred since the last time the flag was cleared."]
-    OVERFLOW_DETECTED = 0x01,
+    OverflowDetected = 0x01,
 }
 impl Fof1 {
     #[inline(always)]
@@ -8124,9 +8124,9 @@ impl From<Fof1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum GccRdy {
     #[doc = "The GAIN_CAL value is invalid. Run the hardware calibration routine for this value to be set."]
-    GAIN_CAL_NOT_VALID = 0x0,
+    GainCalNotValid = 0x0,
     #[doc = "The GAIN_CAL value is valid. GAIN_CAL should be used by software to derive GCRa\\[GCALR\\]."]
-    HARDWARE_CAL_ROUTINE_COMPLETED = 0x01,
+    HardwareCalRoutineCompleted = 0x01,
 }
 impl GccRdy {
     #[inline(always)]
@@ -8155,9 +8155,9 @@ impl From<GccRdy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum HptExdi {
     #[doc = "High priority trigger exceptions are enabled."]
-    ENABLED = 0x0,
+    Enabled = 0x0,
     #[doc = "High priority trigger exceptions are disabled."]
-    DISABLED = 0x01,
+    Disabled = 0x01,
 }
 impl HptExdi {
     #[inline(always)]
@@ -8186,9 +8186,9 @@ impl From<HptExdi> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Iadcki {
     #[doc = "Internal clock source not implemented."]
-    INTERNAL_CLK_NOT_AVAILABLE = 0x0,
+    InternalClkNotAvailable = 0x0,
     #[doc = "Internal clock source (and CFG\\[ADCKEN\\]) implemented."]
-    INTERNAL_CLK_AVAILABLE = 0x01,
+    InternalClkAvailable = 0x01,
 }
 impl Iadcki {
     #[inline(always)]
@@ -8217,9 +8217,9 @@ impl From<Iadcki> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Jleft {
     #[doc = "For 12-bit single-ended conversions, RESFIFO data format is in standard format with data presented in bits RESFIFOa\\[D\\]\\[14:3\\]."]
-    DATA_12B_SE_STD_FORMAT = 0x0,
+    Data12bSeStdFormat = 0x0,
     #[doc = "For 12-bit single-ended conversions, RESFIFO data format is left-justified."]
-    DATA_12B_SE_LEFT_JUSTIFIED = 0x01,
+    Data12bSeLeftJustified = 0x01,
 }
 impl Jleft {
     #[inline(always)]
@@ -8248,32 +8248,32 @@ impl From<Jleft> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Loopcnt {
     #[doc = "Result is from initial conversion in command."]
-    RESULT_1 = 0x0,
+    Result1 = 0x0,
     #[doc = "Result is from second conversion in command."]
-    RESULT_2 = 0x01,
+    Result2 = 0x01,
     #[doc = "Result is from LOOPCNT+1 conversion in command."]
-    CORRESPONDING_RESULT_2 = 0x02,
+    CorrespondingResult2 = 0x02,
     #[doc = "Result is from LOOPCNT+1 conversion in command."]
-    CORRESPONDING_RESULT_3 = 0x03,
+    CorrespondingResult3 = 0x03,
     #[doc = "Result is from LOOPCNT+1 conversion in command."]
-    CORRESPONDING_RESULT_4 = 0x04,
+    CorrespondingResult4 = 0x04,
     #[doc = "Result is from LOOPCNT+1 conversion in command."]
-    CORRESPONDING_RESULT_5 = 0x05,
+    CorrespondingResult5 = 0x05,
     #[doc = "Result is from LOOPCNT+1 conversion in command."]
-    CORRESPONDING_RESULT_6 = 0x06,
+    CorrespondingResult6 = 0x06,
     #[doc = "Result is from LOOPCNT+1 conversion in command."]
-    CORRESPONDING_RESULT_7 = 0x07,
+    CorrespondingResult7 = 0x07,
     #[doc = "Result is from LOOPCNT+1 conversion in command."]
-    CORRESPONDING_RESULT_8 = 0x08,
+    CorrespondingResult8 = 0x08,
     #[doc = "Result is from LOOPCNT+1 conversion in command."]
-    CORRESPONDING_RESULT_9 = 0x09,
+    CorrespondingResult9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Result is from 16th conversion in command."]
-    RESULT_16 = 0x0f,
+    Result16 = 0x0f,
 }
 impl Loopcnt {
     #[inline(always)]
@@ -8302,9 +8302,9 @@ impl From<Loopcnt> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Mvi {
     #[doc = "Single voltage reference high (VREFH) input supported."]
-    MULTIPLE_REF_NOT_SUPPORTED = 0x0,
+    MultipleRefNotSupported = 0x0,
     #[doc = "Multiple voltage reference high (VREFH) inputs supported."]
-    MULTIPLE_REF_SUPPORTED = 0x01,
+    MultipleRefSupported = 0x01,
 }
 impl Mvi {
     #[inline(always)]
@@ -8333,15 +8333,15 @@ impl From<Mvi> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NumFifo {
     #[doc = "N/A"]
-    NO_FIFO_IMPLEMENTED = 0x0,
+    NoFifoImplemented = 0x0,
     #[doc = "This design supports one result FIFO."]
-    CNT_1 = 0x01,
+    Cnt1 = 0x01,
     #[doc = "This design supports two result FIFOs."]
-    CNT_2 = 0x02,
+    Cnt2 = 0x02,
     #[doc = "This design supports three result FIFOs."]
-    CNT_3 = 0x03,
+    Cnt3 = 0x03,
     #[doc = "This design supports four result FIFOs."]
-    CNT_4 = 0x04,
+    Cnt4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
@@ -8373,9 +8373,9 @@ impl From<NumFifo> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum NumSec {
     #[doc = "This design supports one single ended conversion at a time."]
-    SINGLE_CONVERTOR = 0x0,
+    SingleConvertor = 0x0,
     #[doc = "This design supports two simultaneous single ended conversions."]
-    DUAL_CONVERTOR = 0x01,
+    DualConvertor = 0x01,
 }
 impl NumSec {
     #[inline(always)]
@@ -8404,9 +8404,9 @@ impl From<NumSec> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rdy0 {
     #[doc = "Result FIFO 0 data level not above watermark level."]
-    BELOW_THRESHOLD = 0x0,
+    BelowThreshold = 0x0,
     #[doc = "Result FIFO 0 holding data above watermark level."]
-    ABOVE_THRESHOLD = 0x01,
+    AboveThreshold = 0x01,
 }
 impl Rdy0 {
     #[inline(always)]
@@ -8435,9 +8435,9 @@ impl From<Rdy0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rdy1 {
     #[doc = "Result FIFO1 data level not above watermark level."]
-    BELOW_THRESHOLD = 0x0,
+    BelowThreshold = 0x0,
     #[doc = "Result FIFO1 holding data above watermark level."]
-    ABOVE_THRESHOLD = 0x01,
+    AboveThreshold = 0x01,
 }
 impl Rdy1 {
     #[inline(always)]
@@ -8466,11 +8466,11 @@ impl From<Rdy1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Refsel {
     #[doc = "(Default) Option 1 setting."]
-    OPTION_1 = 0x0,
+    Option1 = 0x0,
     #[doc = "Option 2 setting."]
-    OPTION_2 = 0x01,
+    Option2 = 0x01,
     #[doc = "Option 3 setting."]
-    OPTION_3 = 0x02,
+    Option3 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Refsel {
@@ -8500,9 +8500,9 @@ impl From<Refsel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Res {
     #[doc = "Up to 13-bit differential/12-bit single ended resolution supported."]
-    MAX_13_BIT = 0x0,
+    Max13Bit = 0x0,
     #[doc = "Up to 16-bit differential/16-bit single ended resolution supported."]
-    MAX_16_BIT = 0x01,
+    Max16Bit = 0x01,
 }
 impl Res {
     #[inline(always)]
@@ -8531,9 +8531,9 @@ impl From<Res> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rst {
     #[doc = "ADC logic is not reset."]
-    RELEASED_FROM_RESET = 0x0,
+    ReleasedFromReset = 0x0,
     #[doc = "ADC logic is reset."]
-    HELD_IN_RESET = 0x01,
+    HeldInReset = 0x01,
 }
 impl Rst {
     #[inline(always)]
@@ -8562,9 +8562,9 @@ impl From<Rst> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rstfifo0 {
     #[doc = "No effect."]
-    NO_ACTION = 0x0,
+    NoAction = 0x0,
     #[doc = "FIFO 0 is reset."]
-    TRIGGER_RESET = 0x01,
+    TriggerReset = 0x01,
 }
 impl Rstfifo0 {
     #[inline(always)]
@@ -8593,9 +8593,9 @@ impl From<Rstfifo0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rstfifo1 {
     #[doc = "No effect."]
-    NO_ACTION = 0x0,
+    NoAction = 0x0,
     #[doc = "FIFO 1 is reset."]
-    TRIGGER_RESET = 0x01,
+    TriggerReset = 0x01,
 }
 impl Rstfifo1 {
     #[inline(always)]
@@ -8624,9 +8624,9 @@ impl From<Rstfifo1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Swt0 {
     #[doc = "No trigger 0 event generated."]
-    NO_TRIGGER = 0x0,
+    NoTrigger = 0x0,
     #[doc = "Trigger 0 event generated."]
-    INITIATE_TRIGGER_0 = 0x01,
+    InitiateTrigger0 = 0x01,
 }
 impl Swt0 {
     #[inline(always)]
@@ -8655,9 +8655,9 @@ impl From<Swt0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Swt1 {
     #[doc = "No trigger 1 event generated."]
-    NO_TRIGGER = 0x0,
+    NoTrigger = 0x0,
     #[doc = "Trigger 1 event generated."]
-    INITIATE_TRIGGER_1 = 0x01,
+    InitiateTrigger1 = 0x01,
 }
 impl Swt1 {
     #[inline(always)]
@@ -8686,9 +8686,9 @@ impl From<Swt1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Swt2 {
     #[doc = "No trigger 2 event generated."]
-    NO_TRIGGER = 0x0,
+    NoTrigger = 0x0,
     #[doc = "Trigger 2 event generated."]
-    INITIATE_TRIGGER_2 = 0x01,
+    InitiateTrigger2 = 0x01,
 }
 impl Swt2 {
     #[inline(always)]
@@ -8717,9 +8717,9 @@ impl From<Swt2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Swt3 {
     #[doc = "No trigger 3 event generated."]
-    NO_TRIGGER = 0x0,
+    NoTrigger = 0x0,
     #[doc = "Trigger 3 event generated."]
-    INITIATE_TRIGGER_3 = 0x01,
+    InitiateTrigger3 = 0x01,
 }
 impl Swt3 {
     #[inline(always)]
@@ -8748,9 +8748,9 @@ impl From<Swt3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Swt4 {
     #[doc = "No trigger 4 event generated."]
-    NO_TRIGGER = 0x0,
+    NoTrigger = 0x0,
     #[doc = "Trigger 4 event generated."]
-    INITIATE_TRIGGER_4 = 0x01,
+    InitiateTrigger4 = 0x01,
 }
 impl Swt4 {
     #[inline(always)]
@@ -8779,9 +8779,9 @@ impl From<Swt4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Swt5 {
     #[doc = "No trigger 5 event generated."]
-    NO_TRIGGER = 0x0,
+    NoTrigger = 0x0,
     #[doc = "Trigger 5 event generated."]
-    INITIATE_TRIGGER_5 = 0x01,
+    InitiateTrigger5 = 0x01,
 }
 impl Swt5 {
     #[inline(always)]
@@ -8810,9 +8810,9 @@ impl From<Swt5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Swt6 {
     #[doc = "No trigger 6 event generated."]
-    NO_TRIGGER = 0x0,
+    NoTrigger = 0x0,
     #[doc = "Trigger 6 event generated."]
-    INITIATE_TRIGGER_6 = 0x01,
+    InitiateTrigger6 = 0x01,
 }
 impl Swt6 {
     #[inline(always)]
@@ -8841,9 +8841,9 @@ impl From<Swt6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Swt7 {
     #[doc = "No trigger 7 event generated."]
-    NO_TRIGGER = 0x0,
+    NoTrigger = 0x0,
     #[doc = "Trigger 7 event generated."]
-    INITIATE_TRIGGER_7 = 0x01,
+    InitiateTrigger7 = 0x01,
 }
 impl Swt7 {
     #[inline(always)]
@@ -8872,32 +8872,32 @@ impl From<Swt7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tcmd {
     #[doc = "Not a valid selection from the command buffer. Trigger event is ignored."]
-    NOT_VALID = 0x0,
+    NotValid = 0x0,
     #[doc = "CMD1 is executed"]
-    EXECUTE_CMD1 = 0x01,
+    ExecuteCmd1 = 0x01,
     #[doc = "Corresponding CMD is executed"]
-    EXECUTE_CORRESPONDING_CMD_2 = 0x02,
+    ExecuteCorrespondingCmd2 = 0x02,
     #[doc = "Corresponding CMD is executed"]
-    EXECUTE_CORRESPONDING_CMD_3 = 0x03,
+    ExecuteCorrespondingCmd3 = 0x03,
     #[doc = "Corresponding CMD is executed"]
-    EXECUTE_CORRESPONDING_CMD_4 = 0x04,
+    ExecuteCorrespondingCmd4 = 0x04,
     #[doc = "Corresponding CMD is executed"]
-    EXECUTE_CORRESPONDING_CMD_5 = 0x05,
+    ExecuteCorrespondingCmd5 = 0x05,
     #[doc = "Corresponding CMD is executed"]
-    EXECUTE_CORRESPONDING_CMD_6 = 0x06,
+    ExecuteCorrespondingCmd6 = 0x06,
     #[doc = "Corresponding CMD is executed"]
-    EXECUTE_CORRESPONDING_CMD_7 = 0x07,
+    ExecuteCorrespondingCmd7 = 0x07,
     #[doc = "Corresponding CMD is executed"]
-    EXECUTE_CORRESPONDING_CMD_8 = 0x08,
+    ExecuteCorrespondingCmd8 = 0x08,
     #[doc = "Corresponding CMD is executed"]
-    EXECUTE_CORRESPONDING_CMD_9 = 0x09,
+    ExecuteCorrespondingCmd9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "CMD15 is executed"]
-    EXECUTE_CMD15 = 0x0f,
+    ExecuteCmd15 = 0x0f,
 }
 impl Tcmd {
     #[inline(always)]
@@ -8926,25 +8926,25 @@ impl From<Tcmd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TcompFlag {
     #[doc = "No triggers have been completed. Trigger completion interrupts are disabled."]
-    NO_TRIGGER = 0x0,
+    NoTrigger = 0x0,
     #[doc = "Trigger 0 has been completed and trigger 0 has enabled completion interrupts."]
-    BIT0_MEANS_TRIGGER_0_COMPLETED = 0x01,
+    Bit0MeansTrigger0Completed = 0x01,
     #[doc = "Trigger 1 has been completed and trigger 1 has enabled completion interrupts."]
-    BIT1_MEANS_TRIGGER_1_COMPLETED = 0x02,
+    Bit1MeansTrigger1Completed = 0x02,
     #[doc = "Associated trigger sequence has completed and has enabled completion interrupts."]
-    SET_BITS_INDICATE_TRIGGER_X_COMPLETED_3 = 0x03,
+    SetBitsIndicateTriggerXCompleted3 = 0x03,
     #[doc = "Associated trigger sequence has completed and has enabled completion interrupts."]
-    SET_BITS_INDICATE_TRIGGER_X_COMPLETED_4 = 0x04,
+    SetBitsIndicateTriggerXCompleted4 = 0x04,
     #[doc = "Associated trigger sequence has completed and has enabled completion interrupts."]
-    SET_BITS_INDICATE_TRIGGER_X_COMPLETED_5 = 0x05,
+    SetBitsIndicateTriggerXCompleted5 = 0x05,
     #[doc = "Associated trigger sequence has completed and has enabled completion interrupts."]
-    SET_BITS_INDICATE_TRIGGER_X_COMPLETED_6 = 0x06,
+    SetBitsIndicateTriggerXCompleted6 = 0x06,
     #[doc = "Associated trigger sequence has completed and has enabled completion interrupts."]
-    SET_BITS_INDICATE_TRIGGER_X_COMPLETED_7 = 0x07,
+    SetBitsIndicateTriggerXCompleted7 = 0x07,
     #[doc = "Associated trigger sequence has completed and has enabled completion interrupts."]
-    SET_BITS_INDICATE_TRIGGER_X_COMPLETED_8 = 0x08,
+    SetBitsIndicateTriggerXCompleted8 = 0x08,
     #[doc = "Associated trigger sequence has completed and has enabled completion interrupts."]
-    SET_BITS_INDICATE_TRIGGER_X_COMPLETED_9 = 0x09,
+    SetBitsIndicateTriggerXCompleted9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -9191,7 +9191,7 @@ pub enum TcompFlag {
     _RESERVED_fd = 0xfd,
     _RESERVED_fe = 0xfe,
     #[doc = "Every trigger sequence has been completed and every trigger has enabled completion interrupts."]
-    ALL_BITS_SET_INDICATE_ALL_TRIGGERS_COMPLETED = 0xff,
+    AllBitsSetIndicateAllTriggersCompleted = 0xff,
 }
 impl TcompFlag {
     #[inline(always)]
@@ -9220,25 +9220,25 @@ impl From<TcompFlag> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TcompIe {
     #[doc = "Trigger completion interrupts are disabled."]
-    DISABLED = 0x0,
+    Disabled = 0x0,
     #[doc = "Trigger completion interrupts are enabled for trigger source 0 only."]
-    TRIGGER_0_COMPLETE_ENABLED = 0x01,
+    Trigger0CompleteEnabled = 0x01,
     #[doc = "Trigger completion interrupts are enabled for trigger source 1 only."]
-    TRIGGER_1_COMPLETE_ENABLED = 0x02,
+    Trigger1CompleteEnabled = 0x02,
     #[doc = "Associated trigger completion interrupts are enabled."]
-    TRIGGER_X_COMPLETE_ENABLED_3 = 0x03,
+    TriggerXCompleteEnabled3 = 0x03,
     #[doc = "Associated trigger completion interrupts are enabled."]
-    TRIGGER_X_COMPLETE_ENABLED_4 = 0x04,
+    TriggerXCompleteEnabled4 = 0x04,
     #[doc = "Associated trigger completion interrupts are enabled."]
-    TRIGGER_X_COMPLETE_ENABLED_5 = 0x05,
+    TriggerXCompleteEnabled5 = 0x05,
     #[doc = "Associated trigger completion interrupts are enabled."]
-    TRIGGER_X_COMPLETE_ENABLED_6 = 0x06,
+    TriggerXCompleteEnabled6 = 0x06,
     #[doc = "Associated trigger completion interrupts are enabled."]
-    TRIGGER_X_COMPLETE_ENABLED_7 = 0x07,
+    TriggerXCompleteEnabled7 = 0x07,
     #[doc = "Associated trigger completion interrupts are enabled."]
-    TRIGGER_X_COMPLETE_ENABLED_8 = 0x08,
+    TriggerXCompleteEnabled8 = 0x08,
     #[doc = "Associated trigger completion interrupts are enabled."]
-    TRIGGER_X_COMPLETE_ENABLED_9 = 0x09,
+    TriggerXCompleteEnabled9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -9485,7 +9485,7 @@ pub enum TcompIe {
     _RESERVED_fd = 0xfd,
     _RESERVED_fe = 0xfe,
     #[doc = "Trigger completion interrupts are enabled for every trigger source."]
-    ALL_TRIGGER_COMPLETES_ENABLED = 0xff,
+    AllTriggerCompletesEnabled = 0xff,
 }
 impl TcompIe {
     #[inline(always)]
@@ -9514,9 +9514,9 @@ impl From<TcompIe> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TcompInt {
     #[doc = "Either IE\\[TCOMP_IE\\] is set to 0, or no trigger sequences have run to completion."]
-    FLAG_CLEAR = 0x0,
+    FlagClear = 0x0,
     #[doc = "Trigger sequence has been completed and all data is stored in the associated FIFO."]
-    COMPLETION_DETECTED = 0x01,
+    CompletionDetected = 0x01,
 }
 impl TcompInt {
     #[inline(always)]
@@ -9545,9 +9545,9 @@ impl From<TcompInt> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TexcInt {
     #[doc = "No trigger exceptions have occurred."]
-    NO_EXCEPTION = 0x0,
+    NoException = 0x0,
     #[doc = "A trigger exception has occurred and is pending acknowledgement."]
-    EXCEPTION_DETECTED = 0x01,
+    ExceptionDetected = 0x01,
 }
 impl TexcInt {
     #[inline(always)]
@@ -9576,25 +9576,25 @@ impl From<TexcInt> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TexcNum {
     #[doc = "No triggers have been interrupted by a high priority exception. Or CFG\\[TRES\\] = 1."]
-    NO_EXCEPTIONS = 0x0,
+    NoExceptions = 0x0,
     #[doc = "Trigger 0 has been interrupted by a high priority exception."]
-    BIT0_MEANS_TRIGGER_0_INTERRUPTED = 0x01,
+    Bit0MeansTrigger0Interrupted = 0x01,
     #[doc = "Trigger 1 has been interrupted by a high priority exception."]
-    BIT1_MEANS_TRIGGER_1_INTERRUPTED = 0x02,
+    Bit1MeansTrigger1Interrupted = 0x02,
     #[doc = "Associated trigger sequence has interrupted by a high priority exception."]
-    SET_BITS_INDICATE_TRIGGER_X_INTERRUPTED_3 = 0x03,
+    SetBitsIndicateTriggerXInterrupted3 = 0x03,
     #[doc = "Associated trigger sequence has interrupted by a high priority exception."]
-    SET_BITS_INDICATE_TRIGGER_X_INTERRUPTED_4 = 0x04,
+    SetBitsIndicateTriggerXInterrupted4 = 0x04,
     #[doc = "Associated trigger sequence has interrupted by a high priority exception."]
-    SET_BITS_INDICATE_TRIGGER_X_INTERRUPTED_5 = 0x05,
+    SetBitsIndicateTriggerXInterrupted5 = 0x05,
     #[doc = "Associated trigger sequence has interrupted by a high priority exception."]
-    SET_BITS_INDICATE_TRIGGER_X_INTERRUPTED_6 = 0x06,
+    SetBitsIndicateTriggerXInterrupted6 = 0x06,
     #[doc = "Associated trigger sequence has interrupted by a high priority exception."]
-    SET_BITS_INDICATE_TRIGGER_X_INTERRUPTED_7 = 0x07,
+    SetBitsIndicateTriggerXInterrupted7 = 0x07,
     #[doc = "Associated trigger sequence has interrupted by a high priority exception."]
-    SET_BITS_INDICATE_TRIGGER_X_INTERRUPTED_8 = 0x08,
+    SetBitsIndicateTriggerXInterrupted8 = 0x08,
     #[doc = "Associated trigger sequence has interrupted by a high priority exception."]
-    SET_BITS_INDICATE_TRIGGER_X_INTERRUPTED_9 = 0x09,
+    SetBitsIndicateTriggerXInterrupted9 = 0x09,
     _RESERVED_a = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
@@ -9841,7 +9841,7 @@ pub enum TexcNum {
     _RESERVED_fd = 0xfd,
     _RESERVED_fe = 0xfe,
     #[doc = "Every trigger sequence has been interrupted by a high priority exception."]
-    ALL_BITS_SET_INDICATE_ALL_TRIGGERS_INTERRUPTED = 0xff,
+    AllBitsSetIndicateAllTriggersInterrupted = 0xff,
 }
 impl TexcNum {
     #[inline(always)]
@@ -9870,21 +9870,21 @@ impl From<TexcNum> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tpri {
     #[doc = "Set to highest priority, Level 1"]
-    HIGHEST_PRIORITY = 0x0,
+    HighestPriority = 0x0,
     #[doc = "Set to corresponding priority level"]
-    CORRESPONDING_LOWER_PRIORITY_1 = 0x01,
+    CorrespondingLowerPriority1 = 0x01,
     #[doc = "Set to corresponding priority level"]
-    CORRESPONDING_LOWER_PRIORITY_2 = 0x02,
+    CorrespondingLowerPriority2 = 0x02,
     #[doc = "Set to corresponding priority level"]
-    CORRESPONDING_LOWER_PRIORITY_3 = 0x03,
+    CorrespondingLowerPriority3 = 0x03,
     #[doc = "Set to corresponding priority level"]
-    CORRESPONDING_LOWER_PRIORITY_4 = 0x04,
+    CorrespondingLowerPriority4 = 0x04,
     #[doc = "Set to corresponding priority level"]
-    CORRESPONDING_LOWER_PRIORITY_5 = 0x05,
+    CorrespondingLowerPriority5 = 0x05,
     #[doc = "Set to corresponding priority level"]
-    CORRESPONDING_LOWER_PRIORITY_6 = 0x06,
+    CorrespondingLowerPriority6 = 0x06,
     #[doc = "Set to lowest priority, Level 8"]
-    LOWEST_PRIORITY = 0x07,
+    LowestPriority = 0x07,
 }
 impl Tpri {
     #[inline(always)]
@@ -9913,11 +9913,11 @@ impl From<Tpri> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tprictrl {
     #[doc = "If a higher priority trigger is detected during command processing, the current conversion is aborted and the new command specified by the trigger is started."]
-    ABORT_CURRENT_ON_PRIORITY = 0x0,
+    AbortCurrentOnPriority = 0x0,
     #[doc = "If a higher priority trigger is received during command processing, the current command is stopped after completing the current conversion. If averaging is enabled, the averaging loop will be completed. However, CMDHa\\[LOOP\\] will be ignored and the higher priority trigger will be serviced."]
-    FINISH_CURRENT_ON_PRIORITY = 0x01,
+    FinishCurrentOnPriority = 0x01,
     #[doc = "If a higher priority trigger is received during command processing, the current command will be completed (averaging, looping, compare) before servicing the higher priority trigger."]
-    FINISH_SEQUENCE_ON_PRIORITY = 0x02,
+    FinishSequenceOnPriority = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Tprictrl {
@@ -9947,21 +9947,21 @@ impl From<Tprictrl> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trgact {
     #[doc = "Command (sequence) associated with Trigger 0 currently being executed."]
-    TRIG_0 = 0x0,
+    Trig0 = 0x0,
     #[doc = "Command (sequence) associated with Trigger 1 currently being executed."]
-    TRIG_1 = 0x01,
+    Trig1 = 0x01,
     #[doc = "Command (sequence) associated with Trigger 2 currently being executed."]
-    TRIG_2 = 0x02,
+    Trig2 = 0x02,
     #[doc = "Command (sequence) from the associated Trigger number is currently being executed."]
-    TRIG_X_3 = 0x03,
+    TrigX3 = 0x03,
     #[doc = "Command (sequence) from the associated Trigger number is currently being executed."]
-    TRIG_X_4 = 0x04,
+    TrigX4 = 0x04,
     #[doc = "Command (sequence) from the associated Trigger number is currently being executed."]
-    TRIG_X_5 = 0x05,
+    TrigX5 = 0x05,
     #[doc = "Command (sequence) from the associated Trigger number is currently being executed."]
-    TRIG_X_6 = 0x06,
+    TrigX6 = 0x06,
     #[doc = "Command (sequence) from the associated Trigger number is currently being executed."]
-    TRIG_X_7 = 0x07,
+    TrigX7 = 0x07,
 }
 impl Trgact {
     #[inline(always)]
@@ -9990,21 +9990,21 @@ impl From<Trgact> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tsrc {
     #[doc = "Trigger source 0 initiated this conversion."]
-    TRIGGER_0 = 0x0,
+    Trigger0 = 0x0,
     #[doc = "Trigger source 1 initiated this conversion."]
-    TRIGGER_1 = 0x01,
+    Trigger1 = 0x01,
     #[doc = "Corresponding trigger source initiated this conversion."]
-    CORRESPONDING_TRIGGER_2 = 0x02,
+    CorrespondingTrigger2 = 0x02,
     #[doc = "Corresponding trigger source initiated this conversion."]
-    CORRESPONDING_TRIGGER_3 = 0x03,
+    CorrespondingTrigger3 = 0x03,
     #[doc = "Corresponding trigger source initiated this conversion."]
-    CORRESPONDING_TRIGGER_4 = 0x04,
+    CorrespondingTrigger4 = 0x04,
     #[doc = "Corresponding trigger source initiated this conversion."]
-    CORRESPONDING_TRIGGER_5 = 0x05,
+    CorrespondingTrigger5 = 0x05,
     #[doc = "Corresponding trigger source initiated this conversion."]
-    CORRESPONDING_TRIGGER_6 = 0x06,
+    CorrespondingTrigger6 = 0x06,
     #[doc = "Trigger source 7 initiated this conversion."]
-    TRIGGER_7 = 0x07,
+    Trigger7 = 0x07,
 }
 impl Tsrc {
     #[inline(always)]
@@ -10033,9 +10033,9 @@ impl From<Tsrc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Vr1rngi {
     #[doc = "Range control not required. CFG\\[VREF1RNG\\] is not implemented."]
-    REF1_FIXED_VOLTAGE_RANGE = 0x0,
+    Ref1FixedVoltageRange = 0x0,
     #[doc = "Range control required. CFG\\[VREF1RNG\\] is implemented."]
-    REF1_SELECTABLE_VOLTAGE_RANGE = 0x01,
+    Ref1SelectableVoltageRange = 0x01,
 }
 impl Vr1rngi {
     #[inline(always)]

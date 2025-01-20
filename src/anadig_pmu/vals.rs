@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FbbM7StbyEn {
     #[doc = "FBB_M7 will be still on when gpc give standby request. After the mode is switched to gpc mode, keep this bit as it is."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "FBB_M7 will standby when gpc give standby request."]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl FbbM7StbyEn {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<FbbM7StbyEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LdoPllControlMode {
     #[doc = "SW Control"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "HW Control"]
-    HW = 0x01,
+    Hw = 0x01,
 }
 impl LdoPllControlMode {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<LdoPllControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RefControlMode {
     #[doc = "SW Control"]
-    SW = 0x0,
+    Sw = 0x0,
     #[doc = "HW Control"]
-    HW = 0x01,
+    Hw = 0x01,
 }
 impl RefControlMode {
     #[inline(always)]
@@ -96,37 +96,37 @@ impl From<RefControlMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum WbAdj1p8 {
     #[doc = "Cref= 0fF Cspl= 0fF DeltaC= 0fF"]
-    WB00000000 = 0x0,
+    Wb00000000 = 0x0,
     #[doc = "Cref= 0fF Cspl= 30fF DeltaC= -30fF"]
-    WB00000001 = 0x01,
+    Wb00000001 = 0x01,
     #[doc = "Cref= 0fF Cspl= 43fF DeltaC= -43fF"]
-    WB00000010 = 0x02,
+    Wb00000010 = 0x02,
     #[doc = "Cref= 0fF Cspl= 62fF DeltaC=-62fF"]
-    WB00000011 = 0x03,
+    Wb00000011 = 0x03,
     #[doc = "Cref= 0fF Cspl=105fF DeltaC=-105fF"]
-    WB00000100 = 0x04,
+    Wb00000100 = 0x04,
     #[doc = "Cref= 30fF Cspl= 0fF DeltaC= 30fF"]
-    WB00000101 = 0x05,
+    Wb00000101 = 0x05,
     #[doc = "Cref= 30fF Cspl= 43fF DeltaC= -12fF"]
-    WB00000110 = 0x06,
+    Wb00000110 = 0x06,
     #[doc = "Cref= 30fF Cspl=105fF DeltaC= -75fF"]
-    WB00000111 = 0x07,
+    Wb00000111 = 0x07,
     #[doc = "Cref= 43fF Cspl= 0fF DeltaC= 43fF"]
-    WB00001000 = 0x08,
+    Wb00001000 = 0x08,
     #[doc = "Cref= 43fF Cspl= 30fF DeltaC= 13fF"]
-    WB00001001 = 0x09,
+    Wb00001001 = 0x09,
     #[doc = "Cref= 43fF Cspl= 62fF DeltaC= -19fF"]
-    WB00001010 = 0x0a,
+    Wb00001010 = 0x0a,
     #[doc = "Cref= 62fF Cspl= 0fF DeltaC= 62fF"]
-    WB00001011 = 0x0b,
+    Wb00001011 = 0x0b,
     #[doc = "Cref= 62fF Cspl= 43fF DeltaC= 19fF"]
-    WB00001100 = 0x0c,
+    Wb00001100 = 0x0c,
     #[doc = "Cref=105fF Cspl= 0fF DeltaC= 105fF"]
-    WB00001101 = 0x0d,
+    Wb00001101 = 0x0d,
     #[doc = "Cref=105fF Cspl=30fF DeltaC= 75fF"]
-    WB00001110 = 0x0e,
+    Wb00001110 = 0x0e,
     #[doc = "Cref=0fF Cspl=0fF DeltaC= 0fF"]
-    WB00001111 = 0x0f,
+    Wb00001111 = 0x0f,
     _RESERVED_10 = 0x10,
     _RESERVED_11 = 0x11,
     _RESERVED_12 = 0x12,
@@ -395,9 +395,9 @@ impl From<WbAdj1p8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum WbPwrSwEn1p8 {
     #[doc = "WELL connected to no back-biasing power supplies"]
-    BB012 = 0x0,
+    Bb012 = 0x0,
     #[doc = "WELL connected to back biasing generators."]
-    BB0 = 0x01,
+    Bb0 = 0x01,
 }
 impl WbPwrSwEn1p8 {
     #[inline(always)]
@@ -426,9 +426,9 @@ impl From<WbPwrSwEn1p8> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum WbVddSel1p8 {
     #[doc = "VDD_LV1"]
-    LV1 = 0x0,
+    Lv1 = 0x0,
     #[doc = "VDD_LV2"]
-    LV2 = 0x01,
+    Lv2 = 0x01,
 }
 impl WbVddSel1p8 {
     #[inline(always)]

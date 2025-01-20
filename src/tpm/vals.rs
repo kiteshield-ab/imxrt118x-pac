@@ -3,13 +3,13 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cmod {
     #[doc = "TPM counter is disabled"]
-    DISABLE = 0x0,
+    Disable = 0x0,
     #[doc = "TPM counter increments on every TPM counter clock"]
-    COUNTER = 0x01,
+    Counter = 0x01,
     #[doc = "TPM counter increments on the rising edge of EXTCLK synchronized to the TPM counter clock"]
-    EXTCLK = 0x02,
+    Extclk = 0x02,
     #[doc = "TPM counter increments on the rising edge of the selected external input trigger"]
-    TRIG = 0x03,
+    Trig = 0x03,
 }
 impl Cmod {
     #[inline(always)]
@@ -38,9 +38,9 @@ impl From<Cmod> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cpwms {
     #[doc = "Up counting mode"]
-    UP = 0x0,
+    Up = 0x0,
     #[doc = "Up-down counting mode"]
-    UP_DOWN = 0x01,
+    UpDown = 0x01,
 }
 impl Cpwms {
     #[inline(always)]
@@ -69,11 +69,11 @@ impl From<Cpwms> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dbgmode {
     #[doc = "TPM counter pauses"]
-    NO_COUNT = 0x0,
+    NoCount = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     #[doc = "TPM counter continues"]
-    COUNT = 0x03,
+    Count = 0x03,
 }
 impl Dbgmode {
     #[inline(always)]
@@ -102,9 +102,9 @@ impl From<Dbgmode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dozeen {
     #[doc = "TPM counter continues"]
-    COUNT = 0x0,
+    Count = 0x0,
     #[doc = "TPM counter pauses"]
-    NO_COUNT = 0x01,
+    NoCount = 0x01,
 }
 impl Dozeen {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<Feature> for u16 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Noupdate {
     #[doc = "Internal double-buffered registers update as normal"]
-    UPDATE = 0x0,
+    Update = 0x0,
     #[doc = "Internal double-buffered registers do not update"]
-    NOUPDATE = 0x01,
+    Noupdate = 0x01,
 }
 impl Noupdate {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<Noupdate> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pol0 {
     #[doc = "Active high"]
-    HIGH = 0x0,
+    High = 0x0,
     #[doc = "Active low"]
-    LOW = 0x01,
+    Low = 0x01,
 }
 impl Pol0 {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<Pol0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pol1 {
     #[doc = "Active high"]
-    HIGH = 0x0,
+    High = 0x0,
     #[doc = "Active low"]
-    LOW = 0x01,
+    Low = 0x01,
 }
 impl Pol1 {
     #[inline(always)]
@@ -282,9 +282,9 @@ impl From<Pol1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pol2 {
     #[doc = "Active high"]
-    HIGH = 0x0,
+    High = 0x0,
     #[doc = "Active low"]
-    LOW = 0x01,
+    Low = 0x01,
 }
 impl Pol2 {
     #[inline(always)]
@@ -313,9 +313,9 @@ impl From<Pol2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pol3 {
     #[doc = "Active high"]
-    HIGH = 0x0,
+    High = 0x0,
     #[doc = "Active low"]
-    LOW = 0x01,
+    Low = 0x01,
 }
 impl Pol3 {
     #[inline(always)]
@@ -344,21 +344,21 @@ impl From<Pol3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ps {
     #[doc = "Divide by 1"]
-    DIV_1 = 0x0,
+    Div1 = 0x0,
     #[doc = "Divide by 2"]
-    DIV_2 = 0x01,
+    Div2 = 0x01,
     #[doc = "Divide by 4"]
-    DIV_4 = 0x02,
+    Div4 = 0x02,
     #[doc = "Divide by 8"]
-    DIV_8 = 0x03,
+    Div8 = 0x03,
     #[doc = "Divide by 16"]
-    DIV_16 = 0x04,
+    Div16 = 0x04,
     #[doc = "Divide by 32"]
-    DIV_32 = 0x05,
+    Div32 = 0x05,
     #[doc = "Divide by 64"]
-    DIV_64 = 0x06,
+    Div64 = 0x06,
     #[doc = "Divide by 128"]
-    DIV_128 = 0x07,
+    Div128 = 0x07,
 }
 impl Ps {
     #[inline(always)]
@@ -387,9 +387,9 @@ impl From<Ps> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Quadir {
     #[doc = "Decreasing (counter decrement)"]
-    DOWN = 0x0,
+    Down = 0x0,
     #[doc = "Increasing (counter increment)"]
-    UP = 0x01,
+    Up = 0x01,
 }
 impl Quadir {
     #[inline(always)]
@@ -418,9 +418,9 @@ impl From<Quadir> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Quadmode {
     #[doc = "Phase encoding mode"]
-    PHASE = 0x0,
+    Phase = 0x0,
     #[doc = "Count and direction encoding mode"]
-    COUNT_DIR = 0x01,
+    CountDir = 0x01,
 }
 impl Quadmode {
     #[inline(always)]
@@ -449,9 +449,9 @@ impl From<Quadmode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tofdir {
     #[doc = "Bottom of counting"]
-    BOTTOM = 0x0,
+    Bottom = 0x0,
     #[doc = "Top of counting"]
-    TOP = 0x01,
+    Top = 0x01,
 }
 impl Tofdir {
     #[inline(always)]
@@ -480,9 +480,9 @@ impl From<Tofdir> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trgpol {
     #[doc = "Active high"]
-    HIGH = 0x0,
+    High = 0x0,
     #[doc = "Active low"]
-    LOW = 0x01,
+    Low = 0x01,
 }
 impl Trgpol {
     #[inline(always)]
@@ -512,11 +512,11 @@ impl From<Trgpol> for u8 {
 pub enum Trgsel {
     _RESERVED_0 = 0x0,
     #[doc = "Channel 0 pin input capture"]
-    CH_0 = 0x01,
+    Ch0 = 0x01,
     #[doc = "Channel 1 pin input capture"]
-    CH_1 = 0x02,
+    Ch1 = 0x02,
     #[doc = "Channel 0 or channel 1 pin input capture"]
-    CH_0_1 = 0x03,
+    Ch01 = 0x03,
 }
 impl Trgsel {
     #[inline(always)]
@@ -545,9 +545,9 @@ impl From<Trgsel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trgsrc {
     #[doc = "External"]
-    EXTERNAL = 0x0,
+    External = 0x0,
     #[doc = "Internal (channel pin input capture)"]
-    INTERNAL = 0x01,
+    Internal = 0x01,
 }
 impl Trgsrc {
     #[inline(always)]
@@ -576,9 +576,9 @@ impl From<Trgsrc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trig0 {
     #[doc = "No effect"]
-    NO_EFFECT = 0x0,
+    NoEffect = 0x0,
     #[doc = "Configures trigger input 0 to be used by channel 0"]
-    USE_TRIG = 0x01,
+    UseTrig = 0x01,
 }
 impl Trig0 {
     #[inline(always)]
@@ -607,9 +607,9 @@ impl From<Trig0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trig1 {
     #[doc = "No effect"]
-    NO_EFFECT = 0x0,
+    NoEffect = 0x0,
     #[doc = "Configures trigger input 1 to be used by channel 1"]
-    USE_TRIG = 0x01,
+    UseTrig = 0x01,
 }
 impl Trig1 {
     #[inline(always)]
@@ -638,9 +638,9 @@ impl From<Trig1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trig2 {
     #[doc = "No effect"]
-    NO_EFFECT = 0x0,
+    NoEffect = 0x0,
     #[doc = "Configures trigger input 0 to be used by channel 2"]
-    USE_TRIG = 0x01,
+    UseTrig = 0x01,
 }
 impl Trig2 {
     #[inline(always)]
@@ -669,9 +669,9 @@ impl From<Trig2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trig3 {
     #[doc = "No effect"]
-    NO_EFFECT = 0x0,
+    NoEffect = 0x0,
     #[doc = "Configures trigger input 1 to be used by channel 3"]
-    USE_TRIG = 0x01,
+    UseTrig = 0x01,
 }
 impl Trig3 {
     #[inline(always)]

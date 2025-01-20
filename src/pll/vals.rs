@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum BiasSelect {
     #[doc = "Used in SoCs with a bias current of 10uA"]
-    BAIS10 = 0x0,
+    Bais10 = 0x0,
     #[doc = "Used in SoCs with a bias current of 2uA"]
-    BAIS2 = 0x01,
+    Bais2 = 0x01,
 }
 impl BiasSelect {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<BiasSelect> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum HoldRingOff {
     #[doc = "Normal operation"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Initialize PLL start up"]
-    ENABLE = 0x01,
+    Enable = 0x01,
 }
 impl HoldRingOff {
     #[inline(always)]
@@ -65,17 +65,17 @@ impl From<HoldRingOff> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PostDivSel {
     #[doc = "Divide by 1"]
-    DIVIDE1 = 0x0,
+    Divide1 = 0x0,
     #[doc = "Divide by 2"]
-    DIVIDE2 = 0x01,
+    Divide2 = 0x01,
     #[doc = "Divide by 4"]
-    DIVIDE4 = 0x02,
+    Divide4 = 0x02,
     #[doc = "Divide by 8"]
-    DIVIDE8 = 0x03,
+    Divide8 = 0x03,
     #[doc = "Divide by 16"]
-    DIVIDE16 = 0x04,
+    Divide16 = 0x04,
     #[doc = "Divide by 32"]
-    DIVIDE32 = 0x05,
+    Divide32 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
 }
@@ -106,9 +106,9 @@ impl From<PostDivSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Powerup {
     #[doc = "Power down the PLL"]
-    PDOWN = 0x0,
+    Pdown = 0x0,
     #[doc = "Power Up the PLL"]
-    PUP = 0x01,
+    Pup = 0x01,
 }
 impl Powerup {
     #[inline(always)]

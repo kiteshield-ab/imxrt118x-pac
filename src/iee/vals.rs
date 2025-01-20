@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Afd {
     #[doc = "No fault detected"]
-    AFD_0 = 0x0,
+    Afd0 = 0x0,
     #[doc = "Fault detected"]
-    AFD_1 = 0x01,
+    Afd1 = 0x01,
 }
 impl Afd {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<Afd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Byp {
     #[doc = "use MD field"]
-    BYP_0 = 0x0,
+    Byp0 = 0x0,
     #[doc = "Bypass AES, no encrypt/decrypt"]
-    BYP_1 = 0x01,
+    Byp1 = 0x01,
 }
 impl Byp {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<Byp> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum ClrMon {
     #[doc = "Do not reset."]
-    CLR_MON_0 = 0x0,
+    ClrMon0 = 0x0,
     #[doc = "Reset performance counters."]
-    CLR_MON_1 = 0x01,
+    ClrMon1 = 0x01,
 }
 impl ClrMon {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<ClrMon> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dsr {
     #[doc = "No seed request present"]
-    DSR_0 = 0x0,
+    Dsr0 = 0x0,
     #[doc = "Seed request present"]
-    DSR_1 = 0x01,
+    Dsr1 = 0x01,
 }
 impl Dsr {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<Dsr> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum KeyRdDis {
     #[doc = "Key read enabled. Reading the key registers is allowed."]
-    KEY_RD_DIS_0 = 0x0,
+    KeyRdDis0 = 0x0,
     #[doc = "Key read disabled. Reading the key registers is disabled."]
-    KEY_RD_DIS_1 = 0x01,
+    KeyRdDis1 = 0x01,
 }
 impl KeyRdDis {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<KeyRdDis> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ks {
     #[doc = "128 bits (CTR), 256 bits (XTS)."]
-    KS_0 = 0x0,
+    Ks0 = 0x0,
     #[doc = "256 bits (CTR), 512 bits (XTS)."]
-    KS_1 = 0x01,
+    Ks1 = 0x01,
 }
 impl Ks {
     #[inline(always)]
@@ -189,21 +189,21 @@ impl From<Ks> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Md {
     #[doc = "None (AXI error if accessed)"]
-    MD_0 = 0x0,
+    Md0 = 0x0,
     #[doc = "XTS"]
-    MD_1 = 0x01,
+    Md1 = 0x01,
     #[doc = "CTR w/ address binding"]
-    MD_2 = 0x02,
+    Md2 = 0x02,
     #[doc = "CTR w/o address binding"]
-    MD_3 = 0x03,
+    Md3 = 0x03,
     #[doc = "CTR keystream only"]
-    MD_4 = 0x04,
+    Md4 = 0x04,
     #[doc = "Undefined, AXI error if used"]
-    MD_5 = 0x05,
+    Md5 = 0x05,
     #[doc = "Undefined, AXI error if used"]
-    MD_6 = 0x06,
+    Md6 = 0x06,
     #[doc = "Undefined, AXI error if used"]
-    MD_7 = 0x07,
+    Md7 = 0x07,
 }
 impl Md {
     #[inline(always)]
@@ -232,9 +232,9 @@ impl From<Md> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MonEn {
     #[doc = "Performance monitoring disabled. Writing of the performance counter registers is enabled."]
-    MON_EN_0 = 0x0,
+    MonEn0 = 0x0,
     #[doc = "Performance monitoring enabled. Writing of the performance counter registers is disabled."]
-    MON_EN_1 = 0x01,
+    MonEn1 = 0x01,
 }
 impl MonEn {
     #[inline(always)]
@@ -263,9 +263,9 @@ impl From<MonEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rl0 {
     #[doc = "Unlocked."]
-    RL0_0 = 0x0,
+    Rl00 = 0x0,
     #[doc = "Key, Offset and Attribute registers are locked."]
-    RL0_1 = 0x01,
+    Rl01 = 0x01,
 }
 impl Rl0 {
     #[inline(always)]
@@ -294,9 +294,9 @@ impl From<Rl0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rl1 {
     #[doc = "Unlocked."]
-    RL1_0 = 0x0,
+    Rl10 = 0x0,
     #[doc = "Key, Offset and Attribute registers are locked."]
-    RL1_1 = 0x01,
+    Rl11 = 0x01,
 }
 impl Rl1 {
     #[inline(always)]
@@ -325,9 +325,9 @@ impl From<Rl1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rl2 {
     #[doc = "Unlocked."]
-    RL2_0 = 0x0,
+    Rl20 = 0x0,
     #[doc = "Key, Offset and Attribute registers are locked."]
-    RL2_1 = 0x01,
+    Rl21 = 0x01,
 }
 impl Rl2 {
     #[inline(always)]
@@ -356,9 +356,9 @@ impl From<Rl2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rl3 {
     #[doc = "Unlocked."]
-    RL3_0 = 0x0,
+    Rl30 = 0x0,
     #[doc = "Key, Offset and Attribute registers are locked."]
-    RL3_1 = 0x01,
+    Rl31 = 0x01,
 }
 impl Rl3 {
     #[inline(always)]
@@ -387,9 +387,9 @@ impl From<Rl3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rl4 {
     #[doc = "Unlocked."]
-    RL4_0 = 0x0,
+    Rl40 = 0x0,
     #[doc = "Key, Offset and Attribute registers are locked."]
-    RL4_1 = 0x01,
+    Rl41 = 0x01,
 }
 impl Rl4 {
     #[inline(always)]
@@ -418,9 +418,9 @@ impl From<Rl4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rl5 {
     #[doc = "Unlocked."]
-    RL5_0 = 0x0,
+    Rl50 = 0x0,
     #[doc = "Key, Offset and Attribute registers are locked."]
-    RL5_1 = 0x01,
+    Rl51 = 0x01,
 }
 impl Rl5 {
     #[inline(always)]
@@ -449,9 +449,9 @@ impl From<Rl5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rl6 {
     #[doc = "Unlocked."]
-    RL6_0 = 0x0,
+    Rl60 = 0x0,
     #[doc = "Key, Offset and Attribute registers are locked."]
-    RL6_1 = 0x01,
+    Rl61 = 0x01,
 }
 impl Rl6 {
     #[inline(always)]
@@ -480,9 +480,9 @@ impl From<Rl6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rl7 {
     #[doc = "Unlocked."]
-    RL7_0 = 0x0,
+    Rl70 = 0x0,
     #[doc = "Key, Offset and Attribute registers are locked."]
-    RL7_1 = 0x01,
+    Rl71 = 0x01,
 }
 impl Rl7 {
     #[inline(always)]
@@ -511,9 +511,9 @@ impl From<Rl7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rst {
     #[doc = "Do Not Reset."]
-    RST_0 = 0x0,
+    Rst0 = 0x0,
     #[doc = "Reset IEE."]
-    RST_1 = 0x01,
+    Rst1 = 0x01,
 }
 impl Rst {
     #[inline(always)]
@@ -542,9 +542,9 @@ impl From<Rst> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tmcont {
     #[doc = "Do not continue. This is the last block of data for AES."]
-    TMCONT_0 = 0x0,
+    Tmcont0 = 0x0,
     #[doc = "Continue. Do not initialize AES after this block."]
-    TMCONT_1 = 0x01,
+    Tmcont1 = 0x01,
 }
 impl Tmcont {
     #[inline(always)]
@@ -573,9 +573,9 @@ impl From<Tmcont> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tmd {
     #[doc = "Test mode is usable."]
-    TMD_0 = 0x0,
+    Tmd0 = 0x0,
     #[doc = "Test mode is disabled."]
-    TMD_1 = 0x01,
+    Tmd1 = 0x01,
 }
 impl Tmd {
     #[inline(always)]
@@ -604,9 +604,9 @@ impl From<Tmd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tmdone {
     #[doc = "Not Done."]
-    TMDONE_0 = 0x0,
+    Tmdone0 = 0x0,
     #[doc = "Test Done."]
-    TMDONE_1 = 0x01,
+    Tmdone1 = 0x01,
 }
 impl Tmdone {
     #[inline(always)]
@@ -635,9 +635,9 @@ impl From<Tmdone> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tme {
     #[doc = "Disabled."]
-    TME_0 = 0x0,
+    Tme0 = 0x0,
     #[doc = "Enabled."]
-    TME_1 = 0x01,
+    Tme1 = 0x01,
 }
 impl Tme {
     #[inline(always)]
@@ -666,9 +666,9 @@ impl From<Tme> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tmencr {
     #[doc = "AES Test mode will do decryption."]
-    TMENCR_0 = 0x0,
+    Tmencr0 = 0x0,
     #[doc = "AES Test mode will do encryption."]
-    TMENCR_1 = 0x01,
+    Tmencr1 = 0x01,
 }
 impl Tmencr {
     #[inline(always)]
@@ -697,9 +697,9 @@ impl From<Tmencr> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tmr {
     #[doc = "Not running. May be written if IEE_GCFG\\[TME\\] = 1"]
-    TMR_0 = 0x0,
+    Tmr0 = 0x0,
     #[doc = "Run AES Test until TMDONE is indicated."]
-    TMR_1 = 0x01,
+    Tmr1 = 0x01,
 }
 impl Tmr {
     #[inline(always)]
@@ -728,9 +728,9 @@ impl From<Tmr> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tmrdy {
     #[doc = "Not Ready."]
-    TMRDY_0 = 0x0,
+    Tmrdy0 = 0x0,
     #[doc = "Ready."]
-    TMRDY_1 = 0x01,
+    Tmrdy1 = 0x01,
 }
 impl Tmrdy {
     #[inline(always)]

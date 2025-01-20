@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs0Arb {
     #[doc = "Fixed priority"]
-    FP = 0x0,
+    Fp = 0x0,
     #[doc = "Round-robin (rotating) priority"]
-    RR = 0x01,
+    Rr = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
 }
@@ -67,9 +67,9 @@ impl From<Crs0Hpe0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs0Hpe1 {
     #[doc = "Master high-priority elevation for master 1. is disabled on this slave port."]
-    HPE1 = 0x0,
+    Hpe1 = 0x0,
     #[doc = "Master high-priority elevation for master 1. is enabled on this slave port."]
-    HPE1_1 = 0x01,
+    Hpe11 = 0x01,
 }
 impl Crs0Hpe1 {
     #[inline(always)]
@@ -98,9 +98,9 @@ impl From<Crs0Hpe1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs0Hpe2 {
     #[doc = "Master high-priority elevation for master 2. is disabled on this slave port."]
-    HPE2 = 0x0,
+    Hpe2 = 0x0,
     #[doc = "Master high-priority elevation for master 2. is enabled on this slave port."]
-    HPE2_1 = 0x01,
+    Hpe21 = 0x01,
 }
 impl Crs0Hpe2 {
     #[inline(always)]
@@ -129,9 +129,9 @@ impl From<Crs0Hpe2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs0Hpe3 {
     #[doc = "Master high-priority elevation for master 3. is disabled on this slave port."]
-    HPE3 = 0x0,
+    Hpe3 = 0x0,
     #[doc = "Master high-priority elevation for master 3. is enabled on this slave port."]
-    HPE3_1 = 0x01,
+    Hpe31 = 0x01,
 }
 impl Crs0Hpe3 {
     #[inline(always)]
@@ -160,9 +160,9 @@ impl From<Crs0Hpe3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs0Hpe4 {
     #[doc = "Master high-priority elevation for master 4. is disabled on this slave port."]
-    HPE4 = 0x0,
+    Hpe4 = 0x0,
     #[doc = "Master high-priority elevation for master 4. is enabled on this slave port."]
-    HPE4_1 = 0x01,
+    Hpe41 = 0x01,
 }
 impl Crs0Hpe4 {
     #[inline(always)]
@@ -191,9 +191,9 @@ impl From<Crs0Hpe4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs0Hpe5 {
     #[doc = "Master high-priority elevation for master 5. is disabled on this slave port."]
-    HPE5 = 0x0,
+    Hpe5 = 0x0,
     #[doc = "Master high-priority elevation for master 5. is enabled on this slave port."]
-    HPE5_1 = 0x01,
+    Hpe51 = 0x01,
 }
 impl Crs0Hpe5 {
     #[inline(always)]
@@ -222,21 +222,21 @@ impl From<Crs0Hpe5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs0Park {
     #[doc = "Park on master port M0"]
-    MASTER_PORT_0 = 0x0,
+    MasterPort0 = 0x0,
     #[doc = "Park on master port M1"]
-    MASTER_PORT_1 = 0x01,
+    MasterPort1 = 0x01,
     #[doc = "Park on master port M2"]
-    MASTER_PORT_2 = 0x02,
+    MasterPort2 = 0x02,
     #[doc = "Park on master port M3"]
-    MASTER_PORT_3 = 0x03,
+    MasterPort3 = 0x03,
     #[doc = "Park on master port M4"]
-    MASTER_PORT_4 = 0x04,
+    MasterPort4 = 0x04,
     #[doc = "Park on master port M5"]
-    MASTER_PORT_5 = 0x05,
+    MasterPort5 = 0x05,
     #[doc = "Park on master port M6"]
-    MASTER_PORT_6 = 0x06,
+    MasterPort6 = 0x06,
     #[doc = "Park on master port M7"]
-    MASTER_PORT_7 = 0x07,
+    MasterPort7 = 0x07,
 }
 impl Crs0Park {
     #[inline(always)]
@@ -265,11 +265,11 @@ impl From<Crs0Park> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs0Pctl {
     #[doc = "When no master makes a request, the arbiter parks the slave port on the master port defined by the PARK bit field."]
-    PARK = 0x0,
+    Park = 0x0,
     #[doc = "When no master makes a request, the arbiter parks the slave port on the last master to be in control of the slave port."]
-    SLAVE_PORT = 0x01,
+    SlavePort = 0x01,
     #[doc = "Low-power park. When no master makes a request, the slave port is not parked on a master and the arbiter drives all outputs to a constant safe state."]
-    SAFE_STATE = 0x02,
+    SafeState = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Crs0Pctl {
@@ -299,9 +299,9 @@ impl From<Crs0Pctl> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs0Ro {
     #[doc = "The CRSn and PRSn registers are writeable"]
-    CRS_PRS_Y = 0x0,
+    CrsPrsY = 0x0,
     #[doc = "The CRSn and PRSn registers are read-only and cannot be written (attempted writes have no effect on the registers and result in a bus error response)."]
-    CRS_PRS_N = 0x01,
+    CrsPrsN = 0x01,
 }
 impl Crs0Ro {
     #[inline(always)]
@@ -330,9 +330,9 @@ impl From<Crs0Ro> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs1Arb {
     #[doc = "Fixed priority"]
-    FP = 0x0,
+    Fp = 0x0,
     #[doc = "Round-robin (rotating) priority"]
-    RR = 0x01,
+    Rr = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
 }
@@ -394,9 +394,9 @@ impl From<Crs1Hpe0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs1Hpe1 {
     #[doc = "Master high-priority elevation for master 1. is disabled on this slave port."]
-    HPE1 = 0x0,
+    Hpe1 = 0x0,
     #[doc = "Master high-priority elevation for master 1. is enabled on this slave port."]
-    HPE1_1 = 0x01,
+    Hpe11 = 0x01,
 }
 impl Crs1Hpe1 {
     #[inline(always)]
@@ -425,9 +425,9 @@ impl From<Crs1Hpe1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs1Hpe2 {
     #[doc = "Master high-priority elevation for master 2. is disabled on this slave port."]
-    HPE2 = 0x0,
+    Hpe2 = 0x0,
     #[doc = "Master high-priority elevation for master 2. is enabled on this slave port."]
-    HPE2_1 = 0x01,
+    Hpe21 = 0x01,
 }
 impl Crs1Hpe2 {
     #[inline(always)]
@@ -456,9 +456,9 @@ impl From<Crs1Hpe2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs1Hpe3 {
     #[doc = "Master high-priority elevation for master 3. is disabled on this slave port."]
-    HPE3 = 0x0,
+    Hpe3 = 0x0,
     #[doc = "Master high-priority elevation for master 3. is enabled on this slave port."]
-    HPE3_1 = 0x01,
+    Hpe31 = 0x01,
 }
 impl Crs1Hpe3 {
     #[inline(always)]
@@ -487,9 +487,9 @@ impl From<Crs1Hpe3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs1Hpe4 {
     #[doc = "Master high-priority elevation for master 4. is disabled on this slave port."]
-    HPE4 = 0x0,
+    Hpe4 = 0x0,
     #[doc = "Master high-priority elevation for master 4. is enabled on this slave port."]
-    HPE4_1 = 0x01,
+    Hpe41 = 0x01,
 }
 impl Crs1Hpe4 {
     #[inline(always)]
@@ -518,9 +518,9 @@ impl From<Crs1Hpe4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs1Hpe5 {
     #[doc = "Master high-priority elevation for master 5. is disabled on this slave port."]
-    HPE5 = 0x0,
+    Hpe5 = 0x0,
     #[doc = "Master high-priority elevation for master 5. is enabled on this slave port."]
-    HPE5_1 = 0x01,
+    Hpe51 = 0x01,
 }
 impl Crs1Hpe5 {
     #[inline(always)]
@@ -549,21 +549,21 @@ impl From<Crs1Hpe5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs1Park {
     #[doc = "Park on master port M0"]
-    MASTER_PORT_0 = 0x0,
+    MasterPort0 = 0x0,
     #[doc = "Park on master port M1"]
-    MASTER_PORT_1 = 0x01,
+    MasterPort1 = 0x01,
     #[doc = "Park on master port M2"]
-    MASTER_PORT_2 = 0x02,
+    MasterPort2 = 0x02,
     #[doc = "Park on master port M3"]
-    MASTER_PORT_3 = 0x03,
+    MasterPort3 = 0x03,
     #[doc = "Park on master port M4"]
-    MASTER_PORT_4 = 0x04,
+    MasterPort4 = 0x04,
     #[doc = "Park on master port M5"]
-    MASTER_PORT_5 = 0x05,
+    MasterPort5 = 0x05,
     #[doc = "Park on master port M6"]
-    MASTER_PORT_6 = 0x06,
+    MasterPort6 = 0x06,
     #[doc = "Park on master port M7"]
-    MASTER_PORT_7 = 0x07,
+    MasterPort7 = 0x07,
 }
 impl Crs1Park {
     #[inline(always)]
@@ -592,11 +592,11 @@ impl From<Crs1Park> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs1Pctl {
     #[doc = "When no master makes a request, the arbiter parks the slave port on the master port defined by the PARK bit field."]
-    PARK = 0x0,
+    Park = 0x0,
     #[doc = "When no master makes a request, the arbiter parks the slave port on the last master to be in control of the slave port."]
-    SLAVE_PORT = 0x01,
+    SlavePort = 0x01,
     #[doc = "Low-power park. When no master makes a request, the slave port is not parked on a master and the arbiter drives all outputs to a constant safe state."]
-    SAFE_STATE = 0x02,
+    SafeState = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Crs1Pctl {
@@ -626,9 +626,9 @@ impl From<Crs1Pctl> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs1Ro {
     #[doc = "The CRSn and PRSn registers are writeable"]
-    CRS_PRS_Y = 0x0,
+    CrsPrsY = 0x0,
     #[doc = "The CRSn and PRSn registers are read-only and cannot be written (attempted writes have no effect on the registers and result in a bus error response)."]
-    CRS_PRS_N = 0x01,
+    CrsPrsN = 0x01,
 }
 impl Crs1Ro {
     #[inline(always)]
@@ -657,9 +657,9 @@ impl From<Crs1Ro> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs2Arb {
     #[doc = "Fixed priority"]
-    FP = 0x0,
+    Fp = 0x0,
     #[doc = "Round-robin (rotating) priority"]
-    RR = 0x01,
+    Rr = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
 }
@@ -721,9 +721,9 @@ impl From<Crs2Hpe0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs2Hpe1 {
     #[doc = "Master high-priority elevation for master 1. is disabled on this slave port."]
-    HPE1 = 0x0,
+    Hpe1 = 0x0,
     #[doc = "Master high-priority elevation for master 1. is enabled on this slave port."]
-    HPE1_1 = 0x01,
+    Hpe11 = 0x01,
 }
 impl Crs2Hpe1 {
     #[inline(always)]
@@ -752,9 +752,9 @@ impl From<Crs2Hpe1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs2Hpe2 {
     #[doc = "Master high-priority elevation for master 2. is disabled on this slave port."]
-    HPE2 = 0x0,
+    Hpe2 = 0x0,
     #[doc = "Master high-priority elevation for master 2. is enabled on this slave port."]
-    HPE2_1 = 0x01,
+    Hpe21 = 0x01,
 }
 impl Crs2Hpe2 {
     #[inline(always)]
@@ -783,9 +783,9 @@ impl From<Crs2Hpe2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs2Hpe3 {
     #[doc = "Master high-priority elevation for master 3. is disabled on this slave port."]
-    HPE3 = 0x0,
+    Hpe3 = 0x0,
     #[doc = "Master high-priority elevation for master 3. is enabled on this slave port."]
-    HPE3_1 = 0x01,
+    Hpe31 = 0x01,
 }
 impl Crs2Hpe3 {
     #[inline(always)]
@@ -814,9 +814,9 @@ impl From<Crs2Hpe3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs2Hpe4 {
     #[doc = "Master high-priority elevation for master 4. is disabled on this slave port."]
-    HPE4 = 0x0,
+    Hpe4 = 0x0,
     #[doc = "Master high-priority elevation for master 4. is enabled on this slave port."]
-    HPE4_1 = 0x01,
+    Hpe41 = 0x01,
 }
 impl Crs2Hpe4 {
     #[inline(always)]
@@ -845,9 +845,9 @@ impl From<Crs2Hpe4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs2Hpe5 {
     #[doc = "Master high-priority elevation for master 5. is disabled on this slave port."]
-    HPE5 = 0x0,
+    Hpe5 = 0x0,
     #[doc = "Master high-priority elevation for master 5. is enabled on this slave port."]
-    HPE5_1 = 0x01,
+    Hpe51 = 0x01,
 }
 impl Crs2Hpe5 {
     #[inline(always)]
@@ -876,21 +876,21 @@ impl From<Crs2Hpe5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs2Park {
     #[doc = "Park on master port M0"]
-    MASTER_PORT_0 = 0x0,
+    MasterPort0 = 0x0,
     #[doc = "Park on master port M1"]
-    MASTER_PORT_1 = 0x01,
+    MasterPort1 = 0x01,
     #[doc = "Park on master port M2"]
-    MASTER_PORT_2 = 0x02,
+    MasterPort2 = 0x02,
     #[doc = "Park on master port M3"]
-    MASTER_PORT_3 = 0x03,
+    MasterPort3 = 0x03,
     #[doc = "Park on master port M4"]
-    MASTER_PORT_4 = 0x04,
+    MasterPort4 = 0x04,
     #[doc = "Park on master port M5"]
-    MASTER_PORT_5 = 0x05,
+    MasterPort5 = 0x05,
     #[doc = "Park on master port M6"]
-    MASTER_PORT_6 = 0x06,
+    MasterPort6 = 0x06,
     #[doc = "Park on master port M7"]
-    MASTER_PORT_7 = 0x07,
+    MasterPort7 = 0x07,
 }
 impl Crs2Park {
     #[inline(always)]
@@ -919,11 +919,11 @@ impl From<Crs2Park> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs2Pctl {
     #[doc = "When no master makes a request, the arbiter parks the slave port on the master port defined by the PARK bit field."]
-    PARK = 0x0,
+    Park = 0x0,
     #[doc = "When no master makes a request, the arbiter parks the slave port on the last master to be in control of the slave port."]
-    SLAVE_PORT = 0x01,
+    SlavePort = 0x01,
     #[doc = "Low-power park. When no master makes a request, the slave port is not parked on a master and the arbiter drives all outputs to a constant safe state."]
-    SAFE_STATE = 0x02,
+    SafeState = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Crs2Pctl {
@@ -953,9 +953,9 @@ impl From<Crs2Pctl> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs2Ro {
     #[doc = "The CRSn and PRSn registers are writeable"]
-    CRS_PRS_Y = 0x0,
+    CrsPrsY = 0x0,
     #[doc = "The CRSn and PRSn registers are read-only and cannot be written (attempted writes have no effect on the registers and result in a bus error response)."]
-    CRS_PRS_N = 0x01,
+    CrsPrsN = 0x01,
 }
 impl Crs2Ro {
     #[inline(always)]
@@ -984,9 +984,9 @@ impl From<Crs2Ro> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs3Arb {
     #[doc = "Fixed priority"]
-    FP = 0x0,
+    Fp = 0x0,
     #[doc = "Round-robin (rotating) priority"]
-    RR = 0x01,
+    Rr = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
 }
@@ -1048,9 +1048,9 @@ impl From<Crs3Hpe0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs3Hpe1 {
     #[doc = "Master high-priority elevation for master 1. is disabled on this slave port."]
-    HPE1 = 0x0,
+    Hpe1 = 0x0,
     #[doc = "Master high-priority elevation for master 1. is enabled on this slave port."]
-    HPE1_1 = 0x01,
+    Hpe11 = 0x01,
 }
 impl Crs3Hpe1 {
     #[inline(always)]
@@ -1079,9 +1079,9 @@ impl From<Crs3Hpe1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs3Hpe2 {
     #[doc = "Master high-priority elevation for master 2. is disabled on this slave port."]
-    HPE2 = 0x0,
+    Hpe2 = 0x0,
     #[doc = "Master high-priority elevation for master 2. is enabled on this slave port."]
-    HPE2_1 = 0x01,
+    Hpe21 = 0x01,
 }
 impl Crs3Hpe2 {
     #[inline(always)]
@@ -1110,9 +1110,9 @@ impl From<Crs3Hpe2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs3Hpe3 {
     #[doc = "Master high-priority elevation for master 3. is disabled on this slave port."]
-    HPE3 = 0x0,
+    Hpe3 = 0x0,
     #[doc = "Master high-priority elevation for master 3. is enabled on this slave port."]
-    HPE3_1 = 0x01,
+    Hpe31 = 0x01,
 }
 impl Crs3Hpe3 {
     #[inline(always)]
@@ -1141,9 +1141,9 @@ impl From<Crs3Hpe3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs3Hpe4 {
     #[doc = "Master high-priority elevation for master 4. is disabled on this slave port."]
-    HPE4 = 0x0,
+    Hpe4 = 0x0,
     #[doc = "Master high-priority elevation for master 4. is enabled on this slave port."]
-    HPE4_1 = 0x01,
+    Hpe41 = 0x01,
 }
 impl Crs3Hpe4 {
     #[inline(always)]
@@ -1172,9 +1172,9 @@ impl From<Crs3Hpe4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs3Hpe5 {
     #[doc = "Master high-priority elevation for master 5. is disabled on this slave port."]
-    HPE5 = 0x0,
+    Hpe5 = 0x0,
     #[doc = "Master high-priority elevation for master 5. is enabled on this slave port."]
-    HPE5_1 = 0x01,
+    Hpe51 = 0x01,
 }
 impl Crs3Hpe5 {
     #[inline(always)]
@@ -1203,21 +1203,21 @@ impl From<Crs3Hpe5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs3Park {
     #[doc = "Park on master port M0"]
-    MASTER_PORT_0 = 0x0,
+    MasterPort0 = 0x0,
     #[doc = "Park on master port M1"]
-    MASTER_PORT_1 = 0x01,
+    MasterPort1 = 0x01,
     #[doc = "Park on master port M2"]
-    MASTER_PORT_2 = 0x02,
+    MasterPort2 = 0x02,
     #[doc = "Park on master port M3"]
-    MASTER_PORT_3 = 0x03,
+    MasterPort3 = 0x03,
     #[doc = "Park on master port M4"]
-    MASTER_PORT_4 = 0x04,
+    MasterPort4 = 0x04,
     #[doc = "Park on master port M5"]
-    MASTER_PORT_5 = 0x05,
+    MasterPort5 = 0x05,
     #[doc = "Park on master port M6"]
-    MASTER_PORT_6 = 0x06,
+    MasterPort6 = 0x06,
     #[doc = "Park on master port M7"]
-    MASTER_PORT_7 = 0x07,
+    MasterPort7 = 0x07,
 }
 impl Crs3Park {
     #[inline(always)]
@@ -1246,11 +1246,11 @@ impl From<Crs3Park> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs3Pctl {
     #[doc = "When no master makes a request, the arbiter parks the slave port on the master port defined by the PARK bit field."]
-    PARK = 0x0,
+    Park = 0x0,
     #[doc = "When no master makes a request, the arbiter parks the slave port on the last master to be in control of the slave port."]
-    SLAVE_PORT = 0x01,
+    SlavePort = 0x01,
     #[doc = "Low-power park. When no master makes a request, the slave port is not parked on a master and the arbiter drives all outputs to a constant safe state."]
-    SAFE_STATE = 0x02,
+    SafeState = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Crs3Pctl {
@@ -1280,9 +1280,9 @@ impl From<Crs3Pctl> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs3Ro {
     #[doc = "The CRSn and PRSn registers are writeable"]
-    CRS_PRS_Y = 0x0,
+    CrsPrsY = 0x0,
     #[doc = "The CRSn and PRSn registers are read-only and cannot be written (attempted writes have no effect on the registers and result in a bus error response)."]
-    CRS_PRS_N = 0x01,
+    CrsPrsN = 0x01,
 }
 impl Crs3Ro {
     #[inline(always)]
@@ -1311,9 +1311,9 @@ impl From<Crs3Ro> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs4Arb {
     #[doc = "Fixed priority"]
-    FP = 0x0,
+    Fp = 0x0,
     #[doc = "Round-robin (rotating) priority"]
-    RR = 0x01,
+    Rr = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
 }
@@ -1375,9 +1375,9 @@ impl From<Crs4Hpe0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs4Hpe1 {
     #[doc = "Master high-priority elevation for master 1. is disabled on this slave port."]
-    HPE1 = 0x0,
+    Hpe1 = 0x0,
     #[doc = "Master high-priority elevation for master 1. is enabled on this slave port."]
-    HPE1_1 = 0x01,
+    Hpe11 = 0x01,
 }
 impl Crs4Hpe1 {
     #[inline(always)]
@@ -1406,9 +1406,9 @@ impl From<Crs4Hpe1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs4Hpe2 {
     #[doc = "Master high-priority elevation for master 2. is disabled on this slave port."]
-    HPE2 = 0x0,
+    Hpe2 = 0x0,
     #[doc = "Master high-priority elevation for master 2. is enabled on this slave port."]
-    HPE2_1 = 0x01,
+    Hpe21 = 0x01,
 }
 impl Crs4Hpe2 {
     #[inline(always)]
@@ -1437,9 +1437,9 @@ impl From<Crs4Hpe2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs4Hpe3 {
     #[doc = "Master high-priority elevation for master 3. is disabled on this slave port."]
-    HPE3 = 0x0,
+    Hpe3 = 0x0,
     #[doc = "Master high-priority elevation for master 3. is enabled on this slave port."]
-    HPE3_1 = 0x01,
+    Hpe31 = 0x01,
 }
 impl Crs4Hpe3 {
     #[inline(always)]
@@ -1468,9 +1468,9 @@ impl From<Crs4Hpe3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs4Hpe4 {
     #[doc = "Master high-priority elevation for master 4. is disabled on this slave port."]
-    HPE4 = 0x0,
+    Hpe4 = 0x0,
     #[doc = "Master high-priority elevation for master 4. is enabled on this slave port."]
-    HPE4_1 = 0x01,
+    Hpe41 = 0x01,
 }
 impl Crs4Hpe4 {
     #[inline(always)]
@@ -1499,9 +1499,9 @@ impl From<Crs4Hpe4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs4Hpe5 {
     #[doc = "Master high-priority elevation for master 5. is disabled on this slave port."]
-    HPE5 = 0x0,
+    Hpe5 = 0x0,
     #[doc = "Master high-priority elevation for master 5. is enabled on this slave port."]
-    HPE5_1 = 0x01,
+    Hpe51 = 0x01,
 }
 impl Crs4Hpe5 {
     #[inline(always)]
@@ -1530,21 +1530,21 @@ impl From<Crs4Hpe5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs4Park {
     #[doc = "Park on master port M0"]
-    MASTER_PORT_0 = 0x0,
+    MasterPort0 = 0x0,
     #[doc = "Park on master port M1"]
-    MASTER_PORT_1 = 0x01,
+    MasterPort1 = 0x01,
     #[doc = "Park on master port M2"]
-    MASTER_PORT_2 = 0x02,
+    MasterPort2 = 0x02,
     #[doc = "Park on master port M3"]
-    MASTER_PORT_3 = 0x03,
+    MasterPort3 = 0x03,
     #[doc = "Park on master port M4"]
-    MASTER_PORT_4 = 0x04,
+    MasterPort4 = 0x04,
     #[doc = "Park on master port M5"]
-    MASTER_PORT_5 = 0x05,
+    MasterPort5 = 0x05,
     #[doc = "Park on master port M6"]
-    MASTER_PORT_6 = 0x06,
+    MasterPort6 = 0x06,
     #[doc = "Park on master port M7"]
-    MASTER_PORT_7 = 0x07,
+    MasterPort7 = 0x07,
 }
 impl Crs4Park {
     #[inline(always)]
@@ -1573,11 +1573,11 @@ impl From<Crs4Park> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs4Pctl {
     #[doc = "When no master makes a request, the arbiter parks the slave port on the master port defined by the PARK bit field."]
-    PARK = 0x0,
+    Park = 0x0,
     #[doc = "When no master makes a request, the arbiter parks the slave port on the last master to be in control of the slave port."]
-    SLAVE_PORT = 0x01,
+    SlavePort = 0x01,
     #[doc = "Low-power park. When no master makes a request, the slave port is not parked on a master and the arbiter drives all outputs to a constant safe state."]
-    SAFE_STATE = 0x02,
+    SafeState = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Crs4Pctl {
@@ -1607,9 +1607,9 @@ impl From<Crs4Pctl> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs4Ro {
     #[doc = "The CRSn and PRSn registers are writeable"]
-    CRS_PRS_Y = 0x0,
+    CrsPrsY = 0x0,
     #[doc = "The CRSn and PRSn registers are read-only and cannot be written (attempted writes have no effect on the registers and result in a bus error response)."]
-    CRS_PRS_N = 0x01,
+    CrsPrsN = 0x01,
 }
 impl Crs4Ro {
     #[inline(always)]
@@ -1638,9 +1638,9 @@ impl From<Crs4Ro> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs5Arb {
     #[doc = "Fixed priority"]
-    FP = 0x0,
+    Fp = 0x0,
     #[doc = "Round-robin (rotating) priority"]
-    RR = 0x01,
+    Rr = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
 }
@@ -1702,9 +1702,9 @@ impl From<Crs5Hpe0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs5Hpe1 {
     #[doc = "Master high-priority elevation for master 1. is disabled on this slave port."]
-    HPE1 = 0x0,
+    Hpe1 = 0x0,
     #[doc = "Master high-priority elevation for master 1. is enabled on this slave port."]
-    HPE1_1 = 0x01,
+    Hpe11 = 0x01,
 }
 impl Crs5Hpe1 {
     #[inline(always)]
@@ -1733,9 +1733,9 @@ impl From<Crs5Hpe1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs5Hpe2 {
     #[doc = "Master high-priority elevation for master 2. is disabled on this slave port."]
-    HPE2 = 0x0,
+    Hpe2 = 0x0,
     #[doc = "Master high-priority elevation for master 2. is enabled on this slave port."]
-    HPE2_1 = 0x01,
+    Hpe21 = 0x01,
 }
 impl Crs5Hpe2 {
     #[inline(always)]
@@ -1764,9 +1764,9 @@ impl From<Crs5Hpe2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs5Hpe3 {
     #[doc = "Master high-priority elevation for master 3. is disabled on this slave port."]
-    HPE3 = 0x0,
+    Hpe3 = 0x0,
     #[doc = "Master high-priority elevation for master 3. is enabled on this slave port."]
-    HPE3_1 = 0x01,
+    Hpe31 = 0x01,
 }
 impl Crs5Hpe3 {
     #[inline(always)]
@@ -1795,9 +1795,9 @@ impl From<Crs5Hpe3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs5Hpe4 {
     #[doc = "Master high-priority elevation for master 4. is disabled on this slave port."]
-    HPE4 = 0x0,
+    Hpe4 = 0x0,
     #[doc = "Master high-priority elevation for master 4. is enabled on this slave port."]
-    HPE4_1 = 0x01,
+    Hpe41 = 0x01,
 }
 impl Crs5Hpe4 {
     #[inline(always)]
@@ -1826,9 +1826,9 @@ impl From<Crs5Hpe4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs5Hpe5 {
     #[doc = "Master high-priority elevation for master 5. is disabled on this slave port."]
-    HPE5 = 0x0,
+    Hpe5 = 0x0,
     #[doc = "Master high-priority elevation for master 5. is enabled on this slave port."]
-    HPE5_1 = 0x01,
+    Hpe51 = 0x01,
 }
 impl Crs5Hpe5 {
     #[inline(always)]
@@ -1857,21 +1857,21 @@ impl From<Crs5Hpe5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs5Park {
     #[doc = "Park on master port M0"]
-    MASTER_PORT_0 = 0x0,
+    MasterPort0 = 0x0,
     #[doc = "Park on master port M1"]
-    MASTER_PORT_1 = 0x01,
+    MasterPort1 = 0x01,
     #[doc = "Park on master port M2"]
-    MASTER_PORT_2 = 0x02,
+    MasterPort2 = 0x02,
     #[doc = "Park on master port M3"]
-    MASTER_PORT_3 = 0x03,
+    MasterPort3 = 0x03,
     #[doc = "Park on master port M4"]
-    MASTER_PORT_4 = 0x04,
+    MasterPort4 = 0x04,
     #[doc = "Park on master port M5"]
-    MASTER_PORT_5 = 0x05,
+    MasterPort5 = 0x05,
     #[doc = "Park on master port M6"]
-    MASTER_PORT_6 = 0x06,
+    MasterPort6 = 0x06,
     #[doc = "Park on master port M7"]
-    MASTER_PORT_7 = 0x07,
+    MasterPort7 = 0x07,
 }
 impl Crs5Park {
     #[inline(always)]
@@ -1900,11 +1900,11 @@ impl From<Crs5Park> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs5Pctl {
     #[doc = "When no master makes a request, the arbiter parks the slave port on the master port defined by the PARK bit field."]
-    PARK = 0x0,
+    Park = 0x0,
     #[doc = "When no master makes a request, the arbiter parks the slave port on the last master to be in control of the slave port."]
-    SLAVE_PORT = 0x01,
+    SlavePort = 0x01,
     #[doc = "Low-power park. When no master makes a request, the slave port is not parked on a master and the arbiter drives all outputs to a constant safe state."]
-    SAFE_STATE = 0x02,
+    SafeState = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Crs5Pctl {
@@ -1934,9 +1934,9 @@ impl From<Crs5Pctl> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs5Ro {
     #[doc = "The CRSn and PRSn registers are writeable"]
-    CRS_PRS_Y = 0x0,
+    CrsPrsY = 0x0,
     #[doc = "The CRSn and PRSn registers are read-only and cannot be written (attempted writes have no effect on the registers and result in a bus error response)."]
-    CRS_PRS_N = 0x01,
+    CrsPrsN = 0x01,
 }
 impl Crs5Ro {
     #[inline(always)]
@@ -1965,9 +1965,9 @@ impl From<Crs5Ro> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs6Arb {
     #[doc = "Fixed priority"]
-    FP = 0x0,
+    Fp = 0x0,
     #[doc = "Round-robin (rotating) priority"]
-    RR = 0x01,
+    Rr = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
 }
@@ -2029,9 +2029,9 @@ impl From<Crs6Hpe0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs6Hpe1 {
     #[doc = "Master high-priority elevation for master 1. is disabled on this slave port."]
-    HPE1 = 0x0,
+    Hpe1 = 0x0,
     #[doc = "Master high-priority elevation for master 1. is enabled on this slave port."]
-    HPE1_1 = 0x01,
+    Hpe11 = 0x01,
 }
 impl Crs6Hpe1 {
     #[inline(always)]
@@ -2060,9 +2060,9 @@ impl From<Crs6Hpe1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs6Hpe2 {
     #[doc = "Master high-priority elevation for master 2. is disabled on this slave port."]
-    HPE2 = 0x0,
+    Hpe2 = 0x0,
     #[doc = "Master high-priority elevation for master 2. is enabled on this slave port."]
-    HPE2_1 = 0x01,
+    Hpe21 = 0x01,
 }
 impl Crs6Hpe2 {
     #[inline(always)]
@@ -2091,9 +2091,9 @@ impl From<Crs6Hpe2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs6Hpe3 {
     #[doc = "Master high-priority elevation for master 3. is disabled on this slave port."]
-    HPE3 = 0x0,
+    Hpe3 = 0x0,
     #[doc = "Master high-priority elevation for master 3. is enabled on this slave port."]
-    HPE3_1 = 0x01,
+    Hpe31 = 0x01,
 }
 impl Crs6Hpe3 {
     #[inline(always)]
@@ -2122,9 +2122,9 @@ impl From<Crs6Hpe3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs6Hpe4 {
     #[doc = "Master high-priority elevation for master 4. is disabled on this slave port."]
-    HPE4 = 0x0,
+    Hpe4 = 0x0,
     #[doc = "Master high-priority elevation for master 4. is enabled on this slave port."]
-    HPE4_1 = 0x01,
+    Hpe41 = 0x01,
 }
 impl Crs6Hpe4 {
     #[inline(always)]
@@ -2153,9 +2153,9 @@ impl From<Crs6Hpe4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs6Hpe5 {
     #[doc = "Master high-priority elevation for master 5. is disabled on this slave port."]
-    HPE5 = 0x0,
+    Hpe5 = 0x0,
     #[doc = "Master high-priority elevation for master 5. is enabled on this slave port."]
-    HPE5_1 = 0x01,
+    Hpe51 = 0x01,
 }
 impl Crs6Hpe5 {
     #[inline(always)]
@@ -2184,21 +2184,21 @@ impl From<Crs6Hpe5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs6Park {
     #[doc = "Park on master port M0"]
-    MASTER_PORT_0 = 0x0,
+    MasterPort0 = 0x0,
     #[doc = "Park on master port M1"]
-    MASTER_PORT_1 = 0x01,
+    MasterPort1 = 0x01,
     #[doc = "Park on master port M2"]
-    MASTER_PORT_2 = 0x02,
+    MasterPort2 = 0x02,
     #[doc = "Park on master port M3"]
-    MASTER_PORT_3 = 0x03,
+    MasterPort3 = 0x03,
     #[doc = "Park on master port M4"]
-    MASTER_PORT_4 = 0x04,
+    MasterPort4 = 0x04,
     #[doc = "Park on master port M5"]
-    MASTER_PORT_5 = 0x05,
+    MasterPort5 = 0x05,
     #[doc = "Park on master port M6"]
-    MASTER_PORT_6 = 0x06,
+    MasterPort6 = 0x06,
     #[doc = "Park on master port M7"]
-    MASTER_PORT_7 = 0x07,
+    MasterPort7 = 0x07,
 }
 impl Crs6Park {
     #[inline(always)]
@@ -2227,11 +2227,11 @@ impl From<Crs6Park> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs6Pctl {
     #[doc = "When no master makes a request, the arbiter parks the slave port on the master port defined by the PARK bit field."]
-    PARK = 0x0,
+    Park = 0x0,
     #[doc = "When no master makes a request, the arbiter parks the slave port on the last master to be in control of the slave port."]
-    SLAVE_PORT = 0x01,
+    SlavePort = 0x01,
     #[doc = "Low-power park. When no master makes a request, the slave port is not parked on a master and the arbiter drives all outputs to a constant safe state."]
-    SAFE_STATE = 0x02,
+    SafeState = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Crs6Pctl {
@@ -2261,9 +2261,9 @@ impl From<Crs6Pctl> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs6Ro {
     #[doc = "The CRSn and PRSn registers are writeable"]
-    CRS_PRS_Y = 0x0,
+    CrsPrsY = 0x0,
     #[doc = "The CRSn and PRSn registers are read-only and cannot be written (attempted writes have no effect on the registers and result in a bus error response)."]
-    CRS_PRS_N = 0x01,
+    CrsPrsN = 0x01,
 }
 impl Crs6Ro {
     #[inline(always)]
@@ -2292,9 +2292,9 @@ impl From<Crs6Ro> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs7Arb {
     #[doc = "Fixed priority"]
-    FP = 0x0,
+    Fp = 0x0,
     #[doc = "Round-robin (rotating) priority"]
-    RR = 0x01,
+    Rr = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
 }
@@ -2356,9 +2356,9 @@ impl From<Crs7Hpe0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs7Hpe1 {
     #[doc = "Master high-priority elevation for master 1. is disabled on this slave port."]
-    HPE1 = 0x0,
+    Hpe1 = 0x0,
     #[doc = "Master high-priority elevation for master 1. is enabled on this slave port."]
-    HPE1_1 = 0x01,
+    Hpe11 = 0x01,
 }
 impl Crs7Hpe1 {
     #[inline(always)]
@@ -2387,9 +2387,9 @@ impl From<Crs7Hpe1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs7Hpe2 {
     #[doc = "Master high-priority elevation for master 2. is disabled on this slave port."]
-    HPE2 = 0x0,
+    Hpe2 = 0x0,
     #[doc = "Master high-priority elevation for master 2. is enabled on this slave port."]
-    HPE2_1 = 0x01,
+    Hpe21 = 0x01,
 }
 impl Crs7Hpe2 {
     #[inline(always)]
@@ -2418,9 +2418,9 @@ impl From<Crs7Hpe2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs7Hpe3 {
     #[doc = "Master high-priority elevation for master 3. is disabled on this slave port."]
-    HPE3 = 0x0,
+    Hpe3 = 0x0,
     #[doc = "Master high-priority elevation for master 3. is enabled on this slave port."]
-    HPE3_1 = 0x01,
+    Hpe31 = 0x01,
 }
 impl Crs7Hpe3 {
     #[inline(always)]
@@ -2449,9 +2449,9 @@ impl From<Crs7Hpe3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs7Hpe4 {
     #[doc = "Master high-priority elevation for master 4. is disabled on this slave port."]
-    HPE4 = 0x0,
+    Hpe4 = 0x0,
     #[doc = "Master high-priority elevation for master 4. is enabled on this slave port."]
-    HPE4_1 = 0x01,
+    Hpe41 = 0x01,
 }
 impl Crs7Hpe4 {
     #[inline(always)]
@@ -2480,9 +2480,9 @@ impl From<Crs7Hpe4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs7Hpe5 {
     #[doc = "Master high-priority elevation for master 5. is disabled on this slave port."]
-    HPE5 = 0x0,
+    Hpe5 = 0x0,
     #[doc = "Master high-priority elevation for master 5. is enabled on this slave port."]
-    HPE5_1 = 0x01,
+    Hpe51 = 0x01,
 }
 impl Crs7Hpe5 {
     #[inline(always)]
@@ -2511,21 +2511,21 @@ impl From<Crs7Hpe5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs7Park {
     #[doc = "Park on master port M0"]
-    MASTER_PORT_0 = 0x0,
+    MasterPort0 = 0x0,
     #[doc = "Park on master port M1"]
-    MASTER_PORT_1 = 0x01,
+    MasterPort1 = 0x01,
     #[doc = "Park on master port M2"]
-    MASTER_PORT_2 = 0x02,
+    MasterPort2 = 0x02,
     #[doc = "Park on master port M3"]
-    MASTER_PORT_3 = 0x03,
+    MasterPort3 = 0x03,
     #[doc = "Park on master port M4"]
-    MASTER_PORT_4 = 0x04,
+    MasterPort4 = 0x04,
     #[doc = "Park on master port M5"]
-    MASTER_PORT_5 = 0x05,
+    MasterPort5 = 0x05,
     #[doc = "Park on master port M6"]
-    MASTER_PORT_6 = 0x06,
+    MasterPort6 = 0x06,
     #[doc = "Park on master port M7"]
-    MASTER_PORT_7 = 0x07,
+    MasterPort7 = 0x07,
 }
 impl Crs7Park {
     #[inline(always)]
@@ -2554,11 +2554,11 @@ impl From<Crs7Park> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs7Pctl {
     #[doc = "When no master makes a request, the arbiter parks the slave port on the master port defined by the PARK bit field."]
-    PARK = 0x0,
+    Park = 0x0,
     #[doc = "When no master makes a request, the arbiter parks the slave port on the last master to be in control of the slave port."]
-    SLAVE_PORT = 0x01,
+    SlavePort = 0x01,
     #[doc = "Low-power park. When no master makes a request, the slave port is not parked on a master and the arbiter drives all outputs to a constant safe state."]
-    SAFE_STATE = 0x02,
+    SafeState = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Crs7Pctl {
@@ -2588,9 +2588,9 @@ impl From<Crs7Pctl> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Crs7Ro {
     #[doc = "The CRSn and PRSn registers are writeable"]
-    CRS_PRS_Y = 0x0,
+    CrsPrsY = 0x0,
     #[doc = "The CRSn and PRSn registers are read-only and cannot be written (attempted writes have no effect on the registers and result in a bus error response)."]
-    CRS_PRS_N = 0x01,
+    CrsPrsN = 0x01,
 }
 impl Crs7Ro {
     #[inline(always)]
@@ -2619,21 +2619,21 @@ impl From<Crs7Ro> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs0M0 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or the lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs0M0 {
     #[inline(always)]
@@ -2662,21 +2662,21 @@ impl From<Prs0M0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs0M1 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs0M1 {
     #[inline(always)]
@@ -2705,21 +2705,21 @@ impl From<Prs0M1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs0M2 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs0M2 {
     #[inline(always)]
@@ -2748,21 +2748,21 @@ impl From<Prs0M2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs0M3 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs0M3 {
     #[inline(always)]
@@ -2791,21 +2791,21 @@ impl From<Prs0M3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs0M4 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs0M4 {
     #[inline(always)]
@@ -2834,21 +2834,21 @@ impl From<Prs0M4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs0M5 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs0M5 {
     #[inline(always)]
@@ -2877,21 +2877,21 @@ impl From<Prs0M5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs1M0 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or the lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs1M0 {
     #[inline(always)]
@@ -2920,21 +2920,21 @@ impl From<Prs1M0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs1M1 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs1M1 {
     #[inline(always)]
@@ -2963,21 +2963,21 @@ impl From<Prs1M1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs1M2 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs1M2 {
     #[inline(always)]
@@ -3006,21 +3006,21 @@ impl From<Prs1M2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs1M3 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs1M3 {
     #[inline(always)]
@@ -3049,21 +3049,21 @@ impl From<Prs1M3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs1M4 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs1M4 {
     #[inline(always)]
@@ -3092,21 +3092,21 @@ impl From<Prs1M4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs1M5 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs1M5 {
     #[inline(always)]
@@ -3135,21 +3135,21 @@ impl From<Prs1M5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs2M0 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or the lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs2M0 {
     #[inline(always)]
@@ -3178,21 +3178,21 @@ impl From<Prs2M0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs2M1 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs2M1 {
     #[inline(always)]
@@ -3221,21 +3221,21 @@ impl From<Prs2M1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs2M2 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs2M2 {
     #[inline(always)]
@@ -3264,21 +3264,21 @@ impl From<Prs2M2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs2M3 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs2M3 {
     #[inline(always)]
@@ -3307,21 +3307,21 @@ impl From<Prs2M3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs2M4 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs2M4 {
     #[inline(always)]
@@ -3350,21 +3350,21 @@ impl From<Prs2M4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs2M5 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs2M5 {
     #[inline(always)]
@@ -3393,21 +3393,21 @@ impl From<Prs2M5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs3M0 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or the lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs3M0 {
     #[inline(always)]
@@ -3436,21 +3436,21 @@ impl From<Prs3M0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs3M1 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs3M1 {
     #[inline(always)]
@@ -3479,21 +3479,21 @@ impl From<Prs3M1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs3M2 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs3M2 {
     #[inline(always)]
@@ -3522,21 +3522,21 @@ impl From<Prs3M2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs3M3 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs3M3 {
     #[inline(always)]
@@ -3565,21 +3565,21 @@ impl From<Prs3M3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs3M4 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs3M4 {
     #[inline(always)]
@@ -3608,21 +3608,21 @@ impl From<Prs3M4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs3M5 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs3M5 {
     #[inline(always)]
@@ -3651,21 +3651,21 @@ impl From<Prs3M5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs4M0 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or the lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs4M0 {
     #[inline(always)]
@@ -3694,21 +3694,21 @@ impl From<Prs4M0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs4M1 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs4M1 {
     #[inline(always)]
@@ -3737,21 +3737,21 @@ impl From<Prs4M1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs4M2 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs4M2 {
     #[inline(always)]
@@ -3780,21 +3780,21 @@ impl From<Prs4M2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs4M3 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs4M3 {
     #[inline(always)]
@@ -3823,21 +3823,21 @@ impl From<Prs4M3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs4M4 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs4M4 {
     #[inline(always)]
@@ -3866,21 +3866,21 @@ impl From<Prs4M4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs4M5 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs4M5 {
     #[inline(always)]
@@ -3909,21 +3909,21 @@ impl From<Prs4M5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs5M0 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or the lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs5M0 {
     #[inline(always)]
@@ -3952,21 +3952,21 @@ impl From<Prs5M0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs5M1 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs5M1 {
     #[inline(always)]
@@ -3995,21 +3995,21 @@ impl From<Prs5M1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs5M2 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs5M2 {
     #[inline(always)]
@@ -4038,21 +4038,21 @@ impl From<Prs5M2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs5M3 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs5M3 {
     #[inline(always)]
@@ -4081,21 +4081,21 @@ impl From<Prs5M3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs5M4 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs5M4 {
     #[inline(always)]
@@ -4124,21 +4124,21 @@ impl From<Prs5M4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs5M5 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs5M5 {
     #[inline(always)]
@@ -4167,21 +4167,21 @@ impl From<Prs5M5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs6M0 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or the lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs6M0 {
     #[inline(always)]
@@ -4210,21 +4210,21 @@ impl From<Prs6M0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs6M1 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs6M1 {
     #[inline(always)]
@@ -4253,21 +4253,21 @@ impl From<Prs6M1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs6M2 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs6M2 {
     #[inline(always)]
@@ -4296,21 +4296,21 @@ impl From<Prs6M2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs6M3 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs6M3 {
     #[inline(always)]
@@ -4339,21 +4339,21 @@ impl From<Prs6M3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs6M4 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs6M4 {
     #[inline(always)]
@@ -4382,21 +4382,21 @@ impl From<Prs6M4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs6M5 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs6M5 {
     #[inline(always)]
@@ -4425,21 +4425,21 @@ impl From<Prs6M5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs7M0 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or the lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs7M0 {
     #[inline(always)]
@@ -4468,21 +4468,21 @@ impl From<Prs7M0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs7M1 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs7M1 {
     #[inline(always)]
@@ -4511,21 +4511,21 @@ impl From<Prs7M1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs7M2 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs7M2 {
     #[inline(always)]
@@ -4554,21 +4554,21 @@ impl From<Prs7M2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs7M3 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8the or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs7M3 {
     #[inline(always)]
@@ -4597,21 +4597,21 @@ impl From<Prs7M3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs7M4 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs7M4 {
     #[inline(always)]
@@ -4640,21 +4640,21 @@ impl From<Prs7M4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prs7M5 {
     #[doc = "This master has level 1 or highest priority when accessing the slave port."]
-    SLAVE_PORT_1 = 0x0,
+    SlavePort1 = 0x0,
     #[doc = "This master has level 2 priority when accessing the slave port."]
-    SLAVE_PORT_2 = 0x01,
+    SlavePort2 = 0x01,
     #[doc = "This master has level 3 priority when accessing the slave port."]
-    SLAVE_PORT_3 = 0x02,
+    SlavePort3 = 0x02,
     #[doc = "This master has level 4 priority when accessing the slave port."]
-    SLAVE_PORT_4 = 0x03,
+    SlavePort4 = 0x03,
     #[doc = "This master has level 5 priority when accessing the slave port."]
-    SLAVE_PORT_5 = 0x04,
+    SlavePort5 = 0x04,
     #[doc = "This master has level 6 priority when accessing the slave port."]
-    SLAVE_PORT_6 = 0x05,
+    SlavePort6 = 0x05,
     #[doc = "This master has level 7 priority when accessing the slave port."]
-    SLAVE_PORT_7 = 0x06,
+    SlavePort7 = 0x06,
     #[doc = "This master has level 8 or lowest priority when accessing the slave port."]
-    SLAVE_PORT_8 = 0x07,
+    SlavePort8 = 0x07,
 }
 impl Prs7M5 {
     #[inline(always)]

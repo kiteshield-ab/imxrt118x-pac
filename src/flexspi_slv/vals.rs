@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Allowaxird {
     #[doc = "Denied"]
-    DENY = 0x0,
+    Deny = 0x0,
     #[doc = "Allowed"]
-    ALLOW = 0x01,
+    Allow = 0x01,
 }
 impl Allowaxird {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<Allowaxird> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Allowaxiwr {
     #[doc = "Denied"]
-    DENY = 0x0,
+    Deny = 0x0,
     #[doc = "Allowed"]
-    ALLOW = 0x01,
+    Allow = 0x01,
 }
 impl Allowaxiwr {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<Allowaxiwr> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Axireadidle {
     #[doc = "Busy"]
-    BUSY = 0x0,
+    Busy = 0x0,
     #[doc = "Idle"]
-    IDLE = 0x01,
+    Idle = 0x01,
 }
 impl Axireadidle {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<Axireadidle> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Blknxtrd {
     #[doc = "Allowed"]
-    ALLOW = 0x0,
+    Allow = 0x0,
     #[doc = "Blocked"]
-    BLOCK = 0x01,
+    Block = 0x01,
 }
 impl Blknxtrd {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<Blknxtrd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Blknxtwr {
     #[doc = "Allowed"]
-    ALLOW = 0x0,
+    Allow = 0x0,
     #[doc = "Blocked"]
-    BLOCK = 0x01,
+    Block = 0x01,
 }
 impl Blknxtwr {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<Blknxtwr> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Blkread {
     #[doc = "Allowed"]
-    ALLOW = 0x0,
+    Allow = 0x0,
     #[doc = "Blocked"]
-    BLOCK = 0x01,
+    Block = 0x01,
 }
 impl Blkread {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<Blkread> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Blkwrite {
     #[doc = "Allowed"]
-    ALLOW = 0x0,
+    Allow = 0x0,
     #[doc = "Blocked"]
-    BLOCK = 0x01,
+    Block = 0x01,
 }
 impl Blkwrite {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<Blkwrite> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Clrint {
     #[doc = "Do not clear"]
-    NONE = 0x0,
+    None = 0x0,
     #[doc = "Clear"]
-    CLEAR = 0x01,
+    Clear = 0x01,
 }
 impl Clrint {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<Clrint> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Errcmd {
     #[doc = "Not received"]
-    NONE = 0x0,
+    None = 0x0,
     #[doc = "Received"]
-    ERROR = 0x01,
+    Error = 0x01,
 }
 impl Errcmd {
     #[inline(always)]
@@ -282,13 +282,13 @@ impl From<Errcmd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Iomode {
     #[doc = "SDR*4"]
-    SDRX4 = 0x0,
+    Sdrx4 = 0x0,
     #[doc = "SDR*8"]
-    SDRX8 = 0x01,
+    Sdrx8 = 0x01,
     #[doc = "DDR*4"]
-    DDRX4 = 0x02,
+    Ddrx4 = 0x02,
     #[doc = "DDR*8"]
-    DDRX8 = 0x03,
+    Ddrx8 = 0x03,
 }
 impl Iomode {
     #[inline(always)]
@@ -317,13 +317,13 @@ impl From<Iomode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rdfetchsize {
     #[doc = "256 bytes"]
-    SIZE256 = 0x0,
+    Size256 = 0x0,
     #[doc = "512 bytes"]
-    SIZE512 = 0x01,
+    Size512 = 0x01,
     #[doc = "1 KB"]
-    SIZE1K = 0x02,
+    Size1k = 0x02,
     #[doc = "2 KB"]
-    SIZE2K = 0x03,
+    Size2k = 0x03,
 }
 impl Rdfetchsize {
     #[inline(always)]
@@ -352,9 +352,9 @@ impl From<Rdfetchsize> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Regrwidle {
     #[doc = "Busy"]
-    BUSY = 0x0,
+    Busy = 0x0,
     #[doc = "Idle"]
-    IDLE = 0x01,
+    Idle = 0x01,
 }
 impl Regrwidle {
     #[inline(always)]
@@ -383,9 +383,9 @@ impl From<Regrwidle> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ruf {
     #[doc = "Did not occur"]
-    NONE = 0x0,
+    None = 0x0,
     #[doc = "Occurred"]
-    UNDERFLOW = 0x01,
+    Underflow = 0x01,
 }
 impl Ruf {
     #[inline(always)]
@@ -414,9 +414,9 @@ impl From<Ruf> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Seqidle {
     #[doc = "Busy"]
-    BUSY = 0x0,
+    Busy = 0x0,
     #[doc = "Idle"]
-    IDLE = 0x01,
+    Idle = 0x01,
 }
 impl Seqidle {
     #[inline(always)]
@@ -445,9 +445,9 @@ impl From<Seqidle> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Swreset {
     #[doc = "Finished"]
-    FINISH = 0x0,
+    Finish = 0x0,
     #[doc = "Initiate"]
-    INITIATE = 0x01,
+    Initiate = 0x01,
 }
 impl Swreset {
     #[inline(always)]
@@ -476,9 +476,9 @@ impl From<Swreset> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wip {
     #[doc = "Not busy"]
-    IDLE = 0x0,
+    Idle = 0x0,
     #[doc = "Busy"]
-    BUSY = 0x01,
+    Busy = 0x01,
 }
 impl Wip {
     #[inline(always)]
@@ -507,9 +507,9 @@ impl From<Wip> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wof {
     #[doc = "Did not occur"]
-    NONE = 0x0,
+    None = 0x0,
     #[doc = "Occurred"]
-    OVERFLOW = 0x01,
+    Overflow = 0x01,
 }
 impl Wof {
     #[inline(always)]
@@ -538,13 +538,13 @@ impl From<Wof> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wrwm {
     #[doc = "32 bytes"]
-    SIZE32 = 0x0,
+    Size32 = 0x0,
     #[doc = "64 bytes"]
-    SIZE64 = 0x01,
+    Size64 = 0x01,
     #[doc = "128 bytes"]
-    SIZE128 = 0x02,
+    Size128 = 0x02,
     #[doc = "256 bytes"]
-    SIZE256 = 0x03,
+    Size256 = 0x03,
 }
 impl Wrwm {
     #[inline(always)]

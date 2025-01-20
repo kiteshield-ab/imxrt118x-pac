@@ -47,9 +47,9 @@ impl From<Feature> for u16 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rfp {
     #[doc = "No data is ready to be read. All RSR\\[RFn\\] bits are clear."]
-    CLEAR = 0x0,
+    Clear = 0x0,
     #[doc = "Data is ready to be read. One or more RSR\\[RFn\\] bits are set."]
-    SET = 0x01,
+    Set = 0x01,
 }
 impl Rfp {
     #[inline(always)]

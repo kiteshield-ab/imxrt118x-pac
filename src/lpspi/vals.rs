@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Contc {
     #[doc = "Command word for start of new transfer"]
-    START = 0x0,
+    Start = 0x0,
     #[doc = "Command word for continuing transfer"]
-    CONTINUE = 0x01,
+    Continue = 0x01,
 }
 impl Contc {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<Contc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cpha {
     #[doc = "Captured"]
-    CAPTURED = 0x0,
+    Captured = 0x0,
     #[doc = "Changed"]
-    CHANGED = 0x01,
+    Changed = 0x01,
 }
 impl Cpha {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<Cpha> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Cpol {
     #[doc = "Inactive low"]
-    INACTIVE_LOW = 0x0,
+    InactiveLow = 0x0,
     #[doc = "Inactive high"]
-    INACTIVE_HIGH = 0x01,
+    InactiveHigh = 0x01,
 }
 impl Cpol {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<Cpol> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dozen {
     #[doc = "Enable"]
-    ENABLED = 0x0,
+    Enabled = 0x0,
     #[doc = "Disable"]
-    DISABLED = 0x01,
+    Disabled = 0x01,
 }
 impl Dozen {
     #[inline(always)]
@@ -171,9 +171,9 @@ impl From<Feature> for u16 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Hrdir {
     #[doc = "Input"]
-    INPUT = 0x0,
+    Input = 0x0,
     #[doc = "Output"]
-    OUTPUT = 0x01,
+    Output = 0x01,
 }
 impl Hrdir {
     #[inline(always)]
@@ -202,9 +202,9 @@ impl From<Hrdir> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Hrsel {
     #[doc = "HREQ pin"]
-    HREQPIN = 0x0,
+    Hreqpin = 0x0,
     #[doc = "Input trigger"]
-    INPUT_TRIGGER = 0x01,
+    InputTrigger = 0x01,
 }
 impl Hrsel {
     #[inline(always)]
@@ -233,9 +233,9 @@ impl From<Hrsel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lsbf {
     #[doc = "Data is transferred MSB first"]
-    MSB_FIRST = 0x0,
+    MsbFirst = 0x0,
     #[doc = "Data is transferred LSB first"]
-    LSB_FIRST = 0x01,
+    LsbFirst = 0x01,
 }
 impl Lsbf {
     #[inline(always)]
@@ -264,9 +264,9 @@ impl From<Lsbf> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Master {
     #[doc = "Slave mode"]
-    SLAVE_MODE = 0x0,
+    SlaveMode = 0x0,
     #[doc = "Master mode"]
-    MASTER_MODE = 0x01,
+    MasterMode = 0x01,
 }
 impl Master {
     #[inline(always)]
@@ -295,20 +295,20 @@ impl From<Master> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Matcfg {
     #[doc = "Match is disabled"]
-    DISABLED = 0x0,
+    Disabled = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "Match first data word with compare word"]
-    ENABLED_FIRSTDATAMATCH = 0x02,
+    EnabledFirstdatamatch = 0x02,
     #[doc = "Match any data word with compare word"]
-    ENABLED_ANYDATAMATCH = 0x03,
+    EnabledAnydatamatch = 0x03,
     #[doc = "Sequential match, first data word"]
-    ENABLED_DATAMATCH_100 = 0x04,
+    EnabledDatamatch100 = 0x04,
     #[doc = "Sequential match, any data word"]
-    ENABLED_DATAMATCH_101 = 0x05,
+    EnabledDatamatch101 = 0x05,
     #[doc = "Match first data word (masked) with compare word (masked)"]
-    ENABLED_DATAMATCH_110 = 0x06,
+    EnabledDatamatch110 = 0x06,
     #[doc = "Match any data word (masked) with compare word (masked)"]
-    ENABLED_DATAMATCH_111 = 0x07,
+    EnabledDatamatch111 = 0x07,
 }
 impl Matcfg {
     #[inline(always)]
@@ -337,9 +337,9 @@ impl From<Matcfg> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Mbf {
     #[doc = "LPSPI is idle"]
-    IDLE = 0x0,
+    Idle = 0x0,
     #[doc = "LPSPI is busy"]
-    BUSY = 0x01,
+    Busy = 0x01,
 }
 impl Mbf {
     #[inline(always)]
@@ -368,9 +368,9 @@ impl From<Mbf> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Outcfg {
     #[doc = "Output data retains last value."]
-    RETAIN_LASTVALUE = 0x0,
+    RetainLastvalue = 0x0,
     #[doc = "Output data is 3-stated."]
-    TRISTATED = 0x01,
+    Tristated = 0x01,
 }
 impl Outcfg {
     #[inline(always)]
@@ -399,9 +399,9 @@ impl From<Outcfg> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Partial {
     #[doc = "Discard"]
-    DISCARDED = 0x0,
+    Discarded = 0x0,
     #[doc = "Store"]
-    STORED = 0x01,
+    Stored = 0x01,
 }
 impl Partial {
     #[inline(always)]
@@ -430,13 +430,13 @@ impl From<Partial> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pcs {
     #[doc = "Transfer using PCS\\[0\\]"]
-    TX_PCS0 = 0x0,
+    TxPcs0 = 0x0,
     #[doc = "Transfer using PCS\\[1\\]"]
-    TX_PCS1 = 0x01,
+    TxPcs1 = 0x01,
     #[doc = "Transfer using PCS\\[2\\]"]
-    TX_PCS2 = 0x02,
+    TxPcs2 = 0x02,
     #[doc = "Transfer using PCS\\[3\\]"]
-    TX_PCS3 = 0x03,
+    TxPcs3 = 0x03,
 }
 impl Pcs {
     #[inline(always)]
@@ -465,9 +465,9 @@ impl From<Pcs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pcscfg {
     #[doc = "PCS\\[3:2\\] are configured for chip select function"]
-    CHIP_SELECT = 0x0,
+    ChipSelect = 0x0,
     #[doc = "PCS\\[3:2\\] are configured for half-duplex 4-bit transfers (PCS\\[3:2\\] = DATA\\[3:2\\])"]
-    HALFDUPLEX4BIT = 0x01,
+    Halfduplex4bit = 0x01,
 }
 impl Pcscfg {
     #[inline(always)]
@@ -496,13 +496,13 @@ impl From<Pcscfg> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pincfg {
     #[doc = "SIN is used for input data; SOUT is used for output data."]
-    SIN_IN_SOUT_OUT = 0x0,
+    SinInSoutOut = 0x0,
     #[doc = "SIN is used for both input and output data. Only half-duplex serial transfers are supported."]
-    SIN_BOTH_IN_OUT = 0x01,
+    SinBothInOut = 0x01,
     #[doc = "SOUT is used for both input and output data. Only half-duplex serial transfers are supported."]
-    SOUT_BOTH_IN_OUT = 0x02,
+    SoutBothInOut = 0x02,
     #[doc = "SOUT is used for input data; SIN is used for output data."]
-    SOUT_IN_SIN_OUT = 0x03,
+    SoutInSinOut = 0x03,
 }
 impl Pincfg {
     #[inline(always)]
@@ -531,21 +531,21 @@ impl From<Pincfg> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Prescale {
     #[doc = "Divide by 1"]
-    DIVIDEBY1 = 0x0,
+    Divideby1 = 0x0,
     #[doc = "Divide by 2"]
-    DIVIDEBY2 = 0x01,
+    Divideby2 = 0x01,
     #[doc = "Divide by 4"]
-    DIVIDEBY4 = 0x02,
+    Divideby4 = 0x02,
     #[doc = "Divide by 8"]
-    DIVIDEBY8 = 0x03,
+    Divideby8 = 0x03,
     #[doc = "Divide by 16"]
-    DIVIDEBY16 = 0x04,
+    Divideby16 = 0x04,
     #[doc = "Divide by 32"]
-    DIVIDEBY32 = 0x05,
+    Divideby32 = 0x05,
     #[doc = "Divide by 64"]
-    DIVIDEBY64 = 0x06,
+    Divideby64 = 0x06,
     #[doc = "Divide by 128"]
-    DIVIDEBY128 = 0x07,
+    Divideby128 = 0x07,
 }
 impl Prescale {
     #[inline(always)]
@@ -574,9 +574,9 @@ impl From<Prescale> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rdmo {
     #[doc = "Disable"]
-    STORED = 0x0,
+    Stored = 0x0,
     #[doc = "Enable"]
-    DISCARDED = 0x01,
+    Discarded = 0x01,
 }
 impl Rdmo {
     #[inline(always)]
@@ -605,9 +605,9 @@ impl From<Rdmo> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rrf {
     #[doc = "No effect"]
-    NO_EFFECT = 0x0,
+    NoEffect = 0x0,
     #[doc = "Reset"]
-    RXFIFO_RST = 0x01,
+    RxfifoRst = 0x01,
 }
 impl Rrf {
     #[inline(always)]
@@ -636,9 +636,9 @@ impl From<Rrf> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rtf {
     #[doc = "No effect"]
-    NO_EFFECT = 0x0,
+    NoEffect = 0x0,
     #[doc = "Reset"]
-    TXFIFO_RST = 0x01,
+    TxfifoRst = 0x01,
 }
 impl Rtf {
     #[inline(always)]
@@ -667,9 +667,9 @@ impl From<Rtf> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rxmsk {
     #[doc = "Normal transfer"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Receive data is masked"]
-    MASK = 0x01,
+    Mask = 0x01,
 }
 impl Rxmsk {
     #[inline(always)]
@@ -698,9 +698,9 @@ impl From<Rxmsk> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sample {
     #[doc = "SCK edge"]
-    ON_SCK_EDGE = 0x0,
+    OnSckEdge = 0x0,
     #[doc = "Delayed SCK edge"]
-    ON_DELAYED_SCK_EDGE = 0x01,
+    OnDelayedSckEdge = 0x01,
 }
 impl Sample {
     #[inline(always)]
@@ -729,9 +729,9 @@ impl From<Sample> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sof {
     #[doc = "Subsequent data word"]
-    NEXT_DATAWORD = 0x0,
+    NextDataword = 0x0,
     #[doc = "First data word"]
-    FIRST_DATAWORD = 0x01,
+    FirstDataword = 0x01,
 }
 impl Sof {
     #[inline(always)]
@@ -760,9 +760,9 @@ impl From<Sof> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Tdf {
     #[doc = "Transmit data not requested"]
-    TXDATA_NOT_REQST = 0x0,
+    TxdataNotReqst = 0x0,
     #[doc = "Transmit data is requested"]
-    TXDATA_REQST = 0x01,
+    TxdataReqst = 0x01,
 }
 impl Tdf {
     #[inline(always)]
@@ -791,9 +791,9 @@ impl From<Tdf> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Txmsk {
     #[doc = "Normal transfer"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Mask transmit data"]
-    MASK = 0x01,
+    Mask = 0x01,
 }
 impl Txmsk {
     #[inline(always)]
@@ -822,11 +822,11 @@ impl From<Txmsk> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Width {
     #[doc = "1-bit transfer"]
-    ONEBIT = 0x0,
+    Onebit = 0x0,
     #[doc = "2-bit transfer"]
-    TWOBIT = 0x01,
+    Twobit = 0x01,
     #[doc = "4-bit transfer"]
-    FOURBIT = 0x02,
+    Fourbit = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Width {

@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RegDisable {
     #[doc = "Enable"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disable"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl RegDisable {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<RegDisable> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RegLpEn {
     #[doc = "Enable"]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disable"]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl RegLpEn {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<RegLpEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TrackModeEn {
     #[doc = "Normal use"]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "Switch preparation"]
-    SWITCH = 0x01,
+    Switch = 0x01,
 }
 impl TrackModeEn {
     #[inline(always)]
@@ -96,69 +96,69 @@ impl From<TrackModeEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum VoltageSelect {
     #[doc = "Stable Voltage (range)"]
-    BITVAL0 = 0x0,
+    Bitval0 = 0x0,
     #[doc = "Stable Voltage (range)"]
-    BITVAL1 = 0x01,
+    Bitval1 = 0x01,
     #[doc = "Stable Voltage (range)"]
-    BITVAL2 = 0x02,
+    Bitval2 = 0x02,
     #[doc = "Stable Voltage (range)"]
-    BITVAL3 = 0x03,
+    Bitval3 = 0x03,
     #[doc = "Stable Voltage (range)"]
-    BITVAL4 = 0x04,
+    Bitval4 = 0x04,
     #[doc = "Stable Voltage (range)"]
-    BITVAL5 = 0x05,
+    Bitval5 = 0x05,
     #[doc = "Stable Voltage (range)"]
-    BITVAL6 = 0x06,
+    Bitval6 = 0x06,
     #[doc = "Stable Voltage (range)"]
-    BITVAL7 = 0x07,
+    Bitval7 = 0x07,
     #[doc = "Stable Voltage (range)"]
-    BITVAL8 = 0x08,
+    Bitval8 = 0x08,
     #[doc = "Stable Voltage (range)"]
-    BITVAL9 = 0x09,
+    Bitval9 = 0x09,
     #[doc = "Stable Voltage (range)"]
-    BITVAL10 = 0x0a,
+    Bitval10 = 0x0a,
     #[doc = "Stable Voltage (range)"]
-    BITVAL11 = 0x0b,
+    Bitval11 = 0x0b,
     #[doc = "Stable Voltage (range)"]
-    BITVAL12 = 0x0c,
+    Bitval12 = 0x0c,
     #[doc = "Stable Voltage (range)"]
-    BITVAL13 = 0x0d,
+    Bitval13 = 0x0d,
     #[doc = "Stable Voltage (range)"]
-    BITVAL14 = 0x0e,
+    Bitval14 = 0x0e,
     #[doc = "Stable Voltage (range)"]
-    BITVAL15 = 0x0f,
+    Bitval15 = 0x0f,
     #[doc = "Stable Voltage (range)"]
-    BITVAL16 = 0x10,
+    Bitval16 = 0x10,
     #[doc = "Stable Voltage (range)"]
-    BITVAL17 = 0x11,
+    Bitval17 = 0x11,
     #[doc = "Stable Voltage (range)"]
-    BITVAL18 = 0x12,
+    Bitval18 = 0x12,
     #[doc = "Stable Voltage (range)"]
-    BITVAL19 = 0x13,
+    Bitval19 = 0x13,
     #[doc = "Stable Voltage (range)"]
-    BITVAL20 = 0x14,
+    Bitval20 = 0x14,
     #[doc = "Stable Voltage (range)"]
-    BITVAL21 = 0x15,
+    Bitval21 = 0x15,
     #[doc = "Stable Voltage (range)"]
-    BITVAL22 = 0x16,
+    Bitval22 = 0x16,
     #[doc = "Stable Voltage (range)"]
-    BITVAL23 = 0x17,
+    Bitval23 = 0x17,
     #[doc = "Stable Voltage (range)"]
-    BITVAL24 = 0x18,
+    Bitval24 = 0x18,
     #[doc = "Stable Voltage (range)"]
-    BITVAL25 = 0x19,
+    Bitval25 = 0x19,
     #[doc = "Stable Voltage (range)"]
-    BITVAL26 = 0x1a,
+    Bitval26 = 0x1a,
     #[doc = "Stable Voltage (range)"]
-    BITVAL27 = 0x1b,
+    Bitval27 = 0x1b,
     #[doc = "Stable Voltage (range)"]
-    BITVAL28 = 0x1c,
+    Bitval28 = 0x1c,
     #[doc = "Stable Voltage (range)"]
-    BITVAL29 = 0x1d,
+    Bitval29 = 0x1d,
     #[doc = "Stable Voltage (range)"]
-    BITVAL30 = 0x1e,
+    Bitval30 = 0x1e,
     #[doc = "Stable Voltage (range)"]
-    BITVAL31 = 0x1f,
+    Bitval31 = 0x1f,
 }
 impl VoltageSelect {
     #[inline(always)]

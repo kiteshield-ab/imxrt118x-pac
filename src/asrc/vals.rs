@@ -3,37 +3,37 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Aicsa {
     #[doc = "Bit clock 0"]
-    BITCLK0 = 0x0,
+    Bitclk0 = 0x0,
     #[doc = "Bit clock 1"]
-    BITCLK1 = 0x01,
+    Bitclk1 = 0x01,
     #[doc = "Bit clock 2"]
-    BITCLK2 = 0x02,
+    Bitclk2 = 0x02,
     #[doc = "Bit clock 3"]
-    BITCLK3 = 0x03,
+    Bitclk3 = 0x03,
     #[doc = "Bit clock 4"]
-    BITCLK4 = 0x04,
+    Bitclk4 = 0x04,
     #[doc = "Bit clock 5"]
-    BITCLK5 = 0x05,
+    Bitclk5 = 0x05,
     #[doc = "Bit clock 6"]
-    BITCLK6 = 0x06,
+    Bitclk6 = 0x06,
     #[doc = "Bit clock 7"]
-    BITCLK7 = 0x07,
+    Bitclk7 = 0x07,
     #[doc = "Bit clock 8"]
-    BITCLK8 = 0x08,
+    Bitclk8 = 0x08,
     #[doc = "Bit clock 9"]
-    BITCLK9 = 0x09,
+    Bitclk9 = 0x09,
     #[doc = "Bit clock A"]
-    BITCLKA = 0x0a,
+    Bitclka = 0x0a,
     #[doc = "Bit clock B"]
-    BITCLKB = 0x0b,
+    Bitclkb = 0x0b,
     #[doc = "Bit clock C"]
-    BITCLKC = 0x0c,
+    Bitclkc = 0x0c,
     #[doc = "Bit clock D"]
-    BITCLKD = 0x0d,
+    Bitclkd = 0x0d,
     #[doc = "Bit clock E"]
-    BITCLKE = 0x0e,
+    Bitclke = 0x0e,
     #[doc = "Clock disabled, connected to zero"]
-    CLK_DISABLED = 0x0f,
+    ClkDisabled = 0x0f,
 }
 impl Aicsa {
     #[inline(always)]
@@ -62,37 +62,37 @@ impl From<Aicsa> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Aicsb {
     #[doc = "Bit clock 0"]
-    BITCLK0 = 0x0,
+    Bitclk0 = 0x0,
     #[doc = "Bit clock 1"]
-    BITCLK1 = 0x01,
+    Bitclk1 = 0x01,
     #[doc = "Bit clock 2"]
-    BITCLK2 = 0x02,
+    Bitclk2 = 0x02,
     #[doc = "Bit clock 3"]
-    BITCLK3 = 0x03,
+    Bitclk3 = 0x03,
     #[doc = "Bit clock 4"]
-    BITCLK4 = 0x04,
+    Bitclk4 = 0x04,
     #[doc = "Bit clock 5"]
-    BITCLK5 = 0x05,
+    Bitclk5 = 0x05,
     #[doc = "Bit clock 6"]
-    BITCLK6 = 0x06,
+    Bitclk6 = 0x06,
     #[doc = "Bit clock 7"]
-    BITCLK7 = 0x07,
+    Bitclk7 = 0x07,
     #[doc = "Bit clock 8"]
-    BITCLK8 = 0x08,
+    Bitclk8 = 0x08,
     #[doc = "Bit clock 9"]
-    BITCLK9 = 0x09,
+    Bitclk9 = 0x09,
     #[doc = "Bit clock A"]
-    BITCLKA = 0x0a,
+    Bitclka = 0x0a,
     #[doc = "Bit clock B"]
-    BITCLKB = 0x0b,
+    Bitclkb = 0x0b,
     #[doc = "Bit clock C"]
-    BITCLKC = 0x0c,
+    Bitclkc = 0x0c,
     #[doc = "Bit clock D"]
-    BITCLKD = 0x0d,
+    Bitclkd = 0x0d,
     #[doc = "Bit clock E"]
-    BITCLKE = 0x0e,
+    Bitclke = 0x0e,
     #[doc = "Clock disabled, connected to zero"]
-    CLK_DISABLED = 0x0f,
+    ClkDisabled = 0x0f,
 }
 impl Aicsb {
     #[inline(always)]
@@ -121,37 +121,37 @@ impl From<Aicsb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Aicsc {
     #[doc = "Bit clock 0"]
-    BITCLK0 = 0x0,
+    Bitclk0 = 0x0,
     #[doc = "Bit clock 1"]
-    BITCLK1 = 0x01,
+    Bitclk1 = 0x01,
     #[doc = "Bit clock 2"]
-    BITCLK2 = 0x02,
+    Bitclk2 = 0x02,
     #[doc = "Bit clock 3"]
-    BITCLK3 = 0x03,
+    Bitclk3 = 0x03,
     #[doc = "Bit clock 4"]
-    BITCLK4 = 0x04,
+    Bitclk4 = 0x04,
     #[doc = "Bit clock 5"]
-    BITCLK5 = 0x05,
+    Bitclk5 = 0x05,
     #[doc = "Bit clock 6"]
-    BITCLK6 = 0x06,
+    Bitclk6 = 0x06,
     #[doc = "Bit clock 7"]
-    BITCLK7 = 0x07,
+    Bitclk7 = 0x07,
     #[doc = "Bit clock 8"]
-    BITCLK8 = 0x08,
+    Bitclk8 = 0x08,
     #[doc = "Bit clock 9"]
-    BITCLK9 = 0x09,
+    Bitclk9 = 0x09,
     #[doc = "Bit clock A"]
-    BITCLKA = 0x0a,
+    Bitclka = 0x0a,
     #[doc = "Bit clock B"]
-    BITCLKB = 0x0b,
+    Bitclkb = 0x0b,
     #[doc = "Bit clock C"]
-    BITCLKC = 0x0c,
+    Bitclkc = 0x0c,
     #[doc = "Bit clock D"]
-    BITCLKD = 0x0d,
+    Bitclkd = 0x0d,
     #[doc = "Bit clock E"]
-    BITCLKE = 0x0e,
+    Bitclke = 0x0e,
     #[doc = "Clock disabled, connected to zero"]
-    CLK_DISABLED = 0x0f,
+    ClkDisabled = 0x0f,
 }
 impl Aicsc {
     #[inline(always)]
@@ -180,9 +180,9 @@ impl From<Aicsc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Aidea {
     #[doc = "The threshold has been met and no data input A interrupt is generated"]
-    THRESH_MET = 0x0,
+    ThreshMet = 0x0,
     #[doc = "When AIDEA is set, the ASRC generates data input A interrupt request to the processor if ASRIER\\[AIDEA\\] = 1"]
-    LESSTHAN_THRESH = 0x01,
+    LessthanThresh = 0x01,
 }
 impl Aidea {
     #[inline(always)]
@@ -211,9 +211,9 @@ impl From<Aidea> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Aideb {
     #[doc = "The threshold has been met and no data input B interrupt is generated"]
-    THRESH_MET = 0x0,
+    ThreshMet = 0x0,
     #[doc = "When AIDEB is set, the ASRC generates data input B interrupt request to the processor if ASRIER\\[AIDEB\\] = 1"]
-    LESSTHAN_THRESH = 0x01,
+    LessthanThresh = 0x01,
 }
 impl Aideb {
     #[inline(always)]
@@ -242,9 +242,9 @@ impl From<Aideb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Aidec {
     #[doc = "The threshold has been met and no data input C interrupt is generated"]
-    THRESH_MET = 0x0,
+    ThreshMet = 0x0,
     #[doc = "When AIDEC is set, the ASRC generates data input C interrupt request to the processor if ASRIER\\[AIDEC\\] = 1"]
-    LESSTHAN_THRESH = 0x01,
+    LessthanThresh = 0x01,
 }
 impl Aidec {
     #[inline(always)]
@@ -273,37 +273,37 @@ impl From<Aidec> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Anca {
     #[doc = "0 channels in A (Pair A is disabled)"]
-    ZERO_CHAN = 0x0,
+    ZeroChan = 0x0,
     #[doc = "1 channel in A"]
-    ONE_CHAN = 0x01,
+    OneChan = 0x01,
     #[doc = "2 channels in A"]
-    TWO_CHAN = 0x02,
+    TwoChan = 0x02,
     #[doc = "3 channels in A"]
-    THREE_CHAN = 0x03,
+    ThreeChan = 0x03,
     #[doc = "4 channels in A"]
-    FOUR_CHAN = 0x04,
+    FourChan = 0x04,
     #[doc = "5 channels in A"]
-    FIVE_CHAN = 0x05,
+    FiveChan = 0x05,
     #[doc = "6 channels in A"]
-    SIX_CHAN = 0x06,
+    SixChan = 0x06,
     #[doc = "7 channels in A"]
-    SEVEN_CHAN = 0x07,
+    SevenChan = 0x07,
     #[doc = "8 channels in A"]
-    EIGHT_CHAN = 0x08,
+    EightChan = 0x08,
     #[doc = "9 channels in A"]
-    NINE_CHAN = 0x09,
+    NineChan = 0x09,
     #[doc = "10 channels in A"]
-    TEN_CHAN = 0x0a,
+    TenChan = 0x0a,
     #[doc = "Should not be used."]
-    NOT_USED_11 = 0x0b,
+    NotUsed11 = 0x0b,
     #[doc = "Should not be used."]
-    NOT_USED_12 = 0x0c,
+    NotUsed12 = 0x0c,
     #[doc = "Should not be used."]
-    NOT_USED_13 = 0x0d,
+    NotUsed13 = 0x0d,
     #[doc = "Should not be used."]
-    NOT_USED_14 = 0x0e,
+    NotUsed14 = 0x0e,
     #[doc = "Should not be used."]
-    NOT_USED_15 = 0x0f,
+    NotUsed15 = 0x0f,
 }
 impl Anca {
     #[inline(always)]
@@ -332,37 +332,37 @@ impl From<Anca> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ancb {
     #[doc = "0 channels in B (Pair B is disabled)"]
-    ZERO_CHAN = 0x0,
+    ZeroChan = 0x0,
     #[doc = "1 channel in B"]
-    ONE_CHAN = 0x01,
+    OneChan = 0x01,
     #[doc = "2 channels in B"]
-    TWO_CHAN = 0x02,
+    TwoChan = 0x02,
     #[doc = "3 channels in B"]
-    THREE_CHAN = 0x03,
+    ThreeChan = 0x03,
     #[doc = "4 channels in B"]
-    FOUR_CHAN = 0x04,
+    FourChan = 0x04,
     #[doc = "5 channels in B"]
-    FIVE_CHAN = 0x05,
+    FiveChan = 0x05,
     #[doc = "6 channels in B"]
-    SIX_CHAN = 0x06,
+    SixChan = 0x06,
     #[doc = "7 channels in B"]
-    SEVEN_CHAN = 0x07,
+    SevenChan = 0x07,
     #[doc = "8 channels in B"]
-    EIGHT_CHAN = 0x08,
+    EightChan = 0x08,
     #[doc = "9 channels in B"]
-    NINE_CHAN = 0x09,
+    NineChan = 0x09,
     #[doc = "10 channels in B"]
-    TEN_CHAN = 0x0a,
+    TenChan = 0x0a,
     #[doc = "Should not be used."]
-    NOT_USED_11 = 0x0b,
+    NotUsed11 = 0x0b,
     #[doc = "Should not be used."]
-    NOT_USED_12 = 0x0c,
+    NotUsed12 = 0x0c,
     #[doc = "Should not be used."]
-    NOT_USED_13 = 0x0d,
+    NotUsed13 = 0x0d,
     #[doc = "Should not be used."]
-    NOT_USED_14 = 0x0e,
+    NotUsed14 = 0x0e,
     #[doc = "Should not be used."]
-    NOT_USED_15 = 0x0f,
+    NotUsed15 = 0x0f,
 }
 impl Ancb {
     #[inline(always)]
@@ -391,37 +391,37 @@ impl From<Ancb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ancc {
     #[doc = "0 channels in C (Pair C is disabled)"]
-    ZERO_CHAN = 0x0,
+    ZeroChan = 0x0,
     #[doc = "1 channel in C"]
-    ONE_CHAN = 0x01,
+    OneChan = 0x01,
     #[doc = "2 channels in C"]
-    TWO_CHAN = 0x02,
+    TwoChan = 0x02,
     #[doc = "3 channels in C"]
-    THREE_CHAN = 0x03,
+    ThreeChan = 0x03,
     #[doc = "4 channels in C"]
-    FOUR_CHAN = 0x04,
+    FourChan = 0x04,
     #[doc = "5 channels in C"]
-    FIVE_CHAN = 0x05,
+    FiveChan = 0x05,
     #[doc = "6 channels in C"]
-    SIX_CHAN = 0x06,
+    SixChan = 0x06,
     #[doc = "7 channels in C"]
-    SEVEN_CHAN = 0x07,
+    SevenChan = 0x07,
     #[doc = "8 channels in C"]
-    EIGHT_CHAN = 0x08,
+    EightChan = 0x08,
     #[doc = "9 channels in C"]
-    NINE_CHAN = 0x09,
+    NineChan = 0x09,
     #[doc = "10 channels in C"]
-    TEN_CHAN = 0x0a,
+    TenChan = 0x0a,
     #[doc = "Should not be used."]
-    NOT_USED_11 = 0x0b,
+    NotUsed11 = 0x0b,
     #[doc = "Should not be used."]
-    NOT_USED_12 = 0x0c,
+    NotUsed12 = 0x0c,
     #[doc = "Should not be used."]
-    NOT_USED_13 = 0x0d,
+    NotUsed13 = 0x0d,
     #[doc = "Should not be used."]
-    NOT_USED_14 = 0x0e,
+    NotUsed14 = 0x0e,
     #[doc = "Should not be used."]
-    NOT_USED_15 = 0x0f,
+    NotUsed15 = 0x0f,
 }
 impl Ancc {
     #[inline(always)]
@@ -450,37 +450,37 @@ impl From<Ancc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Aocsa {
     #[doc = "Bit clock 0"]
-    BITCLK0 = 0x0,
+    Bitclk0 = 0x0,
     #[doc = "Bit clock 1"]
-    BITCLK1 = 0x01,
+    Bitclk1 = 0x01,
     #[doc = "Bit clock 2"]
-    BITCLK2 = 0x02,
+    Bitclk2 = 0x02,
     #[doc = "Bit clock 3"]
-    BITCLK3 = 0x03,
+    Bitclk3 = 0x03,
     #[doc = "Bit clock 4"]
-    BITCLK4 = 0x04,
+    Bitclk4 = 0x04,
     #[doc = "Bit clock 5"]
-    BITCLK5 = 0x05,
+    Bitclk5 = 0x05,
     #[doc = "Bit clock 6"]
-    BITCLK6 = 0x06,
+    Bitclk6 = 0x06,
     #[doc = "Bit clock 7"]
-    BITCLK7 = 0x07,
+    Bitclk7 = 0x07,
     #[doc = "Bit clock 8"]
-    BITCLK8 = 0x08,
+    Bitclk8 = 0x08,
     #[doc = "Bit clock 9"]
-    BITCLK9 = 0x09,
+    Bitclk9 = 0x09,
     #[doc = "Bit clock A"]
-    BITCLKA = 0x0a,
+    Bitclka = 0x0a,
     #[doc = "Bit clock B"]
-    BITCLKB = 0x0b,
+    Bitclkb = 0x0b,
     #[doc = "Bit clock C"]
-    BITCLKC = 0x0c,
+    Bitclkc = 0x0c,
     #[doc = "Bit clock D"]
-    BITCLKD = 0x0d,
+    Bitclkd = 0x0d,
     #[doc = "Bit clock E"]
-    BITCLKE = 0x0e,
+    Bitclke = 0x0e,
     #[doc = "Clock disabled, connected to zero"]
-    CLK_DISABLED = 0x0f,
+    ClkDisabled = 0x0f,
 }
 impl Aocsa {
     #[inline(always)]
@@ -509,37 +509,37 @@ impl From<Aocsa> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Aocsb {
     #[doc = "Bit clock 0"]
-    BITCLK0 = 0x0,
+    Bitclk0 = 0x0,
     #[doc = "Bit clock 1"]
-    BITCLK1 = 0x01,
+    Bitclk1 = 0x01,
     #[doc = "Bit clock 2"]
-    BITCLK2 = 0x02,
+    Bitclk2 = 0x02,
     #[doc = "Bit clock 3"]
-    BITCLK3 = 0x03,
+    Bitclk3 = 0x03,
     #[doc = "Bit clock 4"]
-    BITCLK4 = 0x04,
+    Bitclk4 = 0x04,
     #[doc = "Bit clock 5"]
-    BITCLK5 = 0x05,
+    Bitclk5 = 0x05,
     #[doc = "Bit clock 6"]
-    BITCLK6 = 0x06,
+    Bitclk6 = 0x06,
     #[doc = "Bit clock 7"]
-    BITCLK7 = 0x07,
+    Bitclk7 = 0x07,
     #[doc = "Bit clock 8"]
-    BITCLK8 = 0x08,
+    Bitclk8 = 0x08,
     #[doc = "Bit clock 9"]
-    BITCLK9 = 0x09,
+    Bitclk9 = 0x09,
     #[doc = "Bit clock A"]
-    BITCLKA = 0x0a,
+    Bitclka = 0x0a,
     #[doc = "Bit clock B"]
-    BITCLKB = 0x0b,
+    Bitclkb = 0x0b,
     #[doc = "Bit clock C"]
-    BITCLKC = 0x0c,
+    Bitclkc = 0x0c,
     #[doc = "Bit clock D"]
-    BITCLKD = 0x0d,
+    Bitclkd = 0x0d,
     #[doc = "Bit clock E"]
-    BITCLKE = 0x0e,
+    Bitclke = 0x0e,
     #[doc = "Clock disabled, connected to zero"]
-    CLK_DISABLED = 0x0f,
+    ClkDisabled = 0x0f,
 }
 impl Aocsb {
     #[inline(always)]
@@ -568,37 +568,37 @@ impl From<Aocsb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Aocsc {
     #[doc = "Bit clock 0"]
-    BITCLK0 = 0x0,
+    Bitclk0 = 0x0,
     #[doc = "Bit clock 1"]
-    BITCLK1 = 0x01,
+    Bitclk1 = 0x01,
     #[doc = "Bit clock 2"]
-    BITCLK2 = 0x02,
+    Bitclk2 = 0x02,
     #[doc = "Bit clock 3"]
-    BITCLK3 = 0x03,
+    Bitclk3 = 0x03,
     #[doc = "Bit clock 4"]
-    BITCLK4 = 0x04,
+    Bitclk4 = 0x04,
     #[doc = "Bit clock 5"]
-    BITCLK5 = 0x05,
+    Bitclk5 = 0x05,
     #[doc = "Bit clock 6"]
-    BITCLK6 = 0x06,
+    Bitclk6 = 0x06,
     #[doc = "Bit clock 7"]
-    BITCLK7 = 0x07,
+    Bitclk7 = 0x07,
     #[doc = "Bit clock 8"]
-    BITCLK8 = 0x08,
+    Bitclk8 = 0x08,
     #[doc = "Bit clock 9"]
-    BITCLK9 = 0x09,
+    Bitclk9 = 0x09,
     #[doc = "Bit clock A"]
-    BITCLKA = 0x0a,
+    Bitclka = 0x0a,
     #[doc = "Bit clock B"]
-    BITCLKB = 0x0b,
+    Bitclkb = 0x0b,
     #[doc = "Bit clock C"]
-    BITCLKC = 0x0c,
+    Bitclkc = 0x0c,
     #[doc = "Bit clock D"]
-    BITCLKD = 0x0d,
+    Bitclkd = 0x0d,
     #[doc = "Bit clock E"]
-    BITCLKE = 0x0e,
+    Bitclke = 0x0e,
     #[doc = "Clock disabled, connected to zero"]
-    CLK_DISABLED = 0x0f,
+    ClkDisabled = 0x0f,
 }
 impl Aocsc {
     #[inline(always)]
@@ -627,9 +627,9 @@ impl From<Aocsc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Aodfa {
     #[doc = "The threshold has not yet been met and no data output A interrupt is generated"]
-    THRESH_NOTMET = 0x0,
+    ThreshNotmet = 0x0,
     #[doc = "When AODFA is set, the ASRC generates data output A interrupt request to the processor if ASRIER\\[ADOEA\\] = 1"]
-    GREATERTHAN_THRESH = 0x01,
+    GreaterthanThresh = 0x01,
 }
 impl Aodfa {
     #[inline(always)]
@@ -658,9 +658,9 @@ impl From<Aodfa> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Aodfb {
     #[doc = "The threshold has not yet been met and no data output B interrupt is generated"]
-    THRESH_NOTMET = 0x0,
+    ThreshNotmet = 0x0,
     #[doc = "When AODFB is set, the ASRC generates data output B interrupt request to the processor if ASRIER\\[ADOEB\\] = 1"]
-    GREATERTHAN_THRESH = 0x01,
+    GreaterthanThresh = 0x01,
 }
 impl Aodfb {
     #[inline(always)]
@@ -689,9 +689,9 @@ impl From<Aodfb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Aodfc {
     #[doc = "The threshold has not yet been met and no data output C interrupt is generated"]
-    THRESH_NOTMET = 0x0,
+    ThreshNotmet = 0x0,
     #[doc = "When AODFC is set, the ASRC generates data output C interrupt request to the processor if ASRIER\\[ADOEC\\] = 1"]
-    GREATERTHAN_THRESH = 0x01,
+    GreaterthanThresh = 0x01,
 }
 impl Aodfc {
     #[inline(always)]
@@ -720,9 +720,9 @@ impl From<Aodfc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Aole {
     #[doc = "No overload"]
-    TASK_OK = 0x0,
+    TaskOk = 0x0,
     #[doc = "Task rate is too high"]
-    TOO_HIGH = 0x01,
+    TooHigh = 0x01,
 }
 impl Aole {
     #[inline(always)]
@@ -751,9 +751,9 @@ impl From<Aole> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dslcnt {
     #[doc = "New DSL counter information is in the process of storage into the internal ASRC FIFO"]
-    DSLCNT_PROC = 0x0,
+    DslcntProc = 0x0,
     #[doc = "New DSL counter information is stored in the internal ASRC FIFO"]
-    DSLCNT_STORED = 0x01,
+    DslcntStored = 0x01,
 }
 impl Dslcnt {
     #[inline(always)]
@@ -782,9 +782,9 @@ impl From<Dslcnt> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Extthrsha {
     #[doc = "Use default thresholds."]
-    USE_DEFAULT_THRESH = 0x0,
+    UseDefaultThresh = 0x0,
     #[doc = "Use external defined thresholds."]
-    USE_EXT_THRESH = 0x01,
+    UseExtThresh = 0x01,
 }
 impl Extthrsha {
     #[inline(always)]
@@ -813,9 +813,9 @@ impl From<Extthrsha> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Extthrshb {
     #[doc = "Use default thresholds."]
-    USE_DEFAULT_THRESH = 0x0,
+    UseDefaultThresh = 0x0,
     #[doc = "Use external defined thresholds."]
-    USE_EXT_THRESH = 0x01,
+    UseExtThresh = 0x01,
 }
 impl Extthrshb {
     #[inline(always)]
@@ -844,9 +844,9 @@ impl From<Extthrshb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Extthrshc {
     #[doc = "Use default thresholds."]
-    USE_DEFAULT_THRESH = 0x0,
+    UseDefaultThresh = 0x0,
     #[doc = "Use external defined thresholds."]
-    USE_EXT_THRESH = 0x01,
+    UseExtThresh = 0x01,
 }
 impl Extthrshc {
     #[inline(always)]
@@ -875,9 +875,9 @@ impl From<Extthrshc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Idra {
     #[doc = "ASRC internal measured ratio is used"]
-    IDRA_MEASURED = 0x0,
+    IdraMeasured = 0x0,
     #[doc = "Ideal ratio from the interface register ASRIDRHA, ASRIDRLA is used"]
-    IDRA_IDEAL = 0x01,
+    IdraIdeal = 0x01,
 }
 impl Idra {
     #[inline(always)]
@@ -906,9 +906,9 @@ impl From<Idra> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Idrb {
     #[doc = "ASRC internal measured ratio is used"]
-    IDRA_MEASURED = 0x0,
+    IdraMeasured = 0x0,
     #[doc = "Ideal ratio from the interface register ASRIDRHB, ASRIDRLB is used"]
-    IDRA_IDEAL = 0x01,
+    IdraIdeal = 0x01,
 }
 impl Idrb {
     #[inline(always)]
@@ -937,9 +937,9 @@ impl From<Idrb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Idrc {
     #[doc = "ASRC internal measured ratio is used"]
-    IDRA_MEASURED = 0x0,
+    IdraMeasured = 0x0,
     #[doc = "Ideal ratio from the interface register ASRIDRHC, ASRIDRLC is used"]
-    IDRA_IDEAL = 0x01,
+    IdraIdeal = 0x01,
 }
 impl Idrc {
     #[inline(always)]
@@ -968,9 +968,9 @@ impl From<Idrc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Imsb {
     #[doc = "LSB aligned"]
-    LSB_ALIGNED = 0x0,
+    LsbAligned = 0x0,
     #[doc = "MSB aligned"]
-    MSB_ALIGNED = 0x01,
+    MsbAligned = 0x01,
 }
 impl Imsb {
     #[inline(always)]
@@ -999,9 +999,9 @@ impl From<Imsb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Inirqa {
     #[doc = "Initialization for Conversion Pair A not served"]
-    INIT_NOTSERVED = 0x0,
+    InitNotserved = 0x0,
     #[doc = "Initialization for Conversion Pair A served"]
-    INIT_SERVED = 0x01,
+    InitServed = 0x01,
 }
 impl Inirqa {
     #[inline(always)]
@@ -1030,9 +1030,9 @@ impl From<Inirqa> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Inirqb {
     #[doc = "Initialization for Conversion Pair B not served"]
-    INIT_NOTSERVED = 0x0,
+    InitNotserved = 0x0,
     #[doc = "Initialization for Conversion Pair B served"]
-    INIT_SERVED = 0x01,
+    InitServed = 0x01,
 }
 impl Inirqb {
     #[inline(always)]
@@ -1061,9 +1061,9 @@ impl From<Inirqb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Inirqc {
     #[doc = "Initialization for Conversion Pair C not served"]
-    INIT_NOTSERVED = 0x0,
+    InitNotserved = 0x0,
     #[doc = "Initialization for Conversion Pair C served"]
-    INIT_SERVED = 0x01,
+    InitServed = 0x01,
 }
 impl Inirqc {
     #[inline(always)]
@@ -1092,11 +1092,11 @@ impl From<Inirqc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Iwd {
     #[doc = "24-bit audio data."]
-    AUDIODATA_24BIT = 0x0,
+    Audiodata24bit = 0x0,
     #[doc = "16-bit audio data."]
-    AUDIODATA_16BIT = 0x01,
+    Audiodata16bit = 0x01,
     #[doc = "8-bit audio data."]
-    AUDIODATA_8BIT = 0x02,
+    Audiodata8bit = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Iwd {
@@ -1126,9 +1126,9 @@ impl From<Iwd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ndpra {
     #[doc = "Use default parameters for RAM-stored parameters. Override any parameters already in RAM."]
-    USE_DEFAULT = 0x0,
+    UseDefault = 0x0,
     #[doc = "Don't use default parameters for RAM-stored parameters. Use the parameters already stored in RAM."]
-    NOT_DEFAULT = 0x01,
+    NotDefault = 0x01,
 }
 impl Ndpra {
     #[inline(always)]
@@ -1157,9 +1157,9 @@ impl From<Ndpra> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ndprb {
     #[doc = "Use default parameters for RAM-stored parameters. Override any parameters already in RAM."]
-    USE_DEFAULT = 0x0,
+    UseDefault = 0x0,
     #[doc = "Don't use default parameters for RAM-stored parameter. Use the parameters already stored in RAM."]
-    NOT_DEFAULT = 0x01,
+    NotDefault = 0x01,
 }
 impl Ndprb {
     #[inline(always)]
@@ -1188,9 +1188,9 @@ impl From<Ndprb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ndprc {
     #[doc = "Use default parameters for RAM-stored parameters. Override any parameters already in RAM."]
-    USE_DEFAULT = 0x0,
+    UseDefault = 0x0,
     #[doc = "Don't use default parameters for RAM-stored parameters. Use the parameters already stored in RAM."]
-    NOT_DEFAULT = 0x01,
+    NotDefault = 0x01,
 }
 impl Ndprc {
     #[inline(always)]
@@ -1219,9 +1219,9 @@ impl From<Ndprc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Omsb {
     #[doc = "LSB aligned"]
-    LSB_ALIGNED = 0x0,
+    LsbAligned = 0x0,
     #[doc = "MSB aligned"]
-    MSB_ALIGNED = 0x01,
+    MsbAligned = 0x01,
 }
 impl Omsb {
     #[inline(always)]
@@ -1250,9 +1250,9 @@ impl From<Omsb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ow16 {
     #[doc = "24-bit output data"]
-    OUT_24BIT = 0x0,
+    Out24bit = 0x0,
     #[doc = "16-bit output data"]
-    OUT_16BIT = 0x01,
+    Out16bit = 0x01,
 }
 impl Ow16 {
     #[inline(always)]
@@ -1281,11 +1281,11 @@ impl From<Ow16> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Postmoda {
     #[doc = "Select Upsampling-by-2"]
-    UPSAMP_2 = 0x0,
+    Upsamp2 = 0x0,
     #[doc = "Select Direct-Connection"]
-    DIRECT_CONNECT = 0x01,
+    DirectConnect = 0x01,
     #[doc = "Select Downsampling-by-2"]
-    DOWNSAMP_2 = 0x02,
+    Downsamp2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Postmoda {
@@ -1315,11 +1315,11 @@ impl From<Postmoda> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Postmodb {
     #[doc = "Select Upsampling-by-2"]
-    UPSAMP_2 = 0x0,
+    Upsamp2 = 0x0,
     #[doc = "Select Direct-Connection"]
-    DIRECT_CONNECT = 0x01,
+    DirectConnect = 0x01,
     #[doc = "Select Downsampling-by-2"]
-    DOWNSAMP_2 = 0x02,
+    Downsamp2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Postmodb {
@@ -1349,11 +1349,11 @@ impl From<Postmodb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Postmodc {
     #[doc = "Select Upsampling-by-2 as defined in Signal Processing Flow."]
-    UPSAMP_2 = 0x0,
+    Upsamp2 = 0x0,
     #[doc = "Select Direct-Connection as defined in Signal Processing Flow."]
-    DIRECT_CONNECT = 0x01,
+    DirectConnect = 0x01,
     #[doc = "Select Downsampling-by-2 as defined in Signal Processing Flow."]
-    DOWNSAMP_2 = 0x02,
+    Downsamp2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Postmodc {
@@ -1383,13 +1383,13 @@ impl From<Postmodc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Premoda {
     #[doc = "Select Upsampling-by-2"]
-    UPSAMP_2 = 0x0,
+    Upsamp2 = 0x0,
     #[doc = "Select Direct-Connection"]
-    DIRECT_CONNECT = 0x01,
+    DirectConnect = 0x01,
     #[doc = "Select Downsampling-by-2"]
-    DOWNSAMP_2 = 0x02,
+    Downsamp2 = 0x02,
     #[doc = "Select passthrough mode. In this case, POSTMODA\\[1:0\\] have no use."]
-    PASSTHRU = 0x03,
+    Passthru = 0x03,
 }
 impl Premoda {
     #[inline(always)]
@@ -1418,13 +1418,13 @@ impl From<Premoda> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Premodb {
     #[doc = "Select Upsampling-by-2"]
-    UPSAMP_2 = 0x0,
+    Upsamp2 = 0x0,
     #[doc = "Select Direct-Connection"]
-    DIRECT_CONNECT = 0x01,
+    DirectConnect = 0x01,
     #[doc = "Select Downsampling-by-2"]
-    DOWNSAMP_2 = 0x02,
+    Downsamp2 = 0x02,
     #[doc = "Select passthrough mode. In this case, POSTMODB\\[1:0\\] have no use."]
-    PASSTHRU = 0x03,
+    Passthru = 0x03,
 }
 impl Premodb {
     #[inline(always)]
@@ -1453,13 +1453,13 @@ impl From<Premodb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Premodc {
     #[doc = "Select Upsampling-by-2"]
-    UPSAMP_2 = 0x0,
+    Upsamp2 = 0x0,
     #[doc = "Select Direct-Connection"]
-    DIRECT_CONNECT = 0x01,
+    DirectConnect = 0x01,
     #[doc = "Select Downsampling-by-2"]
-    DOWNSAMP_2 = 0x02,
+    Downsamp2 = 0x02,
     #[doc = "Select passthrough mode. In this case, POSTMODC\\[1:0\\] have no use."]
-    PASSTHRU = 0x03,
+    Passthru = 0x03,
 }
 impl Premodc {
     #[inline(always)]
@@ -1488,9 +1488,9 @@ impl From<Premodc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Srst {
     #[doc = "ASRC Software reset cleared"]
-    CLEARED = 0x0,
+    Cleared = 0x0,
     #[doc = "ASRC Software reset generated. NOTE: This is a self-clear bit"]
-    RESET = 0x01,
+    Reset = 0x01,
 }
 impl Srst {
     #[inline(always)]
@@ -1519,9 +1519,9 @@ impl From<Srst> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usra {
     #[doc = "Do not use ratio as the input to ASRC for pair A"]
-    USE_RATIO_NO = 0x0,
+    UseRatioNo = 0x0,
     #[doc = "Use ratio as the input to ASRC for pair A"]
-    USE_RATIO = 0x01,
+    UseRatio = 0x01,
 }
 impl Usra {
     #[inline(always)]
@@ -1550,9 +1550,9 @@ impl From<Usra> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usrb {
     #[doc = "Do not use ratio as the input to ASRC for pair B"]
-    USE_RATIO_NO = 0x0,
+    UseRatioNo = 0x0,
     #[doc = "Use ratio as the input to ASRC for pair B"]
-    USE_RATIO = 0x01,
+    UseRatio = 0x01,
 }
 impl Usrb {
     #[inline(always)]
@@ -1581,9 +1581,9 @@ impl From<Usrb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usrc {
     #[doc = "Do not use ratio as the input to ASRC for pair C"]
-    USE_RATIO_NO = 0x0,
+    UseRatioNo = 0x0,
     #[doc = "Use ratio as the input to ASRC for pair C"]
-    USE_RATIO = 0x01,
+    UseRatio = 0x01,
 }
 impl Usrc {
     #[inline(always)]
@@ -1612,9 +1612,9 @@ impl From<Usrc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Zerobufa {
     #[doc = "Zeroize the buffer"]
-    ZERO_BUF = 0x0,
+    ZeroBuf = 0x0,
     #[doc = "Don't zeroize the buffer"]
-    DO_NOT_ZERO_BUF = 0x01,
+    DoNotZeroBuf = 0x01,
 }
 impl Zerobufa {
     #[inline(always)]
@@ -1643,9 +1643,9 @@ impl From<Zerobufa> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Zerobufb {
     #[doc = "Zeroize the buffer"]
-    ZERO_BUF = 0x0,
+    ZeroBuf = 0x0,
     #[doc = "Don't zeroize the buffer"]
-    DO_NOT_ZERO_BUF = 0x01,
+    DoNotZeroBuf = 0x01,
 }
 impl Zerobufb {
     #[inline(always)]
@@ -1674,9 +1674,9 @@ impl From<Zerobufb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Zerobufc {
     #[doc = "Zeroize the buffer"]
-    ZERO_BUF = 0x0,
+    ZeroBuf = 0x0,
     #[doc = "Don't zeroize the buffer"]
-    DO_NOT_ZERO_BUF = 0x01,
+    DoNotZeroBuf = 0x01,
 }
 impl Zerobufc {
     #[inline(always)]
