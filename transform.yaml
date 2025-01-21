@@ -118,9 +118,8 @@ transforms:
       # Do not boolify `Pal` and `Instr`
       from: dma\d+_tcd::vals::(Dpa|Dreq|Ecp|Esg|Int|Sec|Start|TcdNbytesMloffnoDmloe|TcdNbytesMloffnoSmloe|TcdNbytesMloffyesDmloe|TcdNbytesMloffyesSmloe)
       bit_size: 1
-  - !MergeEnums
+  - !DeleteEnums
       from: dma\d+_tcd::vals::Smod
-      to: dma_tcd::vals::Smod
   - !MergeEnums
       from: dma\d+_tcd::vals::Pal
       main: dma3_tcd::vals::Pal

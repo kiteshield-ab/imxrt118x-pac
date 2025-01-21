@@ -320,14 +320,14 @@ impl TcdAttr {
     #[doc = "Source address modulo"]
     #[must_use]
     #[inline(always)]
-    pub const fn smod(&self) -> super::vals::Smod {
+    pub const fn smod(&self) -> u8 {
         let val = (self.0 >> 11usize) & 0x1f;
-        super::vals::Smod::from_bits(val as u8)
+        val as u8
     }
     #[doc = "Source address modulo"]
     #[inline(always)]
-    pub const fn set_smod(&mut self, val: super::vals::Smod) {
-        self.0 = (self.0 & !(0x1f << 11usize)) | (((val.to_bits() as u16) & 0x1f) << 11usize);
+    pub const fn set_smod(&mut self, val: u8) {
+        self.0 = (self.0 & !(0x1f << 11usize)) | (((val as u16) & 0x1f) << 11usize);
     }
 }
 impl Default for TcdAttr {
@@ -354,7 +354,7 @@ impl defmt::Format for TcdAttr {
             dsize: super::vals::Size,
             dmod: u8,
             ssize: super::vals::Size,
-            smod: super::vals::Smod,
+            smod: u8,
         }
         let proxy = TcdAttr {
             dsize: self.dsize(),
